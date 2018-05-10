@@ -1,9 +1,13 @@
 var Greytyphoon.Characters.push({
     name: "Mathilda Nalaar",
     flair: "Pharasma's mountain warden",
+    meta: {
+        quest: "Psychose",
+        owner: "Grey",
+        companion: { name: "Bat Familiar", link: null },
+        source: null,
+    },
     alignment: "NG",
-    quest: "Psychose",
-    owner: "Grey",
     deity: "Pharasma",
     languages: "Common, Elven, Sylvan, Draconic, Celestial, Infernal, Abyssal, Undercommon",
     ancestry: { name: "Elf", link: "http://www.d20pfsrd.com/races/core-races/elf" },
@@ -13,14 +17,12 @@ var Greytyphoon.Characters.push({
         quantity: 6, 
         archetypes: [ { title: "Patron", name: "Death", link: "http://www.d20pfsrd.com/classes/base-classes/witch/witch-patrons" } ]
     } ],
-    str: 10,
-    dex: [ 14, { points: 2, reason: "Racial" } ],
-    con: [ 14, { points: -2, reason: "Racial" } ],
-    int: [ 17, { points: 2, reason: "Racial" }, { points: 1, reason: "Advancement" }, { points: 2, reason: "Enhancement" } ],
-    wis: 12,
-    cha: 10,
-    companionLink: null, /* traces of a Bat familiar? */
-    externalLink: null,
+    "str": 10,
+    "dex": [ 14, { points: 2, reason: "Racial" } ],
+    "con": [ 14, { points: -2, reason: "Racial" } ],
+    "int": [ 17, { points: 2, reason: "Racial" }, { points: 1, reason: "Advancement" }, { points: 2, reason: "Enhancement" } ],
+    "wis": 12,
+    "cha": 10,
     traits: [
         { name: "Spirit Guide", link: "http://www.d20pfsrd.com/traits/religion-traits/spirit-guide" },
         { name: "Warrior of Old", link: "http://www.d20pfsrd.com/traits/race-traits/warrior-of-old" },
