@@ -1,0 +1,133 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css");
+/** Created by Rémi Doutre, 2015-2018. Public domain. **/
+
+/**
+ * Custom Palette:
+ * 'Valiance' by Greytyphoon
+ * #0b0608 murder-black
+ * #eaebef murder-grey
+ * #c62825 murder-red
+ * #ffffff html-white
+ * #a9a9a9 html-darkgrey
+ *
+ * Palette inspiration: http://www.color-hex.com/color-palette/23446
+ * 'Murder and Murdered' by simoneurso
+ * #0b0608 murder-black
+ * #872927 murder-brown
+ * #fcf7f9 murder-white
+ * #eaebef murder-grey
+ * #c62825 murder-red
+ **/
+body { color: #0b0608; /*murder-black*/ }
+a, a:link, a:visited, a:active { color: #c62825; /*murder-red*/}
+a:hover { text-shadow: 0px 0px 1px; }
+ul,li { line-height: 1.15em; }
+h6 { text-decoration: underline; }
+
+@media screen {
+    body {
+        overflow-y: scroll;
+        background-color: #eaebef; /*murder-grey*/
+    }
+    body > .container {
+        background-color: #ffffff; /*html-white*/
+        border-left: 1px solid #a9a9a9; /*html-darkgrey*/
+        border-right: 1px solid #a9a9a9; /*html-darkgrey*/
+        padding: 10px 25px .5px 25px;
+        min-height: 100%;
+    }
+}
+
+/********************
+ * Custom Components   (#fixref, #header, .title, .subtitle, .apartee, .br)
+ */
+
+#fixref  {
+    background-color: #ffffff; /*html-white*/
+    border: 1px solid #a9a9a9; /*html-darkgrey*/
+    border-radius: 3px;
+    position: fixed;
+    bottom: 10;
+    right: 10;
+    z-index: 5;}
+@media screen and (max-width: 767px){
+    #fixref {
+        position: initial;
+        border-radius: 0px;
+        text-align: center;
+    }
+}
+
+#header {
+    padding: 8px;
+    margin: 0px -15px 15px -15px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #c62825; /*murder-red*/
+    border: 1px solid #c62825; /*murder-red*/
+    box-shadow: 2px 2px 2px #a9a9a9;} /*html-darkgrey*/
+
+/* Section titles, encased in two black lines */
+.title {
+    border-top: 1px solid #0b0608; /*murder-black*/
+    border-bottom: 1px solid #0b0608; /*murder-black*/
+    font-size: 16px;
+    clear: both; }
+
+.subtitle {
+    border-bottom: 1px solid #eaebef; /*murder-grey*/
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px; }
+
+.apartee {
+    background-color: #eaebef; /*murder-grey*/
+    border: 1px dashed #a9a9a9; /*html-darkgrey*/
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 12px; }
+
+.br { /*for 'breathing room' after a paragraph. Does not simply replace random <br>s in my code, no sir. Obviously not. */
+    margin-bottom: 0.75rem; }
+
+/********************
+ * Printing tweaks
+ */
+    
+@media print {
+    .newPage { page-break-before: always; }
+    .noprint { display: none !important; }
+    abbr[title]:after { content: none; border-bottom: none; text-decoration: none; } /* prevents bootstrap from printing the detail...*/
+
+    /* make stuff smaller, so more can fit on a page. */
+    body { font-size: 14px !important; }
+
+    /* fix a Chrome Bug where the width when printing is always 550px... I want Bootstrap-lg when printing, though */
+    .container { max-width: none !important; }
+    .col-lg-1 { width: 8.33333% !important; }
+    .col-lg-2 { width: 16.66666% !important; }
+    .col-lg-3 { width: 25% !important; }
+    .col-lg-4 { width: 33.33333% !important; }
+    .col-lg-5 { width: 41.66666% !important; }
+    .col-lg-6 { width: 50% !important; }
+    .col-lg-7 { width: 58.33333% !important; }
+    .col-lg-8 { width: 66.66666% !important; }
+    .col-lg-9 { width: 75% !important; }
+    .col-lg-10 { width: 83.33333% !important; }
+    .col-lg-11 { width: 91.66666% !important; }
+    .col-lg-12 { width: 100% !important; }
+    .col-md-1 { width: 8.33333%; }
+    .col-md-2 { width: 16.66666%; }
+    .col-md-3 { width: 25%; }
+    .col-md-4 { width: 33.33333%; }
+    .col-md-5 { width: 41.66666%; }
+    .col-md-6 { width: 50%; }
+    .col-md-7 { width: 58.33333%; }
+    .col-md-8 { width: 66.66666%; }
+    .col-md-9 { width: 75%; }
+    .col-md-10 { width: 83.33333%; }
+    .col-md-11 { width: 91.66666%; }
+    .col-md-12 { width: 100%; }
+}

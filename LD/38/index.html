@@ -1,0 +1,28 @@
+<!-- ©2017 Rémi Doutre / Greytyphoon -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Color War</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="foundation.js"></script>
+    <script type="text/javascript" src="tilesNail.js"></script>
+    <script type="text/javascript" src="boardGlue.js"></script>
+    <script type="text/javascript" src="gameKnot.js"></script>
+</head>
+<body onload="setupStart()">
+    <div id="mouseoverInfo" style="top: 0; left: 0; opacity : 0;"></div>
+    <div id="title">Color War</div>
+
+    <div id="powerLevel"></div>
+    <div id="cardTray"></div>
+    <div id="gameBoard"></div>
+    <div id="chatterbox"></div>
+    <div id="cornerAttack"></div>
+
+    <!--Credits-->
+    <div id="fixedBottomRight">
+        <a onClick="alert('Rules \n ¯¯¯¯¯ \n You are Red! Click on other tiles to conquer. \n You must have owned every tile to win.')">Rules</a><br>
+        <a onClick="alert('Color War \n ¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 38 \n By Greytyphoon (Rémi Doutre) \n ©2017 Montréal, Québec, Canada')">Credits</a>
+    </div>
+</body>
+</html>

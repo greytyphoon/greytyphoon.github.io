@@ -1,0 +1,29 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* common.css
+ *
+ * copyright (c) 2006-2013 drow <drow@bin.sh>
+ * all rights reserved.
+*/
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* font-family */
+
+body { font-family: 'Asul', sans-serif; }
+textarea { font-family: 'Asul', sans-serif; font-size: 14px; }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* content */
+
+h1 { text-align: center; }
+table { border-collapse: collapse; }
+
+.center { text-align: center; }
+table.center { margin: 0px auto; }
+
+optgroup { margin: 1ex 1em;
+  font-style: normal; font-weight: normal; color: #808080; }
+optgroup option { color: #000000; }
+
+div.footnotes { margin-top: 6ex; text-align: center; }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */

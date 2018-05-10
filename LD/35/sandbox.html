@@ -1,0 +1,58 @@
+<!-- ©2016 Rémi Doutre / Greytyphoon -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>They are Missing - sandbox</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class='titletext'>They are Missing</div>
+    
+    <!--Everything-->
+    <div id="main">
+        <div id='hints' style='float:right;' class="small">
+            <span style='text-decoration: underline;'>Hints</span><br/>
+            Shamanic Mask<br/>
+            Bloody Sink<br/>
+        </div>
+        <div class="locker"> 
+            <a href="google.ca" class="small">btnNorth</a>
+        </div>
+        <div class="locker">
+            <div style="left: -10%;" class="verticallyCentered">
+            <a href="google.ca" class="small">btnWest</a>
+            </div>
+            <div style="right: -10%;" class="verticallyCentered">
+            <a href="google.ca" class="small">btnEast</a>
+            </div>
+            <div style="margin:20px; min-height:300px;">
+                <div id="maphelp">You've already been here.</div>
+                <div id="roomMood">You are in a room.</div>
+                <div id="northMood">Something is north</div>
+                <div id="southMood">Something is south.</div>
+                <div id="westMood">Something is west.</div>
+                <div id="eastMood">Something is east.</div>
+                <div id="hintMood">You find a creepy thing.</div>
+            </div>
+        </div>
+        <div class="locker"> 
+            <a href="google.ca" class="small">btnSouth</a>
+        </div>
+    </div>
+    
+    <!--Restart-->
+    <div class="fixedBottomLeft small">
+        Lost or stuck? Click <a onClick="document.getElementById('restartConfirmDiv').style.display = 'block';">here</a> to restart.
+        <div id="restartConfirmDiv" style="display:none;">
+            <a onClick="document.getElementById('restartConfirmDiv').style.display = 'none'; setupStart();">Confirm</a>
+            or
+            <a onClick="document.getElementById('restartConfirmDiv').style.display = 'none';">cancel</a>.
+        </div>
+    </div>
+    
+    <!--Credits-->
+    <div class="fixedBottomRight small">
+        <a onClick="alert('They are Missing \n ¯¯¯¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 35 \n By Greytyphoon (Rémi Doutre) \n ©2016 Montréal, Québec, Canada')">Credits</a>
+    </div>
+</body>
+</html>

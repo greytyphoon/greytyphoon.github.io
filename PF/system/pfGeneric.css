@@ -1,0 +1,47 @@
+/** Created by Rémi Doutre, 2015-2018. Public domain. **/
+@import url("../../basic.css");
+
+/********************
+ * Custom Components   (.numberFirst, .listbonuses, .listBonusBreaker, .circumstancialBonus)
+ */
+
+/* number at the beginning of a line get an Excel-like "cell", aligned right inside it, so the skills/names/whatevers line up. */
+.numberFirst {
+    display: inline-block;
+    text-align: right;
+    margin-left: -15px; /*cancel the container-fluid's margin, so numbers in excess of 1em will overflow to the left in the margin.*/
+    width: calc(15px + 1em); }
+
+/* Uniform style and auto-parenthesis for anywhere I list bonus types */
+.listBonuses {
+    color: #a9a9a9; /*html-darkgrey*/
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: normal; }
+.listBonuses:before { content: "("; }
+.listBonuses:after { content: ")"; }
+/*cool hack to have the listbonus on the same line, but they all break off if the display is too small, and they align with circumstancial bonuses*/
+.listBonusBreaker { margin-right: -20px; }
+.listBonusBreaker + .listBonuses {
+    display: inline-block;
+    margin-left: 20px; }
+
+/* circumstancial bonuses are displayed on the line below what they affect, slightly smaller, with a "tab" */
+.circumstancialBonus {
+    font-size: 12px;
+    margin-left: 20px; } /*align with the beginning of a text that goes after a .numberfirst*/
+
+/*spells*/
+.spell,
+a.spell {
+	font-style:italic;}
+.spellc,
+a.spellc,
+a.spellc:visited{
+	font-style:italic;
+	color:green;}
+.spelli,
+a.spelli ,
+a.spelli:visited{
+	font-style:italic;
+	color:gray;}

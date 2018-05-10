@@ -1,0 +1,29 @@
+/** Created by Rémi Doutre, 2015-2018. Public domain. **/
+@import url("pfGeneric.css");
+
+/*xp*/
+#xp { 
+    color:#ffffff; /*html-white*/
+    margin-top: -1.5em;
+    text-align: left; }
+a#xp { display: block; }
+
+/*houserules*/
+#houserules {
+    color:#ffffff; /*html-white*/
+    margin-top: -1.5em;
+    text-align: right; }
+a#houserules { display: block; }
+
+/*playersLootValue*/
+table#playersLootValue  {
+    border: 1px #eaebef solid; /*murder-grey*/
+    border-collapse: collapse;
+    margin-bottom: 2rem; 
+    width: 100%; }
+table#playersLootValue th { 
+    background-color:#eaebef; /*murder-grey*/
+    text-align: center; }
+table#playersLootValue td {
+    border: 1px #eaebef solid; /*murder-grey*/
+    text-align: center; }

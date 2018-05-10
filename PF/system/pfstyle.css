@@ -1,0 +1,82 @@
+/** Created by Rémi Doutre, 2015-2016. Public domain. **/
+body {
+	font-size:10pt;
+	font-family:Arial;}
+.header{
+	background-color:rgb(207,226,243);
+	width:100%;
+	font-variant:small-caps;
+	margin-top:6px;
+	margin-bottom:6px;
+	font-size:12pt;
+	font-weight:bold;}
+.headerRight{
+	float:right;
+	text-align:right}
+.title {
+	font-size:12pt;
+	border-top:1px solid rgb(0,0,0);
+	border-bottom:1px solid rgb(0,0,0);
+	clear:both;}
+.emptyitemslot {
+	color:rgb(207,226,243);
+	font-style:italic;}
+.fixref  {
+	background-color:rgb(207,226,243);
+	position:fixed;
+	bottom:10;
+	right:10;}
+.indent {
+	margin-left:20px;}
+.insert {
+	margin-left:40px;}
+.newPage {
+	page-break-before:always}
+.side {
+	float:right;
+	margin-right:20px;
+	font-size:10pt;}
+.small {
+	font-size:8pt;
+	margin-left:20px;}
+.special {
+	background-color:rgb(207,226,243);
+	padding:3px;}
+.specialreference {
+	background-color:pink;
+	padding:3px;}
+.spell {
+	font-style:italic;}
+.spellc {
+	font-style:italic;
+	color:green;}
+.spelli {
+	font-style:italic;
+	color:gray;}
+.xp {
+	font-size:12pt;
+	font-weight:normal;
+	float:right;
+	margin-right:100px;
+	margin-top:10px;}
+a:visited {
+	color:blue;}
+a:visited.spellc {
+	color:green;}
+a:visited.spelli {
+	color:gray;}
+a:hover {
+	font-weight:bold;}
+@media print {
+	.noprint {
+		display:none;}
+}
+.encounter:hover {
+	background-color:#dedede;}
+.social {
+	color:#787878;
+	font-size:9pt;
+	margin-left:15px;}
+.levelup {
+	font-style:italic;
+	font-size:9pt;}

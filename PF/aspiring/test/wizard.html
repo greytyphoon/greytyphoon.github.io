@@ -1,0 +1,592 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grey's Wizard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../system/pfGeneric.css">
+    <link rel="stylesheet" href="../../system/pfCharacter.css">
+	<style>
+		.spelle, a:link.spelle, a:visited.spelle { font-style:italic; color:purple; }
+		.spello, a:link.spello, a:visited.spello { font-style:italic; color:blue; }
+	</style>
+</head>
+<body>
+    <div id="fixref" class="noprint">
+        <a href="http://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
+    </div>
+    
+    <div class="container">
+        <div id="header">
+            <b>Comael Spellfixer, conjurer extraordinaire</b><br>
+            N Medium humanoid
+        </div>
+        
+        <div id="headerInfo" class="row">
+            <dl class="charInfo col-xs-12 col-md-4">
+                <dt>Str</dt>
+                <dd>10</dd>
+
+                <dt>Dex</dt>
+                <dd>14</dd>
+
+                <dt>Con</dt>
+                <dd>14</dd>
+
+                <dt>Int</dt>
+                <dd>22 <span class="listbonuses">17, <abbr title="Racial">2</abbr>, <abbr title="Advancement">1</abbr>, <abbr title="Headband of Vast Intelligence">2</abbr></span></dd>
+
+                <dt>Wis</dt>
+                <dd>12</dd>
+
+                <dt>Cha</dt>
+                <dd>10</dd>
+            </dl>
+            <div class="col-xs-12 col-md-4">
+                <dl id="subheader" class="charInfo">
+                    <dt>Race</dt>
+                    <dd><a href="http://www.d20pfsrd.com/races/core-races/human">Human</a></dd>
+
+                    <dt>Class</dt>
+                    <dd><a href="http://www.d20pfsrd.com/classes/core-classes/wizard">Wizard</a> 5</dd>                    
+                    <dd class="archetype">
+                        School
+                        <a href="http://www.d20pfsrd.com/classes/core-classes/wizard/arcane-schools/paizo-arcane-schools/classic-arcane-schools/conjuration">Conjuration</a>
+                        (<a href="http://www.d20pfsrd.com/classes/core-classes/wizard/arcane-schools/paizo-arcane-schools/classic-arcane-schools/conjuration/teleportation">Teleportation</a>)
+                    </dd>
+                    <dd class="archetype">Opposed Necromancy &amp; Abjuration</dd>
+            </dd>
+                </dl>
+                <dl class="charInfo">
+                    <dt>Traits</dt>
+                    <dd><a href="http://www.d20pfsrd.com/traits/magic-traits/magical-lineage">Magical Lineage</a></dd>
+                    <dd><a href="http://www.d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+                    
+                    <dt>Drawback</dt>
+                    <dd><a href="http://www.d20pfsrd.com/traits/drawbacks/meticulous">Meticulous</a></dd>
+                </dl>
+            </div>
+            <dl class="charInfo col-xs-12 col-md-4">
+                <dt>Deity</dt>
+                <dd>Shellyn</dd>
+
+                <dt>Eyes</dt>
+                <dd>Brown</dd>
+
+                <dt>Hair</dt>
+                <dd>Red</dd>
+
+                <dt>Weight</dt>
+                <dd>144 lbs</dd>
+
+                <dt>Height</dt>
+                <dd>5' 6''</dd>
+
+                <dt>Languages</dt>
+                <dd>Common, Elven, Dwarven, Celestial, Infernal, Sylvan, Draconic, Aquan, Auran, Ignan, Terran, Undercommon</dd>
+            </dl>
+        </div>
+        
+        <!-- title SKILLS & FEATS -->
+        <div class="title">SKILLS &amp; FEATS</div>
+        <div class="container-fluid">
+            <dl id="featsWrapper">
+                <dt>human</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/combat-feats/improved-initiative-combat-final">Improved Initiative</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+                <dt>level 1</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/general-feats/augment-summoning-final">Augment Summoning</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+                <dt>wizard 1</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/general-feats/spell-focus-final">Spell Focus</a>
+                    <span class="listBonuses noprint">bonus</span></dd>
+                <dt>level 3</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/general-feats/combat-casting-final">Combat Casting</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+                <dt>level 5</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/general-feats/spell-penetration-final">Spell Penetration</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+                <dt>wizard 5</dt>
+                <dd><a href="http://www.d20pfsrd.com/classes/core-classes/wizard/arcane-discoveries/arcane-discoveries-paizo/fast-study">Fast Study</a>
+                    <span class="listBonuses noprint">min.5</span></dd>
+                <dt>level 7</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/metamagic-feats/persistent-spell-metamagic">Persistent Spell</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+                <dt>level 9</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/metamagic-feats/dazing-spell-metamagic">Dazing Spell</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+                <dt>wizard 10</dt>
+                <dd><a href="http://www.d20pfsrd.com/classes/core-classes/wizard/arcane-discoveries/arcane-discoveries-paizo/time-stutter-sp">Time Stutter</a>
+                    <span class="listBonuses noprint">min.10</span></dd>
+                <dt>level 11</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/metamagic-feats/quicken-spell-metamagic-final">Quicken Spell</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+                <dt>level 13</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/metamagic-feats/lingering-spell-metamagic">Lingering Spell</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+            </dl>
+            
+            <!-- SKILLS -->
+            <div class="br">
+                <span class="numberFirst">6</span>
+                <a href="http://www.d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
+                <span class="listBonuses">1 wis, 5 ranks, 0 class</span>
+            </div>
+
+            <!--Misc Skills-->
+            <div>
+                <span class="numberFirst">10</span>
+                <a href="http://www.d20pfsrd.com/skills/appraise" class="listBonusBreaker">Appraise</a>
+                <span class="listBonuses">6 int, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">10</span>
+                <a href="http://www.d20pfsrd.com/skills/fly" class="listBonusBreaker">Fly</a>
+                <span class="listBonuses">2 dex, 5 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">14</span>
+                <a href="http://www.d20pfsrd.com/skills/linguistics" class="listBonusBreaker">Linguistics</a>
+                <span class="listBonuses">6 int, 5 ranks, 3 class</span>
+            </div>
+            <div class="br">
+                <span class="numberFirst">14</span>
+                <a href="http://www.d20pfsrd.com/skills/spellcraft" class="listBonusBreaker">Spellcraft</a>
+                <span class="listBonuses">6 int, 5 ranks, 3 class</span>
+            </div>
+
+			<!--Knowledge Skills-->
+            <div>
+                <span class="numberFirst">14</span>
+                <a href="http://www.d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (arcane)</a>
+                <span class="listBonuses">6 int, 5 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">14</span>
+                <a href="http://www.d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (dungeoneering)</a>
+                <span class="listBonuses">6 int, 5 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">10</span>
+                <a href="http://www.d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (engineering)</a>
+                <span class="listBonuses">6 int, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">10</span>
+                <a href="http://www.d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (geography)</a>
+                <span class="listBonuses">6 int, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">10</span>
+                <a href="http://www.d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (history)</a>
+                <span class="listBonuses">6 int, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">10</span>
+                <a href="http://www.d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (local)</a>
+                <span class="listBonuses">6 int, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">12</span>
+                <a href="http://www.d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (nature)</a>
+                <span class="listBonuses">6 int, 3 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">10</span>
+                <a href="http://www.d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (nobility)</a>
+                <span class="listBonuses">6 int, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">14</span>
+                <a href="http://www.d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (planes)</a>
+                <span class="listBonuses">6 int, 5 ranks, 3 class</span>
+            </div>
+            <div class="br">
+                <span class="numberFirst">10</span>
+                <a href="http://www.d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (religion)</a>
+                <span class="listBonuses">6 int, 1 ranks, 3 class</span>
+            </div>
+
+            <div class="noprint">
+				<span class="numberFirst">45</span>
+				<b class="listBonusBreaker">ranks</b>
+				<span class="listBonuses">5 wizard: 2 class, 6 int, 1 human</span>
+			</div>
+			<div class="circumstancialBonus noprint br">
+				Unranked Class Skills:
+                <a href="http://www.d20pfsrd.com/skills/craft">Craft</a>,
+                <a href="http://www.d20pfsrd.com/skills/profession">Profession</a>.
+			</div>
+        </div>
+
+        <!-- title Spells -->
+        <div class="title newPage">SPELLS (CL 5th, 6 int, prepared arcane)</div>
+        <div id="spellsContainer" class="container-fluid">
+            <div id="spellHeader" class="apartee">
+                <div class="pull-xs-right hidden-md-down">
+                    <b>Legend</b>
+                    <ul class="list-unstyled">
+                        <li class="spellc">Conjuration Spells</li>
+                        <li class="spelli">Illusion Spells</li>
+                        <li class="spelle">Evocation Spells</li>
+                        <li class="spello">Opposition Spells</li>
+                    </ul>
+                </div>
+                The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Intelligence modifier.
+                <div class="circumstancialBonus"><abbr title="Spell Focus">+1</abbr> to <span class="spellc">Conjuration</span></div>
+                When you make a <a href="http://www.d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Intelligence modifier.
+                <div class="circumstancialBonus"><abbr title="Combat Casting">+4</abbr> when casting defensively or grappling</div>
+                To affect a creature that has <a href="http://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level <abbr title="Spell Penetration">+2</abbr>) at least equal to the creature's SR.
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-4 col-xl-3">
+                    <div class="subtitle">Magical Lineage</div>
+                    <p><a class="spelle" href="http://www.d20pfsrd.com/magic/all-spells/s/sheet-lightning">sheet lightning</a> (-1)</p>
+                    
+                    <div class="subtitle spellc">Conjuration (summoning) spells</div>
+                    <p>
+                        Summons get <abbr title="Augment Summoning" style="font-variant: small-caps">+4 str &amp; con</abbr>.<br>
+                        Duration is increased by <abbr title="Summoner's Charm, 2 wizard&frac12;">2 rounds</abbr>.
+                    </p>
+                    
+                    <div class="subtitle">
+                        Level 0
+                        <abbr title="4 class, 1 school" class="pull-xs-right">5/day</abbr>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li><a class="spellc" href="http://www.d20pfsrd.com/magic/all-spells/a/acid-splash">acid splash</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/a/arcane-mark">arcane mark</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+                        <li><a class="spelle" href="http://www.d20pfsrd.com/magic/all-spells/f/flare">flare</a>,</li>
+                        <li><a class="spelli" href="http://www.d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
+                        <li><a class="spelle" href="http://www.d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/m/message">message</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/r/read-magic">read magic</a>,</li>
+                        <li><a class="spello" href="http://www.d20pfsrd.com/magic/all-spells/r/resistance">resistance</a>.</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-3">
+                    <div class="subtitle">
+                        Level 1
+                        <abbr title="3 class, 2 int, 1 school" class="pull-xs-right">6/day</abbr>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/c/charm-person">charm person</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/c/crafter-s-fortune">crafter's fortune</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a>,</li>
+                        <li><a class="spellc" href="http://www.d20pfsrd.com/magic/all-spells/g/grease">grease</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/i/identify">identify</a>,</li>
+                        <li><a class="spellc" href="http://www.d20pfsrd.com/magic/all-spells/m/mage-armor">mage armor</a>,</li>
+                        <li><a class="spelle" href="http://www.d20pfsrd.com/magic/all-spells/m/magic-missile">magic missile</a>,</li>
+                        <li><a class="spellc" href="http://www.d20pfsrd.com/magic/all-spells/o/obscuring-mist">obscuring mist</a>,</li>
+                        <li><a class="spello" href="http://www.d20pfsrd.com/magic/all-spells/s/shield">shield</a>,</li>
+                        <li><a class="spelli" href="http://www.d20pfsrd.com/magic/all-spells/s/silent-image">silent image</a>,</li>
+                        <li><a class="spellc" href="http://www.d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster I</a>,</li>
+                        <li><a class="spelli" href="http://www.d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>.</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-3">
+                    <div class="subtitle">
+                        Level 2
+                        <abbr title="2 class, 2 int, 1 school" class="pull-xs-right">5/day</abbr>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li><a class="spelli" href="http://www.d20pfsrd.com/magic/all-spells/b/blur">blur</a>,</li>
+                        <li><a class="spellc" href="http://www.d20pfsrd.com/magic/all-spells/c/create-pit">create pit</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/d/darkvision">darkvision</a>,</li>
+                        <li><a class="spelle" href="http://www.d20pfsrd.com/magic/all-spells/f/flaming-sphere">flaming sphere</a>,</li>
+                        <li><a class="spellc" href="http://www.d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/k/knock">knock</a>,</li>
+                        <li><a class="spelli" href="http://www.d20pfsrd.com/magic/all-spells/i/invisibility">invisibility</a>,</li>
+                        <li><a class="spelli" href="http://www.d20pfsrd.com/magic/all-spells/m/mirror-image">mirror image</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/r/rope-trick">rope trick</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/s/see-invisibility">see invisibility</a>,</li>
+                        <li><a class="spellc" href="http://www.d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster II</a>,</li>
+                        <li class="br"><a class="spellc" href="http://www.d20pfsrd.com/magic/all-spells/w/web">web</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/b/bear-s-endurance">bear's endurance</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/b/bull-s-strength">bull's strength</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/c/cat-s-grace">cat's grace</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/e/eagle-s-splendor">eagle's splendor</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/f/fox-s-cunning">fox's cunning</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/o/owl-s-wisdom">owl's wisdom</a>.</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-3">
+                    <div class="subtitle">
+                        Level 3
+                        <abbr title="1 class, 1 int, 1 school" class="pull-xs-right">3/day</abbr>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li><a class="spello" href="http://www.d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a>,</li>
+                        <li><a class="spelle" href="http://www.d20pfsrd.com/magic/all-spells/f/fireball">fireball</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/f/fly">fly</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/h/haste">haste</a>,</li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/h/hold-person">hold person</a>,</li>
+                        <li><a class="spelle" href="http://www.d20pfsrd.com/magic/all-spells/s/sheet-lightning">sheet lightning</a>,</li>
+                        <li><a class="spellc" href="http://www.d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster III</a>.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- title COMBAT -->
+        <div class="title">COMBAT (2 BAB)</div>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Basics: Statblock and Weapons-->
+                <div class="col-xs-12 col-md-6">
+                    <div><b>Senses</b> Normal</div>
+                    <div class="br"><b>Speed</b> 30 ft.</div>
+
+                    <div>
+                        <span class="numberFirst">9</span>
+                        <b class="listBonusBreaker">Init</b>
+                        <span class="listBonuses">2 dex, <abbr title="Reactionnary">2 trait</abbr>, <abbr title="Improved Initiative">4 feat</abbr>, <abbr title="Dusty Rose Prism Ioun Stone">1 competence</abbr></span>
+                    </div>
+                    <div>
+                        <span class="numberFirst">45</span>
+                        <b class="listBonusBreaker">HP</b>
+                        <span class="listBonuses">5 wizard: 6 class, 2 con; 5 FC</span>
+                    </div>
+                    <div>
+                        <span class="numberFirst">14</span>
+                        <span class="listBonusBreaker"><b>AC</b> touch 13, <a href="http://www.d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 12</span>
+                        <span class="listBonuses">10, 2 dex, 1 armor, 1 deflection</span>
+                    </div>
+                    <div>
+                        <span class="numberFirst">4</span>
+                        <b class="listBonusBreaker">Fort</b>
+                        <span class="listBonuses">2 con, 1 class, <abbr title="Cloak of Resistance">1 resistance</abbr></span>
+                    </div>
+                    <div>
+                        <span class="numberFirst">4</span>
+                        <b class="listBonusBreaker">Ref</b>
+                        <span class="listBonuses">2 dex, 1 class, <abbr title="Cloak of Resistance">1 resistance</abbr></span>
+                    </div>
+                    <div>
+                        <span class="numberFirst">6</span>
+                        <b class="listBonusBreaker">Will</b>
+                        <span class="listBonuses">1 wis, 4 class, <abbr title="Cloak of Resistance">1 resistance</abbr></span>
+                    </div>
+                    <div class="br">
+                        <span class="numberFirst">2</span>
+                        <span class="listBonusBreaker"><b>CMB</b>;	14 <b>CMD</b></span>
+                        <span class="listBonuses">2 bab, 0 str, 2 dex</span>
+                    </div>
+
+                    <!--Dagger-->
+                    <div class="weapon">
+                        <div class="weaponHead">
+                            <div class="pull-xs-right">19x2</div>
+                            <div class="weaponReach">10 ft.</div>
+                            Dagger<sup>PS</sup>
+                        </div>
+                        <span class="listBonusBreaker">+<b>3</b> vs AC</span>
+                        <span class="listBonuses">2 bab, 0 str, 1 mwk</span>
+                        <br>
+                        <b class="listBonusBreaker">1d4</b>
+                        <span class="listBonuses">0 str</span>
+                    </div>
+
+                    <!--Light Crossbow-->
+                    <div class="weapon">
+                        <div class="weaponHead">
+                            <div class="pull-xs-right">19x2</div>
+                            <div class="weaponReach">80 ft.</div>
+                            Light Crossbow<sup>P</sup>
+                        </div>
+                        <span class="listBonusBreaker">+<b>5</b> vs AC</span>
+                        <span class="listBonuses">2 bab, 2 dex, 1 mwk</span>
+                        <br>
+                        <b class="listBonusBreaker">1d8</b>
+                        <span class="listBonuses">0 str</span>
+                        <div class="circumstancialBonus">
+                            Loading a light crossbow is an
+                            <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity">unsafe</a>
+                            <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>.
+                        </div>
+                    </div>
+                </div>
+                <!--end of Basics: Statblock and Weapons-->
+                
+				<div class="col-xs-12 col-md-6 br">
+                    <div class="subtitle">
+                        Pearl of power
+                        <abbr title="1 class" class="pull-xs-right">1/day</abbr>
+                    </div>
+                </div>
+                
+				<div class="col-xs-12 col-md-6 br">
+					<div class="subtitle">
+                        Bonded Object (Sp)
+                        <abbr title="1 class" class="pull-xs-right">1/day</abbr>
+                    </div>
+                    As an unsafe <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, cast any known spell.<br>
+                    The bonded object returns to full HP when you prepare spells.<br>
+                    Casting without bonded object requires concentration 20 + spell level.
+                </div>
+                
+				<div class="col-xs-12 col-md-6 br">
+					<div class="subtitle">
+                        Shift (Su)
+                        <abbr title="3 class, 6 int" class="pull-xs-right">9/day</abbr>
+                    </div>
+                As a safe <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+                use <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/d/dimension-door">dimension door</a>,
+                range <abbr title="5 * 2 wizard&frac12;">10 ft</abbr>.<br>
+                You can't bring anybody, and you cannot take any action afterwards.
+                </div>
+            </div>
+        </div>
+
+        <!-- title EQUIPMENT -->
+        <div class="title newPage">EQUIPMENT</div>
+        <div class="container-fluid">
+			<ul id="magicItemsWrapper">
+				<li class="emptyitemslot">Head</li>
+				<li><!--4000--><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-vast-intelligence">Headband of Vast Intelligence</a> +2 (Fly)</li>
+				<li class="emptyitemslot">Eyes</li>
+				<li><!--1000--><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+				<li class="emptyitemslot">Neck</li>
+				<li class="emptyitemslot">Chest</li>
+				<li class="emptyitemslot">Body</li>
+				<li><!--200--><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/sleeves-of-many-garments">Sleeves of Many Garment</a></li>
+				<li class="emptyitemslot">Hands</li>
+                <li><!--2000--><a href="http://www.d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+                <li><!--0-->Ring, masterwork, bonded object</li>
+				<li class="emptyitemslot">Belt</li>
+				<li class="emptyitemslot">Feet</li>
+			</ul>
+            <!--Weapons-->
+            <div><!--304-->
+				<a href="http://www.d20pfsrd.com/equipment/weapons">Dagger</a>,
+				<span class="listBonusBreaker">cold-iron masterwork</span>
+				<span class="listBonuses noprint">simple light, 1d4, 19x2, PS, 10ft.</span>
+			</div>
+            <div class="br"><!--304-->
+				<a href="http://www.d20pfsrd.com/equipment/weapons">Light Crossbow</a>,
+				<span class="listBonusBreaker">masterwork</span>
+				<span class="listBonuses noprint">simple ranged, 1d8, 19x2, P, 80ft.</span>
+                <div class="circumstancialBonus">20 bolts</div>
+			</div>
+            <!--Armors-->
+            <div class="br"><!--3-->
+				<a href="http://www.d20pfsrd.com/equipment/armor/eastern-armor-and-shields" class="listBonusBreaker">Haramaki</a>
+				<span class="listBonuses noprint">light, 1 armor, - dex, 0 acp, 0% asf</span>
+			</div>
+
+            <!--Misc-->
+			<div><!--1000-->
+                <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a>, lvl1
+            </div>
+			<div><!--500-->
+                <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/ioun-stones/dusty-rose-prism-ioun-stone">Dusty Rose Prism Ioun Stone</a>, cracked<br/>
+            </div>
+			<div><!--35-->
+				<a target="_blank" href="http://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</div>
+			<div><!--15, 5, 1045 for extra spells-->
+				Spellbook &amp; Spell Component Pouch
+			</div>
+            <div>53 <b>GP</b><!--/10500--></div>
+        </div>
+
+        <!-- title NOTES -->
+        <div class="noprint">
+            <div class="title">NOTES</div>
+            <ul id="sources" class="pull-xs-right list-unstyled">
+                <li>
+                    Core Rulebook (2009)
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.d20pfsrd.com/feats/general-feats/augment-summoning-final">Augment Summoning</a></li>
+                        <li><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a></li>
+                        <li><a href="http://www.d20pfsrd.com/feats/general-feats/combat-casting-final">Combat Casting</a></li>
+                        <li><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-vast-intelligence">Headband of Vast Intelligence</a></li>
+                        <li><a href="http://www.d20pfsrd.com/races/core-races/human">Human</a></li>
+                        <li><a href="http://www.d20pfsrd.com/feats/combat-feats/improved-initiative-combat-final">Improved Initiative</a></li>
+                        <li><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/ioun-stones/dusty-rose-prism-ioun-stone">Ioun Stone, Dusty Rose Prism</a></li>
+                        <li><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a></li>
+                        <li><a href="http://www.d20pfsrd.com/feats/metamagic-feats/quicken-spell-metamagic-final">Quicken Spell</a></li>
+                        <li><a href="http://www.d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a></li>
+                        <li><a href="http://www.d20pfsrd.com/feats/general-feats/spell-focus-final">Spell Focus</a></li>
+                        <li><a href="http://www.d20pfsrd.com/feats/general-feats/spell-penetration-final">Spell Penetration</a></li>
+                        <li><a href="http://www.d20pfsrd.com/classes/core-classes/wizard">Wizard</a></li>
+                        <li>Core spells will not be listed.</li>
+                    </ul>
+                </li>
+                <li>
+                    Advanced Player's Guide (2010)
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.d20pfsrd.com/feats/metamagic-feats/dazing-spell-metamagic">Dazing Spell</a></li>
+                        <li><a href="http://www.d20pfsrd.com/feats/metamagic-feats/lingering-spell-metamagic">Lingering Spell</a></li>
+                        <li><a href="http://www.d20pfsrd.com/traits/magic-traits/magical-lineage">Magical Lineage</a></li>
+                        <li><a href="http://www.d20pfsrd.com/feats/metamagic-feats/persistent-spell-metamagic">Persistent Spell</a></li>
+                        <li><a href="http://www.d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></li>
+                        <li><a href="http://www.d20pfsrd.com/classes/core-classes/wizard/arcane-schools/paizo-arcane-schools/classic-arcane-schools/conjuration/teleportation">Teleportation</a></li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/c/crafter-s-fortune">crafter's fortune</a></li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/c/create-pit">create pit</a></li>
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/v/vanish">vanish</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Ultimate Combat (2011)
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.d20pfsrd.com/equipment/armor/haramaki">Haramaki</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Ultimate Magic (2011)
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.d20pfsrd.com/classes/core-classes/wizard/arcane-discoveries/arcane-discoveries-paizo/fast-study">Fast Study</a></li>
+                    </ul>
+                </li>
+                <li>
+                    PCS: Rival Guide (2011)
+                    <ul class="list-unstyled">
+                        <li><a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/s/sheet-lightning">sheet lightning</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Ultimate Equipment (2012)
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/sleeves-of-many-garments">Sleeves of Many Garment</a></li>
+                    </ul>
+                </li>
+                <li>
+                    PPC: People of the River (2014)
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.d20pfsrd.com/classes/core-classes/wizard/arcane-discoveries/arcane-discoveries-paizo/time-stutter-sp">Time Stutter</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="container-fluid">
+                <a href="https://docs.google.com/document/edit?id=1xjPIOH8F8a0l74BdDF7Q23nCfZ-YX68Xr6JmmtznMw4&pli=1">Guide used</a>,
+                <a href="http://www.d20pfsrd.com/classes/core-classes/wizard/arcane-discoveries">Arcane Discoveries</a>,
+                <a href="http://www.d20pfsrd.com/feats/metamagic-feats">Metamagic feats</a><br/>
+                <br/>
+                <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/tattoo-caster-s">Caster's Tattoo</a> 6000<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/rings/ring-of-wizardry">Ring of Wizardry</a> 20 000<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/robe-of-runes">Robe of Runes</a> 44 000<br/>
+                <br/>
+                So many good things are banned in PFS!<br/>
+                Evolved Summon Monster,<br/>
+                Scribe Scroll,<br/>
+                Craft Wondrous Item,<br/>
+                Sacred Geometry...<br/>
+                <br/>
+                <a href="http://www.d20pfsrd.com/magic/all-spells/s/summon-monster">Summon Monster</a><br/>
+                The stats are all over there.<br/>
+                <b>Level 1:</b> Riding Dog, Fire Beetle<br/>
+                <b>Level 2:</b> Horse, Wolf, Small Elemental<br/>
+                <b>Level 3:</b> Leopard, Cheetah, Wolverine, Dire Bat, Dretch<br/>
+                <b>Level 4:</b> Dire Apes, Rhinos, Dire Wolves, Mephits<br/>
+                <b>Level 5:</b> Chain Devil, Bearded Devil, Bralani Azata, Babau Demon<br/>
+                <b>Level 6:</b> Dire Tiger, Succubus Demon, Shadow Demon, Lillend Azata, Erinyes Devil<br/>
+            </div>
+        </div>
+	</div>
+</body>
+</html>

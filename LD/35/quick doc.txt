@@ -1,0 +1,47 @@
+getMansion()
+allRoomsConnected(mansion)
+fadeIn(elementId, animationDoneEvent)
+setupStart()
+setupGame()
+setupEnd()
+
+MANSION
+.player (object player)
+.rooms[] (object room)
+.doors[] (object room)
+
+PLAYER
+.currentRoomId (int)
+.previousRoomId (int)
+.finalRoomId (int) // might be -1
+.previousDirection (int) // 0 up, 1 right, 2 down, 3 left
+.hintsFound[] (object hint)
+
+HINT
+.shortDecription (string)
+.longDecription (string)
+
+DOOR
+.isOpen (bool)
+.roomStartId (int)
+.roomEndId (int)
+.openFunction (func<string>)
+.closeFunction (func<string>)
+
+ROOM
+.id (int)
+.visited (bool)
+.hint (object hint) //might be false
+.doorNorthId (int) //might be -1
+.doorSouthId (int) //might be -1
+.doorWestId (int) //might be -1
+.doorEastId (int) //might be -1
+.description (string)
+.doorNorthOpen (string)
+.doorNorthClosed (string)
+.doorSouthOpen (string)
+.doorSouthClosed (string)
+.doorWestOpen (string)
+.doorWestClosed (string)
+.doorEastOpen (string)
+.doorEastClosed (string)

@@ -1,0 +1,597 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grey's Swashbuckler</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link rel="stylesheet" href="../system/pfGeneric.css">
+    <link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.panache { color:blue; }
+        #listDeeds { padding-left: 1.5rem; font-size: 0.8rem; }
+	</style>
+</head>
+<body>
+    <div id="fixref" class="noprint">
+        <a href="http://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
+	</div>
+
+    <div class="container">
+        <div id="header">
+            <b>Iuceppe Aleczander, the fugitive corsair</b><br>
+            CG Medium humanoid
+            <div id="xp">41,933 / 51,000</div>
+        </div>
+
+        <div id="headerInfo" class="row">
+            <dl class="charInfo col-xs-12 col-md-4">
+                <dt>Str</dt>
+                <dd>10</dd>
+
+                <dt>Dex</dt>
+                <dd>21 <span class="listBonuses">16, <abbr title="Racial">2</abbr>, <abbr title="Advancement">2</abbr>, <abbr title="Belt of Incredible Dexterity">1</abbr></span></dd>
+
+                <dt>Con</dt>
+                <dd>13</dd>
+
+                <dt>Int</dt>
+                <dd>12</dd>
+
+                <dt>Wis</dt>
+                <dd>10</dd>
+
+                <dt>Cha</dt>
+                <dd>16</dd>
+            </dl>
+            <div class="col-xs-12 col-md-4">
+                <dl id="subheader" class="charInfo">
+                    <dt>Race</dt>
+                    <dd><a href="http://www.d20pfsrd.com/races/core-races/human">Human</a> (Varisian)</dd>
+
+                    <dt>Class</dt>
+                    <dd><a href="http://www.d20pfsrd.com/classes/hybrid-classes/swashbuckler">Swashbuckler</a> 8</dd>
+                </dl>
+                <dl class="charInfo">
+                    <dt>Traits</dt>
+                    <dd><a href="http://www.d20pfsrd.com/traits/faith-traits/fate-s-favored">Fate's favored</a></dd>
+                    <dd><a href="http://www.d20pfsrd.com/traits/campaign-traits/legacy-of-fire/finding-haleen">Finding your kin</a></dd>
+                    <dd><a href="http://www.d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+
+                    <dt>Drawback</dt>
+                    <dd><a href="http://www.d20pfsrd.com/traits/drawbacks/unlearned">Unlearned</a></dd>
+                </dl>
+            </div>
+            <dl class="charInfo col-xs-12 col-md-4">
+                <dt>Deity</dt>
+                <dd>Desna</dd>
+
+                <dt>Eyes</dt>
+                <dd>Blue</dd>
+
+                <dt>Hair</dt>
+                <dd>Brown</dd>
+
+                <dt>Weight</dt>
+                <dd>178 lbs</dd>
+
+                <dt>Height</dt>
+                <dd>5' 9''</dd>
+
+                <dt>Languages</dt>
+                <dd>Taldane(Common), Varisian, Shoanti (basic concepts only)</dd>
+            </dl>
+        </div>
+
+        <!-- title SKILLS & FEATS -->
+        <div class="title">SKILLS &amp; FEATS</div>
+        <div class="container-fluid">
+            <dl id="featsWrapper">
+                <dt>human</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/combat-feats/weapon-focus-combat---final">Weapon Focus</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+                <dt>level 1</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/combat-feats/slashing-grace-combat">Slashing Grace</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+                <dt>swash 1</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/combat-feats/weapon-finesse-combat---final">Weapon Finesse</a>
+                    <span class="listBonuses noprint">bonus</span></dd>
+                <dt>level 3</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+                <dt>swash 4</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/combat-feats/weapon-specialization-combat---final">Weapon Specialization</a>
+                    <span class="listBonuses noprint">min.4</span></dd>
+                <dt>level 5</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/combat-feats/battle-cry-combat">Battle Cry</a>
+                    <span class="listBonuses noprint">min.5</span></dd>
+                <dt>swash 5</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/combat-feats/improved-critical-combat-">Improved Critical</a>
+                    <span class="listBonuses noprint">bonus</span></dd>
+                <dt>level 7</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/racial-feats/surge-of-success-human">Surge of Success</a>
+                    <span class="listBonuses noprint">min.1</span></dd>
+                <dt>swash 8</dt>
+                <dd><a href="http://www.d20pfsrd.com/feats/combat-feats/greater-weapon-focus-combat---final">Greater Weapon Focus</a>
+                    <span class="listBonuses noprint">min.8</span></dd>
+            </dl>
+
+            <!-- SKILLS -->
+            <div class="br">
+                <span class="numberFirst">11</span>
+                <a href="http://www.d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
+                <span class="listBonuses">0 wis, 8 ranks, 3 class</span>
+            </div>
+
+            <!--Social Skills-->
+            <div>
+                <span class="numberFirst">7</span>
+                <a href="http://www.d20pfsrd.com/skills/bluff" class="listBonusBreaker">Bluff</a>
+                <span class="listBonuses">3 cha, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">14</span>
+                <a href="http://www.d20pfsrd.com/skills/diplomacy" class="listBonusBreaker">Diplomacy</a>
+                <span class="listBonuses">3 cha, 8 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">17</span>
+                <a href="http://www.d20pfsrd.com/skills/intimidate" class="listBonusBreaker">Intimidate</a>
+                <span class="listBonuses">3 cha, 8 ranks, 3 class, <abbr title="Custom Item: Pirate Garb">3 competence</abbr></span>
+            </div>
+            <div class="br">
+                <span class="numberFirst">11</span>
+                <a href="http://www.d20pfsrd.com/skills/sense-motive" class="listBonusBreaker">Sense Motive</a>
+                <span class="listBonuses">0 wis, 8 ranks, 3 class</span>
+            </div>
+
+            <!--Misc Skills-->
+            <div>
+                <span class="numberFirst">*16</span>
+                <a href="http://www.d20pfsrd.com/skills/acrobatics" class="listBonusBreaker">Acrobatics</a>
+                <span class="listBonuses">5 dex, 8 ranks, 3 class</span>
+                <div class="circumstancialBonus panache"><abbr title="Swashbuckler’s Grace">No penalty</abbr> for full-speed while avoiding AoOs</div>
+            </div>
+            <div>
+                <span class="numberFirst">*4</span>
+                <a href="http://www.d20pfsrd.com/skills/climb" class="listBonusBreaker">Climb</a>
+                <span class="listBonuses">0 str, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">*9</span>
+                <a href="http://www.d20pfsrd.com/skills/escape-artist" class="listBonusBreaker">Escape Artist</a>
+                <span class="listBonuses">5 dex, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">*9</span>
+                <a href="http://www.d20pfsrd.com/skills/ride" class="listBonusBreaker">Ride</a>
+                <span class="listBonuses">5 dex, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">9</span>
+                <a href="http://www.d20pfsrd.com/skills/sleight-of-hand" class="listBonusBreaker">Sleight of Hand</a>
+                <span class="listBonuses">5 dex, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">*4</span>
+                <a href="http://www.d20pfsrd.com/skills/swim" class="listBonusBreaker">Swim</a>
+                <span class="listBonuses">0 str, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">11</span>
+                <a href="http://www.d20pfsrd.com/skills/use-magic-device class="listBonusBreaker">Use Magic Device</a>
+                <span class="listBonuses">3 cha, 8 ranks, 0 class</span>
+            </div>
+            <div class="circumstancialBonus br">* <abbr title="Derring-do">+1d6 exploding</abbr> when using Derring-do</div>
+
+            <!--Subskills-->
+            <div>
+                <span class="numberFirst">5</span>
+                <a href="http://www.d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (local)</a>
+                <span class="listBonuses">1 cha, 1 ranks, 3 class</span>
+            </div>
+            <div>
+                <span class="numberFirst">4</span>
+                <a href="http://www.d20pfsrd.com/skills/profession" class="listBonusBreaker">Profession (sailor)</a>
+                <span class="listBonuses">0 wis, 1 ranks, 3 class</span>
+            </div>
+            <div class="circumstancialBonus br">Unlearned: can never attempt untrained Knowledge checks</div>
+
+            <div class="noprint">
+				<span class="numberFirst">56</span>
+				<b class="listBonusBreaker">ranks</b>
+				<span class="listBonuses">8 swashbuckler: 4 class, 1 int, 1 human, <abbr title="Finding your kin">1 trait</abbr></span>
+			</div>
+			<div class="circumstancialBonus noprint br">
+				Unranked Class Skills:
+                <a href="http://www.d20pfsrd.com/skills/craft">Craft</a>,
+                <a href="http://www.d20pfsrd.com/skills/knowledge">Knowledge</a> (Nobility),
+                <a href="http://www.d20pfsrd.com/skills/perform">Perform</a>.
+			</div>
+        </div>
+
+        <!-- title COMBAT -->
+        <div class="title newPage">COMBAT (8 BAB)</div>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Basics: Statblock and Weapons-->
+                <div class="col-xs-12 col-md-6">
+                    <div><b>Senses</b> Normal</div>
+                    <div class="br"><b>Speed</b> 30 ft.</div>
+
+                    <div>
+                        <span class="numberFirst">9</span>
+                        <b class="listBonusBreaker">Init</b>
+                        <span class="listBonuses">5 dex, <abbr title="Reactionnary">2 trait</abbr>, <abbr title="Swashbuckler Initiative" class="panache">2</abbr></span>
+                    </div>
+                    <div>
+                        <span class="numberFirst">96</span>
+                        <b class="listBonusBreaker">HP</b>
+                        <span class="listBonuses">8 swashbuckler: 10 class, 1 con, <abbr title="Finding your kin">1 trait</abbr></span>
+                    </div>
+                    <div>
+                        <span class="numberFirst">25</span>
+                        <span class="listBonusBreaker"><b>AC</b> touch 18, <a href="http://www.d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 18</span>
+                        <span class="listBonuses">10, 5 dex, 3 armor, <abbr title="Bracers of Continuous shield">4 shield</abbr>, <abbr title="Nimble">2 dodge</abbr>, <abbr title="Ring of Protection">1 deflection</abbr></span>
+                    </div>
+                    <div>
+                        <span class="numberFirst">5</span>
+                        <b class="listBonusBreaker">Fort</b>
+                        <span class="listBonuses">1 con, 2 class, <abbr title="Cloak of Resistance">2 resistance</abbr></span>
+                    </div>
+                    <div>
+                        <span class="numberFirst">13</span>
+                        <b class="listBonusBreaker">Ref</b>
+                        <span class="listBonuses">5 dex, 6 class, <abbr title="Cloak of Resistance">2 resistance</abbr></span>
+                    </div>
+                    <div>
+                        <span class="numberFirst">4</span>
+                        <b class="listBonusBreaker">Will</b>
+                        <span class="listBonuses">0 wis, 2 class, <abbr title="Cloak of Resistance">2 resistance</abbr></span>
+                    </div>
+                    <div class="circumstancialBonus">
+                        <abbr title="Charmed Life, 3 cha">+3</abbr> when using Charmed Life
+                    </div>
+                    <div class="br">
+                        <span class="numberFirst">8</span>
+                        <span class="listBonusBreaker"><b>CMB</b>;	13 <b>CMD</b></span>
+                        <span class="listBonuses">8 bab, 0 str, 5 dex</span>
+                    </div>
+
+                    <!--Cutlass-->
+                    <div class="weapon">
+                        <div class="weaponHead">
+                            <abbr title="Swashbuckler Weapon Training" class="pull-xs-right">15x2</abbr>
+                            Cutlass<sup>S</sup>
+                        </div>
+                        <span class="listBonusBreaker">+<b>19</b> vs AC</span>
+                        <span class="listBonuses">8 bab, <abbr title="Swashbuckler Finesse">5 dex</abbr>, 1 enh, 2 w.focus, 1 w.training, <abbr title="Divine Favor, Fate's Favored">2 luck</abbr></span>
+                        <br>
+                        <b class="listBonusBreaker">1d6+19</b>
+                        <span class="listBonuses"><abbr title="Slashing Grace">5 dex</abbr>, 1 enh, 2 w.spec, 1 w.training, <abbr title="Divine Favor, Fate's Favored">2 luck</abbr>, <abbr title="Precise Strike" class="panache">8 precision</abbr></span>
+                        <div class="apartee hidden-sm-down">
+                            <table style="width:100%; font-size:.85em;">
+                                <tr><td>Full Attack</td> <td><b>+19</b>/<b>+14</b></td> <td>1d6+<b>19</b></td> <td>2d6+<b>30</b></td></tr>
+                                <tr><td>Riposte</td>     <td><b>+23</b>-size</td>       <td>1d6+<b>23</b></td> <td>2d6+<b>38</b></td></tr>
+                                <tr><td>Cold-Iron</td>   <td><b>+19</b>/<b>+14</b></td> <td>1d6+<b>18</b></td> <td>2d6+<b>28</b></td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!--Dagger-->
+                    <div class="weapon">
+                        <div class="weaponHead">
+                            <abbr title="Swashbuckler Weapon Training" class="pull-xs-right">17x2</abbr>
+                            Dagger<sup>PS</sup>
+                        </div>
+                        <span class="listBonusBreaker">+<b>16</b> vs AC</span>
+                        <span class="listBonuses">8 bab, <abbr title="Swashbuckler Finesse">5 dex</abbr>, 1 w.training, <abbr title="Divine Favor, Fate's Favored">2 luck</abbr></span>
+                        <br>
+                        <b class="listBonusBreaker">1d4+11</b>
+                        <span class="listBonuses">0 str, 1 w.training, <abbr title="Divine Favor, Fate's Favored">2 luck</abbr>, <abbr title="Precise Strike" class="panache">8 precision</abbr></span>
+                    </div>
+
+                    <!--Longbow-->
+                    <div class="weapon">
+                        <div class="weaponHead">
+                            <div class="pull-xs-right">20x3</div>
+                            <div class="weaponReach">100 ft.</div>
+                            Longbow<sup>P</sup>
+                        </div>
+                        <span class="listBonusBreaker">+<b>15</b> vs AC</span>
+                        <span class="listBonuses">8 bab, 5 dex, <abbr title="Divine Favor, Fate's Favored">2 luck</abbr></span>
+                        <br>
+                        <b class="listBonusBreaker">1d8+2</b>
+                        <span class="listBonuses">0 str, <abbr title="Divine Favor, Fate's Favored">2 luck</abbr></span>
+                    </div>
+
+					<div class="subtitle">
+                        Boots of <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/h/haste">haste</a>
+                        <abbr title="2 item" class="pull-xs-right">2/day</abbr>
+                    </div>
+					<div class="subtitle">
+                        Battle Cry
+                        <abbr title="3 cha" class="pull-xs-right">3/day</abbr>
+                    </div>
+					<div class="subtitle">
+                        Surge of Success
+                    </div>
+                </div>
+                <!--end of Basics: Statblock and Weapons-->
+
+				<div class="col-xs-12 col-md-6 br">
+					<div class="subtitle">
+                        Charmed Life (Ex)
+                        <abbr title="3 class" class="pull-xs-right">3/day</abbr>
+                    </div>
+                    As a safe <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> before making a saving throw, add <abbr title="3 cha">+3</abbr>.
+                </div>
+
+                <div class="col-xs-12 col-md-6 br">
+					<div class="subtitle">
+                        Swashbuckler's Flair (Blue Scarf)
+                        <abbr title="1 item" class="pull-xs-right">1/day</abbr>
+                    </div>
+					<div class="subtitle">
+                        Plume of Panache
+                        <abbr title="1 item" class="pull-xs-right">1/day</abbr>
+                    </div>
+                    <div class="subtitle">
+                        Panache
+                        <abbr title="3 cha, 2 fc" class="pull-xs-right">5 Panache</abbr>
+                    </div>
+                    <dl id="listDeeds">
+                        <dt>Opportune Parry and Riposte</dt>
+                        <dd>For 1 panache, as an <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity">attack of opportunity</a>
+                            when attacked in melee, make an attack roll.<br>
+                            If your roll is higher, negate the attack, <span class="panache">and use an <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> to attack back.</span> <br/>
+                            -2 penalty for Large/Huge/Gargantuan/Colossal</dd>
+                        <dt>Derring-do</dt>
+                        <dd>For 1 panache, add 1d6 (exploding) to Acrobatics, Climb, Escape Artist, Fly, Ride, or Swim.</dd>
+                        <dt>Dodging Panache</dt>
+                        <dd>For 1 panache, as a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a>
+                            when attacked in melee, move 5 ft and gain <abbr title="3 cha">3 dodge</abbr> AC.</dd>
+                        <dt>Kip-up</dt>
+                        <dd>For 1 panache, as a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+                            get up from prone without AoO.</dd>
+                        <dt>Precise Strike</dt>
+                        <dd>For 1 panache, as an <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+                            double your precision bonus on one attack.</dd>
+                        <dt>Targeted Strike</dt>
+                        <dd>For 1 panache, as an <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Full-Round-Actions">full-round action</a>,
+                            make 1 attack that also staggers/confuses/knocks prone/drops an item.</dd>
+                        <dt>Swordmaster's Flair (Blue Scarf)</dt>
+                        <dd>For 1 panache, as a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+                            increase reach by 5 ft for 1 minute.</dd>
+                        <dt class="panache">Menacing Swordplay</dt>
+                        <dd class="panache">As a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, demoralize when you hit</dd>
+                        <dt class="panache">Kip-Up</dt>
+                        <dd class="panache">As a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>, get up from prone without AoO</dd>
+                        <dt class="panache">Superior Feint</dt>
+                        <dd class="panache">As a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, make a creature flat-footed for 1 round</dd>
+                    </dl>
+                    Gain 1 panache when you confirm a crit, or kill.<br>
+                    (Except unaware, helpless, or low-level creatures)
+                </div>
+            </div>
+        </div>
+
+        <!-- title EQUIPMENT -->
+        <div class="title">EQUIPMENT</div>
+        <div class="container-fluid">
+            <ul id="mundaneItemsWrapper">
+                <li>Bedroll</li>
+                <li>Bell</li>
+                <li>Blanket</li>
+                <li>Chalk</li>
+                <li>Crow bar</li>
+                <li>Fishhook (2)</li>
+                <li>Flint &amp; steel</li>
+                <li>Flour (5)</li>
+                <li>Grappling hook</li>
+                <li>Hammock</li>
+                <li>Ink &amp; pen</li>
+                <li>Mess kit</li>
+                <li>Mirror</li>
+                <li>Pot, Iron</li>
+                <li>Rope (50ft)</li>
+                <li>Sewing Needle</li>
+                <li>Shovel</li>
+                <li>String (50ft)</li>
+                <li>Signal whistle</li>
+                <li>Soap</li>
+                <li>Teapot</li>
+                <li>Waterskin</li>
+                <li class="br">Waffle Iron</li>
+                <li>Rations  x10<li/>
+                <li><a href="http://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/foodAndDrink.html">Wandermeal</a> x52</li>
+            </ul>
+			<ul id="magicItemsWrapper">
+				<li>Pirate Hat, masterwork &amp;&amp; <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/plume-of-panache">Plume of Panache</a>, Swashbuckler-only</li>
+				<li class="emptyitemslot">Headband</li>
+				<li class="emptyitemslot">Eyes</li>
+				<li><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +2</li>
+				<li>Amulet of Continuous <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/d/divine-favor">divine favor</a>, Swashbuckler-only</li>
+				<li class="emptyitemslot">Chest</li>
+				<li>Pirate Garb of <a href="http://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#cloak-of-elvenkind">+3 Intimidate</a>, Swashbuckler-only</li>
+				<li>Bracers of Continuous <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/s/shield">shield</a>, Swashbuckler-only</li>
+				<li class="emptyitemslot">Hands</li>
+				<li><a href="http://www.d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+				<li class="emptyitemslot">Ring</li>
+				<li><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +1, Swashbuckler-only</li>
+				<li class="br">Boots of <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/h/haste">haste</a>, 2/day, CL 4th, Swashbuckler-only</li>
+
+                <li><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack">Handy Haversack</a>, Swashbuckler-only</li>
+                <li>
+                    <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/swordmaster-s-flair">Swordmaster's flair</a>, Blue Scarf, Swashbuckler-only<br>
+                    <div class="circumstancialBonus">
+                        with <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/g/guidance">guidance</a> (Command Word: "Desna"), Swashbuckler-only
+                    </div>
+                </li>
+			</ul>
+            <!--Weapons-->
+            <div>
+				<a href="http://www.d20pfsrd.com/equipment---final/weapons">Cutlass</a>,
+				<span class="listBonusBreaker">+1 <a href="http://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/answering">Answering</a></span>
+				<span class="listBonuses noprint">martial one-handed, 1d6, 18x2, S.</span>
+			</div>
+            <div>
+				<a href="http://www.d20pfsrd.com/equipment---final/weapons">Cutlass</a>,
+				<span class="listBonusBreaker">cold-iron masterwork</span>
+				<span class="listBonuses noprint">martial one-handed, 1d6, 18x2, S.</span>
+			</div>
+            <div><!--(ammo: 1 gp for 20)-->
+                <a class="listBonusBreaker" href="http://www.d20pfsrd.com/equipment---final/weapons">Longbow</a>
+				<span class="listBonuses noprint">martial ranged, 1d8, 20x3, P, 100ft.</span>
+                <div class="circumstancialBonus">37 arrows</div>
+			</div>
+            <div>
+				<a href="http://www.d20pfsrd.com/equipment---final/weapons">Dagger</a>,
+				<span class="listBonusBreaker">cold-iron +1</span>
+				<span class="listBonuses noprint">simple light, 1d4, 19x2, PS, 10ft.</span>
+			</div>
+            <div>
+				<a href="http://www.d20pfsrd.com/equipment---final/weapons">Dagger</a>,
+				<span class="listBonusBreaker">cold-iron</span>
+				<span class="listBonuses noprint">simple light, 1d4, 19x2, PS, 10ft.</span>
+			</div>
+            <div class="br">
+				2x <a class="listBonusBreaker" href="http://www.d20pfsrd.com/equipment---final/weapons">Dagger</a>
+				<span class="listBonuses noprint">simple light, 1d4, 19x2, PS, 10ft.</span>
+            </div>
+            <!--Armors-->
+            <div class="br">
+				<a href="http://www.d20pfsrd.com/equipment---final/armor">Studded Leather Armor</a>,
+                <span class="listBonusBreaker">masterwork</span>
+                <span class="listBonuses noprint">light, 3 armor, 5 dex, 1 acp, 15%asf</span>
+			</div>
+        </div>
+
+        <div class="container-fluid br">
+            <table class="pull-xs-right">
+                <tr>
+                    <th>15</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>9,</th>
+                    <th>0</th>
+                    <th>0</th>
+                    <th>total (gp value)</th>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>greater gems</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>gems</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>platinum pieces</td>
+                </tr>
+                <tr>
+                    <td>&nbsp</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>gold pieces</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                    <td>silver pieces (2 pouches)</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>copper pieces (barrel)</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>masterwork longsword (2)</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>Longsword, +1 flaming burst</td>
+                </tr>
+            </table>
+            Mythril Waffle Iron<br/>
+            <br/>
+            4x Potion of <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds">cure moderate wounds</a><br/>
+            1x Potion of <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a><br/>
+            <br/>
+            1x Scroll of <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/h/hold-person">hold person</a><br/>
+            1x Scroll of <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/l/locate-object">locate object</a><br/>
+            1x Scroll of <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/r/ray-of-enfeeblement">ray of enfeeblement</a>
+        </div>
+
+        <!-- title NOTES -->
+        <div class="noprint">
+            <div class="title">NOTES</div>
+                <a href="https://docs.google.com/document/d/1S6mCgF8JFOOepuB4v6yEsAZRNAqZ2H5i6RO-AqeEP_8/edit?pli=1">Guide used</a>,
+                <a href="http://www.d20pfsrd.com/feats/combat-feats">Combat Feats</a>,
+                <a href="http://www.d20pfsrd.com/feats/combat-feats/critical-feats">Critical Feats</a>.<br/>
+                Teamwork Feats? <a href="http://www.d20pfsrd.com/feats/combat-feats/outflank-combat-teamwork">Outflank</a>.<br/>
+                <br/>
+                Haste gives +1 to hit, +1 AC, +1 Reflex, x2 Speed, and an extra attack in full round action.<br/>
+                <br/>
+                Possible wands<br/>
+                <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/l/lock-gaze">lock gaze</a> 750<br/>
+                <br/>
+                Magic Weapon Special Abilities:<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/fortuitous">Fortuitous</a> attack twice on opportunity<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/flamboyant">Flamboyant</a> +1 maxPanache, use panache to reroll nat 1<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/cruel">Cruel</a> adds sickened on top of shaken<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/dueling">Dueling</a> +4 init, +2 to/against disarm & feint<br/>
+                <br/>
+                <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/swordmaster-s-flair">Swordmaster's flair (White Lace Kerchief)</a>, 2 500<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-alluring-charisma">Headband of Alluring Charisma +2</a>, 4 000<br/>
+                Goggles of <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a> (command word: "It's a trap"), 900<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/baldric-bane">Bane Baldric</a> 10 000<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cape-of-feinting">Cape of Feinting</a> 14 000<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/gloves-of-dueling">Gloves of Dueling</a> 15 000<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/stone-of-good-luck-luckstone">Stone of Good Luck</a> 20 000<br/>
+                Ring of Continuous <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/h/heroism">heroism</a>, 24 000<br/>
+                <a href="http://www.d20pfsrd.com/magic-items/rings/ring-of-blinking">Ring of blinking</a> 27 000<br/>
+                Amulet of Continuous <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/d/divine-power">divine power</a>, 224 000+
+            </div>
+        </div>
+	</div>
+</body>
+</html>

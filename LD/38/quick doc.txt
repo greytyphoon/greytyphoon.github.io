@@ -1,0 +1,32 @@
+
+TILE
+----
+.number (int)
+.costToCapture (int)
+.seenByPlayerRed (bool)
+.owner (int)
+.name (string)
+.description (string)
+.capture (function (
+    int attacker, 
+    int advancePoints, 
+    int troop) 
+    => bool)
+
+
+TROOP
+-----
+0 -> Archers
+1 -> Knights
+2 -> Lancers
+3 -> Assassins
+4 -> Monks
+
+
+PLAYER
+------
+0 -> Unclaimed
+1 -> Red
+2 -> Blue
+3 -> Yellow
+4 -> Green

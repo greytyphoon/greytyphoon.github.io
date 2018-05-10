@@ -1,0 +1,70 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// dungeon/map_style.js
+//
+// copyright (c) 2011-2017 drow <drow@bin.sh>
+// all rights reserved.
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// update image
+
+  function update_img (field) {
+    var query = {
+      'cache_id':       $('in-cache_id').value,
+      'map_style':      $('in-map_style').getValue(),
+      'grid':           $('in-grid').getValue()
+    };
+    var opts = { 'method': 'get', 'parameters': query,
+      'onSuccess': function (req) { update_img_src(req); },
+      'onFailure': function (req) { update_img_error(req.statusText); },
+      'onException': function (req,err) { update_img_error('System Error'); }
+    };
+    new Ajax.Request('/fantasy/dungeon/lib/image.cgi',opts);
+    $('working').show(); $('variants').hide();
+    return true;
+  }
+  function update_img_src (req) {
+    if (req.responseJSON) {
+      update = req.responseJSON;
+    } else if (req.responseText) {
+      update = req.responseText.evalJSON();
+    } else {
+      return update_img_error('No response');
+    }
+    $('map_img').src = update.uri;
+    $('working').hide(); $('variants').show();
+  }
+  function update_img_error (text) {
+    alert(text); $('working').hide(); $('variants').show();
+  }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// download file
+
+  function download_file (form) {
+    var query = {
+      'cache_id': $('in-cache_id').value,
+    };
+    var opts = { 'method': 'get', 'parameters': query,
+      'onSuccess': function (req) { download_file_src(req); },
+      'onFailure': function (req) { download_file_error(req.statusText); },
+      'onException': function (req,err) { download_file_error('System Error'); }
+    };
+    new Ajax.Request(form.action,opts);
+    $('working').show(); $('variants').hide();
+  }
+  function download_file_src (req) {
+    if (req.responseJSON) {
+      response = req.responseJSON;
+    } else if (req.responseText) {
+      response = req.responseText.evalJSON();
+    } else {
+      return download_file_error('No response');
+    }
+    window.location = response.uri;
+    $('working').hide(); $('variants').show();
+  }
+  function download_file_error (text) {
+    alert(text); $('working').hide(); $('variants').show();
+  }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

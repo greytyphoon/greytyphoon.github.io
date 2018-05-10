@@ -1,0 +1,38 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* dungeon/style.css
+ *
+ * copyright (c) 2006-2014 drow <drow@bin.sh>
+ * all rights reserved.
+*/
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* dungeon map */
+
+table.map { margin: 2ex auto; border: none;
+  border-left: 1px solid; border-top: 1px solid; border-color: #333333; }
+table.map td.cell { margin: 0px; padding: 0px;
+  border-right: 1px solid; border-bottom: 1px solid; border-color: #ccccff;
+  text-align: center; vertical-align: middle;
+  font-family: Helvetica, Geneva, sans-serif; font-size: 9px; }
+table.map td.been { background: #deffde; }
+table.map td.cell a { text-decoration: none; }
+table.map td.fill { border-color: #333333; background: #000000; }
+
+p.map { text-align: center; }
+img { border: none; }
+p.legend { text-align: center; }
+p.legend span { margin: 0px 0.5em; white-space: nowrap; }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* variants */
+
+div.variants { margin: 2ex 10%; margin-top: 4ex; border: 1px solid;
+  border-color: #999999; background: #dedede; text-align: center; }
+div.variants div { margin: 2ex 0px; }
+div.variants b { margin: 0px 0.5em; }
+div.variants form { display: inline; margin: 0px 0.5em; }
+div.variants input { margin: 0px 0.5em; }
+div.variants select { margin: 0px 0.5em; }
+div.working { text-align: center; font-size: 150%; }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */

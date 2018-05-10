@@ -1,0 +1,16 @@
+/* latin */
+@font-face {
+  font-family: 'Asul';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Asul Regular'), local('Asul-Regular'), url(http://fonts.gstatic.com/s/asul/v7/z5y4FlQ1uiDBSZlyfABIIA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Asul';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Asul Bold'), local('Asul-Bold'), url(http://fonts.gstatic.com/s/asul/v7/0tMuJ6TvjkBagvg1EX5MMQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}

@@ -1,0 +1,49 @@
+The Stealth Campaign
+
+So I DM this Pathfinder game with two players. None of us had ever played a Stealth campaign, and thus the party was born:
+
+- Samari, a rogue halfling, fervent of Desna. Her player is very anti-optimisation: as such, Samari is a melting-pot of interesting and in-character abilities, but is largely unable to hold her own in combat. As the GM, I knew that player (she's kind of my girlfriend), and I knew that it was up to me to gear her up so she'd be up to par. Samari is light-hearted and creative, and tends to roll skill checks in combat rather than attack rolls.
+
+- Shalaya, a human inquisitor with the personnality to match. She's the most likely to be seen shaking her head disapprovingly, very Desna-fervent, and yet is prompt at declaring that this monster there needs to die right now. Shalaya is built to be as sneaky as an inquisitor can, and prefers bows (which implies that the rogue can never actually flank).
+
+- As the DM, I'm fairly lenient on the rules. As long as it doesn't break anything, it's fine. Sure, take a Weapon Proficiency as a trait, why not? I believe it makes games more interesting and unique.
+
+So the party accepts a quest from a Noble Shaïtan (earth genie) to infiltrate a remote mansion, where the Shaitan's proeminent political opponent (an Ifreet) seems to be massing forces, probably in hopes of a land-grab in the material plane. They need to fool those plans, but the Shaïtan's name must not be associated with it, politics and all.
+
+So they show up to the mansion and start exploring it, slaughtering everything evil in it. It seems to be teeming with undeads and traps, which are dealt with by Shalaya and Samari respectively. They killed the five ghouls that were guarding the back door, by triggering and then dodging a giant scythe trap and letting it rip through the undeads. They then hid the ghoulish remains in the kitchen's cupboard, and the kitchen smelled of decaying flesh for the rest of the campaign.
+
+They end up out-sneaking a dark-folk assassin and stealing his poisons, witnessing the transformation of a Sphynx into a vampire, and killing the ifreet-serving vampire that ruled the place. The vampire was supposed to be cowardly and turn into Gaseous Form at 50% HP, and was inching towards a TPK because at 60%hp he was dominating Samari, yet Shalaya scored a critical-hit-max-damage with her Frost Longbow Bane Of Undead with her judgement active (ah, inquisitors) and basically one-shotted him.
+
+The evil vampire is no more! The ifreet's evil plans must be foiled, right? Not a chance. After a night in town where Desna's followers healed them, they go back to free the mansion of the influence of undeath with a priest capable of casting Atonement. They also hope to sever the place's connection to the elemental planes, hindering the creation of portals. (In this world, a portal can be opened everywhere a mortal has been killed by the elements. The party had uncovered evidence that someone had died in this mansion in a fireplace accident, and also found the remains of some poor soul who was buried alive.)
+
+Shalaya and Samari stalk around the manor, hoping to kill the last mobs, while the priest and his 5 low-level underlings perform the Atonement in the great hall. Suddenly, a great crash is heard from the front, and they rush through the rooms to check it out. Two Nessian hell hounds have just crashed the front gate, and are headed for the manor, but are held back by a gorgon and two bulettes.
+
+Correctly guessing that the earth-bound monsters are there to help the Shaïtan's plan, the party begins to help the slaughter of the hell hounds. The latter have more coordination and focus, though, so each turn they kill an opposing monster, rather than dishing even damage to everybody. The fight gets though, but the Frost longbow and the flanking-partners helping, the party escapes unscathed. Then the first fire elemental shows up.
+
+The friendly mobs had been killed already, so it was a fairly balanced two-on-one fight, but that only lasted one round. Another fire elemental shows up, then two Huge fire elementals show up. Earth elementals also sprout out of nowhere and start bashing the fire elementals. This is going south fast, and as the party finishes its first elemental, twelve more have shown up, including fire elementalists casting Geyser on the earth elementals to great effect.
+
+While the inquisitor's efforts are effective at keeping the fire elementals at some distance, two earth elemental slip towards the Mansion. Samari follows, because she noticed that her 1d3 damage daggers aren't effective against elementals with DR5/-. The earth elemental, as translated by a low-level-priest-underling that fortunately spoke Terran, demand that the ritual ceases, because their mission is to open a portal to the Earth Plane. Samari avoids a diplomatic incident by convincing the Priest (and the nearby city's cult of Desna, reached via Message) to finish the spell without altering the Earth Plane link, and the elementals to pay for the second atonement in case it is diplomatically resolved at a later date to close the link.
+
+Meanwhile, the fight is raging in front of the mansion. Shalaya is firing round after round of frost arrows, but still hardly manages to take the fire elementalists down. A few fire elementals have managed to enter the mansion's gate, but have been cut off by the earth elementals (which also meant that the brunt of earth elementals were pinchered between two squadrons of fire elementals). One Huge Fire Elemental reached the mansion and started igniting everything, because if the humans inside died, the Atonement was off, and more people had died by fire, making his link to the Fire plane stronger.
+
+Shalaya the Frost Inquisitor alternated between shooting the elemental and the walls, to put out fires. Samari however, was trapped inside and could do nothing. That's when the best ideas happen.
+
+She decided to just tumble through the fire elemental, trying to bluff him into thinking she had something of value and should be followed. She obviously caught on fire and dropped to the ground in the middle of a dozen enemy elementals, and completely failed her bluff check. The situation was so crazy that the huge one lost interest in the house and turned towards the little halfling... who was saved in extremis by 3 frost arrows from her partymate.
+
+The little halfling, convinced that this strategy was working now, asked:
+"Is there a lake nearby?"
+/rolls geography (Yes, geography. I warned you, she's not optimized.)
+"You have seen a lake down south. Unfortunately, it's on the other side of the Fire Elemental army."
+"OKay! I'm gonna tumble through, and bluff them to follow me."
+"You have a speed of 20ft, and the elementals move 60ft."
+"I'm sure I can manage."
+
+I ruled that for every point of bluff she rolled, one elemental would be distracted and would start hunting her down instead of fighting. As Murphy would have it, she rolled a nat 20.
+
+So the whole fire elemental army gets sidetracked, trying to stop a running halfling from getting away. We all get flashbacks from Pirates of the Carribean.
+
+Do you remember the part where the city was warned about the attack, and the deal, via Message? I had planned that they would contact the nearby village of Gillmen, living in the lake. Gillmen absolutely hate fire elementals, and were close enough to the mansion to turn the tide of the battle last minute. That was counting without a halfling running fast as hell towards the lake, followed by a whole army of fire elementals, who rushed head-first in the Gillmen ambush.
+
+The fire elementals were defeated, the atonement succeded. The portal-to-be was soon decided to be closed, as the Shaitan didn't see value in it if it was going to turn the locals against him, and was happy enough that his enemy ifreet's plans were thwarted. Shalaya and Samari are heroes for preventing a fire-elemental invasion, and all is well that ends well.
+
+And that was the best run-for-your-life moment I had ever seen.

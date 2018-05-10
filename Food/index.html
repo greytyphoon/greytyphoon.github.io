@@ -1,0 +1,138 @@
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Grey's Cookbook</title>
+    <link rel="stylesheet" href="Food.css">
+
+    <!-- TODO: make my own light-weight collapsing system. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <b>Livre de recettes</b>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="subtitle">Repas</div>
+                <ul class="list-unstyled">
+                    <li>Fondue &lt;3</li>
+                    <li><a data-toggle="collapse" href="#boeufmijoteuseCollapse">Boeuf Thai &agrave; la mijoteuse <span class="credit">Julie-Anne</span></a></li>
+                    <li>Cr&egrave;me de zucchini <span class="credit">Louise-H&eacute;l&egrave;ne</span></li>
+                    <li>McDoutre <span class="credit">Bernard</span></li>
+                    <li>Burritos</li>
+                    <li>Mini-pizzas</li>
+                    <li>Nachos</li>
+                    <li>Ramen</li>
+                    <li>Riz frit aux saucisses</li>
+                    <li>Risotto</li>
+                    <li>Papillote de saumon</li>
+                    <li>Macaroni au fromage</li>
+                    <li>P&acirc;t&eacute; Chinois</li>
+                    <li>Riz Indien</li>
+                    <li>Lasagne</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="subtitle">&Agrave;-c&ocirc;t&eacute;s</div>
+                <ul class="list-unstyled">
+                    <li>Salade Grecque <span class="credit">Tania</span></li>
+                    <li>Chou-fleur gratin&eacute;</li>
+                    <li>Asperges au bacon</li>
+                    <li>Patates au four</li>
+                </ul>
+                <div class="subtitle">D&eacute;jeuners</div>
+                <ul class="list-unstyled">
+                    <li>Cr&ecirc;pes &lt;3</li>
+                    <li>Oeufs B&eacute;n&eacute;dictine <span class="credit">Roselyne</span></li>
+                    <li><a data-toggle="collapse" href="#rizAuLaitCollapse">Riz au lait</a></li>
+                </ul>
+                <div class="subtitle">Desserts</div>
+                <ul class="list-unstyled">
+                    <li>Trifle</li>
+                    <li>Biscuits Banane-Avoine</li>
+                    <li><a data-toggle="collapse" href="#biscuitGeantCollapse">Biscuit G&eacute;ant</a></li>
+                    <li><a data-toggle="collapse" href="#tarteChocolatCollapse">Tarte au chocolat</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="fixref">
+        <div id="rizAuLaitCollapse" class="collapse">
+            <div class="subtitle">Riz au Lait</div>
+            <ul>
+                <li>100mL riz</li>
+                <li>100mL eau</li>
+                <li class="actionstep">Bouillir pou absorber toute l'eau</li>
+                <li>200mL Cr&egrave;me 35%</li>
+                <li>500mL Lait</i>
+                <li class="actionStep">Ajouter, puis bouillir &agrave; feu doux pour 20 min</li>
+                <li>50mL sucre</li>
+                <li>50mL cassonade</li>
+                <li>2 tbSp. d'extrait de vanille</li>
+                <li class="actionStep">Ajouter, puis bouillir 10 min</li>
+            </ul>
+        </div>
+        <div id="biscuitGeantCollapse" class="collapse">
+            <div class="subtitle">Biscuit G&eacute;ant</div>
+            Source: <a href="http://lecahier.com/pas-les-biscuits-de-ta-grand-mere/">LeCahier</a>
+            <ul>
+                <li>1 tasse de beurre ramolli</li>
+                <li>1 tasse de sucre</li>
+                <li>&frac12; tasse de cassonade</li>
+                <li>2 teaSp. d'extrait de vanille</li>
+                <li>2 oeufs</li>
+                <li class="actionStep">M&eacute;langer</li>
+                <li>2&frac34; tasses de farine tout usage</li>
+                <li>1 teaSp. de bicarbonate de soude</li>
+                <li>&frac12; teaSp. de sel</li>
+                <li class="actionStep">M&eacute;langer ces trois-l&agrave; ensemble, puis combiner</li>
+                <li>2 tasses de pépites de chocolat</li>
+                <li class="actionStep">M&eacute;langer</li>
+                <li class="actionStep">Cuire 15 min &agrave; 350&deg;F dans une po&ecirc;le en fonte</li>
+                <li class="actionStep">Recouvrir de papier aluminium</li>
+                <li class="actionStep">Cuire 10 min</li>
+                <li class="actionStep">Refroidir une heure</li>
+            </ul>
+        </div>
+        <div id="tarteChocolatCollapse" class="collapse">
+            <div class="subtitle">Tarte au chocolat</div>
+            Source: <a href="http://everyday-excellence.com/en/chocolate-truffle-raspberry-pie/">EverydayExcellence</a>
+            <ul>
+                <li>200g chocolat noir (2 barres Lindt)</li>
+                <li class="actionStep">Hacher menu</li>
+                <li>pâte à tarte</li>
+                <li>230g framboises</li>
+                <li class="actionStep">D&eacute;poser directement dans la tarte</li>
+                <li>250mL cr&egrave;me &agrave; fouetter</li>
+                <li>60mL sherry / kahlua / brandy</li>
+                <li>1 tbsp vanille</li>
+                <li class="actionStep">M&eacute;langer ces trois-l&agrave; ensemble, faire bouillir</li>
+                <li class="actionStep">Verser sur le chocolat pour le faire fondre</li>
+                <li class="actionStep">Verser dans la tarte, pour recouvrir les fruits</li>
+                <li class="actionStep">Refroidir une demi-heure, puis 2h au frigidaire</li>
+            </ul>
+        </div>
+        <div id="boeufmijoteuseCollapse" class="collapse">
+            <div class="subtitle">Boeuf Thai &agrave; la mijoteuse</div>
+            <ul>
+                <li>Boeuf</li>
+                <li>1 tasse de bouillon de boeuf</li>
+                <li>&frac12; tasse de sauce soya</li>
+                <li>&frac13; tasse de cassonade</li>
+                <li>1 tbSp. d'huile de s&eacute;same</li>
+                <li>Ail, au go&ucirc;t</li>
+                <li class="actionStep">Mettre dans la mijoteuse pendant 8h</li>
+                <li>Brocoli</li>
+                <li class="actionStep">Laisser dans la mijoteuse 30min de plus</li>
+                <li>2 tbSp. de f&eacute;cule de ma&iuml;s</li>
+                <li class="actionStep">Laisser dans la mijoteuse 15min de plus</li>
+                <li class="actionStep">Servir avec du riz</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

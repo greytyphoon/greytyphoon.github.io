@@ -1,0 +1,29 @@
+/** Created by Rémi Doutre, 2015-2018. Public domain. **/
+@import url("../basic.css");
+
+/**
+ * Custom Palette:
+ * 'Minuet' by Greytyphoon
+ * #0b0608 murder-black
+ * #eaebef murder-grey
+ * #74C625 minuet-green (derived of murder-red)
+ * #ffffff html-white
+ * #a9a9a9 html-darkgrey
+ **/
+a, a:link, a:visited, a:active { color: #74C625; /*murder-red*/}
+
+/********************
+ * Custom Components   (#header, .credit)
+ */
+#header {
+    background-color: #74C625; /*murder-red*/
+    border-color: #74C625; } /*murder-red*/
+
+/* I use this when I want to say who taught me this song. */
+span.credit { /* inspired from Pathfinder's .listBonuses */
+    color: #a9a9a9; /*html-darkgrey*/
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: normal; }
+span.credit::before { content: "("; }
+span.credit::after { content: ")"; }

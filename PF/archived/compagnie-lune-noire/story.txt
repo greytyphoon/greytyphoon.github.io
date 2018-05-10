@@ -1,0 +1,407 @@
+Continent Hélos
+	> Province Talaria
+		> Souverain: Le Père (previously known as Hector 3)
+La compagnie de la lune noire gère les prisons: 4, une par province du continent.
+La nôtre est sur une île au bout d'un détroit, au bout d'un village.
+
+Nous sommes dans nos cellules. Un grand fracas! Un cri: "ils se sont relevés!"
+On sort de nos cellules, on voit que d'autres prisonniers se sont enfermés dans un gym.
+D'autres  (2) sont zombifiés et m'attaquent: on les enferme dans leur bloc de cellules.
+On descend Lia par le monte-charge, puis on essaie d'enfoncer une barricade qui nous retient.
+On trouve quelques armes dans une caisse de la barricade. On va aider Lia, attaquée par d'autres zombies.
+Les prisonniers enfermés dans le gym viennent nous aider à défoncer une porte qui nous permet de descende au rez-de-chaussée.
+On se rassemble, barricadés dans la cuisine, et on défonce la porte à coup de chariots.
+On est dehors!
+Les gardes nous reprennent, nous enferment, font le ménage de la prison.
+Ils nous offrent une mission, puisqu'on a montré notre débrouillardise.
+	L'invasion de zombies a peut-être été déclenchée par la mort d'un nécromant dans la prison.
+	On va s'assurer qu'il ne lui reste pas de phylactère dans sa forteresse, au Passage du Nord.
+En accostant au sortir de la prison, on rencontre Kek Un, notre nounou.
+	Il veut qu'on trouve un labo de drogue, qui fait de la contrebande dans la prison.
+	On se donne rendez-vous au pub "Le Quai 21" à 19h.
+	Je vais avec Lia au pub "Le sabot d'or" pendant que Louis et Limernyl vont se renseigner à "La Belle Choppe".
+	Sans succès pour nous.
+	Je passe une commande de billes et de caltrops à la Forge Winchester, pour demain.
+	Du sel rose, proche de la fontaine, un joueur d'harmonica, 3-4 personnes dans la fabrique.
+	On retrouve Kek Un à la taverne. On sait que le proprio de la Bonne Choppe est derrière le traffic.
+	On passe au domicile du patron. Il est 20h.
+#		fin de session 2015-09-18
+
+	On essaie de passer par derrière en faisant un Toc-toc devant par Ghost Sound.
+	On ne trouve que l'homme, sa femme et ses enfants. Il avoue la cachette du labo, au fond du bois.
+	On dit qu'on est les "Masques Mauves".
+Le lendemain matin, à la maison détruite du garde-chasse:
+	On trouve une trappe dans la ruine. 6 goblins! 2 goblins alchimistes! Un goblin alchimiste drogué et un Clock Roach!
+	On détruit le laboratoire et on rentre au village pour vendre nos choses.
+	Un dude louche nous retrouve à l'auberge et nous donne un parchemin... UAEBROC EL
+#		fin de session 2015-10-02
+
+On vend les Gloves of Fumbling and Light -> 150gp? Quelle arnaque! On les garde finalement.
+On lave la robe.
+Le lendemain:
+On trouve une enveloppe.	{Le puit est mon intérimaire. Ce qui est illégal doit être purifié pour gagner vos ailes. UAEBROC EL}
+KekUn nous raconte son histoire, il était GardeChasse pour Éodorf.
+	Le roi aimait beaucoup ses pratiques de garde-chasse, et il vendait les richesses du territoire, pour le bien des paysans.
+	Le fils, quand il a succédé, voulut garder pour lui tout la richesse des terres, et le garde-chasse fut emprisonné selon une loi qui fut cautionnée après l'arrestation. Méprisable.
+Trois jours de voyage en cariole pour rattraper un chariot de drogue.
+	Il est parti un peu avant qu'on détruise tout, il ne manque que ça!
+Après une nuit sans problèmes, on arrive à une intersection vers l'Auberge de la Petite Courge.
+Le seul chariot a tourné vers la ferme, c'est louche.
+On essaie de retrouver les gens du chariot! Des paysans nous accueillent, nous offrent le souper pour un travail.
+L'un des fils est louche... Il se précipite dans l'entrepôt. Pas de traces du chariot.
+Le soir venu, personne n'Est parti. Les filles vont fouiller l'entrpôt, Louis va complimenter la cook pour la soupe, je fais l'illusion des filles avec KekUn autour du feu.
+Les planchers de l'entrepôt sont en bois! Certaines lattes se lèvent, on trouve 3 sacs (un petit, avec 50gp; un moyen, avec un collier anti-magie; un gros, avec deux sacs de Sel Rose).
+On est attaqués par 6 blaireaux et un ours noirs, visiblement contrôlés. 2 silhouettes disparaissent dans la forêt.
+Les paysans, troublés par l'attaque, nous avouent qu'ils ont fait un deal avec les trafficants de drogue.
+	Ils sont partis par un vieux chemin bûcheron! Il faut les rattraper!
+Sur le chemin, on trouve la cariole que nous poursuivions, renversée, les occupants sont morts.
+	On y trouve quelques potions et 250gp, et KekUn trouve un médaillon avec 2 chênes. Limernyl évoque le nom de 'Anima'.
+	Les traces de deux humanoïdes s'énavouissent rapidement... Pas de drogue sur les lieux, même dans les citrouilles vidées.
+On continue le voyage, et on arrive à Pyra! La ville surpeuplée!
+On achète un double-fond pour la charette et un parchemin de Summon Monster.
+On apprend pourquoi Pyra est surpeuplée: elle est remplie avec les gens de Merbel, le village voisin.
+	Merbel est constamment attaquée par des humanoïdes avec des lances, qui ne sortent que la nuit.
+	La famille LeBlanc gérait le phare, qui s'est éteint il y a quelques semaines.
+	C'est un phare à l'huile, et il y a des barils d'huile sur place, normalement. Il y en a aussi dans le deuxième entrepôt.
+Avec une lettre du maire, nous partons aller restaurer le village de Merbel.
+#		fin de session 2015-10-25
+
+On part tôt vers Merbel. On arrive tard, Louis se fatigue à cause de son armure et marche torse nu.
+On voit les derniers habitants partir.. Forgeron et son fils blessé. Evérard Warwick.
+On fouille:	Caserne:	Rien d'intéressant
+		Entrepôt:	2 barils d'huile
+		Maisons:	10 cp
+		Mairie:		Je mets des pièges dans l'escalier. On se barricade dans la mairie pour la nuit.
+Pendant la nuit, une énorme vague de Kuo-Toas (8) nous attaque. Ils tentent de faire flamber la mairie.
+Après une grande bataille et la victoire décisive, la famille Warwick décide de rester et résister.
+Ils nous amènent jusqu'à l'île avec un bateau, arrivée à 12h30. Les fils Warwick viendra nous chercher quand on allumera le phare.
+Dans le phare, l'odeur des cadavres est affreuse.
+Il y a quatre cadavres: 2 adultes (qui ont été pendus après la mort) et deux enfants, encore dans leurs lits, où ils ont été égorgés dans leur sommeil.
+On sort les cadavres avec un floating disk pour les brûler honorablement.
+On brûle les matelats à l'intérieur pour éliminer l'odeur. Ça prend 30 min.
+Le miroir du phare a disparu! On ne peut pas le rallumer pour l'instant. Il est 14h.
+Les Kuo-Toas ne sont pas assez grand pour avoir pendus les Leblanc, dans le phare...
+3 sentiers parcourent l'île du phare. On envoie Aewon. On rentre les barils et on les camoufle dans le phare.
+On suit le sentier du centre. Il y a des lattes de bois qui marquent le chemin.
+Au détour de chemin, on surprend 2 pirates! Un homme, une femme.
+L'homme meurt d'une flèche à la gorge, on plaque la femme (Cléa) et on l'interroge.
+Apparemment, les pirates ont tué les gens du phare.
+	Ils sont 10 au total? Le capitaine amadoue les Kuo-Toas.
+	On tue les pirates, avec un enterrement du désert.
+au bout du chemin, on trouve un petit fort pirate.
+On fait un plan débile pour infiltrer les pirates:
+	Lia va mettre le feu...
+	J'arrive avec une Cléa Illusion, blessée
+	Les pirates sortent m'aider, je les stun!
+	Louis et Limernil sortent m'aider.
+Le plan du feu marche médium...
+Les pirates ne croient pas à mon illusion! Ils m'attaquent, et l'illusion-Cléa devient un dragon pour me camoufler.
+Le chef des pirates lance un sort de sommeil, je suis le seul affecté, mon illusion se dissipe: j'ai pu revenir un peu en arrière, plus en sécurité.
+Limernil lance un sort d'Enchevêtrement, et les pirates n'arrivent pas à sortir.
+Aewon et Lia font quelques victimes! 
+#		fin de session 2015-11-08
+
+Le combat contre les pirates se passe bien, mais draine toutes nos ressources.
+On fouille la campe et on soupe! -> Notamment, on trouve la boucle d'oreilles de langage Aquan.
+Pendant que moi et Lymernil organisons le loot, Louis et Lia vont fouiller le bateau au large.
+	2 cales! La plus haute a été rajoutée récemment par les pirates.
+	1 gnome en armure de coquillages était prisonnière.
+	2 canons vers le large, ont coulé les autres bateaux. L'un est armé.
+Pendant qu'on s'interroge, 2 Kuo-Toas font du bruit. Ils déguerpissent dès qu'ils nous voient.
+On fait des tours de garde, on dort dans le fort Pirate. Les Kuo-Toas nous surveillent.
+Apparemment, il y a des miroirs sur le bateau! Et des coffres, qui contiennent les armes de la gnome.
+On part avec le miroir, vers le phare. On ramène la gnome avec nous et on laisse les tonneaux.
+La phare s'allume! On attend de voir si le fils Warwick vient nous chercher.
+Pas de nouvelles 1h30 plus tard, mais la gnome ouvre les yeux. Elle s'appelle Tamara.
+	Envoyée en diplomate par sa tribut, elle est une druide. Elle vit sur une île un peu plus loin.
+	Elle a la moitié d'une vie de gnome derrière elle.
+	C'est une tribut de druides des mers, de toutes les races, rassemblés par l'océan.
+Une demi-heure plus tard, le bateau arrive! 4 bateaux, le père, 3 fils et des inconnus.
+	Ils ne nous croient pas que l'île est sécuritaire.
+	On leur donne les tonneaux qu'on a laissés au fort Pirate, ils partent les chercher.
+Tamara dit que les Kuo-Toas ne sont pas normaux, il n'y a pas de village Kuo-Toa proche.
+On rentre au village, on veut s'assurer que les Kuo-Toas ne reviennent pas.
+Les villageois font exploser une épave en accrochant le canon chargé par accident.
+On planifie un fête pour célébrer la libération du village, avant la nuit!
+	Je raconte des contes aux enfants!
+	Je jase de commerce avec les gens, apparemment la maire les fourrait un peu avec les taxes, selon "Le vieux Pruneau".
+Aucun Kuo-Toas ne nous a attaqué. On retrouve des corps sur la plage, au matin.
+	Ils vivaient sur le bateau, probablement... Tués dans l'explosion.
+Le maire arrive. Il veut reprendre le village. On se pogne...
+	J'enlarge Mic. La population nous suit et nous aime.
+	Quelqu'un dispel Mic? 7 cavaliers, avec l'insigne des Chevaliers de Pelor, arrivent. Étrange, le nombre de races...
+	Adovan Shieldheart mène le groupe, qui arrive un peu tard pour aider le village.
+	On le convainc qu'on utilise pas la force pour s'approprier le village.
+	Speech! 2 speechs en support!
+On a un village!
+#		fin de session 2015-11-22
+
+Tamara nous amène jusqu'à son île! Avec son bateau aux rennes d'algues.
+	Elle nous parle d'un temple immergé, où les KuoToas se sont installés.
+	Le temple a été oublié, et rappelle de mauvais souvenirs.
+On arrive à une île qui fait la taille de l'île St-Hélène.
+Tamara part devant nous sur un petit chemin qui s'enfonce dans une petite forêt, menant à un village de druides (style Iroquois).
+Le village est vide! 40 druides sont manquants.
+On se demande si les bateaux sont manquants aussi, oui! Il n'en reste que 2 sur 12.
+En arrivant à une plage de l'autre côté de l'île, pour voir les bateaux, on trouve le temple immergé, qui n'est plus immergé! Comme au Mont St-Michel, on peut y aller à gué.
+En s'approchant du temple, on est attaquées par des calmars gros comme un homme! Ils devraient être pacifiques pourtant.
+On arrive sur la pierre où est bâtie le temple. 2 grands bâtiments, 1 grande porte menant ves le coeur du temple, et des tentes KuoToas, déssechées.
+	Comme au village, personne n'a vécu ici depuis trois semaines.
+Les deux "grand bâtiments" sont sans détails et sans portes. Lymernil trouve une dalle étrange sur celui de droite.
+	Tamara ouvre la porte avec un sort druidique.
+	C'est une armurerie! On trouve une armure, un arc (marins) et quelques pierres semi-précieuses.
+Dans l'autre bâtiment, quand on l'ouvre, on trouve les gens du village... En tout cas, les enfants et les vieillards.
+ "Il y a trois semaines, on a accueilli un demi-elfe du nom de Folduin.
+  Il a refait sortir le temple. On a chassé les KuoToas.
+  Folduin cherchait quelque chose... en lien avec la mission de la tribu?
+  Il a demandé à avoir un collier, que Tamara a sur elle. Quand on a refusé, il nous a enfermés.
+  Folduin est probablement dans le grand temple."
+Le collier est un héritage familial, selon Tamara.
+On entre dans le Temple de l'Eau.
+	Dans le temple, il y a une grande statue de Kraken et... un Ours?
+	On se débarrasse de l'ours, ainsi que du marsouin et du requin venus l'aider.
+Folduin sort de l'ombre et nous attaque avec des sorts d'algues.
+	Il tente de recruter Lymernil et Tamara.
+	Il nous attrape avec des algues, tente de tuer Tamara.
+	Tamara se liquéfie soudain, et l'eau partout sur la scène s'agite, nous défait de l'emprise de Folduin.
+	Un raz-de marée se lève et frappe le temple! Nous tombons inconscients.
+Dans son sommeil, Lymernil vois...
+	Une corne d'abondance, une fontaine, des gens qui récoltent son eau.
+	Un kelpie, l`gendaire cheval des mers, et des mains qui récoltent ses perles.
+	Un collier de perles, qui tombe et se casse.
+	Des mains ramassent les perles et en font des bijous.
+	Tamara, bleutées, un toucher sur la joue.
+	"Tu es la gardienne maintenant"
+	Anima, et ce mot s'accompagne d'un sentiment de danger.
+On se réveille sur la plage. 2 jours ont passé.
+Les villageois nous réveillent. Lymernil a le collier-perle de Tamara.
+Anima? Kraken? Tamara? La doyenne du village répond à nos questions.
+	Anima est un groupe de drudies connu depuis la guerre des marchands. Source de pouvoir inconnue. Ils sont devenus radicaux.
+	Ils ont massacré des paysans et des bûcherons. Ils ont déclenché une ère de chasse aux druides.
+On retourne à Merbel.
+L'île des druides est en deuil de Tamara.
+#		fin de session 2015-12-04
+Je tente de me faire un magasin de magie à Merbel, et je rencontre Mathilda, qui semble intéresssée.
+Nous voyageons vers la ville de Sélène.
+	Plein de gens sont sur la route...
+	"Le vieux Darren est mort, et toute sa fortune sera mise à l'encan." Elvin Darren, Scrooge spécial Noël
+	Un halfling à l'entrée du manoir nous accueille. Apparemment, il y a du Lustrargent (Silversheen) dans le lot.
+	On magasine un peu, des potions, des objets magiques, des livres...
+	Pendant l'encan, quelqu'un lit une portion du journal du vieux Darren. Le fantôme du vieux apparaît!
+	Lia l'insulte, on se retrouve dans une crypte noire. On voit le fantôme, occupé à s'obstiner avec une lueur blanche.
+Dans la crypte
+	Crypte générique, style morgue, en demi-cercle. Les fantômes sont dans la salle adjacente.
+	Un piège à deux lames
+	Pièce blanche avec cercueil en pierre, en forme de femme > la mère du vieux Darren.
+	"Peut-être que ces 4 pourraient t'aider à voir?"
+		On se retrouve dans une forêt enneigée, avec une grande route.
+		Fantômes Elvin et Femme: "Tu me tortures! Non!"
+		Des gobelins attaquent la caravane d'Elvin! Elle contient un femme et un enfant, Elvin lorsqu'il était jeune.
+		Les gardiens restent derrière à retenir le gros des Gobelins, on défend contre 5 gobelins qui sont passés.
+		Un cavalier arrive, sauve l'enfant.
+		Il repassera plus tard, après qu'on ait tenu bon, pour sauver la femme.
+		Fade to white > retour à la crypte
+	La femme, la mère d'Elvin, a survécu deux ans de plus grâce à nous.
+	Un piège de pieux, en allant vers la salle suivante.
+	Pièce blanche avec cercueil en pierre, en forme d'homme > le père du vieux Darren.
+	"Tu aurais pu être un homme!"
+		On se retrouve dans le square d'un village, avec un grand sapin de Noël.
+		5 bâtiments, on est au rez-de-chaussée d'une auberge.
+		Il y a des gobelins dehors! Et des cris.
+		Les gobelins attaquent le sapin et la maison de la fiancée d'Elvin Darren.
+		On défend contre les gobelins, et Darren nous aide héroïquement.
+		La maison de la fiancée est sauvée! L'arbre de Noël tombe en flamme sur nous, mais personne n'est gravement blessé.
+		Fade to white > retour à la crypte
+	Ils ont réussi à se marier, mais elle est morte jeune.
+	Pas de piège, mais la paranoïa nous ralentit.
+	Pièce avec une double tombe, un homme et une femme > Darren et sa douce.
+	"Je l'ai perdue si jeune... Non! Ils m'ont laissé seul!"
+		On se retrouve dans le hall du Manoir Darren, avec un homme assez agé devant son foyer.
+		Des gens courent vers le manoir, criant "À l'aide! Laissez-nous entrer!"
+		Encore une attaque de gobelins.
+		On enchevêtre et on Obscuring Mist, on tue le chef Gobelin avec son cor de tempête de neige qui nous faisait chier depuis le début.
+		Darren a donné le coup de grâce.
+		Les gens sont tous sains et sauf.
+		Fade to white > retour à la crypte.
+	"Merci, vous êtes des anges pour moi!"
+	Une pièce secrète s'ouvre! Loot!
+Retour à l'encan, dans la vraie vie. Personne ne s'est aperçu de rien, et on lit encore le journal de Darren sur la scène.
+On achète un coffre sans fond et des livres.
+Les neveux de Darren ont acheté le domaine, la rapière magique (anti-gobelins) et le journal du vieux Darren.
+Les neveux nous reconnaissent dans le journal, et veulent être amis de Merbel.		
+#		fin de session 2015-12-18
+Kek Un est stressé, on est en retard. Après 4 jours de voyage, dont je profite pour apprendre Summon Monster I, on arrive à Solène.
+On se dirige vers les bâtiments de la Compagnie de la Lune Noire. À l'écurie, Kek Un nous confie à Cassie, le cuisinière, et nous présente Kiran, une demi-orque moine.
+Pour passer le temps pendant que Kek Un explique notre retard, on va au babillard chercher de la job à faire.
+	Le babillard est un endroit où une guilde, la Guilde de l'Écu, poste des contrats de mercenaires pour des tâches dont les habitants de la ville ont besoin.
+	Lid Fitz, le nain gardien du babillard, nous réserve une mission d'appprovisionnement d'un forgeron, nommé Mikhel Ottar.
+	Après s'être renseignés à sa forge, on se dirige vers la mine de son fournisseur, d'où rien ne sort.
+	Des gobelins et hobgobelins ont apparemment saisi la mine, selon le propriétaire (Tanjir Badur, la mine est dans sa famille depuis 3 générations).
+	On descend, on oblitère les monstres, morts par le feu.
+	On trouve une sortie et un campement de l'autre côté, dans une gorge.
+	Tanjir nous offre deux pierres précieuses pour nous remercier.
+	On ramène un chariot de minerai jusqu'à la ville. Le forgeron signe notre contrat comme "complété".
+	Malheureusement, Lid Fitz n'est plus au babillard quand on arrive, le stand est fermé pour la nuit.
+Kek Un est découragé, ça ne va pas bien pour notre statut... On va se coucher.
+Le lendemain matin, je vais à la guilde des mages, escorté de Louis.
+	Lia tente de me pickpocketer le contrat pour aller au babillard directement.
+	Marla l'arrête, mais je suis très déçu.
+La guilde des mages est trop forte pour nous! Ils monopolisent les items et parchemins forts.
+	Ils nous recommandent cependant un marchand de scrolls. Je m'achète quelques sorts.
+On accepte un autre contrat au babillard!
+	C'est dans une joaillerie tenue par un homme du nom de Philédor (B3).
+	Il faut aller voir à l'auberge de la Souris et trouver une Finola de l'Oeil de Chat.
+	On signe 3 contrats différents, c'est logique, on va transporter un bijou qui vaut très cher. La joaillère nous dit "C'est pour vous retrouver au cas où".
+#		fin de session 2016-01-10
+	On trouve l'auberge dans la partie sud-Ouest de la basse-ville. Louis fait de l'oeil à la barmaid, "Cynthia".
+	On nous escorte dans un bâtiment, de l'autre côté d'une cour intérieure derrière l'auberge.
+	On négocie un peu pour l'Opale Blanche, qu'on a un budget de 800 PO pour acheter.
+	Elle nous offre de nous la vendre 200 PO si on lui fait une faveur.
+		Elle veut arrêter la business de contrebandiers d'un groupe opposé... Ils sont dans le quartier Sud-Est, et on les reconnaît à leur emblème de Tonneau.
+		On trouve rapidement, par chance, un bâtiment oublié près du mur de la cité, avec un emblème qui pourrait bien concorder...
+		On entre par la force et on tue quelques contrebandiers. On trouve de la soie et autres trucs dans des tonneaux.
+		Les contrebandiers recevaient leurs marchandises par tonneau, qu'ils faisaient descendre le long d'une rivière souterraine.
+		Finola aime beaucoup notre travail, et respecte sa part du marché.
+	On arrive juste à temps, le joailler allait fermer sa boutique.
+	Lia s'échappe, et lui dit qu'on a payé la pierre 400 PO au lieu de 800. On pensait lui dire 600 et garder la différence... Tant mieux pour lui.
+	On lui vend cependant quelques pierres précieuses qu'on a acquises pendant notre raid, et on récupère 200 PO.
+	En plus, on reçoit tout de suite la récompense du babillard, 400 PO supplémentaires!
+On rentre à la compagnie de la Lune Noire. J'apprend Burning Hands, pendant une soirée tranquille.
+Le lendemain, on a des problèmes avec le marchand de la Compagnie: il nous fait des prix impossibles, il ne semble pas nous aimer.
+On vend plein d'armes au forgeron de la quest plus haut, à la place.
+On accepte un autre contrat au babillard!
+	C'est dans la taverne de la cuillère dorée, tenue par Edgar Alphonzo (B5, proche de la porte).
+	Ça fait deux semaines qu'il a une infestation de rats immenses au sous-sol...
+	On trouve et on tue cinq Dire Rats.
+	En s'enfonçant plus loin, on tombe dans des pièges à ours, et on trouve des araignées géantes.
+	La caverne s'enfonce et serpente, pleine de toiles d'araignées. L'une contient un cadavre, et on trouve environ 90 PO sur sa momie.
+#		fin de session 2016-01-31
+	On tue les dernières araignées.
+	On trouve une statue, qui se transforme en Paladin!
+		Christoff a apparemment passé 80 ans transformé en pierre par un Cockatrix.
+		Il fait partie d'un groupe de 5 chevaliers de Pelor qui se sont sacrifiés il y a longtemps, les 5 autres doivent être dans d'autres villes.
+	On reçoit tout de suite la récompense du babillard, 300 PO, et on boit un coup dans la taverne en expliquant le futur à Christoff.
+Kek Un nous explique que notre status est passé, au sein de la Compagnie de la Lune Noire, à "Prisonniers Libérés". 
+	On a maitenant, techniquement, le droit d'accumuler des richesses.
+	La Compagnie nous demande cependant une acquitance de 2000 PO chacun pour garder notre titre sur Merbel.
+	On devra payer avant de passer à un meilleur status. D'ici là, rien ne presse.
+On planifie notre voyage vers le Passage du Nord!
+	On fait du shopping. On upgrade notre carriole et Merbel.
+	Notamment, on se débarrasse des sacs de Sel Rose. On les vend à Finola de l'Oeil de Chat.
+	Elle est reconnaissante, et nous dit qu'elle sera preneuse si on trouve des Pierres de Lune ou de l'Eldora dans nos expéditions.
+On part vers le Nord, mais on fait un détour pour s'approprier une mine abandonnée dont Lia et Louis ont entendu parler.
+	Elle est pleine de Hobgoblins!
+	On y trouve aussi des cadavres de mineurs et une forge portative.
+	Un Large Earth Elemental nous attaque, mais je lance une tonne de spells, le groupe livre une forte performance, et nous sommes vainqueurs!
+#		fin de session 2016-02-28
+	En vidant la caverne, on trouve un autre tunnel avec une étrange lueur bleue.
+	On ne veut pas trop s'y aventurer tout de suite, donc on campe à l'extérieur. La nuit se passe sans encombre.
+	Le lendemain, Louis et Kirane ne se sentent pas bien: ils sont probablement malades depuis qu'ils ont été mordus par des rats.
+	Christoff aussi n'est pas dans son état normal: il est enveloppé d'une lumière blanche de magie divine.
+	Limernyl fabrique quelque potions avec les moyens du bord pour annuler les effets de la maladie sur Louis et Kirane.
+	Kek Un restera à l'extérieur pour veiller sur Chritoff.
+	On s'avance dans le tunnel. La lueur bleue est produite par des cristaux, qui dégagent une drôle de magie, très faible.
+	On est attaqué par des mille-pattes géants, et des Mantes Obscures.
+	Après s'en être débarrassés, on arrive devant une pièce avec une dizaine de chaises de pierre.
+	Contrairement au reste de la grotte, cette pièce est carrée, finement taillée, avec un escalier bien ciselé.
+	Ce genre de temple, et l'élémental de terre, nous font penser aux Druides d'Anima, qui nous suivaient. Mauvais souvenirs...
+	Une deuxième pièce est adjacente, moins précisément taillée, qui contient une table, deux armoires, et des tas d'ordures immondes.
+	Un Otyugh qui y vit nous attaque, mais on s'en débarrasse sans trop de problèmes.
+	On trouve un squellette de dragon vert adulte dans la pièce suivante, une grande caverne où la lueur de l'extérieur entre par une faille dans le haut plafond.
+	Après avoir passé un long moment à avoir peur de la forme de dragon et du souffle du vent, on entre tranquillement.
+	Deux runes maintenaient l'obscurité dans la pièce, et après les avoir détruites on trouve quelques trésors sous le dragon.
+	On ramène avec nous, aussi, le crâne du dragon, qu'on installe sur le toit de la charrette.
+#		fin de session 2016-03-11
+On avance tranquillement vers le Passage du Nord, après notre excursion dans la caverne.
+	Je travaille sur des prototypes de bombes, et mes débuts sont encourageants.
+	Pendant la nuit, un intru nous rattrape: il s'appelle Monsieur Prisk, et il vient de se sauver d'être capturé par des orcs.
+	Sa femme (?), Mme Bolduc, est encore tenue prisonnière par la bande d'orcs, qui veulent un souper gastronomique de sanglier en échange.
+	Nous acceptons de l'aider un peu.
+	Lymernil lance un sort de détection des plantes/animaux, et trouve sans problème de la moutarde et du miel dans la forêt.
+	Malgré une attaque d'un ours, tout va bien pendant la cueillette.
+	On part ensuite chasser le sanglier, et on tombe sur un monstre: un immense sanglier sanguinaire, qui ne se rend pas facilement.
+	On réussit tout de même à le tuer sans trop de pertes.
+	Monsieur Prisk nous dirige ensuite vers le campement des orcs et nous présente comme étant ses marmitons. Nous entrons tous dans le camp, et préparons la viande.
+	Lia se glisse sous un pan de la tente et explore le camp, sans trop apprendre grand-chose:
+		Ils sont entre 30 et 40.
+		Un peu moins de la moitié sont des gobelins, le reste est composé d'orcs, d'hobgoblins, et leur chef est un goblourd. (???)
+		Le camp est sur deux "étages": une palissade au niveau du sol, les tentes des orcs forts sur un plateau rocheux. Le chef a une spacieuse caverne à même la montagne.
+	On prépare le repas, et on l'amène au chef.
+	On voit Mme Bolduc dans une cage derrière, le chef orc a l'air de vouloir tenir sa promesse.
+	Sur le coup de l'inspiration, on s'éclipse avec Monsieur Prisk pour "préparer un dessert".
+	On fait des puddings avec des potions de vomissement de Lymernil, et on camoufle Lia dans une illusion de gâteau.
+	On ramène ça vers la caverne du chef, mais on se rend compte que le combat y a déjà commencé:
+		Louis et Kirane ont tenté de faire exploser la table sans nous attendre, et le résultat n'a pas été fameux.
+	On tue le chef et ses trois plus hauts compagnons, et on libère Mme Bolduc.
+	On tente de résister aux orcs qui entrent par la porte, et mon Web nous aide beaucoup,
+	mais nous sommes prisonniers à l'intérieur de la grotte, avec une trentaine d'ennemis au-dehors, et nous sommes pas mal amochés nous-mêmes.
+#		fin de session 2016-03-28
+	On tente de déclarer que Kirane, notre Demi-Orc, est maintenant le chef de la tribu: elle a tué le chef!
+	Ça passe proche de marcher, mais au final on finit par décimer le clan presque en entier, aidés par Kristoff et Kek Un qui sont venus à notre rescousse, mais aussi par les héritiers Darren et l'épée pourfendeuse de gobelins.
+		D'ailleurs, j'en rôtis 5 d'un coup, brisant mon invisibilité de la meilleure façon possible.
+	Nous sommes en sécurité, M. Prisk et Mme Bolduc repartent avec les Darren, et nous reprenons notre chemin.
+#		fin de session 2016-04-03
+On continue tranquillement notre route vers le passage du Nord. Un blizzard trop fort pour être naturel se dresse sur notre chemin alors que nous approchons du village de Pendle.
+    Plus on se rapproche du village, plus le blizzard est violent.
+    On arrête à l'auberge "The Witch", et on est accueillis froidement; les gens n'ont pas l'air d'aimer les étrangers par ici.
+    On apprend par les rumeurs, à force d'essayer de se renseigner, que le blizzard vient d'une malédiction qui se maintien depuis quelques semaines.
+        Certains croient qu'elle vient d'un manoir hanté, au Nord du village,
+        Certains croient qu'elle vient d'une grotte lugubre, au fond d'un ravin non loin,
+        Certains accusent un étranger venu s'installer près d'anciennes ruines, qui n'a pas reçu bon accueil et qui vit loin de l'oeil des gens du village.
+    On tente de se rendre populaire, et de convaincre les gens qu'on va les aider, mais on ne semble pas trop nous apprécier.
+    Kirane tente de nous négocier des chambres à l'auberge pour la nuit, mais le propriétaire la trouve trop rude et donne un prix ridiculement haut.
+    On décide plutôt de se diriger vers le manoir hanté et d'y camper, ce qui de toutes façons nous permettra d'expérimenter de nous-même tous les phénomènes étranges qui peuvent s'y passer.
+        On s'arrête rapidement au magasin général, pour acheter des manteaux. J'apprend qu'ils ont peut-être de la poudre noire! Je l'achèterai au retour.
+        Kek Un et la charette ne peuvent pas traverser le billard: la neige est trop profonde. Kek Un restera au village, pour surveiller la charrette.
+        Après une heure de marche dans le froid, on arrive au Manoir.
+        Il est abandonné depuis 20 ans, et appartenait à l'intendant. Certaines parties du manoir semblent récentes, environ 50 ans: d'autres en ont 100, ou même 200.
+        Plusieurs auras magiques inquiétantes s'en dégagent, mais le manoir lui-même ne semble pas magique.
+        On entre. On explore le vestibule, puis on passe au salon.
+        Dans le salon, deux armures s'animent et nous attaquent. Elles ont des fléaux d'arme, mais aussi le pouvoir de nous téléporter dans le manoir.
+        Christoff se fait téléporter devant un Gelatinous Cube, mais parvient à le semer.
+        On finit par vaincre les armures, et on établit un campement dans le salon, près du foyer. On dort mal, mais c'est mieux que rien.
+        D'ailleurs, on a remarqué quelques auras magiques étranges:
+            Un crâne dans une armoire a une aura étrange de transmutation,
+            Une aura de divination étrange reste non-identifié dans un coin,
+            Une autre armure a une aura semblable aux deux armures tuées hier,
+            Un bruit au deuxième étage pendant la nuit laissait dégager une aura forte de conjuration/évocation/illusion.
+        On tue le Gelatinous Cube le lendemain matin.
+#		fin de session 2016-04-24
+	On explore le restant du manoir.
+		On trouve un cadavre dans le Gelatinous Cube. Il s'agit d'un elfe, mort quelques semaines avant, qui faisait partie d'Anima.
+			Il avait quelques notes dans son sac qui n'ont pas complètement été digérées par le Cube:
+			Notamment une carte avec trois croix marquées: la caverne où on a affronté l'élémental de pierre, le manoir où on se trouve, et un spot plus au Nord.
+		On fouille le premier étage:
+			Il ne reste pas grand-chose d'autre: un crâne louche avec un Crystal, des lunettes magiques (aucune idée ce qu'elles font), et un statue, qu'on laisse tranquille.
+		On monte au deuxième, et l'exploration reprend tranquillement.
+			Il y a quatre chambres à l'étage, tout simplement.
+			Les premières sont vides, on y trouve quelques breloques qui ont de la valeur mais c'est tout.
+			Dans une des tours en coin, on avait entraperçu des araignées géantes: on passe discrètement, puis on court après avoir été repérés. On entre en courant dans la dernière chambre.
+			On fouille un peu, restant loin de la statue qui monte la garde dans le coin.
+			(D'ailleurs, on s'écoeure rapidement et on finit par la démolir tous ensemble.)
+			Il y a un passage secret dans la pièce, qui mène dans une sorte de garde-robe gardé par un grand Élémental de Glace.
+			Une fois le gardien maîtisé, on voit que la pièce est un sanctuaire couvert de runes arcaniques et de parchemins.
+			Un espèce de modèle réduit de la région y trône. L'aura de magie est intense.
+			On se rend compte que le modèle réduit est une espèce de poupée Vaudou de la région, la froid qui s'abattait partout était l'effet de l'aura de froid de l'élémental qu'on vient de terrasser.
+			Idéalement, il faudrait détruire cette maquette...
+			Les inscriptions sur les murs parlent de l'histoire de la famille qui a construit cette chose.
+			Ils recherchaient la "source du savoir infini" dans la région...
+		Pour passer le temps, on tue les araignées.
+		Christoff part vers le village, chercher Kek Un et la cariole.
+		Tout le monde fouille pour des livres à ramener...
+		Je joue avec le crâne, qui s'anime soudain et propose de grandes récompenses à celui qui relèvera son défi.
+#		fin de session 2016-05-23
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
