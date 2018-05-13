@@ -6,15 +6,17 @@ var Greytyphoon.Characters.push({
         owner: "Grey",
         companion: null,
         source: null,
+        dead: false,
+        npc: true,
     },
     alignment: "N",
     deity: "Shellyn",
     languages: "Common",
     ancestry: { name: "Human", link: "http://www.d20pfsrd.com/races/core-races/human" },
-    level: [ { 
+    level: [ {
         name: "uRogue",
-        link: "http://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained", 
-        quantity: 3, 
+        link: "http://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained",
+        quantity: 3,
         archetypes: [ { title: "", name: "Knife Master", link: "http://www.d20pfsrd.com/classes/core-classes/rogue/archetypes/paizo---rogue-archetypes/knife-master" } ]
     } ],
     "str": 10,
@@ -37,8 +39,9 @@ var Greytyphoon.Characters.push({
         { name: "Underhanded", link: "http://www.d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo---rogue-talents/underhanded-ex" },
         { name: "Weapon Focus", link: "http://www.d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final" }
     ],
-    spells: [ ],
-    loot: 
+    targetFeats: [],
+    spells: [],
+    loot:
         { slot: "weapon-m", value: 1200, name: "Dagger*4", link: "http://www.d20pfsrd.com/equipment/weapons" },
         { slot: "armor", value: 1100, name: "Mithral Shirt", link: "http://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" },
         { slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", link: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity" },

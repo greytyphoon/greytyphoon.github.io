@@ -6,15 +6,17 @@ var Greytyphoon.Characters.push({
         owner: "Grey",
         companion: { name: "Bat Familiar", link: null },
         source: null,
+        dead: false,
+        npc: true
     },
     alignment: "NG",
     deity: "Pharasma",
     languages: "Common, Elven, Sylvan, Draconic, Celestial, Infernal, Abyssal, Undercommon",
     ancestry: { name: "Elf", link: "http://www.d20pfsrd.com/races/core-races/elf" },
-    level: [ { 
+    level: [ {
         name: "Witch",
-        link: "http://www.d20pfsrd.com/classes/base-classes/witch", 
-        quantity: 6, 
+        link: "http://www.d20pfsrd.com/classes/base-classes/witch",
+        quantity: 6,
         archetypes: [ { title: "Patron", name: "Death", link: "http://www.d20pfsrd.com/classes/base-classes/witch/witch-patrons" } ]
     } ],
     "str": 10,
@@ -39,15 +41,16 @@ var Greytyphoon.Characters.push({
         { name: "Healing", link: "http://www.d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-healing-su" },
         { name: "Flight", link: "http://www.d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-flight-su" }
     ],
+    targetFeats: [],
     spells: [
-        { lvl: 1, name: "Deathwatch", link: "http://www.d20pfsrd.com/magic/all-spells/d/deathwatch", school: "patron" },
-        { lvl: 2, name: "Blessing of Courage and Life", link: "http://www.d20pfsrd.com/magic/all-spells/b/blessing-of-courage-and-life", school: "patron" },
-        { lvl: 3, name: "Speak with Dead", link: "http://www.d20pfsrd.com/magic/all-spells/s/speak-with-dead", school: "patron" },
-        { lvl: 1, name: "Youthful Appearance", link: "http://www.d20pfsrd.com/magic/all-spells/y/youthful-appearance" },
-        { lvl: 2, name: "Tattoo Potion", link: "http://www.d20pfsrd.com/magic/all-spells/t/tattoo-potion" },
-        { lvl: 2, name: "Bestow Curse", link: "http://www.d20pfsrd.com/magic/all-spells/b/bestow-curse" }
+        { lvl: 1, name: "deathwatch", link: "http://www.d20pfsrd.com/magic/all-spells/d/deathwatch", tag: "patron" },
+        { lvl: 2, name: "blessing of courage and life", link: "http://www.d20pfsrd.com/magic/all-spells/b/blessing-of-courage-and-life", tag: "patron" },
+        { lvl: 3, name: "speak with dead", link: "http://www.d20pfsrd.com/magic/all-spells/s/speak-with-dead", tag: "patron" },
+        { lvl: 1, name: "youthful appearance", link: "http://www.d20pfsrd.com/magic/all-spells/y/youthful-appearance" },
+        { lvl: 2, name: "tattoo potion", link: "http://www.d20pfsrd.com/magic/all-spells/t/tattoo-potion" },
+        { lvl: 3, name: "bestow curse", link: "http://www.d20pfsrd.com/magic/all-spells/b/bestow-curse" }
     ],
-    loot: 
+    loot:
         { slot: "weapon-m", value: 300, name: "Longsword", link: "http://www.d20pfsrd.com/equipment/weapons" },
         { slot: "weapon-r", value: 300, name: "Longbow", link: "http://www.d20pfsrd.com/equipment/weapons" },
         { slot: "none", value: 5000, name: "Caster's Tattoo", link: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/tattoo-caster-s" },
