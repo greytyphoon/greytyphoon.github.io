@@ -65,7 +65,8 @@ var Greytyphoon.Characters.push({
         { slot: "weapon-m", value: 300, name: "Scimitar", link: "http://www.d20pfsrd.com/equipment/weapons" },
         { slot: "armor", value: 150, name: "Hide Shirt", link: "http://www.d20pfsrd.com/equipment/armor" },
         { slot: "armor", value: 257, name: "Darkwood Heavy Wooden Shield", link: "http://www.d20pfsrd.com/equipment/special-materials#TOC-Darkwood" },
-        { slot: "shoulders", value: 1000, name: "Cloak of Resistance", link: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-" },
+        { slot: "shoulders", value: 1000, name: "Cloak of Resistance", link: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
+        { slot: "belt", value: 4000, name: "Belt of Giant Strength", link: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-giant-strength" },
         { slot: "none", value: 1000, name: "Pearl of Power", link: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power" }
     ]
 });
