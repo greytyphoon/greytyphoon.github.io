@@ -61,7 +61,7 @@ var Greytyphoon.Characters.push({
         { level: 3, name: "cure moderate wounds", link: "http://www.d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds", tag: "conjuration" },
         { level: 3, name: "sleet storm", link: "http://www.d20pfsrd.com/magic/all-spells/s/sleet-storm", tag: "conjuration ice" }
     ],
-    loot:
+    loot: [
         { slot: "weapon-m", value: 300, name: "Scimitar", link: "http://www.d20pfsrd.com/equipment/weapons" },
         { slot: "armor", value: 150, name: "Hide Shirt", link: "http://www.d20pfsrd.com/equipment/armor" },
         { slot: "armor", value: 257, name: "Darkwood Heavy Wooden Shield", link: "http://www.d20pfsrd.com/equipment/special-materials#TOC-Darkwood" },

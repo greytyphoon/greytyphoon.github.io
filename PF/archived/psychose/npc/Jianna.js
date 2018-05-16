@@ -25,8 +25,8 @@ var Greytyphoon.Characters.push({
     "str": 14,
     "dex": [ 17, { points: 2, reason: "Racial" }, { points: 1, reason: "Advancement" }, { points: 2, reason: "Enhancement" } ],
     "con": 12,
-    "int": [ 12, { points: -2, reason: "Racial" },
-    "wis": [ 13, { points: 2, reason: "Racial" },
+    "int": [ 12, { points: -2, reason: "Racial" } ],
+    "wis": [ 13, { points: 2, reason: "Racial" } ],
     "cha": 10,
     traits: [
         { name: "Magical Knack", link: "http://www.d20pfsrd.com/traits/magic-traits/magical-knack" },
@@ -52,7 +52,7 @@ var Greytyphoon.Characters.push({
 		{ level: 1, name: "longstrider", link: "http://www.d20pfsrd.com/magic/all-spells/l/longstrider" },
         { level: 1, name: "resist energy", link: "http://www.d20pfsrd.com/magic/all-spells/r/resist-energy" }
     ],
-    loot:
+    loot: [
         { slot: "weapon-m", value: 300, name: "Greatsword", link: "http://www.d20pfsrd.com/equipment/weapons" },
         { slot: "weapon-r", value: 300, name: "Longbow [2]", link: "http://www.d20pfsrd.com/equipment/weapons" },
         { slot: "weapon-r", value: 60, name: "Special Ammo", link: "http://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/ammunition" },

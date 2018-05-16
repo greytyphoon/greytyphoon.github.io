@@ -41,9 +41,9 @@ var Greytyphoon.Characters.push({
     ],
     targetFeats: [],
     spells: [],
-    loot:
+    loot: [
         { slot: "weapon-m", value: 1200, name: "Dagger*4", link: "http://www.d20pfsrd.com/equipment/weapons" },
         { slot: "armor", value: 1100, name: "Mithral Shirt", link: "http://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" },
-        { slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", link: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
+        { slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", link: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity" }
     ]
 });

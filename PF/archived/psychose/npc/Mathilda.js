@@ -50,7 +50,7 @@ var Greytyphoon.Characters.push({
         { lvl: 2, name: "tattoo potion", link: "http://www.d20pfsrd.com/magic/all-spells/t/tattoo-potion" },
         { lvl: 3, name: "bestow curse", link: "http://www.d20pfsrd.com/magic/all-spells/b/bestow-curse" }
     ],
-    loot:
+    loot: [
         { slot: "weapon-m", value: 300, name: "Longsword", link: "http://www.d20pfsrd.com/equipment/weapons" },
         { slot: "weapon-r", value: 300, name: "Longbow", link: "http://www.d20pfsrd.com/equipment/weapons" },
         { slot: "none", value: 5000, name: "Caster's Tattoo", link: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/tattoo-caster-s" },
