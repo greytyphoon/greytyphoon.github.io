@@ -7,15 +7,15 @@ var Greytyphoon.Characters.push({
         companion: { name: "Sissi L'Assoupi", link: "http://www.d20pfsrd.com/bestiary/monster-listings/animals/birds/dodo/" },
         source: null,
         dead: false,
-        npc: true,
+        npc: false,
     },
     alignment: "CG",
     deity: "",
     languages: "Common, Elven, Dwarven, Abyssal, Ignan, Terran",
-    ancestry: { 
-        name: "Elf", 
+    ancestry: {
+        name: "Elf",
         link: "http://www.d20pfsrd.com/races/core-races/elf",
-        archetypes: [ { title: "Arcane Focus", link: "http://www.d20pfsrd.com/races/core-races/elf#TOC-Arcane-Focus" } ]
+        archetypes: [ { name: "Arcane Focus", link: "http://www.d20pfsrd.com/races/core-races/elf#TOC-Arcane-Focus" } ]
     },
     level: [ { name: "Magus", link: "http://www.d20pfsrd.com/classes/base-classes/magus", quantity: 3 } ],
     "str": 10,
