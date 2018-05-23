@@ -1,5 +1,5 @@
 var Greytyphoon.Characters.push({
-    name: "Percival Pendragon",
+    name: "Jocast Danmory",
     flair: "consumed by the black blood",
     meta: {
         quest: "Dave",
@@ -10,7 +10,7 @@ var Greytyphoon.Characters.push({
         npc: false,
     },
     alignment: "N",
-    deity: "??",
+    deity: "Calistria",
     languages: "Common",
     ancestry: { name: "Human", link: "http://www.d20pfsrd.com/races/core-races/human" },
     level: [ { 
@@ -23,13 +23,15 @@ var Greytyphoon.Characters.push({
     } ],
     "str": [ 16, { points: 2, reason: "Racial" } ],
     "dex": 14,
-    "con": 12,
+    "con": 13,
     "int": 10,
-    "wis": 12,
-    "cha": 11,
+    "wis": 10,
+    "cha": 12,
     traits: [
-        { name: "??", link: "" },
-        { name: "Vengeful", link: "https://www.d20pfsrd.com/traits/combat-traits/vengeful/" }
+        { name: "Called", link: "http://www.d20pfsrd.com/traits/faith-traits/called" },
+        { name: "Indomitable Faith", link: "http://www.d20pfsrd.com/traits/faith-traits/indomitable-faith" },
+        { name: "Vengeful", link: "https://www.d20pfsrd.com/traits/combat-traits/vengeful/" },
+        { name: "Warded against Nature", link: "https://www.d20pfsrd.com/traits/drawbacks/warded-against-nature/", drawback: true }
     ],
     startingFeats: [
         { name: "Power Attack", link: "http://www.d20pfsrd.com/feats/combat-feats/power-attack-combat-final" },
