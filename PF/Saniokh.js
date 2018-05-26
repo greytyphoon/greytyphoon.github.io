@@ -1,5 +1,5 @@
 var Greytyphoon.Characters.push({
-    name: "Saniokh Emishi",
+    name: "Victor Emishi",
     flair: "consumed by the black blood",
     meta: {
         quest: "Dave",
@@ -28,8 +28,6 @@ var Greytyphoon.Characters.push({
     "wis": 10,
     "cha": 11,
     traits: [
-        { name: "Called", link: "http://www.d20pfsrd.com/traits/faith-traits/called" },
-        { name: "Indomitable Faith", link: "http://www.d20pfsrd.com/traits/faith-traits/indomitable-faith" },
         { name: "Carefully Hidden", link: "http://www.d20pfsrd.com/traits/race-traits/carefully-hidden-human" },
         { name: "Vengeful", link: "https://www.d20pfsrd.com/traits/combat-traits/vengeful/" },
         { name: "Warded against Nature", link: "https://www.d20pfsrd.com/traits/drawbacks/warded-against-nature/", drawback: true }

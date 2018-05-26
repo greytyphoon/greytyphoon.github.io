@@ -8,7 +8,7 @@
 		.rage { color:blue; }
         .rage > .weapon { color: black; border-color: blue; }
         .rage > .weapon > .weaponHead { background-color: blue; border-color: blue; }
-        @media print, screen and (min-width:768px) {.rage > .subtitle { margin-top: -30px; }}
+        @media print, screen and (min-width:768px) {.rage > .subtitle { margin-top: -30px; height: 27px; margin-bottom: 3px; }}
 	</style>
 </head>
 <body>
@@ -18,7 +18,7 @@
 
     <div class="container">
         <div id="header">
-            <b>Saniokh Emishi</b><br>
+            <b>Victor Emishi</b><br>
             N Medium humanoid
         </div>
 
@@ -53,8 +53,7 @@
                 </dl>
                 <dl class="charInfo">
                     <dt>Traits</dt>
-                    <dd><a href="http://www.d20pfsrd.com/traits/faith-traits/indomitable-faith">Indomitable Faith</a> 
-                        or <a href="http://www.d20pfsrd.com/traits/race-traits/carefully-hidden-human">Carefully Hidden</a></dd>
+                    <dd><a href="http://www.d20pfsrd.com/traits/race-traits/carefully-hidden-human">Carefully Hidden</a></dd>
                     <dd><a href="http://www.d20pfsrd.com/traits/combat-traits/vengeful">Vengeful</a></dd>
 
                     <dt>Drawback</dt>
@@ -113,8 +112,8 @@
         </div>
         <div>
             <span class="numberFirst">4</span>
-            <a href="http://www.d20pfsrd.com/skills/intimidate" class="listBonusBreaker">Intimidate</a>
-            <span class="listBonuses">0 cha, 1 ranks, 3 class</span>
+            <a href="http://www.d20pfsrd.com/skills/survival" class="listBonusBreaker">Survival</a>
+            <span class="listBonuses">0 wis, 1 ranks, 3 class</span>
         </div>
         <div class="br">
             <span class="numberFirst">8</span>
@@ -131,10 +130,10 @@
             Unranked Class Skills:
             <a href="http://www.d20pfsrd.com/skills/craft">Craft</a>,
             <a href="http://www.d20pfsrd.com/skills/handle-animal">Handle Animal</a>,
+            <a href="http://www.d20pfsrd.com/skills/intimidate">Intimidate</a>,
             <a href="http://www.d20pfsrd.com/skills/knowledge">Knowledge</a> (arcana),
             <a href="http://www.d20pfsrd.com/skills/ride">Ride</a>,
-            <a href="http://www.d20pfsrd.com/skills/spellcraft">Spellcraft</a>,
-            <a href="http://www.d20pfsrd.com/skills/survival">Survival</a>.
+            <a href="http://www.d20pfsrd.com/skills/spellcraft">Spellcraft</a>.
         </div>
 
         <!-- title COMBAT -->
@@ -174,7 +173,10 @@
                 <div>
                     <span class="numberFirst">1</span>
                     <b class="listBonusBreaker">Will</b>
-                    <span class="listBonuses">0 wis, 0 class, <abbr title="Indomitable Faith">1 trait</abbr></span>
+                    <span class="listBonuses">0 wis, 0 class, <abbr title="Carefully Hidden">1 trait</abbr></span>
+                </div>
+                <div class="circumstancialBonus">
+                    <abbr title="Carefully Hidden">+2 trait</abbr> vs. Divination
                 </div>
                 <div class="circumstancialBonus">
                     <abbr title="Black Blood">Immune</abbr> to black blood
@@ -209,7 +211,10 @@
                     <br>
                     <b class="listBonusBreaker">1d10+6</b>
                     <span class="listBonuses">6 str&frac12;</span>
-                    <div><a href="https://www.d20pfsrd.com/equipment/weapons/#wpn-quality-reach">reach</a>, <a href="https://www.d20pfsrd.com/equipment/weapons/#wpn-quality-brace">brace</a>, +2 to sunder heavy/medium armor</div>
+                    <div class="circumstancialBonus">
+                        <a href="https://www.d20pfsrd.com/equipment/weapons/#wpn-quality-reach">reach</a>, 
+                        <a href="https://www.d20pfsrd.com/equipment/weapons/#wpn-quality-brace">brace</a>, +2 to sunder heavy/medium armor
+                    </div>
                 </div>
                 
                 <!--Chakram-->
@@ -266,6 +271,9 @@
                     <span class="listBonuses">0 wis, 0 class, 2 morale, <abbr title="Indomitable Faith">1 trait</abbr></span>
                 </div>
                 <div class="circumstancialBonus">
+                    <abbr title="Carefully Hidden">+2 trait</abbr> vs. Divination
+                </div>
+                <div class="circumstancialBonus">
                     <abbr title="Black Blood">Immune</abbr> to black blood
                 </div>
                 <div class="br">
@@ -298,7 +306,10 @@
                     <br>
                     <b class="listBonusBreaker">1d10+9</b>
                     <span class="listBonuses">9 str&frac12;</span>
-                    <div><a href="https://www.d20pfsrd.com/equipment/weapons/#wpn-quality-reach">reach</a>, <a href="https://www.d20pfsrd.com/equipment/weapons/#wpn-quality-brace">brace</a>, +2 to sunder heavy/medium armor</div>
+                    <div class="circumstancialBonus">
+                        <a href="https://www.d20pfsrd.com/equipment/weapons/#wpn-quality-reach">reach</a>, 
+                        <a href="https://www.d20pfsrd.com/equipment/weapons/#wpn-quality-brace">brace</a>, +2 to sunder heavy/medium armor
+                    </div>
                 </div>
                 
                 <!--Chakram-->
@@ -320,7 +331,7 @@
                         Black Blood (Su)
                         <abbr title="3 class" class="float-right">3/day</abbr>
                     </div>
-                    When you damaged by a P/S attack while bloodraging, 
+                    When damaged by a P/S attack while bloodraging, 
                     as a safe <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a>,
                     give all melee attacks <a href="http://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost">frost</a> for 2 rounds.
                 </div>
@@ -370,12 +381,6 @@
                     PC: Taldor, Echoes of Glory (2009)
                     <ul class="list-unstyled">
                         <li><a href="http://www.d20pfsrd.com/traits/race-traits/carefully-hidden-human">Carefully Hidden</a></li>
-                    </ul>
-                </li>
-                <li>
-                    Ultimate Campaign (2013)
-                    <ul class="list-unstyled">
-                        <li><a href="http://www.d20pfsrd.com/traits/faith-traits/indomitable-faith">Indomitable Faith</a></li>
                     </ul>
                 </li>
                 <li>
