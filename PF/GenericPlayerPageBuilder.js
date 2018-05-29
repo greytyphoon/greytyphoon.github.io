@@ -2,7 +2,7 @@
 function addName(questChars, table) {
     let percentWidth = Math.round(10000 / (questChars.length)) / 100; // Precise to 2nd decimal
     let row = document.createElement("tr");
-    foreach(let character in questChars) {
+    for(let character in questChars) {
         let col = document.createElement("th");
         col.innerHTML = character.name;
         col.style = "width: " + percentWidth + "%;"
@@ -14,7 +14,7 @@ function addName(questChars, table) {
 }
 function addLine(questChars, table, fct) {
     let row = document.createElement("tr");
-    foreach(let character in questChars) {
+    for(let character in questChars) {
         let col = document.createElement("td");
         fct(questChar).foreach(node => col.appendChild(node));
         row.appendChild(col);
@@ -29,9 +29,9 @@ function link(obj) {
 }
 function addSum(questChars, table) {
     let row = document.createElement("tr");
-    foreach(let character in questChars) {
+    for(let character in questChars) {
         let sum = 0;
-        foreach(let item in character.loot) {
+        for(let item in character.loot) {
             sum += item.value;
         }
     
@@ -87,7 +87,7 @@ function addClasses(character) {
         return AddClass(character.level[0]);
 
     let divArray = [];
-    foreach (let lvl in character.level)
+    for (let lvl in character.level)
     {
         let currDiv = document.createElement("div");
         AddClass(lvl).foreach(node => currDiv.appendChild(node));
@@ -106,7 +106,7 @@ function addClass(level)
     classSpan.appendChild(document.createTextNode(" " + level.quantity));
 
     let spanArray = [classSpan];
-    foreach (let archetype in level.archetypes)
+    for (let archetype in level.archetypes)
     {
         let currSpan = document.createElement("span");
         currSpan.class = "listBonuses"
@@ -131,7 +131,7 @@ function addStat(characterStat) {
     let sum  = characterStat[0];
     let desc = characterStat[0];
     var mods = characterStat.slice(1, characterStat.length);
-    foreach(var mod in mods)
+    for (var mod in mods)
     {
         sum += mod.points;
         desc += ", <span title='" + mod.reason + "'>" + mod.points + "</span>";
@@ -162,9 +162,9 @@ function addFeats(featArray)
     if (!featArray || !featArray.length || featArray.length <= 0)
         return [];
 
-    var returnValue = [link(featArray[0])];
-    var moreFeats = featArray.slice(1, featArray.length);
-    foreach(let feat in moreFeats) {
+    let returnValue = [link(featArray[0])];
+    let moreFeats = featArray.slice(1, featArray.length);
+    for (let feat in moreFeats) {
         returnValue.push(document.createElement("br"));
         if (feat.drawback)
             returnValue.push(document.createTextNode("Drawback: "));
@@ -189,9 +189,32 @@ function addProgressFeats(character) {
 function addTargetFeats(character) {
     return addFeats(character.targetFeats);
 }
+function addSpells(character)
+{
+    if (!character.spells || !character.spells.length || character.spells.length <= 0)
+        return [];
+    
+    let returnValue = [];
+    let spellOne = link(character.spells[0]);
+    spellOne.class = character.spells[0].tag ? "spell " + character.spells[0].tag : "spell";
+    let moreSpells = character.spells.slice(1, character.spells.length);
+    for (let spell in moreSpells) {
+        returnValue.push(document.createElement("br"));
+        let aSpell = link(spell);
+        aSpell.class = spell.tag ? "spell " + spell.tag : "spell";
+        returnValue.push(aSpell);
+    }
+    return returnValue;
+}
 
 /* Main */
 function main() {
+    document.getElementsByTagName("title")[0].innerHTML = "Grey's " + questName + " Campaign";
+	document.getElementById("header").children[0].innerHTML = questName + " Campaign";
+	let questChars = Greytyphoon.Characters.filter(character => character.meta
+															 && !character.meta.dead
+															 && !character.meta.npc
+															 && character.meta.quest == questName);
 	var charInfoTable = document.getElementById("charInfo");
 	var lootTable = document.getElementById("loot");
 	var spellTable = document.getElementById("spells");
