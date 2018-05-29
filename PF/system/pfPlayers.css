@@ -16,14 +16,14 @@ a#xp { display: block; }
 a#houserules { display: block; }
 
 /*playersLootValue*/
-table#playersLootValue  {
+table#playersLootValue, table.playerInfo  {
     border: 1px #eaebef solid; /*murder-grey*/
     border-collapse: collapse;
     margin-bottom: 2rem; 
     width: 100%; }
-table#playersLootValue th { 
+table#playersLootValue th, table.playerInfo th { 
     background-color:#eaebef; /*murder-grey*/
     text-align: center; }
-table#playersLootValue td {
+table#playersLootValue td, table.playerInfo td {
     border: 1px #eaebef solid; /*murder-grey*/
     text-align: center; }
