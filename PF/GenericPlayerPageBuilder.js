@@ -208,7 +208,7 @@ function addSpells(character)
 }
 
 /* Main */
-function main() {
+function main(questName) {
     document.getElementsByTagName("title")[0].innerHTML = "Grey's " + questName + " Campaign";
 	document.getElementById("header").children[0].innerHTML = questName + " Campaign";
 	let questChars = Greytyphoon.Characters.filter(character => character.meta
@@ -245,12 +245,4 @@ function main() {
     addLine(questChar, buildTable, addStartingFeats);
     addLine(questChar, buildTable, addProgressFeats);
     addLine(questChar, buildTable, addTargetFeats);
-    
-    /* Prep */
-    document.getElementsByTagName("title")[0].innerHTML = "Grey's " + questName + " Campaign";
-	document.getElementById("header").children[0].innerHTML = questName + " Campaign";
-	let questChars = Greytyphoon.Characters.filter(character => character.meta
-															 && !character.meta.dead
-															 && !character.meta.npc
-															 && character.meta.quest == questName);
 }
