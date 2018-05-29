@@ -1,8 +1,10 @@
+var Greytyphoon = { Characters: [] };
+
 /* FCT add stuff to tables */
 function addName(questChars, table) {
     let percentWidth = Math.round(10000 / (questChars.length)) / 100; // Precise to 2nd decimal
     let row = document.createElement("tr");
-    for(let character in questChars) {
+    for (let character of questChars) {
         let col = document.createElement("th");
         col.innerHTML = character.name;
         col.style = "width: " + percentWidth + "%;"
@@ -14,24 +16,24 @@ function addName(questChars, table) {
 }
 function addLine(questChars, table, fct) {
     let row = document.createElement("tr");
-    for(let character in questChars) {
+    for (let character of questChars) {
         let col = document.createElement("td");
-        fct(questChar).foreach(node => col.appendChild(node));
+        fct(character).forEach(node => col.appendChild(node));
         row.appendChild(col);
     }
     table.appendChild(row);
 }
 function link(obj) {
     let lnk = document.createElement("a");
-    lnk.href = obj.link;
+    lnk.href = obj["link"];
     lnk.appendChild(document.createTextNode(obj.name));
     return lnk;
 }
 function addSum(questChars, table) {
     let row = document.createElement("tr");
-    for(let character in questChars) {
+    for (let character of questChars) {
         let sum = 0;
-        for(let item in character.loot) {
+        for (let item of character.loot) {
             sum += item.value;
         }
     
@@ -49,8 +51,9 @@ function addAlignment(character) {
     return [document.createTextNode(character.alignment)];
 }
 function addDeity(character) {
-    if (!character.deity.link)
-        return [document.createTextNode(deity.deity)];
+    console.log(character.deity);
+    if (!character.deity["link"])
+        return [document.createTextNode(character.deity)];
 
     /* Uncommon/custom gods can be links */
     return [link(character.deity)];
@@ -76,21 +79,21 @@ function addAncestry(character) {
     if (!character.ancestry.archetypes)
         return [lnk];
 
-    lnk.class = 'listBonusBreaker';
+    lnk.className = 'listBonusBreaker';
     let archetypeDesc = document.createElement("span");
-    archetypeDesc.class = 'listBonuses';
+    archetypeDesc.className = 'listBonuses';
     archetypeDesc.appendChild(document.createTextNode(character.ancestry.archetypes.map(x => x.name).join(", ")));
     return [lnk, archetypeDesc];
 }
 function addClasses(character) {
     if (character.level.length == 1)
-        return AddClass(character.level[0]);
+        return addClass(character.level[0]);
 
     let divArray = [];
-    for (let lvl in character.level)
+    for (let lvl of character.level)
     {
         let currDiv = document.createElement("div");
-        AddClass(lvl).foreach(node => currDiv.appendChild(node));
+        addClass(lvl).forEach(node => currDiv.appendChild(node));
         divArray.push(currDiv);
     }
     return divArray;
@@ -98,18 +101,18 @@ function addClasses(character) {
 function addClass(level)
 {
     if (!level.archetypes || level.archetypes.length == 0)
-        return [link(level), document.createTextNode(level.quantity)];
+        return [link(level), document.createTextNode(" " + level.quantity)];
 
     let classSpan = document.createElement("span");
-    classSpan.class = "listBonusBreaker";
+    classSpan.className = "listBonusBreaker";
     classSpan.appendChild(link(level));
     classSpan.appendChild(document.createTextNode(" " + level.quantity));
 
     let spanArray = [classSpan];
-    for (let archetype in level.archetypes)
+    for (let archetype of level.archetypes)
     {
         let currSpan = document.createElement("span");
-        currSpan.class = "listBonuses"
+        currSpan.className = "listBonuses"
         currSpan.appendChild(link(archetype));
 
         if (archetype.title && archetype.title != "")
@@ -122,16 +125,16 @@ function addClass(level)
 function addStat(characterStat) {
     if (typeof characterStat === 'number')
     {
-        return document.createTextNode(characterStat);
+        return [document.createTextNode(characterStat)];
     }
     
     // We want to get: "22 (17, 2, 1, 2)"
-    var spanBonuses = document.createElement("span");
-    spanBonuses.class = "listBonuses";
+    let spanBonuses = document.createElement("span");
+    spanBonuses.className = "listBonuses";
     let sum  = characterStat[0];
     let desc = characterStat[0];
-    var mods = characterStat.slice(1, characterStat.length);
-    for (var mod in mods)
+    let mods = characterStat.slice(1, characterStat.length);
+    for (let mod of mods)
     {
         sum += mod.points;
         desc += ", <span title='" + mod.reason + "'>" + mod.points + "</span>";
@@ -164,13 +167,13 @@ function addFeats(featArray)
 
     let returnValue = [link(featArray[0])];
     let moreFeats = featArray.slice(1, featArray.length);
-    for (let feat in moreFeats) {
+    for (let feat of moreFeats) {
         returnValue.push(document.createElement("br"));
         if (feat.drawback)
             returnValue.push(document.createTextNode("Drawback: "));
         if (feat.title)
             returnValue.push(document.createTextNode(feat.title + ": "));
-        if (feat.link)
+        if (feat["link"])
             returnValue.push(link(feat));
         else
             returnValue.push(document.createTextNode(feat.name));
@@ -196,12 +199,12 @@ function addSpells(character)
     
     let returnValue = [];
     let spellOne = link(character.spells[0]);
-    spellOne.class = character.spells[0].tag ? "spell " + character.spells[0].tag : "spell";
+    spellOne.className = character.spells[0].tag ? "spell " + character.spells[0].tag : "spell";
     let moreSpells = character.spells.slice(1, character.spells.length);
-    for (let spell in moreSpells) {
+    for (let spell of moreSpells) {
         returnValue.push(document.createElement("br"));
         let aSpell = link(spell);
-        aSpell.class = spell.tag ? "spell " + spell.tag : "spell";
+        aSpell.className = spell.tag ? "spell " + spell.tag : "spell";
         returnValue.push(aSpell);
     }
     return returnValue;
@@ -209,8 +212,6 @@ function addSpells(character)
 
 /* Main */
 function main(questName) {
-    document.getElementsByTagName("title")[0].innerHTML = "Grey's " + questName + " Campaign";
-	document.getElementById("header").children[0].innerHTML = questName + " Campaign";
 	let questChars = Greytyphoon.Characters.filter(character => character.meta
 															 && !character.meta.dead
 															 && !character.meta.npc
@@ -232,17 +233,20 @@ function main(questName) {
 	addLine(questChars, charInfoTable, addInt);
 	addLine(questChars, charInfoTable, addWis);
 	addLine(questChars, charInfoTable, addCha);
-	if (questChars.any(character => character.meta.companion))
+	if (questChars.some(character => character.meta.companion))
 		addLine(questChars, charInfoTable, addCompanion);
-	if (questChars.any(character => character.meta.source))
+	if (questChars.some(character => character.meta.source))
 		addLine(questChars, charInfoTable, addSource);
 
 	addName(questChars, lootTable);
 	addSum(questChars, lootTable);
     
+    addName(questChars, spellTable);
+    addLine(questChars, spellTable, addSpells);
+    
     addName(questChars, buildTable);
-    addLine(questChar, buildTable, addTraits);
-    addLine(questChar, buildTable, addStartingFeats);
-    addLine(questChar, buildTable, addProgressFeats);
-    addLine(questChar, buildTable, addTargetFeats);
+    addLine(questChars, buildTable, addTraits);
+    addLine(questChars, buildTable, addStartingFeats);
+    addLine(questChars, buildTable, addProgressFeats);
+    // addLine(questChars, buildTable, addTargetFeats);
 }
