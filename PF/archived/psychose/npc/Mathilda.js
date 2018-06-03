@@ -1,10 +1,10 @@
-var Greytyphoon.Characters.push({
+Greytyphoon.Characters.push({
     name: "Mathilda Nalaar",
     flair: "Pharasma's mountain warden",
     meta: {
         quest: "Psychose",
         owner: "Grey",
-        companion: { name: "Bat Familiar", link: null },
+        companion: { name: "Bat Familiar", link: "https://www.d20pfsrd.com/classes/core-classes/wizard/familiar/" },
         source: null,
         dead: false,
         npc: true

@@ -1,4 +1,4 @@
-var Greytyphoon.Characters.push({
+Greytyphoon.Characters.push({
     name: "Nyarlatoplel",
     flair: "",
     meta: {

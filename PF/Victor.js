@@ -1,4 +1,4 @@
-var Greytyphoon.Characters.push({
+Greytyphoon.Characters.push({
     name: "Victor Emishi",
     flair: "consumed by the black blood",
     meta: {
@@ -8,6 +8,12 @@ var Greytyphoon.Characters.push({
         source: null,
         dead: false,
         npc: false,
+    },
+    flavor: {
+        eyes: "brown",
+        hair: "black",
+        weight: "178 lbs",
+        height: "6' 3''"
     },
     alignment: "N",
     deity: "Calistria",

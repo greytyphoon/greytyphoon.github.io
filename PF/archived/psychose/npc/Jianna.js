@@ -1,4 +1,4 @@
-var Greytyphoon.Characters.push({
+Greytyphoon.Characters.push({
     name: "Jianna Veeral'tehl",
     flair: "dragon tamer, a.k.a. Thomas Brunyan",
     meta: {
