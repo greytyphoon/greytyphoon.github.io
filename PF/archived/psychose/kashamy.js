@@ -12,11 +12,7 @@ Greytyphoon.Characters.push({
 	alignment: "CG",
 	deity: "",
 	languages: "Common, Elven, Dwarven, Abyssal, Ignan, Terran",
-	ancestry: {
-		name: "Elf",
-		link: "http://www.d20pfsrd.com/races/core-races/elf",
-		archetypes: [ { name: "Arcane Focus", link: "http://www.d20pfsrd.com/races/core-races/elf#TOC-Arcane-Focus" } ]
-	},
+	ancestry: { name: "Elf", link: "http://www.d20pfsrd.com/races/core-races/elf", archetypes: ["Arcane Focus"] },
 	level: [ { name: "Magus", link: "http://www.d20pfsrd.com/classes/base-classes/magus", quantity: 3 } ],
 	"str": 10,
 	"dex": [ 16, { points: 2, reason: "Racial" } ],

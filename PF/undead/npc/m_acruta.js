@@ -12,7 +12,7 @@ Greytyphoon.Characters.push({
     alignment: "CE",
     deity: "Urgathoa",
     languages: "Common, Dwarven, Undercommon, Necril, Draconic, Abyssal",
-    ancestry: { name: "Human", link: "https://www.d20pfsrd.com/races/core-races/human", archetypes: [{ name: "Dual Talent", link: "" }] },
+    ancestry: { name: "Human", link: "https://www.d20pfsrd.com/races/core-races/human", archetypes: ["Dual Talent"] },
     level: [ {
         name: "Witch",
         link: "https://www.d20pfsrd.com/classes/base-classes/witch",

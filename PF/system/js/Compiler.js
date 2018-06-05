@@ -119,23 +119,10 @@ function checkAncestry(character) {
 }
 function checkAncestryArchetype(archetype) {
 	// Self-check
-	if (typeof archetype != "object")
-	{
-		logError("Bad ancestry Archetype");
-		return;
-	}
-
-	// Accepted properties
-	var aaAccepts = ["name", "link"];
-	for (let prop in archetype)
-		if (!aaAccepts.includes(prop))
-			logError("Bad Ancestry Archetype, unsupported property");
-
-	// Simple properties
-	if (!archetype.name || typeof archetype.name != "string")
-		logError("Bad ancestry Archetype, no name");
-	if (!archetype.link || typeof archetype.link != "string")
-		logError("Bad ancestry Archetype, no link");
+    if (!archetype || typeof archetype != "string")
+    {
+        logError("Bad Ancestry Archetype");
+    }
 }
 function checkLevels(character) {
 	if (typeof character.level != "object" || character.level.constructor !== Array)
