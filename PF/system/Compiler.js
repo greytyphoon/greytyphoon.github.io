@@ -30,6 +30,7 @@ function main() {
         checkStat(character.int);
         checkStat(character.wis);
         checkStat(character.cha);
+        checkTraits(character);
 
         if (character.flair) OptionalChecks.checkFlair(character);
         if (character.flavor) OptionalChecks.checkFlavor(character);
@@ -206,21 +207,75 @@ function checkLevelArchetype(archetype)
 }
 function checkStat(stat)
 {
-        // Stat is either an int (no mods) or an array [base, {mod}, {mod}]
-        if (typeof stat == "number")
-        {
-            if (stat < 7 || stat > 17)
-                logError("Impossible unmodded stat");
-            return;
-        }
-        if (typeof stat != "object" || stat.constructor !== Array)
-        {
-            logError("Invalid stat format:" + stat);
-            return
-        }
+    // Stat is either an int (no mods) or an array [base, {mod}, {mod}]
+    if (typeof stat == "number")
+    {
+        if (stat < 7 || stat > 17)
+            logError("Impossible unmodded stat");
+        return;
+    }
+    if (typeof stat != "object" || stat.constructor !== Array)
+    {
+        logError("Invalid stat format:" + stat);
+        return
+    }
 
-        if (typeof stat[0] != "number" || stat[0] < 7 || stat[0] > 18)
-            logError
+    if (typeof stat[0] != "number" || stat[0] < 7 || stat[0] > 18)
+        logError("Invalid first stat");
+    for (let statMod of stat.splice(1, stat.length))
+        checkStatModifier(statMod);
+}
+function checkStatModifier(mod)
+{
+    // Self-check
+    if (!mod || typeof mod != "object")
+    {
+        logError("Bad stat mod");
+        return;
+    }
+    
+    // Accepted properties
+    var statModAccepts = ["points", "reason"];
+    for (let modProp in mod)
+        if (!statModAccepts.includes(modProp))
+            logError("Unsupported stat modifier property: " + modProp);
+        
+    // Simple Properties
+    if (!mod.points || typeof mod.points != "number" || mod.points > 6 || mod.points < -6)
+        logError("Invalid stat modifier points");
+    if (!mod.reason || typeof mod.reason != "string")
+        logError("Invalid stat modifier reason");
+}
+function checkTraits(character)
+{
+    if (!character.traits || typeof character.traits != "object" || character.traits.constructor !== Array)
+        logError("Bad Traits");
+    else
+        for (let trait of character.traits)
+            checkSingleTrait(trait);
+}
+function checkSingleTrait(trait)
+{
+    // Self-check
+    if (!trait || typeof trait != "object")
+    {
+        logError("Bad Trait");
+        return;
+    }
+    
+    // Accepted properties
+    var traitAccepts = ["name", "link", "drawback"];
+    for (let traitProp in trait)
+        if (!traitAccepts.includes(traitProp))
+            logError("Unexpected property in trait");
+        
+    // Simple properties
+    if (!trait.name || typeof trait.name != "string")
+        logError("Bad trait name");
+    if (!trait.link || typeof trait.link != "string")
+        logError("Bad trait link");
+    if (trait.drawback && typeof trait.drawback != "boolean")
+        logError("Bad trait drawback");
 }
 
 var OptionalChecks = {
