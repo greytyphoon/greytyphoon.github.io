@@ -1,7 +1,6 @@
 var Greytyphoon = { Characters: [] };
 
-function logError(val)
-{
+function logError(val) {
 	let p = document.createElement("p");
 	p.className = "error";
 	p.innerHTML = val;
@@ -49,8 +48,7 @@ function main() {
 	}
 }
 
-function checkMeta(character)
-{
+function checkMeta(character) {
 	// Self-check
 	if (!character.meta || typeof character.meta != "object")
 	{
@@ -78,8 +76,7 @@ function checkMeta(character)
 	if (character.meta.companion) OptionalChecks.checkCompanion(character);
 	if (character.meta.source) OptionalChecks.checkSource(character);
 }
-function checkAlignment(character)
-{
+function checkAlignment(character) {
 	// Alignment is mandatory. Must be a valid, two-letters alignment.
 	if (!character.alignment)
 	{
@@ -90,8 +87,7 @@ function checkAlignment(character)
 	if (!alignmentAccepts.includes(character.alignment))
 		logError(character.name + "'s alignment was not recognized");
 }
-function checkAncestry(character)
-{
+function checkAncestry(character) {
 	// Self-check
 	if (!character.ancestry)
 	{
@@ -121,8 +117,7 @@ function checkAncestry(character)
 				checkAncestryArchetype(ancestryArch);
 	}
 }
-function checkAncestryArchetype(archetype)
-{
+function checkAncestryArchetype(archetype) {
 	// Self-check
 	if (typeof archetype != "object")
 	{
@@ -142,8 +137,7 @@ function checkAncestryArchetype(archetype)
 	if (!archetype.link || typeof archetype.link != "string")
 		logError("Bad ancestry Archetype, no link");
 }
-function checkLevels(character)
-{
+function checkLevels(character) {
 	if (typeof character.level != "object" || character.level.constructor !== Array)
 	{
 		logError(character.name + "'s level is not formatted correctly");
@@ -154,8 +148,7 @@ function checkLevels(character)
 	for (let level of character.level)
 		checkSingleLevel(level);
 }
-function checkSingleLevel(level)
-{
+function checkSingleLevel(level) {
 	// Self-check
 	if (!level || typeof level != "object")
 	{
@@ -187,8 +180,7 @@ function checkSingleLevel(level)
 				checkLevelArchetype(archetype);
 	}
 }
-function checkLevelArchetype(archetype)
-{
+function checkLevelArchetype(archetype) {
 	// Self-check
 	if (!archetype || typeof archetype != "object")
 	{
@@ -210,8 +202,7 @@ function checkLevelArchetype(archetype)
 	if (archetype.title && typeof archetype.title != "string")
 		logError("Bad Archetype Title");
 }
-function checkStat(stat)
-{
+function checkStat(stat) {
 	// Stat is either an int (no mods) or an array [base, {mod}, {mod}]
 	if (typeof stat == "number")
 	{
@@ -230,8 +221,7 @@ function checkStat(stat)
 	for (let statMod of stat.splice(1, stat.length))
 		checkStatModifier(statMod);
 }
-function checkStatModifier(mod)
-{
+function checkStatModifier(mod) {
 	// Self-check
 	if (!mod || typeof mod != "object")
 	{
@@ -251,16 +241,14 @@ function checkStatModifier(mod)
 	if (!mod.reason || typeof mod.reason != "string")
 		logError("Invalid stat modifier reason");
 }
-function checkTraits(character)
-{
+function checkTraits(character) {
 	if (!character.traits || typeof character.traits != "object" || character.traits.constructor !== Array)
 		logError("Bad Traits");
 	else
 		for (let trait of character.traits)
 			checkSingleTrait(trait);
 }
-function checkSingleTrait(trait)
-{
+function checkSingleTrait(trait) {
 	// Self-check
 	if (!trait || typeof trait != "object")
 	{
@@ -282,32 +270,28 @@ function checkSingleTrait(trait)
 	if (trait.drawback && typeof trait.drawback != "boolean")
 		logError("Bad trait drawback");
 }
-function checkStartingFeats(character)
-{
+function checkStartingFeats(character) {
 	if (!character.startingFeats || typeof character.startingFeats != "object" || character.startingFeats.constructor !== Array)
 		logError("Bad Starting Feats");
 	else
 		for (let sf of character.startingFeats)
 			checkSingleFeat(sf);
 }
-function checkProgressFeats(character)
-{
+function checkProgressFeats(character) {
 	if (!character.progressFeats || typeof character.progressFeats != "object" || character.progressFeats.constructor !== Array)
 		logError("Bad Progress Feats");
 	else
 		for (let sf of character.progressFeats)
 			checkSingleFeat(sf);
 }
-function checkTargetFeats(character)
-{
+function checkTargetFeats(character) {
 	if (!character.targetFeats || typeof character.targetFeats != "object" || character.targetFeats.constructor !== Array)
 		logError("Bad Target Feats");
 	else
 		for (let sf of character.targetFeats)
 			checkSingleFeat(sf);
 }
-function checkSingleFeat(feat)
-{
+function checkSingleFeat(feat) {
 	// Self-check
 	if (!feat || typeof feat != "object")
 	{
@@ -331,16 +315,14 @@ function checkSingleFeat(feat)
 	if (feat.reason && typeof feat.reason != "string")
 		logError("Bad feat reason");
 }
-function checkSpells(character)
-{
+function checkSpells(character) {
 	if (!character.spells || typeof character.spells != "object" || character.spells.constructor !== Array)
 		logError("Bad Spells");
 	else
 		for (let spell of character.spells)
 			checkSingleSpell(spell);
 }
-function checkSingleSpell(spell)
-{
+function checkSingleSpell(spell) {
 	// Self-check
 	if (!spell || typeof spell != "object")
 	{
@@ -364,16 +346,14 @@ function checkSingleSpell(spell)
 	if (spell.tag && typeof spell.tag != "string")
 		logError("Bad spell tag");
 }
-function checkLoot(character)
-{
+function checkLoot(character) {
 	if (!character.loot || typeof character.loot != "object" || character.loot.constructor !== Array)
 		logError("Bad Loot");
 	else
 		for (let item of character.loot)
 			checkSingleItem(item);
 }
-function checkSingleItem(item)
-{
+function checkSingleItem(item) {
 	// Self-check
 	if (!item || typeof item != "object")
 	{
@@ -404,8 +384,7 @@ function checkSingleItem(item)
 }
 
 var OptionalChecks = {
-	checkCompanion: function (character)
-	{
+	checkCompanion: function (character) {
 		// Self-check
 		if (typeof character.meta.companion != "object")
 		{
@@ -427,8 +406,7 @@ var OptionalChecks = {
 		if (character.meta.companion.flair &&  typeof character.meta.companion.flair != "string")
 			logError(character.name + "'s companion has an invalid flair");
 	},
-	checkSource: function (character)
-	{
+	checkSource: function (character) {
 		// Self-check
 		if (typeof character.meta.source != "object")
 		{
@@ -448,14 +426,12 @@ var OptionalChecks = {
 		if (!character.meta.source.link || typeof character.meta.source.link != "string")
 			logError(character.name + "'s source has no link.");
 	},
-	checkFlair: function (character)
-	{
+	checkFlair: function (character) {
 		// If Flair is present, it must be a string.
 		if (typeof character.flair != "string")
 			logError(character.name + "'s flair is not a string");
 	},
-	checkFlavor: function (character)
-	{
+	checkFlavor: function (character) {
 		// Self-check
 		if (typeof character.flavor != "object")
 		{
@@ -479,8 +455,7 @@ var OptionalChecks = {
 		if (character.flavor.height &&  typeof character.flavor.height != "string")
 			logError(character.name + "'s flavor has invalid height");
 	},
-	checkDeity: function (character)
-	{
+	checkDeity: function (character) {
 		// Deity is either a string (god's name) or an object {name, link}
 		if (typeof character.deity == "string")
 			return;
@@ -502,15 +477,13 @@ var OptionalChecks = {
 		if (!character.deity.link || typeof character.deity.link != "string")
 			logError(character.name + "'s deity has no link.");
 	},
-	checkLanguages: function (character)
-	{
+	checkLanguages: function (character) {
 		// If Languages is present, it must be a string.
 		if (typeof character.languages != "string")
 			logError(character.name + "'s language is not a string");
 	},
 }
-function checkOverProperties(character)
-{
+function checkOverProperties(character) {
 	var allAccepted = [
 		"name", "flair", "meta", "flavor",
 		"alignment", "deity", "languages",

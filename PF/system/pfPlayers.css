@@ -2,28 +2,28 @@
 @import url("pfGeneric.css");
 
 /*xp*/
-#xp { 
-    color:#ffffff; /*html-white*/
-    margin-top: -1.5em;
-    text-align: left; }
+#xp {
+	color:#ffffff; /*html-white*/
+	margin-top: -1.5em;
+	text-align: left; }
 a#xp { display: block; }
 
 /*houserules*/
 #houserules {
-    color:#ffffff; /*html-white*/
-    margin-top: -1.5em;
-    text-align: right; }
+	color:#ffffff; /*html-white*/
+	margin-top: -1.5em;
+	text-align: right; }
 a#houserules { display: block; }
 
 /*playersLootValue*/
 table#playersLootValue, table.playerInfo  {
-    border: 1px #eaebef solid; /*murder-grey*/
-    border-collapse: collapse;
-    margin-bottom: 2rem; 
-    width: 100%; }
-table#playersLootValue th, table.playerInfo th { 
-    background-color:#eaebef; /*murder-grey*/
-    text-align: center; }
+	border: 1px #eaebef solid; /*murder-grey*/
+	border-collapse: collapse;
+	margin-bottom: .5rem;
+	width: 100%; }
+table#playersLootValue th, table.playerInfo th {
+	background-color:#eaebef; /*murder-grey*/
+	text-align: center; }
 table#playersLootValue td, table.playerInfo td {
-    border: 1px #eaebef solid; /*murder-grey*/
-    text-align: center; }
+	border: 1px #eaebef solid; /*murder-grey*/
+	text-align: center; }
