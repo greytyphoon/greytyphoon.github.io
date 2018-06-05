@@ -51,8 +51,7 @@ function addAlignment(character) {
     return [document.createTextNode(character.alignment)];
 }
 function addDeity(character) {
-    console.log(character.deity);
-    if (!character.deity["link"])
+    if (typeof character.deity == "string")
         return [document.createTextNode(character.deity)];
 
     /* Uncommon/custom gods can be links */
