@@ -21,12 +21,12 @@ Greytyphoon.Characters.push({
             { title: "Bloodline", name: "Draconic", link: "https://www.d20pfsrd.com/classes/hybrid-classes/bloodrager/bloodrager-bloodlines/paizo-bloodrager-bloodlines/draconic" }
         ]
     } ],
-    "str": [ 17, { points: 1, reason: "Advancement" } ],
+    "str": [ 17, { points: 1, reason: "Advancement" }],
     "dex": 14,
-    "con": [ 12, { points: 2, reason: "Racial" } ],
+    "con": [ 12, { points: 2, reason: "Racial" }],
     "int": 10,
-    "wis": [ 10, { points: 2, reason: "Racial" } ,
-    "cha": [ 14, { points: -2, reason: "Racial" } ,
+    "wis": [ 10, { points: 2, reason: "Racial" }],
+    "cha": [ 14, { points: -2, reason: "Racial" }],
     traits: [
         { name: "Indomitable Faith", link: "https://www.d20pfsrd.com/traits/faith-traits/indomitable-faith" },
         { name: "Reactionary", link: "https://www.d20pfsrd.com/traits/combat-traits/reactionary" }
@@ -42,7 +42,7 @@ Greytyphoon.Characters.push({
     targetFeats: [],
     spells: [
         { level: 0, name: "enlarge person", link: "https://www.d20pfsrd.com/magic/all-spells/e/enlarge-person", tag: "racial" },
-        { level: 0, name: "invisibility", link: "https://www.d20pfsrd.com/magic/all-spells/i/invisibility", tag "racial" },
+        { level: 0, name: "invisibility", link: "https://www.d20pfsrd.com/magic/all-spells/i/invisibility", tag: "racial" },
         { level: 1, name: "shield", link: "https://www.d20pfsrd.com/magic/all-spells/s/shield" },
         { level: 1, name: "blurred movement", link: "https://www.d20pfsrd.com/magic/all-spells/b/blurred-movement" },
         { level: 1, name: "thunderstomp", link: "https://www.d20pfsrd.com/magic/all-spells/t/thunderstomp" },
