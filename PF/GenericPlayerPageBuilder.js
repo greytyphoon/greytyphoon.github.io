@@ -25,7 +25,8 @@ function addLine(questChars, table, fct) {
 }
 function link(obj) {
     let lnk = document.createElement("a");
-    lnk.href = obj["link"];
+    lnk.href = obj.link;
+    lnk.title = obj.reason;
     lnk.appendChild(document.createTextNode(obj.name));
     return lnk;
 }
@@ -172,7 +173,7 @@ function addFeats(featArray)
             returnValue.push(document.createTextNode("Drawback: "));
         if (feat.title)
             returnValue.push(document.createTextNode(feat.title + ": "));
-        if (feat["link"])
+        if (typeof feat.link == "string")
             returnValue.push(link(feat));
         else
             returnValue.push(document.createTextNode(feat.name));
@@ -196,9 +197,9 @@ function addSpells(character)
     if (!character.spells || !character.spells.length || character.spells.length <= 0)
         return [];
     
-    let returnValue = [];
     let spellOne = link(character.spells[0]);
     spellOne.className = character.spells[0].tag ? "spell " + character.spells[0].tag : "spell";
+    let returnValue = [spellOne];
     let moreSpells = character.spells.slice(1, character.spells.length);
     for (let spell of moreSpells) {
         returnValue.push(document.createElement("br"));
