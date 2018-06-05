@@ -5,105 +5,35 @@
 	<title>Grey's Psychose Campaign</title>
     <link rel="stylesheet" href="system/pfPlayers.css">
 </head>
-<body onload="main('Psychose')">
+<body onload="main()">
+
     <div class="container">
         <div id="header">
-            <b>Psychose Campaign</b><br>
-            &nbsp;
-            <a id="xp" target="_blank" href="http://www.d20pfsrd.com/classes/character-advancement">41,000 <small>/ 53,000</small></a>
-            <a id="houserules" target="_blank" href="http://greytyphoon.space/PF/system/houserules.html">Houserules</a>
+            <b>Psychose Campaign</b>
+        </div>
+        <div class="text-center br">
+            <div style="display: inline-block;" class="apartee">
+                <a target="_blank" href="http://www.d20pfsrd.com/classes/character-advancement"><b>7,700</b> / 9,000 XP</a><br>
+                <em>Last update:</em> 2018-06-05<br>
+                <a target="_blank" href="http://greytyphoon.space/PF/system/houserules.html">Houserules</a>
+            </div>
         </div>
 
-        <!--Info-->
         <details>
             <summary class="subtitle">Character info</summary>
             <table id="charInfo" class="playerInfo"></table>
         </details>
 
-        <!--Loot-->
         <details>
-        <summary class="subtitle">Loot / 23,500</summary>
-        <table id="loot" class="playerInfo">
-            <tr>
-                <td colspan="4">2* masterwork weapons <span class="listBonuses">2*300</span></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/claws-of-the-ice-bear/">Claw of the Ice Bear</a> <span class="listBonuses">1300</span></td>
-                <td>&nbsp;</td>
-                <td>+1 weapon <span class="listBonuses">2300</span></td>
-            </tr>
-            <tr>
-                <td><a href="http://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt/">Mithral shirt</a> <span class="listBonuses">1100</span></td>
-                <td colspan="2">&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt/">Mithral shirt</a> <span class="listBonuses">1100</span></td>
-            </tr>
-            <tr>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/circlet-of-persuasion">Circlet of Persuasion</a> <span class="listBonuses">4500</span></td>
-                <td>&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-vast-intelligence/">Headband of Vast Intellect</a> <span class="listBonuses">4000</span></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-mighty-fists/">Amulet of Mighty Fists</a>,
-                    <a href="http://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost/">Frost</a> <span class="listBonuses">4000</span></td>
-                <td colspan="2">&nbsp;</td>
-            </tr>
-            <tr>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance/">Cloak of Resistance</a> <span class="listBonuses">1000</span> <small>(royal)</small></td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance/">Cloak of Resistance</a> <span class="listBonuses">1000</span> <small>(foliage)</small></td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance/">Cloak of Resistance</a> <span class="listBonuses">1000</span></td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/muleback-cords/">Muleback cords</a> <span class="listBonuses">1000</span></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/body-wrap-of-mighty-strikes/">Body Wrap of Mighty Strikes</a> <span class="listBonuses">3000</span></td>
-                <td>&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/shirt-quick-runners">Quick Runner's Shirt</a> <span class="listBonuses">1000</span></td>
-            </tr>
-            <tr>
-                <td colspan="3">&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/sleeves-of-many-garments/">Sleeves of Many Garments</a> <span class="listBonuses">200</span></td>
-            </tr>
-            <tr>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/s-b/belt-of-incredible-dexterity/">Belt of Dex</a> <span class="listBonuses">4000</span></td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/s-b/belt-of-giant-strength/">Belt of Str</a> <span class="listBonuses">4000</span></td>
-                <td>&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/s-b/belt-of-incredible-dexterity/">Belt of Dex</a> <span class="listBonuses">4000</span></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/boots-of-the-cat/">Boots of the Cat</a> <span class="listBonuses">1000</span></td>
-                <td>&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/daredevil-softpaws">Daredevil Softpaws</a> <span class="listBonuses">1400</span></td>
-            </tr>
-            <tr>
-                <td colspan="2">&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power/">Pearl of Power</a> <span class="listBonuses">1000</span></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td colspan="2">&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/rods/metamagic-rods/metamagic-extend/">Extend Rod</a> <span class="listBonuses">3000</span></td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack/">Handy Haversack</a> <span class="listBonuses">2200</span></td>
-                <td>&nbsp;</td>
-                <td><a href="http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack/">Handy Haversack</a> <span class="listBonuses">2200</span></td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
+            <summary class="subtitle">Loot / 6,000</summary>
+            <table id="loot" class="playerInfo"></table>
         </details>
 
-        <!--Spells-->
         <details>
             <summary class="subtitle">Spells</summary>
             <table id="spells" class="playerInfo"></table>
         </details>
 
-        <!--Build-->
         <details>
             <summary class="subtitle">Build</summary>
             <table id="build" class="playerInfo"></table>

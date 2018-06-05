@@ -43,7 +43,7 @@ Greytyphoon.Characters.push({
 		{ slot: "weapon-m", value: 300, name: "Punching Dagger", link: "http://www.d20pfsrd.com/equipment/weapons" },
 		{ slot: "weapon-r", value: 300, name: "Shortbow [0]", link: "http://www.d20pfsrd.com/equipment/weapons" },
 		{ slot: "armor", value: 150, name: "Studded Leather Armor", link: "http://www.d20pfsrd.com/equipment/armor" },
-		{ slot: "armor", value: 150, name: "Buckler", link: "http://www.d20pfsrd.com/equipment/armor" },
+		{ slot: "shield", value: 150, name: "Buckler", link: "http://www.d20pfsrd.com/equipment/armor" },
 		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance", link: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
 		{ slot: "ring", value: 2000, name: "Ring of Protection", link: "http://www.d20pfsrd.com/magic-items/rings/ring-of-protection" }
 	]
