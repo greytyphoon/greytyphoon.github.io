@@ -31,7 +31,7 @@ Greytyphoon.Characters.push({
 	progressFeats: [
 		{ name: "Precise Shot", link: "http://www.d20pfsrd.com/feats/combat-feats/precise-shot-combat-final" },
 		{ name: "Mounted Combat", link: "http://www.d20pfsrd.com/feats/combat-feats/mounted-combat-combat-final" },
-		{ name: "", link: "http://www.d20pfsrd.com/feats/combat-feats/coordinated-shot-combat-teamwork" }
+		{ name: "Coordinated Shot", link: "http://www.d20pfsrd.com/feats/combat-feats/coordinated-shot-combat-teamwork" }
 	],
 	targetFeats: [],
 	spells: [

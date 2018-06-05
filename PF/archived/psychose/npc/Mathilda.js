@@ -43,12 +43,12 @@ Greytyphoon.Characters.push({
     ],
     targetFeats: [],
     spells: [
-        { lvl: 1, name: "deathwatch", link: "http://www.d20pfsrd.com/magic/all-spells/d/deathwatch", tag: "patron" },
-        { lvl: 2, name: "blessing of courage and life", link: "http://www.d20pfsrd.com/magic/all-spells/b/blessing-of-courage-and-life", tag: "patron" },
-        { lvl: 3, name: "speak with dead", link: "http://www.d20pfsrd.com/magic/all-spells/s/speak-with-dead", tag: "patron" },
-        { lvl: 1, name: "youthful appearance", link: "http://www.d20pfsrd.com/magic/all-spells/y/youthful-appearance" },
-        { lvl: 2, name: "tattoo potion", link: "http://www.d20pfsrd.com/magic/all-spells/t/tattoo-potion" },
-        { lvl: 3, name: "bestow curse", link: "http://www.d20pfsrd.com/magic/all-spells/b/bestow-curse" }
+        { level: 1, name: "deathwatch", link: "http://www.d20pfsrd.com/magic/all-spells/d/deathwatch", tag: "patron" },
+        { level: 2, name: "blessing of courage and life", link: "http://www.d20pfsrd.com/magic/all-spells/b/blessing-of-courage-and-life", tag: "patron" },
+        { level: 3, name: "speak with dead", link: "http://www.d20pfsrd.com/magic/all-spells/s/speak-with-dead", tag: "patron" },
+        { level: 1, name: "youthful appearance", link: "http://www.d20pfsrd.com/magic/all-spells/y/youthful-appearance" },
+        { level: 2, name: "tattoo potion", link: "http://www.d20pfsrd.com/magic/all-spells/t/tattoo-potion" },
+        { level: 3, name: "bestow curse", link: "http://www.d20pfsrd.com/magic/all-spells/b/bestow-curse" }
     ],
     loot: [
         { slot: "weapon-m", value: 300, name: "Longsword", link: "http://www.d20pfsrd.com/equipment/weapons" },

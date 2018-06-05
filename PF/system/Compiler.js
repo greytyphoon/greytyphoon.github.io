@@ -31,6 +31,11 @@ function main() {
         checkStat(character.wis);
         checkStat(character.cha);
         checkTraits(character);
+        checkStartingFeats(character);
+        checkProgressFeats(character);
+        checkTargetFeats(character);
+        checkSpells(character);
+        checkLoot(character);
 
         if (character.flair) OptionalChecks.checkFlair(character);
         if (character.flavor) OptionalChecks.checkFlavor(character);
@@ -276,6 +281,126 @@ function checkSingleTrait(trait)
         logError("Bad trait link");
     if (trait.drawback && typeof trait.drawback != "boolean")
         logError("Bad trait drawback");
+}
+function checkStartingFeats(character)
+{
+    if (!character.startingFeats || typeof character.startingFeats != "object" || character.startingFeats.constructor !== Array)
+        logError("Bad Starting Feats");
+    else
+        for (let sf of character.startingFeats)
+            checkSingleFeat(sf);
+}
+function checkProgressFeats(character)
+{
+    if (!character.progressFeats || typeof character.progressFeats != "object" || character.progressFeats.constructor !== Array)
+        logError("Bad Progress Feats");
+    else
+        for (let sf of character.progressFeats)
+            checkSingleFeat(sf);
+}
+function checkTargetFeats(character)
+{
+    if (!character.targetFeats || typeof character.targetFeats != "object" || character.targetFeats.constructor !== Array)
+        logError("Bad Target Feats");
+    else
+        for (let sf of character.targetFeats)
+            checkSingleFeat(sf);
+}
+function checkSingleFeat(feat)
+{
+    // Self-check
+    if (!feat || typeof feat != "object")
+    {
+        logError("Bad Feat: " + feat);
+        return;
+    }
+    
+    // Accepted properties
+    var featAccepts = ["name", "link", "title", "reason"];
+    for (let featProp in feat)
+        if (!featAccepts.includes(featProp))
+            logError("Unsupported feat property: " + featProp);
+        
+    // Simple properties
+    if (!feat.name || typeof feat.name != "string")
+        logError("Bad feat name");
+    if (feat.link && typeof feat.link != "string")
+        logError("Bad feat link");
+    if (feat.title && typeof feat.title != "string")
+        logError("Bad feat title");
+    if (feat.reason && typeof feat.reason != "string")
+        logError("Bad feat reason");
+}
+function checkSpells(character)
+{
+    if (!character.spells || typeof character.spells != "object" || character.spells.constructor !== Array)
+        logError("Bad Spells");
+    else
+        for (let spell of character.spells)
+            checkSingleSpell(spell);
+}
+function checkSingleSpell(spell)
+{
+    // Self-check
+    if (!spell || typeof spell != "object")
+    {
+        logError("Bad spell: " + spell);
+        return;
+    }
+    
+    // Accepted properties
+    var spellAccepts = ["level", "name", "link", "tag"];
+    for (let spellProp in spell)
+        if (!spellAccepts.includes(spellProp))
+            logError("Unsupported spell property: " + spellProp);
+        
+    // Simple properties
+    if (spell.level === null || spell.level === undefined || typeof spell.level != "number" || spell.level < 0 || spell.level > 9)
+        logError("Bad spell level");
+    if (!spell.name || typeof spell.name != "string")
+        logError("Bad spell name");
+    if (!spell.link || typeof spell.link != "string")
+        logError("Bad spell link");
+    if (spell.tag && typeof spell.tag != "string")
+        logError("Bad spell tag");
+}
+function checkLoot(character)
+{
+    if (!character.loot || typeof character.loot != "object" || character.loot.constructor !== Array)
+        logError("Bad Loot");
+    else
+        for (let item of character.loot)
+            checkSingleItem(item);
+}
+function checkSingleItem(item)
+{
+    // Self-check
+    if (!item || typeof item != "object")
+    {
+        logError("Bad item: " + item);
+        return;
+    }
+    
+    // Accepted properties
+    var itemAccepts = ["slot", "value", "name", "link"];
+    for (let itemProp in item)
+        if (!itemAccepts.includes(itemProp))
+            logError("Unsupported item property: " + itemProp);
+        
+    // Simple properties
+    var slotAccepts = ["weapon-m", "weapon-r", "armor", "shield", "none", 
+                       "head", "headband", "eyes", 
+                       "neck", "shoulders", "chest", 
+                       "body", "belt", "wrists", 
+                       "hands", "ring", "feet"];
+    if (!item.slot || !slotAccepts.includes(item.slot))
+        logError("Bad item slot");
+    if (!item.value || typeof item.value != "number" || item.value < 0)
+        logError("Bad item value");
+    if (!item.name || typeof item.name != "string")
+        logError("Bad item name");
+    if (!item.link || typeof item.link != "string")
+        logError("Bad item link");
 }
 
 var OptionalChecks = {
