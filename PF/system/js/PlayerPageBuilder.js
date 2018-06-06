@@ -99,6 +99,8 @@ function addAlignment(character) {
 	return [document.createTextNode(character.alignment)];
 }
 function addDeity(character) {
+    if (!character.deity)
+        return [];
 	if (typeof character.deity == "string")
 		return [document.createTextNode(character.deity)];
 
