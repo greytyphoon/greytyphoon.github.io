@@ -20,24 +20,24 @@ Greytyphoon.Characters.push({
 		{ name: "Reactionary", link: "https://www.d20pfsrd.com/traits/combat-traits/reactionary" }
 	],
 	startingFeats: [
-		{ name: "Weapon Finesse", reason: "Level 1" }
+		{ name: "Weapon Finesse", reason: "Level 1", link: "https://www.d20pfsrd.com/feats/combat-feats/weapon-finesse-combat-final" }
 	],
 	progressFeats: [
-		{ name: "Fast Stealth", reason: "Rogue 2" },
-		{ name: "Deadly Aim", reason: "Level 3" },
-		{ name: "Swift Poison", reason: "Rogue 4" },
-		{ name: "Piranha Strike", reason: "Level 5" },
-		{ name: "Sniper's Eye", reason: "Rogue 6" },
-		{ name: "Sacred Sneak", reason: "Rogue 8" }
+		{ name: "Fast Stealth", reason: "Rogue 2", link: "https://www.d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/fast-stealth-ex" },
+		{ name: "Deadly Aim", reason: "Level 3", link: "https://www.d20pfsrd.com/feats/combat-feats/deadly-aim-combat" },
+		{ name: "Swift Poison", reason: "Rogue 4", link: "https://www.d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/swift-poison-ex" },
+		{ name: "Piranha Strike", reason: "Level 5", link: "https://www.d20pfsrd.com/feats/combat-feats/piranha-strike-combat" },
+		{ name: "Sniper's Eye", reason: "Rogue 6", link: "https://www.d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/sniper-s-eye-ex" },
+		{ name: "Sacred Sneak Attack", reason: "Rogue 8", link: "https://www.d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/sacred-sneak-attack-su" }
 	],
 	targetFeats: [],
 	spells: [],
 	loot: [
 		{ slot: "weapon-m", value: 8300, name: "Dagger, +1 UndeadBane", link: "https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/bane" },
 		{ slot: "weapon-m", value: 8300, name: "Dagger of Venom", link: "https://www.d20pfsrd.com/magic-items/magic-weapons/specific-magic-weapons/dagger-of-venom" },
-		{ slot: "weapon-m", value: 1200, name: "Dagger, masterwork *4", link: "http://www.d20pfsrd.com/equipment/weapons" },
-		{ slot: "weapon-r", value: 300, name: "Light Crossbow, masterwork", link: "http://www.d20pfsrd.com/equipment/weapons" },
-		{ slot: "armor", value: 150, name: "Leather Armor", link: "http://www.d20pfsrd.com/equipment/armor" },
+		{ slot: "weapon-m", value: 1200, name: "Dagger, masterwork *4", link: "https://www.d20pfsrd.com/equipment/weapons" },
+		{ slot: "weapon-r", value: 300, name: "Light Crossbow, masterwork", link: "https://www.d20pfsrd.com/equipment/weapons" },
+		{ slot: "armor", value: 150, name: "Leather Armor", link: "https://www.d20pfsrd.com/equipment/armor" },
 		{ slot: "head", value: 1800, name: "Hat of Disguise", link: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/hat-of-disguise" },
 		{ slot: "neck", value: 16000, name: "Amulet of Shield", link: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },
 		{ slot: "chest", value: 10000, name: "Bane Baldric", link: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/baldric-bane" },
