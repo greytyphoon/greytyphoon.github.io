@@ -1,13 +1,9 @@
 Greytyphoon.Characters.push({
 	name: "Kashamy",
-	flair: "",
 	meta: {
 		quest: "Psychose",
 		owner: "Kashamy",
-		companion: { name: "Sissi L'Assoupi", link: "http://www.d20pfsrd.com/bestiary/monster-listings/animals/birds/dodo/" },
-		source: null,
-		dead: false,
-		npc: false,
+		companion: { name: "Sissi L'Assoupi", link: "http://www.d20pfsrd.com/bestiary/monster-listings/animals/birds/dodo/" }
 	},
 	alignment: "CG",
 	deity: "",

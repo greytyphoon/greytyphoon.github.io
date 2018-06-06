@@ -3,11 +3,7 @@ Greytyphoon.Characters.push({
     flair: "vermin witch, disciple of wyrm",
     meta: {
         quest: "Undead",
-        owner: "Grey",
-        companion: null,
-        source: null,
-        dead: false,
-        npc: true,
+        owner: "Grey"
     },
     alignment: "CE",
     deity: "Urgathoa",

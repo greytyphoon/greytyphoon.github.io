@@ -3,11 +3,7 @@ Greytyphoon.Characters.push({
     flair: "consumed by the black blood",
     meta: {
         quest: "Dave",
-        owner: "Grey",
-        companion: null,
-        source: null,
-        dead: false,
-        npc: false,
+        owner: "Grey"
     },
     flavor: {
         eyes: "brown",

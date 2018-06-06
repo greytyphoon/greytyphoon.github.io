@@ -1,13 +1,8 @@
 Greytyphoon.Characters.push({
 	name: "Druss Malroy",
-	flair: "",
 	meta: {
 		quest: "Psychose",
-		owner: "Cloj",
-		companion: null,
-		source: null,
-		dead: false,
-		npc: false,
+		owner: "Cloj"
 	},
 	alignment: "",
 	deity: "",

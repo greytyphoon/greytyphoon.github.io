@@ -4,10 +4,7 @@ Greytyphoon.Characters.push({
     meta: {
         quest: "Psychose",
         owner: "Grey",
-        companion: { name: "Bat Familiar", link: "https://www.d20pfsrd.com/classes/core-classes/wizard/familiar/" },
-        source: null,
-        dead: false,
-        npc: true
+        companion: { name: "Bat Familiar", link: "https://www.d20pfsrd.com/classes/core-classes/wizard/familiar/" }
     },
     alignment: "NG",
     deity: "Pharasma",

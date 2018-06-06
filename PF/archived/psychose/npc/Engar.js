@@ -3,11 +3,7 @@ Greytyphoon.Characters.push({
     flair: "assassin on the loose",
     meta: {
         quest: "Psychose",
-        owner: "Grey",
-        companion: null,
-        source: null,
-        dead: false,
-        npc: true,
+        owner: "Grey"
     },
     alignment: "N",
     deity: "Shellyn",

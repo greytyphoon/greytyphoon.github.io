@@ -57,7 +57,7 @@ function checkMeta(character) {
 	}
 
 	// Accepted properties
-	var metaAccepts = ["quest", "owner", "companion", "source", "dead", "npc"];
+	var metaAccepts = ["quest", "owner", "companion", "source"];
 	for (let metaProp in character.meta)
 		if (!metaAccepts.includes(metaProp))
 			logError(character.name + "'s meta's " + prop + " property is not supported");
@@ -67,10 +67,6 @@ function checkMeta(character) {
 		logError(character.name + "'s meta.quest property is wrong");
 	if (!character.meta.owner || typeof character.meta.owner != "string")
 		logError(character.name + "'s meta.owner property is wrong");
-	if (character.meta.dead == null || character.meta.dead == undefined || typeof character.meta.dead != "boolean")
-		logError(character.name + "'s meta.dead property is wrong");
-	if (character.meta.npc == null || character.meta.npc == undefined || typeof character.meta.npc != "boolean")
-		logError(character.name + "'s meta.npc property is wrong");
 
 	// Complex/children properties
 	if (character.meta.companion) OptionalChecks.checkCompanion(character);

@@ -1,13 +1,8 @@
 Greytyphoon.Characters.push({
     name: "Nyarlatoplel",
-    flair: "",
     meta: {
         quest: "Psychose",
-        owner: "Grey",
-        companion: null,
-        source: null,
-        dead: false,
-        npc: true,
+        owner: "Grey"
     },
     alignment: "N",
     deity: "Erastil",

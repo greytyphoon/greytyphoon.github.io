@@ -1,13 +1,9 @@
 Greytyphoon.Characters.push({
 	name: "Supi",
-	flair: "",
 	meta: {
 		quest: "Psychose",
 		owner: "Supi",
-		companion: { name: "Ligre", link: "http://www.d20pfsrd.com/classes/core-classes/druid/animal-companions#TOC-Cat-Big" },
-		source: null,
-		dead: false,
-		npc: false,
+		companion: { name: "Ligre", link: "http://www.d20pfsrd.com/classes/core-classes/druid/animal-companions#TOC-Cat-Big" }
 	},
 	alignment: "NG",
 	deity: "",

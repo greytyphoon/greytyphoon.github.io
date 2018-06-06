@@ -1,13 +1,8 @@
 Greytyphoon.Characters.push({
 	name: "Urist McSong",
-	flair: "",
 	meta: {
 		quest: "Psychose",
-		owner: "Roujo",
-		companion: null,
-		source: null,
-		dead: false,
-		npc: false,
+		owner: "Roujo"
 	},
 	alignment: "NG",
 	deity: "Muse",

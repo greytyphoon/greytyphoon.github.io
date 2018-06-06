@@ -4,10 +4,7 @@ Greytyphoon.Characters.push({
     meta: {
         quest: "Psychose",
         owner: "Grey",
-        companion: { name: "Skroa", link: "http://www.d20pfsrd.com/classes/core-classes/druid/animal-companions#TOC-Bird" },
-        source: null,
-        dead: false,
-        npc: true,
+        companion: { name: "Skroa", link: "http://www.d20pfsrd.com/classes/core-classes/druid/animal-companions#TOC-Bird" }
     },
     alignment: "NE",
     deity: "Irori",

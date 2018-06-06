@@ -3,11 +3,7 @@ Greytyphoon.Characters.push({
     flair: "black-scaled duergar, disciple of wyrm",
     meta: {
         quest: "Undead",
-        owner: "Grey",
-        companion: null,
-        source: null,
-        dead: false,
-        npc: true,
+        owner: "Grey"
     },
     alignment: "CE",
     deity: "Tiamat",
