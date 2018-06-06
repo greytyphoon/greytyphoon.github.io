@@ -12,7 +12,7 @@ Greytyphoon.Characters.push({
 		name: "Inquisitor",
 		link: "https://www.d20pfsrd.com/classes/base-classes/inquisitor",
 		quantity: 9,
-		archtypes: [
+		archetypes: [
 			{ title: "Domain", name: "Liberation", link: "https://www.d20pfsrd.com/classes/core-classes/cleric/domains/paizo---domains/liberation-domain" },
 			{ title: "Subdomain", name: "Freedom", link: "https://www.d20pfsrd.com/classes/core-classes/cleric/domains/paizo---domains/liberation-domain/freedom" }
 		]
