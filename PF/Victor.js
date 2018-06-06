@@ -35,8 +35,8 @@ Greytyphoon.Characters.push({
         { name: "Warded against Nature", link: "https://www.d20pfsrd.com/traits/drawbacks/warded-against-nature/", drawback: true }
     ],
     startingFeats: [
-        { name: "Power Attack", link: "http://www.d20pfsrd.com/feats/combat-feats/power-attack-combat-final" },
-        { name: "Quick Draw", link: "http://www.d20pfsrd.com/feats/combat-feats/quick-draw-combat-final" }
+        { name: "Power Attack", reason: "Human", link: "http://www.d20pfsrd.com/feats/combat-feats/power-attack-combat-final" },
+        { name: "Quick Draw", reason: "Level 1", link: "http://www.d20pfsrd.com/feats/combat-feats/quick-draw-combat-final" }
     ],
     progressFeats: [],
     targetFeats: [
