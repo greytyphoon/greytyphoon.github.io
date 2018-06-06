@@ -26,7 +26,8 @@ function addLine(questChars, table, fct) {
 function link(obj) {
 	let lnk = document.createElement("a");
 	lnk.href = obj.link;
-	lnk.title = obj.reason;
+    if (obj.reason)
+        lnk.title = obj.reason;
 	lnk.appendChild(document.createTextNode(obj.name));
 	return lnk;
 }
@@ -131,7 +132,7 @@ function addAncestry(character) {
 	lnk.className = 'listBonusBreaker';
 	let archetypeDesc = document.createElement("span");
 	archetypeDesc.className = 'listBonuses';
-	archetypeDesc.appendChild(document.createTextNode(character.ancestry.archetypes.map(x => x.name).join(", ")));
+	archetypeDesc.appendChild(document.createTextNode(character.ancestry.archetypes.join(", ")));
 	return [lnk, archetypeDesc];
 }
 function addClasses(character) {
