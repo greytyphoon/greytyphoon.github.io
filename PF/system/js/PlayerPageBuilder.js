@@ -26,8 +26,6 @@ function addLine(questChars, table, fct) {
 function link(obj) {
 	let lnk = document.createElement("a");
 	lnk.href = obj.link;
-    if (obj.reason)
-        lnk.title = obj.reason;
 	lnk.appendChild(document.createTextNode(obj.name));
 	return lnk;
 }
@@ -210,25 +208,44 @@ function addWis(character) {
 function addCha(character) {
 	return addStat(character.cha);
 }
-function addFeats(featArray)
-{
+function addFeats(featArray) {
 	if (!featArray || !featArray.length || featArray.length <= 0)
 		return [];
 
-	let returnValue = [link(featArray[0])];
+	let returnValue = addSingleFeat(featArray[0]);
 	let moreFeats = featArray.slice(1, featArray.length);
 	for (let feat of moreFeats) {
 		returnValue.push(document.createElement("br"));
-		if (feat.drawback)
-			returnValue.push(document.createTextNode("Drawback: "));
-		if (feat.title)
-			returnValue.push(document.createTextNode(feat.title + ": "));
-		if (typeof feat.link == "string")
-			returnValue.push(link(feat));
-		else
-			returnValue.push(document.createTextNode(feat.name));
+		addSingleFeat(feat).forEach(e => returnValue.push(e));
 	}
 	return returnValue;
+}
+function addSingleFeat(feat) {
+    let returnValue = [];
+    if (feat.drawback)
+        returnValue.push(document.createTextNode("Drawback: "));
+    if (feat.title)
+        returnValue.push(document.createTextNode(feat.title + ": "));
+    if (typeof feat.link == "string")
+    {
+        let linkFeat = link(feat);
+        returnValue.push(linkFeat);
+        if (feat.reason)
+            linkFeat.title = feat.reason;
+    }
+    else
+    {
+        let textNode = document.createTextNode(feat.name);
+        if (!feat.reason)
+            returnValue.push(textNode);
+        else {
+            let textSpan = document.createElement("span");
+            textSpan.title = feat.reason;
+            textSpan.appendChild(textNode);
+            returnValue.push(textSpan);
+        }
+    }
+    return returnValue;
 }
 function addTraits(character) {
 	return addFeats(character.traits);
@@ -290,7 +307,7 @@ function main() {
 	addSum(questChars, lootTable);
 
 	addName(questChars, spellTable);
-	addLine(questChars, spellTable, addSpells);
+	addLine(questChars, spellTable, addSpells); // split in lines per spell level
 
 	addName(questChars, buildTable);
 	addLine(questChars, buildTable, addTraits);
