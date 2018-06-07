@@ -37,11 +37,11 @@ Greytyphoon.Characters.push({
 	],
 	targetFeats: [],
 	spells: [
-		{ level: 1, name: "feather step", link: "https://www.d20pfsrd.com/magic/all-spells/c/cure-light-wounds" },
-		{ level: 1, name: "keen senses", link: "https://www.d20pfsrd.com/magic/all-spells/c/cure-light-wounds" },
-		{ level: 1, name: "speak with animals", link: "https://www.d20pfsrd.com/magic/all-spells/c/cure-light-wounds" },
-		{ level: 2, name: "air step", link: "https://www.d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds" },
-		{ level: 2, name: "stone call", link: "https://www.d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds" },
+		{ level: 1, name: "feather step", link: "https://www.d20pfsrd.com/magic/all-spells/f/feather-step" },
+		{ level: 1, name: "keen senses", link: "https://www.d20pfsrd.com/magic/all-spells/k/keen-senses" },
+		{ level: 1, name: "speak with animals", link: "https://www.d20pfsrd.com/magic/all-spells/s/speak-with-animals" },
+		{ level: 2, name: "air step", link: "https://www.d20pfsrd.com/magic/all-spells/a/air-step" },
+		{ level: 2, name: "stone call", link: "https://www.d20pfsrd.com/magic/all-spells/s/stone-call" },
 	],
 	loot: [
 		{ slot: "weapon-m", value: 300, name: "Greasword, masterwork", link: "https://www.d20pfsrd.com/equipment/weapons" },
