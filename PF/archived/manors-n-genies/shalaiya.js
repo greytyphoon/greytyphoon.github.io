@@ -28,7 +28,7 @@ Greytyphoon.Characters.push({
 		{ name: "Inspired", url: "https://www.d20pfsrd.com/traits/faith-traits/inspired" }
 	],
 	startingFeats: [
-		{ name: "Skill Focus", reason: "Half-Elf", url: "https://www.d20pfsrd.com/feats/general-feats/skill-focus-final" },
+		{ name: "Skill Focus (Perception)", reason: "Half-Elf", url: "https://www.d20pfsrd.com/feats/general-feats/skill-focus-final" },
 		{ name: "Point-Blank Shot", reason: "Level 1", url: "https://www.d20pfsrd.com/feats/combat-feats/point-blank-shot-combat-final" }
 	],
 	progressFeats: [

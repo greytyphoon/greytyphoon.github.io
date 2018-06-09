@@ -33,7 +33,7 @@ Greytyphoon.Characters.push({
     ],
     progressFeats: [
         { name: "Underhanded", reason: "Rogue 2", url: "http://www.d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo---rogue-talents/underhanded-ex" },
-        { name: "Weapon Focus", reason: "Level 3", url: "http://www.d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final" }
+        { name: "Weapon Focus (Dagger)", reason: "Level 3", url: "http://www.d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final" }
     ],
     targetFeats: [],
     spells: [],

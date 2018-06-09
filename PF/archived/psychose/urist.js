@@ -25,7 +25,7 @@ Greytyphoon.Characters.push({
 	],
 	progressFeats: [
 		{ name: "Dance (Acrobatics, Fly)", reason: "Bard 2", title: "VP" },
-		{ name: "Weapon Focus", reason: "Level 3", url: "http://www.d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final" }
+		{ name: "Weapon Focus (Shortbow)", reason: "Level 3", url: "http://www.d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final" }
 	],
 	targetFeats: [],
 	spells: [

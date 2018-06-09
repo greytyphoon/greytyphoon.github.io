@@ -21,7 +21,7 @@ Greytyphoon.Characters.push({
 		{ name: "Grim Optimism", url: "http://www.d20pfsrd.com/traits/social-traits/grim-optimi" }
 	],
 	startingFeats: [
-		{ name: "Skill Focus", reason: "Half-Elf", url: "http://www.d20pfsrd.com/feats/general-feats/skill-focus-final" },
+		{ name: "Skill Focus (Perception)", reason: "Half-Elf", url: "http://www.d20pfsrd.com/feats/general-feats/skill-focus-final" },
 		{ name: "Point-blank Shot", reason: "Level 1", url: "http://www.d20pfsrd.com/feats/combat-feats/point-blank-shot-combat-final" }
 	],
 	progressFeats: [

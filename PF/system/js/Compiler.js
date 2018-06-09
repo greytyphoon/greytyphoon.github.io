@@ -299,6 +299,9 @@ function checkSingleFeat(feat, isReasonOptional) {
 		logError("Bad feat reason");
     if (!feat.reason && !isReasonOptional) // reason is absent but it shouldn't
 		logError("Feat reason is not optional in this case");
+        
+    if (feat.name == "Skill Focus" || feat.name == "Spell Focus" || feat.name == "Weapon Focus")
+        logError("Untyped " + feat.name);
 }
 function checkSpells(character) {
 	if (!character.spells || typeof character.spells != "object" || character.spells.constructor !== Array)

@@ -30,7 +30,7 @@ Greytyphoon.Characters.push({
     ],
     startingFeats: [
         { name: "Rime Spell", reason: "Human", url: "http://www.d20pfsrd.com/feats/metamagic-feats/rime-spell-metamagic" },
-        { name: "Spell Focus", reason: "Level 1", url: "http://www.d20pfsrd.com/feats/general-feats/spell-focus-final" }
+        { name: "Spell Focus (Conjuration)", reason: "Level 1", url: "http://www.d20pfsrd.com/feats/general-feats/spell-focus-final" }
     ],
     progressFeats: [
         { name: "Augment Summoning", reason: "Level 3", url: "http://www.d20pfsrd.com/feats/general-feats/augment-summoning-final"},
