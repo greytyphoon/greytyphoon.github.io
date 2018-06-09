@@ -29,6 +29,8 @@ function link(obj) {
 	lnk.appendChild(document.createTextNode(obj.name));
 	return lnk;
 }
+
+/* FCT LOOT */
 function addSum(questChars, table) {
 	let row = document.createElement("tr");
 	for (let character of questChars) {
@@ -53,7 +55,7 @@ function addItemSlots(questChars, table) {
 					   "hands", "ring", "feet", "none"];
 	for (let slot of slotAccepts)
 	{
-		if (questChars.some(character => character.loot.filter(loot => loot.slot == slot).length > 0))
+		if (questChars.some(character => character.loot.some(loot => loot.slot == slot)))
 		{
 			let row = document.createElement("tr");
 			row.id = slot;
@@ -93,13 +95,55 @@ function addItem(item) {
 	return [link(item), priceSpan];
 }
 
+/* FCT SPELLS */
+function addSpellLevels(questChars, table) {
+	for (let level = 0; level <= 9; level++)
+	{
+		if (questChars.some(character => character.spells.some(spell => spell.level == level)))
+		{
+			let row = document.createElement("tr");
+			row.id = "spellLevel" + level;
+			addSingleSpellLevel(questChars, level).forEach(e => row.appendChild(e));
+			table.appendChild(row);
+		}
+	}
+}
+function addSingleSpellLevel(questChars, level) {
+	// There will probably be two+ spells of the same level
+	var charSpells = questChars.map(character => character.spells.filter(spell => spell.level == level));
+	var returnValue = [];
+	for (let spells of charSpells)
+	{
+		let col = document.createElement("td");
+		returnValue.push(col);
+		if (spells.length == 0)
+			continue;
+		if (spells.length == 1) {
+			addSpell(spells[0]).forEach(e => col.appendChild(e));
+			continue;
+		}
+
+		for (let s of spells) {
+			let spellDiv = document.createElement("div");
+			addSpell(s).forEach(e => spellDiv.appendChild(e));
+			col.appendChild(spellDiv);
+		}
+	}
+	return returnValue;
+}
+function addSpell(spell) {
+	let aSpell = link(spell);
+	aSpell.className = spell.tag ? "spell " + spell.tag : "spell";
+	return [aSpell];
+}
+
 /* FCT CHAR INFO --- they take a character, and return an array of html nodes. */
 function addAlignment(character) {
 	return [document.createTextNode(character.alignment)];
 }
 function addDeity(character) {
-    if (!character.deity)
-        return [];
+	if (!character.deity)
+		return [];
 	if (typeof character.deity == "string")
 		return [document.createTextNode(character.deity)];
 
@@ -221,31 +265,31 @@ function addFeats(featArray) {
 	return returnValue;
 }
 function addSingleFeat(feat) {
-    let returnValue = [];
-    if (feat.drawback)
-        returnValue.push(document.createTextNode("Drawback: "));
-    if (feat.title)
-        returnValue.push(document.createTextNode(feat.title + ": "));
-    if (typeof feat.link == "string")
-    {
-        let linkFeat = link(feat);
-        returnValue.push(linkFeat);
-        if (feat.reason)
-            linkFeat.title = feat.reason;
-    }
-    else
-    {
-        let textNode = document.createTextNode(feat.name);
-        if (!feat.reason)
-            returnValue.push(textNode);
-        else {
-            let textSpan = document.createElement("span");
-            textSpan.title = feat.reason;
-            textSpan.appendChild(textNode);
-            returnValue.push(textSpan);
-        }
-    }
-    return returnValue;
+	let returnValue = [];
+	if (feat.drawback)
+		returnValue.push(document.createTextNode("Drawback: "));
+	if (feat.title)
+		returnValue.push(document.createTextNode(feat.title + ": "));
+	if (typeof feat.link == "string")
+	{
+		let linkFeat = link(feat);
+		returnValue.push(linkFeat);
+		if (feat.reason)
+			linkFeat.title = feat.reason;
+	}
+	else
+	{
+		let textNode = document.createTextNode(feat.name);
+		if (!feat.reason)
+			returnValue.push(textNode);
+		else {
+			let textSpan = document.createElement("span");
+			textSpan.title = feat.reason;
+			textSpan.appendChild(textNode);
+			returnValue.push(textSpan);
+		}
+	}
+	return returnValue;
 }
 function addTraits(character) {
 	return addFeats(character.traits);
@@ -258,23 +302,6 @@ function addProgressFeats(character) {
 }
 function addTargetFeats(character) {
 	return addFeats(character.targetFeats);
-}
-function addSpells(character)
-{
-	if (!character.spells || !character.spells.length || character.spells.length <= 0)
-		return [];
-
-	let spellOne = link(character.spells[0]);
-	spellOne.className = character.spells[0].tag ? "spell " + character.spells[0].tag : "spell";
-	let returnValue = [spellOne];
-	let moreSpells = character.spells.slice(1, character.spells.length);
-	for (let spell of moreSpells) {
-		returnValue.push(document.createElement("br"));
-		let aSpell = link(spell);
-		aSpell.className = spell.tag ? "spell " + spell.tag : "spell";
-		returnValue.push(aSpell);
-	}
-	return returnValue;
 }
 
 /* Main */
@@ -307,7 +334,7 @@ function main() {
 	addSum(questChars, lootTable);
 
 	addName(questChars, spellTable);
-	addLine(questChars, spellTable, addSpells); // split in lines per spell level
+	addSpellLevels(questChars, spellTable);
 
 	addName(questChars, buildTable);
 	addLine(questChars, buildTable, addTraits);
