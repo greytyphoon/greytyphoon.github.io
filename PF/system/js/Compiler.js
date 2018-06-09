@@ -92,7 +92,7 @@ function checkAncestry(character) {
 	}
 
 	// Accepted properties
-	var ancestryAccepts= ["name", "link", "archetypes"];
+	var ancestryAccepts= ["name", "url", "archetypes"];
 	for (let ancestryProp in character.ancestry)
 		if (!ancestryAccepts.includes(ancestryProp))
 			logError(character.name + "'s ancestry's " + ancestryProp + " property is not supported");
@@ -100,8 +100,8 @@ function checkAncestry(character) {
 	// Simple properties
 	if (!character.ancestry.name || typeof character.ancestry.name != "string")
 		logError(character.name + "'s ancestry has no name.");
-	if (!character.ancestry.link || typeof character.ancestry.link != "string")
-		logError(character.name + "'s ancestry has no link.");
+	if (!character.ancestry.url || typeof character.ancestry.url != "string")
+		logError(character.name + "'s ancestry has no url.");
 
 	// Complex/children properties
 	if (character.ancestry.archetypes)
@@ -140,7 +140,7 @@ function checkSingleLevel(level) {
 	}
 
 	// Accepted properties
-	var levelAccepts = ["name", "link", "quantity", "archetypes"];
+	var levelAccepts = ["name", "url", "quantity", "archetypes"];
 	for (let levelProp in level)
 		if (!levelAccepts.includes(levelProp))
 			logError("Invalid level property: " + levelProp);
@@ -148,8 +148,8 @@ function checkSingleLevel(level) {
 	// Simple properties
 	if (!level.name || typeof level.name != "string")
 		logError("Bad level name");
-	if (!level.link || typeof level.link != "string")
-		logError("Bad level link");
+	if (!level.url || typeof level.url != "string")
+		logError("Bad level url");
 	if (!level.quantity || typeof level.quantity != "number" || level.quantity < 1 || level.quantity > 20)
 		logError("Bad level quantity");
 
@@ -172,7 +172,7 @@ function checkLevelArchetype(archetype) {
 	}
 
 	// Accepted properties
-	var lvlArchetypeAccepts = ["title", "name", "link"];
+	var lvlArchetypeAccepts = ["title", "name", "url"];
 	for (let archProp in archetype)
 		if (!lvlArchetypeAccepts.includes(archProp))
 			logError("Unknown property: " + archProp);
@@ -180,8 +180,8 @@ function checkLevelArchetype(archetype) {
 	// Simple properties
 	if (!archetype.name || typeof archetype.name != "string")
 		logError("Bad Archetype Name");
-	if (!archetype.link || typeof archetype.link != "string")
-		logError("Bad Archetype Link");
+	if (!archetype.url || typeof archetype.url != "string")
+		logError("Bad Archetype url");
 	if (archetype.title && typeof archetype.title != "string")
 		logError("Bad Archetype Title");
 }
@@ -240,7 +240,7 @@ function checkSingleTrait(trait) {
 	}
 
 	// Accepted properties
-	var traitAccepts = ["name", "link", "drawback"];
+	var traitAccepts = ["name", "url", "drawback"];
 	for (let traitProp in trait)
 		if (!traitAccepts.includes(traitProp))
 			logError("Unexpected property in trait");
@@ -248,8 +248,8 @@ function checkSingleTrait(trait) {
 	// Simple properties
 	if (!trait.name || typeof trait.name != "string")
 		logError("Bad trait name");
-	if (!trait.link || typeof trait.link != "string")
-		logError("Bad trait link");
+	if (!trait.url || typeof trait.url != "string")
+		logError("Bad trait url");
 	if (trait.drawback && typeof trait.drawback != "boolean")
 		logError("Bad trait drawback");
 }
@@ -272,9 +272,9 @@ function checkTargetFeats(character) {
 		logError("Bad Target Feats");
 	else
 		for (let sf of character.targetFeats)
-			checkSingleFeat(sf);
+			checkSingleFeat(sf, true);
 }
-function checkSingleFeat(feat) {
+function checkSingleFeat(feat, isReasonOptional) {
 	// Self-check
 	if (!feat || typeof feat != "object")
 	{
@@ -283,7 +283,7 @@ function checkSingleFeat(feat) {
 	}
 
 	// Accepted properties
-	var featAccepts = ["name", "link", "title", "reason"];
+	var featAccepts = ["name", "url", "title", "reason"];
 	for (let featProp in feat)
 		if (!featAccepts.includes(featProp))
 			logError("Unsupported feat property: " + featProp);
@@ -291,12 +291,14 @@ function checkSingleFeat(feat) {
 	// Simple properties
 	if (!feat.name || typeof feat.name != "string")
 		logError("Bad feat name");
-	if (feat.link && typeof feat.link != "string")
-		logError("Bad feat link");
+	if (feat.url && typeof feat.url != "string")
+		logError("Bad feat url");
 	if (feat.title && typeof feat.title != "string")
 		logError("Bad feat title");
-	if (feat.reason && typeof feat.reason != "string")
+	if (feat.reason && typeof feat.reason != "string") // reason is present but the type is wrong
 		logError("Bad feat reason");
+    if (!feat.reason && !isReasonOptional) // reason is absent but it shouldn't
+		logError("Feat reason is not optional in this case");
 }
 function checkSpells(character) {
 	if (!character.spells || typeof character.spells != "object" || character.spells.constructor !== Array)
@@ -314,7 +316,7 @@ function checkSingleSpell(spell) {
 	}
 
 	// Accepted properties
-	var spellAccepts = ["level", "name", "link", "tag"];
+	var spellAccepts = ["level", "name", "url", "tag"];
 	for (let spellProp in spell)
 		if (!spellAccepts.includes(spellProp))
 			logError("Unsupported spell property: " + spellProp);
@@ -324,8 +326,8 @@ function checkSingleSpell(spell) {
 		logError("Bad spell level");
 	if (!spell.name || typeof spell.name != "string")
 		logError("Bad spell name");
-	if (!spell.link || typeof spell.link != "string")
-		logError("Bad spell link");
+	if (!spell.url || typeof spell.url != "string")
+		logError("Bad spell url");
 	if (spell.tag && typeof spell.tag != "string")
 		logError("Bad spell tag");
 }
@@ -345,7 +347,7 @@ function checkSingleItem(item) {
 	}
 
 	// Accepted properties
-	var itemAccepts = ["slot", "value", "name", "link"];
+	var itemAccepts = ["slot", "value", "name", "url"];
 	for (let itemProp in item)
 		if (!itemAccepts.includes(itemProp))
 			logError("Unsupported item property: " + itemProp);
@@ -362,8 +364,8 @@ function checkSingleItem(item) {
 		logError("Bad item value");
 	if (!item.name || typeof item.name != "string")
 		logError("Bad item name");
-	if (!item.link || typeof item.link != "string")
-		logError("Bad item link");
+	if (!item.url || typeof item.url != "string")
+		logError("Bad item url");
 }
 
 var OptionalChecks = {
@@ -376,7 +378,7 @@ var OptionalChecks = {
 		}
 
 		// Accepted properties
-		var companionAccepts = ["name", "flair", "link"];
+		var companionAccepts = ["name", "flair", "url"];
 		for (let companionProp in character.meta.companion)
 			if (!companionAccepts.includes(companionProp))
 				logError(character.name +  "'s companion's " + companionProp + " property is not supported");
@@ -384,8 +386,8 @@ var OptionalChecks = {
 		// Simple properties
 		if (!character.meta.companion.name || typeof character.meta.companion.name != "string")
 			logError(character.name + "'s companion has no name.");
-		if (!character.meta.companion.link || typeof character.meta.companion.link != "string")
-			logError(character.name + "'s companion has no link.");
+		if (!character.meta.companion.url || typeof character.meta.companion.url != "string")
+			logError(character.name + "'s companion has no url.");
 		if (character.meta.companion.flair &&  typeof character.meta.companion.flair != "string")
 			logError(character.name + "'s companion has an invalid flair");
 	},
@@ -398,7 +400,7 @@ var OptionalChecks = {
 		}
 
 		// Accepted properties
-		var sourceAccepts = ["name", "link"];
+		var sourceAccepts = ["name", "url"];
 		for (let sourceProp in character.meta.source)
 			if (!sourceAccepts.includes(sourceProp))
 				logError(character.name +  "'s source's " + sourceProp + " property is not supported");
@@ -406,8 +408,8 @@ var OptionalChecks = {
 		// Simple properties
 		if (!character.meta.source.name || typeof character.meta.source.name != "string")
 			logError(character.name + "'s source has no name.");
-		if (!character.meta.source.link || typeof character.meta.source.link != "string")
-			logError(character.name + "'s source has no link.");
+		if (!character.meta.source.url || typeof character.meta.source.url != "string")
+			logError(character.name + "'s source has no url.");
 	},
 	checkFlair: function (character) {
 		// If Flair is present, it must be a string.
@@ -439,7 +441,7 @@ var OptionalChecks = {
 			logError(character.name + "'s flavor has invalid height");
 	},
 	checkDeity: function (character) {
-		// Deity is either a string (god's name) or an object {name, link}
+		// Deity is either a string (god's name) or an object {name, url}
 		if (typeof character.deity == "string")
 			return;
 		if (typeof character.deity != "object")
@@ -449,7 +451,7 @@ var OptionalChecks = {
 		}
 
 		// Accepted properties
-		var deityAccepts = ["name", "link"];
+		var deityAccepts = ["name", "url"];
 		for (let deityProp in character.deity)
 			if (!deityAccepts.includes(deityProp))
 				logError(character.name + "'s deity's " + deityProp + " property is not supported");
@@ -457,8 +459,8 @@ var OptionalChecks = {
 		// Simple properties
 		if (!character.deity.name || typeof character.deity.name != "string")
 			logError(character.name + "'s deity has no name.");
-		if (!character.deity.link || typeof character.deity.link != "string")
-			logError(character.name + "'s deity has no link.");
+		if (!character.deity.url || typeof character.deity.url != "string")
+			logError(character.name + "'s deity has no url.");
 	},
 	checkLanguages: function (character) {
 		// If Languages is present, it must be a string.

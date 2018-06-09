@@ -23,9 +23,9 @@ function addLine(questChars, table, fct) {
 	}
 	table.appendChild(row);
 }
-function link(obj) {
+function buildLink(obj) {
 	let lnk = document.createElement("a");
-	lnk.href = obj.link;
+	lnk.href = obj.url;
 	lnk.appendChild(document.createTextNode(obj.name));
 	return lnk;
 }
@@ -92,7 +92,7 @@ function addItem(item) {
 	let priceSpan = document.createElement("span");
 	priceSpan.className = "listBonuses";
 	priceSpan.appendChild(document.createTextNode(item.value));
-	return [link(item), priceSpan];
+	return [buildLink(item), priceSpan];
 }
 
 /* FCT SPELLS */
@@ -132,7 +132,7 @@ function addSingleSpellLevel(questChars, level) {
 	return returnValue;
 }
 function addSpell(spell) {
-	let aSpell = link(spell);
+	let aSpell = buildLink(spell);
 	aSpell.className = spell.tag ? "spell " + spell.tag : "spell";
 	return [aSpell];
 }
@@ -148,7 +148,7 @@ function addDeity(character) {
 		return [document.createTextNode(character.deity)];
 
 	/* Uncommon/custom gods can be links */
-	return [link(character.deity)];
+	return [buildLink(character.deity)];
 }
 function addLanguages(character) {
 	return [document.createTextNode(character.languages)];
@@ -157,16 +157,16 @@ function addCompanion(character) {
 	if (!character.meta.companion)
 		return [];
 
-	return [link(character.meta.companion)];
+	return [buildLink(character.meta.companion)];
 }
 function addSource(character) {
 	if (!character.meta.source)
 		return [];
 
-	return [link(character.meta.source)];
+	return [buildLink(character.meta.source)];
 }
 function addAncestry(character) {
-	let lnk = link(character.ancestry);
+	let lnk = buildLink(character.ancestry);
 
 	if (!character.ancestry.archetypes)
 		return [lnk];
@@ -193,11 +193,11 @@ function addClasses(character) {
 function addClass(level)
 {
 	if (!level.archetypes || level.archetypes.length == 0)
-		return [link(level), document.createTextNode(" " + level.quantity)];
+		return [buildLink(level), document.createTextNode(" " + level.quantity)];
 
 	let classSpan = document.createElement("span");
 	classSpan.className = "listBonusBreaker";
-	classSpan.appendChild(link(level));
+	classSpan.appendChild(buildLink(level));
 	classSpan.appendChild(document.createTextNode(" " + level.quantity));
 
 	let spanArray = [classSpan];
@@ -205,7 +205,7 @@ function addClass(level)
 	{
 		let currSpan = document.createElement("span");
 		currSpan.className = "listBonuses"
-		currSpan.appendChild(link(archetype));
+		currSpan.appendChild(buildLink(archetype));
 
 		if (archetype.title && archetype.title != "")
 			currSpan.appendChild(document.createTextNode(" " + archetype.title));
@@ -270,9 +270,9 @@ function addSingleFeat(feat) {
 		returnValue.push(document.createTextNode("Drawback: "));
 	if (feat.title)
 		returnValue.push(document.createTextNode(feat.title + ": "));
-	if (typeof feat.link == "string")
+	if (feat.url)
 	{
-		let linkFeat = link(feat);
+		let linkFeat = buildLink(feat);
 		returnValue.push(linkFeat);
 		if (feat.reason)
 			linkFeat.title = feat.reason;
