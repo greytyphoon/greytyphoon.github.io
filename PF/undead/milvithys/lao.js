@@ -22,7 +22,7 @@ Greytyphoon.Characters.push({
     "wis": 10,
     "cha": 10,
     traits: [
-        { name: "Magical Lineage", url: "https://www.d20pfsrd.com/traits/faith-traits/inspired" },
+        { name: "Magical Lineage", url: "https://www.d20pfsrd.com/traits/magic-traits/magical-lineage" },
         { name: "Careful Combattant", url: "https://www.d20pfsrd.com/traits/combat-traits/careful-combattant-combat" }
     ],
     startingFeats: [
