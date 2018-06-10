@@ -48,7 +48,7 @@ Greytyphoon.Characters.push({
         { slot: "weapon-r", value: 300, name: "Shuriken", url: "https://www.d20pfsrd.com/equipment/weapons" },
         { slot: "headband", value: 4000, name: "Headband of Inspired Wisdom", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-inspired-wisdom" },
         { slot: "neck", value: 4000, name: "Amulet of Mighty Fists (+1)", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-mighty-fists" },
-        { slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
+        { slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
         { slot: "wrists", value: 4000, name: "Bracers of Armor", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },
         { slot: "belt", value: 4000, name: "Belt of Giant Strength", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-giant-strength" },
         { slot: "ring", value: 10000, name: "Ring of Ki Mastery", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-ki-mastery" },

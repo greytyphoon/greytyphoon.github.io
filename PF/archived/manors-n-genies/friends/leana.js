@@ -28,7 +28,7 @@ Greytyphoon.Characters.push({
     ],
     startingFeats: [
         { name: "Weapon Finesse", reason: "Human", url: "https://www.d20pfsrd.com/feats/combat-feats/weapon-finesse-combat-final" },
-        { name: "Arcane Strike", reason: "Level 1", url: "http://www.d20pfsrd.com/feats/combat-feats/arcane-strike-combat" }
+        { name: "Arcane Strike", reason: "Level 1", url: "https://www.d20pfsrd.com/feats/combat-feats/arcane-strike-combat" }
     ],
     progressFeats: [
         { name: "Weapon Focus (Rapier)", reason: "Level 3", url: "https://www.d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final" },
@@ -36,9 +36,9 @@ Greytyphoon.Characters.push({
         { name: "Fencing Grace", reason: "Level 5", url: "https://www.d20pfsrd.com/feats/combat-feats/fencing-grace-combat" },
         { name: "Intensified Spell", reason: "Magus 5", url: "https://www.d20pfsrd.com/feats/metamagic-feats/intensified-spell-metamagic" },
         { name: "Arcane Deed", reason: "Magus 6", url: "https://www.d20pfsrd.com/classes/base-classes/magus/magus-arcana/paizo-magus-arcana/arcane-deed-su" },
-		{ name: "Combat Reflexes", reason: "Level 7", url: "http://www.d20pfsrd.com/feats/combat-feats/combat-reflexes-combat" },
-		{ name: "Lunge", reason: "Level 9", url: "http://www.d20pfsrd.com/feats/combat-feats/lunge-combat-final" },
-		{ name: "Wand Wielder", reason: "Magus 9", url: "http://www.d20pfsrd.com/classes/base-classes/magus/magus-arcana/paizo---magus-arcana/wand-wielder-su" }
+		{ name: "Combat Reflexes", reason: "Level 7", url: "https://www.d20pfsrd.com/feats/combat-feats/combat-reflexes-combat" },
+		{ name: "Lunge", reason: "Level 9", url: "https://www.d20pfsrd.com/feats/combat-feats/lunge-combat-final" },
+		{ name: "Wand Wielder", reason: "Magus 9", url: "https://www.d20pfsrd.com/classes/base-classes/magus/magus-arcana/paizo---magus-arcana/wand-wielder-su" }
     ],
     targetFeats: [],
     spells: [
@@ -72,20 +72,20 @@ Greytyphoon.Characters.push({
         { level: 3, name: "vampiric touch", url: "https://www.d20pfsrd.com/magic/all-spells/v/vampiric-touch", tag: "touch" }
     ],
     loot: [
-        { slot: "weapon-m", value: 8300, name: "Rapier +1 Keen", url: "http://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/keen" },
-        { slot: "weapon-r", value: 300, name: "Longbow [0]", url: "http://www.d20pfsrd.com/equipment/weapons" },
+        { slot: "weapon-m", value: 8300, name: "Rapier +1 Keen", url: "https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/keen" },
+        { slot: "weapon-r", value: 300, name: "Longbow [0]", url: "https://www.d20pfsrd.com/equipment/weapons" },
         { slot: "headband", value: 4000, name: "Headband of Vast Intelligence", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-vast-intelligence" },
-        { slot: "armor", value: 2100, name: "Mithral Shirt +1", url: "https://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt/" },
+        { slot: "armor", value: 2100, name: "Mithral Shirt +1", url: "https://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" },
         { slot: "shield", value: 2150, name: "Mithral Buckler +1", url: "https://www.d20pfsrd.com/equipment/special-materials#TOC-Mithral" },
-        { slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
-        { slot: "body", value: 5000, name: "Tunic of Careful Casting", url: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/tunic-of-careful-casting" },
-        { slot: "wrists", value: 5000, name: "Spellguard Bracers", url: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/spellguard-bracers" },
-        { slot: "hands", value: 5000, name: "Gloves of Arcane Striking", url: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/gloves-of-arcane-striking" },
-        { slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", url: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
-        { slot: "none", value: 6000, name: "Caster's Tattoo", url: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/tattoo-caster-s" },
+        { slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
+        { slot: "body", value: 5000, name: "Tunic of Careful Casting", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/tunic-of-careful-casting" },
+        { slot: "wrists", value: 5000, name: "Spellguard Bracers", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/spellguard-bracers" },
+        { slot: "hands", value: 5000, name: "Gloves of Arcane Striking", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/gloves-of-arcane-striking" },
+        { slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
+        { slot: "none", value: 6000, name: "Caster's Tattoo", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/tattoo-caster-s" },
         { slot: "none", value: 2000, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack" },
         { slot: "none", value: 1000, name: "Pearl of Power", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-q/pearl-of-power" },
         { slot: "none", value: 20000, name: "Stone of Good Luck", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/stone-of-good-luck-luckstone" },
-        { slot: "none", value: 2500, name: "Swordmaster's flair", url: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/swordmaster-s-flair" }
+        { slot: "none", value: 2500, name: "Swordmaster's flair", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/swordmaster-s-flair" }
     ]
 });
