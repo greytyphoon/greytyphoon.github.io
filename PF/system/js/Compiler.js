@@ -369,6 +369,9 @@ function checkSingleItem(item) {
 		logError("Bad item name");
 	if (!item.url || typeof item.url != "string")
 		logError("Bad item url");
+    
+    if (item.name && item.name.includes("masterwork"))
+        logError("Items are assumed to be masterwork");
 }
 
 var OptionalChecks = {
