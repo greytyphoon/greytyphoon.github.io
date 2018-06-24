@@ -60,12 +60,14 @@ Greytyphoon.Characters.push({
 		{ level: 4, name: "wall of fire", url: "https://www.d20pfsrd.com/magic/all-spells/w/wall-of-fire", tag: "domain" },
 		{ level: 5, name: "fire shield", url: "https://www.d20pfsrd.com/magic/all-spells/f/fire-shield", tag: "domain" }
     ],
+    equips: [
+        { slot: "weapon-m", value: 315, name: "Scimitar" },
+        { slot: "weapon-r", value: 300, name: "Sling" },
+        { slot: "armor", value: 170, name: "Hide Shirt", bonus: 2 },
+        { slot: "shield", value: 157, name: "Heavy Wooden Shield", material: { value: 100, name: "Darkwood", url: "https://www.d20pfsrd.com/equipment/special-materials#TOC-Darkwood" }, bonus: 1 }
+    ],
     loot: [
-        { slot: "weapon-m", value: 300, name: "Scimitar", url: "https://www.d20pfsrd.com/equipment/weapons" },
-        { slot: "weapon-r", value: 300, name: "Sling", url: "https://www.d20pfsrd.com/equipment/weapons" },
         { slot: "headband", value: 16000, name: "Headband of Inspired Wisdom", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-inspired-wisdom" },
-        { slot: "armor", value: 4150, name: "Hide Shirt +2", url: "https://www.d20pfsrd.com/equipment/armor" },
-        { slot: "shield", value: 1257, name: "Darkwood Heavy Wooden Shield +1", url: "https://www.d20pfsrd.com/equipment/special-materials#TOC-Darkwood" },
         { slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
         { slot: "hands", value: 2200, name: "Apprentice's Cheating Gloves", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/gloves-apprentice-s-cheating" },
         { slot: "ring", value: 2200, name: "Ring of Eloquence", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-eloquence" },

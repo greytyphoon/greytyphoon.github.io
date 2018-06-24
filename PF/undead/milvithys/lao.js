@@ -53,11 +53,13 @@ Greytyphoon.Characters.push({
         { level: 2, name: "fearsome chill touch", url: "https://www.d20pfsrd.com/magic/all-spells/c/chill-touch", tag: "magicalLineage" },
         { level: 2, name: "stone call", url: "https://www.d20pfsrd.com/magic/all-spells/s/stone-call" },
     ],
+    equips: [
+        { slot: "weapon-m", value: 320, name: "Rapier", material: { value: 1000, name: "Voidglass", url: "https://www.d20pfsrd.com/equipment/special-materials/#TOC-Voidglass" } },
+        { slot: "weapon-r", value: 600, name: "Longbow [2]" },
+        { slot: "shield", value: 5, name: "Buckler", material: { value: 1000, name: "Mithral", url: "https://www.d20pfsrd.com/equipment/special-materials/#TOC-Mithral" } },
+        { slot: "armor", value: 1100, name: "Mithral Shirt", url: "https://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" }
+    ],
     loot: [
-        { slot: "weapon-m", value: 1300, name: "Voidglass Rapier, masterwork", url: "https://www.d20pfsrd.com/equipment/special-materials/#TOC-Voidglass" },
-        { slot: "weapon-r", value: 300, name: "Longbow [2], masterwork", url: "https://www.d20pfsrd.com/equipment/weapons" },
-        { slot: "shield", value: 1150, name: "Mithral Buckler", url: "https://www.d20pfsrd.com/equipment/armor" },
-        { slot: "armor", value: 1100, name: "Mithral Shirt", url: "https://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" },
         { slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity" }
     ]
 });

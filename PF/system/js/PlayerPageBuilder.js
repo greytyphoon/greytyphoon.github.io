@@ -38,6 +38,9 @@ function addSum(questChars, table) {
 		for (let item of character.loot) {
 			sum += item.value;
 		}
+		for (let equip of character.equips) {
+			sum += calcEquipPrice(equip);
+		}
 
 		let col = document.createElement("th");
 		col.innerHTML = sum;
@@ -47,9 +50,94 @@ function addSum(questChars, table) {
 	foot.appendChild(row);
 	table.appendChild(foot);
 }
+function addEquipSlots(questChars, table) {
+	var equipAccepts = ["weapon-m", "weapon-r", "armor", "shield"];
+	for (let slot of equipAccepts)
+	{
+		if (questChars.some(character => character.equips.some(equip => equip.slot == slot)))
+		{
+			let row = document.createElement("tr");
+			row.id = slot;
+			addSingleEquipSlot(questChars, slot).forEach(e => row.appendChild(e));
+			table.appendChild(row);
+		}
+	}
+}
+function addSingleEquipSlot(questChars, slot) {
+	// The hard thing about this is, there might be two equips in the same slot;
+	var charLoot = questChars.map(character => character.equips.filter(loot => loot.slot == slot));
+	var returnValue = [];
+	for (let loot of charLoot)
+	{
+		let col = document.createElement("td");
+		returnValue.push(col);
+		if (loot.length == 0)
+			continue;
+		if (loot.length == 1) {
+			addEquip(loot[0]).forEach(e => col.appendChild(e));
+			continue;
+		}
+
+		for (let equip of loot) {
+			let equipDiv = document.createElement("div");
+			addEquip(equip).forEach(e => equipDiv.appendChild(e));
+			col.appendChild(equipDiv);
+		}
+	}
+	return returnValue;
+}
+function addEquip(equip) {
+	let returnValue = [];
+	
+	if (equip.material) {
+		returnValue.push(buildLink(equip.material));
+		returnValue.push(document.createTextNode(" "));
+	}
+	
+	let isWeapon = equip.slot != "shield" && equip.slot != "armor";
+	let fakeObject = { name: equip.name, url: equip.url || "https://www.d20pfsrd.com/equipment/" + (isWeapon ? "weapons" : "armor") };
+	returnValue.push(buildLink(fakeObject));
+	
+	if (equip.bonus) {
+		returnValue.push(document.createTextNode(", +" + equip.bonus));
+		if (equip.enchants)
+			for (let enchant of equip.enchants) {
+				returnValue.push(document.createTextNode(" "));
+				returnValue.push(buildLink(enchant));
+			}
+	}
+	
+	if (equip.quantity)
+		returnValue.push(document.createTextNode(" x " + equip.quantity));
+	
+	let priceSpan = document.createElement("span");
+	priceSpan.className = "listBonuses";
+	priceSpan.appendChild(document.createTextNode(calcEquipPrice(equip)));
+	returnValue.push(priceSpan);
+	
+	return returnValue;
+}
+function calcEquipPrice(equip) {
+	let isWeapon = equip.slot != "shield" && equip.slot != "armor";
+	let price = equip.value || (isWeapon ? 300 : 150);
+	if (equip.material)
+		price += equip.material.value;
+	
+	let bonus = equip.bonus || 0;
+	if (equip.enchants)
+		for (let enchant of equip.enchants) {
+			if (enchant.valueF)
+				price += enchant.valueF;
+			if (enchant.valueB)
+				bonus += enchant.valueB;
+		}
+	price += bonus * bonus * (isWeapon ? 2000 : 1000);
+	if (equip.quantity)
+		price *= equip.quantity;
+	return price;
+}
 function addItemSlots(questChars, table) {
-	var slotAccepts = ["weapon-m", "weapon-r", "armor", "shield",
-					   "head", "headband", "eyes",
+	var slotAccepts = ["head", "headband", "eyes",
 					   "neck", "shoulders", "chest",
 					   "body", "belt", "wrists",
 					   "hands", "ring", "feet", "none"];
@@ -65,7 +153,7 @@ function addItemSlots(questChars, table) {
 	}
 }
 function addSingleItemSlot(questChars, slot) {
-	// The hard thing about this is, there might be two items in the same slot (weapons, rings, none, etc).
+	// The hard thing about this is, there might be two items in the same slot (rings, none, etc).
 	// charLoot is an array of arrays.
 	var charLoot = questChars.map(character => character.loot.filter(loot => loot.slot == slot));
 	var returnValue = [];
@@ -330,6 +418,7 @@ function main() {
 		addLine(questChars, charInfoTable, addSource);
 
 	addName(questChars, lootTable);
+	addEquipSlots(questChars, lootTable);
 	addItemSlots(questChars, lootTable);
 	addSum(questChars, lootTable);
 

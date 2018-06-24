@@ -71,12 +71,14 @@ Greytyphoon.Characters.push({
         { level: 3, name: "slow", url: "https://www.d20pfsrd.com/magic/all-spells/s/slow" },
         { level: 3, name: "vampiric touch", url: "https://www.d20pfsrd.com/magic/all-spells/v/vampiric-touch", tag: "touch" }
     ],
+    equips: [
+        { slot: "weapon-m", value: 320, name: "Rapier", bonus: 1, enchants: [ { valueB: 1, name: "Keen", url: "https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/keen" } ] },
+        { slot: "weapon-r", value: 375, name: "Longbow [0]" },
+        { slot: "armor", value: 1100, name: "Mithral Shirt", url: "https://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt", bonus: 1 },
+        { slot: "shield", value: 5, name: "Buckler", material: { value: 1000, name: "Mithral", url: "https://www.d20pfsrd.com/equipment/special-materials#TOC-Mithral" }, bonus: 1 }
+    ],
     loot: [
-        { slot: "weapon-m", value: 8300, name: "Rapier +1 Keen", url: "https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/keen" },
-        { slot: "weapon-r", value: 300, name: "Longbow [0]", url: "https://www.d20pfsrd.com/equipment/weapons" },
         { slot: "headband", value: 4000, name: "Headband of Vast Intelligence", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-vast-intelligence" },
-        { slot: "armor", value: 2100, name: "Mithral Shirt +1", url: "https://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" },
-        { slot: "shield", value: 2150, name: "Mithral Buckler +1", url: "https://www.d20pfsrd.com/equipment/special-materials#TOC-Mithral" },
         { slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
         { slot: "body", value: 5000, name: "Tunic of Careful Casting", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/tunic-of-careful-casting" },
         { slot: "wrists", value: 5000, name: "Spellguard Bracers", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/spellguard-bracers" },

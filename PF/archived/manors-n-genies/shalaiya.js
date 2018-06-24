@@ -67,10 +67,12 @@ Greytyphoon.Characters.push({
 		{ level: 3, name: "heroism", url: "https://www.d20pfsrd.com/magic/all-spells/h/heroism" },
 		{ level: 3, name: "righteous vigor", url: "https://www.d20pfsrd.com/magic/all-spells/r/righteous-vigor" }
 	],
+    equips: [
+		{ slot: "weapon-m", value: 305, name: "Longspear" },
+		{ slot: "weapon-r", value: 375, name: "Longbow", bonus: 1, enchants: [ { valueB: 1, name: "Frost", url: "https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost" } ] },
+		{ slot: "armor", value: 175, name: "Studded Leather Armor", bonus: 2, enchants: [ { valueF: 3750, name: "Shadow", url: "https://www.d20pfsrd.com/magic-items/magic-armor/magic-armor-and-shield-special-abilities/shadow" } ] },
+    ],
 	loot: [
-		{ slot: "weapon-m", value: 300, name: "Spear, masterwork", url: "https://www.d20pfsrd.com/equipment/weapons" },
-		{ slot: "weapon-r", value: 8300, name: "LongBow, +1 Frost", url: "https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost" },
-		{ slot: "armor", value: 7900, name: "Studded Leather Armor, +2 Shadow", url: "https://www.d20pfsrd.com/magic-items/magic-armor/magic-armor-and-shield-special-abilities/shadow/" },
 		{ slot: "eyes", value: 3500, name: "Lens of Detection", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/lens-of-detection" },
 		{ slot: "neck", value: 16000, name: "Amulet of Shield", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },
 		{ slot: "neck", value: 1650, name: "Necklace of Fireballs", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/necklace-of-fireballs" },

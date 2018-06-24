@@ -44,10 +44,12 @@ Greytyphoon.Characters.push({
         { level: 1, name: "thunderstomp", url: "https://www.d20pfsrd.com/magic/all-spells/t/thunderstomp" },
         { level: 1, name: "true strike", url: "https://www.d20pfsrd.com/magic/all-spells/t/true-strike" }
     ],
+    equips: [
+        { slot: "weapon-m", value: 350, name: "Greatsword" },
+        { slot: "weapon-r", value: 1, name: "Javelins", quantity: 3 },
+        { slot: "armor", value: 1650, name: "Full Plate" }
+    ],
     loot: [
-        { slot: "weapon-m", value: 300, name: "Greatsword, masterwork", url: "https://www.d20pfsrd.com/equipment/weapons" },
-        { slot: "weapon-r", value: 900, name: "Javelins, masterwork *3", url: "https://www.d20pfsrd.com/equipment/weapons" },
-        { slot: "armor", value: 150, name: "Full Plate", url: "https://www.d20pfsrd.com/equipment/armor" },
         { slot: "hands", value: 8000, name: "Deliquescent Gloves", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/gloves-deliquescent" }
     ]
 });

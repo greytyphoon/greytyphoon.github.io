@@ -41,10 +41,12 @@ Greytyphoon.Characters.push({
 		{ level: 1, name: "true strike", url: "http://www.d20pfsrd.com/magic/all-spells/t/true-strike" },
 		{ level: 1, name: "vanish", url: "http://www.d20pfsrd.com/magic/all-spells/v/vanish" }
 	],
+    equips: [
+		{ slot: "weapon-m", value: 320, name: "Rapier" },
+		{ slot: "weapon-r", value: 375, name: "Longbow [0]" },
+		{ slot: "armor", value: 175, name: "Studded Leather Armor" }
+    ],
 	loot: [
-		{ slot: "weapon-m", value: 300, name: "Rapier", url: "http://www.d20pfsrd.com/equipment/weapons" },
-		{ slot: "weapon-r", value: 300, name: "Longbow [0]", url: "http://www.d20pfsrd.com/equipment/weapons" },
-		{ slot: "armor", value: 150, name: "Studded Leather Armor", url: "http://www.d20pfsrd.com/equipment/armor" },
 		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
 		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "http://www.d20pfsrd.com/magic-items/rings/ring-of-protection" },
 		{ slot: "none", value: 2200, name: "Handy Haversack", url: "http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack" }

@@ -58,10 +58,12 @@ Greytyphoon.Characters.push({
         { level: 3, name: "dispel magic", url: "https://www.d20pfsrd.com/magic/all-spells/d/dispel-magic" },
         { level: 3, name: "sleet storm", url: "https://www.d20pfsrd.com/magic/all-spells/s/sleet-storm" }
     ],
+    equips: [
+        { slot: "weapon-m", value: 305, name: "Longspear" },
+        { slot: "weapon-r", value: 335, name: "Light Crossbow" },
+        { slot: "shield", value: 5, name: "Buckler", material: { value: 1000, name: "Mithral", url: "https://www.d20pfsrd.com/equipment/special-materials/#TOC-Mithral" } }
+    ],
     loot: [
-        { slot: "weapon-m", value: 300, name: "Spear, masterwork", url: "https://www.d20pfsrd.com/equipment/weapons" },
-        { slot: "weapon-r", value: 300, name: "Light Crossbow, masterwork", url: "https://www.d20pfsrd.com/equipment/weapons" },
-        { slot: "shield", value: 1150, name: "Mithral Buckler", url: "https://www.d20pfsrd.com/equipment/armor" },
         { slot: "ring", value: 4000, name: "Ring of Counterspells", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-counterspells" },
         { slot: "none", value: 4000, name: "Pearl of Power", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power" }
     ]

@@ -8,12 +8,10 @@ function logError(val) {
 }
 /* Main */
 function main() {
-	for (let character of Greytyphoon.Characters)
-	{
+	for (let character of Greytyphoon.Characters) {
 		// Check the name first
 		let name = character.name;
-		if (!name || name == "" || typeof name != "string")
-		{
+		if (!name || name == "" || typeof name != "string") {
 			logError("Found a character with no name: " + character);
 			continue;
 		}
@@ -34,6 +32,7 @@ function main() {
 		checkProgressFeats(character);
 		checkTargetFeats(character);
 		checkSpells(character);
+		checkEquipment(character);
 		checkLoot(character);
 
 		if (character.flair) OptionalChecks.checkFlair(character);
@@ -50,8 +49,7 @@ function main() {
 
 function checkMeta(character) {
 	// Self-check
-	if (!character.meta || typeof character.meta != "object")
-	{
+	if (!character.meta || typeof character.meta != "object") {
 		logError(character.name + "'s meta property is wrong");
 		return;
 	}
@@ -74,8 +72,7 @@ function checkMeta(character) {
 }
 function checkAlignment(character) {
 	// Alignment is mandatory. Must be a valid, two-letters alignment.
-	if (!character.alignment)
-	{
+	if (!character.alignment) {
 		logError(character.name + " has no alignment");
 		return;
 	}
@@ -85,8 +82,7 @@ function checkAlignment(character) {
 }
 function checkAncestry(character) {
 	// Self-check
-	if (!character.ancestry)
-	{
+	if (!character.ancestry) {
 		logError(character.name + " has no ancestry");
 		return;
 	}
@@ -104,8 +100,7 @@ function checkAncestry(character) {
 		logError(character.name + "'s ancestry has no url.");
 
 	// Complex/children properties
-	if (character.ancestry.archetypes)
-	{
+	if (character.ancestry.archetypes) {
 		if (typeof character.ancestry.archetypes != "object" || character.ancestry.archetypes.constructor !== Array)
 			logError(character.name + "'s ancestry's archetype  is not formatted correctly");
 		else
@@ -115,14 +110,12 @@ function checkAncestry(character) {
 }
 function checkAncestryArchetype(archetype) {
 	// Self-check
-    if (!archetype || typeof archetype != "string")
-    {
-        logError("Bad Ancestry Archetype");
-    }
+	if (!archetype || typeof archetype != "string") {
+		logError("Bad Ancestry Archetype");
+	}
 }
 function checkLevels(character) {
-	if (typeof character.level != "object" || character.level.constructor !== Array)
-	{
+	if (typeof character.level != "object" || character.level.constructor !== Array) {
 		logError(character.name + "'s level is not formatted correctly");
 		return;
 	}
@@ -133,8 +126,7 @@ function checkLevels(character) {
 }
 function checkSingleLevel(level) {
 	// Self-check
-	if (!level || typeof level != "object")
-	{
+	if (!level || typeof level != "object") {
 		logError("Bad level");
 		return;
 	}
@@ -165,8 +157,7 @@ function checkSingleLevel(level) {
 }
 function checkLevelArchetype(archetype) {
 	// Self-check
-	if (!archetype || typeof archetype != "object")
-	{
+	if (!archetype || typeof archetype != "object") {
 		logError("Archetype has bad format");
 		return;
 	}
@@ -187,14 +178,12 @@ function checkLevelArchetype(archetype) {
 }
 function checkStat(stat) {
 	// Stat is either an int (no mods) or an array [base, {mod}, {mod}]
-	if (typeof stat == "number")
-	{
+	if (typeof stat == "number") {
 		if (stat < 7 || stat > 17)
 			logError("Impossible unmodded stat");
 		return;
 	}
-	if (typeof stat != "object" || stat.constructor !== Array)
-	{
+	if (typeof stat != "object" || stat.constructor !== Array) {
 		logError("Invalid stat format:" + stat);
 		return
 	}
@@ -206,8 +195,7 @@ function checkStat(stat) {
 }
 function checkStatModifier(mod) {
 	// Self-check
-	if (!mod || typeof mod != "object")
-	{
+	if (!mod || typeof mod != "object") {
 		logError("Bad stat mod");
 		return;
 	}
@@ -233,8 +221,7 @@ function checkTraits(character) {
 }
 function checkSingleTrait(trait) {
 	// Self-check
-	if (!trait || typeof trait != "object")
-	{
+	if (!trait || typeof trait != "object") {
 		logError("Bad Trait");
 		return;
 	}
@@ -276,8 +263,7 @@ function checkTargetFeats(character) {
 }
 function checkSingleFeat(feat, isReasonOptional) {
 	// Self-check
-	if (!feat || typeof feat != "object")
-	{
+	if (!feat || typeof feat != "object") {
 		logError("Bad Feat: " + feat);
 		return;
 	}
@@ -297,11 +283,11 @@ function checkSingleFeat(feat, isReasonOptional) {
 		logError("Bad feat title");
 	if (feat.reason && typeof feat.reason != "string") // reason is present but the type is wrong
 		logError("Bad feat reason");
-    if (!feat.reason && !isReasonOptional) // reason is absent but it shouldn't
+	if (!feat.reason && !isReasonOptional) // reason is absent but it shouldn't
 		logError("Feat reason is not optional in this case");
-        
-    if (feat.name == "Skill Focus" || feat.name == "Spell Focus" || feat.name == "Weapon Focus")
-        logError("Untyped " + feat.name);
+
+	if (feat.name == "Skill Focus" || feat.name == "Spell Focus" || feat.name == "Weapon Focus")
+		logError("Untyped " + feat.name);
 }
 function checkSpells(character) {
 	if (!character.spells || typeof character.spells != "object" || character.spells.constructor !== Array)
@@ -312,8 +298,7 @@ function checkSpells(character) {
 }
 function checkSingleSpell(spell) {
 	// Self-check
-	if (!spell || typeof spell != "object")
-	{
+	if (!spell || typeof spell != "object") {
 		logError("Bad spell: " + spell);
 		return;
 	}
@@ -334,6 +319,105 @@ function checkSingleSpell(spell) {
 	if (spell.tag && typeof spell.tag != "string")
 		logError("Bad spell tag");
 }
+function checkEquipment(character) {
+	if (!character.equips || typeof character.equips != "object" || character.equips.constructor !== Array)
+		logError("Bad Equipment");
+	else
+		for (let equip of character.equips)
+			checkSingleEquip(equip);
+}
+function checkSingleEquip(weapon) {
+	// Self-check
+	if (!weapon || typeof weapon != "object") {
+		logError("Bad weapon: " + weapon);
+		return;
+	}
+
+	// Accepted properties
+	var equipAccepts = ["slot", "value", "name", "url", "material", "bonus", "enchants", "quantity"];
+	for (let equipProp in weapon)
+		if (!equipAccepts.includes(equipProp))
+			logError("Unsupported equipment property: " + equipProp);
+
+	// Simple properties
+	var slotAccepts = ["weapon-m", "weapon-r", "armor", "shield"];
+	if (!weapon.slot || !slotAccepts.includes(weapon.slot))
+		logError("Bad equipment slot");
+	if (!weapon.name || typeof weapon.name != "string")
+		logError("Bad equipment name");
+	else if (weapon.name.includes("masterwork"))
+		logError("Masterwork equipments are assumed");
+	if (weapon.url && typeof weapon.url != "string") // Optional: always https://www.d20pfsrd.com/equipment/weapons if omitted
+		logError("Bad equipment url");
+	if (weapon.value && (typeof weapon.value != "number" || weapon.value < 1)) // Optional: always 300 (mwk) if omitted
+		logError("Bad equipment value");
+	if (weapon.bonus && (typeof weapon.bonus != "number" || weapon.bonus < 0 || weapon.bonus > 5))
+		logError("Bad equipment bonus");
+	if (weapon.quantity && (typeof weapon.quantity != "number" || weapon.quantity < 0))
+		logError("Bad equipment quantity");
+
+	// Complex/children properties
+	if (weapon.material)
+		checkEquipMaterial(weapon.material);
+	if (weapon.enchants) {
+		if (!weapon.bonus)
+			logError("Can't add enchantments to a weapon without a bonus");
+		if (typeof weapon.enchants != "object" || weapon.enchants.constructor !== Array)
+			logError("Bad equipment enchants: not an array");
+		else
+			for (let enchant of weapon.enchants)
+				checkEquipEnchant(enchant);
+	}
+}
+function checkEquipMaterial(material) {
+	// Self-check
+	if (typeof material != "object") {
+		logError("Bad weapon material");
+		return;
+	}
+
+	// Accepted properties
+	var equipAccepts = ["value", "name", "url"];
+	for (let equipProp in material)
+		if (!equipAccepts.includes(equipProp))
+			logError("Unsupported material property: " + equipProp);
+
+	// Simple properties
+	if (!material.name || typeof material.name != "string")
+		logError("Bad material name");
+	if (!material.url || typeof material.url != "string")
+		logError("Bad material url");
+	if (!material.value || typeof material.value != "number" || material.value < 1)
+		logError("Bad material value");
+}
+function checkEquipEnchant(enchant) {
+	// Self-check
+	if (!enchant || typeof enchant != "object") {
+		logError("Bad weapon enchant");
+		return;
+	}
+
+	// Accepted properties
+	var equipAccepts = ["valueB", "valueF", "name", "url"];
+	for (let equipProp in enchant)
+		if (!equipAccepts.includes(equipProp))
+			logError("Unsupported enchant property: " + equipProp);
+
+	// Simple properties
+	if (!enchant.name || typeof enchant.name != "string")
+		logError("Bad enchant name");
+	if (!enchant.url || typeof enchant.url != "string")
+		logError("Bad enchant url");
+	if (enchant.valueF && (typeof enchant.valueF != "number" || enchant.valueF < 1))
+		logError("Bad enchant value(F)");
+	if (enchant.valueB && (typeof enchant.valueB != "number" || enchant.valueB < 1 || enchant.valueB > 5))
+		logError("Bad enchant value(B)");
+
+	if (enchant.valueF && enchant.valueB)
+		logError("Enchantment cannot have two values");
+	if (!enchant.valueF && !enchant.valueB)
+		logError("Enchantment must have one value");
+}
 function checkLoot(character) {
 	if (!character.loot || typeof character.loot != "object" || character.loot.constructor !== Array)
 		logError("Bad Loot");
@@ -343,8 +427,7 @@ function checkLoot(character) {
 }
 function checkSingleItem(item) {
 	// Self-check
-	if (!item || typeof item != "object")
-	{
+	if (!item || typeof item != "object") {
 		logError("Bad item: " + item);
 		return;
 	}
@@ -356,8 +439,7 @@ function checkSingleItem(item) {
 			logError("Unsupported item property: " + itemProp);
 
 	// Simple properties
-	var slotAccepts = ["weapon-m", "weapon-r", "armor", "shield", "none",
-					   "head", "headband", "eyes",
+	var slotAccepts = ["none", "head", "headband", "eyes",
 					   "neck", "shoulders", "chest",
 					   "body", "belt", "wrists",
 					   "hands", "ring", "feet"];
@@ -369,16 +451,12 @@ function checkSingleItem(item) {
 		logError("Bad item name");
 	if (!item.url || typeof item.url != "string")
 		logError("Bad item url");
-    
-    if (item.name && item.name.includes("masterwork"))
-        logError("Items are assumed to be masterwork");
 }
 
 var OptionalChecks = {
 	checkCompanion: function (character) {
 		// Self-check
-		if (typeof character.meta.companion != "object")
-		{
+		if (typeof character.meta.companion != "object") {
 			logError(character.name + "'s companion is not defined properly");
 			return;
 		}
@@ -399,8 +477,7 @@ var OptionalChecks = {
 	},
 	checkSource: function (character) {
 		// Self-check
-		if (typeof character.meta.source != "object")
-		{
+		if (typeof character.meta.source != "object") {
 			logError(character.name + "'s source is not defined properly");
 			return;
 		}
@@ -424,8 +501,7 @@ var OptionalChecks = {
 	},
 	checkFlavor: function (character) {
 		// Self-check
-		if (typeof character.flavor != "object")
-		{
+		if (typeof character.flavor != "object") {
 			logError(character.name + "'s flavor is all wrong");
 			return;
 		}
@@ -450,8 +526,7 @@ var OptionalChecks = {
 		// Deity is either a string (god's name) or an object {name, url}
 		if (typeof character.deity == "string")
 			return;
-		if (typeof character.deity != "object")
-		{
+		if (typeof character.deity != "object") {
 			logError(character.name + "'s deity is invalid");
 			return;
 		}
@@ -481,7 +556,7 @@ function checkOverProperties(character) {
 		"ancestry", "level",
 		"str", "dex", "con", "int", "wis", "cha",
 		"traits", "startingFeats", "progressFeats", "targetFeats",
-		"spells", "loot"
+		"spells", "equips", "loot"
 	];
 	for (let prop in character)
 		if (!allAccepted.includes(prop))

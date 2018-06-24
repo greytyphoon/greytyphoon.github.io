@@ -43,9 +43,11 @@ Greytyphoon.Characters.push({
     ],
     targetFeats: [],
     spells: [],
+    equips: [
+        { slot: "weapon-m", value: 302, name: "Kama", material: { value: 2, name: "Cold-iron", url: "https://www.d20pfsrd.com/equipment/special-materials#TOC-Iron-Cold"} },
+        { slot: "weapon-r", value: 301, name: "Shuriken (5)" }
+    ],
     loot: [
-        { slot: "weapon-m", value: 300, name: "Kama", url: "https://www.d20pfsrd.com/equipment/weapons" },
-        { slot: "weapon-r", value: 300, name: "Shuriken", url: "https://www.d20pfsrd.com/equipment/weapons" },
         { slot: "headband", value: 4000, name: "Headband of Inspired Wisdom", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-inspired-wisdom" },
         { slot: "neck", value: 4000, name: "Amulet of Mighty Fists (+1)", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-mighty-fists" },
         { slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },

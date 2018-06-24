@@ -3,7 +3,7 @@ Greytyphoon.Characters.push({
 	meta: {
 		quest: "Manors & Genies",
 		owner: "Elizabeth",
-        companion: { name: "Bat Familiar", url: "http://www.d20pfsrd.com/bestiary/monster-listings/animals/bat/" }
+        companion: { name: "Bat Familiar", url: "https://www.d20pfsrd.com/bestiary/monster-listings/animals/bat" }
 	},
 	alignment: "N",
 	languages: "Common, Abyssal, Celestial, Elven, Necril, Terran",
@@ -67,9 +67,11 @@ Greytyphoon.Characters.push({
 		{ level: 5, name: "cure critical wounds", url: "https://www.d20pfsrd.com/magic/all-spells/c/cure-critical-wounds" },
 		{ level: 5, name: "pain strike, mass", url: "https://www.d20pfsrd.com/magic/all-spells/p/pain-strike" }
 	],
+    equips: [
+		{ slot: "weapon-m", value: 305, name: "Longspear" },
+		{ slot: "weapon-r", value: 335, name: "Light Crossbow" }
+    ],
 	loot: [
-		{ slot: "weapon-m", value: 300, name: "Longspear, masterwork", url: "https://www.d20pfsrd.com/equipment/weapons" },
-		{ slot: "weapon-r", value: 300, name: "Crossbow, masterwork", url: "https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/flaming" },
 		{ slot: "neck", value: 16000, name: "Amulet of Shield", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },
 		{ slot: "none", value: 20000, name: "Stone of Good Luck", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/stone-of-good-luck-luckstone" },
 		{ slot: "none", value: 2200, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack" }

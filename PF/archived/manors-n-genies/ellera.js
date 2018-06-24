@@ -43,14 +43,16 @@ Greytyphoon.Characters.push({
 		{ level: 2, name: "air step", url: "https://www.d20pfsrd.com/magic/all-spells/a/air-step" },
 		{ level: 2, name: "stone call", url: "https://www.d20pfsrd.com/magic/all-spells/s/stone-call" },
 	],
+    equips: [
+		{ slot: "weapon-m", value: 350, name: "Greasword" },
+		{ slot: "weapon-r", value: 700, name: "Longbow [3]", bonus: 1,  enchants: [ { valueB: 1, name: "Flaming", url: "https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/flaming" } ] },
+        { slot: "armor", value: 1100, name: "Mithral Shirt", url: "https://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" }
+    ],
 	loot: [
-		{ slot: "weapon-m", value: 300, name: "Greasword, masterwork", url: "https://www.d20pfsrd.com/equipment/weapons" },
-		{ slot: "weapon-r", value: 8300, name: "Longbow [3], +1 Flaming", url: "https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/flaming" },
-        { slot: "armor", value: 1100, name: "Mithral Shirt", url: "https://www.d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" },
 		{ slot: "neck", value: 16000, name: "Amulet of Shield", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },
 		{ slot: "chest", value: 10000, name: "Bane Baldric", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/baldric-bane" },
 		{ slot: "feet", value: 4000, name: "Belt of Incredible Dexterity", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
 		{ slot: "none", value: 20000, name: "Stone of Good Luck", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/stone-of-good-luck-luckstone" },
-		{ slot: "none", value: 2200, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack" },
+		{ slot: "none", value: 2200, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack" }
 	]
 });
