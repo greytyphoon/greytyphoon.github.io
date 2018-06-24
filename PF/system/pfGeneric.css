@@ -37,7 +37,10 @@ a.spell {
 	font-style:italic;}
 .spellc,
 a.spellc,
-a.spellc:visited{
+a.spellc:visited,
+.spell.conjuration,
+a.spell.conjuration,
+a.spell.conjuration:visited {
 	font-style:italic;
 	color:green;}
 .spelli,
