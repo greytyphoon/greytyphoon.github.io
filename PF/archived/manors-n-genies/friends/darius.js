@@ -5,12 +5,6 @@ Greytyphoon.Characters.push({
         quest: "Manors & Genies",
         owner: "Grey"
     },
-    flavor: {
-        eyes: "blue",
-        hair: "white",
-        weight: "153 lbs",
-        height: "5' 9''"
-    },
     alignment: "LN",
     deity: "Pharasma",
     languages: "Common",
@@ -59,3 +53,9 @@ Greytyphoon.Characters.push({
         { slot: "none", value: 20000, name: "Stone of Good Luck", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/stone-of-good-luck-luckstone" }
     ]
 });
+// { eyes: Blue, hair: White, weight: 153lbs, height: 5'9'' }
+// Darius is courageous, but shy. He always wears old but well-kept clothing, fitting the theme of the monk.
+// He gives great importance to hopes and dreams (but not night-dreams, he's not very much of a mystic). 
+// His motto is "You should never laugh at anyone's dreams."
+// He will be prompt to ask "so... where are we going with this?"
+// He's hindsight, but in the present.

@@ -36,7 +36,6 @@ function main() {
 		checkLoot(character);
 
 		if (character.flair) OptionalChecks.checkFlair(character);
-		if (character.flavor) OptionalChecks.checkFlavor(character);
 		if (character.deity) OptionalChecks.checkDeity(character);
 		if (character.languages) OptionalChecks.checkLanguages(character);
 
@@ -499,29 +498,6 @@ var OptionalChecks = {
 		if (typeof character.flair != "string")
 			logError(character.name + "'s flair is not a string");
 	},
-	checkFlavor: function (character) {
-		// Self-check
-		if (typeof character.flavor != "object") {
-			logError(character.name + "'s flavor is all wrong");
-			return;
-		}
-
-		// Accepted properties
-		var flavorAccepts = ["eyes", "hair", "weight", "height"];
-		for (let flavorProp in character.flavor)
-			if (!flavorAccepts.includes(flavorProp))
-				logError(character.name + "'s flavor's " + flavorProp + " property is not supported");
-
-		// Simple properties
-		if (character.flavor.eyes &&  typeof character.flavor.eyes != "string")
-			logError(character.name + "'s flavor has invalid eyes");
-		if (character.flavor.hair &&  typeof character.flavor.hair != "string")
-			logError(character.name + "'s flavor has invalid hair");
-		if (character.flavor.weight &&  typeof character.flavor.weight != "string")
-			logError(character.name + "'s flavor has invalid weight");
-		if (character.flavor.height &&  typeof character.flavor.height != "string")
-			logError(character.name + "'s flavor has invalid height");
-	},
 	checkDeity: function (character) {
 		// Deity is either a string (god's name) or an object {name, url}
 		if (typeof character.deity == "string")
@@ -551,7 +527,7 @@ var OptionalChecks = {
 }
 function checkOverProperties(character) {
 	var allAccepted = [
-		"name", "flair", "meta", "flavor",
+		"name", "flair", "meta",
 		"alignment", "deity", "languages",
 		"ancestry", "level",
 		"str", "dex", "con", "int", "wis", "cha",

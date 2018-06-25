@@ -5,12 +5,6 @@ Greytyphoon.Characters.push({
         quest: "Dave",
         owner: "Grey"
     },
-    flavor: {
-        eyes: "brown",
-        hair: "black",
-        weight: "178 lbs",
-        height: "6' 3''"
-    },
     alignment: "N",
     deity: "Calistria",
     languages: "Common",
@@ -59,3 +53,4 @@ Greytyphoon.Characters.push({
         { slot: "ring", value: 2000, name: "Ring of Protection", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-protection" }
     ]
 });
+// { eyes: Brown, hair: Black, weight: 178lbs, height: 6'3'' }

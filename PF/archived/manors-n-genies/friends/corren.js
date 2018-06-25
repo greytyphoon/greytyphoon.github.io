@@ -5,12 +5,6 @@ Greytyphoon.Characters.push({
         quest: "Psychose",
         owner: "Grey"
     },
-    flavor: {
-        eyes: "green",
-        hair: "brown",
-        weight: "137 lbs",
-        height: "5' 2''"
-    },
     alignment: "N",
     deity: "Pharasma",
     languages: "Common, Druidic, Elven, Dwarven, Gnome",
@@ -78,3 +72,4 @@ Greytyphoon.Characters.push({
         { slot: "none", value: 20000, name: "Stone of Good Luck", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/stone-of-good-luck-luckstone" }
     ]
 });
+// { eyes: Green, hair: Brown, weight: 137lbs, height: 5'2'' }

@@ -5,12 +5,6 @@ Greytyphoon.Characters.push({
         quest: "Manors & Genies",
         owner: "Grey"
     },
-    flavor: {
-        eyes: "brown",
-        hair: "blonde",
-        weight: "156 lbs",
-        height: "5' 7''"
-    },
     alignment: "LN",
     deity: "Pharasma",
     languages: "Common, Undercommon",
@@ -91,3 +85,13 @@ Greytyphoon.Characters.push({
         { slot: "none", value: 2500, name: "Swordmaster's flair", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/swordmaster-s-flair" }
     ]
 });
+// { eyes: Brown, hair: Blonde, weight: 156lbs, height: 5'7'' }
+// Harmony - Alliance - Obsession:
+// Leana sees her work as "the best way she has of helping the world". "I'm good at this, and it's useful: why stop?"
+// She seems a bit desperate at actually making a difference.
+// She is the rallying point of the group, a cool-headed leader.
+// She got this reputation by always having this soothing smile, and letting others talk it out at their pace.
+// She is not a diplomat, though, and may fail as the group's leader, overboasting their acomplishments and accepting contracts that are too hard to handle.
+// She thinks it's easy and best to ally with others. Not work together: ally. You've got my back, I've got yours.
+// She met Corren first, when hunting down Gnolls in the forest north of Keesus.
+// They ended up recruiting Darius before going Chimera-hunting in the nearby cliffsides, and Corren was gravely wounded in this adventure.
