@@ -37,7 +37,7 @@ Greytyphoon.Characters.push({
 	targetFeats: [],
 	spells: [],
     equips: [
-		{ slot: "weapon-m", value: 350, name: "Greataxe" },
+		{ slot: "weapon-m", value: 320, name: "Greataxe" },
 		{ slot: "weapon-r", value: 700, name: "Longbow [3]" },
 		{ slot: "armor", value: 250, name: "Chain Shirt" }
     ],
