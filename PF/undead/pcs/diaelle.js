@@ -33,7 +33,7 @@ Greytyphoon.Characters.push({
     "dex": [ 17, { points: 2, reason: "Racial" }, { points: 1, reason: "Advancement" }, { points: 2, reason: "Enhancement" } ],
     "con": 12,
     "int": 11,
-    "wis": 14,
+    "wis": [ 14, { points: 2, reason: "Enhancement" } ],
     "cha": [ 12, { points: 2, reason: "Racial" } ],
     traits: [
         { name: "Anatomist", url: "https://www.d20pfsrd.com/traits/combat-traits/anatomist" },
@@ -51,7 +51,7 @@ Greytyphoon.Characters.push({
         { name: "Underfoot", reason: "D.Agent 1", title: "Combat Trick", url: "https://www.d20pfsrd.com/feats/combat-feats/underfoot-combat" },
         { name: "Canny Tumble", reason: "Level 5", url: "https://www.d20pfsrd.com/feats/combat-feats/canny-tumble-combat" },
         { name: "Resiliency", reason: "Rogue 4", url: "https://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained/rogue-talents/paizo-rogue-talents/resiliency" },
-        { name: "Weapon Focus", reason: "Warpriest 1", url: "https://www.d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final" },
+        { name: "Weapon Focus (Rapier)", reason: "Warpriest 1", url: "https://www.d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final" },
         { name: "Agile Maneuvers", reason: "Level 7", url: "https://www.d20pfsrd.com/feats/combat-feats/agile-maneuvers-combat" }
     ],
     targetFeats: [],
@@ -75,7 +75,7 @@ Greytyphoon.Characters.push({
 		{ slot: "hands", value: 8000, name: "Deliquescent Gloves", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/gloves-deliquescent" },
 		{ slot: "ring", value: 6000, name: "Ring of Swarming Stabs", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-swarming-stabs" },
 		{ slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
-		{ slot: "feet", value: 2500, name: "Boot of Elvenkind", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/boots-of-elvenkind" },
+		{ slot: "feet", value: 2500, name: "Boots of Elvenkind", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/boots-of-elvenkind" },
 		{ slot: "none", value: 800, name: "Magenta Prism Ioun Stone", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/ioun-stones" },
         { slot: "none", value: 2000, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack" }
     ]

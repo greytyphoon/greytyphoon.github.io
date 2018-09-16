@@ -3,7 +3,9 @@ Greytyphoon.Characters.push({
     meta: {
         quest: "Undead",
         owner: "Cloj",
-        source: { name: "Google Drive", url: "https://docs.google.com/spreadsheets/d/1hFmIRxzlbFIMjzIo2Q8BX8EQZ5lPLNIncM974nC2OPM/edit?usp=drive_web&ouid=115282848900712416421" }
+        companion: { name: "Seth le Scorpion", url: "https://www.d20pfsrd.com/bestiary/monster-listings/vermin/scorpion/scorpion-greensting" },
+        // companion: { name: "Robino", url: "https://www.d20pfsrd.com/bestiary/monster-listings/animals/bat/bat" },
+        source: { name: "Google Drive", url: "https://docs.google.com/spreadsheets/d/1JxqtoBGLej2w9OHaB8TYDJe3lp_B4RUH8Lrby1Uu3DE/edit?usp=drive_web&ouid=115282848900712416421" }
     },
     alignment: "LG",
     deity: "Nethys",
@@ -24,46 +26,53 @@ Greytyphoon.Characters.push({
     "wis": 10,
     "cha": 9,
     traits: [
-        { name: "Inspired", url: "https://www.d20pfsrd.com/traits/faith-traits/inspired" },
-        { name: "Resilient", url: "https://www.d20pfsrd.com/traits/combat-traits/resilient" }
+        { name: "Pragmatic Activator", url: "https://www.d20pfsrd.com/traits/magic-traits/pragmatic-activator" },
+        { name: "Warrior of Old", url: "https://www.d20pfsrd.com/traits/race-traits/warrior-of-old" }
     ],
     startingFeats: [
-        { name: "Dodge", reason: "Level 1", url: "https://www.d20pfsrd.com/feats/combat-feats/dodge-combat-final" },
-        { name: "Evil Eye", reason: "Witch 1", url: "https://www.d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-evil-eye-su" }
+        { name: "Thoughness", reason: "Level 1", url: "https://www.d20pfsrd.com/feats/general-feats/toughness-final" },
+        { name: "Spell Focus (Conjuration)", reason: "Wizard 1", url: "https://www.d20pfsrd.com/feats/general-feats/spell-focus-final" }
     ],
     progressFeats: [
-        { name: "Jinx-Eating", reason: "Witch 2" },
-        { name: "Mobility", reason: "Level 3", url: "https://www.d20pfsrd.com/feats/combat-feats/mobility-combat-final" },
-        { name: "Flight", reason: "Witch 4", url: "https://www.d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-flight-su" },
-        { name: "Cackle", reason: "Level 5; Extra Hex", url: "https://www.d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-cackle-su" },
-        { name: "Jinx-Gorging", reason: "Witch 6" }
+        { name: "Augment Summoning", reason: "Level 3", url: "https://www.d20pfsrd.com/feats/general-feats/augment-summoning-final" },
+        { name: "Improved Initiative", reason: "Level 5", url: "https://www.d20pfsrd.com/feats/combat-feats/improved-initiative-combat-final" },
+        { name: "Scribe Scroll", reason: "Wizard 5", url: "https://www.d20pfsrd.com/feats/item-creation-feats/scribe-scroll-item-creation-final" },
+        { name: "???", reason: "Level 7", url: "#" },
     ],
     targetFeats: [],
     spells: [
-        { level: 0, name: "detect magic", url: "https://www.d20pfsrd.com/magic/all-spells/d/detect-magic" },
-        { level: 0, name: "dancing lights", url: "https://www.d20pfsrd.com/magic/all-spells/d/dancing-lights" },
-        { level: 0, name: "guidance", url: "https://www.d20pfsrd.com/magic/all-spells/g/guidance" },
-        { level: 0, name: "message", url: "https://www.d20pfsrd.com/magic/all-spells/m/message" },
-        { level: 1, name: "silent image", url: "https://www.d20pfsrd.com/magic/all-spells/s/silent-image", tag: "patron" },
         { level: 1, name: "enlarge person", url: "https://www.d20pfsrd.com/magic/all-spells/e/enlarge-person" },
-        { level: 1, name: "mage armor", url: "https://www.d20pfsrd.com/magic/all-spells/m/mage-armor" },
-        { level: 1, name: "hex vulnerability", url: "https://www.d20pfsrd.com/magic/all-spells/h/hex-vulnerability" },
-        { level: 1, name: "ray of enfeeblement", url: "https://www.d20pfsrd.com/magic/all-spells/r/ray-of-enfeeblement" },
-        { level: 2, name: "darkness", url: "https://www.d20pfsrd.com/magic/all-spells/d/darkness", tag: "patron" },
-        { level: 2, name: "burning gaze", url: "https://www.d20pfsrd.com/magic/all-spells/b/burning-gaze" },
-        { level: 2, name: "summon swarm", url: "https://www.d20pfsrd.com/magic/all-spells/s/summon-swarm" },
-        { level: 2, name: "vomit swarm", url: "https://www.d20pfsrd.com/magic/all-spells/v/vomit-swarm" },
-        { level: 3, name: "deeper darkness", url: "https://www.d20pfsrd.com/magic/all-spells/d/deeper-darkness", tag: "patron" },
-        { level: 3, name: "dispel magic", url: "https://www.d20pfsrd.com/magic/all-spells/d/dispel-magic" },
-        { level: 3, name: "sleet storm", url: "https://www.d20pfsrd.com/magic/all-spells/s/sleet-storm" }
+        { level: 1, name: "grease", url: "https://www.d20pfsrd.com/magic/all-spells/g/grease", tag: "conjuration" },
+        { level: 1, name: "mage armor", url: "https://www.d20pfsrd.com/magic/all-spells/m/mage-armor", tag: "conjuration" },
+        { level: 1, name: "mount", url: "https://www.d20pfsrd.com/magic/all-spells/m/mount", tag: "conjuration" },
+        { level: 1, name: "protection from evil", url: "https://www.d20pfsrd.com/magic/all-spells/p/protection-from-evil" },
+        { level: 1, name: "silent image", url: "https://www.d20pfsrd.com/magic/all-spells/s/silent-image" },
+        { level: 1, name: "summon monster I", url: "https://www.d20pfsrd.com/magic/all-spells/s/summon-monster", tag: "conjuration" },
+        { level: 2, name: "create pit", url: "https://www.d20pfsrd.com/magic/all-spells/c/create-pit", tag: "conjuration" },
+        { level: 2, name: "mirror image", url: "https://www.d20pfsrd.com/magic/all-spells/m/mirror-image" },
+        { level: 2, name: "rope trick", url: "https://www.d20pfsrd.com/magic/all-spells/r/rope-trick" },
+        { level: 2, name: "web", url: "https://www.d20pfsrd.com/magic/all-spells/w/web", tag: "conjuration" },
+        { level: 3, name: "fly", url: "https://www.d20pfsrd.com/magic/all-spells/f/fly" },
+        { level: 3, name: "haste", url: "https://www.d20pfsrd.com/magic/all-spells/h/haste" },
+        { level: 3, name: "shrink item", url: "https://www.d20pfsrd.com/magic/all-spells/s/shrink-item" },
+        { level: 3, name: "stinking cloud", url: "https://www.d20pfsrd.com/magic/all-spells/s/stinking-cloud", tag: "conjuration" },
+        { level: 4, name: "black tentacles", url: "https://www.d20pfsrd.com/magic/all-spells/b/black-tentacles", tag: "conjuration" },
+        { level: 4, name: "confusion", url: "https://www.d20pfsrd.com/magic/all-spells/c/confusion" }
     ],
     equips: [
-        { slot: "weapon-m", value: 305, name: "Longspear" },
+        { slot: "weapon-m", value: 302, name: "Dagger" },
         { slot: "weapon-r", value: 335, name: "Light Crossbow" },
         { slot: "shield", value: 5, name: "Buckler", material: { value: 1000, name: "Mithral", url: "https://www.d20pfsrd.com/equipment/special-materials/#TOC-Mithral" } }
     ],
     loot: [
-        { slot: "ring", value: 4000, name: "Ring of Counterspells", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-counterspells" },
-        { slot: "none", value: 4000, name: "Pearl of Power", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power" }
+        { slot: "headband", value: 4000, name: "Headband of Vast Intelligence", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-vast-intelligence" },
+        { slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
+        { slot: "wrists", value: 1000, name: "Bracers of Armor", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },
+		{ slot: "ring", value: 4000, name: "Ring of Spell Storing", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-counterspells" },
+        { slot: "ring", value: 2000, name: "Ring of Protection", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-protection" },
+		{ slot: "none", value: 1000, name: "Pearl of Power", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power" },
+		{ slot: "none", value: 4000, name: "Pearl of Power L2", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power" },
+        { slot: "none", value: 3000, name: "Extend Rod", url: "https://www.d20pfsrd.com/magic-items/rods/metamagic-rods/metamagic-extend" },
+        { slot: "none", value: 2000, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack" }
     ]
 });
