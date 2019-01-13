@@ -61,6 +61,7 @@ Greytyphoon.Characters.push({
 		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-protection" },
         { slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
         { slot: "none", value: 4800, name: "Fork of Perfect Tuning", url: "#" },
+        { slot: "none", value: 3400, name: "Bag of Tricks, Gray", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/bag-of-tricks" },
         { slot: "none", value: 4000, name: "Endless Quiver", url: "https://www.d20pfsrd.com/magic/all-spells/a/abundant-ammunition" },
         { slot: "none", value: 2000, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack" }
 	]

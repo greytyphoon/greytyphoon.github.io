@@ -74,6 +74,7 @@ Greytyphoon.Characters.push({
         { slot: "wrists", value: 200, name: "Sleeves of Many Garments", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/sleeves-of-many-garments" },
 		{ slot: "hands", value: 8000, name: "Deliquescent Gloves", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/gloves-deliquescent" },
 		{ slot: "ring", value: 6000, name: "Ring of Swarming Stabs", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-swarming-stabs" },
+		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-protection" },
 		{ slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
 		{ slot: "feet", value: 2500, name: "Boots of Elvenkind", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/boots-of-elvenkind" },
 		{ slot: "none", value: 800, name: "Magenta Prism Ioun Stone", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/ioun-stones" },
