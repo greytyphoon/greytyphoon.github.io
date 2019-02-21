@@ -42,19 +42,19 @@ Greytyphoon.Characters.push({
         { level: 2, name: "barkskin", url: "https://www.d20pfsrd.com/magic/all-spells/b/barkskin" }
     ],
     equips: [
-        { slot: "weapon-m", value: 1300, name: "Claw of the Ice Bear", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/claws-of-the-ice-bear" },
+        { slot: "weapon-m", value: 1300, name: "Claw of the Ice Bear", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/c-d/claws-of-the-ice-bear" },
         { slot: "weapon-r", value: 6.2, name: "Shuriken", quantity: 50 }
     ],
     loot: [
-        { slot: "headband", value: 4000, name: "Headband of Inspired Wisdom", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-inspired-wisdom" },
-        { slot: "neck", value: 3999.9, name: "Amulet of Mighty Fists", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-mighty-fists" },
+        { slot: "headband", value: 4000, name: "Headband of Inspired Wisdom", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-inspired-wisdom" },
+        { slot: "neck", value: 3999.9, name: "Amulet of Mighty Fists", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/amulet-of-mighty-fists" },
         { slot: "neck", value: 0.1, name: "Frost", url: "https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost" },
-        { slot: "shoulders", value: 1000, name: "Cloak of Resistance [Foliage]", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
-        { slot: "wrists", value: 1000, name: "Bracers of Armor", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },
+        { slot: "shoulders", value: 1000, name: "Cloak of Resistance [Foliage]", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance" },
         { slot: "body", value: 13000, name: "Monk's robe", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/r-z/robe-monk-s/" },
         { slot: "body", value: 4500, name: "Body Wrap of Mighty Strikes", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/body-wrap-of-mighty-strikes" },
+        { slot: "wrists", value: 1000, name: "Bracers of Armor", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/bracers-of-armor" },
 		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-swarming-stabs" },
-		{ slot: "belt", value: 4000, name: "Belt of Giant Stength", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-giant-strength" },
-		{ slot: "feet", value: 1000, name: "Boots of the Cat", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/boots-of-the-cat" },
+		{ slot: "belt", value: 4000, name: "Belt of Giant Stength", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-giant-strength" },
+		{ slot: "feet", value: 1000, name: "Boots of the Cat", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/boots-of-the-cat" },
 	]
 });

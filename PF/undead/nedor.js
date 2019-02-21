@@ -54,15 +54,15 @@ Greytyphoon.Characters.push({
         { slot: "shield", value: 5, name: "Buckler", material: { value: 1000, name: "Mithral", url: "https://www.d20pfsrd.com/equipment/special-materials/#TOC-Mithral" } }
     ],
 	loot: [
-		{ slot: "head", value: 4500, name: "Circlet of Persuasion", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/circlet-of-persuasion" },
-		{ slot: "neck", value: 2000, name: "Amulet of Natural Armor", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-natural-armor" },
-		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance [Royal]", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
-		{ slot: "wrists", value: 5000, name: "Bracers of Archery", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-archery" },
+		{ slot: "head", value: 4500, name: "Circlet of Persuasion", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/c-d/circlet-of-persuasion" },
+		{ slot: "neck", value: 2000, name: "Amulet of Natural Armor", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/amulet-of-natural-armor" },
+		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance [Royal]", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance" },
+		{ slot: "wrists", value: 5000, name: "Bracers of Archery", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/bracers-of-archery" },
 		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-protection" },
-        { slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
+        { slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
         { slot: "none", value: 4800, name: "Fork of Perfect Tuning", url: "#" },
         { slot: "none", value: 3400, name: "Bag of Tricks, Gray", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/bag-of-tricks" },
         { slot: "none", value: 4000, name: "Endless Quiver", url: "https://www.d20pfsrd.com/magic/all-spells/a/abundant-ammunition" },
-        { slot: "none", value: 2000, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack" }
+        { slot: "none", value: 2000, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/bag-handy-haversack" }
 	]
 });

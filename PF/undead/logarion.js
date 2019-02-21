@@ -65,14 +65,14 @@ Greytyphoon.Characters.push({
         { slot: "shield", value: 5, name: "Buckler", material: { value: 1000, name: "Mithral", url: "https://www.d20pfsrd.com/equipment/special-materials/#TOC-Mithral" } }
     ],
     loot: [
-        { slot: "headband", value: 4000, name: "Headband of Vast Intelligence", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-vast-intelligence" },
-        { slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
-        { slot: "wrists", value: 1000, name: "Bracers of Armor", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },
+        { slot: "headband", value: 4000, name: "Headband of Vast Intelligence", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-vast-intelligence" },
+        { slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance" },
+        { slot: "wrists", value: 1000, name: "Bracers of Armor", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/bracers-of-armor" },
 		{ slot: "ring", value: 4000, name: "Ring of Spell Storing", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-counterspells" },
         { slot: "ring", value: 2000, name: "Ring of Protection", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-protection" },
-		{ slot: "none", value: 1000, name: "Pearl of Power", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power" },
-		{ slot: "none", value: 4000, name: "Pearl of Power L2", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power" },
+		{ slot: "none", value: 1000, name: "Pearl of Power", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power" },
+		{ slot: "none", value: 4000, name: "Pearl of Power L2", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power" },
         { slot: "none", value: 3000, name: "Extend Rod", url: "https://www.d20pfsrd.com/magic-items/rods/metamagic-rods/metamagic-extend" },
-        { slot: "none", value: 2000, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack" }
+        { slot: "none", value: 2000, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/bag-handy-haversack" }
     ]
 });
