@@ -1,0 +1,129 @@
+<html>
+<head>
+    <style>
+        * { box-sizing: border-box; }
+        .letter { border: 1px solid black; margin: .15em; width: .75em; height: .75em; display: inline-block; position: relative; }
+        .west { transform: rotate(270deg); }
+        .east { transform: rotate(90deg); }
+        .south { transform: rotate(180deg); }
+        .space { border-style: hidden; }
+        .a, .j, .s { border-top-style: hidden; border-left-style: hidden; }
+        .b, .k, .t { border-top-style: hidden; }
+        .c, .l, .u { border-top-style: hidden; border-right-style: hidden; }
+        .d, .m, .v { border-left-style: hidden; }
+        .e, .n, .w { /*Nothing*/ }
+        .f, .o, .x { border-right-style: hidden; }
+        .g, .p, .y { border-bottom-style: hidden; border-left-style: hidden; }
+        .h, .q, .z { border-bottom-style: hidden; }
+        .i, .r, .r { border-bottom-style: hidden; border-right-style: hidden; }
+        .j::after, .k::after, .l::after, .m::after, .n::after, .o::after, .p::after, .q::after, .r::after {
+            content: ".";
+            font-weight: bold;
+            top: -.5em;
+        }
+        .s::after, .t::after, .u::after, .v::after, .w::after, .x::after, .y::after, .z::after {
+            content: "°";
+            position: absolute;
+            top: 0;
+            height: 100%;
+            vertical-align: middle;
+        }
+        *::after {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function addLine(sentence, rowIndex) {
+            let row = document.createElement("center");
+            for (let colIndex = 0; colIndex < sentence.length; colIndex++) {
+                let letter = sentence[colIndex];
+                if (letter == " ")
+                    letter = "space";
+                let col = document.createElement("div");
+                col.className = "letter " + letter;
+                row.appendChild(col);
+                
+                let west = rowIndex > colIndex;
+                let east = sentence.length - rowIndex < colIndex;
+                if (west && east)
+                    col.className += " south";
+                else if (west)
+                    col.className += " west";
+                else if (east)
+                    col.className += " east";
+            }
+            document.getElementById("js").appendChild(row);
+        }
+        function main() {
+            addLine("il me fait plaisir de vous a", 0);
+            addLine("ole capital que vous avez jc", 1);
+            addLine("r capacité a dechiffrer ceoc", 2);
+            addLine(" eus confie une mission d uu", 3);
+            addLine("erode linformation venanimee", 4);
+            addLine("ltv  labas sont faiblestne i", 5);
+            addLine(" o zsgistres authorise  isdl", 6);
+            addLine("uveeee que de demandesedtsal", 7);
+            addLine("v jrnride terrain unr teiani", 8);
+            addLine(" t eang  un documene p  agsr", 9);
+            addLine("reehceaturaisons dt nanste  ", 10);
+            addLine("e ucr  no son hise poroti ld", 11);
+            addLine("itqraste s  chant oau uoomaa", 12);
+            addLine("ln e tigaeue   cosfrslsnna n", 13);
+            addLine("ienhsnaarlon   eroft a e sps", 14);
+            addLine("mmoceat i  n    iniin vcvsr ", 15);
+            addLine("amieuuenfteob euq ceavoluuil", 16);
+            addLine("fetrqqsufncnatsixei uiui rsa", 17);
+            addLine(" ci ii duavirced ledrllmvee ", 18);
+            addLine("tedstte s ertsiger uilobor s", 19);
+            addLine("srauaannioseb sap snoen tado", 20);
+            addLine("e rorr lis tnemmedive snr ec", 21);
+            addLine("mntvpp sed ertsiger el oed i", 22);
+            addLine(" e   sel ceva stcatnoc s ele", 23);
+            addLine("mlastcatnoc sov te liforp at", 24);
+            addLine("oal av isnia etilauq ertov e", 25);
+            addLine("ningrot ed eniarretuos etic ", 26);
+            addLine(" ertov sucsamad ehcrehcer ed", 27);
+        }
+    </script>
+</head>
+<body onload="main()">
+    <center>L O G A R I O N</center>
+    <center>
+        <div class="letter l"></div>
+        <div class="letter o"></div>
+        <div class="letter g"></div>
+        <div class="letter a"></div>
+        <div class="letter r"></div>
+        <div class="letter i"></div>
+        <div class="letter o"></div>
+        <div class="letter n"></div>
+    </center>
+    <br><br>
+    <div id="js"></div>
+    <br><br>
+    <center>
+        <div class="letter n"></div>
+        <div class="letter a"></div>
+        <div class="letter t"></div>
+        <div class="letter h"></div>
+        <div class="letter a"></div>
+        <div class="letter n"></div>
+        <div class="letter a"></div>
+        <div class="letter e"></div>
+        <div class="letter l"></div>
+        <div class="letter space"></div>
+        <div class="letter k"></div>
+        <div class="letter a"></div>
+        <div class="letter l"></div>
+        <div class="letter c"></div>
+        <div class="letter h"></div>
+        <div class="letter a"></div>
+        <div class="letter s"></div>
+    </center>
+    <center>N A T H A N A E L &nbsp; &nbsp; K A L C H A S</center>
+    <center>R&eacute;gent de la province nord pour la SRD</center>
+</body>
+</html>
