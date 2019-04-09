@@ -45,9 +45,9 @@
                 let col = document.createElement("div");
                 col.className = "letter " + letter;
                 row.appendChild(col);
-                
+
                 let west = rowIndex > colIndex;
-                let east = sentence.length - rowIndex < colIndex;
+                let east = sentence.length - rowIndex <= colIndex;
                 if (west && east)
                     col.className += " south";
                 else if (west)
