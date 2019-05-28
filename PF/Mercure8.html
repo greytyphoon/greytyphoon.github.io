@@ -4,6 +4,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Grey's Mechanic</title>
 	<link rel="stylesheet" href="system/pfCharacter.css">
+    <style>
+        #grenadeTable { width: 100%; margin-bottom: .75rem; }
+        #grenadeTable thead { border-bottom: 1px dashed #a9a9a9 } /* html-darkgrey */
+        #grenadeTable td { padding-left: .25em; }
+        #grenadeTable td:first-child { text-align: right; padding-left: 0; }
+    </style>
 </head>
 <body>
 	<div id="fixref" class="noprint">
@@ -42,7 +48,7 @@
 					<dd><a href="http://www.starjammersrd.com/races/androids/">Android</a></dd>
 
 					<dt>Class</dt>
-					<dd><a href="http://www.starjammersrd.com/classes/mechanic/">Mechanic</a> 1</dd>
+					<dd><a href="http://www.starjammersrd.com/classes/mechanic/">Mechanic</a> 2</dd>
 
 					<dt>Theme</dt>
 					<dd><a href="http://www.starjammersrd.com/the-basics/character-themes/roboticist/">Roboticist</a></dd>
@@ -75,6 +81,9 @@
 			<dt>level 1</dt>
 			<dd><a href="http://www.starjammersrd.com/feats/combat-feats/weapon-focus-combat/">Weapon Focus</a>
 				<span class="listBonuses noprint">min.1</span></dd>
+            <dt>Mech 2</dt>
+            <dd><a href="http://www.starjammersrd.com/classes/mechanic/#Overcharge_Ex">Overcharge</a>
+				<span class="listBonuses noprint">min.2</span></dd>
 			<dt>level 3</dt>
 			<dd><a href="http://www.starjammersrd.com/feats/combat-feats/deadly-aim-combat/">Deadly Aim</a>
 				<span class="listBonuses noprint">min.2</span></dd>
@@ -85,9 +94,9 @@
 
 		<!-- SKILLS -->
 		<div class="br">
-			<span class="numberFirst">4</span>
+			<span class="numberFirst">5</span>
 			<a href="http://www.starjammersrd.com/Skills/#Perception_Wis" class="listBonusBreaker">Perception</a>
-			<span class="listBonuses">0 wis, 1 ranks, 3 class</span>
+			<span class="listBonuses">0 wis, 2 ranks, 3 class</span>
 		</div>
 
 		<div>
@@ -96,27 +105,37 @@
 			<span class="listBonuses">0 str, 1 ranks, 0 class</span>
 		</div>
 		<div>
-			<span class="numberFirst">9</span>
+			<span class="numberFirst">4</span>
+			<a href="http://www.starjammersrd.com/Skills/#Culture_Int" class="listBonusBreaker">Culture</a>
+			<span class="listBonuses">3 int, 1 ranks, 0 class</span>
+		</div>
+		<div>
+			<span class="numberFirst">10</span>
 			<a href="http://www.starjammersrd.com/Skills/#Computers_Int" class="listBonusBreaker">Computers</a>
-			<span class="listBonuses">3 int, 1 ranks, 3 class, 1 theme, <abbr title="Bypass">1 insight</abbr></span>
+			<span class="listBonuses">3 int, 2 ranks, 3 class, 1 theme, <abbr title="Bypass">1 insight</abbr></span>
 			<div class="circumstancialBonus">Always have the right <abbr title="Custom Rig">tool</abbr></div>
 		</div>
 		<div>
-			<span class="numberFirst">8</span>
+			<span class="numberFirst">9</span>
 			<a href="http://www.starjammersrd.com/Skills/#Engineering_Int" class="listBonusBreaker">Engineering</a>
-			<span class="listBonuses">3 int, 1 ranks, 3 class, <abbr title="Bypass">1 insight</abbr></span>
+			<span class="listBonuses">3 int, 2 ranks, 3 class, <abbr title="Bypass">1 insight</abbr></span>
 			<div class="circumstancialBonus">Always have the right <abbr title="Custom Rig">tool</abbr></div>
 			<div class="circumstancialBonus"><abbr title="Roboticist">+5</abbr> to identify creatures and technology</div>
 		</div>
 		<div>
-			<span class="numberFirst">7</span>
-			<a href="http://www.starjammersrd.com/Skills/#Medecine_Int" class="listBonusBreaker">Medecine</a>
-			<span class="listBonuses">3 int, 1 ranks, 3 class</span>
+			<span class="numberFirst">4</span>
+			<a href="http://www.starjammersrd.com/Skills/#Life_Science_Int" class="listBonusBreaker">Life Science</a>
+			<span class="listBonuses">3 int, 1 ranks, 0 class</span>
 		</div>
 		<div>
-			<span class="numberFirst">7</span>
+			<span class="numberFirst">8</span>
+			<a href="http://www.starjammersrd.com/Skills/#Medecine_Int" class="listBonusBreaker">Medecine</a>
+			<span class="listBonuses">3 int, 2 ranks, 3 class</span>
+		</div>
+		<div>
+			<span class="numberFirst">8</span>
 			<a href="http://www.starjammersrd.com/Skills/#Physical_Science_Int" class="listBonusBreaker">Physical Science</a>
-			<span class="listBonuses">3 int, 1 ranks, 3 class</span>
+			<span class="listBonuses">3 int, 2 ranks, 3 class</span>
 		</div>
 		<div>
 			<span class="numberFirst">7</span>
@@ -130,9 +149,9 @@
 		</div>
 
 		<div class="noprint br">
-			<span class="numberFirst">7</span>
+			<span class="numberFirst">14</span>
 			<b class="listBonusBreaker">ranks</b>
-			<span class="listBonuses">1 mechanic: 4 class, 3 int</span>
+			<span class="listBonuses">2 mechanic: 4 class, 3 int</span>
 		</div>
 
 		<!-- title COMBAT -->
@@ -155,14 +174,14 @@
 					<span class="listBonuses">1 mechanic&frac12;, 3 int</span>
 				</div>
 				<div>
-					<span class="numberFirst">7</span>
+					<span class="numberFirst">14</span>
 					<b class="listBonusBreaker">Stamina</b>
-					<span class="listBonuses">6 class, 1 con</span>
+					<span class="listBonuses">2 mechanic: 6 class, 1 con</span>
 				</div>
 				<div>
-					<span class="numberFirst">10</span>
+					<span class="numberFirst">16</span>
 					<b class="listBonusBreaker">HP</b>
-					<span class="listBonuses">1 mechanic * 6 class; 4 racial</span>
+					<span class="listBonuses">2 mechanic: 6 class; 4 racial</span>
 				</div>
 				<div>
 					<span class="numberFirst">15</span>
@@ -175,20 +194,21 @@
 					<span class="listBonuses">10, 3 dex, 3 armor</span>
 				</div>
 				<div>
-					<span class="numberFirst">3</span>
+					<span class="numberFirst">4</span>
 					<b class="listBonusBreaker">Fort</b>
-					<span class="listBonuses">1 con, 2 class</span>
-                    <div class="circumstancialBonus"><abbr title="Constructed">+2</abbr> vs disease, mind-affecting, poison, sleep</div>
+					<span class="listBonuses">1 con, 3 class</span>
+                    <div class="circumstancialBonus"><abbr title="Constructed">+2 racial</abbr> vs disease, poison</div>
 				</div>
 				<div>
-					<span class="numberFirst">5</span>
+					<span class="numberFirst">6</span>
 					<b class="listBonusBreaker">Ref</b>
-					<span class="listBonuses">3 dex, 2 class</span>
+					<span class="listBonuses">3 dex, 3 class</span>
 				</div>
 				<div class="br">
 					<span class="numberFirst">1</span>
 					<b class="listBonusBreaker">Will</b>
 					<span class="listBonuses">0 wis, 0 class, <abbr title="Ring of Resistance">1 enhancement</abbr></span>
+                    <div class="circumstancialBonus"><abbr title="Constructed">+2 racial</abbr> vs mind-affecting, sleep</div>
 				</div>
 			</div>
 			<!--end of Basics: Statblock and Weapons-->
@@ -202,8 +222,8 @@
 						<div class="weaponReach">80 ft.</div>
 						Azimuth Laser Pistol<sup>Fire</sup>
 					</div>
-					<span class="listBonusBreaker">+<b>4</b> vs EAC</span>
-					<span class="listBonuses">0 bab, 3 dex, <abbr title="Weapon Focus">1 w.focus</abbr></span>
+					<span class="listBonusBreaker">+<b>5</b> vs EAC</span>
+					<span class="listBonuses">1 bab, 3 dex, <abbr title="Weapon Focus">1 w.focus</abbr></span>
 					<br>
 					<b class="listBonusBreaker">1d4</b>
 					<span class="listBonuses"><abbr title="Weapon Spec; 0 mechanic&frac12;">0 w.spec</abbr></span>
@@ -214,13 +234,53 @@
 					<div class="weaponHead">
 						<div class="float-right">-</div>
 						<div class="weaponReach">20 ft.</div>
-						Frag Grenade I<sup>P</sup>
+						Grenades
 					</div>
-					<span class="listBonusBreaker"><b>DC 13</b>, radius <b>20 ft</b></span>
-					<span class="listBonuses">10, 3 dex, 0 grenade&frac12;</span>
-					<br>
-					<b class="listBonusBreaker">1d6</b>
-					<span class="listBonuses"><abbr title="Weapon Spec; 1 mechanic">0 w.spec</abbr></span>
+                    <table id="grenadeTable">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>Name</th>
+                                <th>&nbsp;</th>
+                                <th>Radius</th>
+                                <th>DC</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>6</td>
+                            <td>Frag Grenade mk.I</td>
+                            <td>1d6 P</td>
+                            <td>15ft</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Shock Grenade mk.I</td>
+                            <td>1d8 Electric</td>
+                            <td>15ft</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Smoke Grenade</td>
+                            <td>&ndash;</td>
+                            <td>20ft</td>
+                            <td>&ndash;</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Stickybomb Grenade mk.I</td>
+                            <td><a href="http://www.starjammersrd.com/game-mastering/conditions/#Entangled">entangles</a> for 2d4 rounds</td>
+                            <td>10ft</td>
+                            <td>13</td>
+                        </tr>
+                    </table>
+                    <div class="apartee">
+                        <a href="http://www.starjammersrd.com/equipment/weapons/weapon-special-properties/explode/">Explode</a>
+                        <div class="circumstancialBonus">Reflex Save to halve damage and negate other effects. DC is 10 + dex + &frac12; grenade level.</div>
+                        <a href="https://www.starjammersrd.com/game-mastering/combat/#Targeting_a_Grid_Intersection">Targeting a Grid Intersection</a>
+                        <div class="circumstancialBonus">Intersections have AC 5. Roll d20 + 1 bab + 0 str.</div>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -228,21 +288,13 @@
 		<!-- title EQUIPMENT -->
         <hr>
 		<ul id="mundaneItemsWrapper">
-			<li class="br">Rations (2)</li>
-			<li>Backpack</li>
-			<li>Bedroll</li>
-			<li>Blanket</li>
-			<li>Hammock</li>
-			<li class="br">Mess kit</li>
-			<li>Cards</li>
-			<li>Chalk</li>
-			<li>Fishhook (2)</li>
+			<li>Rations (2)</li>
+			<li class="br">Basic Medkit (18)</li>
+			<li>Backpack, consumer</li>
+			<li>Hygiene Kit</li>
+			<li>Lantern</li>
+			<li>Fire Extinguisher</li>
 			<li>Rope (50ft)</li>
-			<li>Sewing Needle</li>
-			<li>Signal whistle</li>
-			<li>Soap</li>
-			<li>String (50ft)</li>
-			<li>Waterskin</li>
 		</ul>
 		<ul id="magicItemsWrapper">
 			<li class="emptyitemslot br">Armor Slot (extra: Android)</li>
@@ -260,14 +312,15 @@
 			<a href="http://www.starjammersrd.com/equipment/weapons/">Azimuth Laser Pistol</a>
 			<span class="listBonuses">small arms one-handed, 1d4, 20x2, Fire, 80ft. {Burn 1d4}, 20 charges, L bulk.</span>
 		</div>
-		<div class="br">
-			<a href="http://www.starjammersrd.com/equipment/weapons/">And some grenades!</a>
+		<div>
+			<a href="http://www.starjammersrd.com/equipment/weapons/">Pulsecaster Pistol</a>
+			<span class="listBonuses">small arms one-handed, 1d4, 20x2, Electric, 30ft. Nonlethal, 20 charges, L bulk.</span>
 		</div>
 		<div class="br">
 			<a href="http://www.starjammersrd.com/equipment/armor/">Freebooter Armor I</a>
 			<span class="listBonuses">light, 2 eac, 3 kac, 4 dex, - acp, 0 slots, L bulk.</span>
 		</div>
-		<div>890 <b>Credits</b></div>
+		<div>710 <b>Credits</b></div>
 	</div>
 </body>
 </html>
