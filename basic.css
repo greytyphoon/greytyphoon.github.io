@@ -82,7 +82,7 @@ h6 { text-decoration: underline; }
     font-size: 16px;
     clear: both; }
 hr {
-    border-color: #eaebef; /* murder-grey */
+    border-color: #a9a9a9; /* html-darkgrey */
     clear: both; }
 
 .subtitle {
