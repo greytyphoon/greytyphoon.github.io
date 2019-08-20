@@ -73,6 +73,7 @@ Greytyphoon.Characters.push({
 		{ slot: "none", value: 1000, name: "Pearl of Power", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power" },
 		{ slot: "none", value: 4000, name: "Pearl of Power L2", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power" },
         { slot: "none", value: 3000, name: "Extend Rod", url: "https://www.d20pfsrd.com/magic-items/rods/metamagic-rods/metamagic-extend" },
+        { slot: "none", value: 3000, name: "Apocalytic Rod", url: "https://www.d20pfsrd.com/magic-items/rods/metamagic-rods/metamagic-rod-apocalyptic" },
         { slot: "none", value: 2000, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/bag-handy-haversack" }
     ]
 });

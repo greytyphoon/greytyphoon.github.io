@@ -69,6 +69,7 @@ Greytyphoon.Characters.push({
     ],
     loot: [
         { slot: "headband", value: 4000, name: "Headband of Inspired Wisdom", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-inspired-wisdom" },
+		{ slot: "neck", value: 2000, name: "Amulet of Natural Armor", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/amulet-of-natural-armor" },
         { slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance" },
         { slot: "body", value: 1000, name: "Quick Runner's Shirt", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/r-z/shirt-quick-runners" },
         { slot: "wrists", value: 200, name: "Sleeves of Many Garments", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/r-z/sleeves-of-many-garments" },
@@ -78,6 +79,7 @@ Greytyphoon.Characters.push({
 		{ slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
 		{ slot: "feet", value: 2500, name: "Boots of Elvenkind", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/boots-of-elvenkind" },
 		{ slot: "none", value: 800, name: "Magenta Prism Ioun Stone", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/h-l/ioun-stones" },
+		{ slot: "none", value: 1000, name: "Pearl of Power", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power" },
         { slot: "none", value: 2000, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/bag-handy-haversack" }
     ]
 });

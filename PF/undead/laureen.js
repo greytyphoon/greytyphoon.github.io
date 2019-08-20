@@ -56,5 +56,6 @@ Greytyphoon.Characters.push({
 		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-swarming-stabs" },
 		{ slot: "belt", value: 4000, name: "Belt of Giant Stength", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-giant-strength" },
 		{ slot: "feet", value: 1000, name: "Boots of the Cat", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/boots-of-the-cat" },
+        { slot: "none", value: 2000, name: "Handy Haversack", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/bag-handy-haversack" }
 	]
 });
