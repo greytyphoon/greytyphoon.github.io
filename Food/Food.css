@@ -15,9 +15,19 @@ a, a:link, a:visited, a:active { color: #2573c6; /*murder-red*/}
 /********************
  * Custom Components   (#fixref, #header, .credit, .actionStep)
  */
-#fixref { padding: 8px; }
+#fixref {
+    bottom: -2px; /* In this page, fixref looks like a draggable tab from the bottom. Solves weird issues with iframes and bottom border. */ }
+#fixref > div { 
+    padding: .35em; 
+    border-bottom: 1px solid #a9a9a9;}
+#fixref #minimize { float: right; }
+#fixref iframe {
+    transition: height 2s;
+    height: 0;
+    margin-left: -1px; /* overlaps the border of the child page and the fixref. */
+    border: none; }
 @media screen and (max-width: 767px){
-    #fixref li{ text-align: left; } /* recipes should be aligned-left, even on small devices. Center just makes it confusing. */
+    #fixref iframe { width: 100%; margin-left: 0; }
 }
 
 #header {
