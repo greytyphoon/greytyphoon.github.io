@@ -23,7 +23,7 @@ a, a:link, a:visited, a:active { color: #2573c6; /*murder-red*/}
 #fixref #minimize { float: right; }
 #fixref iframe {
     transition: height 2s;
-    height: 0;
+    height: 50vh;
     margin-left: -1px; /* overlaps the border of the child page and the fixref. */
     border: none; }
 @media screen and (max-width: 767px){

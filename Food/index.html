@@ -71,10 +71,9 @@
     </div>
     <script type="text/javascript">
         function ViewRecipe(viewer) {
+            viewer.style.height = "50vh";
             if("about:blank" === viewer.contentWindow.location.href)
                 viewer.style.height = "0";
-            else
-                viewer.style.height = "50vh";
         }
     </script>
     <div id="fixref">
