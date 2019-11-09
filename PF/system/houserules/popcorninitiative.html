@@ -1,70 +1,69 @@
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Grey's Initiative</title>
-    <link rel="stylesheet" href="../pfGeneric.css">
+	<link rel="stylesheet" href="../pfGeneric.css">
+	<style>
+		small { display: inline-block; margin-left: 2em; font-size: 80%; }
+	</style>
 </head>
 <body>
-	<div id="fixref">
+	<nav id="fixref">
 		<a target="_blank" href="http://greytyphoon.space/PF/system/houserules.html">Houserules</a><br/>
 		<a target="_blank" href="http://greytyphoon.space/PF/index.html">Table of Contents</a>
+	</nav>
+
+	<div class="container">
+		<header id="header">
+			<h1>Houserules - Popcorn Initiative</h1>
+		</header>
+		<div class="circumstancialBonus br">
+			This rule is based on AngryDM's
+			<a href="http://angrydm.com/2013/09/popcorn-initiative-a-great-way-to-adjust-dd-and-pathfinder-initiative-with-a-stupid-name/">Popcorn initiative</a>,
+			with modifications. It's a very good article, going in-depth about the benefits of this method.
+		</div>
+
+		<!--The beginning of combat-->
+		<h2>The beginning of combat</h2>
+		<p>
+			When combat starts, everybody rolls initiative as usual. Whoever rolls highest goes first.<br>
+			<small>We do not record or sort any other rolls, only the highest is important.</small><br>
+			<small>As per normal initiative rules, in case of a tie, the highest Initiative Modifier has priority. Further ties are solved at random.</small>
+		</p>
+
+		<h2>The end of your turn</h2>
+		<p>
+			When somebody finishes their turn, they roll initiative. The DC for this roll is <u title="Used to be 10 + Average Party Level">15</u>.<br>
+			If they succeed, they select a character who has not yet acted in this round. It is now that character's turn.<br>
+			If they fail, they must select an enemy. It is now their enemy's turn.
+		</p>
+
+		<h2>The end of a round</h2>
+		<p>
+			Spells and effects that have durations are slightly modified.<br>
+			At the end of a round, every duration is decremented. However, when they reach 0, they stay for an extra round, at the end of which they cease.<br>
+			<small>In practice, every duration now lasts "until the end of this round + normal duration". They are slightly increased.</small><br>
+			Then, a new round begins.<br>
+			Everybody rolls initiative. Whoever rolls highest goes first.
+		</p>
+
+		<!--Delaying and Readying-->
+		<h2>Delaying and Readying</h2>
+		<p>
+			Readying rules are mostly unaffected. When somebody readies an action, they keep that readied action until their next turn.<br>
+			Delaying now requires an initiative roll. The DC for this roll is <u title="Used to be 15 + 2*APL">25</u>.<br>
+			If you fail this initiative check, you must play your turn now.<br>
+			<small>
+				This was required for balance.<br>
+				Delaying is used when you're playing before somebody who should move before you do, such as healing or buffing you before your attack.<br>
+				There are two situations where you're playing in an unfavorable order:<br>
+				- You won Initiative. However, just because YOU won, that doesn't mean anybody in your party should get to go first for free. To give the boost to someone else, beat the DC.<br>
+				- You got initiative handed to you by an enemy. That was a tactical choice from him, he wanted to prevent you from getting healed or buffed. It should be hard to invalidate his tactical choice.
+			</small><br>
+			If you had a readied action, success on this check means that you keep this readied action. In effect, your turn has not happened yet.<br>
+			If you had a readied action and fail on this check, your readied action is lost. It is now your turn. You may ready the action again.
+		</p>
 	</div>
-
-    <div class="container">
-        <div id="header">
-            <b>Houserules - Popcorn Initiative</b>
-        </div>
-        <div class="circumstancialBonus br">
-            This rule is based on AngryDM's
-            <a href="http://angrydm.com/2013/09/popcorn-initiative-a-great-way-to-adjust-dd-and-pathfinder-initiative-with-a-stupid-name/">Popcorn initiative</a>,
-            with modifications. It's a very good article, going in-depth about the benefits of this method.
-        </div>
-
-        <!--The beginning of combat-->
-        <h6>The beginning of combat</h6>
-        <div class="br">
-            When combat starts, everybody rolls initiative as usual. Whoever rolls highest goes first.
-            <div class="circumstancialBonus">
-                We do not record or sort any other rolls, only the highest is important.<br>
-                As per normal initiative rules, in case of a tie, the highest Initiative Modifier has priority. Further ties are solved at random.
-            </div>
-        </div>
-
-        <!--The end of your turn-->
-        <h6>The end of your turn</h6>
-        <div class="br">
-            When somebody finishes their turn, they roll initiative. The DC for this roll is <u title="Used to be 10 + Average Party Level">15</u>.<br>
-            If they succeed, they select a character who has not yet acted in this round. It is now that character's turn.<br>
-            If they fail, they must select an enemy. It is now their enemy's turn.
-        </div>
-
-        <!--The end of a round-->
-        <h6>The end of a round</h6>
-        <div class="br">
-            Spells and effects that have durations are slightly modified.<br>
-            At the end of a round, every duration is decremented. However, when they reach 0, they stay for an extra round, at the end of which they cease.
-            <div class="circumstancialBonus">In practice, every duration now lasts "until the end of this round + normal duration". They are slightly increased.</div>
-            Then, a new round begins.<br>
-            Everybody rolls initiative. Whoever rolls highest goes first.
-        </div>
-
-        <!--Delaying and Readying-->
-        <h6>Delaying and Readying</h6>
-        <div>
-            Readying rules are mostly unaffected. When somebody readies an action, they keep that readied action until their next turn.<br>
-            Delaying now requires an initiative roll. The DC for this roll is <u title="Used to be 15 + 2*APL">25</u>.<br>
-            If you fail this initiative check, you must play your turn now.
-            <div class="circumstancialBonus">
-                This was required for balance.<br>
-                Delaying is used when you're playing before somebody who should move before you do, such as healing or buffing you before your attack.<br>
-                There are two situations where you're playing in an unfavorable order:<br>
-                - You won Initiative. However, just because YOU won, that doesn't mean anybody in your party should get to go first for free. To give the boost to someone else, beat the DC.<br>
-                - You got initiative handed to you by an enemy. That was a tactical choice from him, he wanted to prevent you from getting healed or buffed. It should be hard to invalidate his tactical choice.
-            </div>
-            If you had a readied action, success on this check means that you keep this readied action. In effect, your turn has not happened yet.<br>
-            If you had a readied action and fail on this check, your readied action is lost. It is now your turn. You may ready the action again.
-        </div>
-    </div>
 </body>
 </html>

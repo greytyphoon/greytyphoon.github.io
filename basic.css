@@ -22,7 +22,6 @@ body { color: #0b0608; /*murder-black*/ }
 a, a:link, a:visited, a:active { color: #c62825; /*murder-red*/}
 a:hover { text-shadow: 0px 0px 1px; }
 ul,li { line-height: 1.15em; }
-h6 { text-decoration: underline; }
 
 @media screen {
     body {
@@ -61,7 +60,7 @@ h6 { text-decoration: underline; }
     }
 }
 
-#header {
+header, #header {
     padding: 8px;
     margin: 0px -15px 15px -15px;
     border-radius: 6px;
@@ -70,7 +69,7 @@ h6 { text-decoration: underline; }
     background-color: #c62825; /*murder-red*/
     border: 1px solid #c62825; /*murder-red*/
     box-shadow: 2px 2px 2px #a9a9a9;} /*html-darkgrey*/
-#header h1 {
+header h1, #header h1 {
     font-size: inherit;
     font-weight: bold;
     margin: 0; }
@@ -85,7 +84,7 @@ hr {
     border-color: #a9a9a9; /* html-darkgrey */
     clear: both; }
 
-.subtitle {
+h2, .subtitle {
     border-bottom: 1px solid #eaebef; /*murder-grey*/
     display: block;
     font-size: 16px;
