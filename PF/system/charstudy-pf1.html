@@ -1,19 +1,19 @@
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Grey's Comparison of Classes</title>
-    <link rel="stylesheet" href="pfGeneric.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="pfGeneric.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap4.min.css">
 	<style>
 		#tblComparison {
-            color: #0b0608; /*murder-black*/
-            border-collapse: collapse !important; /*removed from datatable css*/
+			color: #0b0608; /*murder-black*/
+			border-collapse: collapse !important; /*removed from datatable css*/
 			font-size: 9pt;
 			text-align: center;
 		}
 		#tblComparison th { padding-top: 5px; padding-bottom: 5px; border-bottom: 1px solid #0b0608; }
-        #tblComparison td { padding: 2px; }
+		#tblComparison td { padding: 2px; }
 
 		.awesome { background-color:#33b5e5; }
 		.good { background-color:#00c851; }
@@ -22,19 +22,19 @@
 	</style>
 </head>
 <body>
-	<div id="fixref">
+	<nav id="fixref">
 		<a target="_blank" href="http://greytyphoon.space/PF/system/houserules.html">Houserules</a><br/>
 		<a target="_blank" href="http://greytyphoon.space/PF/index.html">Table of Contents</a>
-	</div>
-    
-    <div class="container">
-        <div id="header">
-            <b>Comparison of Classes</b>
-        </div>
-        <p>This is a list of official Pathfinder classes. Here's hoping it helps you too!</p>
-    
+	</nav>
+
+	<div class="container">
+		<header id="header">
+			<h1>Pathfinder 1st-edition Comparison of Classes</h1>
+		</header>
+		<p>This is a list of official Pathfinder 1st-edition classes. Here's hoping it helps you too!</p>
+
 		<table id="tblComparison" class="table">
-        <thead>
+		<thead>
 			<tr>
 				<th>HD</th>
 				<th>Fort</th>
@@ -48,8 +48,8 @@
 				<th>Stat</th>
 				<th>LVL0</th>
 			</tr>
-        </thead>
-        <tbody>
+		</thead>
+		<tbody>
 			<tr>
 				<td class="bad">6</td>
 				<td class="bad">No</td>
@@ -544,7 +544,7 @@
 				<td>&nbsp;</td>
 				<td>&nbsp;</td>
 			</tr>
-        </tbody>
+		</tbody>
 		</table>
 	</div>
 	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.3.js">
@@ -554,9 +554,9 @@
 	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap4.min.js">
 	</script>
 	<script type="text/javascript" class="init">
-        $(document).ready(function() {
-            $('#tblComparison').DataTable({ dom: 't', pageLength: 40, order: [[ 8, 'desc' ], [ 5, 'asc' ]] });
-        });
+		$(document).ready(function() {
+			$('#tblComparison').DataTable({ dom: 't', pageLength: 40, order: [[ 8, 'desc' ], [ 5, 'asc' ]] });
+		});
 	</script>
 </body>
 </html>

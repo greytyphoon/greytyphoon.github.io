@@ -1,0 +1,268 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Grey's Comparison of Classes</title>
+	<link rel="stylesheet" href="pfGeneric.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap4.min.css">
+	<style>
+		#tblComparison {
+			color: #0b0608; /*murder-black*/
+			border-collapse: collapse !important; /*removed from datatable css*/
+			font-size: 9pt;
+			text-align: center;
+		}
+		#tblComparison th { padding-top: 5px; padding-bottom: 5px; border-bottom: 1px solid #0b0608; }
+		#tblComparison td { padding: 2px; }
+
+		.awesome { background-color:#33b5e5; }
+		.good { background-color:#00c851; }
+		.average{ background-color:#ffbb33; }
+		.bad { background-color:#ff4444; }
+	</style>
+</head>
+<body>
+	<nav id="fixref">
+		<a target="_blank" href="http://greytyphoon.space/PF/system/houserules.html">Houserules</a><br/>
+		<a target="_blank" href="http://greytyphoon.space/PF/index.html">Table of Contents</a>
+	</nav>
+
+	<div class="container">
+		<header id="header">
+			<h1>Pathfinder 2nd-edition Comparison of Classes</h1>
+		</header>
+		<p>This is a list of official Pathfinder 2nd-edition classes. Here's hoping it helps you too!</p>
+		<p>This chart assumes you are trained in everything mentionned at first level, then lists the levels at which your proficiency increases.
+			For example, Alchemists have Fortitude "1, 11th" because (we assume they're Trained off the bat) they increase to Expert at 1st level, then Master at 11th level.
+			Legendary proficiencies will always be <b>bold</b>.</p>
+
+		<table id="tblComparison" class="table">
+		<thead>
+			<tr>
+				<th>HP</th>
+				<th>Skill</th>
+				<th>Stat</th>
+				<th>Class</th>
+				<th>Spell</th>
+				<th>Weapon</th>
+				<th>Damage</th>
+				<th>Armor</th>
+				<th>Fort</th>
+				<th>Ref</th>
+				<th>Will</th>
+				<th>Percep</th>
+				<th>Class DC</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="average">8</td>
+				<td class="good" title="Fixed: Crafting">4</td>
+				<td>Int</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/alchemist">Alchemist</a></td>
+				<td>&mdash;</td>
+				<td><u title="Bombs">Simple+</u>, 7</td>
+				<td>13</td>
+				<td>Light, 13, 19</td>
+				<td>1, 11</td>
+				<td>1, 15</td>
+				<td>7</td>
+				<td>9</td>
+				<td>9, 17</td>
+			</tr>
+			<tr>
+				<td class="awesome">12</td>
+				<td class="average" title="Fixed: Athletics">4</td>
+				<td>Str</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/barbarian">Barbarian</a></td>
+				<td>&mdash;</td>
+				<td>Martial, 5, 13</td>
+				<td>7, 15, <u title="while raging">Crit 5</u></td>
+				<td>Medium, 13, 19</td>
+				<td>1, 7, <b>13</b></td>
+				<td>9</td>
+				<td>1, 15</td>
+				<td>1, 17</td>
+				<td>11, 19</td>
+			</tr>
+			<tr>
+				<td class="average">8</td>
+				<td class="good" title="Fixed: Occultist, Performance">6</td>
+				<td>Cha</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/bard">Bard</a></td>
+				<td>Spontaneous Occult</td>
+				<td><u title="Longsword, Rapier, Sap, Shortbow, Shortsword, Whip">Simple+</u>, 11</td>
+				<td>13, <u title="while composition is active">Crit 11</u></td>
+				<td>Light, 13</td>
+				<td>9</td>
+				<td>3</td>
+				<td>1, 9, <b>17</b></td>
+				<td>1, 11</td>
+				<td>7, 15, <b>19</b></td>
+			</tr>
+			<tr>
+				<td class="good">10</td>
+				<td class="average" title="Fixed: Religion, Deity">4</td>
+				<td>Str/Dex</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/champion">Champion</a></td>
+				<td>&mdash;</td>
+				<td>Martial, 5, 13</td>
+				<td>7, 15, <u title="if you chose a Blade Ally">Crit 3</u></td>
+				<td>Heavy, 7, 13, <b>17</b></td>
+				<td>1, 9</td>
+				<td>9</td>
+				<td>1, 11</td>
+				<td>11</td>
+				<td>9, 17</td>
+			</tr>
+			<tr>
+				<td class="average">8</td>
+				<td class="average" title="Fixed: Religion, Deity">4</td>
+				<td>Wis</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/cleric">Cleric</a>, Cloistered</td>
+				<td>Prepared Divine</td>
+				<td><u title="Deity's favored weapon">Simple+</u>, 11</td>
+				<td>13, <u title="Deity's favored weapon">Crit 11</u></td>
+				<td>None, 13</td>
+				<td>3</td>
+				<td>11</td>
+				<td>1, 9</td>
+				<td>5</td>
+				<td>7, 15, <b>19</b></td>
+			</tr>
+			<tr>
+				<td class="average">8</td>
+				<td class="average" title="Fixed: Religion, Deity">4</td>
+				<td>Wis</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/cleric">Cleric</a>, Warpriest</td>
+				<td>Prepared Divine</td>
+				<td>Martial, 7</td>
+				<td>13, <u title="Deity's favored weapon">Crit 7</u></td>
+				<td>Medium, 13</td>
+				<td>1, 15</td>
+				<td>11</td>
+				<td>1, 9</td>
+				<td>5</td>
+				<td>11, 19</td>
+			</tr>
+			<tr>
+				<td class="average">8</td>
+				<td class="average" title="Fixed: Nature, Order">4</td>
+				<td>Wis</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/druid">Druid</a></td>
+				<td>Prepared Primal</td>
+				<td>Simple, 11</td>
+				<td>13</td>
+				<td>Medium, 13</td>
+				<td>3</td>
+				<td>5</td>
+				<td>1, 11</td>
+				<td>3</td>
+				<td>7, 15, <b>19</b></td>
+			</tr>
+			<tr>
+				<td class="good">10</td>
+				<td class="average" title="Flexible: Acrobatics, Athletics">4</td>
+				<td>Str/Dex</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/fighter">Fighter</a></td>
+				<td>&mdash;</td>
+				<td>Martial, 1, <u title="one weapon group">5, <b>13</b></u><br>Advanced, <u title="one weapon group">5, 13</u></td>
+				<td>7, 15, <u title="one weapon group">Crit 5</u></td>
+				<td>Heavy, 11, 17</td>
+				<td>1, 9</td>
+				<td>1, 15</td>
+				<td>3</td>
+				<td>1, 7</td>
+				<td>11, 19</td>
+			</tr>
+			<tr>
+				<td class="good">10</td>
+				<td class="average" title="Free">4</td>
+				<td>Str/Dex</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/monk">Monk</a></td>
+				<td>&mdash;</td>
+				<td>Simple, 5, 13</td>
+				<td>7, 15</td>
+				<td>None, 1, 13, <b>17</b></td>
+				<td>1, <u title="Path to Perfection">7, 15</u></td>
+				<td>1, <u title="Second Path to Perfection">11</u></td>
+				<td>1</td>
+				<td>5</td>
+				<td>9, 17</td>
+			</tr>
+			<tr>
+				<td class="good">10</td>
+				<td class="good" title="Fixed: Nature, Survival">6</td>
+				<td>Str/Dex</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/ranger">Ranger</a></td>
+				<td>&mdash;</td>
+				<td>Martial, 5, 13</td>
+				<td>7, 15 <u title="on hunted prey">Crit 5</u></td>
+				<td>Medium, 11, 19</td>
+				<td>1, 11</td>
+				<td>1, 7, <b>15</b></td>
+				<td>3</td>
+				<td>1, 7, <b>15</b></td>
+				<td>9, 17</td>
+			</tr>
+			<tr>
+				<td class="average">8</td>
+				<td class="awesome" title="Fixed: Stealth, Racket">9</td>
+				<td>Dex/Str/Cha</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/rogue">Rogue</a></td>
+				<td>&mdash;</td>
+				<td><u title="Rapier, Sap, Shortbow, Shortsword">Simple+</u>, 5, 13</td>
+				<td>7, 15 Crit 5</td>
+				<td>Light, 13, 19</td>
+				<td>9</td>
+				<td>1, 7, <b>13</b></td>
+				<td>1, 17</td>
+				<td>1, 7, <b>13</b></td>
+				<td>11, 19</td>
+			</tr>
+			<tr>
+				<td class="bad">6</td>
+				<td class="average" title="Bloodline, Bloodline">4</td>
+				<td>Cha</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/sorcerer">Sorcerer</a></td>
+				<td>Spontaneous Flexible</td>
+				<td>Simple, 11</td>
+				<td>13</td>
+				<td>None, 13</td>
+				<td>5</td>
+				<td>9</td>
+				<td>1</td>
+				<td>11</td>
+				<td>7, 15, <b>19</b></td>
+			</tr>
+			<tr>
+				<td class="bad">6</td>
+				<td class="good" title="Arcana">3</td>
+				<td>Int</td>
+				<td><a href="https://pf2.d20pfsrd.com/class/wizard">Wizard</a></td>
+				<td>Prepared Arcane</td>
+				<td><u title="Club, Crossbow, Dagger, Heavy Crossbow, Staff">Minor</u>, 11</td>
+				<td>13</td>
+				<td>None, 13</td>
+				<td>9</td>
+				<td>5</td>
+				<td>1, 17</td>
+				<td>11</td>
+				<td>7, 15, <b>19</b></td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.3.js">
+	</script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js">
+	</script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap4.min.js">
+	</script>
+	<script type="text/javascript" class="init">
+		$(document).ready(function() {
+			$('#tblComparison').DataTable({ dom: 't', pageLength: 40, order: [[ 3, 'asc' ]] });
+		});
+	</script>
+</body>
+</html>
