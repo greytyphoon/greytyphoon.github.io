@@ -1,4 +1,4 @@
-/** Created by Rémi Doutre, 2015-2018. Public domain. **/
+/** Created by Rémi Doutre, 2015-2019. Public domain. **/
 @import url("../../basic.css");
 
 /********************
@@ -31,20 +31,40 @@
     font-size: 12px;
     margin-left: 20px; } /*align with the beginning of a text that goes after a .numberfirst*/
 
-/*spells*/
-.spell,
-a.spell {
-	font-style:italic;}
-.spellc,
-a.spellc,
-a.spellc:visited,
-.spell.conjuration,
-a.spell.conjuration,
-a.spell.conjuration:visited {
+/********************
+ * Spells and Schools
+ */
+.spell, a.spell { font-style:italic;}
+
+.spellc, a.spellc, a.spellc:visited,
+.spell.conjuration, a.spell.conjuration, a.spell.conjuration:visited {
 	font-style:italic;
-	color:green;}
-.spelli,
-a.spelli ,
-a.spelli:visited{
+	color: #13aa26;} /* Green! */
+.spelli, a.spelli, a.spelli:visited,
+.spell.illusion, a.spell.illusion, a.spell.illusion:visited{
 	font-style:italic;
-	color:gray;}
+	color: #aaaaaa;} /* Grey! */
+.spellev, a.spellev, a.spellev:visited,
+.spell.evocation, a.spell.evocation, a.spell.evocation:visited{
+	font-style:italic;
+	color: #f22613;} /* Red! */
+.spella, a.spella, a.spella:visited,
+.spell.abjuration, a.spell.abjuration , a.spell.abjuration:visited{
+	font-style:italic;
+	color: #f0c010;} /* Gold! */
+.spellt, a.spellt, a.spellt:visited,
+.spell.transmutation, a.spell.transmutation, a.spell.transmutation:visited{
+	font-style:italic;
+	color: #2599b9;} /* Teal! */
+.spelld, a.spelld, a.spelld:visited,
+.spell.divination, a.spell.divination, a.spell.divination:visited{
+	font-style:italic;
+	color: #2613f2;} /* Blue! */
+.spellen, a.spellen, a.spellen:visited,
+.spell.enchantment, a.spell.enchantment, a.spell.enchantment:visited{
+	font-style:italic;
+	color: #bf55ec;} /* Lilac! */
+.spelln, a.spelln, a.spelln:visited,
+.spell.necromancy, a.spell.necromancy, a.spell.necromancy:visited{
+	font-style:italic;
+	color: #800080;} /* Purple! */

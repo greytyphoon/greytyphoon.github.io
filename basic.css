@@ -1,5 +1,8 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css");
-/** Created by Rémi Doutre, 2015-2018. Public domain. **/
+/* To remove, I must reimplement: col-md-4, list-unstyled, float-right (also reduce line-height on lists, that's tight) */
+
+
+/** Created by Rémi Doutre, 2015-2019. Public domain. **/
 
 /**
  * Custom Palette:
