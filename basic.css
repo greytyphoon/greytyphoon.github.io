@@ -1,7 +1,3 @@
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css");
-/* To remove, I must reimplement: col-md-4, list-unstyled, float-right (also reduce line-height on lists, that's tight) */
-
-
 /** Created by Rémi Doutre, 2015-2019. Public domain. **/
 
 /**
@@ -21,26 +17,52 @@
  * #eaebef murder-grey
  * #c62825 murder-red
  **/
-body { color: #0b0608; /*murder-black*/ }
-a, a:link, a:visited, a:active { color: #c62825; /*murder-red*/}
+* { box-sizing: border-box; line-height: 1.2em; }
+html { font-size: 16px; }
+body {
+	margin: 0;
+	font-family: 'Mirza', 'Varela', 'Roboto', 'Segoe UI', sans-serif;
+	color: #0b0608; /*murder-black*/ }
+a, a:link, a:visited, a:active { color: #c62825; /*murder-red*/ }
 a:hover { text-shadow: 0px 0px 1px; }
-ul,li { line-height: 1.15em; }
+ul, ol, dl, p { margin: 0 0 .75em 0; }
 
 @media screen {
-    body {
-        overflow-y: scroll;
-        background-color: #eaebef; } /*murder-grey*/
+	body > .container { padding: 10px 25px .5px 25px; }
+}
+@media screen and (min-width: 576px) {
+	body {
+		overflow-y: scroll;
+		background-color: #eaebef; } /*murder-grey*/
+	body > .container {
+		background-color: #ffffff; /*html-white*/
+		border-left: 1px solid #a9a9a9; /*html-darkgrey*/
+		border-right: 1px solid #a9a9a9; /*html-darkgrey*/
+		margin: 0 auto;
+		max-width: 540px;
+		min-height: 100%; }
+	body > .container::after {
+		content: "";
+		display: block;
+		clear: both; } /* clearfix */
+}
+@media screen and (min-width: 768px) {
+	body > .container { max-width: 720px; }
+}
+@media screen and (min-width: 992px) {
+	body > .container { max-width: 960px; }
+}
+@media screen and (min-width: 1200px) {
+	body > .container { max-width: 1140px; }
+}
 
-    body > .container {
-        background-color: #ffffff; /*html-white*/
-        border-left: 1px solid #a9a9a9; /*html-darkgrey*/
-        border-right: 1px solid #a9a9a9; /*html-darkgrey*/
-        padding: 10px 25px .5px 25px;
-        min-height: 100%; }
-    .container::after { 
-        content: "";
-        display: block;
-        clear: both; } /* clearfix */
+/********************
+ * Grid
+ */
+@media screen and (min-width: 768px), print{
+	section.row { display: flex; }
+	section.row > * { flex: 1; }
+	section.row > * + * { margin-left: 1rem; }
 }
 
 /********************
@@ -48,101 +70,75 @@ ul,li { line-height: 1.15em; }
  */
 
 #fixref  {
-    background-color: #ffffff; /*html-white*/
-    border: 1px solid #a9a9a9; /*html-darkgrey*/
-    border-radius: 3px;
-    position: fixed;
-    bottom: 10;
-    right: 10;
-    z-index: 5;}
-@media screen and (max-width: 767px){
-    #fixref {
-        position: initial;
-        border-radius: 0px;
-        text-align: center;
-    }
+	background-color: #ffffff; /*html-white*/
+	border-bottom: 1px solid #a9a9a9; /*html-darkgrey*/
+	text-align: center; }
+@media screen and (min-width: 768px){
+	#fixref {
+		position: fixed;
+		bottom: 10;
+		right: 10;
+		z-index: 5;
+		border: 1px solid #a9a9a9; /*html-darkgrey*/
+		border-radius: 3px;
+		padding: .1em .25em;
+	}
 }
 
 header, #header {
-    padding: 8px;
-    margin: 0px -15px 15px -15px;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 16px;
-    background-color: #c62825; /*murder-red*/
-    border: 1px solid #c62825; /*murder-red*/
-    box-shadow: 2px 2px 2px #a9a9a9;} /*html-darkgrey*/
+	padding: 8px;
+	margin: 0px -15px 15px -15px;
+	border-radius: 6px;
+	text-align: center;
+	background-color: #c62825; /*murder-red*/
+	border: 1px solid #c62825; /*murder-red*/
+	box-shadow: 2px 2px 2px #a9a9a9;} /*html-darkgrey*/
 header h1, #header h1 {
-    font-size: inherit;
-    font-weight: bold;
-    margin: 0; }
+	font-size: inherit;
+	font-weight: bold;
+	margin: 0; }
 
 /* Section titles, encased in two black lines */
 .title {
-    border-top: 1px solid #0b0608; /*murder-black*/
-    border-bottom: 1px solid #0b0608; /*murder-black*/
-    font-size: 16px;
-    clear: both; }
+	border-top: 1px solid #0b0608; /*murder-black*/
+	border-bottom: 1px solid #0b0608; /*murder-black*/
+	clear: both; }
 hr {
-    border-color: #a9a9a9; /* html-darkgrey */
-    clear: both; }
+	border: none;
+	border-bottom: 1px solid #a9a9a9; /* html-darkgrey */
+	clear: both; }
 
 h2, .subtitle {
-    border-bottom: 1px solid #eaebef; /*murder-grey*/
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px; }
-h2 > u, .subtitle > u {
+	border-bottom: 1px solid #eaebef; /*murder-grey*/
+	display: block;
+	font-size: inherit;
+	font-weight: bold;
+	margin: 0 0 .3em 0; }
+h2 > *, .subtitle > * {
 	float: right;
 	margin-left: .75em; }
 
 .apartee {
-    background-color: #eaebef; /*murder-grey*/
-    border: 1px dashed #a9a9a9; /*html-darkgrey*/
-    border-radius: 6px;
-    padding: 5px;
-    font-size: 12px; }
+	background-color: #eaebef; /*murder-grey*/
+	border: 1px dashed #a9a9a9; /*html-darkgrey*/
+	border-radius: 6px;
+	padding: .1em .25em;
+	font-size: .75rem; }
+
+.float-right { /* Shamefully stolen from Bootstrap until I can purge it.*/
+	float: right; }
 
 .br { /*for 'breathing room' after a paragraph. Does not simply replace random <br>s in my code, no sir. Obviously not. */
-    margin-bottom: 0.75rem; }
+	margin-bottom: 0.75rem; }
 
 /********************
  * Printing tweaks
  */
-    
+
 @media print {
-    .newPage { page-break-before: always; }
-    .noprint { display: none !important; }
-    abbr[title]:after { content: none; border-bottom: none; text-decoration: none; } /* prevents bootstrap from printing the detail...*/
+	.newPage { page-break-before: always; }
+	.noprint { display: none !important; }
 
-    /* make stuff smaller, so more can fit on a page. */
-    body { font-size: 14px !important; }
-
-    /* fix a Chrome Bug where the width when printing is always 550px... I want Bootstrap-lg when printing, though */
-    .container { max-width: none !important; }
-    .col-lg-1 { width: 8.33333% !important; }
-    .col-lg-2 { width: 16.66666% !important; }
-    .col-lg-3 { width: 25% !important; }
-    .col-lg-4 { width: 33.33333% !important; }
-    .col-lg-5 { width: 41.66666% !important; }
-    .col-lg-6 { width: 50% !important; }
-    .col-lg-7 { width: 58.33333% !important; }
-    .col-lg-8 { width: 66.66666% !important; }
-    .col-lg-9 { width: 75% !important; }
-    .col-lg-10 { width: 83.33333% !important; }
-    .col-lg-11 { width: 91.66666% !important; }
-    .col-lg-12 { width: 100% !important; }
-    .col-md-1 { width: 8.33333%; }
-    .col-md-2 { width: 16.66666%; }
-    .col-md-3 { width: 25%; }
-    .col-md-4 { width: 33.33333%; }
-    .col-md-5 { width: 41.66666%; }
-    .col-md-6 { width: 50%; }
-    .col-md-7 { width: 58.33333%; }
-    .col-md-8 { width: 66.66666%; }
-    .col-md-9 { width: 75%; }
-    .col-md-10 { width: 83.33333%; }
-    .col-md-11 { width: 91.66666%; }
-    .col-md-12 { width: 100%; }
+	/* make stuff smaller, so more can fit on a page. */
+	body { font-size: 14px !important; }
 }

@@ -1,113 +1,106 @@
 /** Created by Rémi Doutre, 2015-2019. Public domain. **/
 @import url("pfGeneric.css");
 
+ul, ol, dl {
+	padding: 0;
+	list-style: none; }
+
 /********************
  * Specific Styling
  */
- 
+
 /*top of the page*/
 #headerInfo {
 	font-size:.75rem; }
-dl.charInfo {
-    line-height: 1.4em;
-    margin-bottom: .5rem; }
 dl.charInfo > dt {
-    float: left;
-    text-align: right;
-    font-weight: bold;
-    min-width: 39%;
-    vertical-align: top; }
+	float: left;
+	text-align: right;
+	font-weight: bold;
+	min-width: 39%;
+	vertical-align: top; }
 dl.charInfo > dd {
-    margin-left: 40%; /* the floating <dt> will go above this margin */
-    margin-bottom: 0; /* overwrite bootstrap */}
+	margin-left: 40%; } /* the floating <dt> will go above this margin */
 #subheader  {
-    background-color: #eaebef; /*murder-grey*/
-    border: 1px dashed #a9a9a9; /*html-darkgrey*/
-    border-radius: 4px;
-    padding: 2px;
-    font-size: 1rem; }
+	background-color: #eaebef; /*murder-grey*/
+	border: 1px dashed #a9a9a9; /*html-darkgrey*/
+	border-radius: 4px;
+	padding: 2px;
+	font-size: 1rem; }
 #subheader > dd.archetype  {
-    font-size: .75rem;
-	line-height: 1rem; }
+	font-size: .75rem; }
 
 /*feats*/
-#featsWrapper {
-	float: right;
-    margin-top: 5px;
-    margin-bottom: 10px; }
-dl#featsWrapper { line-height: 1rem; }
 dl#featsWrapper > dt{
-    float:left;
-	margin-left: -15px; /* cancel the container-fluid's margin (if the right-aligned text needs more space) */
-    text-align: right;
-    font-variant: small-caps;
-    font-weight: bold;
-    min-width: 80px; /*longer names than "fighter 14" should be shortened*/
-    vertical-align: top;}
-dl#featsWrapper > dd{ margin-left: 75px;} /* the floating dt will float above this margin */
-    
-@media screen and (max-width: 767px) {
-    #featsWrapper { float: none; }
+	float:left;
+	text-align: right;
+	font-variant: small-caps;
+	font-weight: bold;
+	min-width: 80px; /*longer names should be shortened*/
+	vertical-align: top; }
+dl#featsWrapper > dd{
+	margin-left: 81px; } /* the floating <dt> will float above this margin */
+
+@media screen and (min-width: 768px) {
+	#featsWrapper { float: right; }
 }
 
 /*spells*/
 #spellHeader {
-    font-size: 10px; /*overrides apartee's font-size*/
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 7px; /*overrides apartee's padding*/}
+	font-size: .6rem; /*overrides apartee's font-size*/
+	margin-bottom: .75rem;
+	padding: 1em; /*overrides apartee's padding*/}
 
 /*weapons*/
 .weapon {
-    border: 1px solid #c62825; /*murder-red*/
-    border-radius: 4px;
-    padding: 4px 10px;
-    margin-bottom: 0.75rem; } 
-.weapon > .weaponHead {
-    background-color:#c62825; /*murder-red*/
-    border-bottom: 1px solid #c62825; /*murder-red*/
-    margin: -4px -10px 4px -10px;
-    font-weight: bold;
-    font-size: 16px;
-	padding: 1px 10px 0px 10px; }
-.weaponReach { float: right; margin-right: 1rem; }
+	border: 1px solid #c62825; /*murder-red*/
+	border-radius: 4px;
+	padding: 4px 10px;
+	margin-bottom: 0.75rem; }
+.weapon > .weaponHead,
+.weapon > h2 {
+	background-color:#c62825; /*murder-red*/
+	border-bottom: 1px solid #c62825; /*murder-red*/
+	margin: -4px -10px 4px -10px;
+	padding: .15em .5em;
+	font-weight: bold; }
+.weaponHead > * { float: right; margin-left: .75em; } /* Remove this once you're done replacing WeaponHEad with h2 */
 
 /*equipments*/
 #mundaneItemsWrapper{
-    float: right;
-    font-size: 0.75rem;
-    margin-left: 1rem; }
+	float: right;
+	font-size: 0.75rem;
+	margin-left: 1rem; }
 ul#mundaneItemsWrapper{ list-style: none; padding-left: 0; }
 #magicItemsWrapper{
 	float: right;
 	text-align: right;
-    margin-bottom: 10px }
-ul#magicItemsWrapper{ list-style: none; padding-left: 0;  }
+	margin-bottom: 10px }
+ul#magicItemsWrapper{ list-style: none; padding-left: 0; }
 .emptyitemslot {
-	color: #a9a9a9; /*html-darkgrey*/
-    font-family: monospace; }
+	color: #a9a9a9; } /*html-darkgrey*/
 @media screen and (max-width: 767px) {
-    #mundaneItemsWrapper{
-        display: none; }
-    #magicItemsWrapper{
-        float: none;
-        text-align: left;}
-    .emptyitemslot {
-        display: none; }
+	#mundaneItemsWrapper{
+		display: none; }
+	#magicItemsWrapper{
+		float: none;
+		text-align: left;}
+	.emptyitemslot {
+		display: none; }
 }
 
 /*source*/
-#sources { font-size: 8pt; }
+#sources { font-size: .6rem; float: right; }
+ul#sources { list-style: none; padding-left: 0; }
 ul#sources ul { margin-left: 15px; }
-#sources:before { 
-    content: "Sources:"; 
-    font-weight: bold;
-    float: left;
-    margin-left: -44px;
-    width: 44px; }
+#sources:before {
+	content: "Sources:";
+	font-weight: bold;
+	float: left;
+	margin-left: -44px;
+	width: 44px; }
 
 /*xp*/
-#xp { 
-    color:#ffffff; /*html-white*/
-    margin-top: -1.5em;
-    text-align: right; }
+#xp {
+	color:#ffffff; /*html-white*/
+	margin-top: -1.2em;
+	text-align: left; }
