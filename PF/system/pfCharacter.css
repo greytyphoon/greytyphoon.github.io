@@ -35,10 +35,10 @@ dl#featsWrapper > dt{
 	text-align: right;
 	font-variant: small-caps;
 	font-weight: bold;
-	min-width: 80px; /*longer names should be shortened*/
+	width: 95px; /*longer names should be shortened*/
 	vertical-align: top; }
 dl#featsWrapper > dd{
-	margin-left: 81px; } /* the floating <dt> will float above this margin */
+	margin-left: 100px; } /* the floating <dt> will float above this margin */
 
 @media screen and (min-width: 768px) {
 	#featsWrapper { float: right; }
