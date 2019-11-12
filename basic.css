@@ -60,7 +60,7 @@ ul, ol, dl, p { margin: 0 0 .75em 0; }
  * Grid
  */
 @media screen and (min-width: 768px), print{
-	section.row { display: flex; }
+	section.row { display: flex; flex-wrap: wrap; }
 	section.row > * { flex: 1; }
 	section.row > * + * { margin-left: 1rem; }
 }

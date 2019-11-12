@@ -21,9 +21,9 @@ a, a:link, a:visited, a:active { color: #74C625; /*murder-red*/}
 
 /* I use this when I want to say who taught me this song. */
 span.credit { /* inspired from Pathfinder's .listBonuses */
+	display: inline-block;
     color: #a9a9a9; /*html-darkgrey*/
-    font-size: 12px;
-    font-family: monospace;
+    font-size: .75rem;
     font-weight: normal; }
 span.credit::before { content: "("; }
 span.credit::after { content: ")"; }
