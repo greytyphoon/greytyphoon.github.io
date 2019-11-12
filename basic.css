@@ -122,7 +122,7 @@ h2 > *, .subtitle > * {
 	background-color: #eaebef; /*murder-grey*/
 	border: 1px dashed #a9a9a9; /*html-darkgrey*/
 	border-radius: 6px;
-	padding: .1em .25em;
+	padding: .25em .5em;
 	font-size: .75rem; }
 
 .float-right { /* Shamefully stolen from Bootstrap until I can purge it.*/
