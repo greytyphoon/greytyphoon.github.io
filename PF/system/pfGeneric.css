@@ -56,7 +56,8 @@
 	font-style:italic;
 	color: #2599b9;} /* Teal! */
 .spelld, a.spelld, a.spelld:visited,
-.spell.divination, a.spell.divination, a.spell.divination:visited{
+.spell.divination, a.spell.divination, a.spell.divination:visited,
+.spell.domain, a.spell.domain, a.spell.domain:visited{
 	font-style:italic;
 	color: #2613f2;} /* Blue! */
 .spellen, a.spellen, a.spellen:visited,
@@ -67,3 +68,19 @@
 .spell.necromancy, a.spell.necromancy, a.spell.necromancy:visited{
 	font-style:italic;
 	color: #800080;} /* Purple! */
+
+/********************
+ * CharStudies and Tables
+ */
+#tblComparison {
+	color: #0b0608; /*murder-black*/
+	border-collapse: collapse !important; /*removed from datatable css*/
+	text-align: center;
+	font-size: .75rem; }
+#tblComparison th { border-bottom: 1px solid #0b0608; }
+#tblComparison td { padding: .2em; }
+
+.awesome { background-color:#33b5e5; }
+.good { background-color:#00c851; }
+.average{ background-color:#ffbb33; }
+.bad { background-color:#ff4444; }

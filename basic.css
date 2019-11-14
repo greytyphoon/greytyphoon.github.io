@@ -23,9 +23,26 @@ body {
 	margin: 0;
 	font-family: 'Mirza', 'Varela', 'Roboto', 'Segoe UI', sans-serif;
 	color: #0b0608; /*murder-black*/ }
-a, a:link, a:visited, a:active { color: #c62825; /*murder-red*/ text-decoration: none; }
-a:hover { text-decoration: underline; text-shadow: 0px 0px 1px; }
+a, a:link, a:visited, a:active {
+	color: #c62825; /*murder-red*/
+	text-decoration: none; }
+a:hover {
+	text-decoration: underline;
+	text-shadow: 0px 0px 1px; }
+hr {
+	border: none;
+	border-bottom: 1px solid #a9a9a9; /* html-darkgrey */
+	clear: both; }
+code {
+	display: inline-block;
+	background-color: #eaebef;
+	border-radius: .25em;
+	padding: 0 .15em; }
 ul, ol, dl, p { margin: 0 0 .75em 0; }
+
+/********************
+ * Basic page layout	(.container, #fixref, #header)
+ */
 
 @media screen {
 	body > .container { padding: 10px 25px .5px 25px; }
@@ -56,19 +73,6 @@ ul, ol, dl, p { margin: 0 0 .75em 0; }
 	body > .container { max-width: 1140px; }
 }
 
-/********************
- * Grid
- */
-@media screen and (min-width: 768px), print{
-	section.row { display: flex; flex-wrap: wrap; }
-	section.row > * { flex: 1; }
-	section.row > * + * { margin-left: 1rem; }
-}
-
-/********************
- * Custom Components   (#fixref, #header, .title, .subtitle, .apartee, .br)
- */
-
 #fixref  {
 	background-color: #ffffff; /*html-white*/
 	border-bottom: 1px solid #a9a9a9; /*html-darkgrey*/
@@ -98,14 +102,23 @@ header h1, #header h1 {
 	font-weight: bold;
 	margin: 0; }
 
-/* Section titles, encased in two black lines */
+/********************
+ * Grid
+ */
+@media screen and (min-width: 768px), print{
+	section.row { display: flex; flex-wrap: wrap; }
+	section.row > * { flex: 1; }
+	section.row > * + * { margin-left: 1rem; }
+}
+
+
+/********************
+ * Custom Components   (.title, h2/.subtitle, .apartee, .float-right, .br)
+ */
+
 .title {
 	border-top: 1px solid #0b0608; /*murder-black*/
 	border-bottom: 1px solid #0b0608; /*murder-black*/
-	clear: both; }
-hr {
-	border: none;
-	border-bottom: 1px solid #a9a9a9; /* html-darkgrey */
 	clear: both; }
 
 h2, .subtitle {
@@ -130,6 +143,18 @@ h2 > *, .subtitle > * {
 
 .br { /*for 'breathing room' after a paragraph. Does not simply replace random <br>s in my code, no sir. Obviously not. */
 	margin-bottom: 0.75rem; }
+
+/********************
+ * Cornered tables
+ */
+table.table-cornered th,
+table.table-cornered td {
+	border-left: 1px solid #a9a9a9; /*html-darkgrey*/
+	border-bottom: 1px solid #a9a9a9; /*html-darkgrey*/
+	color: #0b0608; /*murder-black*/
+	padding: .15em;
+	text-align:center;
+	width:25%; }
 
 /********************
  * Printing tweaks
