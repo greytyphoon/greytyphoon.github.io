@@ -56,8 +56,10 @@
 	font-style:italic;
 	color: #2599b9;} /* Teal! */
 .spelld, a.spelld, a.spelld:visited,
-.spell.divination, a.spell.divination, a.spell.divination:visited,
-.spell.domain, a.spell.domain, a.spell.domain:visited{
+.spell.bonus, a.spell.bonus, a.spell.bonus:visited,
+.spell.domain, a.spell.domain, a.spell.domain:visited,
+.spell.bloodline, a.spell.bloodline, a.spell.bloodline:visited,
+.spell.divination, a.spell.divination, a.spell.divination:visited{
 	font-style:italic;
 	color: #2613f2;} /* Blue! */
 .spellen, a.spellen, a.spellen:visited,
