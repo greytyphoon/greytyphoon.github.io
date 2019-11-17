@@ -29,7 +29,9 @@ dl.charInfo > dd {
 #subheader > dd.archetype  {
 	font-size: .75rem; }
 /* Removes redundant margin at top of page, and makes the subheader's BG not take all the height */
-section.row > .charInfo { margin-bottom: auto; }
+@media print, screen and (min-width: 768px) {
+	section.row > .charInfo { margin-bottom: auto; }
+}
 
 /*feats*/
 dl#featsWrapper > dt{
