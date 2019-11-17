@@ -18,11 +18,11 @@
  * #c62825 murder-red
  **/
 * { box-sizing: border-box; line-height: 1.2em; }
-html { font-size: 16px; }
-body {
-	margin: 0;
+html {
+	font-size: 16px;
 	font-family: 'Mirza', 'Varela', 'Roboto', 'Segoe UI', sans-serif;
 	color: #0b0608; /*murder-black*/ }
+body { margin: 0;}
 a, a:link, a:visited, a:active {
 	color: #c62825; /*murder-red*/
 	text-decoration: none; }
@@ -111,7 +111,6 @@ header h1, #header h1 {
 	section.row > * + * { margin-left: 1rem; }
 }
 
-
 /********************
  * Custom Components   (.title, h2/.subtitle, .apartee, .float-right, .br)
  */
@@ -165,5 +164,5 @@ table.table-cornered td {
 	.noprint { display: none !important; }
 
 	/* make stuff smaller, so more can fit on a page. */
-	body { font-size: 14px !important; }
+	html { font-size: 14px !important; }
 }
