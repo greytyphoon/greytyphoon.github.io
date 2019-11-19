@@ -233,6 +233,8 @@ dl.competences > dd {
 }
 .experience > em {
 	display: block;
+	padding: .75em;
+	padding-bottom: 0;
 	text-align: center;
 }
 .experience > ul {
