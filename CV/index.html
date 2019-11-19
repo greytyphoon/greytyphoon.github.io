@@ -1,252 +1,236 @@
 <html lang="fr">
 <head>
-    <!-- Wow, you know how to check my CV's source code! I want to work for you even more now. -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Wow, you know how to check my CV's source code! I want to work for you even more now. -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Grey's CV</title>
-    <link rel="stylesheet" href="CV.css">
+	<link rel="stylesheet" href="CV.css">
 </head>
 <body>
-    <div class="container">
-        <div id="header">
-            <b>R&eacute;mi Doutre</b><br>
-            <a href="mailto://remidoutre@gmail.com" style="color:black;">remidoutre@gmail.com</a>
-        </div>
-        <div class="float-right apartee br">
-            (438) 494-4593<br/>
-            2148, blvd Rosemont, Mtl QC, H2G 1T4<br>
-            Fran&ccedil;ais, Anglais
-        </div>
+	<div class="container">
+		<header id="header">
+			<h1>R&eacute;mi Doutre</h1>
+			<a href="mailto://remidoutre@gmail.com" style="color:black;">remidoutre@gmail.com</a>
+		</header>
+		<ul class="apartee">
+			<li><a href="tel:438-494-4593">(438) 494-4593</a></li>
+			<li>2148, blvd Rosemont, Mtl QC, H2G 1T4</li>
+			<li>Fran&ccedil;ais, Anglais</li>
+		</ul>
 
-        <!-- title CONNAISSANCES -->
-		<div class="subtitle">Comp&eacute;tences</div>
+		<!-- title CONNAISSANCES -->
+		<h2>Comp&eacute;tences</h2>
 		<dl class="competences">
-            <dt>Languages:</dt>
-            <dd>C#, Java, SQL, HTML, CSS, JavaScript, JSON, XML</dd>
+			<dt>Languages:</dt>
+			<dd>C#, Java, SQL, HTML, CSS, JavaScript, JSON, XML</dd>
 
-            <dt>Frameworks:</dt>
-            <dd>ASP.net (WebApp, MVC), JQuery, Bootstrap</dd>
+			<dt>Frameworks:</dt>
+			<dd>.net Core (Linq), ASP.net (WebApp, MVC), JQuery, Bootstrap</dd>
 
-            <dt>IDE:</dt>
-			<dd>Visual Studio, IntelliJ, Eclipse</dd>
+			<dt>Source Control:</dt>
+			<dd>Git (Sourcetree, command line), BitBucket, <a href="https://github.com/greytyphoon">Github</a></dd>
 
-            <dt>Source Control:</dt>
-			<dd>Git (Sourcetree, command line), BitBucket, Github</dd>
-
-            <dt>R&eacute;seau:</dt>
-			<dd>CPanel, Microsoft SQL Server, IIS, FileZilla, PuTTY</dd>
-
-            <dt>Logiciels Communs:</dt>
-			<dd>Suite Office, OpenOffice, LibreOffice, Trello, Jira, Sharepoint</dd>
+			<dt>R&eacute;seau:</dt>
+			<dd>IIS, FileZilla, Postman, SoapUI, Microsoft SQL Server, PuTTY, CPanel</dd>
 		</dl>
 
-        <!-- title EXPÉRIENCE PROFESSIONNELLE -->
-        <div class="title br">EXP&Eacute;RIENCE PROFESSIONNELLE</div>
+		<!-- title EXPÉRIENCE PROFESSIONNELLE -->
+		<h2>Exp&eacute;rience Professionnelle</h2>
+		<section class="timeline">
+			<div class="experience">
+				<h3>D&eacute;veloppeur <i>back-end</i> / <i>full-stack</i></h3>
+				<a href="mailto:fvaillancourt@absolunet.com">Félix Vaillancourt</a>
+				<a href="mailto:sjourquin@absolunet.com">Soumaya Jourquin</a>
+				<a href="mailto:arichard@absolunet.com">Alexandre Richard</a>
+				<a href="mailto:kmoukui@absolunet.com">Karen Mou Kui</a>
+				<time datetime="2018-04-09">2018</time>
+				<em>Absolunet</em>
+				<ul>
+					<li>Participer aux diff&eacute;rents rituels de la m&eacute;thode Scrum,</li>
+					<li>D&eacute;velopper le code back-end du site de divers clients,</li>
+					<li>Passer rapidement d'un projet &agrave; l'autre, puisque les projets ont souvent un &eacute;ch&eacute;ancier tr&egrave;s aggressif,</li>
+					<li>Effectuer la maintenance des projets pass&eacute;s,</li>
+					<li>&Eacute;crire des tests unitaires et des tests d'int&eacute;gration,</li>
+					<li>Participer &agrave; la base de code partag&eacute;e entre les projets: proposer et effectuer des am&eacute;liorations,</li>
+					<li>Faire un peu de code <i>front-end</i> au besoin,</li>
+					<li><i>Git Master</i> de mon &eacute;quipe.</li>
+				</ul>
+			</div>
 
-        <div class="subtitle">
-            D&eacute;veloppeur back-end / full-stack
-            <div class="float-right text-right">
-                2018 - 2019
-            </div>
-        </div>
-        Absolunet
-		<div class="tabbed-detail br">
-			- Participer aux diff&eacute;rents rituels de la m&eacute;thode Scrum,<br>
-            - D&eacute;velopper le code back-end du site de divers clients,<br>
-            - Passer rapidement d'un projet &agrave; l'autre, puisque les projets ont souvent un &eacute;ch&eacute;ancier tr&egrave;s aggressif,<br>
-            - Effectuer la maintenance des projets pass&eacute;s,<br>
-            - &Eacute;crire des tests unitaires et des tests d'int&eacute;gration,<br>
-            - Participer &agrave; la base de code partag&eacute;e entre les projets: proposer et effectuer des am&eacute;liorations,<br>
-            - Faire un peu de code <em>front-end</em> au besoin.
-		</div>
+			<div class="experience">
+				<h3>D&eacute;veloppeur <i>full-stack</i> &amp; Chef d'&eacute;quipe technique</h3>
+				<!--Louis Vaugeois-->
+				<!--Jonathan Rouillard-->
+				<!--Etienne Scott-->
+				<!--Patrick Laudy-->
+				<!--<a href="mailto:gneveu@athleterms.com" class="noprint">Guillaume Neveu</a>-->
+				<time datetime="2016-01-04">2016</time>
+				<em>Athlete RMS</em>
+				<ul>
+					<li>Maintenir et d&eacute;velopper un site web pour les m&eacute;decins des &eacute;quipes sportives professionelles (NHL, etc.),</li>
+					<li>R&eacute;viser le code des autres membres de l'&eacute;quipe,</li>
+					<li>&Eacute;valuer des librairies externes afin de d&eacute;cider si elles doivent ou peuvent &ecirc;tre inclues dans notre projet,</li>
+					<li>Mettre l'application en production,</li>
+					<li>R&eacute;agir aux urgences, en tout temps,</li>
+					<li>Promouvoir la lisibilit&eacute; et la r&eacute;utilisabilit&eacute; du code dans l'&eacute;quipe,</li>
+					<li>Trouver des solutions innovatrices &agrave; des probl&egrave;mes techniques li&eacute;s &agrave; la maintenance,</li>
+					<li>Participer &agrave; l'implantation de la m&eacute;thodologie agile.</li>
+				</ul>
+			</div>
 
-        <div class="subtitle">
-            Analyste, Programmeur, Chef d'&eacute;quipe technique
-            <div class="float-right text-right">
-                2016 - 2018
-                <!--<a href="mailto:gneveu@athleterms.com" class="noprint">Guillaume Neveu</a>-->
-            </div>
-        </div>
-        Athlete RMS
-		<div class="tabbed-detail br">
-			- Maintenir et d&eacute;velopper un site web pour les m&eacute;decins des &eacute;quipes sportives professionelles (NHL, etc.),<br>
-            - R&eacute;viser le code des autres membres de l'&eacute;quipe,<br>
-            - &Eacute;valuer des librairies externes afin de d&eacute;cider si elles doivent ou peuvent &ecirc;tre inclues dans notre projet,<br>
-            - Mettre l'application en production,<br>
-            - R&eacute;agir aux urgences, en tout temps,<br>
-            - Promouvoir la lisibilit&eacute; et la r&eacute;utilisabilit&eacute; du code dans l'&eacute;quipe,<br>
-            - Trouver des solutions innovatrices &agrave; des probl&egrave;mes techniques li&eacute;s &agrave; la maintenance,<br>
-            - Participer &agrave; l'implantation de la m&eacute;thodologie agile.
-		</div>
+			<div class="experience">
+				<h3>Analyste-Programmeur</h3>
+				<!--<a href="mailto:helene.gervais@desjardins.com" class="noprint">Hélène Gervais</a>-->
+				<!--<a href="mailto:stephane.lacouture@desjardins.com" class="noprint">Stéphane Lacouture</a>-->
+				<time datetime="2014-09-02">2014</time>
+				<em>Desjardins - Direction Solutions Service Client</em>
+				<ul>
+					<li>D&eacute;velopper l'outil Op&eacute;rations en Mode Assist&eacute;, utilis&eacute; par les caissiers,</li>
+					<li>Maintenir de larges syst&egrave;mes peu document&eacute;s en langage <i>Cobol</i>,</li>
+					<li>Pr&eacute;voir les am&eacute;liorations et conseiller mes superviseurs en pr&eacute;parant la migration &agrave; une technologie plus r&eacute;cente,</li>
+					<li>Diviser mon temps entre plusieurs projets, prioriser et agir en cons&eacute;quence,</li>
+					<li>Respecter les exigences de qualit&eacute; les plus strictes, dans les meilleurs d&eacute;lais.</li>
+				</ul>
+			</div>
 
-        <div class="subtitle">
-            Analyste-Programmeur
-            <div class="float-right text-right">
-                2014 - 2016
-                <!--<a href="mailto:helene.gervais@desjardins.com" class="noprint">H&eacute;l&egrave;ne Gervais</a>-->
-            </div>
-        </div>
-        Desjardins - Direction Solutions Service Client
-		<div class="tabbed-detail br">
-			- D&eacute;velopper l'outil Op&eacute;rations en Mode Assist&eacute;, utilis&eacute; par les caissiers,<br>
-			- Maintenir de larges syst&egrave;mes peu document&eacute;s en langage Cobol,<br>
-			- Pr&eacute;voir les am&eacute;liorations et conseiller mes superviseurs en pr&eacute;parant la migration &agrave; une technologie plus r&eacute;cente,<br>
-			- Diviser mon temps entre plusieurs projets, prioriser et agir en cons&eacute;quence,<br>
-			- Respecter les exigences de qualit&eacute; les plus strictes, dans les meilleurs d&eacute;lais.
-		</div>
-
-        <div class="subtitle">
-            Programmeur, Testeur, Am&eacute;lioration Continue
-            <div class="float-right text-right">
-                2014
-                <!--<a href="mailto:romy.martinez@videotron.com" class="noprint">Romy Martinez</a>-->
-            </div>
-        </div>
-		Vid&eacute;otron LTE
-		<div class="tabbed-detail br">
-			- Moderniser les pratiques de l'&eacute;quipe Certification des Appareils,<br>
-			- Cr&eacute;er une interface pour que les autres &eacute;quipes aient acc&egrave;s aux donn&eacute;es dont elles ont besoin,<br>
-			- G&eacute;rer des contraintes d'environnement,<br>
-			- Faire ma propre planification et mon propre suivi pour obtenir des r&eacute;sultats rapides et efficaces.
-		</div>
+			<div class="experience">
+				<h3>Programmeur, Testeur, Am&eacute;lioration Continue</h3>
+				<!--<a href="mailto:romy.martinez@videotron.com" class="noprint">Romy Martinez</a>-->
+				<time datetime="2014-05">2014</time>
+				<em>Vid&eacute;otron LTE</em>
+				<ul>
+					<li>Moderniser les pratiques de l'&eacute;quipe Certification des Appareils,</li>
+					<li>Cr&eacute;er une interface pour que les autres &eacute;quipes aient acc&egrave;s aux donn&eacute;es dont elles ont besoin,</li>
+					<li>G&eacute;rer des contraintes d'environnement,</li>
+					<li>Faire ma propre planification et mon propre suivi pour obtenir des r&eacute;sultats rapides et efficaces.</li>
+				</ul>
+			</div>
 
 <!--
-        #######
-        Oops, you found this.
-        These are my even-older employers, and I believe jobs from 5+ years ago aren't really relevant anymore.
-        Please don't try to contact them, most of those adresses are probably dead anyway.
-        #######
+#######
+ Oops, you found this.
+ These are my even-older employers, and I believe jobs from 5+ years ago aren't really relevant anymore.
+ Please don't try to contact them, most of those adresses are probably dead anyway.
+#######	
 
-        <div class="subtitle">
-            Analyste-Programmeur
-            <div class="float-right text-right">
-                2013<br>
-                <a href="mailto:wei-chao.chou@aero.bombardier.net" class="noprint">Wei-Chao Chou</a><br>
-                <a href="mailto:christine.lebel@aero.bombardier.net" class="noprint">Christine Lebel</a><br>
-                <a href="mailto:david.bessis@aero.bombardier.net" class="noprint">David Bessis</a>
-            </div>
-        </div>
-		Bombardier A&eacute;ronautique
-		<div class="tabbed-detail br">
-			- Travailler de pair avec les planificateurs de Bombardier pour trouver des solutions &agrave; leurs probl&egrave;mes,<br>
-			- G&eacute;rer une petite &eacute;quipe de programmeurs pour atteindre des &eacute;ch&eacute;anciers serr&eacute;s, incluant une gestion de base des ressources humaines de l'&eacute;quipe et de la production d'&eacute;ch&eacute;anciers officiels fiables,<br>
-			- Cr&eacute;er une interface famili&egrave;re, &eacute;l&eacute;gante, et souple,<br>
-			- Faire la convertion d'applications &agrave; une technologie plus r&eacute;cente.
-		</div>
+			<div class="experience">
+				<h3>Analyste-Programmeur Stagiaire</h3>
+				<time datetime="2013-01">2013</time>
+				<a href="mailto:wei-chao.chou@aero.bombardier.net">Wei-Chao Chou</a>
+				<a href="mailto:christine.lebel@aero.bombardier.net">Christine Lebel</a>
+				<a href="mailto:david.bessis@aero.bombardier.net">David Bessis</a>
+				<em>Bombardier A&eacute;ronautique</em>
+				<ul>
+					<li>Travailler de pair avec les planificateurs de Bombardier pour trouver des solutions &agrave; leurs probl&egrave;mes,</li>
+					<li>G&eacute;rer une petite &eacute;quipe de programmeurs pour atteindre des &eacute;ch&eacute;anciers serr&eacute;s, incluant une gestion de base des ressources humaines de l'&eacute;quipe et de la production d'&eacute;ch&eacute;anciers officiels fiables,</li>
+					<li>Cr&eacute;er une interface famili&egrave;re, &eacute;l&eacute;gante, et souple,</li>
+					<li>Faire la convertion d'applications &agrave; une technologie plus r&eacute;cente.</li>
+				</ul>
+			</div>
 
-        <div class="subtitle">
-            Analyste-Programmeur
-            <div class="float-right text-right">
-                2012<br>
-                <a href="mailto:christian.r.rouillard@desjardins.com" class="noprint">Christian Rouillard</a>
-            </div>
-        </div>
-		Desjardins - &Eacute;quipe Outils et Rapports
-		<div class="tabbed-detail br">
-			- Recevoir les demandes des gestionnaires de l'entreprise et cr&eacute;er les rapports dont ils ont besoin (par exemple, le nombre de pannes par jour li&eacute;es &agrave; l'implantation d'Office 2010),<br>
-			- Faire le suivi afin d'assurer la qualit&eacute; des rapports,<br>
-			- Travailler avec une base de donn&eacute;es complexe et r&eacute;partie en plusieurs centres,<br>
-			- Respecter des d&eacute;lais parfois tr&egrave;s courts.
-		</div>
+			<div class="experience">
+				<h3>Analyste-Programmeur</h3>
+				<time datetime="2012-06-26">2012</time>
+				<a href="mailto:christian.r.rouillard@desjardins.com">Christian Rouillard</a>
+				<em>Desjardins - &Eacute;quipe Outils et Rapports</em>
+				<ul>
+					<li>Recevoir les demandes des gestionnaires de l'entreprise et cr&eacute;er les rapports dont ils ont besoin (par exemple, le nombre de pannes par jour li&eacute;es &agrave; l'implantation d'Office 2010),</li>
+					<li>Faire le suivi afin d'assurer la qualit&eacute; des rapports,</li>
+					<li>Travailler avec une base de donn&eacute;es complexe et r&eacute;partie en plusieurs centres,</li>
+					<li>Respecter des d&eacute;lais parfois tr&egrave;s courts.</li>
+				</ul>
+			</div>
 
-        <div class="subtitle">
-            Beta-Testeur
-            <div class="float-right text-right">
-                2012<br>
-                <a href="mailto:julie@atelierv.ca" class="noprint">Julie Rodrigue</a>
-            </div>
-        </div>
-		Atelier V
-		<div class="tabbed-detail br">
-			- Tester des sites internets (et autres plateformes en ligne), cr&eacute;&eacute;s par la compagnie pour divers clients,<br>
-			- Fournir une description la plus compl&egrave;te possible dans chaque cas,<br>
-			- Proposer diverses solutions &agrave; tous les probl&egrave;mes,<br>
-			- G&eacute;rer une partie du flot du d&eacute;veloppement, en s'assurant de rediriger les diff&eacute;rents bugs &agrave; un programeur qui pourra les r&eacute;gler,<br>
-			- Travailler rapidement mais en profondeur.
-		</div>
+			<div class="experience">
+				<h3>Beta-Testeur</h3>
+				<time datetime="2012-04-16">2012</time>
+				<a href="mailto:julie@atelierv.ca">Julie Rodrigue</a>
+				<em>Atelier V</em>
+				<ul>
+					<li>Tester des sites internets (et autres plateformes en ligne), cr&eacute;&eacute;s par la compagnie pour divers clients,</li>
+					<li>Fournir une description la plus compl&egrave;te possible dans chaque cas,</li>
+					<li>Proposer diverses solutions &agrave; tous les probl&egrave;mes,</li>
+					<li>G&eacute;rer une partie du flot du d&eacute;veloppement, en s'assurant de rediriger les diff&eacute;rents bugs &agrave; un programeur qui pourra les r&eacute;gler,</li>
+					<li>Travailler rapidement mais en profondeur.</li>
+				</ul>
+			</div>
 
-        <div class="subtitle">
-            Analyste-Programmeur
-            <div class="float-right text-right">
-                2011<br>
-                <a href="mailto:guy.cyr@keops.com" class="noprint">Guy Cyr</a>
-            </div>
-        </div>
-		Keops Technologies Inc
-		<div class="tabbed-detail br">
-			- &Agrave; partir du logiciel Infinity Quality Suite, cr&eacute;er des programmes de gestion d'usine pour Kraft (le principal client de Keops),<br>
-			- Se renseigner sur le fonctionnement actuel des usines et adapter le logiciel,<br>
-			- Se rendre sur place, faire l'installation technique et la formation du personnel,<br>
-			- Faire les ajustements de derni&egrave;re minute n&eacute;cessaires.
-		</div>
+			<div class="experience">
+				<h3>Programmeur Stagiaire</h3>
+				<time datetime="2011-06-06">2011</time>
+				<a href="mailto:guy.cyr@keops.com">Guy Cyr</a>
+				<em>Keops Technologies Inc</em>
+				<ul>
+					<li>&Agrave; partir du logiciel Infinity Quality Suite, cr&eacute;er des programmes de gestion d'usine pour Kraft (le principal client de Keops),</li>
+					<li>Se renseigner sur le fonctionnement actuel des usines et adapter le logiciel,</li>
+					<li>Se rendre sur place, faire l'installation technique et la formation du personnel,</li>
+					<li>Faire les ajustements de derni&egrave;re minute n&eacute;cessaires.</li>
+				</ul>
+			</div>
 
-        <div class="subtitle">
-            Programmeur
-            <div class="float-right text-right">
-                2010<br>
-                <a href="mailto:syelle@isynergy.com" class="noprint">St&eacute;phane Yelle</a>
-            </div>
-        </div>
-		D&eacute;partement d'informatique de DICOM Express
-		<div class="tabbed-detail br">
-			- Cr&eacute;er de nouvelles applications et moderniser d'anciennes,<br>
-			- Programmer selon des standards d'entreprise,<br>
-			- Faire preuve d'int&eacute;grit&eacute; en travaillant sur la s&eacute;curit&eacute; du r&eacute;seau de l'entreprise,<br>
-			- Optimiser le temps de r&eacute;action du code sans sacrifier la lisibilit&eacute;.
-		</div>
+			<div class="experience">
+				<h3>Programmeur Stagiaire</h3>
+				<time datetime="2010-05-17">2010</time>
+				<a href="mailto:syelle@isynergy.com">St&eacute;phane Yelle</a>
+				<em>D&eacute;partement d'informatique de DICOM Express</em>
+				<ul>
+					<li>Cr&eacute;er de nouvelles applications et moderniser d'anciennes,</li>
+					<li>Programmer selon des standards d'entreprise,</li>
+					<li>Faire preuve d'int&eacute;grit&eacute; en travaillant sur la s&eacute;curit&eacute; du r&eacute;seau de l'entreprise,</li>
+					<li>Optimiser le temps de r&eacute;action du code sans sacrifier la lisibilit&eacute;.</li>
+				</ul>
+			</div>
 -->
-        
-        <!-- title FORMATION -->
-        <div class="title br">FORMATION</div>
-        <div class="subtitle">
-            Dipl&ocirc;me d'&eacute;tudes coll&eacute;giales - Informatique de Gestion
-            <div class="float-right text-right">Finissant en 2011</div>
-        </div>
-        Coll&egrave;ge de Valleyfield
-        <div class="tabbed-detail br">
-            - Dipl&ocirc;me ATE (Alternance Travail-&Eacute;tude)
-        </div>
-        <div class="subtitle">
-            Certification &mdash; D&eacute;veloppeur Scrum Professionnel
-            <div class="float-right text-right">2019</div>
-        </div>
-        <div class="tabbed-detail br">
-            - Certification PSD officielle reconnue par <a href="https://www.scrum.org/certificates/430945">Scrum.org</a>
-        </div>
+		</section>
 
-        <!-- title AUTRE -->
-        <div class="title br">AUTRES EXP&Eacute;RIENCES</div>
-        <div class="subtitle">
-            Concours de cr&eacute;ation de Jeu Vid&eacute;o (<i>Game Jams</i>)
-            <div class="float-right text-right">
-                2008 - 2018
-            </div>
-        </div>
-		LudumDare, Yoyo Games, etc.
-		<div class="tabbed-detail br">
-			- Cr&eacute;er des jeux sur un th&egrave;me impos&eacute;, avec un temps limite (typiquement 48h),<br>
-			- D&eacute;velopper la cr&eacute;ativit&eacute; et l'originalit&eacute;,<br>
-			- Faire des recherches efficaces,<br>
-			- Prendre des d&eacute;cisions rapidement,<br>
-			- D&eacute;cider si une complexit&eacute; de programmation en vaut la peine.
-		</div>
+		<h2 class="newPage">Formation &amp; Autres Exp&eacute;riences</h2>
+		<section class="row">
+			<div>
+				<div class="experience formation" style="margin-bottom: .75rem;">
+					<h3>Dipl&ocirc;me d'&eacute;tudes coll&eacute;giales - Informatique de Gestion</h3>
+					<em>Coll&egrave;ge de Valleyfield</em>
+					<ul>
+						<li>Finissant <time datetime="2011">en 2011</time></li>
+						<li>Dipl&ocirc;me ATE (Alternance Travail-&Eacute;tude)</li>
+					</ul>
+				</div>
 
-        <div class="subtitle">
-            Et en g&eacute;n&eacute;ral...
-        </div>
-		<div class="tabbed-detail">
-			- Au courant des nouveaut&eacute;s et des enjeux dans le domaine des technologies,<br>
-			- Propri&eacute;taire d'une console Ouya, d'une Raspberry Pi 3 avec RetroPie, et d'une imprimante 3D,<br>
-            - Capable de lire l'espagnol, d'essayer de l'&eacute;crire et l'&eacute;couter, et de prononcer quelques phrases malhabiles,<br>
-            - En g&eacute;n&eacute;ral int&eacute;ress&eacute; par les langues, connaissant quelques mots en italien, allemand, russe, japonais, klingon et autres,<br>
-			- Grand amateur d'&eacute;toiles filantes,<br>
-			- Soucieux du d&eacute;tail, cr&eacute;atif, d&eacute;brouillard et responsable.
-		</div>
+				<div class="experience formation">
+					<h3>Certification &mdash; D&eacute;veloppeur Scrum Professionnel</h3>
+					<em><a href="https://www.scrum.org/certificates/430945">Scrum.org</a></em>
+					<ul>
+						<li>Obtenu <time datetime="2019-07-15">en juillet 2019</time></li>
+						<li>Reconnaissance de ma ma&icirc;trise de la m&eacute;thodologie Agile Scrum</li>
+					</ul>
+				</div>
+			</div>
+			<div class="experience connexe">
+				<h3>Concours de cr&eacute;ation de Jeu Vid&eacute;o (<i>Game Jams</i>)</h3>
+				<em>LudumDare, Yoyo Games, etc.</em>
+				<ul>
+					<li>Cr&eacute;er des jeux sur un th&egrave;me impos&eacute;, dans une limite de 48h,</li>
+					<li>D&eacute;velopper la cr&eacute;ativit&eacute; et l'originalit&eacute;,</li>
+					<li>Faire des recherches efficaces,</li>
+					<li>Prendre des d&eacute;cisions rapidement,</li>
+					<li>D&eacute;cider si une complexit&eacute; de programmation en vaut la peine.</li>
+				</ul>
+			</div>
+		</section>
+
+		<h2>Et en g&eacute;n&eacute;ral...</h2>
+		<ul>
+			<li>Au courant des nouveaut&eacute;s et des enjeux dans le domaine des technologies,</li>
+			<li>Propri&eacute;taire d'une console Ouya, d'une Raspberry Pi 3 avec RetroPie, et d'une imprimante 3D,</li>
+			<li>Capable de lire l'espagnol, d'essayer de l'&eacute;crire et l'&eacute;couter, et de prononcer quelques phrases malhabiles,</li>
+			<li>En g&eacute;n&eacute;ral int&eacute;ress&eacute; par les langues, connaissant quelques mots en italien, allemand, russe, japonais, klingon et autres,</li>
+			<li>Grand amateur d'&eacute;toiles filantes,</li>
+			<li>Soucieux du d&eacute;tail, cr&eacute;atif, d&eacute;brouillard et responsable.</li>
+		</ul>
 	</div>
-    <div id="fixref">
-        R&eacute;mi Doutre -
-        <a href="mailto://remidoutre@gmail.com">remidoutre@gmail.com</a> - 
-        <a href="https://www.linkedin.com/in/remidoutre">LinkedIn</a>
-    </div>
+	<nav id="fixref" class="noprint">
+		R&eacute;mi Doutre -
+		<a href="mailto://remidoutre@gmail.com">remidoutre@gmail.com</a> -
+		<a href="https://www.linkedin.com/in/remidoutre">LinkedIn</a>
+	</nav>
 </body>
 </html>

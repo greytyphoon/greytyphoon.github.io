@@ -1,5 +1,4 @@
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css");
-/** Created by Rémi Doutre, 2015-2018. Public domain. **/
+/** Created by RÃ©mi Doutre, 2015-2019. Public domain. **/
 
 /**
  * Custom Palette:
@@ -18,109 +17,265 @@
  * #eaebef murder-grey
  * #c62825 murder-red
  **/
-body { color: #0b0608; /*murder-black*/ }
-
-ul,li { line-height: 1.15em; }
-
+* { box-sizing: border-box; line-height: 1.2em; }
+html {
+	font-size: 16px;
+	font-family: 'Mirza', 'Varela', 'Roboto', 'Segoe UI', sans-serif;
+	color: #0b0608; /*murder-black*/ }
+body { margin: 0;}
 a, a:link, a:visited, a:active {
-    color: #c62825; /*murder-red*/}
+	color: #c62825; /*murder-red*/
+	text-decoration: none; }
 a:hover {
-    text-shadow: 0px 0px 1px; }
+	text-decoration: underline;
+	text-shadow: 0px 0px 1px; }
+hr {
+	border: none;
+	border-bottom: 1px solid #a9a9a9; /* html-darkgrey */
+	clear: both; }
+code {
+	display: inline-block;
+	background-color: #eaebef;
+	border-radius: .25em;
+	padding: 0 .15em; }
+ul, ol, dl, p { margin: 0 0 .75em 0; }
+
+/********************
+ * Basic page layout	(.container, #fixref, #header)
+ */
 
 @media screen {
-    body {
-        overflow-y: scroll;
-        background-color: #eaebef; /*murder-grey*/
-    }
-    body > .container {
-        background-color: #ffffff; /*html-white*/
-        border-left: 1px solid #a9a9a9; /*html-darkgrey*/
-        border-right: 1px solid #a9a9a9; /*html-darkgrey*/
-        padding-top: 10px;
-        min-height: 100%;
-    }
+	body > .container { padding: 10px 25px .5px 25px; }
 }
-@media print {
-    .newPage { page-break-before: always; }
-    .noprint { display: none !important; }
-    
-    /* make stuff smaller, so more can fit on a page. */
-    body { font-size: 16px !important; }
+@media screen and (min-width: 576px) {
+	body {
+		overflow-y: scroll;
+		background-color: #eaebef; } /*murder-grey*/
+	body > .container {
+		background-color: #ffffff; /*html-white*/
+		border-left: 1px solid #a9a9a9; /*html-darkgrey*/
+		border-right: 1px solid #a9a9a9; /*html-darkgrey*/
+		margin: 0 auto;
+		max-width: 540px;
+		min-height: 100%; }
+	body > .container::after {
+		content: "";
+		display: block;
+		clear: both; } /* clearfix */
+}
+@media screen and (min-width: 768px) {
+	body > .container { max-width: 720px; }
+}
+@media screen and (min-width: 992px) {
+	body > .container { max-width: 960px; }
+}
+@media screen and (min-width: 1200px) {
+	body > .container { max-width: 1140px; }
+}
 
-    /* fix a Chrome Bug where the width when printing is always 550px... I want Bootstrap-lg when printing, though */
-    .container { max-width: none !important; }
+#fixref  {
+	background-color: #ffffff; /*html-white*/
+	border-bottom: 1px solid #a9a9a9; /*html-darkgrey*/
+	text-align: center; }
+@media screen and (min-width: 768px){
+	#fixref {
+		position: fixed;
+		bottom: 10;
+		right: 10;
+		z-index: 5;
+		border: 1px solid #a9a9a9; /*html-darkgrey*/
+		border-radius: 3px;
+		padding: .1em .25em;
+	}
+}
+
+header, #header {
+	padding: 8px;
+	margin: 0px -15px 15px -15px;
+	border-radius: 6px;
+	text-align: center;
+	background-color: #c62825; /*murder-red*/
+	border: 1px solid #c62825; /*murder-red*/
+	box-shadow: 2px 2px 2px #a9a9a9;} /*html-darkgrey*/
+header h1, #header h1 {
+	font-size: inherit;
+	font-weight: bold;
+	margin: 0; }
+
+/********************
+ * Grid
+ */
+@media screen and (min-width: 768px), print{
+	section.row { display: flex; flex-wrap: wrap; }
+	section.row > * { flex: 1; }
+	section.row > * + * { margin-left: 1rem; }
 }
 
 /********************
- * Custom Components   (#fixref, #header, .title, .subtitle, .apartee, .tabbed-detail, .br, dl.competences)
+ * Custom Components   (.title, h2/.subtitle, .apartee, .float-right, .br)
  */
 
-#fixref  {
-    background-color: #ffffff; /*html-white*/
-    border: 1px solid #a9a9a9; /*html-darkgrey*/
-    border-radius: 3px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 5;}
-@media print { #fixref { display: none; } }
-@media screen and (max-width: 767px){
-    #fixref {
-        position: initial;
-        border-radius: 0px;
-        text-align: center;
-    }
-}
+h2 {
+	border-bottom: 1px solid #eaebef; /*murder-grey*/
+	display: block;
+	font-size: inherit;
+	font-weight: bold;
+	margin: .75em 0 .5em 0; }
 
-#header {
-    padding: 8px;
-    margin: 0px 0px 15px 0px;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 1.15em;
-    background-color: #c62825; /*murder-red*/
-    border: 1px solid #c62825; /*murder-red*/
-    box-shadow: 2px 2px 2px #a9a9a9;} /*html-darkgrey*/
-
-/* Section titles, encased in two black lines */
-.title {
-    border-top: 1px solid #0b0608; /*murder-black*/
-    border-bottom: 1px solid #0b0608; /*murder-black*/
-    font-size: 1.15em; }
-
-.subtitle {
-    border-bottom: 1px solid #eaebef; /*murder-grey*/
-    display: block;
-    font-size: 1.15em;
-    font-weight: bold;
-    margin-bottom: 5px; }
-    
 .apartee {
-    background-color: #eaebef; /*murder-grey*/
-    border: 1px dashed #a9a9a9; /*html-darkgrey*/
-    border-radius: 6px;
-    padding: 5px;
-    font-size: .85em; }
+	list-style: none;
+	float: right;
+	background-color: #eaebef; /*murder-grey*/
+	border: 1px dashed #a9a9a9; /*html-darkgrey*/
+	border-radius: 6px;
+	padding: .25em .5em;
+	font-size: .75rem;
+	text-align: center; }
+
+/********************
+ * Printing tweaks
+ */
+
+@media print {
+	.newPage { page-break-before: always; }
+	.noprint { display: none !important; }
+
+	/* make stuff smaller, so more can fit on a page. */
+	html { font-size: 14px !important; }
+}
 
 /* displayed on the line below what they affect, slightly smaller, with a "tab" */
 .tabbed-detail {
-    font-size: .85em;
-    margin-left: 20px; }
+	font-size: .85em;
+	margin-left: 20px; }
 
-.br { /*for 'breathing room' after a paragraph. Does not simply replace random <br>s in my code, no sir. Obviously not. */
-    margin-bottom: 0.75rem; }
-
-dl.competences {
-    line-height: 1.4em;
-    margin-bottom: 1.15rem; }
 dl.competences > dt {
-    color: #a9a9a9; /*html-darkgrey*/
-    font-weight: normal;
-    font-style: italic;
-    float: left;
-    text-align: right;
-    min-width: 145px;
-    vertical-align: top; }
+	color: #a9a9a9; /*html-darkgrey*/
+	font-weight: normal;
+	font-style: italic;
+	float: left;
+	text-align: right;
+	min-width: 145px;
+	vertical-align: top; }
 dl.competences > dd {
-    margin-left: 150px; /* the floating <dt> will go above this margin */
-    margin-bottom: 0; /* overwrite bootstrap */}
+	margin-left: 150px; /* the floating <dt> will go above this margin */
+	margin-bottom: 0; /* overwrite bootstrap */}
+
+
+:root {
+	--murder-black: #0b0608;
+	--murder-grey: #eaebef;
+	--murder-red: #c62825;
+	--html-white: #ffffff;
+	--html-darkgrey: #a9a9a9; }
+
+.timeline {
+  transition: all .4s ease;
+  position: relative;
+  counter-reset: section;
+  margin-left: 4em;
+}
+.timeline:before { /* The vertical line at the middle */
+  content: "";
+  width: .5rem;
+  height: 100%;
+  background: var(--murder-grey);
+  position: absolute;
+  top: .25rem;
+  left: -2.25rem;
+  border-radius: 1rem 1rem;
+}
+
+.experience {
+	position: relative;
+	border: 3px solid var(--murder-red);
+	border-radius: 0 15px;
+	margin-bottom: 1rem;
+}
+.experience > h3 {
+	color: var(--html-white);
+	background-color: var(--murder-red);
+	border-top-right-radius: 10px;
+	font-size: 1rem;
+	margin: -1px;
+	padding: .5rem 1rem;
+}
+.experience > time { /* The circle on the timeline with the number */
+	position: absolute;
+	top: 0;
+	left: -3.75rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	border: 3px solid var(--murder-red);
+	border-radius: 50%;
+	background-color: var(--html-white);
+	color: var(--murder-black);
+	text-shadow: 0 1px 0 var(--murder-black);
+	z-index: 1;
+}
+.experience > time:before { /* The pointy thing that connects to the timeline */
+	content: "";
+	position: absolute;
+	left: 100%;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: .75rem solid transparent;
+	border-bottom: .75rem solid transparent;
+	border-left: .75rem solid var(--murder-red);
+	z-index: 1;
+}
+.experience > a {
+	display: none;
+}
+.experience > em {
+	display: block;
+	text-align: center;
+}
+.experience > ul {
+	padding: .75rem;
+	padding-left: 40px;
+	margin: 0;
+}
+
+@supports (display: grid) {
+@media print, screen and (min-width: 768px) {
+	.timeline {
+		grid-gap: 1rem 4rem;
+		grid-template-columns: 1fr 1fr;
+		margin: 0;
+		display: grid;
+	}
+	
+	/* block the top-right spot. Disaligns the left and right columns. */
+	.timeline::after {
+		content: "";
+		display: block;
+		height: 6rem;
+		grid-row: 1 / 2;
+		grid-column: 2 / 3;
+	}
+
+	.experience {
+		grid-row: span 2;
+		margin-bottom: auto;
+	}
+	.timeline:before {
+		left: calc(50% - .25rem);
+	}
+	.experience:nth-of-type(odd) > time {
+		left: calc(100% + .75rem);
+	}
+
+	/* Move the arrow on the other side/the bottom */
+	.experience:nth-of-type(odd) > time:before {
+		left: unset;
+		right: 100%;
+		border-left: 0;
+		border-right: .75rem solid var(--murder-red);
+	}
+}
+}
