@@ -21,8 +21,8 @@ dl.charInfo > dt {
 dl.charInfo > dd {
 	margin-left: 40%; } /* the floating <dt> will go above this margin */
 #subheader  {
-	background-color: #eaebef; /*murder-grey*/
-	border: 1px dashed #a9a9a9; /*html-darkgrey*/
+	background-color: var(--murder-grey);
+	border: 1px dashed var(--html-darkgrey);
 	border-radius: 4px;
 	padding: 2px;
 	font-size: 1rem; }
@@ -56,14 +56,14 @@ dl#featsWrapper > dd{
 
 /*weapons*/
 .weapon {
-	border: 1px solid #c62825; /*murder-red*/
+	border: 1px solid var(--murder-red);
 	border-radius: 4px;
 	padding: 4px 10px;
 	margin-bottom: 0.75rem; }
 .weapon > .weaponHead,
 .weapon > h2 {
-	background-color:#c62825; /*murder-red*/
-	border-bottom: 1px solid #c62825; /*murder-red*/
+	background-color: var(--murder-red);
+	border-bottom: 1px solid var(--murder-red);
 	margin: -4px -10px 4px -10px;
 	padding: .15em .5em;
 	font-weight: bold; }
@@ -74,14 +74,18 @@ dl#featsWrapper > dd{
 	float: right;
 	font-size: 0.75rem;
 	margin-left: 1rem; }
-ul#mundaneItemsWrapper{ list-style: none; padding-left: 0; }
+ul#mundaneItemsWrapper{
+	list-style: none;
+	padding-left: 0; }
 #magicItemsWrapper{
 	float: right;
 	text-align: right;
 	margin-bottom: 10px }
-ul#magicItemsWrapper{ list-style: none; padding-left: 0; }
+ul#magicItemsWrapper{
+	list-style: none;
+	padding-left: 0; }
 .emptyitemslot {
-	color: #a9a9a9; } /*html-darkgrey*/
+	color: var(--html-darkgrey); }
 @media screen and (max-width: 767px) {
 	#mundaneItemsWrapper{
 		display: none; }
@@ -105,6 +109,6 @@ ul#sources ul { margin-left: 15px; }
 
 /*xp*/
 #xp {
-	color:#ffffff; /*html-white*/
+	color: var(--html-white);
 	margin-top: -1.2em;
 	text-align: left; }

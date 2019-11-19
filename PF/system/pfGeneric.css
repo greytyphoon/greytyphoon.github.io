@@ -14,7 +14,7 @@
 
 /* Uniform style and auto-parenthesis for anywhere I list bonus types */
 .listBonuses {
-	color: #a9a9a9; /*html-darkgrey*/
+	color: var(--html-darkgrey);
 	font-size: .75rem;
 	font-weight: normal; }
 .listBonuses:before { content: "("; }
@@ -75,11 +75,11 @@
  * CharStudies and Tables
  */
 #tblComparison {
-	color: #0b0608; /*murder-black*/
+	color: var(--murder-black);
 	border-collapse: collapse !important; /*removed from datatable css*/
 	text-align: center;
 	font-size: .75rem; }
-#tblComparison th { border-bottom: 1px solid #0b0608; }
+#tblComparison th { border-bottom: 1px solid var(--murder-black); }
 #tblComparison td { padding: .2em; }
 
 .awesome { background-color:#33b5e5; }

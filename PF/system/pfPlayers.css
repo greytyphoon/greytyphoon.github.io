@@ -3,27 +3,27 @@
 
 /*xp*/
 #xp {
-	color:#ffffff; /*html-white*/
+	color: var(--html-white);
 	margin-top: -1.2em;
 	text-align: left; }
 a#xp { display: block; }
 
 /*houserules*/
 #houserules {
-	color:#ffffff; /*html-white*/
+	color: var(--html-white);
 	margin-top: -1.2em;
 	text-align: right; }
 a#houserules { display: block; }
 
 /*playersLootValue*/
 table.playerInfo  {
-	border: 1px #eaebef solid; /*murder-grey*/
+	border: 1px solid var(--murder-grey);
 	border-collapse: collapse;
 	margin-bottom: .5rem;
 	width: 100%; }
 table.playerInfo th {
-	background-color:#eaebef; /*murder-grey*/
+	background-color: var(--murder-grey);
 	text-align: center; }
 table.playerInfo td {
-	border: 1px #eaebef solid; /*murder-grey*/
+	border: 1px solid var(--murder-grey);
 	text-align: center; }

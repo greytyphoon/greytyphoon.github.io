@@ -10,7 +10,9 @@
  * #ffffff html-white
  * #a9a9a9 html-darkgrey
  **/
-a, a:link, a:visited, a:active { color: #2573c6; /*murder-red*/}
+:root {
+	--virtue-blue: #2573c6;
+	--murder-red: var(--virtue-blue); }
 
 /********************
  * Custom Components   (#fixref, #header, .credit, .actionStep)
@@ -19,7 +21,7 @@ a, a:link, a:visited, a:active { color: #2573c6; /*murder-red*/}
     bottom: -2px; /* In this page, fixref looks like a draggable tab from the bottom. Solves weird issues with iframes and bottom border. */ }
 #fixref > div { 
     padding: .35em; 
-    border-bottom: 1px solid #a9a9a9;}
+    border-bottom: 1px solid var(--html-darkgrey); }
 #fixref #minimize { float: right; }
 #fixref iframe {
     transition: height 2s;
@@ -29,14 +31,10 @@ a, a:link, a:visited, a:active { color: #2573c6; /*murder-red*/}
     #fixref iframe { width: 100%; margin-left: 0; }
 }
 
-#header {
-    background-color: #2573c6; /*murder-red*/
-    border-color: #2573c6; } /*murder-red*/
-
 /* I use this when I want to say who gave me this recipe. */
 span.credit { /* inspired from Pathfinder's .listBonuses */
 	display: inline-block;
-    color: #a9a9a9; /*html-darkgrey*/
+    color: var(--html-darkgrey);
     font-size: .75rem;
     font-weight: normal; }
 span.credit::before { content: "(\00e0  la "; }
@@ -44,6 +42,6 @@ span.credit::after { content: ")"; }
 
 /* I use this when I'm writing directions for a recipe */
 li.actionStep {
-    color: #a9a9a9; /*html-darkgrey*/
+    color: var(--html-darkgrey);
     padding-left: 1rem;
     list-style-type: circle; }

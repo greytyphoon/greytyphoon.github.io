@@ -10,20 +10,18 @@
  * #ffffff html-white
  * #a9a9a9 html-darkgrey
  **/
-a, a:link, a:visited, a:active { color: #74C625; /*murder-red*/}
+:root {
+	--minuet-green: #74C625;
+	--murder-red: var(--minuet-green); }
 
 /********************
- * Custom Components   (#header, .credit)
+ * Custom Components   (.credit)
  */
-#header {
-    background-color: #74C625; /*murder-red*/
-    border-color: #74C625; } /*murder-red*/
 
 /* I use this when I want to say who taught me this song. */
 span.credit { /* inspired from Pathfinder's .listBonuses */
 	display: inline-block;
-    color: #a9a9a9; /*html-darkgrey*/
-    font-size: .75rem;
-    font-weight: normal; }
+    color: var(--html-darkgrey);
+    font-size: .75rem; }
 span.credit::before { content: "("; }
 span.credit::after { content: ")"; }

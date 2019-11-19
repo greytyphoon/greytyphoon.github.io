@@ -1,41 +1,43 @@
 /** Created by Rémi Doutre, 2015-2019. Public domain. **/
 
 /**
- * Custom Palette:
- * 'Valiance' by Greytyphoon
- * #0b0608 murder-black
- * #eaebef murder-grey
- * #c62825 murder-red
- * #ffffff html-white
- * #a9a9a9 html-darkgrey
- *
- * Palette inspiration: http://www.color-hex.com/color-palette/23446
+ * Palette inspiration: https://www.color-hex.com/color-palette/23446
  * 'Murder and Murdered' by simoneurso
  * #0b0608 murder-black
  * #872927 murder-brown
  * #fcf7f9 murder-white
  * #eaebef murder-grey
  * #c62825 murder-red
+ *
+ * Custom Palette 'Valiance':
  **/
-* { box-sizing: border-box; line-height: 1.2em; }
+:root {
+	--murder-black: #0b0608;
+	--murder-grey: #eaebef;
+	--muder-red: #c62825;
+	--html-white: #ffffff;
+	--html-darkgrey: #a9a9a9; }
+* { 
+	box-sizing: border-box;
+	line-height: 1.2em; }
 html {
 	font-size: 16px;
-	font-family: 'Mirza', 'Varela', 'Roboto', 'Segoe UI', sans-serif;
-	color: #0b0608; /*murder-black*/ }
+	font-family: 'Mirza', 'Roboto', 'Segoe UI', sans-serif;
+	color: var(--murder-black); }
 body { margin: 0;}
 a, a:link, a:visited, a:active {
-	color: #c62825; /*murder-red*/
+	color: var(--murder-red);
 	text-decoration: none; }
 a:hover {
 	text-decoration: underline;
 	text-shadow: 0px 0px 1px; }
 hr {
 	border: none;
-	border-bottom: 1px solid #a9a9a9; /* html-darkgrey */
+	border-bottom: 1px solid var(--html-darkgrey);
 	clear: both; }
 code {
 	display: inline-block;
-	background-color: #eaebef;
+	background-color: var(--murder-grey);
 	border-radius: .25em;
 	padding: 0 .15em; }
 ul, ol, dl, p { margin: 0 0 .75em 0; }
@@ -50,11 +52,11 @@ ul, ol, dl, p { margin: 0 0 .75em 0; }
 @media screen and (min-width: 576px) {
 	body {
 		overflow-y: scroll;
-		background-color: #eaebef; } /*murder-grey*/
+		background-color: var(--murder-grey); }
 	body > .container {
-		background-color: #ffffff; /*html-white*/
-		border-left: 1px solid #a9a9a9; /*html-darkgrey*/
-		border-right: 1px solid #a9a9a9; /*html-darkgrey*/
+		background-color: var(--html-white);
+		border-left: 1px solid var(--html-darkgrey);
+		border-right: 1px solid var(--html-darkgrey);
 		margin: 0 auto;
 		max-width: 540px;
 		min-height: 100%; }
@@ -74,8 +76,8 @@ ul, ol, dl, p { margin: 0 0 .75em 0; }
 }
 
 #fixref  {
-	background-color: #ffffff; /*html-white*/
-	border-bottom: 1px solid #a9a9a9; /*html-darkgrey*/
+	background-color: var(--html-white);
+	border-bottom: 1px solid var(--html-darkgrey);
 	text-align: center; }
 @media screen and (min-width: 768px){
 	#fixref {
@@ -83,7 +85,7 @@ ul, ol, dl, p { margin: 0 0 .75em 0; }
 		bottom: 10;
 		right: 10;
 		z-index: 5;
-		border: 1px solid #a9a9a9; /*html-darkgrey*/
+		border: 1px solid var(--html-darkgrey);
 		border-radius: 3px;
 		padding: .1em .25em;
 	}
@@ -94,9 +96,9 @@ header, #header {
 	margin: 0px -15px 15px -15px;
 	border-radius: 6px;
 	text-align: center;
-	background-color: #c62825; /*murder-red*/
-	border: 1px solid #c62825; /*murder-red*/
-	box-shadow: 2px 2px 2px #a9a9a9;} /*html-darkgrey*/
+	background-color: var(--murder-red);
+	border: 1px solid var(--murder-red);
+	box-shadow: 2px 2px 2px var(--html-darkgrey); }
 header h1, #header h1 {
 	font-size: inherit;
 	font-weight: bold;
@@ -106,9 +108,13 @@ header h1, #header h1 {
  * Grid
  */
 @media screen and (min-width: 768px), print{
-	section.row { display: flex; flex-wrap: wrap; }
-	section.row > * { flex: 1; }
-	section.row > * + * { margin-left: 1rem; }
+	section.row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -1rem; }
+	section.row > * {
+		flex: 1;
+		margin: 0 1rem; }
 }
 
 /********************
@@ -116,12 +122,12 @@ header h1, #header h1 {
  */
 
 .title {
-	border-top: 1px solid #0b0608; /*murder-black*/
-	border-bottom: 1px solid #0b0608; /*murder-black*/
+	border-top: 1px solid var(--murder-black);
+	border-bottom: 1px solid var(--murder-black);
 	clear: both; }
 
 h2, .subtitle {
-	border-bottom: 1px solid #eaebef; /*murder-grey*/
+	border-bottom: 1px solid var(--murder-grey);
 	display: block;
 	font-size: inherit;
 	font-weight: bold;
@@ -131,8 +137,8 @@ h2 > *:not(a), .subtitle > *:not(a) {
 	margin-left: .75em; }
 
 .apartee {
-	background-color: #eaebef; /*murder-grey*/
-	border: 1px dashed #a9a9a9; /*html-darkgrey*/
+	background-color: var(--murder-grey);
+	border: 1px dashed var(--html-darkgrey);
 	border-radius: 6px;
 	padding: .25em .5em;
 	font-size: .75rem; }
@@ -148,9 +154,9 @@ h2 > *:not(a), .subtitle > *:not(a) {
  */
 table.table-cornered th,
 table.table-cornered td {
-	border-left: 1px solid #a9a9a9; /*html-darkgrey*/
-	border-bottom: 1px solid #a9a9a9; /*html-darkgrey*/
-	color: #0b0608; /*murder-black*/
+	border-left: 1px solid var(--html-darkgrey);
+	border-bottom: 1px solid var(--html-darkgrey);
+	color: var(--murder-black);
 	padding: .15em;
 	text-align:center;
 	width:25%; }
