@@ -1,41 +1,41 @@
 /** Created by Rémi Doutre, 2015-2019. Public domain. **/
 
 /**
- * Custom Palette:
- * 'Valiance' by Greytyphoon
- * #0b0608 murder-black
- * #eaebef murder-grey
- * #c62825 murder-red
- * #ffffff html-white
- * #a9a9a9 html-darkgrey
- *
- * Palette inspiration: http://www.color-hex.com/color-palette/23446
+ * Palette inspiration: https://www.color-hex.com/color-palette/23446
  * 'Murder and Murdered' by simoneurso
  * #0b0608 murder-black
  * #872927 murder-brown
  * #fcf7f9 murder-white
  * #eaebef murder-grey
  * #c62825 murder-red
+ *
+ * Custom Palette 'Valiance':
  **/
+:root {
+	--murder-black: #0b0608;
+	--murder-grey: #eaebef;
+	--murder-red: #c62825;
+	--html-white: #ffffff;
+	--html-darkgrey: #a9a9a9; }
 * { box-sizing: border-box; line-height: 1.2em; }
 html {
 	font-size: 16px;
-	font-family: 'Mirza', 'Varela', 'Roboto', 'Segoe UI', sans-serif;
-	color: #0b0608; /*murder-black*/ }
+	font-family: 'Roboto', 'Segoe UI', sans-serif;
+	color: var(--murder-black); }
 body { margin: 0;}
 a, a:link, a:visited, a:active {
-	color: #c62825; /*murder-red*/
+	color: var(--murder-red);
 	text-decoration: none; }
 a:hover {
 	text-decoration: underline;
 	text-shadow: 0px 0px 1px; }
 hr {
 	border: none;
-	border-bottom: 1px solid #a9a9a9; /* html-darkgrey */
+	border-bottom: 1px solid var(--html-darkgrey);
 	clear: both; }
 code {
 	display: inline-block;
-	background-color: #eaebef;
+	background-color: var(--murder-grey);
 	border-radius: .25em;
 	padding: 0 .15em; }
 ul, ol, dl, p { margin: 0 0 .75em 0; }
@@ -50,11 +50,11 @@ ul, ol, dl, p { margin: 0 0 .75em 0; }
 @media screen and (min-width: 576px) {
 	body {
 		overflow-y: scroll;
-		background-color: #eaebef; } /*murder-grey*/
+		background-color: var(--murder-grey); }
 	body > .container {
-		background-color: #ffffff; /*html-white*/
-		border-left: 1px solid #a9a9a9; /*html-darkgrey*/
-		border-right: 1px solid #a9a9a9; /*html-darkgrey*/
+		background-color: var(--html-white);
+		border-left: 1px solid var(--html-darkgrey);
+		border-right: 1px solid var(--html-darkgrey);
 		margin: 0 auto;
 		max-width: 540px;
 		min-height: 100%; }
@@ -74,8 +74,8 @@ ul, ol, dl, p { margin: 0 0 .75em 0; }
 }
 
 #fixref  {
-	background-color: #ffffff; /*html-white*/
-	border-bottom: 1px solid #a9a9a9; /*html-darkgrey*/
+	background-color: var(--html-white);
+	border-bottom: 1px solid var(--html-darkgrey);
 	text-align: center; }
 @media screen and (min-width: 768px){
 	#fixref {
@@ -83,7 +83,7 @@ ul, ol, dl, p { margin: 0 0 .75em 0; }
 		bottom: 10;
 		right: 10;
 		z-index: 5;
-		border: 1px solid #a9a9a9; /*html-darkgrey*/
+		border: 1px solid var(--html-darkgrey);
 		border-radius: 3px;
 		padding: .1em .25em;
 	}
@@ -94,9 +94,9 @@ header, #header {
 	margin: 0px -15px 15px -15px;
 	border-radius: 6px;
 	text-align: center;
-	background-color: #c62825; /*murder-red*/
-	border: 1px solid #c62825; /*murder-red*/
-	box-shadow: 2px 2px 2px #a9a9a9;} /*html-darkgrey*/
+	background-color: var(--murder-red);
+	border: 1px solid var(--murder-red);
+	box-shadow: 2px 2px 2px var(--html-darkgrey); }
 header h1, #header h1 {
 	font-size: inherit;
 	font-weight: bold;
@@ -112,21 +112,19 @@ header h1, #header h1 {
 }
 
 /********************
- * Custom Components   (.title, h2/.subtitle, .apartee, .float-right, .br)
+ * Custom Components   (h2, .apartee)
  */
-
 h2 {
-	border-bottom: 1px solid #eaebef; /*murder-grey*/
+	border-bottom: 1px solid var(--murder-grey);
 	display: block;
 	font-size: inherit;
 	font-weight: bold;
 	margin: .75em 0 .5em 0; }
-
 .apartee {
 	list-style: none;
 	float: right;
-	background-color: #eaebef; /*murder-grey*/
-	border: 1px dashed #a9a9a9; /*html-darkgrey*/
+	background-color: var(--murder-grey);
+	border: 1px dashed var(--html-darkgrey);
 	border-radius: 6px;
 	padding: .25em .5em;
 	font-size: .75rem;
@@ -144,30 +142,13 @@ h2 {
 	html { font-size: 14px !important; }
 }
 
-/* displayed on the line below what they affect, slightly smaller, with a "tab" */
-.tabbed-detail {
-	font-size: .85em;
-	margin-left: 20px; }
-
 dl.competences > dt {
-	color: #a9a9a9; /*html-darkgrey*/
-	font-weight: normal;
+	color: var(--html-darkgrey); /*html-darkgrey*/
 	font-style: italic;
 	float: left;
 	text-align: right;
-	min-width: 145px;
-	vertical-align: top; }
-dl.competences > dd {
-	margin-left: 150px; /* the floating <dt> will go above this margin */
-	margin-bottom: 0; /* overwrite bootstrap */}
-
-
-:root {
-	--murder-black: #0b0608;
-	--murder-grey: #eaebef;
-	--murder-red: #c62825;
-	--html-white: #ffffff;
-	--html-darkgrey: #a9a9a9; }
+	min-width: 145px; }
+dl.competences > dd { margin-left: 150px; } /* the floating <dt> will go above this margin */
 
 .timeline {
   transition: all .4s ease;
@@ -236,6 +217,7 @@ dl.competences > dd {
 	padding: .75em;
 	padding-bottom: 0;
 	text-align: center;
+	font-weight: bold;
 }
 .experience > ul {
 	padding: .75rem;
