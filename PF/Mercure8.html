@@ -4,76 +4,73 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Grey's Mechanic</title>
 	<link rel="stylesheet" href="system/pfCharacter.css">
-    <style>
-        #grenadeTable { width: 100%; margin-bottom: .75rem; }
-        #grenadeTable thead { border-bottom: 1px dashed #a9a9a9 } /* html-darkgrey */
-        #grenadeTable td { padding-left: .25em; }
-        #grenadeTable td:first-child { text-align: right; padding-left: 0; }
-    </style>
+	<style>
+		#grenadeTable { width: 100%; margin-bottom: .75rem; font-size: 1rem; }
+		#grenadeTable td { padding-left: .25em; }
+		#grenadeTable td:first-child { text-align: right; padding-left: 0; }
+		section.row.row23 > * + * { flex: 2; }
+	</style>
 </head>
 <body>
-	<div id="fixref" class="noprint">
+	<nav id="fixref" class="noprint">
+		<a href="Hg9.html" target="_blank">Hg9, lifeless sentinel</a><br>
 		<a href="https://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
-	</div>
+	</nav>
 
 	<div class="container">
-		<div id="header">
+		<header id="header">
 			<h1>Mercure 8, the lifeless</h1>
 			LN Medium humanoid
-		</div>
+		</header>
 
-		<div id="headerInfo" class="row">
-			<dl class="charInfo col-xs-12 col-md-4">
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
 				<dt>Str</dt>
 				<dd>10</dd>
 
 				<dt>Dex</dt>
-				<dd>16 <span class="listBonuses">14, <abbr title="Racial">2</abbr></span></dd>
+				<dd>16 <span class="listBonuses">14, <u title="Racial">2</u></span></dd>
 
 				<dt>Con</dt>
 				<dd>13</dd>
 
 				<dt>Int</dt>
-				<dd>16 <span class="listBonuses">13, <abbr title="Racial">2</abbr>, <abbr title="Theme">1</abbr></span></dd>
+				<dd>16 <span class="listBonuses">13, <u title="Racial">2</u>, <u title="Theme">1</u></span></dd>
 
 				<dt>Wis</dt>
 				<dd>10</dd>
 
 				<dt>Cha</dt>
-				<dd>&nbsp;8 <span class="listBonuses">10, <abbr title="Racial">-2</abbr></span></dd>
+				<dd>&nbsp;8 <span class="listBonuses">10, <u title="Racial">-2</u></span></dd>
 			</dl>
-			<div class="col-xs-12 col-md-4">
-				<dl id="subheader" class="charInfo">
-					<dt>Race</dt>
-					<dd><a href="https://www.starjammersrd.com/races/androids/">Android</a></dd>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://www.starjammersrd.com/races/androids/">Android</a></dd>
 
-					<dt>Class</dt>
-					<dd><a href="https://www.starjammersrd.com/classes/mechanic/">Mechanic</a> 2</dd>
+				<dt>Theme</dt>
+				<dd><a href="https://www.starjammersrd.com/the-basics/character-themes/roboticist/">Roboticist</a></dd>
 
-					<dt>Theme</dt>
-					<dd><a href="https://www.starjammersrd.com/the-basics/character-themes/roboticist/">Roboticist</a></dd>
-				</dl>
-			</div>
-			<dl class="charInfo col-xs-12 col-md-4">
-				<dt>Origin</dt>
-				<dd>Absolom Station</dd>
+				<dt>Class</dt>
+				<dd><a href="https://www.starjammersrd.com/classes/mechanic/">Mechanic</a> 2</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>The Triad</dd>
 
-				<dt>Eyes</dt>
-				<dd>Lime</dd>
+				<dt>Senses</dt>
+				<dd><a href="https://www.starjammersrd.com/game-mastering/combat/#Low-Light_Vision">Low-light vision</a>,
+					<a href="https://www.starjammersrd.com/game-mastering/combat/#Darkvision">Darkvision</a> 60ft.</dd>
 
-				<dt>Hair</dt>
-				<dd>Dark Brown, in a braid</dd>
-
-				<dt>Weight</dt>
-				<dd>104 lbs</dd>
-
-				<dt>Height</dt>
-				<dd>5' 10''</dd>
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
 
 				<dt>Languages</dt>
 				<dd>Common</dd>
+
+				<dt>Special</dt>
+				<dd>No breathing, immune to the vaccuum of space</dd>
 			</dl>
-		</div>
+		</section>
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
@@ -81,8 +78,8 @@
 			<dt>level 1</dt>
 			<dd><a href="https://www.starjammersrd.com/feats/combat-feats/weapon-focus-combat/">Weapon Focus</a>
 				<span class="listBonuses noprint">min.1</span></dd>
-            <dt>Mech 2</dt>
-            <dd><a href="https://www.starjammersrd.com/classes/mechanic/#Overcharge_Ex">Overcharge</a>
+			<dt>Mech 2</dt>
+			<dd><a href="https://www.starjammersrd.com/classes/mechanic/#Overcharge_Ex">Overcharge</a>
 				<span class="listBonuses noprint">min.2</span></dd>
 			<dt>level 3</dt>
 			<dd><a href="https://www.starjammersrd.com/feats/combat-feats/deadly-aim-combat/">Deadly Aim</a>
@@ -93,200 +90,189 @@
 		</dl>
 
 		<!-- SKILLS -->
-		<div class="br">
-			<span class="numberFirst">5</span>
-			<a href="https://www.starjammersrd.com/Skills/#Perception_Wis" class="listBonusBreaker">Perception</a>
-			<span class="listBonuses">0 wis, 2 ranks, 3 class</span>
-		</div>
+		<ul>
+			<li class="br">
+				<span class="numberFirst">5</span>
+				<a href="https://www.starjammersrd.com/Skills/#Perception_Wis" class="listBonusBreaker">Perception</a>
+				<span class="listBonuses">0 wis, 2 ranks, 3 class</span>
+			</li>
 
-		<div>
-			<span class="numberFirst">4</span>
-			<a href="https://www.starjammersrd.com/Skills/#Athletics_Str" class="listBonusBreaker">Athletics</a>
-			<span class="listBonuses">0 str, 1 ranks, 3 class</span>
-		</div>
-		<div>
-			<span class="numberFirst">4</span>
-			<a href="https://www.starjammersrd.com/Skills/#Culture_Int" class="listBonusBreaker">Culture</a>
-			<span class="listBonuses">3 int, 1 ranks, 0 class</span>
-		</div>
-		<div>
-			<span class="numberFirst">10</span>
-			<a href="https://www.starjammersrd.com/Skills/#Computers_Int" class="listBonusBreaker">Computers</a>
-			<span class="listBonuses">3 int, 2 ranks, 3 class, 1 theme, <abbr title="Bypass">1 insight</abbr></span>
-			<div class="circumstancialBonus">Always have the right <abbr title="Custom Rig">tool</abbr></div>
-		</div>
-		<div>
-			<span class="numberFirst">9</span>
-			<a href="https://www.starjammersrd.com/Skills/#Engineering_Int" class="listBonusBreaker">Engineering</a>
-			<span class="listBonuses">3 int, 2 ranks, 3 class, <abbr title="Bypass">1 insight</abbr></span>
-			<div class="circumstancialBonus">Always have the right <abbr title="Custom Rig">tool</abbr></div>
-			<div class="circumstancialBonus"><abbr title="Roboticist">+5</abbr> to identify creatures and technology</div>
-		</div>
-		<div>
-			<span class="numberFirst">4</span>
-			<a href="https://www.starjammersrd.com/Skills/#Life_Science_Int" class="listBonusBreaker">Life Science</a>
-			<span class="listBonuses">3 int, 1 ranks, 0 class</span>
-		</div>
-		<div>
-			<span class="numberFirst">8</span>
-			<a href="https://www.starjammersrd.com/Skills/#Medecine_Int" class="listBonusBreaker">Medecine</a>
-			<span class="listBonuses">3 int, 2 ranks, 3 class</span>
-		</div>
-		<div>
-			<span class="numberFirst">8</span>
-			<a href="https://www.starjammersrd.com/Skills/#Physical_Science_Int" class="listBonusBreaker">Physical Science</a>
-			<span class="listBonuses">3 int, 2 ranks, 3 class</span>
-		</div>
-		<div>
-			<span class="numberFirst">7</span>
-			<a href="https://www.starjammersrd.com/Skills/#Piloting_Dex" class="listBonusBreaker">Piloting</a>
-			<span class="listBonuses">3 dex, 1 ranks, 3 class</span>
-		</div>
-		<div class="br">
-			<span class="numberFirst">-2</span>
-			<a href="https://www.starjammersrd.com/Skills/#Sense_Motive_Wis" class="listBonusBreaker">Sense Motive</a>
-			<span class="listBonuses">0 wis, 0 ranks, 0 class, -2 race</span>
-		</div>
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://www.starjammersrd.com/Skills/#Athletics_Str" class="listBonusBreaker">Athletics</a>
+				<span class="listBonuses">0 str, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://www.starjammersrd.com/Skills/#Culture_Int" class="listBonusBreaker">Culture</a>
+				<span class="listBonuses">3 int, 1 ranks, 0 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">10</span>
+				<a href="https://www.starjammersrd.com/Skills/#Computers_Int" class="listBonusBreaker">Computers</a>
+				<span class="listBonuses">3 int, 2 ranks, 3 class, 1 theme, <u title="Bypass">1 insight</u></span>
+				<div class="circumstancialBonus" title="Custom Rig">Always have the right tool</div>
+			</li>
+			<li>
+				<span class="numberFirst">9</span>
+				<a href="https://www.starjammersrd.com/Skills/#Engineering_Int" class="listBonusBreaker">Engineering</a>
+				<span class="listBonuses">3 int, 2 ranks, 3 class, <u title="Bypass">1 insight</u></span>
+				<div class="circumstancialBonus" title="Custom Rig">Always have the right tool</div>
+				<div class="circumstancialBonus"><u title="Roboticist">+5</u> to identify creatures and technology</div>
+			</li>
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://www.starjammersrd.com/Skills/#Life_Science_Int" class="listBonusBreaker">Life Science</a>
+				<span class="listBonuses">3 int, 1 ranks, 0 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">8</span>
+				<a href="https://www.starjammersrd.com/Skills/#Medecine_Int" class="listBonusBreaker">Medecine</a>
+				<span class="listBonuses">3 int, 2 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">8</span>
+				<a href="https://www.starjammersrd.com/Skills/#Physical_Science_Int" class="listBonusBreaker">Physical Science</a>
+				<span class="listBonuses">3 int, 2 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">7</span>
+				<a href="https://www.starjammersrd.com/Skills/#Piloting_Dex" class="listBonusBreaker">Piloting</a>
+				<span class="listBonuses">3 dex, 1 ranks, 3 class</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">-2</span>
+				<a href="https://www.starjammersrd.com/Skills/#Sense_Motive_Wis" class="listBonusBreaker">Sense Motive</a>
+				<span class="listBonuses">0 wis, 0 ranks, 0 class, -2 racial</span>
+			</li>
 
-		<div class="noprint br">
-			<span class="numberFirst">14</span>
-			<b class="listBonusBreaker">ranks</b>
-			<span class="listBonuses">2 mechanic: 4 class, 3 int</span>
-		</div>
+			<li class="noprint br">
+				<span class="numberFirst">14</span>
+				<b class="listBonusBreaker">ranks</b>
+				<span class="listBonuses">2 mechanic: 4 class, 3 int</span>
+			</li>
+		</ul>
 
 		<!-- title COMBAT -->
-        <hr>
-		<div class="row">
+		<hr>
+		<section class="row row23">
 			<!--Basics: Statblock and Weapons-->
-			<div class="col-xs-12 col-md-6">
-				<div><b>Senses</b> Low-light vision, Darkvision 60ft.</div>
-				<div><b>Speed</b> 30 ft.</div>
-				<div class="br"><b>Special</b> no breathing, immune to space vaccuum</div>
-
-				<div>
+			<ul>
+				<li class="br">
 					<span class="numberFirst">3</span>
 					<b class="listBonusBreaker">Init</b>
 					<span class="listBonuses">3 dex</span>
-				</div>
-				<div>
+				</li>
+				<li>
 					<span class="numberFirst">4</span>
 					<b class="listBonusBreaker">Resolve</b>
 					<span class="listBonuses">1 mechanic&frac12;, 3 int</span>
-				</div>
-				<div>
+				</li>
+				<li>
 					<span class="numberFirst">14</span>
 					<b class="listBonusBreaker">Stamina</b>
 					<span class="listBonuses">2 mechanic: 6 class, 1 con</span>
-				</div>
-				<div>
+				</li>
+				<li>
 					<span class="numberFirst">16</span>
 					<b class="listBonusBreaker">HP</b>
-					<span class="listBonuses">2 mechanic: 6 class; 4 racial</span>
-				</div>
-				<div>
+					<span class="listBonuses">4 android, 2 mechanic: 6 class</span>
+				</li>
+				<li>
 					<span class="numberFirst">15</span>
 					<span class="listBonusBreaker"><b>EAC</b></span>
 					<span class="listBonuses">10, 3 dex, 2 armor</span>
-				</div>
-				<div class="br">
+				</li>
+				<li class="br">
 					<span class="numberFirst">16</span>
 					<span class="listBonusBreaker"><b>KAC</b></span>
 					<span class="listBonuses">10, 3 dex, 3 armor</span>
-				</div>
-				<div>
+				</li>
+				<li>
 					<span class="numberFirst">4</span>
 					<b class="listBonusBreaker">Fort</b>
 					<span class="listBonuses">1 con, 3 class</span>
-                    <div class="circumstancialBonus"><abbr title="Constructed">+2 racial</abbr> vs disease, poison</div>
-				</div>
-				<div>
+					<div class="circumstancialBonus"><u title="Constructed">+2 racial</u> vs disease, poison</div>
+				</li>
+				<li>
 					<span class="numberFirst">6</span>
 					<b class="listBonusBreaker">Ref</b>
 					<span class="listBonuses">3 dex, 3 class</span>
-				</div>
-				<div class="br">
+				</li>
+				<li>
 					<span class="numberFirst">1</span>
 					<b class="listBonusBreaker">Will</b>
-					<span class="listBonuses">0 wis, 0 class, <abbr title="Ring of Resistance">1 enhancement</abbr></span>
-                    <div class="circumstancialBonus"><abbr title="Constructed">+2 racial</abbr> vs mind-affecting, sleep</div>
-				</div>
-			</div>
+					<span class="listBonuses">0 wis, 0 class, <u title="Ring of Resistance">1 enhancement</u></span>
+					<div class="circumstancialBonus"><u title="Constructed">+2 racial</u> vs mind-affecting, sleep</div>
+				</li>
+			</ul>
 			<!--end of Basics: Statblock and Weapons-->
 
-			<!--Burn-->
-			<div class="col-xs-12 col-md-6 br">
+			<div>
 				<!--Azimuth Laser Pistol-->
-				<div class="weapon br">
-					<div class="weaponHead">
-						<div class="float-right">Burn 1d4</div>
-						<div class="weaponReach">80 ft.</div>
-						Azimuth Laser Pistol<sup>Fire</sup>
-					</div>
+				<div class="weapon">
+					<h2>Azimuth Laser Pistol <b>Burn 1d4</b> <b>80 ft.</b> <b>Fire</b></h2>
 					<span class="listBonusBreaker">+<b>5</b> vs EAC</span>
-					<span class="listBonuses">1 bab, 3 dex, <abbr title="Weapon Focus">1 w.focus</abbr></span>
+					<span class="listBonuses">1 bab, 3 dex, <u title="Weapon Focus">1 w.focus</u></span>
 					<br>
 					<b class="listBonusBreaker">1d4</b>
-					<span class="listBonuses"><abbr title="Weapon Spec; 0 mechanic&frac12;">0 w.spec</abbr></span>
+					<span class="listBonuses"><u title="Weapon Spec; 0 mechanic&frac12;">0 w.spec</u></span>
 				</div>
 
 				<!--Frag Grenade-->
-				<div class="weapon br">
-					<div class="weaponHead">
-						<div class="float-right">-</div>
-						<div class="weaponReach">20 ft.</div>
-						Grenades
+				<div class="weapon">
+					<h2>Grenades <b>-</b> <b>20 ft.</b></h2>
+					<table id="grenadeTable">
+						<thead>
+							<tr>
+								<th>&nbsp;</th>
+								<th>Name</th>
+								<th>&nbsp;</th>
+								<th>Radius</th>
+								<th>DC</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>6</td>
+							<td>Frag Grenade mk.I</td>
+							<td>1d6 P</td>
+							<td>15ft</td>
+							<td>13</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Shock Grenade mk.I</td>
+							<td>1d8 Electric</td>
+							<td>15ft</td>
+							<td>13</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Smoke Grenade</td>
+							<td>&ndash;</td>
+							<td>20ft</td>
+							<td>&ndash;</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Stickybomb Grenade mk.I</td>
+							<td><a href="https://www.starjammersrd.com/game-mastering/conditions/#Entangled">entangles</a> for 2d4 rounds</td>
+							<td>10ft</td>
+							<td>13</td>
+						</tr>
+					</table>
+					<div class="apartee">
+						<a href="https://www.starjammersrd.com/equipment/weapons/weapon-special-properties/explode/">Explode</a>
+						<div class="circumstancialBonus">Reflex Save to halve damage and negate other effects. DC is 10 + dex + &frac12; grenade level.</div>
+						<a href="https://www.starjammersrd.com/game-mastering/combat/#Targeting_a_Grid_Intersection">Targeting a Grid Intersection</a>
+						<div class="circumstancialBonus">Intersections have AC 5. Roll d20 + 1 bab + 0 str.</div>
 					</div>
-                    <table id="grenadeTable">
-                        <thead>
-                            <tr>
-                                <th>&nbsp;</th>
-                                <th>Name</th>
-                                <th>&nbsp;</th>
-                                <th>Radius</th>
-                                <th>DC</th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td>6</td>
-                            <td>Frag Grenade mk.I</td>
-                            <td>1d6 P</td>
-                            <td>15ft</td>
-                            <td>13</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Shock Grenade mk.I</td>
-                            <td>1d8 Electric</td>
-                            <td>15ft</td>
-                            <td>13</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Smoke Grenade</td>
-                            <td>&ndash;</td>
-                            <td>20ft</td>
-                            <td>&ndash;</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Stickybomb Grenade mk.I</td>
-                            <td><a href="https://www.starjammersrd.com/game-mastering/conditions/#Entangled">entangles</a> for 2d4 rounds</td>
-                            <td>10ft</td>
-                            <td>13</td>
-                        </tr>
-                    </table>
-                    <div class="apartee">
-                        <a href="https://www.starjammersrd.com/equipment/weapons/weapon-special-properties/explode/">Explode</a>
-                        <div class="circumstancialBonus">Reflex Save to halve damage and negate other effects. DC is 10 + dex + &frac12; grenade level.</div>
-                        <a href="https://www.starjammersrd.com/game-mastering/combat/#Targeting_a_Grid_Intersection">Targeting a Grid Intersection</a>
-                        <div class="circumstancialBonus">Intersections have AC 5. Roll d20 + 1 bab + 0 str.</div>
-                    </div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!-- title EQUIPMENT -->
-        <hr>
+		<hr>
 		<ul id="mundaneItemsWrapper">
 			<li>Rations (2)</li>
 			<li class="br">Basic Medkit (18)</li>
@@ -300,67 +286,89 @@
 			<li class="emptyitemslot br">Armor Slot (extra: Android)</li>
 			<li><a href="https://www.starjammersrd.com/equipment/magic-items/">Ring of Resistance</a> Mk 1</li>
 			<li class="emptyitemslot br">Magic Item 2</li>
-            <li><a href="https://www.starjammersrd.com/classes/mechanic/">Mechanic's Custom Rig</a></li>
+			<li><a href="https://www.starjammersrd.com/classes/mechanic/">Mechanic's Custom Rig</a></li>
 		</ul>
 
-		<!--Weapons-->
-		<div>
-			<a href="https://www.starjammersrd.com/equipment/weapons/">Tactical Baton</a>
-			<span class="listBonuses">basic one-handed, 1d4, B, L bulk.</span>
-		</div>
-		<div>
-			<a href="https://www.starjammersrd.com/equipment/weapons/">Azimuth Laser Pistol</a>
-			<span class="listBonuses">small arms one-handed, 1d4, 20x2, Fire, 80ft. {Burn 1d4}, 20 charges, L bulk.</span>
-		</div>
-		<div>
-			<a href="https://www.starjammersrd.com/equipment/weapons/">Pulsecaster Pistol</a>
-			<span class="listBonuses">small arms one-handed, 1d4, 20x2, Electric, 30ft. Nonlethal, 20 charges, L bulk.</span>
-		</div>
-		<div class="br">
-			<a href="https://www.starjammersrd.com/equipment/armor/">Freebooter Armor I</a>
-			<span class="listBonuses">light, 2 eac, 3 kac, 4 dex, - acp, 0 slots, L bulk.</span>
-		</div>
-		<div>710 <b>Credits</b></div>
-        
-        <!-- title NOTES -->
-        <div class="noprint">
-            <hr>
-            <p>Mercure 8 is a 117-years-old Android, created to work as a surgeon on Absolom Station.</p>
-            <p>He is often seen wearing simple, reasonably fashionable but not flashy clothing.
-            His skin is nearly beige enough to pass for human, but it has a noticeable blue hue.
-            His hair is dark brown, unemarkable, tied in a tight braid down the neck, barely reaching the shoulders.
-            He has neon-lime eyes, very noticeable in the dark.
-            Unlike most androids, he does not have many light-up markings or tatoos. Those he has are mostly at the base of the neck and inside his palms. They softly glow pastel blue.
-            He has retractable ears, a feature that is uncommon even among androids, and feels uncanny for most humans.
-            He usually only uses them if he <em>wants</em> to make someone unconfortable.</p>
-            <p>Mercure 8 used to have a very good reputation on Absolom Station as one of the best surgeons around.
-            As such, he was one day tasked with a delicate operation on Kumara Melacruz, Absolom Station's political leader.
-            He was quickly approached by the 6-Tips Gang: the mob wanted Melacruz dead, and it would be convenient for them if something "happened" during the operation.
-            Mercure 8 ignored their threats, taking pride in his role as a surgeon, and aware that his reputation would greatly suffer if he botched such a high-profile case.</p>
-            <p>The gang retaliated by sending a hitman who used a prototype anti-android weapon, built as an EMP.
-            It was supposed to be undetectable on the surface and fatal, but it didn't work quite as expected.
-            Not all of Mercure 8's memory banks were wiped.
-            Enough that he was knocked unconscious for a hard reboot, but worker processes promptly brought his basic OS back up.
-            He, however, lost all memory.</p>
-            <p>He contacted a colleague, whose contact info he found somewhere in his appartment when he woke up.
-            They eventually pieced together what must have happened.
-            They realized that the Gang thought he was dead, and Mercure 8 was still in danger when they found out he was alive.
-            A quick evacuation plan was made to send him to the nearby planet Verses, where he could find menial work.
-            His medical knowledge had been wiped, and he didn't want to keep the same line of work just in case, so he started repairing spaceships, ending up in Fygiz's shop soon after.</p>
-            <dl>
-                <dt>Motivations</dt>
-                <dd>Getting safely as far from Absolom as possible, rebuilding his life, finding new purpose.</dd>
-                <dt>Fears</dt>
-                <dd>Be found by the 6-Tips gang again, death (because it is not inevitable for androids)</dd>
-                <dt>Likes</dt>
-                <dd>Certainty, Control, Clockwork</dd>
-                <dt>Dislikes</dt>
-                <dd>Humans, Politics &amp; Politicians, Neon Lights</dt>
-                <dt>People</dt>
-                <dd>Jacobin Mitecon, LG Human, former colleague who helped get him off Absolom Station</dd>
-                <dd>Fygiz, CN Ysoki, officially his current employer</dd>
-            </dl>
-        </div>
+		<ul>
+			<!--Weapons-->
+			<li>
+				<a href="https://www.starjammersrd.com/equipment/weapons/">Tactical Baton</a>
+				<span class="listBonuses">basic one-handed, 1d4, B, L bulk.</span>
+			</li>
+			<li>
+				<a href="https://www.starjammersrd.com/equipment/weapons/">Azimuth Laser Pistol</a>
+				<span class="listBonuses">small arms one-handed, 1d4, 20x2, Fire, 80ft. {Burn 1d4}, 20 charges, L bulk.</span>
+			</li>
+			<li class="br">
+				<a href="https://www.starjammersrd.com/equipment/weapons/">Pulsecaster Pistol</a>
+				<span class="listBonuses">small arms one-handed, 1d4, 20x2, Electric, 30ft. Nonlethal, 20 charges, L bulk.</span>
+			</li>
+			<!--Armor-->
+			<li class="br">
+				<a href="https://www.starjammersrd.com/equipment/armor/">Freebooter Armor I</a>
+				<span class="listBonuses">light, 2 eac, 3 kac, 4 dex, - acp, 0 slots, L bulk.</span>
+			</li>
+			<li>710 <b>Credits</b></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p>Mercure 8 is a 117-years-old Android, created to work as a surgeon on Absolom Station.</p>
+			<p>He is often seen wearing simple, reasonably fashionable but not flashy clothing.
+			His skin is nearly beige enough to pass for human, but it has a noticeable blue hue.
+			His hair is dark brown, unemarkable, tied in a tight braid down the neck, barely reaching the shoulders.
+			He has neon-lime eyes, very noticeable in the dark.
+			Unlike most androids, he does not have many light-up markings or tatoos. Those he has are mostly at the base of the neck and inside his palms. They softly glow pastel blue.
+			He has retractable ears, a feature that is uncommon even among androids, and feels uncanny for most humans.
+			He usually only uses them if he <em>wants</em> to make someone unconfortable.</p>
+			<p>Mercure 8 used to have a very good reputation on Absolom Station as one of the best surgeons around.
+			As such, he was one day tasked with a delicate operation on Kumara Melacruz, Absolom Station's political leader.
+			He was quickly approached by the 6-Tips Gang: the mob wanted Melacruz dead, and it would be convenient for them if something "happened" during the operation.
+			Mercure 8 ignored their threats, taking pride in his role as a surgeon, and aware that his reputation would greatly suffer if he botched such a high-profile case.</p>
+			<p>The gang retaliated by sending a hitman who used a prototype anti-android weapon, built as an EMP.
+			It was supposed to be undetectable on the surface and fatal, but it didn't work quite as expected.
+			Not all of Mercure 8's memory banks were wiped.
+			Enough that he was knocked unconscious for a hard reboot, but worker processes promptly brought his basic OS back up.
+			He, however, lost all memory.</p>
+			<p>He contacted a colleague, whose contact info he found somewhere in his appartment when he woke up.
+			They eventually pieced together what must have happened.
+			They realized that the Gang thought he was dead, and Mercure 8 was still in danger when they found out he was alive.
+			A quick evacuation plan was made to send him to the nearby planet Verses, where he could find menial work.
+			His medical knowledge had been wiped, and he didn't want to keep the same line of work just in case, so he started repairing spaceships, ending up in Fygiz's shop soon after.</p>
+			<dl>
+				<dt>Motivations</dt>
+				<dd>Getting safely as far from Absolom as possible, rebuilding his life, finding new purpose.</dd>
+				<dt>Fears</dt>
+				<dd>Be found by the 6-Tips gang again, death (because it is not inevitable for androids)</dd>
+				<dt>Likes</dt>
+				<dd>Certainty, Control, Clockwork</dd>
+				<dt>Dislikes</dt>
+				<dd>Humans, Politics &amp; Politicians, Neon Lights</dt>
+				<dt>People</dt>
+				<dd>Jacobin Mitecon, LG Human, former colleague who helped get him off Absolom Station</dd>
+				<dd>Fygiz, CN Ysoki, officially his current employer</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Origin</dt>
+				<dd>Absolom Station</dd>
+
+				<dt>Eyes</dt>
+				<dd>Lime</dd>
+
+				<dt>Hair</dt>
+				<dd>Dark Brown, in a braid</dd>
+
+				<dt>Age</dt>
+				<dd>117</dd>
+
+				<dt>Weight</dt>
+				<dd>104 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 10''</dd>
+			</dl>
+		</section>
 	</div>
 </body>
 </html>
