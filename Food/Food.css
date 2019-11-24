@@ -24,7 +24,7 @@
     border-bottom: 1px solid var(--html-darkgrey); }
 #fixref #minimize { float: right; }
 #fixref iframe {
-    transition: height 2s;
+    transition: height .8s ease;
     height: 50vh;
     border: none; }
 @media screen and (max-width: 767px){
