@@ -44,9 +44,7 @@ ul, ol, dl, p { margin: 0 0 .75em 0; }
  * Basic page layout	(.container, #fixref, #header)
  */
 
-@media screen {
-	body > .container { padding: 10px 25px .5px 25px; }
-}
+body > .container { padding: 10px 25px .5px 25px; }
 @media screen and (min-width: 576px) {
 	body {
 		overflow-y: scroll;
@@ -140,6 +138,10 @@ h2 {
 
 	/* make stuff smaller, so more can fit on a page. */
 	html { font-size: 14px !important; }
+
+	/* less padding. Removes negative margin on header, rounded corners were cut off. */
+	body { padding: 0; }
+	header, #header { margin-left: 0; margin-right: 0; }
 }
 
 dl.competences > dt {
