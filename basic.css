@@ -1,5 +1,6 @@
 /** Created by Rémi Doutre, 2015-2019. Public domain. **/
 
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 /**
  * Palette inspiration: https://www.color-hex.com/color-palette/23446
  * 'Murder and Murdered' by simoneurso
@@ -16,15 +17,14 @@
 	--murder-grey: #eaebef;
 	--murder-red: #c62825;
 	--html-white: #ffffff;
-	--html-darkgrey: #a9a9a9; }
+	--html-darkgrey: #a9a9a9;
+	font-size: 16px;
+	font-family: 'Roboto', 'Segoe UI', sans-serif;
+	color: var(--murder-black); }
 * { 
 	box-sizing: border-box;
 	line-height: 1.2em; }
-html {
-	font-size: 16px;
-	font-family: 'Mirza', 'Roboto', 'Segoe UI', sans-serif;
-	color: var(--murder-black); }
-body { margin: 0;}
+body { margin: 0; }
 a, a:link, a:visited, a:active {
 	color: var(--murder-red);
 	text-decoration: none; }
@@ -46,9 +46,7 @@ ul, ol, dl, p { margin: 0 0 .75em 0; }
  * Basic page layout	(.container, #fixref, #header)
  */
 
-@media screen {
-	body > .container { padding: 10px 25px .5px 25px; }
-}
+body > .container { padding: 10px 25px .5px 25px; }
 @media screen and (min-width: 576px) {
 	body {
 		overflow-y: scroll;
@@ -170,5 +168,9 @@ table.table-cornered td {
 	.noprint { display: none !important; }
 
 	/* make stuff smaller, so more can fit on a page. */
-	html { font-size: 14px !important; }
+	:root { font-size: 12px !important; }
+	
+	/* less padding. Removes negative margin on header, rounded corners were cut off. */
+	body { padding: 0; }
+	header, #header { margin-left: 0; margin-right: 0; }
 }
