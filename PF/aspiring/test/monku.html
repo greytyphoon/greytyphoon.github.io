@@ -1,470 +1,456 @@
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Grey's Monk</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../system/pfGeneric.css">
-    <link rel="stylesheet" href="../../system/pfCharacter.css">
+	<link rel="stylesheet" href="../../system/pfCharacter.css">
 	<style>
 		.minki { color:blue;}
-        #listKi { padding-left: 1.5rem; font-size: 0.8rem; }
-        .firstweapon { margin-top: 0.75rem; }
 	</style>
 </head>
 <body>
-    <div id="fixref" class="noprint">
-        <a href="https://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
-	</div>
+	<nav id="fixref" class="noprint">
+		<a href="https://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
+	</nav>
 
-    <div class="container">
-        <div id="header">
-            <b>Darius Costa, mountaintop recluse</b><br/>
-            LN Medium humanoid
-        </div>
+	<div class="container">
+		<header id="header">
+			<h1>Darius Costa, mountaintop recluse</h1>
+			LN Medium humanoid
+		</header>
 
-        <div id="headerInfo" class="row">
-            <dl class="charInfo col-xs-12 col-md-4">
-                <dt>Str</dt>
-                <dd>22 <span class="listBonuses">17, <abbr title="Racial">2</abbr>, <abbr title="Advancement">1</abbr>, <abbr title="Belt of Giant Strength">2</abbr></span></dd>
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>22 <span class="listBonuses">17, <u title="Racial">2</u>, <u title="Advancement">1</u>, <u title="Belt of Giant Strength">2</u></span></dd>
 
-                <dt>Dex</dt>
-                <dd>14</dd>
+				<dt>Dex</dt>
+				<dd>14</dd>
 
-                <dt>Con</dt>
-                <dd>12</dd>
+				<dt>Con</dt>
+				<dd>12</dd>
 
-                <dt>Int</dt>
-                <dd>10</dd>
+				<dt>Int</dt>
+				<dd>10</dd>
 
-                <dt>Wis</dt>
-                <dd>14</dd>
+				<dt>Wis</dt>
+				<dd>14</dd>
 
-                <dt>Cha</dt>
-                <dd>10</dd>
-            </dl>
-            <div class="col-xs-12 col-md-4">
-                <dl id="subheader" class="charInfo">
-                    <dt>Race</dt>
-                    <dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
 
-                    <dt>Class</dt>
-                    <dd><a href="https://d20pfsrd.com/classes/unchained-classes/monk-unchained">UMonk</a> 5</dd>
-                </dl>
-                <dl class="charInfo">
-                    <dt>Traits</dt>
-                    <dd><a href="https://d20pfsrd.com/traits/regional-traits/quain-martial-artist-quain">Heavy Hitter</a></dd>
-                    <dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/unchained-classes/monk-unchained">UMonk</a> 5</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Pharasma</dd>
 
-                    <dt>Drawback</dt>
-                    <dd><a href="https://d20pfsrd.com/traits/drawbacks/burned">Burned</a></dd>
-                </dl>
-            </div>
-            <dl class="charInfo col-xs-12 col-md-4">
-                <dt>Deity</dt>
-                <dd>Pharasma</dd>
+				<dt>Senses</dt>
+				<dd>Normal</dd>
 
-                <dt>Eyes</dt>
-                <dd>Blue</dd>
+				<dt>Speed</dt>
+				<dd title="30 racial, 10 Fast Movement">40 ft.</dd>
 
-                <dt>Hair</dt>
-                <dd>White</dd>
+				<dt>Languages</dt>
+				<dd>Common</dd>
+			</dl>
+		</section>
 
-                <dt>Weight</dt>
-                <dd>153 lbs</dd>
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>Traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/regional-traits/quain-martial-artist-quain">Heavy Hitter</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+			<dt>human</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final">Weapon Focus</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat-final">Power Attack</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>monk 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/dodge-combat-final">Dodge</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-unarmed-strike-combat-final">Improved Unarmed Strike</a>
+				<span class="listBonuses noprint">bonus</span></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/stunning-fist-combat-final">Stunning Fist</a>
+				<span class="listBonuses noprint">bonus</span></dd>
+			<dt>monk 2</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/dragon-style-combat">Dragon Style</a>
+				<span class="listBonuses noprint">min.3</span></dd>
+			<dt>monk 4</dt>
+			<dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/b/barkskin">Barkskin (1 Ki)</a>
+				<span class="listBonuses noprint">min.4</span></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/dragon-ferocity-combat">Dragon Ferocity</a>
+				<span class="listBonuses noprint">min.5</span></dd>
+			<dt>monk 5</dt>
+			<dd>Style Strike: Spin Kick</dd>
+			<dt>monk 6</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/mobility-combat-final">Mobility</a>
+				<span class="listBonuses noprint">min.6</span></dd>
+			<dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/t/true-strike">True Strike (1 Ki)</a>
+				<span class="listBonuses noprint">min.4</span></dd>
+			<dt>level 7</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/elemental-fist-combat">Elemental Fist</a>
+				<span class="listBonuses noprint">min.5</span></dd>
+			<dt>monk 8</dt>
+			<dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/d/dragon-s-breath">Dragon's Breath (2 Ki)</a>
+				<span class="listBonuses noprint">min.8</span></dd>
+			<dt>monk 9</dt>
+			<dd>Style Strike: Flying Kick</dd>
+			<dt>level 9</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/dragon-roar-combat">Dragon Roar</a>
+				<span class="listBonuses noprint">min.8</span></dd>
+			<dt>monk 10</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/medusa-s-wrath-combat-final">Medusa's Wrath</a>
+				<span class="listBonuses noprint">min.10</span></dd>
+			<dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/k/ki-leech">Ki Leech (0 Ki)</a>
+				<span class="listBonuses noprint">min.10</span></dd>
+			<dt>level 11</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/punishing-kick-combat">Punishing Kick</a>
+				<span class="listBonuses noprint">min.8</span></dd>
+			<dt>monk 12</dt>
+			<dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/b/battlemind-link">BattleMind Link (4 Ki)</a>
+				<span class="listBonuses noprint">min.12</span></dd>
+			<dt>monk 13</dt>
+			<dd>Style Strike: Leg Sweep</dd>
+			<dt>level 13</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/nimble-moves-final">Nimble Moves</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>monk 14</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/spring-attack-combat-final">Spring Attack</a>
+				<span class="listBonuses noprint">min.10</span></dd>
+			<dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/b/blood-crow-strike">Blood Crow Strike (2 Ki)</a>
+				<span class="listBonuses noprint">min.14</span></dd>
+		</dl>
 
-                <dt>Height</dt>
-                <dd>5' 9''</dd>
+		<!-- SKILLS -->
+		<ul>
+			<li class="br">
+				<span class="numberFirst">10</span>
+				<a href="https://d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
+				<span class="listBonuses">2 wis, 5 ranks, 3 class</span>
+			</li>
 
-                <dt>Languages</dt>
-                <dd>Common</dd>
-            </dl>
-        </div>
+			<!--Social Skills-->
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/intimidate" class="listBonusBreaker">Intimidate</a>
+				<span class="listBonuses">0 cha, 1 ranks, 3 class</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">10</span>
+				<a href="https://d20pfsrd.com/skills/sense-motive" class="listBonusBreaker">Sense Motive</a>
+				<span class="listBonuses">2 wis, 5 ranks, 3 class</span>
+			</li>
 
-        <!-- title SKILLS & FEATS-->
-        <div class="title">SKILLS &amp; FEATS</div>
-        <div class="container-fluid">
-            <dl id="featsWrapper">
-                <dt>human</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final">Weapon Focus</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>level 1</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat-final">Power Attack</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>monk 1</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/dodge-combat-final">Dodge</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-unarmed-strike-combat-final">Improved Unarmed Strike</a>
-                    <span class="listBonuses noprint">bonus</span></dd>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/stunning-fist-combat-final">Stunning Fist</a>
-                    <span class="listBonuses noprint">bonus</span></dd>
-                <dt>monk 2</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>level 3</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/dragon-style-combat">Dragon Style</a>
-                    <span class="listBonuses noprint">min.3</span></dd>
-                <dt>monk 4</dt>
-                <dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/b/barkskin">Barkskin (1 Ki)</a>
-                    <span class="listBonuses noprint">min.4</span></dd>
-                <dt>level 5</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/dragon-ferocity-combat">Dragon Ferocity</a>
-                    <span class="listBonuses noprint">min.5</span></dd>
-                <dt>monk 5</dt>
-                <dd>Style Strike: Spin Kick</dd>
-                <dt>monk 6</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/mobility-combat-final">Mobility</a>
-                    <span class="listBonuses noprint">min.6</span></dd>
-                <dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/t/true-strike">True Strike (1 Ki)</a>
-                    <span class="listBonuses noprint">min.4</span></dd>
-                <dt>level 7</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/elemental-fist-combat">Elemental Fist</a>
-                    <span class="listBonuses noprint">min.5</span></dd>
-                <dt>monk 8</dt>
-                <dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/d/dragon-s-breath">Dragon's Breath (2 Ki)</a>
-                    <span class="listBonuses noprint">min.8</span></dd>
-                <dt>monk 9</dt>
-                <dd>Style Strike: Flying Kick</dd>
-                <dt>level 9</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/dragon-roar-combat">Dragon Roar</a>
-                    <span class="listBonuses noprint">min.8</span></dd>
-                <dt>monk 10</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/medusa-s-wrath-combat-final">Medusa's Wrath</a>
-                    <span class="listBonuses noprint">min.10</span></dd>
-                <dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/k/ki-leech">Ki Leech (0 Ki)</a>
-                    <span class="listBonuses noprint">min.10</span></dd>
-                <dt>level 11</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/punishing-kick-combat">Punishing Kick</a>
-                    <span class="listBonuses noprint">min.8</span></dd>
-                <dt>monk 12</dt>
-                <dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/b/battlemind-link">BattleMind Link (4 Ki)</a>
-                    <span class="listBonuses noprint">min.12</span></dd>
-                <dt>monk 13</dt>
-                <dd>Style Strike: Leg Sweep</dd>
-                <dt>level 13</dt>
-                <dd><a href="https://d20pfsrd.com/feats/general-feats/nimble-moves-final">Nimble Moves</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>monk 14</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/spring-attack-combat-final">Spring Attack</a>
-                    <span class="listBonuses noprint">min.10</span></dd>
-                <dd>Ki Power: <a href="https://d20pfsrd.com/magic/all-spells/b/blood-crow-strike">Blood Crow Strike (2 Ki)</a>
-                    <span class="listBonuses noprint">min.14</span></dd>
-            </dl>
+			<!--Misc Skills-->
+			<li>
+				<span class="numberFirst">10</span>
+				<a href="https://d20pfsrd.com/skills/acrobatics" class="listBonusBreaker">Acrobatics</a>
+				<span class="listBonuses">2 dex, 5 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">10</span>
+				<a href="https://d20pfsrd.com/skills/climb" class="listBonusBreaker">Climb</a>
+				<span class="listBonuses">6 str, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">6</span>
+				<a href="https://d20pfsrd.com/skills/escape-artist" class="listBonusBreaker">Escape Artist</a>
+				<span class="listBonuses">2 dex, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">6</span>
+				<a href="https://d20pfsrd.com/skills/ride" class="listBonusBreaker">Ride</a>
+				<span class="listBonuses">2 dex, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">8</span>
+				<a href="https://d20pfsrd.com/skills/stealth" class="listBonusBreaker">Stealth</a>
+				<span class="listBonuses">2 dex, 3 ranks, 3 class</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">10</span>
+				<a href="https://d20pfsrd.com/skills/swim" class="listBonusBreaker">Swim</a>
+				<span class="listBonuses">6 str, 1 ranks, 3 class</span>
+			</li>
 
-            <!-- SKILLS -->
-            <div class="br">
-                <span class="numberFirst">10</span>
-                <a href="https://d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
-                <span class="listBonuses">2 wis, 5 ranks, 3 class</span>
-            </div>
+			<!--Knowledge Skills-->
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (History)</a>
+				<span class="listBonuses">0 int, 1 ranks, 3 class</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (Religion)</a>
+				<span class="listBonuses">0 int, 1 ranks, 3 class</span>
+			</li>
 
-            <!--Social Skills-->
-            <div>
-                <span class="numberFirst">4</span>
-                <a href="https://d20pfsrd.com/skills/intimidate" class="listBonusBreaker">Intimidate</a>
-                <span class="listBonuses">0 cha, 1 ranks, 3 class</span>
-            </div>
-            <div class="br">
-                <span class="numberFirst">10</span>
-                <a href="https://d20pfsrd.com/skills/sense-motive" class="listBonusBreaker">Sense Motive</a>
-                <span class="listBonuses">2 wis, 5 ranks, 3 class</span>
-            </div>
-
-            <!--Misc Skills-->
-            <div>
-                <span class="numberFirst">10</span>
-                <a href="https://d20pfsrd.com/skills/acrobatics" class="listBonusBreaker">Acrobatics</a>
-                <span class="listBonuses">2 dex, 5 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">10</span>
-                <a href="https://d20pfsrd.com/skills/climb" class="listBonusBreaker">Climb</a>
-                <span class="listBonuses">6 str, 1 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">6</span>
-                <a href="https://d20pfsrd.com/skills/escape-artist" class="listBonusBreaker">Escape Artist</a>
-                <span class="listBonuses">2 dex, 1 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">6</span>
-                <a href="https://d20pfsrd.com/skills/ride" class="listBonusBreaker">Ride</a>
-                <span class="listBonuses">2 dex, 1 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">8</span>
-                <a href="https://d20pfsrd.com/skills/stealth" class="listBonusBreaker">Stealth</a>
-                <span class="listBonuses">2 dex, 3 ranks, 3 class</span>
-            </div>
-            <div class="br">
-                <span class="numberFirst">10</span>
-                <a href="https://d20pfsrd.com/skills/swim" class="listBonusBreaker">Swim</a>
-                <span class="listBonuses">6 str, 1 ranks, 3 class</span>
-            </div>
-
-            <!--Knowledge Skills-->
-            <div>
-                <span class="numberFirst">4</span>
-                <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (History)</a>
-                <span class="listBonuses">0 int, 1 ranks, 3 class</span>
-            </div>
-            <div class="br">
-                <span class="numberFirst">4</span>
-                <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (Religion)</a>
-                <span class="listBonuses">0 int, 1 ranks, 3 class</span>
-            </div>
-
-            <div class="noprint">
+			<li class="noprint">
 				<span class="numberFirst">25</span>
 				<b class="listBonusBreaker">ranks</b>
 				<span class="listBonuses">5 monk: 4 class, 0 int, 1 human</span>
-			</div>
-			<div class="circumstancialBonus noprint br">
+			</li>
+			<li class="circumstancialBonus noprint">
 				Unranked Class Skills:
-                <a href="https://d20pfsrd.com/skills/craft">Craft</a>,
-                <a href="https://d20pfsrd.com/skills/perform">Perform</a>,
-                <a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+				<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+				<a href="https://d20pfsrd.com/skills/perform">Perform</a>,
+				<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul>
+					<li class="br">
+						<span class="numberFirst">4</span>
+						<b class="listBonusBreaker">Init</b>
+						<span class="listBonuses">2 dex, <u title="Reactionnary">2 trait</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">55</span>
+						<b class="listBonusBreaker">HP</b>
+						<span class="listBonuses">5 monk: 10 class, 1 con</span>
+					</li>
+					<li class="br">
+						<span class="numberFirst">17</span>
+						<span class="listBonusBreaker"><b>AC</b> touch 17, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 16</span>
+						<span class="listBonuses">10, 2 dex, <u title="Dodge">1 dodge</u>, <u title="Monk AC bonus">2 wis, 1 class</u>, <u title="Ring of Protection">1 deflection</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">5</span>
+						<b class="listBonusBreaker">Fort</b>
+						<span class="listBonuses">1 con, 4 class</span>
+					</li>
+					<li>
+						<span class="numberFirst">6</span>
+						<b class="listBonusBreaker">Ref</b>
+						<span class="listBonuses">2 dex, 4 class</span>
+						Evasion
+					</li>
+					<li>
+						<span class="numberFirst">3</span>
+						<b class="listBonusBreaker">Will</b>
+						<span class="listBonuses">2 wis, 1 class</span>
+					</li>
+					<li class="circumstancialBonus"><u title="Still mind">+2</u> vs Enchantment</li>
+					<li class="circumstancialBonus"><u title="Dragon Style">+2</u> vs sleep, paralysis, stunning</li>
+					<li class="circumstancialBonus br"><u title="Purity of Body">Immune</u> disease</li>
+					<li>
+						<span class="numberFirst">11</span>
+						<span class="listBonusBreaker"><b>CMB</b>; 26 <b>CMD</b></span>
+						<span class="listBonuses">5 bab, 6 str, 2 dex, <u title="Monk AC Bonus">2 wis, 1 class</u></span>
+					</li>
+				</ul>
+
+				<h2>Dragon Style</h2>
+				<p>Ignore difficult terrain during charge, run, withdraw</p>
+
+				<h2>Ki Pool <u title="2 wis, 2 monk&frac12;, 5 fc&frac14;">5 Ki</u></h2>
+				<ul>
+					<li class="minki">Treat your unarmed attacks as magic when overcoming <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction">DR</a>.</li>
+					<li>For 1 ki, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, add an additional attack at your highest attack bonus to flurry of blows.</li>
+					<li>For 1 ki, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, you may use <a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/barkskin">barkskin</a>.</li>
+				</ul>
 			</div>
-        </div>
+			<!--end of Basics: Statblock and Weapons-->
 
-        <!-- title COMBAT -->
-        <div class="title newPage">COMBAT (5 BAB)</div>
-        <div class="container-fluid">
-            <div class="row">
-                <!--Basics: Statblock and Weapons-->
-                <div class="col-xs-12 col-md-6">
-                    <div><b>Senses</b> Normal</div>
-                    <div class="br">
-                        <b>Speed</b> <abbr title="30 racial, 10 Fast Movement">40 ft.</abbr>
-                        <div class="circumstancialBonus"><abbr title="Dragon Style">Immune</abbr> difficult terrain during charge, run, withdraw</div>
-                    </div>
+			<div>
+				<!--Unarmed-->
+				<div class="weapon">
+					<h2>Unarmed Strike <b>20x2</b> <b>B</b></h2>
+					<span class="listBonusBreaker">+<b>12</b>/<b>12</b> vs AC</span>
+					<span class="listBonuses">5 bab, 6 str, 1 w.focus</span>
+					<br>
+					<b class="listBonusBreaker">1d8+1d6+10</b>
+					<span class="listBonuses"><u title="Dragon Ferocity">9 str&frac12;</u>, <u title="Heavy Hitter">1 trait</u></span>
+					<div class="circumstancialBonus"><a href="https://d20pfsrd.com/equipment-final/weapons#wpn-quality-nonlethal">Nonlethal</a></div>
+					<div class="circumstancialBonus"><u title="Dragon Style, 3 str&frac12;">+3 dmg</u> on first attack each round</div>
+					<div class="circumstancialBonus" title="Dragon Ferocity, 6 str">
+						On crit, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Shaken">Shaken</a> for 1d4+<u>6</u> rounds
+					</div>
+				</div>
 
-                    <div>
-                        <span class="numberFirst">4</span>
-                        <b class="listBonusBreaker">Init</b>
-                        <span class="listBonuses">2 dex, <abbr title="Reactionnary">2 trait</abbr></span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">55</span>
-                        <b class="listBonusBreaker">HP</b>
-                        <span class="listBonuses">5 monk: 10 class, 1 con</span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">17</span>
-                        <span class="listBonusBreaker"><b>AC</b> touch 17, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 16</span>
-                        <span class="listBonuses">10, 2 dex, <abbr title="Dodge">1 dodge</abbr>, <abbr title="Monk AC bonus">2 wis, 1 class</abbr>, <abbr title="Ring of Protection">1 deflection</abbr></span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">5</span>
-                        <b class="listBonusBreaker">Fort</b>
-                        <span class="listBonuses">1 con, 4 class</span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">6</span>
-                        <b class="listBonusBreaker">Ref</b>
-                        <span class="listBonuses">2 dex, 4 class</span>
-                        Evasion
-                    </div>
-                    <div>
-                        <span class="numberFirst">3</span>
-                        <b class="listBonusBreaker">Will</b>
-                        <span class="listBonuses">2 wis, 1 class</span>
-                    </div>
-                    <div class="circumstancialBonus"><abbr title="Still mind">+2</abbr> vs Enchantment</div>
-                    <div class="circumstancialBonus"><abbr title="Dragon Style">+2</abbr> vs sleep, paralysis, stunning</div>
-                    <div class="circumstancialBonus"><abbr title="Purity of Body">Immune</abbr> disease</div>
-                    <div class="br">
-                        <span class="numberFirst">11</span>
-                        <span class="listBonusBreaker"><b>CMB</b>; 26 <b>CMD</b></span>
-                        <span class="listBonuses">5 bab, 6 str, 2 dex, <abbr title="Monk AC Bonus">2 wis, 1 class</abbr></span>
-                    </div>
+				<!--Kama-->
+				<div class="weapon">
+					<h2>Kama <b>20x2</b> <b>S</b></h2>
+					<span class="listBonusBreaker">+<b>12</b>/<b>12</b> vs AC</span>
+					<span class="listBonuses">5 bab, 6 str, 1 mwk</span>
+					<br>
+					<b class="listBonusBreaker">1d6+6</b>
+					<span class="listBonuses">6 str</span>
+					<div class="circumstancialBonus"><a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-trip">Trip</a></div>
+				</div>
 
-					<div class="subtitle">
-                        Ki Pool
-                        <abbr title="2 wis, 2 monk&frac12;, 5 fc&frac14;" class="pull-xs-right">5 Ki</abbr>
-                    </div>
-                    <ul id="listKi">
-                        <li class="minki">Treat your unarmed attacks as magic when overcoming <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction">DR</a>.</li>
-                        <li>For 1 ki, as a <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, add an additional attack at your highest attack bonus to flurry of blows.</li>
-                        <li>For 1 ki, as a <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, you may use <a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/barkskin">barkskin</a>.</li>
-                    </ul>
-                </div>
-                <!--end of Basics: Statblock and Weapons-->
+				<!--Shuriken-->
+				<div class="weapon">
+					<h2>Shuriken <b>20x2</b> <b>10 ft.</b> <b>P</b></h2>
+					<span class="listBonusBreaker">+<b>7</b>/<b>7</b> vs AC</span>
+					<span class="listBonuses">5 bab, 2 dex</span>
+					<br>
+					<b class="listBonusBreaker">1d2+6</b>
+					<span class="listBonuses">6 str</span>
+				</div>
 
-                <!--Unarmed-->
-				<div class="weapon col-xs-12 col-md-6 firstweapon">
-                    <div class="weaponHead">
-                        <div class="pull-xs-right">20x2</div>
-                        Unarmed Strike<sup>B, Magic</sup>
-                    </div>
-                    <div class="apartee hidden-sm-down" style="float:right; text-align:right">Flurry <b>+12</b><br><b>+12</b></div>
-                    <span class="listBonusBreaker">+<b>12</b> vs AC</span>
-                    <span class="listBonuses">5 bab, 6 str, 1 w.focus</span>
-                    <br>
-                    <b class="listBonusBreaker">1d8+1d6+10</b>
-                    <span class="listBonuses"><abbr title="Dragon Ferocity">9 str&frac12;</abbr>, <abbr title="Heavy Hitter">1 trait</abbr></span>
-                    <div class="circumstancialBonus"><a href="https://d20pfsrd.com/equipment-final/weapons#wpn-quality-nonlethal">Nonlethal</a></div>
-                    <div class="circumstancialBonus"><abbr title="Dragon Style, 3 str&frac12;">+3 dmg</abbr> on first attack each round</div>
-                    <div class="circumstancialBonus">
-                        <abbr title="Dragon Ferocity"><a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Shaken">Shaken</a></abbr>
-                        for 1d4+<abbr title="6 str">6</abbr> rounds on crits
-                    </div>
-                </div>
-                
-                <!--Kama-->
-                <div class="weapon col-xs-12 col-md-6">
-                    <div class="weaponHead">
-                        <div class="pull-xs-right">20x2</div>
-                        Kama<sup>S</sup>
-                    </div>
-                    <span class="listBonusBreaker">+<b>12</b> vs AC</span>
-                    <span class="listBonuses">5 bab, 6 str, 1 mwk</span>
-                    <br>
-                    <b class="listBonusBreaker">1d6+6</b>
-                    <span class="listBonuses">6 str</span>
-                    <div class="circumstancialBonus"><a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-trip">Trip</a></div>
-                </div>
+				<h2>Stunning Fist <u title="5 monk">5/day</u></h2>
+				</p>
+					DC <u title="10, 2 monk&frac12;, 2 wis">14</u> Fort -->
+					(<a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Stunned">Stunned</a> 1 round ||
+					<a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Fatigued">Fatigued</a>) &amp;
+					<u title="Dragon Ferocity, 6 str">
+						<a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Shaken">Shaken</a> 1d4+6 rounds.
+					</u>
+				</p>
+			</div>
+		</section>
 
-                <!--Shuriken-->
-                <div class="weapon col-xs-12 col-md-6">
-                    <div class="weaponHead">
-                        <div class="pull-xs-right">20x2</div>
-                        <div class="weaponReach">10 ft.</div>
-                        Shuriken<sup>P</sup>
-                    </div>
-                    <span class="listBonusBreaker">+<b>7</b> vs AC</span>
-                    <span class="listBonuses">5 bab, 2 dex</span>
-                    <br>
-                    <b class="listBonusBreaker">1d2+6</b>
-                    <span class="listBonuses">6 str</span>
-                </div>
-                
-                <div class="col-xs-12 col-md-6 br">
-					<div class="subtitle">
-                        Stunning Fist
-                        <abbr title="5 monk" class="pull-xs-right">5/day</abbr>
-                    </div>
-                    DC <abbr title="10, 2 monk&frac12;, 2 wis">14</abbr> Fort -->
-                    (<a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Stunned">Stunned</a> 1 round ||
-                    <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Fatigued">Fatigued</a>) &amp;
-                    <abbr title="Dragon Ferocity, 6 str">
-                        <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Shaken">Shaken</a> 1d4+6 rounds.
-                    </abbr>
-                </div>
-            </div>
-        </div>
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li class="emptyitemslot">Head</li>
+			<li class="emptyitemslot">Headband</li>
+			<li class="emptyitemslot">Eyes</li>
+			<li class="emptyitemslot">Shoulder</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-mighty-fists">Amulet of Mighty Fists</a>, <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost">Frost</a></li>
+			<li class="emptyitemslot">Chest</li>
+			<li class="emptyitemslot">Body</li>
+			<li class="emptyitemslot">Wrists</li>
+			<li class="emptyitemslot">Hands</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li class="emptyitemslot">Ring</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a> +2</li>
+			<li class="emptyitemslot">Feet</li>
+		</ul>
 
-        <!-- title EQUIPMENT -->
-        <div class="title">EQUIPMENT</div>
-        <div class="container-fluid">
-			<ul id="magicItemsWrapper">
-				<li class="emptyitemslot">Head</li>
-				<li class="emptyitemslot">Headband</li>
-				<li class="emptyitemslot">Eyes</li>
-				<li class="emptyitemslot">Shoulder</li>
-				<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-mighty-fists">Amulet of Mighty Fists</a>, <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost">Frost</a></li>
-				<li class="emptyitemslot">Chest</li>
-				<li class="emptyitemslot">Body</li>
-				<li class="emptyitemslot">Wrists</li>
-				<li class="emptyitemslot">Hands</li>
-                <li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
-                <li class="emptyitemslot">Ring</li>
-				<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a> +2</li>
-                <li class="emptyitemslot">Feet</li>
-			</ul>
-            <!--Weapons-->
-            <div><!--304-->
+		<ul>
+			<!--Weapons-->
+			<li><!--304-->
 				<a href="https://d20pfsrd.com/equipment/weapons">Kama</a>,
 				<span class="listBonusBreaker">cold-iron masterwork</span>
 				<span class="listBonuses noprint">exotic light, 1d6, 20x2, S.</span>
-			</div>
-            <div><!--4 (ammo: 1 gp for 5)-->
-                20x <a class="listBonusBreaker" href="https://d20pfsrd.com/equipment/weapons">Shuriken</a>
+			</li>
+			<li><!--4 (ammo: 1 gp for 5)-->
+				20x <a class="listBonusBreaker" href="https://d20pfsrd.com/equipment/weapons">Shuriken</a>
 				<span class="listBonuses noprint">exotic ranged, 1d2, 20x2, P, 10ft.</span>
-			</div>
+			</li>
 
-            <!--Misc-->
-			<div><!--35-->
+			<!--Misc-->
+			<li><!--35-->
 				<a target="_blank" href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
-			</div>
-            <div>157 <b>GP</b><!--/10500--></div>
-        </div>
+			</li>
+			<li>157 <b>GP</b><!--/10500--></li>
+		</ul>
 
-        <!-- title NOTES -->
-        <div class="noprint">
-            <div class="title">NOTES</div>
-            <ul id="sources" class="pull-xs-right list-unstyled">
-                <li>
-                    Core Rulebook (2009)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-mighty-fists">Amulet of Mighty Fists</a></li>
-                        <li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a></li>
-                        <li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/dodge-combat-final">Dodge</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/elemental-fist-combat">Elemental Fist</a></li>
-                        <li><a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost">Frost</a></li>
-                        <li><a href="https://d20pfsrd.com/races/core-races/human">Human</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/improved-unarmed-strike-combat-final">Improved Unarmed Strike</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/medusa-s-wrath-combat-final">Medusa's Wrath</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/mobility-combat-final">Mobility</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/general-feats/nimble-moves-final">Nimble Moves</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat-final">Power Attack</a></li>
-                        <li><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/spring-attack-combat-final">Spring Attack</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/stunning-fist-combat-final">Stunning Fist</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final">Weapon Focus</a></li>
-                        <li>Core spells will not be listed.</li>
-                    </ul>
-                </li>
-                <li>
-                    Advanced Player's Guide (2010)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/punishing-kick-combat">Punishing Kick</a></li>
-                        <li><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></li>
-                        <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/dragon-s-breath">dragon's breath</a></li>
-                    </ul>
-                </li>
-                <li>
-                    Ultimate Combat (2011)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/dragon-ferocity-combat">Dragon Ferocity</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/dragon-roar-combat">Dragon Roar</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/dragon-style-combat">Dragon Style</a></li>
-                    </ul>
-                </li>
-                <li>
-                    Ultimate Magic (2011)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/classes/core-classes/monk/archetypes/paizo-monk-archetypes/qinggong-monk">Qinggong Ki Powers</a></li>
-                        <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/battlemind-link">battlemind link</a></li>
-                        <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/blood-crow-strike">blood crow strike</a></li>
-                        <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/k/ki-leech">ki leech</a></li>
-                    </ul>
-                </li>
-                <li>
-                    PPC: Dragon Empires Primer (2011)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/traits/regional-traits/quain-martial-artist-quain">Heavy Hitter</a></li>
-                    </ul>
-                </li>
-                <li>
-                    Pathfinder Unchained (2015)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/classes/unchained-classes/monk-unchained">UMonk</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="container-fluid">
-                <a href="https://docs.google.com/document/d/1B4FiQnqdfX9-nIDhV7FHlq-__R7w_F7YmWKXA6iYY0k/edit?pli=1">Guide Treantmonk</a>,
-                <a href="https://docs.google.com/file/d/0B7b8EGfd1Lu3NTM4NTMyZTQtYzRlNS00MGVhLWFjZjItMzgyNWUxMWU3ZDU4/edit?pli=1">Guide Revel</a>.<br/>
-                <br/>
-                <a href="https://d20pfsrd.com/feats/combat-feats/belier-s-bite-combat">Bleeding Attack</a> Can be acceptably good, maybe.<br/>
-                <br/>
-                <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-hidden-strength">Amulet of Hidden Strength</a>, 9 000<br/>
-                <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/necklace-of-ki-serenity">Necklace of Ki Serenity</a>, 16 000<br/>
-            </div>
-        </div>
-    </div>
-</body></html>
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<ul id="sources">
+				<li>
+					Core Rulebook (2009)
+					<ul>
+						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-mighty-fists">Amulet of Mighty Fists</a></li>
+						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a></li>
+						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/dodge-combat-final">Dodge</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/elemental-fist-combat">Elemental Fist</a></li>
+						<li><a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost">Frost</a></li>
+						<li><a href="https://d20pfsrd.com/races/core-races/human">Human</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/improved-unarmed-strike-combat-final">Improved Unarmed Strike</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/medusa-s-wrath-combat-final">Medusa's Wrath</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/mobility-combat-final">Mobility</a></li>
+						<li><a href="https://d20pfsrd.com/feats/general-feats/nimble-moves-final">Nimble Moves</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat-final">Power Attack</a></li>
+						<li><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/spring-attack-combat-final">Spring Attack</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/stunning-fist-combat-final">Stunning Fist</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final">Weapon Focus</a></li>
+						<li>Core spells will not be listed.</li>
+					</ul>
+				</li>
+				<li>
+					Advanced Player's Guide (2010)
+					<ul>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/punishing-kick-combat">Punishing Kick</a></li>
+						<li><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></li>
+						<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/dragon-s-breath">dragon's breath</a></li>
+					</ul>
+				</li>
+				<li>
+					Ultimate Combat (2011)
+					<ul>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/dragon-ferocity-combat">Dragon Ferocity</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/dragon-roar-combat">Dragon Roar</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/dragon-style-combat">Dragon Style</a></li>
+					</ul>
+				</li>
+				<li>
+					Ultimate Magic (2011)
+					<ul>
+						<li><a href="https://d20pfsrd.com/classes/core-classes/monk/archetypes/paizo-monk-archetypes/qinggong-monk">Qinggong Ki Powers</a></li>
+						<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/battlemind-link">battlemind link</a></li>
+						<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/blood-crow-strike">blood crow strike</a></li>
+						<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/k/ki-leech">ki leech</a></li>
+					</ul>
+				</li>
+				<li>
+					PPC: Dragon Empires Primer (2011)
+					<ul>
+						<li><a href="https://d20pfsrd.com/traits/regional-traits/quain-martial-artist-quain">Heavy Hitter</a></li>
+					</ul>
+				</li>
+				<li>
+					Pathfinder Unchained (2015)
+					<ul>
+						<li><a href="https://d20pfsrd.com/classes/unchained-classes/monk-unchained">UMonk</a></li>
+					</ul>
+				</li>
+			</ul>
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Protective and funny</dd>
+
+				<dt>Drawback</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/burned">Burned</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Blue</dd>
+
+				<dt>Hair</dt>
+				<dd>White</dd>
+
+				<dt>Weight</dt>
+				<dd>153 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 9''</dd>
+			</dl>
+			<p>
+				<a href="https://docs.google.com/document/d/1B4FiQnqdfX9-nIDhV7FHlq-__R7w_F7YmWKXA6iYY0k/edit?pli=1">Guide Treantmonk</a>,
+				<a href="https://docs.google.com/file/d/0B7b8EGfd1Lu3NTM4NTMyZTQtYzRlNS00MGVhLWFjZjItMzgyNWUxMWU3ZDU4/edit?pli=1">Guide Revel</a>.
+			</p>
+
+				<a href="https://d20pfsrd.com/feats/combat-feats/belier-s-bite-combat">Bleeding Attack</a> Can be acceptably good, maybe.<br/>
+				<br/>
+				<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-hidden-strength">Amulet of Hidden Strength</a>, 9 000<br/>
+				<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/necklace-of-ki-serenity">Necklace of Ki Serenity</a>, 16 000<br/>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
