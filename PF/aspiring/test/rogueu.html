@@ -1,557 +1,539 @@
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Grey's Rogue</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../system/pfGeneric.css">
-    <link rel="stylesheet" href="../../system/pfCharacter.css">
-    <style>
-        li.sneaktalent { list-style-type: square; }
-        li.debilitation { list-style-type: circle; }
-        .firstweapon { margin-top: 0.75rem; }
-    </style>
+	<link rel="stylesheet" href="../../system/pfCharacter.css">
+	<style>
+		li.sneaktalent { list-style-type: square; }
+		li.debilitation { list-style-type: circle; }
+	</style>
 </head>
 <body>
-    <div id="fixref" class="noprint">
-        <a href="https://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
-	</div>
+	<nav id="fixref" class="noprint">
+		<a href="https://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
+	</nav>
 
-    <div class="container">
-        <div id="header">
-            <b>Jonathan Beaudelaire, kidnapper with magic fingers</b><br>
-            N Medium humanoid
-        </div>
+	<div class="container">
+		<header id="header">
+			<h1>Jonathan Beaudelaire, kidnapper with magic fingers</h1>
+			N Medium humanoid
+		</header>
 
-        <div id="headerInfo" class="row">
-            <dl class="charInfo col-xs-12 col-md-4">
-                <dt>Str</dt>
-                <dd>10</dd>
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>10</dd>
 
-                <dt>Dex</dt>
-                <dd>22 <span class="listbonuses">17, <abbr title="Racial">2</abbr>, <abbr title="Advancement">1</abbr>, <abbr title="Belt of Incredible Dexterity">2</abbr></span></dd>
+				<dt>Dex</dt>
+				<dd>22 <span class="listbonuses">17, <u title="Racial">2</u>, <u title="Advancement">1</u>, <u title="Belt of Incredible Dexterity">2</u></span></dd>
 
-                <dt>Con</dt>
-                <dd>14</dd>
+				<dt>Con</dt>
+				<dd>14</dd>
 
-                <dt>Int</dt>
-                <dd>14</dd>
+				<dt>Int</dt>
+				<dd>14</dd>
 
-                <dt>Wis</dt>
-                <dd>12</dd>
+				<dt>Wis</dt>
+				<dd>12</dd>
 
-                <dt>Cha</dt>
-                <dd>10</dd>
-            </dl>
-            <div class="col-xs-12 col-md-4">
-                <dl id="subheader" class="charInfo">
-                    <dt>Race</dt>
-                    <dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
 
-                    <dt>Class</dt>
-                    <dd><a href="https://d20pfsrd.com/classes/unchained-classes/rogue-unchained">URogue</a> 5</dd>
-                </dl>
-                <dl class="charInfo">
-                    <dt>Traits</dt>
-                    <dd><a href="https://d20pfsrd.com/traits/faith-traits/inspired">Inspired</a></dd>
-                    <dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/unchained-classes/rogue-unchained">URogue</a> 5</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Pharasma</dd>
 
-                    <dt>Drawback</dt>
-                    <dd><a href="https://d20pfsrd.com/traits/drawbacks/umbral-unmasking">Umbral Unmasking</a></dd>
-                </dl>
-            </div>
-            <dl class="charInfo col-xs-12 col-md-4">
-                <dt>Deity</dt>
-                <dd>Pharasma</dd>
+				<dt>Senses</dt>
+				<dd>Normal</dd>
 
-                <dt>Eyes</dt>
-                <dd>Brown</dd>
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
 
-                <dt>Hair</dt>
-                <dd>Black</dd>
+				<dt>Languages</dt>
+				<dd>Common, Gnomish, Goblin, Undercommon</dd>
+			</dl>
+		</section>
 
-                <dt>Weight</dt>
-                <dd>153 lbs</dd>
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>Traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/faith-traits/inspired">Inspired</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+			<dt>human</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/enforcer-combat">Enforcer</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>rogue 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat-final">Weapon Finesse</a>
+				<span class="listBonuses noprint">bonus</span></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/two-weapon-fighting-combat-final">Two-Weapon Fighting</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>rogue 2</td>
+			<dd><a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/weapon-training">Weapon training</a> &gt;
+				<a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final">Weapon Focus</a>
+				<span class="listBonuses noprint">min.2</span></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/sap-adept-combat">Sap Adept</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>rogue 4</dt>
+			<dd>*<a href="https://d20pfsrd.com/classes/unchained-classes/rogue-unchained/rogue-talents/paizo-rogue-talents/slow-reactions">Slow reactions</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>rogue 5</dt>
+			<dd>Rogue's Edge <a href="https://d20pfsrd.com/skills/sense-motive#Unchained-Skill-Unlock">Sense Motive</a></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/sap-master-combat">Sap Master</a>
+				<span class="listBonuses noprint">min.5</span></dd>
+			<dt>rogue 6</dt>
+			<dd><a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/minor-magic-sp">Minor magic</a>
+				(<a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>)
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>fc 6</dt>
+			<dd><a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/major-magic-sp">Major magic</a>
+				(<a class="spell" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>)
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>rogue 7</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/dazzling-display-combat">Dazzling Display</a>
+				<span class="listBonuses noprint">min.2</span></dd>
+			<dt>rogue 8</dt>
+			<dd><a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/combat-trick">Combat trick</a> &gt;
+				<a href="https://d20pfsrd.com/feats/combat-feats/shatter-defenses-combat-final">Shatter Defenses</a>
+				<span class="listBonuses noprint">min.8</span></dd>
+			<dt>level 9</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-two-weapon-fighting-combat-final">Improved Two-Weapon Fighting</a>
+				<span class="listBonuses noprint">min.8</span></dd>
+			<dt>rogue 10</dt>
+			<dd>*<a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-advanced-talents/dispelling-attack-su">Dispelling Attack</a>
+				<span class="listBonuses noprint">min.10</span></dd>
+			<dd>Rogue's Edge <a href="https://d20pfsrd.com/skills/intimidate#TOC-Intimidate-Unchained">Intimidate</a></dd>
+			<dt>level 11</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>rogue 12</dt>
+			<dd><a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-advanced-talents/opportunist-ex">Opportunist</a>
+				<span class="listBonuses noprint">min.10</span></dd>
+			<dt>fc 12</dt>
+			<dd>*<a href="https://d20pfsrd.com/classes/unchained-classes/rogue-unchained/rogue-talents-advanced/paizo-rogue-talents-advanced/double-debilitation">Double Debilitation</a>
+				<span class="listBonuses noprint">min.10</span></dd>
+			<dt>level 13</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/piranha-strike-combat">Piranha Strike</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>rogue 14</dt>
+			<dd>*<a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-advanced-talents/crippling-strike-ex/">Crippling Strike</a>
+				<span class="listBonuses noprint">min.10</span></dd>
+		</dl>
 
-                <dt>Height</dt>
-                <dd>5' 9''</dd>
+		<!-- SKILLS -->
+		<ul>
+			<li>
+				<span class="numberFirst">9</span>
+				<a href="https://d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
+				<span class="listBonuses">1 wis, 5 ranks, 3 class</span>
+				<div class="circumstancialBonus"><u title="Trapfinding, Rogue&frac12;">+2</u> to locate traps</div>
+				<div class="circumstancialBonus"><u title="Danger Sense, Rogue&frac13;">+1</u> vs 'being surprised'</div>
+			</li>
+			<li class="br">
+				<span class="numberFirst">15</span>
+				<a href="https://d20pfsrd.com/skills/disable-device" class="listBonusBreaker">Disable Device</a>
+				<span class="listBonuses">6 dex, 2 ranks, 3 class, <u title="Trapfinding, Rogue&frac12;">2</u>, <u title="Masterwork Thieve's Tools">2 circumstance</u></span>
+				<div class="circumstancialBonus"><u title="Trapfinding">can disarm magical traps</u></div>
+			</li>
 
-                <dt>Languages</dt>
-                <dd>Common, Gnomish, Goblin, Undercommon</dd>
-            </dl>
-        </div>
+			<!--Social Skills-->
+			<li>
+				<span class="numberFirst">8</span>
+				<a href="https://d20pfsrd.com/skills/bluff" class="listBonusBreaker">Bluff</a>
+				<span class="listBonuses">0 cha, 5 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/diplomacy" class="listBonusBreaker">Diplomacy</a>
+				<span class="listBonuses">0 cha, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">8</span>
+				<a href="https://d20pfsrd.com/skills/intimidate" class="listBonusBreaker">Intimidate</a>
+				<span class="listBonuses">0 cha, 5 ranks, 3 class</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">9</span>
+				<a href="https://d20pfsrd.com/skills/sense-motive" class="listBonusBreaker">Sense Motive</a>
+				<span class="listBonuses">1 wis, 5 ranks, 3 class</span> Unlocked!
+			</li>
 
-        <!-- title SKILLS & FEATS-->
-        <div class="title">SKILLS &amp; FEATS</div>
-        <div class="container-fluid">
-            <dl id="featsWrapper">
-                <dt>human</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/enforcer-combat">Enforcer</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>rogue 1</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat-final">Weapon Finesse</a>
-                    <span class="listBonuses noprint">bonus</span></dd>
-                <dt>level 1</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/two-weapon-fighting-combat-final">Two-Weapon Fighting</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>rogue 2</td>
-                <dd><a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/weapon-training">Weapon training</a> &gt;
-                    <a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final">Weapon Focus</a>
-                    <span class="listBonuses noprint">min.2</span></dd>
-                <dt>level 3</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/sap-adept-combat">Sap Adept</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>rogue 4</dt>
-                <dd>*<a href="https://d20pfsrd.com/classes/unchained-classes/rogue-unchained/rogue-talents/paizo-rogue-talents/slow-reactions">Slow reactions</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>rogue 5</dt>
-                <dd>Rogue's Edge <a href="https://d20pfsrd.com/skills/sense-motive#Unchained-Skill-Unlock">Sense Motive</a></dd>
-                <dt>level 5</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/sap-master-combat">Sap Master</a>
-                    <span class="listBonuses noprint">min.5</span></dd>
-                <dt>rogue 6</dt>
-                <dd><a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/minor-magic-sp">Minor magic</a>
-                    (<a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>)
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>fc 6</dt>
-                <dd><a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/major-magic-sp">Major magic</a>
-                    (<a class="spell" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>)
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>rogue 7</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/dazzling-display-combat">Dazzling Display</a>
-                    <span class="listBonuses noprint">min.2</span></dd>
-                <dt>rogue 8</dt>
-                <dd><a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/combat-trick">Combat trick</a> &gt;
-                    <a href="https://d20pfsrd.com/feats/combat-feats/shatter-defenses-combat-final">Shatter Defenses</a>
-                    <span class="listBonuses noprint">min.8</span></dd>
-                <dt>level 9</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-two-weapon-fighting-combat-final">Improved Two-Weapon Fighting</a>
-                    <span class="listBonuses noprint">min.8</span></dd>
-                <dt>rogue 10</dt>
-                <dd>*<a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-advanced-talents/dispelling-attack-su">Dispelling Attack</a>
-                    <span class="listBonuses noprint">min.10</span></dd>
-                <dd>Rogue's Edge <a href="https://d20pfsrd.com/skills/intimidate#TOC-Intimidate-Unchained">Intimidate</a></dd>
-                <dt>level 11</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>rogue 12</dt>
-                <dd><a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-advanced-talents/opportunist-ex">Opportunist</a>
-                    <span class="listBonuses noprint">min.10</span></dd>
-                <dt>fc 12</dt>
-                <dd>*<a href="https://d20pfsrd.com/classes/unchained-classes/rogue-unchained/rogue-talents-advanced/paizo-rogue-talents-advanced/double-debilitation">Double Debilitation</a>
-                    <span class="listBonuses noprint">min.10</span></dd>
-                <dt>level 13</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/piranha-strike-combat">Piranha Strike</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>rogue 14</dt>
-                <dd>*<a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-advanced-talents/crippling-strike-ex/">Crippling Strike</a>
-                    <span class="listBonuses noprint">min.10</span></dd>
-            </dl>
-
-            <!-- SKILLS -->
-            <div>
-                <span class="numberFirst">9</span>
-                <a href="https://d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
-                <span class="listBonuses">1 wis, 5 ranks, 3 class</span>
-                <div class="circumstancialBonus"><abbr title="Trapfinding, Rogue&frac12;">+2</abbr> to locate traps</div>
-                <div class="circumstancialBonus"><abbr title="Danger Sense, Rogue&frac13;">+1</abbr> vs 'being surprised'</div>
-            </div>
-            <div class="br">
-                <span class="numberFirst">15</span>
-                <a href="https://d20pfsrd.com/skills/disable-device" class="listBonusBreaker">Disable Device</a>
-                <span class="listBonuses">6 dex, 2 ranks, 3 class, <abbr title="Trapfinding, Rogue&frac12;">2</abbr>, <abbr title="Masterwork Thieve's Tools">2 circumstance</abbr></span>
-                <div class="circumstancialBonus"><abbr title="Trapfinding">can disarm magical traps</abbr></div>
-            </div>
-
-            <!--Social Skills-->
-            <div>
-                <span class="numberFirst">8</span>
-                <a href="https://d20pfsrd.com/skills/bluff" class="listBonusBreaker">Bluff</a>
-                <span class="listBonuses">0 cha, 5 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">4</span>
-                <a href="https://d20pfsrd.com/skills/diplomacy" class="listBonusBreaker">Diplomacy</a>
-                <span class="listBonuses">0 cha, 1 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">8</span>
-                <a href="https://d20pfsrd.com/skills/intimidate" class="listBonusBreaker">Intimidate</a>
-                <span class="listBonuses">0 cha, 5 ranks, 3 class</span>
-            </div>
-            <div class="br">
-                <span class="numberFirst">9</span>
-                <a href="https://d20pfsrd.com/skills/sense-motive" class="listBonusBreaker">Sense Motive</a>
-                <span class="listBonuses">1 wis, 5 ranks, 3 class</span> Unlocked!
-            </div>
-
-            <!--Misc Skills-->
-            <div>
-                <span class="numberFirst">14</span>
-                <a href="https://d20pfsrd.com/skills/acrobatics" class="listBonusBreaker">Acrobatics</a>
-                <span class="listBonuses">6 dex, 5 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">6</span>
-                <a href="https://d20pfsrd.com/skills/appraise" class="listBonusBreaker">Appraise</a>
-                <span class="listBonuses">2 int, 1 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">4</span>
-                <a href="https://d20pfsrd.com/skills/climb" class="listBonusBreaker">Climb</a>
-                <span class="listBonuses">0 str, 1 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">8</span>
-                <a href="https://d20pfsrd.com/skills/disguise" class="listBonusBreaker">Disguise</a>
-                <span class="listBonuses">0 cha, 5 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">10</span>
-                <a href="https://d20pfsrd.com/skills/escape-artist" class="listBonusBreaker">Escape Artist</a>
-                <span class="listBonuses">6 dex, 1 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">6</span>
-                <a href="https://d20pfsrd.com/skills/linguistics" class="listBonusBreaker">Linguistics</a>
-                <span class="listBonuses">2 int, 1 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">14</span>
-                <a href="https://d20pfsrd.com/skills/sleight-of-hand" class="listBonusBreaker">Sleight of Hand</a>
-                <span class="listBonuses">6 dex, 5 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">14</span>
-                <a href="https://d20pfsrd.com/skills/stealth" class="listBonusBreaker">Stealth</a>
-                <span class="listBonuses">6 dex, 5 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">4</span>
-                <a href="https://d20pfsrd.com/skills/swim" class="listBonusBreaker">Swim</a>
-                <span class="listBonuses">0 str, 1 ranks, 3 class</span>
-            </div>
-            <div class="br">
-                <span class="numberFirst">8</span>
-                <a href="https://d20pfsrd.com/skills/use-magic-device" class="listBonusBreaker">Use Magic Device</a>
-                <span class="listBonuses">0 str, 5 ranks, 3 class</span>
-            </div>
+			<!--Misc Skills-->
+			<li>
+				<span class="numberFirst">14</span>
+				<a href="https://d20pfsrd.com/skills/acrobatics" class="listBonusBreaker">Acrobatics</a>
+				<span class="listBonuses">6 dex, 5 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">6</span>
+				<a href="https://d20pfsrd.com/skills/appraise" class="listBonusBreaker">Appraise</a>
+				<span class="listBonuses">2 int, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/climb" class="listBonusBreaker">Climb</a>
+				<span class="listBonuses">0 str, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">8</span>
+				<a href="https://d20pfsrd.com/skills/disguise" class="listBonusBreaker">Disguise</a>
+				<span class="listBonuses">0 cha, 5 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">10</span>
+				<a href="https://d20pfsrd.com/skills/escape-artist" class="listBonusBreaker">Escape Artist</a>
+				<span class="listBonuses">6 dex, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">6</span>
+				<a href="https://d20pfsrd.com/skills/linguistics" class="listBonusBreaker">Linguistics</a>
+				<span class="listBonuses">2 int, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">14</span>
+				<a href="https://d20pfsrd.com/skills/sleight-of-hand" class="listBonusBreaker">Sleight of Hand</a>
+				<span class="listBonuses">6 dex, 5 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">14</span>
+				<a href="https://d20pfsrd.com/skills/stealth" class="listBonusBreaker">Stealth</a>
+				<span class="listBonuses">6 dex, 5 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/swim" class="listBonusBreaker">Swim</a>
+				<span class="listBonuses">0 str, 1 ranks, 3 class</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">8</span>
+				<a href="https://d20pfsrd.com/skills/use-magic-device" class="listBonusBreaker">Use Magic Device</a>
+				<span class="listBonuses">0 str, 5 ranks, 3 class</span>
+			</li>
 
 			<!--Knowledge Skills-->
-            <div>
-                <span class="numberFirst">6</span>
-                <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (local)</a>
-                <span class="listBonuses">2 int, 1 ranks, 3 class</span>
-            </div>
-            <div class="br">
-                <span class="numberFirst">6</span>
-                <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (nobility)</a>
-                <span class="listBonuses">2 int, 1 ranks, 3 class</span>
-            </div>
+			<li>
+				<span class="numberFirst">6</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (local)</a>
+				<span class="listBonuses">2 int, 1 ranks, 3 class</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">6</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (nobility)</a>
+				<span class="listBonuses">2 int, 1 ranks, 3 class</span>
+			</li>
 
-            <div class="noprint">
+			<li class="noprint">
 				<span class="numberFirst">55</span>
 				<b class="listBonusBreaker">ranks</b>
 				<span class="listBonuses">5 rogue: 8 class, 2 int, 1 human</span>
-			</div>
-			<div class="circumstancialBonus noprint br">
+			</li>
+			<li class="circumstancialBonus noprint">
 				Unranked Class Skills:
-                <a href="https://d20pfsrd.com/skills/craft">Craft</a>,
-                <a href="https://d20pfsrd.com/skills/Perform">Perform</a>,
-                <a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+				<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+				<a href="https://d20pfsrd.com/skills/Perform">Perform</a>,
+				<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul>
+					<li class="br">
+						<span class="numberFirst">8</span>
+						<b class="listBonusBreaker">Init</b>
+						<span class="listBonuses">6 dex, <u title="Reactionary">2 trait</u></span>
+						<div class="circumstancialBonus">
+							<u title="Rogue's Edge">+varying</u> when using
+							<a href="https://d20pfsrd.com/skills/sense-motive#TOC-Sense-Motive-Unchained">Sense Motive unlock</a>
+						</div>
+					</li>
+					<li>
+						<span class="numberFirst">50</span>
+						<b class="listBonusBreaker">HP</b>
+						<span class="listBonuses">5 rogue: 8 class, 2 con</span>
+					</li>
+					<li class="br">
+						<span class="numberFirst">21</span>
+						<span class="listBonusBreaker"><b>AC</b> touch 16, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> Immune</span>
+						<span class="listBonuses">10, 6 dex, 5 armor</span>
+						<div class="circumstancialBonus"><u title="Danger Sense">+1 dodge</u> vs traps</div>
+					</li>
+					<li>
+						<span class="numberFirst">4</span>
+						<b class="listBonusBreaker">Fort</b>
+						<span class="listBonuses">2 con, 1 class, <u title="Cloak of Resistance">1 resistance</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">11</span>
+						<b class="listBonusBreaker">Ref</b>
+						<span class="listBonuses">6 dex, 4 class, <u title="Cloak of Resistance">1 resistance</u></span>
+						Evasion
+					</li>
+					<li>
+						<span class="numberFirst">3</span>
+						<b class="listBonusBreaker">Will</b>
+						<span class="listBonuses">1 wis, 1 class, <u title="Cloak of Resistance">1 resistance</u></span>
+					</li>
+					<li class="circumstancialBonus br"><u title="Danger Sense">+1</u> vs traps</li>
+					<li>
+						<span class="numberFirst">3</span>
+						<span class="listBonusBreaker"><b>CMB</b>;	19 <b>CMD</b></span>
+						<span class="listBonuses">3 bab, 0 str, 6 dex</span>
+					</li>
+				</ul>
+
+				<h2>Inspired <u title="1 trait">1/day</u></h2>
+
+				<h2>Sneak Attack <u title="3 class">3d6</u></h2>
+				<ul>
+					<li class="sneaktalent">can't make AoOs</li>
+					<li class="debilitation">-2 to AC, &amp; extra -2 vs me</li>
+					<li class="debilitation">-2 to hit, &amp; extra -2 vs me</li>
+					<li class="debilitation">half speed, no 5ft-step</li>
+				</ul>
 			</div>
-        </div>
+			<!--end of Basics: Statblock and Weapons-->
 
-        <!-- title COMBAT -->
-        <div class="title newPage">COMBAT (3 BAB)</div>
-        <div class="container-fluid">
-            <div class="row">
-                <!--Basics: Statblock and Weapons-->
-                <div class="col-xs-12 col-md-6">
-                    <div><b>Senses</b> Normal</div>
-                    <div class="br"><b>Speed</b> 30 ft.</div>
+			<div>
+				<!--Sap-->
+				<div class="weapon">
+					<h2>Sap <b>20x2</b> <b>B</b></h2>
+					<div class="apartee float-right">TWF<br> <b>+9</b>: 1d6+6<br> <b>+9</b>: 1d6+3</div>
+					<span class="listBonusBreaker">+<b>11</b> vs AC</span>
+					<span class="listBonuses">3 bab, 6 dex, 1 mwk, 1 w.focus</span>
+					<br>
+					<b class="listBonusBreaker">1d6+6</b>
+					<span class="listBonuses"><u title="Finesse Training">6 dex</u></span>
+					<div class="circumstancialBonus"><a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-nonlethal">Nonlethal</a>.</div>
+				</div>
 
-                    <div>
-                        <span class="numberFirst">8</span>
-                        <b class="listBonusBreaker">Init</b>
-                        <span class="listBonuses">6 dex, 2 trait</span>
-                        <div class="circumstancialBonus">
-                            <abbr title="Rogue's Edge">+varying</abbr> when using
-                            <a href="https://d20pfsrd.com/skills/sense-motive#TOC-Sense-Motive-Unchained">Sense Motive unlock</a>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="numberFirst">50</span>
-                        <b class="listBonusBreaker">HP</b>
-                        <span class="listBonuses">5 rogue: 8 class, 2 con</span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">21</span>
-                        <span class="listBonusBreaker"><b>AC</b> touch 16, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> Immune</span>
-                        <span class="listBonuses">10, 6 dex, 5 armor</span>
-                        <div class="circumstancialBonus"><abbr title="Danger Sense">+1 dodge</abbr> vs traps</div>
-                    </div>
-                    <div>
-                        <span class="numberFirst">4</span>
-                        <b class="listBonusBreaker">Fort</b>
-                        <span class="listBonuses">2 con, 1 class, <abbr title="Cloak of Resistance">1 resistance</abbr></span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">11</span>
-                        <b class="listBonusBreaker">Ref</b>
-                        <span class="listBonuses">6 dex, 4 class, <abbr title="Cloak of Resistance">1 resistance</abbr></span>
-                        Evasion
-                    </div>
-                    <div>
-                        <span class="numberFirst">3</span>
-                        <b class="listBonusBreaker">Will</b>
-                        <span class="listBonuses">1 wis, 1 class, <abbr title="Cloak of Resistance">1 resistance</abbr></span>
-                    </div>
-                    <div class="circumstancialBonus"><abbr title="Danger Sense">+1</abbr> vs traps</div>
-                    <div class="br">
-                        <span class="numberFirst">3</span>
-                        <span class="listBonusBreaker"><b>CMB</b>;	19 <b>CMD</b></span>
-                        <span class="listBonuses">3 bab, 0 str, 6 dex</span>
-                    </div>
+				<!--Bolas-->
+				<div class="weapon">
+					<h2>Bola <b>20x2</b> <b>10 ft.</b> <b>B</b></h2>
+					<span class="listBonusBreaker">+<b>5</b> vs AC</span>
+					<span class="listBonuses">3 bab, 6 dex, -4 proficiency</span>
+					<br>
+					<b class="listBonusBreaker">1d4</b>
+					<span class="listBonuses">0 str</span>
+					<div class="circumstancialBonus">
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-nonlethal">Nonlethal</a>,
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-trip">trip</a>.
+					</div>
+				</div>
 
-					<div class="subtitle">
-                        Sneak Attack
-                        <abbr title="3 class" class="pull-xs-right">3d6</abbr>
-                    </div>
-                    <ul>
-                        <li class="sneaktalent">can't make AoOs</li>
-                        <li class="debilitation">-2 to AC, &amp; extra -2 vs me</li>
-                        <li class="debilitation">-2 to hit, &amp; extra -2 vs me</li>
-                        <li class="debilitation">half speed, no 5ft-step</li>
-                    </ul>
+				<!--Dagger-->
+				<div class="weapon">
+					<h2>Dagger <b>19x2</b> <b>10 ft.</b> <b>PS</b></h2>
+					<span class="listBonusBreaker">+<b>9</b> vs AC</span>
+					<span class="listBonuses">3 bab, 6 dex</span>
+					<br>
+					<b class="listBonusBreaker">1d4</b>
+					<span class="listBonuses">0 str</span>
+				</div>
 
-					<div class="subtitle">
-                        Inspired
-                        <abbr title="1 trait" class="pull-xs-right">1/day</abbr>
-                    </div>
-                </div>
-                <!--end of Basics: Statblock and Weapons-->
+				<!--Shortbow-->
+				<div class="weapon">
+					<h2>Shortbow <b>20x3</b> <b>70 ft.</b> <b>P</b></h2>
+					<span class="listBonusBreaker">+<b>10</b> vs AC</span>
+					<span class="listBonuses">3 bab, 6 dex, 1 mwk</span>
+					<br>
+					<b class="listBonusBreaker">1d6</b>
+					<span class="listBonuses">0 str</span>
+				</div>
+			</div>
+		</section>
 
-                <!--Sap-->
-                <div class="weapon col-xs-12 col-md-6 firstweapon">
-                    <div class="weaponHead">
-                        <div class="pull-xs-right">20x2</div>
-                        Sap<sup>B</sup>
-                    </div>
-                    <div class="apartee hidden-sm-down" style="float:right; text-align:right">TWF <b>+9</b>: 1d6+6<br> <b>+9</b>: 1d6+3</div>
-                    <span class="listBonusBreaker">+<b>11</b> vs AC</span>
-                    <span class="listBonuses">3 bab, 6 dex, 1 mwk, 1 w.focus</span>
-                    <br>
-                    <b class="listBonusBreaker">1d6+6</b>
-                    <span class="listBonuses"><abbr title="Finesse Training">6 dex</abbr></span>
-                    <div class="circumstancialBonus"><a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-nonlethal">Nonlethal</a>.</div>
-                </div>
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--1800--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/hat-of-disguise">Hat of Disguise</a></li>
+			<li class="emptyitemslot">Headband</li>
+			<li class="emptyitemslot">Eyes</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+			<li class="emptyitemslot">Neck</li>
+			<li class="emptyitemslot">Chest</li>
+			<li class="emptyitemslot">Body</li>
+			<li class="emptyitemslot">Wrists</li>
+			<li class="emptyitemslot">Hands</li>
+			<li class="emptyitemslot">Ring</li>
+			<li class="emptyitemslot">Ring</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
+			<li class="emptyitemslot">Feet</li>
+		</ul>
 
-                <!--Bolas-->
-				<div class="weapon col-xs-12 col-md-6">
-                    <div class="weaponHead">
-                        <div class="pull-xs-right">20x2</div>
-                        <div class="weaponReach">10 ft.</div>
-                        Bola<sup>B</sup>
-                    </div>
-                    <span class="listBonusBreaker">+<b>5</b> vs AC</span>
-                    <span class="listBonuses">3 bab, 6 dex, -4 proficiency</span>
-                    <br>
-                    <b class="listBonusBreaker">1d4</b>
-                    <span class="listBonuses">0 str</span>
-                    <div class="circumstancialBonus">
-                        <a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-nonlethal">Nonlethal</a>,
-                        <a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-trip">trip</a>.
-                    </div>
-                </div>
-
-                <!--Dagger-->
-				<div class="weapon col-xs-12 col-md-6">
-                    <div class="weaponHead">
-                        <div class="pull-xs-right">19x2</div>
-                        <div class="weaponReach">10 ft.</div>
-                        Dagger<sup>PS</sup>
-                    </div>
-                    <span class="listBonusBreaker">+<b>9</b> vs AC</span>
-                    <span class="listBonuses">3 bab, 6 dex</span>
-                    <br>
-                    <b class="listBonusBreaker">1d4</b>
-                    <span class="listBonuses">0 str</span>
-                </div>
-
-                <!--Shortbow-->
-				<div class="weapon col-xs-12 col-md-6">
-                    <div class="weaponHead">
-                        <div class="pull-xs-right">20x3</div>
-                        <div class="weaponReach">70 ft.</div>
-                        Shortbow<sup>P</sup>
-                    </div>
-                    <span class="listBonusBreaker">+<b>10</b> vs AC</span>
-                    <span class="listBonuses">3 bab, 6 dex, 1 mwk</span>
-                    <br>
-                    <b class="listBonusBreaker">1d6</b>
-                    <span class="listBonuses">0 str</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- title EQUIPMENT -->
-        <div class="title">EQUIPMENT</div>
-        <div class="container-fluid">
-			<ul id="magicItemsWrapper">
-				<li><!--1800--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/hat-of-disguise">Hat of Disguise</a></li>
-				<li class="emptyitemslot">Headband</li>
-				<li class="emptyitemslot">Eyes</li>
-				<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
-				<li class="emptyitemslot">Neck</li>
-				<li class="emptyitemslot">Chest</li>
-				<li class="emptyitemslot">Body</li>
-				<li class="emptyitemslot">Wrists</li>
-				<li class="emptyitemslot">Hands</li>
-				<li class="emptyitemslot">Ring</li>
-				<li class="emptyitemslot">Ring</li>
-				<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
-                <li class="emptyitemslot">Feet</li>
-            </ul>
-            <!--Weapons-->
-            <div><!--301*2-->
-				2x <a href="https://d20pfsrd.com/equipment/weapons">Sap</a>,
+		<ul>
+			<!--Weapons-->
+			<li><!--301*2-->
+				2&times; <a href="https://d20pfsrd.com/equipment/weapons">Sap</a>,
 				<span class="listBonusBreaker">masterwork</span>
 				<span class="listBonuses noprint">martial light, 1d6, 20x2, B.</span>
-			</div>
-            <div><!--375 (ammo: 1 gp for 20)-->
+			</li>
+			<li><!--375 (ammo: 1 gp for 20)-->
 				<a href="https://d20pfsrd.com/equipment/weapons">Shortbow</a>,
-                <span class="listBonusBreaker">masterwork</span>
+				<span class="listBonusBreaker">masterwork</span>
 				<span class="listBonuses noprint">martial ranged, 1d6, 20x3, P, 70ft.</span>
-                <div class="circumstancialBonus">40 arrows</div>
-			</div>
-            <div><!--4+5-->
+				<div class="circumstancialBonus">40 arrows</div>
+			</li>
+			<li><!--4+5-->
 				<a href="https://d20pfsrd.com/equipment/weapons">Dagger</a>,
 				<span class="listBonusBreaker">cold-iron</span>
 				<span class="listBonuses noprint">simple light, 1d4, 19x2, PS, 10ft.</span>
-                <div class="circumstancialBonus">
-                    <a href="https://d20pfsrd.com/equipment/weapons/weapon-and-armor-accessories#TOC-Wrist-Sheath-spring-loaded">Spring-loaded Wrist Sheath</a>
-                    Hidden, DC <abbr title="10, 14 Sleight of Hand, 2 Wrist Sheath, 2 Dagger">28</abbr> to find.
-                </div>
-			</div>
-            <div><!--4-->
+				<div class="circumstancialBonus">
+					<a href="https://d20pfsrd.com/equipment/weapons/weapon-and-armor-accessories#TOC-Wrist-Sheath-spring-loaded">Spring-loaded Wrist Sheath</a>
+					Hidden, DC <u title="10, 14 Sleight of Hand, 2 Wrist Sheath, 2 Dagger">28</u> to find.
+				</div>
+			</li>
+			<li><!--4-->
 				<a href="https://d20pfsrd.com/equipment/weapons">Dagger</a>,
 				<span class="listBonusBreaker">cold-iron</span>
 				<span class="listBonuses noprint">simple light, 1d4, 19x2, PS, 10ft.</span>
-			</div>
-            <div class="br"><!--5-->
+			</li>
+			<li class="br"><!--5-->
 				<a href="https://d20pfsrd.com/equipment/weapons" class="listBonusBreaker">Bola</a>
 				<span class="listBonuses noprint">exotic ranged, 1d4, 20x2, B, 10ft.</span>
-			</div>
-            <!--Armors-->
-            <div class="br"><!--2100-->
+			</li>
+			<!--Armors-->
+			<li class="br"><!--2100-->
 				<span class="listBonusBreaker"><a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a> +1</span>
-                <span class="listBonuses noprint">light, 4 armor, 6 dex, 0 acp, 10%asf</span>
-			</div>
+				<span class="listBonuses noprint">light, 4 armor, 6 dex, 0 acp, 10%asf</span>
+			</li>
 
-            <!--Misc-->
-            <div><!--100-->
-                <a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits#TOC-Tools-Thieves-">Thieve's tools</a>, masterwork
-            </div>
-            <div><!--400-->
-                <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/key-of-lock-jamming">Key of Lock Jamming</a>
-            </div>
-            <div><!--2-->
-                <a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/toolsAndSkillKits.html">Bear trap</a>
-            </div>
-            <div><!--1-->
-                <a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/adventuringGear.html">Caltrops</a>
-            </div>
-            <div><!--.1-->
-                <a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/adventuringGear.html">Marbles</a>
-            </div>
-			<div class="br"><!--35-->
+			<!--Misc-->
+			<li><!--100-->
+				<a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits#TOC-Tools-Thieves-">Thieve's tools</a>, masterwork
+			</li>
+			<li><!--400-->
+				<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/key-of-lock-jamming">Key of Lock Jamming</a>
+			</li>
+			<li><!--2-->
+				<a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/toolsAndSkillKits.html">Bear trap</a>
+			</li>
+			<li><!--1-->
+				<a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/adventuringGear.html">Caltrops</a>
+			</li>
+			<li><!--.1-->
+				<a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/adventuringGear.html">Marbles</a>
+			</li>
+			<li class="br"><!--35-->
 				<a target="_blank" href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
-			</div>
-            <div>66.9 <b>GP</b><!--/10500--></div>
-        </div>
+			</li>
+			<li>66.9 <b>GP</b><!--/10500--></li>
+		</ul>
 
-        <!-- title NOTES -->
-        <div class="noprint">
-            <div class="title newPage">NOTES</div>
-            <ul id="sources" class="pull-xs-right list-unstyled">
-                <li>
-                    Core Rulebook (2009)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a></li>
-                        <li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/dazzling-display-combat">Dazzling Display</a></li>
-                        <li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/hat-of-disguise">Hat of Disguise</a></li>
-                        <li><a href="https://d20pfsrd.com/races/core-races/human">Human</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/improved-two-weapon-fighting-combat-final">Improved Two-Weapon Fighting</a></li>
-                        <li><a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/shatter-defenses-combat-final">Shatter Defenses</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/two-weapon-fighting-combat-final">Two-Weapon Fighting</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat-final">Weapon Finesse</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final">Weapon Focus</a></li>
-                        <li>Core spells will not be listed.</li>
-                    </ul>
-                </li>
-                <li>
-                    Advanced Player's Guide (2010)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/enforcer-combat">Enforcer</a></li>
-                        <li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/key-of-lock-jamming">Key of Lock Jamming</a></li>
-                        <li><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></li>
-                        <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a></li>
-                    </ul>
-                </li>
-                <li>
-                    PC: Sargava, the lost colony (2010)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/piranha-strike-combat">Piranha Strike</a></li>
-                    </ul>
-                </li>
-                <li>
-                    PPC: Adventurer's Armory (2010)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/equipment/weapons/weapon-and-armor-accessories#TOC-Wrist-Sheath-spring-loaded">Spring Loaded Wrist Sheath</a></li>
-                    </ul>
-                </li>
-                <li>
-                    Ultimate Combat (2011)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/sap-adept-combat">Sap Adept</a></li>
-                        <li><a href="https://d20pfsrd.com/feats/combat-feats/sap-master-combat">Sap Master</a></li>
-                    </ul>
-                </li>
-                <li>
-                    Ultimate Campaign (2013)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/traits/faith-traits/inspired">Inspired</a></li>
-                    </ul>
-                </li>
-                <li>
-                    Pathfinder Unchained (2014)
-                    <ul class="list-unstyled">
-                        <li><a href="https://d20pfsrd.com/classes/unchained-classes/rogue-unchained">URogue</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="container-fluid">
-                <a href="https://docs.google.com/document/d/1dEZyEP-yooZdGprglxcEorpL_EnPfUqr6M89uHmF8Bo/edit?pli=1">Guide used</a>,
-                <a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents">Rogue Talents</a>.<br/>
-                <br/>
-                Being invisible gives +2 to hit against sighted opponents, in addition to denying Dex in AC.<br/>
-                <br/>
-                <a href="https://d20pfsrd.com/feats/combat-feats/canny-tumble-combat">Canny Tumble</a> didn't fit in the build, but it's still a very strong feat.<br/>
-                <br/>
-                +1 <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/cruel">Cruel</a><br/>
-                Wand of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/blacklight">blacklight</a><br/>
-                <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/gloves-apprentice-s-cheating">Apprentice's Cheating Gloves</a>, 2 200<br/>
-                <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/glove-of-storing">Gloves of Storing</a>, 10 000<br/>
-                <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/goggles-of-night">Goggles of	Night</a>, 12 000<br/>
-                <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-the-bat">Cloak of the Bat</a>, 26 000<br/>
-                <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-shadowform">Shadowform Belt</a>, 110 000<br/>
-            </div>
-        </div>
-    </div>
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<ul id="sources">
+				<li>
+					Core Rulebook (2009)
+					<ul>
+						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a></li>
+						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/dazzling-display-combat">Dazzling Display</a></li>
+						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/hat-of-disguise">Hat of Disguise</a></li>
+						<li><a href="https://d20pfsrd.com/races/core-races/human">Human</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/improved-two-weapon-fighting-combat-final">Improved Two-Weapon Fighting</a></li>
+						<li><a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/shatter-defenses-combat-final">Shatter Defenses</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/two-weapon-fighting-combat-final">Two-Weapon Fighting</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat-final">Weapon Finesse</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat-final">Weapon Focus</a></li>
+						<li>Core spells will not be listed.</li>
+					</ul>
+				</li>
+				<li>
+					Advanced Player's Guide (2010)
+					<ul>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/enforcer-combat">Enforcer</a></li>
+						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/key-of-lock-jamming">Key of Lock Jamming</a></li>
+						<li><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></li>
+						<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a></li>
+					</ul>
+				</li>
+				<li>
+					PC: Sargava, the lost colony (2010)
+					<ul>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/piranha-strike-combat">Piranha Strike</a></li>
+					</ul>
+				</li>
+				<li>
+					PPC: Adventurer's Armory (2010)
+					<ul>
+						<li><a href="https://d20pfsrd.com/equipment/weapons/weapon-and-armor-accessories#TOC-Wrist-Sheath-spring-loaded">Spring Loaded Wrist Sheath</a></li>
+					</ul>
+				</li>
+				<li>
+					Ultimate Combat (2011)
+					<ul>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/sap-adept-combat">Sap Adept</a></li>
+						<li><a href="https://d20pfsrd.com/feats/combat-feats/sap-master-combat">Sap Master</a></li>
+					</ul>
+				</li>
+				<li>
+					Ultimate Campaign (2013)
+					<ul>
+						<li><a href="https://d20pfsrd.com/traits/faith-traits/inspired">Inspired</a></li>
+					</ul>
+				</li>
+				<li>
+					Pathfinder Unchained (2014)
+					<ul>
+						<li><a href="https://d20pfsrd.com/classes/unchained-classes/rogue-unchained">URogue</a></li>
+					</ul>
+				</li>
+			</ul>
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Imaginative and witty</dd>
+
+				<dt>Drawback</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/umbral-unmasking">Umbral Unmasking</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Brown</dd>
+
+				<dt>Hair</dt>
+				<dd>Black</dd>
+
+				<dt>Weight</dt>
+				<dd>153 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 9''</dd>
+			</dl>
+			<p>
+				<a href="https://docs.google.com/document/d/1dEZyEP-yooZdGprglxcEorpL_EnPfUqr6M89uHmF8Bo/edit?pli=1">Guide used</a>,
+				<a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents">Rogue Talents</a>.
+			</p>
+			<p>Being invisible gives +2 to hit against sighted opponents, in addition to denying Dex in AC.</p>
+			<p><a href="https://d20pfsrd.com/feats/combat-feats/canny-tumble-combat">Canny Tumble</a> didn't fit in the build, but it's still a very strong feat.</p>
+
+			<ul>
+				<li>+1 <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/cruel">Cruel</a></li>
+				<li>Wand of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/blacklight">blacklight</a></li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/gloves-apprentice-s-cheating">Apprentice's Cheating Gloves</a>, 2 200</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/glove-of-storing">Gloves of Storing</a>, 10 000</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/goggles-of-night">Goggles of	Night</a>, 12 000</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-the-bat">Cloak of the Bat</a>, 26 000</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-shadowform">Shadowform Belt</a>, 110 000</li>
+			</ul>
+		</section>
+	</div>
 </body>
 </html>
