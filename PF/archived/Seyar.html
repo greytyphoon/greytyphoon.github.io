@@ -1,421 +1,392 @@
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Grey's Angelic Paladin</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <link rel="stylesheet" href="../system/pfGeneric.css">
-    <link rel="stylesheet" href="../system/pfCharacter.css">
+	<link rel="stylesheet" href="../system/pfCharacter.css">
 	<style>
-		.smite {
-			color:blue;}
+		.smite { color: blue; }
+		#listAngelicPowers { font-size: 0.8rem; }
 	</style>
 </head>
 <body>
-	<div id="fixref" class="noprint">
-        <a href="https://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
-    </div>
+	<nav id="fixref" class="noprint">
+		<a href="https://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
+	</nav>
 
-    <div class="container">
-        <div id="header">
-            <b>Seyar Ran'wor'eud, bright light of the dying world</b><br>
-            LG Medium outsider (native)
-            <div id="xp">29022 XP</div>
-        </div>
+	<div class="container">
+		<header id="header">
+			<h1>Seyar Ran'wor'eud, bright light of the dying world</h1>
+			LG Medium outsider (native)
+			<div id="xp">29022 XP</div>
+		</header>
 
-        <div id="headerInfo" class="row">
-            <dl class="charInfo col-xs-12 col-md-4">
-                <dt>Str</dt>
-                <dd>20 <span class="listBonuses">17, <abbr title="Racial">2</abbr>, <abbr title="Advancement">1</abbr></span></dd>
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>20 <span class="listBonuses">17, <u title="Racial">2</u>, <u title="Advancement">1</u></span></dd>
 
-                <dt>Dex</dt>
-                <dd>12 </dd>
+				<dt>Dex</dt>
+				<dd>12 </dd>
 
-                <dt>Con</dt>
-                <dd>12</dd>
+				<dt>Con</dt>
+				<dd>12</dd>
 
-                <dt>Int</dt>
-                <dd>10</dd>
+				<dt>Int</dt>
+				<dd>10</dd>
 
-                <dt>Wis</dt>
-                <dd>10</dd>
+				<dt>Wis</dt>
+				<dd>10</dd>
 
-                <dt>Cha</dt>
-                <dd>18 <span class="listBonuses">16, <abbr title="Racial">2</abbr></span></dd>
-            </dl>
-            <div class="col-xs-12 col-md-4">
-                <dl id="subheader" class="charInfo">
-                    <dt>Race</dt>
-                    <dd><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-aasimar/">Aasimar</a></dd>
-                    <dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-aasimar/#Angel-Blooded_Angelkin">Angelkin</a></dd>
-                    <dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-aasimar/#Alternate_Racial_Traits">Incorruptible</a></dd>
+				<dt>Cha</dt>
+				<dd>18 <span class="listBonuses">16, <u title="Racial">2</u></span></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-aasimar/">Aasimar</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-aasimar/#Angel-Blooded_Angelkin">Angelkin</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-aasimar/#Alternate_Racial_Traits">Incorruptible</a></dd>
 
-                    <dt>Class</dt>
-                    <dd><a href="https://d20pfsrd.com/classes/core-classes/paladin">Paladin</a> 7</dd>
-                    <dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/paladin/archetypes/paizo-paladin-archetypes/warrior-of-the-holy-light/">Warrior of the Holy Light</a></dd>
-                </dl>
-                <dl class="charInfo">
-                    <dt>Traits</dt>
-                    <dd><a href="#">Angelic Power Pool, greater</a></dd>
-                </dl>
-            </div>
-            <dl class="charInfo col-xs-12 col-md-4">
-                <dt>Deity</dt>
-                <dd>All Good</dd>
-                
-                <dt>Gender</dt>
-                <dd>Male</dd>
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/paladin">Paladin</a> 7</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/paladin/archetypes/paizo-paladin-archetypes/warrior-of-the-holy-light/">Warrior of the Holy Light</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>All Good</dd>
 
-                <dt>Eyes</dt>
-                <dd>Blue</dd>
+				<dt>Senses</dt>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">Darkvision</a> 60ft.</dd>
 
-                <dt>Hair</dt>
-                <dd>Platinum Blonde</dd>
+				<dt>Speed</dt>
+				<dd><u title="30 racial, -10 armor">20 ft.</u></dd>
 
-                <dt>Weight</dt>
-                <dd>185 lbs</dd>
+				<dt>Languages</dt>
+				<dd>Common, Celestial</dd>
+			</dl>
+		</section>
 
-                <dt>Height</dt>
-                <dd>6' 5''</dd>
-                
-                <dt>Age</dt>
-                <dd>80 years old</dd>
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="#">Angelic Power Pool, greater</a></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat---final">Power Attack</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat---final">Weapon Focus</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-sunder-combat---final">Improved Sunder</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>level 7</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/greater-sunder-combat---final">Greater Sunder</a>
+				<span class="listBonuses noprint">min.6</span></dd>
+		</dl>
 
-                <dt>Languages</dt>
-                <dd>Common, Celestial</dd>
-            </dl>
-        </div>
+		<ul>
+			<!-- SKILLS -->
+			<li class="br">
+				<span class="numberFirst">0</span>
+				<a href="https://d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
+				<span class="listBonuses">0 wis, 0 ranks, 0 class</span>
+			</li>
 
-        <!-- title SKILLS & FEATS -->
-        <div class="title">SKILLS &amp; FEATS</div>
-        <div class="container-fluid">
-            <dl id="featsWrapper">
-                <dt>level 1</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat---final">Power Attack</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>level 3</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat---final">Weapon Focus</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>level 5</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-sunder-combat---final">Improved Sunder</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>level 7</dt>
-                <dd><a href="https://d20pfsrd.com/feats/combat-feats/greater-sunder-combat---final">Greater Sunder</a>
-                    <span class="listBonuses noprint">min.6</span></dd>
-            </dl>
+			<!--Social Skills-->
+			<li>
+				<span class="numberFirst">14</span>
+				<a href="https://d20pfsrd.com/skills/diplomacy" class="listBonusBreaker">Diplomacy</a>
+				<span class="listBonuses">4 cha, 7 ranks, 3 class</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/sense-motive" class="listBonusBreaker">Sense Motive</a>
+				<span class="listBonuses">0 wis, 1 ranks, 3 class</span>
+			</li>
 
-            <!-- SKILLS -->
-            <div class="br">
-                <span class="numberFirst">0</span>
-                <a href="https://d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
-                <span class="listBonuses">0 wis, 0 ranks, 0 class</span>
-            </div>
+			<!--Misc Skills-->
+			<li>
+				<span class="numberFirst">8</span>
+				<a href="https://d20pfsrd.com/skills/handle-animal" class="listBonusBreaker">Handle Animal</a>
+				<span class="listBonuses">4 cha, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">12</span>
+				<a href="https://d20pfsrd.com/skills/heal" class="listBonusBreaker">Heal</a>
+				<span class="listBonuses">0 wis, 7 ranks, 3 class, <u title="Skilled">2 racial</u></span>
+				<div class="circumstancialBonus"><u title="Healer's Kit">+2 circumstance</u> when using Healer's Kit</div>
+			</li>
+			<li>
+				<span class="numberFirst">0</span>
+				<a href="https://d20pfsrd.com/skills/ride" class="listBonusBreaker">Ride</a>
+				<span class="listBonuses">1 dex, 1 ranks, 3 class, -5 armor</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/spellcraft" class="listBonusBreaker">Spellcraft</a>
+				<span class="listBonuses">0 int, 1 ranks, 3 class</span>
+			</li>
 
-            <!--Social Skills-->
-            <div>
-                <span class="numberFirst">14</span>
-                <a href="https://d20pfsrd.com/skills/diplomacy" class="listBonusBreaker">Diplomacy</a>
-                <span class="listBonuses">4 cha, 7 ranks, 3 class</span>
-            </div>
-            <div class="br">
-                <span class="numberFirst">4</span>
-                <a href="https://d20pfsrd.com/skills/sense-motive" class="listBonusBreaker">Sense Motive</a>
-                <span class="listBonuses">0 wis, 1 ranks, 3 class</span>
-            </div>
+			<!--Knowledge Skills-->
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (nobility)</a>
+				<span class="listBonuses">0 int, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">3</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (planes)</a>
+				<span class="listBonuses">0 int, 1 ranks, 0 class, <u title="Skilled">2 racial</u></span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (religion)</a>
+				<span class="listBonuses">0 int, 1 ranks, 3 class</span>
+			</li>
 
-            <!--Misc Skills-->
-            <div>
-                <span class="numberFirst">8</span>
-                <a href="https://d20pfsrd.com/skills/handle-animal" class="listBonusBreaker">Handle Animal</a>
-                <span class="listBonuses">4 cha, 1 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">12</span>
-                <a href="https://d20pfsrd.com/skills/heal" class="listBonusBreaker">Heal</a>
-                <span class="listBonuses">0 wis, 7 ranks, 3 class, <abbr title="Skilled">2 racial</abbr></span>
-                <div class="circumstancialBonus"><abbr title="Healer's Kit">+2 circumstance</abbr> when using Healer's Kit</div>
-            </div>
-            <div>
-                <span class="numberFirst">0</span>
-                <a href="https://d20pfsrd.com/skills/ride" class="listBonusBreaker">Ride</a>
-                <span class="listBonuses">1 dex, 1 ranks, 3 class, -5 armor</span>
-            </div>
-            <div class="br">
-                <span class="numberFirst">4</span>
-                <a href="https://d20pfsrd.com/skills/spellcraft" class="listBonusBreaker">Spellcraft</a>
-                <span class="listBonuses">0 int, 1 ranks, 3 class</span>
-            </div>
-
-            <!--Knowledge Skills-->
-            <div>
-                <span class="numberFirst">4</span>
-                <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (nobility)</a>
-                <span class="listBonuses">0 int, 1 ranks, 3 class</span>
-            </div>
-            <div>
-                <span class="numberFirst">3</span>
-                <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (planes)</a>
-                <span class="listBonuses">0 int, 1 ranks, 0 class, <abbr title="Skilled">2 racial</abbr></span>
-            </div>
-            <div class="br">
-                <span class="numberFirst">4</span>
-                <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (religion)</a>
-                <span class="listBonuses">0 int, 1 ranks, 3 class</span>
-            </div>
-
-            <div class="noprint">
+			<li class="noprint">
 				<span class="numberFirst">21</span>
 				<b class="listBonusBreaker">ranks</b>
 				<span class="listBonuses">7 paladin: 2 class, 0 int; 7 FC</span>
-			</div>
-			<div class="circumstancialBonus noprint br">
+			</li>
+			<li class="circumstancialBonus noprint">
 				Unranked Class Skills:
-                <a href="https://d20pfsrd.com/skills/craft">Craft</a>,
-                <a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+				<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+				<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul>
+					<li class="br">
+						<span class="numberFirst">1</span>
+						<b class="listBonusBreaker">Init</b>
+						<span class="listBonuses">1 dex</span>
+					</li>
+					<li>
+						<span class="numberFirst">77</span>
+						<b class="listBonusBreaker">HP</b>
+						<span class="listBonuses">7 paladin: 10 class, 1 con</span>
+						<div class="circumstancialBonus"><u title="Celestial Resistance">Resist 5 Acid/Cold/Electricity</u></div>
+						<div class="circumstancialBonus"><u title="Incorruptible">Resist 10 vs effects that specifically target Good</u></div>
+					</li>
+					<li class="br">
+						<span class="numberFirst">20</span>
+						<span class="listBonusBreaker"><b>AC</b> touch 11, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 19</span>
+						<span class="listBonuses">10, 1 dex, 9 armor</span>
+						<div class="circumstancialBonus smite"><u title="4 cha">+4 deflection</u> vs target</div>
+					</li>
+					<li>
+						<span class="numberFirst">10</span>
+						<b class="listBonusBreaker">Fort</b>
+						<span class="listBonuses">1 con, 5 class, <u title="Divine Grace">4 cha</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">7</span>
+						<b class="listBonusBreaker">Ref</b>
+						<span class="listBonuses">1 dex, 2 class, <u title="Divine Grace">4 cha</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">9</span>
+						<b class="listBonusBreaker">Will</b>
+						<span class="listBonuses">0 wis, 5 class, <u title="Divine Grace">4 cha</u></span>
+					</li>
+					<li class="circumstancialBonus br">
+						<b>Immune</b> <u title="Aura of Courage">Fear</u>, <u title="Divine Health">Disease</u>
+					</li>
+					<li>
+						<span class="numberFirst">12</span>
+						<span class="listBonusBreaker"><b>CMB</b>;	24 <b>CMD</b></span>
+						<span class="listBonuses">7 bab, 5 str, 1 dex</span>
+						<div class="circumstancialBonus">
+							<u title="2 Improved Sunder, 2 Greater Sunder">+4</u> to Sunder,
+							<u title="2 Improved Sunder">+2</u> vs Sunder,
+							sunder does not provoke,
+							sunder damage tramples.
+						</div>
+					</li>
+				</ul>
+
+				<!--Bardiche-->
+				<div class="weapon">
+					<h2>Bardiche <b>19x2</b> <b>S</b></h2>
+					<span class="listBonusBreaker">+<b>15</b>/<b>10</b> vs AC</span>
+					<span class="listBonuses">7 bab, 5 str, <u title="Magic +2">2 enhancement</u>, 1 w.focus</span>
+					<div class="circumstancialBonus smite"><u title="4 cha">+4</u> vs target</div>
+					<b class="listBonusBreaker">1d10+9</b>
+					<span class="listBonuses">7 str&frac12;, <u title="Magic +2">2 enhancement</u></span>
+					<div class="circumstancialBonus">
+						<a href="https://d20pfsrd.com/equipment---final/weapons#wpn-quality-brace">Brace</a>,
+						<a href="https://d20pfsrd.com/equipment---final/weapons#wpn-quality-reach">reach</a>,
+						+2 vs Sunder.
+					</div>
+					<div class="circumstancialBonus smite">
+						<u title="7 paladin">+7</u> vs target<br>
+						<u title="7 paladin">+7</u> if target is Outsider, Dragon, Undead<br/>
+						Ignore DR
+					</div>
+				</div>
 			</div>
-        </div>
+			<!--end of Basics: Statblock and Weapons-->
 
-        <!-- title COMBAT -->
-        <div class="title newPage">COMBAT (7 BAB)</div>
-        <div class="container-fluid">
-            <div class="row">
-                <!--Basics: Statblock and Weapons-->
-                <div class="col-xs-12 col-md-6">
-                    <div>
-                        <b>Senses</b> <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">Darkvision</a> 60ft.
-                    </div>
-                    <div class="br">
-                        <b>Speed</b> 20 ft. <span class="listBonuses">30 racial, -10 armor</span>
-                    </div>
+			<div>
+				<h2>Angelic Power Pool (Su) <u title="10 paladin1&frac12;, 4 cha, 1 trait">15/day</u></h2>
+				<dl id="listAngelicPowers">
+					<dt>Lay on Hands</dt>
+					<dd>For 1, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>
+						(<a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a> on yourself),<br>
+						heal <u title="3 paladin&frac1/2"><b>3d6</b></u>
+						& cure <u title="Mercy">Sickened, Staggered</u>,
+						or touch attack to harm undead.</dd>
+					<dt>Power of Faith</dt>
+					<dd>For 1, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
+						call nimbus of light for 1 minute.<br>
+						Allies in 30ft receive +1 morale on AC, attack, damage, saves vs fear.</dd>
+					<dt class="smite">Smite Evil</dt>
+					<dd class="smite">For 2, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+						choose a target to smite.</dd>
+					<dt>Channel Energy</dt>
+					<dd>For 2, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
+						you choose undead or living.<br>
+						<b>4d6</b> positive energy, 30ft radius, Will <u title="10, 3 paladin&frac12;, 4 cha">DC 17</u> halves.</dd>
+				</dl>
 
-                    <div>
-                        <span class="numberFirst">1</span>
-                        <b class="listBonusBreaker">Init</b>
-                        <span class="listBonuses">1 dex</span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">77</span>
-                        <b class="listBonusBreaker">HP</b>
-                        <span class="listBonuses">7 paladin: 10 class, 1 con</span>
-                        <div class="circumstancialBonus"><abbr title="Celestial Resistance">Resist 5 Acid/Cold/Electricity</abbr></div>
-                        <div class="circumstancialBonus"><abbr title="Incorruptible">Resist 10 vs effects that specifically target Good</abbr></div>
-                    </div>
-                    <div>
-                        <span class="numberFirst">20</span>
-                        <span class="listBonusBreaker"><b>AC</b> touch 11, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 19</span>
-                        <span class="listBonuses">10, 1 dex, 9 armor</span>
-                        <div class="circumstancialBonus smite"><abbr title="4 cha">+4 deflection</abbr> vs target</div>
-                    </div>
-                    <div>
-                        <span class="numberFirst">10</span>
-                        <b class="listBonusBreaker">Fort</b>
-                        <span class="listBonuses">1 con, 5 class, <abbr title="Divine Grace">4 cha</abbr></span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">7</span>
-                        <b class="listBonusBreaker">Ref</b>
-                        <span class="listBonuses">1 dex, 2 class, <abbr title="Divine Grace">4 cha</abbr></span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">9</span>
-                        <b class="listBonusBreaker">Will</b>
-                        <span class="listBonuses">0 wis, 5 class, <abbr title="Divine Grace">4 cha</abbr></span>
-                    </div>
-                    <div class="circumstancialBonus">
-                        <b>Immune</b> <abbr title="Aura of Courage">Fear</abbr>, <abbr title="Divine Health">Disease</abbr>
-                    </div>
-                    <div class="br">
-                        <span class="numberFirst">12</span>
-                        <span class="listBonusBreaker"><b>CMB</b>;	24 <b>CMD</b></span>
-                        <span class="listBonuses">7 bab, 5 str, 1 dex</span>
-                        <div class="circumstancialBonus">
-                            <abbr title="2 Improved Sunder, 2 Greater Sunder">+4</abbr> to Sunder, 
-                            <abbr title="2 Improved Sunder">+2</abbr> vs Sunder,
-                            sunder does not provoke,
-                            sunder damage tramples.
-                        </div>
-                    </div>
+				<h2>Aura (Ex)</h2>
+				<p>Moderate aura of Good</p>
 
-                    <!--Bardiche-->
-                    <div class="weapon">
-                        <div class="weaponHead">
-                            <div class="pull-xs-right">19x2</div>
-                            Bardiche<sup>S</sup>
-                        </div>
-                    <div class="apartee hidden-sm-down" style="float:right; text-align:right">Full Attack <b>+15</b><br><b>+10</b></div>
-                        <span class="listBonusBreaker">+<b>15</b> vs AC</span>
-                        <span class="listBonuses">7 bab, 5 str, <abbr title="Magic +2">2 enhancement</abbr>, 1 w.focus</span>
-                        <div class="circumstancialBonus smite"><abbr title="4 cha">+4</abbr> vs target</div>
-                        <b class="listBonusBreaker">1d10+9</b>
-                        <span class="listBonuses">7 str&frac12;, <abbr title="Magic +2">2 enhancement</abbr></span>
-                        <div class="circumstancialBonus">
-                            <a href="https://d20pfsrd.com/equipment---final/weapons#wpn-quality-brace">Brace</a>,
-                            <a href="https://d20pfsrd.com/equipment---final/weapons#wpn-quality-reach">reach</a>,
-                            +2 vs Sunder.
-                        </div>
-                        <div class="circumstancialBonus smite">
-                            <abbr title="7 paladin">+7</abbr> vs target<br>
-                            <abbr title="7 paladin">+7</abbr> if target is Outsider, Dragon, Undead<br/>
-                            Ignore DR
-                        </div>
-                    </div>
-                </div>
-                <!--end of Basics: Statblock and Weapons-->
+				<h2>Aura of Courage (Su)</h2>
+				<p>Allies in 10ft get +4 morale vs fear.</p>
 
-				<div class="col-xs-12 col-md-6">
-					<div class="subtitle">
-                        Angelic Power Pool (Su)
-                        <abbr title="10 paladin1&frac12;, 4 cha, 1 trait" class="pull-xs-right">15/day</abbr>
-                    </div>
-                    <ul>
-                        <li>For 1, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>
-                            (<a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a> on yourself),<br>
-                            heal <abbr title="3 paladin&frac1/2"><b>3d6</b></abbr> 
-                            & cure <abbr title="Mercy">Sickened, Staggered</abbr>, 
-                            or touch attack to harm undead.</li>
-                        <li>For 1, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
-                            call nimbus of light for 1 minute.<br>
-                            Allies in 30ft receive +1 morale on AC, attack, damage, saves vs fear.</li>
-                        <li class="smite">For 2, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
-                            choose a target to smite.</li>
-                        <li>For 2, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
-                            you choose undead or living.<br>
-                            <b>4d6</b> positive energy, 30ft radius, Will <abbr title="10, 3 paladin&frac12;, 4 cha">DC 17</abbr> halves.</li>
-                    </ul>
-                </div>
+				<h2>
+					<a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/corruption-resistance/">Incorruptible</a> (Sp)
+					<u title="7 paladin">7h/day</u>
+				</h2>
 
-				<div class="col-xs-12 col-md-6 br">
-					<div class="subtitle">Aura (Ex)</div>
-                    Moderate aura of Good
-                </div>
+				<h2><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-evil">Detect Evil</a> (Sp)</h2>
 
-				<div class="col-xs-12 col-md-6 br">
-					<div class="subtitle">Aura of Courage (Su)</div>
-                    Allies in 10ft get +4 morale vs fear.
-                </div>
+				<h2>Divine Bond (Sp) <u title="1 class">1/day</u></h2>
+				<p>
+					As an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, summon bright light into a weapon.<br>
+					It gets <u title="1 class">+1 enhancement</u> for <u title="5 paladin">5 minutes</u>.<br>
+					The bonus can give
+					<a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/flaming">flaming</a>,
+					<a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/merciful">merciful</a>,
+					<a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/defending">defending</a>*,
+					<a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/keen">keen</a>* instead.
+				</p>
+			</div>
+		</section>
 
-				<div class="col-xs-12 col-md-6 br">
-					<div class="subtitle">
-                        <a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/corruption-resistance/">Incorruptible</a> (Sp)
-                        <abbr title="7 paladin" class="pull-xs-right">7h/day</abbr>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 br">
-                    <div class="subtitle">
-                        <a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-evil">Detect Evil</a> (Sp)
-                    </div>
-                </div>
-
-				<div class="col-xs-12 col-md-6 br">
-					<div class="subtitle">
-                        Divine Bond (Sp)
-                        <abbr title="1 class" class="pull-xs-right">1/day</abbr>
-                    </div>
-                    As an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, summon bright light into <i>Libeccio</i>.<br>
-                    It gets <abbr title="1 class">+1 enhancement</abbr> for <abbr title="7 paladin">7 minutes</abbr>.
-                    <div class="circumstancialBonus">Can give
-                        <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/flaming">flaming</a>,
-                        <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/merciful">merciful</a>,
-                        <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/defending">defending</a>*,
-                        <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/keen">keen</a>*.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- title EQUIPMENT -->
-        <div class="title">EQUIPMENT</div>
-        <div class="container-fluid br">
-            <ul id="mundaneItemsWrapper">
-                <li>Backpack</li>
-                <li>Bedroll</li>
-                <li>Tent</li>
-                <li>Flask (1 pint)</li>
-                <li>Whistle</li>
-                <li>Flint &amp; steel</li>
-                <li>Crowbar</li>
-                <li>Grappling hook</li>
-                <li class="br">Rope (50ft)</li>
-                <li>Chalk (2)</li>
-                <li>Candles (5)</li>
-                <li>Soap</li>
-                <li class="br">Caltrops</li>
-                <li>Rations (10)</li>
-            </ul>
-			<ul id="magicItemsWrapper">
-				<li class="emptyitemslot">Head</li>
-				<li class="emptyitemslot">Headband</li>
-				<li class="emptyitemslot">Eyes</li>
-				<li class="emptyitemslot">Shoulders</li>
-				<li class="emptyitemslot">Neck</li>
-				<li class="emptyitemslot">Chest</li>
-				<li class="emptyitemslot">Body</li>
-				<li>Exoskeletal Arm (+2 STR w/ left hand)</li>
-				<li class="emptyitemslot">Hands</li>
-				<li class="emptyitemslot">Ring</li>
-				<li class="emptyitemslot">Ring</li>
-				<li class="emptyitemslot">Belt</li>
-				<li class="emptyitemslot">Feet</li>
-			</ul>
-
-            <!--Weapons-->
-            <div><!--8313-->
-                <i>Libeccio</i>,
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="mundaneItemsWrapper">
+			<li>Backpack</li>
+			<li>Bedroll</li>
+			<li>Tent</li>
+			<li>Flask (1 pint)</li>
+			<li>Whistle</li>
+			<li>Flint &amp; steel</li>
+			<li>Crowbar</li>
+			<li>Grappling hook</li>
+			<li class="br">Rope (50ft)</li>
+			<li>Chalk (2)</li>
+			<li>Candles (5)</li>
+			<li>Soap</li>
+			<li class="br">Caltrops</li>
+			<li>Rations (10)</li>
+		</ul>
+		<ul id="magicItemsWrapper">
+			<li class="emptyitemslot">Head</li>
+			<li class="emptyitemslot">Headband</li>
+			<li class="emptyitemslot">Eyes</li>
+			<li class="emptyitemslot">Shoulders</li>
+			<li class="emptyitemslot">Neck</li>
+			<li class="emptyitemslot">Chest</li>
+			<li class="emptyitemslot">Body</li>
+			<li>Exoskeletal Arm (+2 STR w/ left hand)</li>
+			<li class="emptyitemslot">Hands</li>
+			<li class="emptyitemslot">Ring</li>
+			<li class="emptyitemslot">Ring</li>
+			<li class="emptyitemslot">Belt</li>
+			<li class="emptyitemslot">Feet</li>
+		</ul>
+		<ul>
+			<!--Weapons-->
+			<li><!--8313-->
+				<em>Libeccio</em>,
 				<span class="listBonusBreaker">
-                    <a href="https://d20pfsrd.com/equipment---final/weapons">Bardiche</a> +2
-                </span>
+					<a href="https://d20pfsrd.com/equipment---final/weapons">Bardiche</a> +2
+				</span>
 				<span class="listBonuses noprint">martial two-handed, 1d10, 19x2, S.</span>
-			</div>
-            <div><!--0-->
+			</li>
+			<li><!--0-->
 				<a class="listBonusBreaker" href="https://d20pfsrd.com/equipment---final/weapons">Quarterstaff</a>
 				<span class="listBonuses noprint">simple two-handed, 1d6, 20x2, B.</span>
-			</div>
-            <div><!--10-->
+			</li>
+			<li><!--10-->
 				<a class="listBonusBreaker" href="https://d20pfsrd.com/equipment---final/weapons">Short sword</a>
 				<span class="listBonuses noprint">martial light, 1d6, 19x2, PS.</span>
-			</div>
-            <div class="br"><!--30 (ammo: 1 gp for 10)-->
+			</li>
+			<li class="br"><!--30 (ammo: 1 gp for 10)-->
 				<a class="listBonusBreaker" href="https://d20pfsrd.com/equipment---final/weapons">Shortbow</a>
 				<span class="listBonuses noprint">martial ranged, 1d6, 20x3, P, 60ft.</span>
-                <div class="circumstancialBonus">20 arrows</div>
-			</div>
-            
-            <!--Armors-->
-            <div class="br"><!--2100-->
-                <a href="https://d20pfsrd.com/equipment---final/weapons">Full Plate</a>,
+				<div class="circumstancialBonus">20 arrows</div>
+			</li>
+
+			<!--Armors-->
+			<li class="br"><!--2100-->
+				<a href="https://d20pfsrd.com/equipment---final/weapons">Full Plate</a>,
 				<span class="listBonusBreaker">masterwork</span>
 				<span class="listBonuses noprint">heavy, 9 armor, 1 dex, 5 acp, 35% asf</span>
-			</div>
+			</li>
 
-            <!--Misc-->
-            <div><!--50-->
-                Healer's kit, remains 5
-            </div>
-            <div>
-                Staff with Dragon Carvings
-            </div>
-            <div>
-                Quartz corrompu
-            </div>
-            <div>131.4 <b>GP</b></div>
-        </div>
-                
-        <!-- title NOTES -->
-        <div class="noprint">
-            <div class="title">NOTES</div>
-            <div class="container-fluid">
-                Entr&eacute;e: Dimitri Skeinivork, G&eacute;n&eacute;ral pendant une guerre<br/>
-                1ere crypte: Jacobin Mitecon, plus d'&eacute;lectricit&eacute;<br/>
-                2eme crypte: Alfred Haran<br/>
-                symbole de cheval sur le mausol&eacute;e, traces de sabots, d&eacute;fonc&eacute; de l'int&eacute;rieur<br/>
-                Valassin Barant, Palefrenier Royal, aida son roi &agrave; gagner de grandes batailles gr&acirc;ce à ses chevaux m&eacute;caniques<br/>
-                3eme crypte: Anton Siron<br/>
-                symbole de magicien, pi&egrave;ges &eacute;lectiques, 7 tomes et 7 dagues, on part en respectant son repos<br/>
-                En sortant: Rian la Ranger<br/>
-            </div>
-		</div>
+			<!--Misc-->
+			<li><!--50-->Healer's kit, remains 5</li>
+			<li>Staff with Dragon Carvings</li>
+			<li>Quartz corrompu</li>
+			<li>131.4 <b>GP</b></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Devoted and kind</dd>
+
+				<dt>Drawbacks</dt>
+				<dd>Close-minded</dd>
+
+				<dt>Eyes</dt>
+				<dd>Blue</dd>
+
+				<dt>Hair</dt>
+				<dd>Platinum Blonde</dd>
+
+				<dt>Age</dt>
+				<dd>80</dd>
+
+				<dt>Weight</dt>
+				<dd>185 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>6' 5''</dd>
+			</dl>
+			Entr&eacute;e: Dimitri Skeinivork, G&eacute;n&eacute;ral pendant une guerre<br/>
+			1ere crypte: Jacobin Mitecon, plus d'&eacute;lectricit&eacute;<br/>
+			2eme crypte: Alfred Haran<br/>
+			symbole de cheval sur le mausol&eacute;e, traces de sabots, d&eacute;fonc&eacute; de l'int&eacute;rieur<br/>
+			Valassin Barant, Palefrenier Royal, aida son roi &agrave; gagner de grandes batailles gr&acirc;ce à ses chevaux m&eacute;caniques<br/>
+			3eme crypte: Anton Siron<br/>
+			symbole de magicien, pi&egrave;ges &eacute;lectiques, 7 tomes et 7 dagues, on part en respectant son repos<br/>
+			En sortant: Rian la Ranger<br/>
+		</section>
 	</div>
 </body>
 </html>
