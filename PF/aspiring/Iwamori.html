@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Grey's Ninja-Oracle</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.minki { color: blue; }
+	</style>
 </head>
 <body>
 	<nav id="fixref" class="noprint">
@@ -221,6 +224,7 @@
 		<hr>
 		<section class="row">
 			<!--Basics: Statblock and Weapons-->
+			<div>
 				<ul>
 					<li class="br">
 						<span class="numberFirst">8</span>
@@ -258,15 +262,50 @@
 						<span class="listBonuses"><u title="3 ninja, 0 oracle">3 bab</u>, 0 str, 6 dex, <u title="Ring of Protection">1 deflection</u></span>
 					</li>
 				</ul>
-				<!--end of Basics: Statblock and Weapons-->
+
+				<!--Dagger-->
+				<div class="weapon">
+					<h2>Wakizashi <b>18x2</b> <b>PS</b></h2>
+					<div class="apartee float-right">TWF<br> <b>+8</b>: 1d6<br> <b>+8</b>: 1d6</div>
+					<span class="listBonusBreaker">+<b>10</b> vs AC</span>
+					<span class="listBonuses">3 bab, <u title="Weapon Finesse">6 dex</u>, 1 mwk</span>
+					<br>
+					<b class="listBonusBreaker">1d6</b>
+					<span class="listBonuses">0 str</span>
+					<div class="circumstancialBonus"><a href="https://d20pfsrd.com/equipment---final/weapons#wpn-quality-deadly">Deadly</a>.</div>
+				</div>
+
+				<!--Shortbow-->
+				<div class="weapon">
+					<h2>Shortbow <b>20x3</b> <b>70 ft.</b> <b>P</b></h2>
+					<span class="listBonusBreaker">+<b>10</b> vs AC</span>
+					<span class="listBonuses">3 bab, 6 dex, 1 mwk</span>
+					<br>
+					<b class="listBonusBreaker">1d6</b>
+					<span class="listBonuses">0 str</span>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
 				
 			<div>
 				<h2>Poison Use</h2>
 				<h2>Sneak Attack <u>3d6</u></h2>
+				<p title="Pressure Points">+1 Str/Dex damage</p>
 				<h2>Ki Pool <u title="2 ninja&frac12;, 2 cha">4 Ki</u></h2>
 				<ul>
 					<li>For 1 Ki, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, extra attack on Full Attack.</li>
-					<li>TODO</li>
+					<li>For 1 Ki, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, gain +20ft speed this round.</li>
+					<li>For 1 Ki, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, gain <u>+4 insight</u> to Stealth this round.</li>
+					<li title="Vanishing Trick">
+						For 1 Ki, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+						disappear (as <a href="https://d20pfsrd.com/magic/all-spells/i/invisibility" class="spell">invisibility</a>) for <u title="5 ninja">5</u> rounds.
+					</li>
+					<li title="Forgotten Trick">
+						For 2 Ki, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+						learn a Ninja trick for <u title="5 ninja">5</u> rounds.
+						<div class="circumstancialBonus">Can't be a Rogue Talent / Master Trick</div>
+					</li>
+					<li class="minki">Always have a running start when jumping.</li>
 				</ul>
 				<h2>Temporal Celerity</h2>
 				<p>Always get advantage on Initiative</p>
@@ -275,95 +314,62 @@
 			</div>
 		</section>
 
-	<hr>
-	<div class="indent">
-		<a href="https://d20pfsrd.com/equipment---final/weapons/eastern-weapons">Wakizashi</a>, cold-iron masterwork
-	</div>
-	<div class="insert">
-		+<b>7</b> vs AC (3 bab, 5 dex, -2 twf, 1 masterwork)<br/>
-		<b>1d6</b> dmg (0 str) <b>18x2</b>, P or S.<br/>
-		<a href="https://d20pfsrd.com/equipment---final/weapons#wpn-quality-deadly">deadly</a>.
-	</div>
-	<br/>
-	<div class="indent">
-		<a href="https://d20pfsrd.com/equipment---final/weapons/eastern-weapons">Wakizashi</a>, cold-iron masterwork (off-hand)
-	</div>
-	<div class="insert">
-		+<b>7</b> vs AC (3 bab, 5 dex, -2 twf, 1 masterwork)<br/>
-		<b>1d6</b> dmg (0 str*0.5) <b>18x2</b>, P or S.<br/>
-		<a href="https://d20pfsrd.com/equipment---final/weapons#wpn-quality-deadly">deadly</a>.
-	</div>
-	<br/>
-	<div class="indent">
-		<a href="https://d20pfsrd.com/equipment---final/weapons/eastern-weapons">Shuriken</a>
-	</div>
-	<div class="insert">
-		+<b>8</b> vs AC (3 bab, 5 dex)<br/>
-		<b>1d2</b> dmg (0 str) <b>20x2</b>, P.<br/>
-		Range 10 ft. Currently carrying: 20
-	</div>
-	<br/>
-	<div class="indent">
-		<a href="https://d20pfsrd.com/equipment---final/weapons">Shortbow</a>
-	</div>
-	<div class="insert">
-		+<b>8</b> vs AC (3 bab, 5 dex)<br/>
-		<b>1d6</b> dmg (0 str) <b>20x3</b>, P.<br/>
-		Range 60 ft. Currently carrying: 60
-	</div>
-	<br/>
-
-	<!-- title KI -->
-	<div class="title">KI</div>
-	<div class="indent">
-		5 <b>Ki</b> (2 &frac12;ninja, 3 cha) Current:
-		<ul>
-			<li>As long as a ninja has at least 1 point in her ki pool, he treats any Acrobatics skill check made to jump as if he had a running start.<br/>
-			At 10th level, he also reduces the DC of Acrobatics skill checks made to jump by 1/2 (although he still cannot move farther than his speed allows).</li>
-			<li>For 1 ki, as a swift action, he can make one additional attack at his highest attack bonus, but he can do so only when making a full attack.</li>
-			<li>For 1 ki, as a swift action, he can increase his speed by 20 feet for 1 round.</li>
-			<li>For 1 ki, as a swift action, he can give himself a +4 insight bonus on Stealth checks for 1 round.</li>
-			<li>For 1 ki, as a swift action, he can disappear for 1 round per level. This ability functions as <a href="https://d20pfsrd.com/magic/all-spells/i/invisibility" class="spell">invisibility</a>.</li>
-			<li>For 2 ki, as a swift action, he can select one ninja trick (not a master trick or rogue talent) that he does not know and can use that ninja trick for a number of rounds equal to his level. He must pay any ki costs associated with the trick as normal. </li>
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--1800--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/hat-of-disguise">Hat of Disguise</a></li>
+			<li class="emptyitemslot">Headband</li>
+			<li class="emptyitemslot">Eyes</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+			<li class="emptyitemslot">Neck</li>
+			<li class="emptyitemslot">Chest</li>
+			<li class="emptyitemslot">Body</li>
+			<li class="emptyitemslot">Wrists</li>
+			<li class="emptyitemslot">Hands</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li class="emptyitemslot">Ring</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
+			<li class="emptyitemslot">Feet</li>
 		</ul>
-	</div>
-	<br/>
+		<ul>
+			<li><!-- 370 * 2 + 50 -->
+				2 &times; <a href="https://d20pfsrd.com/equipment/weapons">Wakizashi</a>,
+				<span class="listBonusBreaker">cold-iron masterwork</span>
+				<span class="listBonuses noprint">exotic light, 1d6, 18x2, PS, deadly.</span>
+				<div class="circumstancialBonus"><!-- 50 --><a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/">Poisoning Sheath</a></div>
+			</li>
+			<li><!--375 (ammo: 1 gp for 20)-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Shortbow</a>,
+				<span class="listBonusBreaker">masterwork</span>
+				<span class="listBonuses noprint">martial ranged, 1d6, 20x3, P, 70ft.</span>
+				<div class="circumstancialBonus">40 arrows</div>
+			</li>
+			<li class="br"><!--4+5-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Dagger</a>,
+				<span class="listBonusBreaker">cold-iron</span>
+				<span class="listBonuses noprint">simple light, 1d4, 19x2, PS, 10ft.</span>
+				<div class="circumstancialBonus">
+					<a href="https://d20pfsrd.com/equipment/weapons/weapon-and-armor-accessories#TOC-Wrist-Sheath-spring-loaded">Spring-loaded Wrist Sheath</a>
+					Hidden, DC <u title="10, 10 Sleight of Hand, 2 Wrist Sheath, 2 Dagger">24</u> to find.
+				</div>
+			</li>
+			<!--Armors-->
+			<li class="br"><!--2100-->
+				<span class="listBonusBreaker"><a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a> +1</span>
+				<span class="listBonuses noprint">light, 4 armor, 6 dex, 0 acp, 10%asf</span>
+			</li>
 
-	<!-- title EQUIPMENT -->
-	<hr>
-	<div class="indent">
-		370*2 Wakizashi, cold iron, masterwork (2)<br/>
-		35 Shortbow<br/>
-		50 <a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/">Poisoning Sheath</a><br/>
-		75 <a href="https://d20pfsrd.com/equipment---final/goods-and-services/herbs-oils-other-substances#TOC-Alchemist-s-Lab-Portable">Alchemist's Lab, portable</a><br/>
-		30 Thieve's tools<br/>
-		50 Healer's kit, current:<br/>
-		<br/>
-		1400 <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bag-handy-haversack">Handy Haversack</a>, Ninja-only<br/>
-		140 <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/ioun-stones">Ioun Stone</a>, Deep Red Sphere, cracked (+1 Acrobatics), Ninja-only<br/>
-		2800 <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-alluring-charisma">Headband of Alluring Charisma</a> +2, Ninja-only<br/>
-		700 <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +1, Ninja-only<br/>
-		1800 <a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral shirt</a> (light, 4 armor, 6 dex, 0 acp, 10% asf) +1, Ninja-only<br/>
-		630 Ninja Garb of <a href="https://paizo.com/pathfinderRPG/prd/magicItems/wondrousItems.html#cloak-of-elvenkind">+3 Stealth</a>, Ninja-only<br/>
-		2800 Bracers of Continuous <a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a>, Ninja-only<br/>
-		4032 Ring of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/haste">haste</a>, 2/day, CL 4th, Ninja-only<br/>
-		525 Wand, <a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>, NG-only<br/>
-		<br/>
-		2 <a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/toolsAndSkillKits.html">Bear trap</a><br/>
-		1 <a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/adventuringGear.html">Caltrops</a><br/>
-		.1 <a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/adventuringGear.html">Marbles</a><br/>
-		<br/>
-		43.6 GP for standard items, food & ammo: <br/>
-		Rations, current: 10<br/>
-		<a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear/foodAndDrink.html">Wandermeal</a>, current: 12
-	</div>
+			<li><!--200--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/ioun-stones">Ioun Stone</a>, Deep Red Sphere, cracked</li>
+		</ul>
 
 		<!-- title NOTES -->
 		<section class="noprint">
 			<hr>
-			Invisibility gives +2 to hit against sighted opponents, in addition to denying Dex in AC.<br/>
-			Haste gives +1 to hit, +1 AC, +1 Reflex, x2 Speed, not only the "extra attack in full round action".<br/>
-			<br/>
+			<p><a href="https://docs.google.com/document/d/1dEZyEP-yooZdGprglxcEorpL_EnPfUqr6M89uHmF8Bo/edit?pli=1">Guide used today</a></p>
+			<p>
+				Invisibility gives +2 to hit against sighted opponents, in addition to denying Dex in AC.<br/>
+				Haste gives +1 to hit, +1 AC, +1 Reflex, x2 Speed, not only the "extra attack in full round action".<br/>
+			</p>
 			Forgotten Trick is way too strong. Here are some ideas in how to use it.
 			<ul>
 				<li>Gain <i>Combat Trick</i>, to gain <a href="https://d20pfsrd.com/feats/combat-feats/wave-strike-combat">Wave Strike</a> and you can <a href="https://d20pfsrd.com/skills/bluff">feint</a> as a swift action at the start of a fight (useful if you rolled awfully on init).</li>
@@ -374,30 +380,26 @@
 				<li>Gain <i>Darkvision</i>, just in time! 60ft, 1 ki, 1 hour</li>
 				<li>Gain <i>Slow Metabolism</i>, just before diving or when you get poisoned</li>
 			</ul>
-			<a href="https://docs.google.com/document/d/1dEZyEP-yooZdGprglxcEorpL_EnPfUqr6M89uHmF8Bo/edit?pli=1">Guide used today</a><br/>
-			<br/>
-			<a href="https://paizo.com/pathfinderRPG/prd/magicItems/magicItemCreation.html">Ninja-only items</a> (CRB p549)<br/>
-			<br/>
-			<b>Up next in the build</b><br/>
-			Pressure Point<br/>
-			Rogue Talent > <a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo---rogue-talents/underhanded-ex">Underhanded</a><br/>
-			Shadow Clone<br/>
-			Combat Trick > Improved Critical (who says I have to meet the requirements?)<br/>
-			Master Trick -> Advanced Rogue Talent -> Crippling Strike (and <a href="https://d20pfsrd.com/basics-ability-scores/more-character-options/retraining">retrain</a> Pressure Point when you get it)<br/>
-			<br/>
-			<b>Items to strive for:</b><br/>
-			<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/wayfinder-standard">Wayfinder</a>, 500, and maybe the Eastern and Western stars?<br/>
-			<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/slippers-of-spider-climbing">Slipper of Spider Climb</a>, 4 800<br/>
-			<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-hidden-strength">Amulet of Hidden Strength</a>, 9 000<br/>
-			<a href="https://d20pfsrd.com/magic-items/rings/ring-of-ki-mastery">Ring of Ki Mastery</a>, 10 000<br/>
-			<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/glove-of-storing">Gloves of Storing</a>, 10 000<br/>
-			<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/goggles-of-night">Goggles of	Night</a>, 12 000, or <a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/darkvision">darkvision</a> with <a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/permanency">permanency</a> or as a wand<br/>
-			<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/necklace-of-ki-serenity">Necklace of Ki Serenity</a>, 16 000<br/>
-			<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/scabbard-of-keen-edges">Scabbard of Keen Edges</a>, 16 000<br/>
-			<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-the-bat">Cloak of the Bat</a>, 26 000<br/>
-			<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-shadowform">Shadowform Belt</a>, 110 000<br/>
-			+1 <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/agile">Agile</a><br">
-			Wand of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/blacklight">blacklight</a>
+			<h2>Up next in the build</h2>
+			<p>Shadow Clone</p>
+			
+			<h2>Items to strive for:</h2>
+			<ul>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/wayfinder-standard">Wayfinder</a>, 500, and maybe the Eastern and Western stars?</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-alluring-charisma">Headband of Alluring Charisma</a>, 4 000</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/slippers-of-spider-climbing">Slipper of Spider Climb</a>, 4 800</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/amulet-of-hidden-strength">Amulet of Hidden Strength</a>, 9 000</li>
+				<li><a href="https://d20pfsrd.com/magic-items/rings/ring-of-ki-mastery">Ring of Ki Mastery</a>, 10 000</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/glove-of-storing">Gloves of Storing</a>, 10 000</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/e-g/goggles-of-night">Goggles of Night</a>, 12 000, or <a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/darkvision">darkvision</a> with <a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/permanency">permanency</a> or as a wand</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/necklace-of-ki-serenity">Necklace of Ki Serenity</a>, 16 000</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/scabbard-of-keen-edges">Scabbard of Keen Edges</a>, 16 000</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-the-bat">Cloak of the Bat</a>, 26 000</li>
+				<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-shadowform">Shadowform Belt</a>, 110 000</li>
+				<li>+1 <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/agile">Agile</a></li>
+				<li>Wand of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/blacklight">blacklight</a></li>
+			</ul>
+
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Patient and adaptable</dd>
