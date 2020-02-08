@@ -4,13 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Grey's Sorcerer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../system/pfGeneric.css">
-    <link rel="stylesheet" href="../../system/pfCharacter.css">
-    <style>
-        .firstweapon { margin-top: 0.75rem; }
-		.spellb, a:link.spellb, a:visited.spellb { font-style:italic; color:blue; }
-    </style>
+    <link rel="stylesheet" href="../system/pfCharacter.css">
 </head>
 <body>
 	<div id="fixref" class="noprint">
@@ -23,8 +17,8 @@
             NG Medium humanoid
         </div>
 
-        <div id="headerInfo" class="row">
-            <dl class="charInfo col-xs-12 col-md-4">
+        <section class="row">
+            <dl class="charInfo">
                 <dt>Str</dt>
                 <dd>10</dd>
 
@@ -41,204 +35,179 @@
                 <dd>10</dd>
 
                 <dt>Cha</dt>
-                <dd>18 <span class="listBonuses">16, <abbr title="Racial">2</abbr></span></dd>
+                <dd>18 <span class="listBonuses">16, <u title="Racial">2</u></span></dd>
             </dl>
-            <div class="col-xs-12 col-md-4">
-                <dl id="subheader" class="charInfo">
-                    <dt>Race</dt>
-                    <dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
 
-                    <dt>Class</dt>
-                    <dd><a href="https://d20pfsrd.com/classes/core-classes/sorcerer">Sorcerer</a> 2</dd>
-                    <dd class="archetype">Bloodline <a href="https://d20pfsrd.com/classes/core-classes/sorcerer/bloodlines/bloodlines-from-paizo/undead-bloodline/">Undead</a></dd>
-                </dl>
-                <dl class="charInfo">
-                    <dt>Traits</dt>
-                    <dd><a href="https://d20pfsrd.com/traits/magic-traits/magical-linear/">Magical Lineage</a></dd>
-                    <dd><a href="https://d20pfsrd.com/traits/faith-traits/irrepressible/">Irrepressible</a></dd>
-
-                    <dt>Drawback</dt>
-                    <dd><a href="https://d20pfsrd.com/traits/drawbacks/anxious/">Anxious</a></dd>
-                </dl>
-            </div>
-            <dl class="charInfo col-xs-12 col-md-4">
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/sorcerer">Sorcerer</a> 2</dd>
+				<dd class="archetype">Bloodline <a href="https://d20pfsrd.com/classes/core-classes/sorcerer/bloodlines/bloodlines-from-paizo/undead-bloodline/">Undead</a></dd>
+			</dl>
+            <dl class="charInfo">
                 <dt>Deity</dt>
                 <dd>Pharasma</dd>
 
-                <dt>Eyes</dt>
-                <dd>Hazelnut</dd>
+                <dt>Senses</dt>
+                <dd>Normal</dd>
 
-                <dt>Hair</dt>
-                <dd>Brown</dd>
-
-                <dt>Weight</dt>
-                <dd>146 lbs</dd>
-
-                <dt>Height</dt>
-                <dd>5' 10''</dd>
+                <dt>Speed</dt>
+                <dd>30ft.</dd>
 
                 <dt>Languages</dt>
                 <dd>Common, Dwarven</dd>
             </dl>
-        </div>
+        </section>
 
         <!-- title SKILLS & FEATS -->
-        <div class="title">SKILLS &amp; FEATS</div>
-        <div class="container-fluid">
-            <dl id="featsWrapper">
-                <dt>human</dt>
-                <dd><a href="https://d20pfsrd.com/feats/general-feats/improved-initiative-final/">Improved Initiative</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>level 1</dt>
-                <dd><a href="https://d20pfsrd.com/feats/metamagic-feats/toppling-spell-metamagic/">Toppling Spell</a>
-                    <span class="listBonuses noprint">min.1</span></dd>
-                <dt>sorcerer 1</dt>
-                <dd><a href="https://d20pfsrd.com/feats/general-feats/eschew-materials-final/">Eschew Materials</a>
-                    <span class="listBonuses noprint">bonus</span></dd>
-            </dl>
+        <hr>
+		<dl id="featsWrapper">
+			<dt>Traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/magic-traits/magical-lineage/">Magical Lineage</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/faith-traits/irrepressible/">Irrepressible</a></dd>
+			<dt>human</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/improved-initiative-combat/">Improved Initiative</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/metamagic-feats/toppling-spell-metamagic/">Toppling Spell</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>sorcerer 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/eschew-materials/">Eschew Materials</a>
+				<span class="listBonuses noprint">bonus</span></dd>
+		</dl>
 
-            <!-- SKILLS -->
-            <div class="br">
+		<!-- SKILLS -->
+		<ul>
+            <li class="br">
                 <span class="numberFirst">0</span>
                 <a href="https://d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
                 <span class="listBonuses">0 wis, 0 ranks, 0 class</span>
-            </div>
+            </li>
 
             <!--Misc Skills-->
-            <div>
+            <li>
                 <span class="numberFirst">9</span>
                 <a href="https://d20pfsrd.com/skills/bluff" class="listBonusBreaker">Bluff</a>
                 <span class="listBonuses">4 cha, 2 ranks, 3 class</span>
-            </div>
-            <div>
+            </li>
+            <li>
                 <span class="numberFirst">8</span>
                 <a href="https://d20pfsrd.com/skills/intimidate" class="listBonusBreaker">Intimidate</a>
                 <span class="listBonuses">4 cha, 1 ranks, 3 class</span>
-            </div>
-            <div>
+            </li>
+            <li>
                 <span class="numberFirst">5</span>
                 <a href="https://d20pfsrd.com/skills/spellcraft" class="listBonusBreaker">Spellcraft</a>
                 <span class="listBonuses">1 int, 1 ranks, 3 class</span>
-            </div>
-            <div class="br">
+            </li>
+            <li class="br">
                 <span class="numberFirst">9</span>
                 <a href="https://d20pfsrd.com/skills/use-magic-device" class="listBonusBreaker">Use Magic Device</a>
                 <span class="listBonuses">4 cha, 2 ranks, 3 class</span>
-            </div>
+            </li>
 
             <!--Knowledge Skills-->
-            <div>
+            <li>
                 <span class="numberFirst">5</span>
                 <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (arcana)</a>
                 <span class="listBonuses">1 int, 1 ranks, 3 class</span>
-            </div>
-            <div class="br">
+            </li>
+            <li class="br">
                 <span class="numberFirst">5</span>
                 <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (religion)</a>
                 <span class="listBonuses">1 int, 1 ranks, 3 class</span>
-            </div>
+            </li>
 
-            <div class="noprint">
+            <li class="noprint">
 				<span class="numberFirst">8</span>
 				<b class="listBonusBreaker">ranks</b>
 				<span class="listBonuses">2 sorcerer: 2 class, 1 int, 1 human</span>
-			</div>
-			<div class="circumstancialBonus noprint br">
+			</li>
+			<li class="circumstancialBonus noprint">
 				Unranked Class Skills:
                 <a href="https://d20pfsrd.com/skills/appraise">Appraise</a>,
                 <a href="https://d20pfsrd.com/skills/craft">Craft</a>,
                 <a href="https://d20pfsrd.com/skills/fly">Fly</a>,
                 <a href="https://d20pfsrd.com/skills/profession">Profession</a>.
-			</div>
-        </div>
+			</li>
+        </ul>
 
         <!-- title Spells -->
-        <div class="title">SPELLS (CL 2st, 4 cha, spontaneous arcane)</div>
-        <div id="spellsContainer" class="container-fluid">
-            <div id="spellHeader" class="apartee">
-                The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Charisma modifier.<br/>
-                When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Charisma modifier.
-                To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.<br/>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="subtitle">Level 0</div>
-                    <ul class="list-unstyled">
-                        <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/daze">daze</a>,</li>
-                        <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
-                        <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/disrupt-undead">disrupt undead</a>,</li>
-                        <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
-                        <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>.</li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="subtitle">
-                        Level 1
-                        <abbr title="4 class, 1 cha" class="pull-xs-right">5/day</abbr>
-                    </div>
-                    <ul class="list-unstyled">
-                        <li><a class="spellb" href="https://d20pfsrd.com/magic/all-spells/c/chill-touch">chill touch</a>,</li>
-                        <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-missile">magic missile</a>.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+		<hr>
+		<div id="spellHeader" class="apartee">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Charisma modifier.<br>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Charisma modifier.<br>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.
+		</div>
+		<section class="row">
+			<div>
+				<h2>Level 0</h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/daze">daze</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/disrupt-undead">disrupt undead</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 1 <u title="4 class, 1 cha">5/day</u></h2>
+				<ul>
+					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/c/chill-touch">chill touch</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-missile">magic missile</a>.</li>
+				</ul>
+			</div>
+		</section>
 
         <!-- title COMBAT -->
-        <div class="title">COMBAT (1 BAB)</div>
-        <div class="container-fluid">
-            <div class="row">
-                <!--Basics: Statblock and Weapons-->
-                <div class="col-xs-12 col-md-6">
-                    <div><b>Senses</b> <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-Light Vision</a></div>
-                    <div class="br"><b>Speed</b> 30 ft.</div>
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<ul>
+				<li class="br">
+					<span class="numberFirst">6</span>
+					<b class="listBonusBreaker">Init</b>
+					<span class="listBonuses">2 dex, <u title="Improved Initiative">4 feat</u></span>
+				</li>
+				<li>
+					<span class="numberFirst">16</span>
+					<b class="listBonusBreaker">HP</b>
+					<span class="listBonuses">2 sorcerer: 6 class, 1 con; 2 FC</span>
+				</li>
+				<li class="br">
+					<span class="numberFirst">12</span>
+					<span class="listBonusBreaker"><b>AC</b> touch 12, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 10</span>
+					<span class="listBonuses">10, 2 dex</span>
+				</li>
+				<li>
+					<span class="numberFirst">1</span>
+					<b class="listBonusBreaker">Fort</b>
+					<span class="listBonuses">1 con, 0 class</span>
+				</li>
+				<li>
+					<span class="numberFirst">2</span>
+					<b class="listBonusBreaker">Ref</b>
+					<span class="listBonuses">2 dex, 0 class</span>
+				</li>
+				<li class="br">
+					<span class="numberFirst">2</span>
+					<b class="listBonusBreaker">Will</b>
+					<span class="listBonuses">0 wis, 2 class</span>
+					<div class="circumstancialBonus"><u title="Irrepressible">Use CHA</u> instead of WIS vs Charm and Compulsion</div>
+				</li>
+				<li>
+					<span class="numberFirst">1</span>
+					<span class="listBonusBreaker"><b>CMB</b>;	13 <b>CMD</b></span>
+					<span class="listBonuses">1 bab, 0 str, 2 dex</span>
+				</li>
+			</ul>
+			<!--end of Basics: Statblock and Weapons-->
 
-                    <div>
-                        <span class="numberFirst">6</span>
-                        <b class="listBonusBreaker">Init</b>
-                        <span class="listBonuses">2 dex, <abbr title="Improved Initiative">4 feat</abbr></span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">16</span>
-                        <b class="listBonusBreaker">HP</b>
-                        <span class="listBonuses">2 sorcerer: 6 class, 1 con; 2 FC</span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">12</span>
-                        <span class="listBonusBreaker"><b>AC</b> touch 12, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 10</span>
-                        <span class="listBonuses">10, 2 dex</span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">1</span>
-                        <b class="listBonusBreaker">Fort</b>
-                        <span class="listBonuses">1 con, 0 class</span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">2</span>
-                        <b class="listBonusBreaker">Ref</b>
-                        <span class="listBonuses">2 dex, 0 class</span>
-                    </div>
-                    <div>
-                        <span class="numberFirst">2</span>
-                        <b class="listBonusBreaker">Will</b>
-                        <span class="listBonuses">0 wis, 2 class</span>
-                        <div class="circumstancialBonus"><abbr title="Irrepressible">Use CHA</abbr> instead of WIS vs Charm and Compulsion</div>
-                    </div>
-                    <div class="br">
-                        <span class="numberFirst">1</span>
-                        <span class="listBonusBreaker"><b>CMB</b>;	13 <b>CMD</b></span>
-                        <span class="listBonuses">1 bab, 0 str, 2 dex</span>
-                    </div>
-                </div>
-                <!--end of Basics: Statblock and Weapons-->
-
+			<div>
                 <!--Light Crossbow-->
-				<div class="weapon col-xs-12 col-md-6 firstweapon">
-                    <div class="weaponHead">
-                        <div class="pull-xs-right">19x2</div>
-                        <div class="weaponReach">80 ft.</div>
-                        Light Crossbow<sup>P</sup>
-                    </div>
+				<div class="weapon">
+                    <h2>Light Crossbow <b>19x2</b> <b>80 ft.</b> <b>P</b></h2>
                     <span class="listBonusBreaker">+<b>3</b> vs AC</span>
                     <span class="listBonuses">1 bab, 2 dex</span>
                     <br>
@@ -251,32 +220,44 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-md-6 br">
-					<div class="subtitle">
-                        Undead Arcana
-                    </div>
-                    Undead are affected by your mind-affecting spells.
-                </div>
+                <h2>Undead Arcana</h2>
+                <p>Undead are affected by your mind-affecting spells.</p>
 
-                <div class="col-xs-12 col-md-6 br">
-					<div class="subtitle">
-                        Grave Touch
-                        <abbr title="3 class, 4 cha" class="pull-xs-right">7/day</abbr>
-                    </div>
-                    Melee Touch Attack makes a living creature <a href="https://d20pfsrd.com/basics-ability-scores/glossary#shaken">shaken</a> for <abbr title="1 sorcerer&frac12;">1 round</abbr>.<br>
+                <h2>Grave Touch <u title="3 class, 4 cha">7/day</u></h2>
+                <p>
+					Melee Touch Attack makes a living creature <a href="https://d20pfsrd.com/basics-ability-scores/glossary#shaken">shaken</a> for <u title="1 sorcerer&frac12;">1 round</u>.<br>
                     If the creature is already shaken and has less HD than you, it becomes <a href="https://d20pfsrd.com/basics-ability-scores/glossary#frightened">frightened</a> for 1 round.
-                </div>
+                </p>
             </div>
-        </div>
+        </section>
 
         <!-- title NOTES -->
-        <div class="noprint">
-            <div class="title newPage">NOTES</div>
-            <div class="container-fluid">
+        <section class="noprint">
+            <hr>
+            <p>
                 Bernard is always feeling anxious, even panicked. He's placing himself a step below, and is always soft-spoken, careful.<br>
                 For some reason, and he won't admit it, he feels sort of safe here.
-            </div>
-        </div>
+            </p>
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Honest and altruistic</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/anxious/">Anxious</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Hazelnut</dd>
+
+				<dt>Hair</dt>
+				<dd>Brown</dd>
+
+				<dt>Weight</dt>
+				<dd>146 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 10''</dd>
+			</dl>
+        </section>
 	</div>
 </body>
 </html>
