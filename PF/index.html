@@ -4,9 +4,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Grey's ToC</title>
 	<link rel="stylesheet" href="system/pfGeneric.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/r-2.2.3/datatables.min.css"/>
 	<style>
 		ul { list-style: none; }
+		@media screen and (max-width: 767px) {
+			td:not(:first-child), th:not(:first-child) { display: none; } /* On mobile, display only the name */
+		}
 	</style>
 </head>
 <body>
@@ -45,15 +47,15 @@
 		</section>
 		<details open>
 			<summary class="subtitle">Characters sheets</summary>
-			<table id="tblCharacters" class="compact hover">
+			<table id="tblCharacters">
 			<thead>
 				<tr>
-					<th class="all">Name</th>
-					<th class="min-tablet">Race</th>
-					<th class="min-tablet">Class</th>
-					<th class="min-tablet">Level</th>
-					<th class="min-tablet">Edition</th>
-					<th class="min-tablet">Status</th>
+					<th data-sort-default>Name</th>
+					<th>Race</th>
+					<th>Class</th>
+					<th>Level</th>
+					<th>Edition</th>
+					<th>Status</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -398,15 +400,11 @@
 		</details>
 	</div>
 
-	<nav id="fixref">
-		<a href="https://d20pfsrd.com/"><img src="system/d20pfsrdLogo.png" width="156px" height="60px"></a>
-	</nav>
-	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.3.js"></script>
-	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/r-2.2.3/datatables.min.js"></script>
-	<script type="text/javascript" class="init">
-		$(document).ready(function() {
-			$('#tblCharacters').DataTable({ dom: 't', pageLength: 100, responsive: true });
-		});
+	<nav id="fixref"><a href="https://d20pfsrd.com/"><img src="system/d20pfsrdLogo.png" width="156px" height="60px"></a></nav>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/tablesort.min.js"></script>
+	<script type="text/javascript">
+		new Tablesort(document.getElementById('tblCharacters'));
 	</script>
 </body>
 </html>

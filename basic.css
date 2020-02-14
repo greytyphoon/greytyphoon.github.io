@@ -148,16 +148,46 @@ h2 > *:not(a), .subtitle > *:not(a) {
 	margin-bottom: 0.75rem; }
 
 /********************
- * Cornered tables
+ * tables (table, .table-cornered, TableSort library)
  */
+table { width: 100%; border-collapse: collapse; }
+table th { border-bottom: 1px solid var(--html-darkgrey); }
+table th, table td { padding: .15em; }
+table > tbody > tr:hover { background-color: var(--murder-grey); }
+	
 table.table-cornered th,
 table.table-cornered td {
 	border-left: 1px solid var(--html-darkgrey);
 	border-bottom: 1px solid var(--html-darkgrey);
 	color: var(--murder-black);
-	padding: .15em;
 	text-align:center;
 	width:25%; }
+
+/* MIT License http://tristen.ca/tablesort/demo/ */
+th[role=columnheader]:not(.no-sort) {
+	cursor: pointer; }
+th[role=columnheader]:not(.no-sort):after {
+	content: '';
+	float: right;
+	margin-top: .5em;
+	border-width: 0 .25em .25em;
+	border-style: solid;
+	border-color: var(--murder-black) transparent;
+	visibility: hidden;
+	opacity: 0;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none; }
+th[aria-sort=ascending]:not(.no-sort):after {
+	border-bottom: none;
+	border-width: .25em .25em 0; }
+th[aria-sort]:not(.no-sort):after {
+	visibility: visible;
+	opacity: 0.4; }
+th[role=columnheader]:not(.no-sort):hover:after {
+	visibility: visible;
+	opacity: 1; }
 
 /********************
  * Printing tweaks
