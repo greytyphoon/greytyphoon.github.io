@@ -151,7 +151,7 @@ h2 > *:not(a), .subtitle > *:not(a) {
  * tables (table, .table-cornered, TableSort library)
  */
 table { width: 100%; border-collapse: collapse; }
-table th { border-bottom: 1px solid var(--html-darkgrey); }
+table > thead > tr > th { border-bottom: 1px solid var(--html-darkgrey); }
 table th, table td { padding: .15em; }
 table > tbody > tr:hover { background-color: var(--murder-grey); }
 	
