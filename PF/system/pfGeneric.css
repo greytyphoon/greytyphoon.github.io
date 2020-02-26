@@ -75,12 +75,8 @@
  * CharStudies and Tables
  */
 #tblComparison {
-	color: var(--murder-black);
-	border-collapse: collapse !important; /*removed from datatable css*/
 	text-align: center;
-	font-size: .75rem; }
-#tblComparison th { border-bottom: 1px solid var(--murder-black); }
-#tblComparison td { padding: .2em; }
+	font-size: .8rem; }
 
 .awesome { background-color:#33b5e5; }
 .good { background-color:#00c851; }
