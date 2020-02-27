@@ -1,0 +1,527 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grey's Druid</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.panache { color: blue; }
+		#listArcanas { font-size: 0.8rem; }
+	</style>
+</head>
+<body>
+	<nav id="fixref" class="noprint">
+		<a href="https://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
+	</nav>
+
+	<div class="container">
+		<header id="header">
+			<h1>Corren Delass, warden of the firelands</h1>
+			N Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>10</dd>
+
+				<dt>Dex</dt>
+				<dd>15 <span class="listBonuses">13, <u title="Belt of Incredible Dexterity">2</u></span></dd>
+
+				<dt>Con</dt>
+				<dd>14</dd>
+
+				<dt>Int</dt>
+				<dd>10</dd>
+
+				<dt>Wis</dt>
+				<dd>24 <span class="listBonuses">18, <u title="Racial">2</u>, <u title="Advancement">2</u>, <u title="Belt of Inspired Wisdom">2</u></span></dd>
+
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/druid">Druid</a> 9</dd>
+				<dd class="archetype">
+					<a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo---domains/fire-domain">Fire</a> domain
+					(<a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo---domains/fire-domain/ash">Ash</a> subdomain)
+				</dd>
+				<dd class="archetype"><a href="https://www.d20pfsrd.com/classes/core-classes/druid/archetypes/paizo-druid-archetypes/menhir-savant">Menhir Savant</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Pharasma</dd>
+
+				<dt>Senses</dt>
+				<dd>Normal</dd>
+
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd title="1 human, 0 int, 1 druid, 4' Ring of Eloquence">Common, Dwarven, Elven, Gnome, Druidic</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://www.d20pfsrd.com/traits/combat-traits/deft-dodger">Deft Dodger</a></dd>
+			<dd><a href="https://www.d20pfsrd.com/traits/religion-traits/wisdom-in-the-flesh-god-of-perfection">Wisdom in the Flesh</a></dd>
+			<dt>human</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/spell-focus-final">Spell Focus</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/augment-summoning-final">Augment Summoning</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-initiative-combat">Improved Initiative</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://www.d20pfsrd.com/feats/general-feats/proxy-summoning">Proxy Summoning</a>
+				<span class="listBonuses noprint">min.5</span></dd>
+			<dt>level 7</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/natural-spell-final">Natural Spell</a>
+				<span class="listBonuses noprint">min.4</span></dd>
+			<dt>level 9</dt>
+			<dd><a href="https://www.d20pfsrd.com/feats/general-feats/sunlight-summons">Sunlight Summons</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul>
+			<li class="br">
+				<span class="numberFirst">20</span>
+				<a href="https://d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
+				<span class="listBonuses">7 wis, 9 ranks, 3 class, <u title="Incandescent Blue Sphere Ioun Stone">1 competence</u></span>
+			</li>
+
+			<!--Social Skills-->
+			<li class="br">
+				<span class="numberFirst">2</span>
+				<span class="listBonusBreaker">Bluff/Diplomacy/Intimidate</span>
+				<span class="listBonuses">0 cha, 0 ranks, 0 class, <u title="Ring of Eloquence">2 competence</u></span>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/climb" class="listBonusBreaker">Climb</a>
+				<span class="listBonuses">0 str, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">6</span>
+				<a href="https://d20pfsrd.com/skills/fly" class="listBonusBreaker">Fly</a>
+				<span class="listBonuses">2 dex, 1 ranks, 3 class</span>
+				<div class="circumstancialBonus"><u title="Fly Speed">+4</u> with good maneuverability</div>
+				<div class="circumstancialBonus"><u title="Fly Speed">+6 size</u> when diminutive</div>
+			</li>
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/handle-animal" class="listBonusBreaker">Handle Animal</a>
+				<span class="listBonuses">0 cha, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">19</span>
+				<a href="https://d20pfsrd.com/skills/heal" class="listBonusBreaker">Heal</a>
+				<span class="listBonuses">7 wis, 9 ranks, 3 class</span>
+				<div class="circumstancialBonus"><u title="Healer's Kit">+2 circumstance</u> when using Healer's Kit</div>
+			</li>
+			<li>
+				<span class="numberFirst">6</span>
+				<a href="https://d20pfsrd.com/skills/ride" class="listBonusBreaker">Ride</a>
+				<span class="listBonuses">2 dex, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">12</span>
+				<a href="https://d20pfsrd.com/skills/spellcraft" class="listBonusBreaker">Spellcraft</a>
+				<span class="listBonuses">0 int, 9 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">11</span>
+				<a href="https://d20pfsrd.com/skills/Stealth" class="listBonusBreaker">Stealth</a>
+				<span class="listBonuses"><u title="Wisdom in the Flesh">7 wis</u>, 1 ranks, <u title="Wisdom in the Flesh">3 class</u></span>
+				<div class="circumstancialBonus"><u title="size">+12 size</u> when diminutive</div>
+			</li>
+			<li>
+				<span class="numberFirst">19</span>
+				<a href="https://d20pfsrd.com/skills/survival" class="listBonusBreaker">Survival</a>
+				<span class="listBonuses">7 wis, 9 ranks, 3 class</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/swim" class="listBonusBreaker">Swim</a>
+				<span class="listBonuses">0 str, 1 ranks, 3 class</span>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (geography)</a>
+				<span class="listBonuses">0 int, 1 ranks, 3 class</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">12</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (nature)</a>
+				<span class="listBonuses">0 int, 9 ranks, 3 class</span>
+			</li>
+
+			<li class="noprint">
+				<span class="numberFirst">52</span>
+				<b class="listBonusBreaker">ranks</b>
+				<span class="listBonuses">9 druid: 4 class, 0 int, 1 human; 7 fc</span>
+			</li>
+			<li class="circumstancialBonus noprint">
+				Unranked Class Skills:
+				<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+				<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+			</li>
+		</ul>
+
+		<!-- title Spells -->
+		<hr>
+		<div id="spellHeader" class="apartee">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Widsom modifier.<br/>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Wisdom modifier.<br/>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.<br/>
+		</div>
+		<section class="row">
+			<div>
+				<h2>Spontaneous Casting</h2>
+				<p><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/summon-natures-ally">summon nature's ally</a></p>
+
+				<h2>Ring of Eloquence</h2>
+				<p>When casting verbal spells while <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Deafened">deafened</a>, spell failure is reduced to 10%.</p>
+
+				<h2>Spirit Sense</h2>
+				<p><a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/d/detect-undead">detect undead</a>; fey; outsiders; astral, ethereal, or uncorporeal creatures.</p>
+
+				<h2>Place Magic <u title="3 class, 7 wis">10/day</u></h2>
+				<p>As a safe <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a>, for 1 round, increase your caster level by 1.</p>
+
+				<h2>Walk the lines <u title="7 wis">7/day</u></h2>
+				<p>As a safe <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
+					cast <a class="spell conjuration" href="https://www.d20pfsrd.com/magic/all-spells/t/transport-via-plants">transport via plants</a>.</p>
+			</div>
+			<div style="flex:3">
+				<section class="row">
+					<div>
+						<h2>Level 0 <u title="4 class">4/day</u></h2>
+						<ul>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/create-water">create water</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/guidance">guidance</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>.</li>
+						</ul>
+					</div>
+					<div>
+						<h2>Level 1 <u title="4 class, 2 wis, 1 domain">7/day</u></h2>
+						<ul>
+							<li><a class="spell domain" href="https://d20pfsrd.com/magic/all-spells/b/burning-hands">burning hands</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/burning-disarm">burning disarm</a>,</li>
+							<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/entangle">entangle</a>,</li>
+							<li><a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/f/faerie-fire">faerie fire</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/feather-step">feather step</a>,</li>
+							<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/o/obscuring-mist">obscuring mist</a>.</li>
+						</ul>
+					</div>
+					<div>
+						<h2>Level 2 <u title="4 class, 2 wis, 1 domain">7/day</u></h2>
+						<ul>
+							<li><a class="spell domain" href="https://d20pfsrd.com/magic/all-spells/p/produce-flame">produce flame</a>,</li>
+							<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/b/barkskin">barkskin</a>,</li>
+							<li><a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/c/campfire-wall">campfire wall</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/flaming-sphere">flaming sphere</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/heat-metal">heat metal</a>,</li>
+							<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/r/restoration">lesser restoration</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/soften-earth-and-stone">soften earth and stone</a>.</li>
+							<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/stone-call">stone call</a>.</li>
+						</ul>
+					</div>
+				</section>
+				<section class="row">
+					<div>
+						<h2>Level 3 <u title="3 class, 1 wis, 1 domain">5/day</u></h2>
+						<ul>
+							<li><a class="spell domain" href="https://d20pfsrd.com/magic/all-spells/f/fireball">fireball</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/call-lightning">call lightning</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/protection-from-energy">protection from energy</a>,</li>
+							<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/sleet-storm">sleet storm</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/stone-shape">stone shape</a>.</li>
+						</ul>
+					</div>
+					<div>
+						<h2>Level 4 <u title="2 class, 1 wis, 1 domain">4/day</u></h2>
+						<ul>
+							<li><a class="spell domain" href="https://d20pfsrd.com/magic/all-spells/w/wall-of-fire">wall of fire</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/air-walk">air walk</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/freedom-of-movement">freedom of movement</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/spike-stones">spike stones</a>,</li>
+						</ul>
+					</div>
+					<div>
+						<h2>Level 5 <u title="1 class, 1 wis, 1 domain">3/day</u></h2>
+						<ul>
+							<li><a class="spell domain" href="https://d20pfsrd.com/magic/all-spells/f/fire-shield">fire shield</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/animal-growth">animal growth</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/control-winds">control winds</a>.</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul>
+					<li class="br">
+						<span class="numberFirst">7</span>
+						<b class="listBonusBreaker">Init</b>
+						<span class="listBonuses">2 dex, <u title="Improved Initiative">4</u>, <u title="Dusty Rose Prism Ioun Stone">1 competence</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">92</span>
+						<b class="listBonusBreaker">HP</b>
+						<span class="listBonuses">9 druid: 8 class, 2 con; 2 FC</span>
+					</li>
+					<li class="br">
+						<span class="numberFirst">21</span>
+						<span class="listBonusBreaker"><b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 19</span>
+						<span class="listBonuses">10, 2 dex, 5 armor, 3 shield, <u title="Ring of Protection">1 deflection</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">10</span>
+						<b class="listBonusBreaker">Fort</b>
+						<span class="listBonuses">2 con, 6 class, <u title="Cloak of Resistance">2 resistance</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">8</span>
+						<b class="listBonusBreaker">Ref</b>
+						<span class="listBonuses">2 dex, 3 class, <u title="Deft Dodger">1 trait</u>, <u title="Cloak of Resistance">2 resistance</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">15</span>
+						<b class="listBonusBreaker">Will</b>
+						<span class="listBonuses">7 wis, 6 class, <u title="Cloak of Resistance">2 resistance</u></span>
+					</li>
+					<li class="circumstancialBonus" title="Venom Immunity"><u>Immune</u> all poisons</li>
+					<li class="circumstancialBonus br">
+						<u title="Resist Nature's Lure">+4</u> vs fey's Sp &amp; Su, or vs effects affecting plants.
+					</li>
+					<li>
+						<span class="numberFirst">6</span>
+						<span class="listBonusBreaker"><b>CMB</b>;	19 <b>CMD</b></span>
+						<span class="listBonuses">6 bab, 0 str, 2 dex, <u title="Ring of Protection">1 deflection</u></span>
+					</li>
+				</ul>
+
+				<h2>Metamagic Rod, <a href="https://www.d20pfsrd.com/feats/metamagic-feats/extend-spell-metamagic">Extend</a> <u title="3 item">3/day</u></h2>
+				<h2>Pearl of Power <u title="1 item">1/day</u></h2>
+				<h2>Caster's Tattoo <u title="1 item">1/day</u></h2>
+				<h2>Headband of Unshakeable Resolve <u title="3 item">3/day</u></h2>
+			</div>
+
+			<div>
+				<!--Scimitar-->
+				<div class="weapon">
+					<h2>Scimitar <b>18x2</b> <b>S</b></h2>
+					<span class="listBonusBreaker">+<b>7</b> vs AC</span>
+					<span class="listBonuses">6 bab, 0 str, 1 mwk</span>
+					<br>
+					<b class="listBonusBreaker">1d6</b>
+					<span class="listBonuses">0 str</span>
+				</div>
+
+				<!--Sling-->
+				<div class="weapon">
+					<h2>Sling <b>20x2</b> <b>50ft.</b> <b>B</b></h2>
+					<span class="listBonusBreaker">+<b>9</b> vs AC</span>
+					<span class="listBonuses">6 bab, 2 dex, 1 mwk</span>
+					<br>
+					<b class="listBonusBreaker">1d4</b>
+					<span class="listBonuses">0 str</span>
+				</div>
+
+				<h2>Fire Bolt (Sp) <u title="7 wis, 3 class">10/day</u></h2>
+				<div class="weapon">
+					<h2>Fire Bolt <b>20x2</b> <b>30ft strict</b> <b>Fire</b></h2>
+					<span class="listBonusBreaker">+<b>8</b> vs touch AC</span>
+					<span class="listBonuses">6 bab, 2 str</span>
+					<br>
+					<b class="listBonusBreaker">1d6+4</b>
+					<span class="listBonuses">4 druid&frac12;</span>
+				</div>
+
+				<h2>Wall of Ashes <u title="9 druid">9min/day</u></h2>
+				<p>As a safe <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, create a wall within 100ft.
+					The wall is 5ft wide, <u title="9 druid * 10">90ft</u> long, 20ft high.
+					It blocks line of sight and reveals adjacent invisible creatures.
+					Creatures that pass through are <a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Blinded">blinded</a> 1d4 rounds (Fort <u title="10, 4 druid&frac12;, 7 wis">DC 21</u> negates).</p>
+			</div>
+
+			<!--Bat-->
+			<div>
+				<h2>Wild Shape (Su) <u title="4 druid&frac12;, -1 class, 1 item">4/day</u></h2>
+				As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, change form for <u title="9 druid">9 hours</u>,
+				as <a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/b/beast-shape">beast shape III</a>
+				or <a class="spell transmutation" href="https://www.d20pfsrd.com/magic/all-spells/e/elemental-body">elemental body II</a>
+				or <a class="spell transmutation" href="https://www.d20pfsrd.com/magic/all-spells/p/plant-shape-i">plant shape I</a>.
+				<div class="circumstancialBonus br" title="Ring of Eloquence">Can talk normally while wild shaped.</div>
+
+				<h2>
+					<a href="https://d20pfsrd.com/bestiary/monster-listings/animals/bat/bat">Bat</a>,
+					N Diminutive Animal
+				</h2>
+				<dl class="charInfo">
+					<dt>Senses</dt>
+					<dd><a href="https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Blindsense-Ex-">Blindsense</a> 20ft.</dd>
+					<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+
+					<dt>Speed</dt>
+					<dd>5 ft.</dd>
+					<dd>Fly 40 ft. (<a href="https://d20pfsrd.com/skills/fly">good</a>)</dd>
+				</dl>
+
+				<ul>
+					<li>
+						<span class="numberFirst">21</span>
+						<span class="listBonusBreaker"><b>AC</b> touch 20, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 16</span>
+						<span class="listBonuses">10, 5 dex, 4 size, 1 natural, <u title="Ring of Protection">1 deflection</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">0</span>
+						<span class="listBonusBreaker"><b>CMB</b>;	16 <b>CMD</b></span>
+						<span class="listBonuses">6 bab, -2 str, 5 dex, -4 size, <u title="Ring of Protection">1 deflection</u></span>
+					</li>
+				</ul>
+
+				<!--Bite-->
+				<div class="weapon">
+					<h2>Bite <b>20x2</b> <b>BPS</b></h2>
+					<span class="listBonusBreaker">+<b>17</b> vs AC</span>
+					<span class="listBonuses">6 bab, <u title="Guided">7 wis</u>, 4 size</span>
+					<br>
+					<b class="listBonusBreaker">1d3+7</b>
+					<span class="listBonuses"><u title="Guided">7 wis</u></span>
+				</div>
+
+				<p>Also gets +3 Reflex, +3 Init</p>
+			</div>
+			<!--end of Bat-->
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li class="emptyitemslot">Head</li>
+			<li><!--5600--><a href="https://www.d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-unshakeable-resolve/">Headband of Unshakeable Resolve</a> +2</li>
+			<li class="emptyitemslot">Eyes</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +2</li>
+			<li><!--4000-->
+				<a href="https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/amulet-of-mighty-fists">Amulet of Mighty Fist</a>,
+				<a href="https://aonprd.com/MagicWeaponsDisplay.aspx?ItemName=Guided">guided</a>
+			</li>
+			<li class="emptyitemslot">Chest</li>
+			<li><!--3750--><a href="https://www.d20pfsrd.com/magic-items/wondrous-items/r-z/vestment-druid-s">Druid's Vestments</a></li>
+			<li class="emptyitemslot">Wrists</li>
+			<li class="emptyitemslot">Hands</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--3500--> <a href="https://d20pfsrd.com/magic-items/rings/ring-of-eloquence">Ring of Eloquence</a> (Common, Dwarven, Elven, Gnome)</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
+			<li class="emptyitemslot">Feet</li>
+		</ul>
+
+		<ul>
+			<!--Weapons-->
+			<li><!--330-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Scimitar</a>,
+				<span class="listBonusBreaker">cold-iron masterwork</span>
+				<span class="listBonuses noprint">martial one-handed, 1d6, 18x2, S.</span>
+			</li>
+			<li><!--300 (ammo: 1 gp for 100)-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Sling</a>,
+				<span class="listBonusBreaker">masterwork</span>
+				<span class="listBonuses noprint">simple ranged, 1d4, 20x2, B, 50ft.</span>
+				<div class="circumstancialBonus">100 pellets</div>
+			</li>
+			<li class="br"><!--4-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Dagger</a>,
+				<span class="listBonusBreaker">cold-iron</span>
+				<span class="listBonuses noprint">simple light, 1d4, 19x2, PS, 10ft.</span>
+			</li>
+			<!--Armors-->
+			<li><!--4170-->
+				<a href="https://d20pfsrd.com/equipment/armor">Hide Shirt</a>
+				<span class="listBonusBreaker">+2</span>
+				<span class="listBonuses noprint">medium, 3 armor, 4 dex, 1 acp, 15% asf</span>
+			</li>
+			<li class="br"><!--1257-->
+				<a href="https://d20pfsrd.com/equipment/armor">Heavy Wooden Shield</a>,
+				<span class="listBonusBreaker"><a href="https://d20pfsrd.com/equipment/special-materials#TOC-Darkwood">darkwood</a> +1</span>
+				<span class="listBonuses noprint">2 shield, - dex, 2 acp, 15% asf</span>
+			</li>
+
+			<!--Misc-->
+			<li><!--3000--><a href="https://d20pfsrd.com/magic-items/rods/metamagic-rods/metamagic-extend">Extend Metamagic Rod</a>, lesser</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a>, lvl1</li>
+			<li><!--6000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/tattoo-caster-s">Caster's Tattoo</a>, lesser</li>
+			<li><!--500--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/ioun-stones/dusty-rose-prism-ioun-stone">Dusty Rose Prism Ioun Stone</a>, cracked</li>
+			<li><!--200--><a href="https://www.d20pfsrd.com/magic-items/wondrous-items/h-l/ioun-stones/incandescent-blue-sphere-ioun-stone">Incandescent Blue Sphere Ioun Stone</a>, cracked</li>
+			<li class="br"><!--750-->Wand of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>, remains 50</li>
+
+			<li><!--2000--><a href="https://www.d20pfsrd.com/magic-items/wondrous-items/a-b/bag-handy-haversack">Handy Haversack</a></li>
+			<li><!--50-->Healer's kit, remains 10</li>
+			<li><!--35--><a target="_blank" href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a></li>
+			<li><!--5-->Spell Component Pouch</li>
+			<li>298 <b>GP</b><!--/46000--></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Idealistic and genuine</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/nervous">Nervous</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Green</dd>
+
+				<dt>Hair</dt>
+				<dd>Brown</dd>
+
+				<dt>Weight</dt>
+				<dd>137 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 2''</dd>
+			</dl>
+			<p>
+				<a href="https://docs.google.com/document/d/1PXamF43boZgYtCUlyJAMojfrPaAdYyjPOaGOo1vfqdM/edit">Prometeus's druid guide</a>,
+				<a href="https://docs.google.com/document/d/1xrMC87TpmdfjB9xorkhY3_xWz3guOunTaotgWhoKYMA/edit?pli=1">Wild Mystic guide</a>,
+				<a href="https://docs.google.com/document/d/1TUvw-QOBsvCBeMcpUGDlo-0BKsFuEHynDQhgX8HmzKo/edit?pli=1">Spell guide</a>
+			</p>
+
+			<p><a href="https://www.d20pfsrd.com/feats/general-feats/sunlight-summons">Sunlight Summons</a> makes my summons immune to blindness, so they can pass through my Wall of Ashes!</p>
+
+			<p><a href="https://d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Natural-Attacks">Natural Attack Types</a></p>
+
+			<p>Corren was gravely wounded in their last adventure, and despite having fully recovered, he is very wary of any dangers.<br>
+				He uses his wild shape to pretend to be <a href="Leana.html">Leana Thunderheart</a>'s bat familiar.</p>
+		</section>
+	</div>
+</body>
+</html>
