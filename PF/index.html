@@ -45,7 +45,7 @@
 			</details>
 		</section>
 		<details open>
-			<summary class="subtitle">Characters sheets</summary>
+			<summary class="subtitle">Characters sheets <b id="charactersCount"></b></summary>
 			<table id="tblCharacters">
 			<thead>
 				<tr>
@@ -458,6 +458,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/tablesort.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/sorts/tablesort.number.min.js"></script>
 	<script type="text/javascript">
+		document.getElementById("charactersCount").innerHTML = document.getElementById("tblCharacters").tBodies[0].rows.length + " total";
 		new Tablesort(document.getElementById('tblCharacters'));
 	</script>
 </body>
