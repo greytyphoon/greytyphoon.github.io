@@ -1,0 +1,305 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grey's Cleric</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		:root { --rage-blue: #2613f2; }
+		.holyFervor { color: var(--rage-blue); }
+		.holyFervor > .weapon { color: var(--murder-black); border-color: var(--rage-blue); }
+		.holyFervor > .weapon > h2 { background-color: var(--rage-blue); border-color: var(--rage-blue) }
+	</style>
+</head>
+<body>
+	<nav id="fixref" class="noprint">
+		<a href="https://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
+	</nav>
+
+	<div class="container">
+		<header id="header">
+			<h1>Denise Brunel, enthusiast of Desna</h1>
+			LG Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>7</dd>
+
+				<dt>Dex</dt>
+				<dd>8</dd>
+
+				<dt>Con</dt>
+				<dd>14</dd>
+
+				<dt>Int</dt>
+				<dd>12</dd>
+
+				<dt>Wis</dt>
+				<dd>11</dd>
+
+				<dt>Cha</dt>
+				<dd>20 <span class="listBonuses">18, <u title="Racial">2</u></span></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/cleric">Cleric</a> 2</dd>
+				<dd class="archetype">Domain <a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/luck-domain">Luck</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/cleric/archetypes/kobold-press/enthusiast/">Enthusiast</a></dd>
+			</dl>
+			<dl class="charInfo col-xs-12 col-md-4">
+				<dt>Deity</dt>
+				<dd>Desna</dd>
+
+				<dt>Senses</dt>
+				<dd>Normal</dd>
+
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Celestial</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/social-traits/amiable-blunder-social/">Amiable Blunder</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/faith-traits/birthmark">Birthmark</a></dd>
+			<dt>human</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/noble-scion/">Noble Scion of War</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/divine-fighting-technique-combat#TOC-Way-of-the-Shooting-Star-">Way of the Shooting Star</a>
+				<span class="listBonuses noprint">min.1</span></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul>
+			<li class="br">
+				<span class="numberFirst">0</span>
+				<a href="https://d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
+				<span class="listBonuses">0 wis, 0 ranks, 0 class</span>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<span class="numberFirst">10</span>
+				<a href="https://d20pfsrd.com/skills/diplomacy" class="listBonusBreaker">Diplomacy</a>
+				<span class="listBonuses">5 cha, 2 ranks, 3 class</span>
+				<div class="circumstancialBonus">1/day after failed check, <u title="Amiable Blunder">reroll</u> to avoid consequences</div>
+			</li>
+			<li>
+				<span class="numberFirst">4</span>
+				<a href="https://d20pfsrd.com/skills/heal" class="listBonusBreaker">Heal</a>
+				<span class="listBonuses">0 wis, 1 ranks, 3 class</span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">5</span>
+				<a href="https://d20pfsrd.com/skills/sense-motive" class="listBonusBreaker">Sense Motive</a>
+				<span class="listBonuses">0 wis, 2 ranks, 3 class</span>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<span class="numberFirst">5</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (history)</a>
+				<span class="listBonuses">1 int, 1 ranks, 3 class</span>
+			</li>
+			<li>
+				<span class="numberFirst">7</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (nobility)</a>
+				<span class="listBonuses">1 int, 1 ranks, 3 class, <u title="Noble Scion">2 feat</u></span>
+			</li>
+			<li class="br">
+				<span class="numberFirst">5</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (religion)</a>
+				<span class="listBonuses">1 int, 1 ranks, 3 class</span>
+			</li>
+
+			<li class="noprint">
+				<span class="numberFirst">8</span>
+				<b class="listBonusBreaker">ranks</b>
+				<span class="listBonuses">2 cleric: 2 class, 1 int, 1 human</span>
+			</li>
+			<li class="circumstancialBonus noprint">
+				Unranked Class Skills:
+				<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>,
+				<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge</a> (arcana, planes, religion),
+				<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>,
+				<a href="https://d20pfsrd.com/skills/profession">Profession</a>,
+				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>.
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul>
+					<li class="br">
+						<span class="numberFirst">5</span>
+						<b class="listBonusBreaker">Init</b>
+						<span class="listBonuses"><u title="Noble Scion">5 cha</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">22</span>
+						<b class="listBonusBreaker">HP</b>
+						<span class="listBonuses">2 cleric: 8 class, 2 con; 1 FC</span>
+					</li>
+					<li class="br">
+						<span class="numberFirst">14</span>
+						<span class="listBonusBreaker"><b>AC</b> touch 14, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 14</span>
+						<span class="listBonuses">10, -1 dex, <u title="Enthusiast AC Bonus">5 cha</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">5</span>
+						<b class="listBonusBreaker">Fort</b>
+						<span class="listBonuses">2 con, 3 class</span>
+					</li>
+					<li>
+						<span class="numberFirst">-1</span>
+						<b class="listBonusBreaker">Ref</b>
+						<span class="listBonuses">-1 dex, 0 class</span>
+					</li>
+					<li>
+						<span class="numberFirst">3</span>
+						<b class="listBonusBreaker">Will</b>
+						<span class="listBonuses">0 wis, 3 class</span>
+					</li>
+					<li class="circumstancialBonus br">
+						<u title="Birthmark">+2</u> vs charm/compulsion
+					</li>
+					<li>
+						<span class="numberFirst">-1</span>
+						<span class="listBonusBreaker"><b>CMB</b>;	13 <b>CMD</b></span>
+						<span class="listBonuses">1 bab, -2 str, -1 dex, <u title="Enthusiast AC Bonus">5 cha</u></span>
+					</li>
+				</ul>
+
+				<!--Starknife-->
+				<div class="weapon">
+					<h2>Starknife <b>20x3</b> <b>20ft.</b> <b>P</b></h2>
+					<span class="listBonusBreaker">+<b>7</b> vs AC</span>
+					<span class="listBonuses">1 bab, 5 cha, 1 mwk</span>
+					<br>
+					<b class="listBonusBreaker">1d4+5</b>
+					<span class="listBonuses">5 cha</span>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<!--Holy Fervor-->
+			<div class="holyFervor">
+				<ul>
+					<li class="br">
+						<span class="numberFirst">7</span>
+						<b class="listBonusBreaker">Init</b>
+						<span class="listBonuses"><u title="Noble Scion">7 cha</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">26</span>
+						<b class="listBonusBreaker">HP</b>
+						<span class="listBonuses">2 cleric: 8 class, 4 con; 1 FC</span>
+					</li>
+					<li class="br">
+						<span class="numberFirst">16</span>
+						<span class="listBonusBreaker"><b>AC</b> touch 16, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 16</span>
+						<span class="listBonuses">10, -1 dex, <u title="Enthusiast AC Bonus">7 cha</u></span>
+					</li>
+					<li>
+						<span class="numberFirst">7</span>
+						<b class="listBonusBreaker">Fort</b>
+						<span class="listBonuses">4 con, 3 class</span>
+					</li>
+					<li>
+						<span class="numberFirst">-1</span>
+						<b class="listBonusBreaker">Ref</b>
+						<span class="listBonuses">-1 dex, 0 class</span>
+					</li>
+					<li>
+						<span class="numberFirst">5</span>
+						<b class="listBonusBreaker">Will</b>
+						<span class="listBonuses">0 wis, 3 class, <u title="Holy Fervor">2 morale</u></span>
+					</li>
+					<li class="circumstancialBonus br">
+						<u title="Birthmark">+2</u> vs charm/compulsion
+					</li>
+					<li>
+						<span class="numberFirst">2</span>
+						<span class="listBonusBreaker"><b>CMB</b>;	18 <b>CMD</b></span>
+						<span class="listBonuses">2 bab, 0 str, -1 dex, <u title="Enthusiast AC Bonus">7 cha</u></span>
+					</li>
+				</ul>
+
+				<!--Starknife-->
+				<div class="weapon">
+					<h2>Starknife <b>20x3</b> <b>20ft.</b> <b>P</b></h2>
+					<span class="listBonusBreaker">+<b>10</b> vs AC</span>
+					<span class="listBonuses">2 bab, 7 cha, 1 mwk</span>
+					<br>
+					<b class="listBonusBreaker">1d4+7</b>
+					<span class="listBonuses">7 cha</span>
+				</div>
+
+				<h2>Holy Fervor (Su) <u title="2 class, 4 cleric, 5 cha">11 rounds/day</u></h2>
+			</div>
+			<!--end of Holy Fervor-->
+
+			<div>
+				<h2>Aura (Ex)</h2>
+				<p>Faint aura of Good</p>
+
+				<h2>Bit of Luck (Su) <u title="3 class, 0 wis">3/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, bless an ally.<br>
+					For 1 round, whenever he rolls a d20, he rolls twice and takes the best.</p>
+
+				<h2>Channel Energy (Su) <u title="3 class, 5 cha">8/day</u></h2>
+				<p>
+					As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
+					you choose undead or living.<br>
+					<b>1d6</b> positive energy, 30ft radius, Will <u title="10, 0 cleric&frac12;, 5 cha">DC 15</u> halves.
+				</p>
+			</div>
+		</section>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Enthusiastic and optimistic</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/vainglory/">Vainglory</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Blue</dd>
+
+				<dt>Hair</dt>
+				<dd>Blond</dd>
+
+				<dt>Age</dt>
+				<dd>17</dd>
+
+				<dt>Weight</dt>
+				<dd>152 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 7''</dd>
+			</dl>
+			<p>Colette</p>
+		</section>
+	</div>
+</body>
+</html>
