@@ -5,6 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Grey's Druid</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.cold::after { content: " [cold]"; font-size: .8em; color: #2599b9; }
+		.domain.off-class::before { content: ", domain-only"; float: right; }
+	</style>
 </head>
 <body>
 	<nav id="fixref" class="noprint">
@@ -130,9 +134,9 @@
 				<span class="listBonuses">2 dex, 1 ranks, 3 class</span>
 			</li>
 			<li>
-				<span class="numberFirst">9</span>
+				<span class="numberFirst">11</span>
 				<a href="https://d20pfsrd.com/skills/heal" class="listBonusBreaker">Heal</a>
-				<span class="listBonuses">3 wis, 3 ranks, 3 class</span>
+				<span class="listBonuses">3 wis, 5 ranks, 3 class</span>
 				<div class="circumstancialBonus"><u title="Healer's Kit">+2 circumstance</u> when using Healer's Kit</div>
 			</li>
 			<li>
@@ -178,12 +182,6 @@
 		<!-- title Spells -->
 		<hr>
 		<div id="spellHeader" class="apartee">
-			<div class="float-right">
-				<b>Legend</b>
-				<ul>
-					<li class="spell bonus">This spell has the [cold] descriptor.</li>
-				</ul>
-			</div>
 			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Widsom modifier.<br/>
 			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Wisdom modifier.<br/>
 			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.<br/>
@@ -192,17 +190,17 @@
 			<div>
 				<h2>Metamagics</h2>
 				<ul>
-					<li><a class="spell bonus" href="https://d20pfsrd.com/feats/metamagic-feats/rime-spell-metamagic">Rime Spell</a> (+1)</li>
+					<li><a class="spell cold" href="https://d20pfsrd.com/feats/metamagic-feats/rime-spell-metamagic">Rime Spell</a> (+1)</li>
 				</ul>
 
 				<h2>Magical Lineage</h2>
 				<ul>
-					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/f/frostbite">frostbite</a> (-1)</li>
+					<li><a class="spell cold" href="https://d20pfsrd.com/magic/all-spells/f/frostbite">frostbite</a> (-1)</li>
 				</ul>
 
 				<h2>Spontaneous Casting</h2>
 				<ul>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/summon-natures-ally">summon nature's ally</a></li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/summon-natures-ally">summon nature's ally</a></li>
 				</ul>
 			</div>
 			<div>
@@ -402,7 +400,7 @@
 					<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Scent">Scent</a></dd>
 
 					<dt>Speed</dt>
-					<dd>30 ft.</dd>
+					<dd title="Morph into a Cheetah instead for 50ft speed (but no climb speed).">30 ft.</dd>
 					<dd>Climb 20 ft.</dD>
 				</dl>
 
@@ -455,7 +453,7 @@
 
 					<dt>Speed</dt>
 					<dd>10 ft.</dd>
-					<dd>Fly 30 ft. (average)</dd>
+					<dd>Fly 30 ft. (<a href="https://d20pfsrd.com/skills/fly">average</a>)</dd>
 				</dl>
 
 				<ul>
@@ -493,7 +491,7 @@
 					<span class="listBonuses">5 str</span>
 				</div>
 
-				<p>Also gets +1 Reflex, +1 Init</p>
+				<p>Also gets +1 Reflex, +1 Init, <u title="1 dex increase, 2 size">+3</u> Fly, <u title="1 dex increase, 4 size">+5</u> Stealth</p>
 			</div>
 			<!--end of Eagle-->
 
@@ -705,11 +703,13 @@
 			</p>
 
 			<p><a href="https://d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Natural-Attacks">Natural Attack Types</a></p>
-			<a href="https://d20pfsrd.com/magic/all-spells/b/beast-shape">Beast Shape</a>:
-			<ul>
-				<li><b>Medium</b> +2 str, +2 natural armor</li>
-				<li><b>Small</b> +2 dex, +1 natural armor, +1 size</li>
-			</ul>
+			<a href="https://d20pfsrd.com/magic/all-spells/b/beast-shape">Beast Shape</a> (size bonus is doubled on fly, quadrupled on stealth, inversed on CMB/CMD):
+			<dl class="charInfo">
+				<dt>Medium</dt>
+				<dd>+2 str, 0 dex +2 natural armor, 0 size</dd>
+				<dt>Small</dt>
+				<dd>0 str, +2 dex, +1 natural armor, +1 size</dd>
+			</dl>
 			<ul>
 				<li>3500 <a href="https://d20pfsrd.com/magic-items/rings/ring-of-eloquence">Ring of Eloquence</a></li>
 				<li>3750 <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/vestment-druid-s">Druid's Vestment</a></li>
