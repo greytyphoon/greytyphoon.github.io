@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Grey's Ranger</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.fire::after { content: " [fire]"; font-size: .8em; color: #2599b9; }
+	</style>
 </head>
 <body>
 	<nav id="fixref" class="noprint">
@@ -226,7 +229,7 @@
 		<section class="row">
 			<div>
 				<h2 title="5 ranger, -3 class, 2 trait">Caster Level <b>4th</b></h2>
-				<p class="circumstancialBonus" title="Spawn of the Destroyer"><u>+1</u> for [fire] spells.
+				<p class="circumstancialBonus" title="Spawn of the Destroyer"><u>+1</u> for <span class="spell fire">spells</span>.</p>
 			</div>
 			<div>
 				<h2>Level 1 <u title="1 class, 1 wis">2/day</u></h2>
@@ -238,12 +241,16 @@
 				</ul>
 			</div>
 			<div>
+				<h2 title="5 ranger">Caster Level <b>5th</b></h2>
+				<p class="circumstancialBonus" title="Spawn of the Destroyer"><u>+1</u> for <span class="spell fire">spells</span>.</p>
+			</div>
+			<div>
 				<h2 title="Spawn of the Destroyer">Spell-like <u title="1 racial">1/day</u></h2>
 				<ul>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/dancing-lights">dancing lights</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/flare">flare</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/produce-flame">produce flame</a> [fire].</li>
+					<li><a class="spell fire" href="https://d20pfsrd.com/magic/all-spells/p/produce-flame">produce flame</a>.</li>
 				</ul>
 			</div>
 		</section>

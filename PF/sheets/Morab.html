@@ -6,7 +6,7 @@
 	<title>Grey's Psychic</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
 	<style>
-		li.mind-affecting { list-style-type: square; }
+		.mind-affecting::after { content: " [mind]"; font-size: .8em; color: #2599b9; }
 	</style>
 </head>
 <body>
@@ -184,7 +184,7 @@
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
-					<li class="mind-affecting"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/lullaby">lullaby</a>,</li>
+					<li><a class="spell mind-affecting" href="https://d20pfsrd.com/magic/all-spells/l/lullaby">lullaby</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mage-hand">mage hand</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mending">mending</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/message">message</a>,</li>
@@ -198,16 +198,18 @@
 			<div>
 				<h2 title="9 known: 5 psychic, 1 discipline, 2 fc, 1 detect thoughts">Level 1 <u title="6 class, 2 int">8/day</u></h2>
 				<ul>
-					<li class="mind-affecting"><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/d/detect-thoughts">detect thoughts</a>, <u title="Detect Thoughts">1 free/day</u></li>
+					<li><a class="spell bonus mind-affecting" href="https://d20pfsrd.com/magic/all-spells/d/detect-thoughts">detect thoughts</a>,</li>
 					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/b/burst-of-insight">burst of insight</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/burst-of-adrenaline/">burst of adrenaline</a>,</li>
-					<li class="mind-affecting"><a class="spell" href="hhttps://d20pfsrd.com/magic/all-spells/c/charm-person/">charm person</a>,</li>
+					<li><a class="spell mind-affecting" href="hhttps://d20pfsrd.com/magic/all-spells/c/charm-person/">charm person</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/ear-piercing-scream">ear-piercing scream</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/expeditious-retreat">expeditious retreat</a>,</li>
-					<li class="mind-affecting"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/ill-omen/">ill omen</a>,</li>
+					<li><a class="spell mind-affecting" href="https://d20pfsrd.com/magic/all-spells/i/ill-omen/">ill omen</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-missile">magic missile</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/silent-image">silent image</a>.</li>
 				</ul>
+
+				<h2><a class="spell bonus mind-affecting" href="https://d20pfsrd.com/magic/all-spells/d/detect-thoughts">detect thoughts</a> <u title="Detect Thoughts">+1/day</u></h2>
 			</div>
 			<div>
 				<h2 title="7 known: 4 psychic, 1 discipline, 2 fc">Level 2 <u title="6 class, 2 int">8/day</u></h2>
@@ -224,7 +226,7 @@
 			<div>
 				<h2 title="6 known: 3 psychic, 1 discipline, 2 fc">Level 3 <u title="6 class, 1 int">7/day</u></h2>
 				<ul>
-					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/c/contact-other-plane/">contact other plane</a>,</li>
+					<li><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/c/contact-other-plane/">contact other plane</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/fly">fly</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/gaseous-form">gaseous form</a>,</li>
@@ -235,18 +237,20 @@
 			<div>
 				<h2 title="5 known: 2 psychic, 1 discipline, 1 fc, 1 telepathic bond">Level 4 <u title="5 class, 1 int">6/day</u></h2>
 				<ul>
-					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/t/telepathic-bond">telepathic bond</a>, <u title="Telepathic Bond">1 free/day</u></li>
-					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/a/ancestral-memory/">ancestral memory</a>,</li>
+					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/t/telepathic-bond">telepathic bond</a>,</li>
+					<li><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/a/ancestral-memory">ancestral memory</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/black-tentacles">black tentacles</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/dimension-door/">dimension door</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster IV</a>.</li>
 				</ul>
+
+				<h2><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/t/telepathic-bond">telepathic bond</a> <u title="Telepathic Bond">+1/day</u></h2>
 			</div>
 			<div>
 				<h2 title="2 known: 1 psychic, 1 discipline">Level 5 <u title="3 class, 1 int">4/day</u></h2>
 				<ul>
-					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/r/reincarnate/">reincarnate</a>,</li>
-					<li class="mind-affecting"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mind-thrust/">mind thrust V</a>.</li>
+					<li><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/r/reincarnate">reincarnate</a>,</li>
+					<li><a class="spell mind-affecting" href="https://d20pfsrd.com/magic/all-spells/m/mind-thrust/">mind thrust V</a>.</li>
 				</ul>
 
 				<h2>Mnemonic Esoterica</h2>
@@ -302,8 +306,8 @@
 				<ul>
 					<li title="Relentless Casting">For 1, roll twice when overcoming SR.</li>
 					<li title="Undercast Surge">For 2, as you undercast a spell, increase the version but not the slot.</li>
-					<li title="Overpowering Mind">For 2, increase Will DC of a mind-affecting spell by 1.</li>
-					<li title="Overpowering Mind">For 4, increase Will DC of a mind-affecting spell by 2.</li>
+					<li title="Overpowering Mind">For 2, increase Will DC of a <span class="spell mind-affecting">spell</span> by 1.</li>
+					<li title="Overpowering Mind">For 4, increase Will DC of a <span class="spell mind-affecting">spell</span> by 2.</li>
 					<li title="Resurgence">For 2, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> when reduced to 0hp,
 						heal <u title="Resurgence, 10 psychic">3d8+10</u>. Auto-stabilize. Heals allies if still killed.</li>
 				</ul>
