@@ -1,0 +1,423 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grey's Magus</title>
+    <link rel="stylesheet" href="../system/pfCharacter.css">
+    <style>
+        #listArcanas { font-size: 0.8rem; }
+        .cold::after { content: " [cold]"; font-size: .8em; color: #2599b9; }
+        .touch::after { content: " [touch]"; font-size: .8em; color: #2599b9; }
+        .cold.touch::after { content: " [touch+cold]"; }
+        .one-round::after { content: " [one-round]"; font-size: .8em; color: #800080; }
+    </style>
+</head>
+<body>
+    <nav id="fixref" class="noprint">
+        <a href="https://greytyphoon.space/PF/index.html" target="_blank">Table of Contents</a>
+    </nav>
+
+    <div class="container">
+        <header id="header">
+            <h1>Lao, agent of shadows, disciple of wyrm</h1>
+            CE Medium humanoid
+        </header>
+
+        <section id="headerInfo" class="row">
+            <dl class="charInfo">
+                <dt>Str</dt>
+                <dd>10</dd>
+
+                <dt>Dex</dt>
+                <dd>22 <span class="listBonuses">17, <u title="Racial">2</u>, <u title="Advancement">1</u>, <u title="Belt of Incredible Dexterity">2</u></span></dd>
+
+                <dt>Con</dt>
+                <dd>14</dd>
+
+                <dt>Int</dt>
+                <dd>14</dd>
+
+                <dt>Wis</dt>
+                <dd>12</dd>
+
+                <dt>Cha</dt>
+                <dd>10</dd>
+            </dl>
+            <dl id="subheader" class="charInfo">
+                <dt>Race</dt>
+                <dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+                <dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/Human#Alternate_Racial_Traits">Heart of the Fey</a></dd>
+
+                <dt>Class</dt>
+                <dd><a href="https://d20pfsrd.com/classes/base-classes/magus">Magus</a> 6</dd>
+                <dd class="archetype"><a href="https://d20pfsrd.com/classes/base-classes/magus/archetypes/paizo-magus-archetypes/hexcrafter">Hexcrafter</a></dd>
+            </dl>
+            <dl class="charInfo">
+                <dt>Deity</dt>
+                <dd>Pharasma</dd>
+
+                <dt>Senses</dt>
+                <dd><a title="Heart of the Fey" href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+
+                <dt>Speed</dt>
+                <dd>30 ft.</dd>
+
+                <dt>Languages</dt>
+                <dd>Common, Draconic, Undercommon</dd>
+            </dl>
+        </section>
+
+        <!-- title SKILLS & FEATS -->
+        <hr>
+        <dl id="featsWrapper">
+            <dt>traits</dt>
+            <dd><a href="https://d20pfsrd.com/traits/magic-traits/magical-lineage">Magical Lineage</a></dd>
+            <dd><a href="https://d20pfsrd.com/traits/combat-traits/reckless">Reckless</a></dd>
+            <dt>human</dt>
+            <dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat">Weapon Finesse</a>
+                <span class="listBonuses noprint">min.1</span></dd>
+            <dt>level 1</dt>
+            <dd><a href="https://d20pfsrd.com/feats/combat-feats/dodge-combat">Dodge</a>
+                <span class="listBonuses noprint">min.1</span></dd>
+            <dt>level 3</dt>
+            <dd><a href="https://d20pfsrd.com/feats/combat-feats/dervish-dance-combat">Dervish Dance</a>
+                <span class="listBonuses noprint">min.2</span></dd>
+            <dt>magus 3</dt>
+            <dd><a href="https://d20pfsrd.com/classes/base-classes/magus/magus-arcana/paizo-magus-arcana/concentrate-ex">Concentrate</a>
+                <span class="listBonuses noprint">min.3</span></dd>
+            <dt>magus 4</dt>
+            <dd><a href="https://www.d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-flight-su">Flight</a>
+                <span class="listBonuses noprint">min.4</span></dd>
+            <dt>level 5</dt>
+            <dd><a href="https://d20pfsrd.com/feats/monster-feats/flyby-attack">Flyby Attack</a>
+                <span class="listBonuses noprint">min.4</span></dd>
+            <dt>magus 5</dt>
+            <dd><a href="https://d20pfsrd.com/feats/metamagic-feats/rime-spell-metamagic">Rime Spell</a>
+                <span class="listBonuses noprint">min.1</span></dd>
+            <dt>magus 6</dt>
+            <dd><a href="https://d20pfsrd.com/classes/base-classes/magus/magus-arcana/paizo-magus-arcana/empowered-magic-su">Empowered Magic</a>
+                <span class="listBonuses noprint">min.6</span></dd>
+            <dt>level 7</dt>
+            <dd><a href="https://d20pfsrd.com/feats/combat-feats/arcane-strike-combat">Arcane Strike</a>
+                <span class="listBonuses noprint">min.1</span></dd>
+        </dl>
+
+        <!-- SKILLS -->
+        <ul>
+            <li class="br">
+                <span class="numberFirst">10</span>
+                <a href="https://d20pfsrd.com/skills/perception" class="listBonusBreaker">Perception</a>
+                <span class="listBonuses">1 wis, 6 ranks, <u title="Heart of the Fey">3 class</u></span>
+            </li>
+
+            <!--Misc Skills-->
+            <li>
+                <span class="numberFirst">15</span>
+                <a href="https://d20pfsrd.com/skills/acrobatics" class="listBonusBreaker">Acrobatics</a>
+                <span class="listBonuses">6 dex, 6 ranks, <u title="Reckless">3 class</u>, <u title="Reckless">1 trait</u></span>
+            </li>
+            <li>
+                <span class="numberFirst">10</span>
+                <a href="https://d20pfsrd.com/skills/fly" class="listBonusBreaker">Fly</a>
+                <span class="listBonuses">6 dex, 1 ranks, 3 class</span>
+                <div class="circumstancialBonus">
+                    <u title="4 good maneuverability, 3 magus&frac12; (from the spell)">+7</u> when using <a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/fly">fly</a>.
+                </div>
+            </li>
+            <li>
+                <span class="numberFirst">10</span>
+                <a href="https://d20pfsrd.com/skills/ride" class="listBonusBreaker">Ride</a>
+                <span class="listBonuses">6 dex, 1 ranks, 3 class</span>
+            </li>
+            <li>
+                <span class="numberFirst">7</span>
+                <a href="https://d20pfsrd.com/skills/spellcraft" class="listBonusBreaker">Spellcraft</a>
+                <span class="listBonuses">2 int, 2 ranks, 3 class</span>
+            </li>
+            <li class="br">
+                <span class="numberFirst">5</span>
+                <a href="https://d20pfsrd.com/skills/use-magic-device" class="listBonusBreaker">Use Magic Device</a>
+                <span class="listBonuses">0 cha, 2 ranks, 3 class</span>
+            </li>
+
+            <!--Knowledge Skills-->
+            <li>
+                <span class="numberFirst">6</span>
+                <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (arcana)</a>
+                <span class="listBonuses">2 int, 1 ranks, 3 class</span>
+            </li>
+            <li>
+                <span class="numberFirst">6</span>
+                <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (dungeoneering)</a>
+                <span class="listBonuses">2 int, 1 ranks, 3 class</span>
+            </li>
+            <li>
+                <span class="numberFirst">6</span>
+                <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (nature)</a>
+                <span class="listBonuses">2 int, 1 ranks, <u title="Heart of the Fey">3 class</u></span>
+            </li>
+            <li class="br">
+                <span class="numberFirst">6</span>
+                <a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (planes)</a>
+                <span class="listBonuses">2 int, 1 ranks, 3 class</span>
+            </li>
+
+            <li class="br">
+                <span class="numberFirst">2</span>
+                <a href="https://d20pfsrd.com/skills/perform" class="listBonusBreaker">Perform (dance)</a>
+                <span class="listBonuses">0 cha, 2 ranks, 0 class</span>
+            </li>
+
+            <li class="noprint">
+                <span class="numberFirst">24</span>
+                <b class="listBonusBreaker">ranks</b>
+                <span class="listBonuses">6 magus: 2 class, 2 int</span>
+            </li>
+            <li class="circumstancialBonus noprint">
+                Unranked Class Skills:
+                <a href="https://d20pfsrd.com/skills/climb">Climb</a>,
+                <a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+                <a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>,
+                <a href="https://d20pfsrd.com/skills/swim">Swim</a>,
+                <a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+            </li>
+        </ul>
+
+        <!-- title Spells -->
+        <hr>
+        <div id="spellHeader" class="apartee">
+            The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Intelligence modifier.<br/>
+            When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Intelligence modifier.
+            <div class="circumstancialBonus" title="Improved Spell Combat">When using Spell Combat, up to <u title="2 int">+2 circumstance</u> by taking a penalty on attack rolls.</div>
+            <div class="circumstancialBonus" title="Concentrate (Ex)"><u>Reroll with +4</u> after rolling before outcome, 1/day.</div>
+            To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.<br/>
+        </div>
+        <section class="row">
+            <div>
+                <h2>Metamagics</h2>
+                <ul>
+                    <li title="Empowered Magic Arcana"><a href="https://d20pfsrd.com/feats/metamagic-feats/empower-spell-metamagic">Empower Spell</a> (+0, 1/day)</li>
+                    <li><a class="cold" href="https://d20pfsrd.com/feats/metamagic-feats/rime-spell-metamagic">Rime Spell</a> (+1)</li>
+                </ul>
+
+                <h2>Magical Lineage</h2>
+                <ul>
+                    <li><a class="spell touch cold" href="https://d20pfsrd.com/magic/all-spells/f/frostbite">frostbite</a> (-1)</li>
+                </ul>
+
+                <h2>Spell Combat</h2>
+                <p>During full attack, take -2 penalty and cast a standard-action spell.</p>
+
+                <h2>Spellstrike</h2>
+                <p>Deliver <span class="spell touch">spells</span> with a free weapon attack.</p>
+            </div>
+            <div>
+                <h2>Level 0 <u title="5 class">5/day</u></h2>
+                <ul>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/acid-splash">acid splash</a>,</li>
+                    <li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/a/arcane-mark">arcane mark</a>,</li>
+                    <li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/b/brand" title="Added to spell list by Hexcrafter archetype">brand</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/dancing-lights">dancing lights</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/daze">daze</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/disrupt-undead">disrupt undead</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/flare">flare</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
+                    <li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mage-hand">mage hand</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/o/open-close">open/close</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>,</li>
+                    <li><a class="spell cold" href="https://d20pfsrd.com/magic/all-spells/r/ray-of-frost">ray of frost</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/read-magic">read magic</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/spark">spark</a>.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Level 1 <u title="4 class, 1 int">5/day</u></h2>
+                <ul>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/burning-hands">burning hands</a>,</li>
+                    <li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/c/chill-touch">chill touch</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/color-spray">color spray</a>,</li>
+                    <li><a class="spell touch cold" href="https://d20pfsrd.com/magic/all-spells/f/frostbite">frostbite</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/hex-vulnerability" title="Added to spell list by Hexcrafter archetype">hex vulnerability</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/long-arm">long arm</a>,</li>
+                    <li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/s/shocking-grasp">shocking grasp</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/silent-image">silent image</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/t/thunderstomp">thunderstomp</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/t/true-strike">true strike</a>,</li>
+                    <li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>,</li>
+                    <li><a class="spell one-round" href="https://d20pfsrd.com/magic/all-spells/w/weaponwand">weaponwand</a>.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Level 2 <u title="3 class, 1 int">4/day</u></h2>
+                <ul>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/bladed-dash">bladed dash</a>,</li>
+                    <li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/d/disfiguring-touch" title="Added to spell list by Hexcrafter archetype">disfiguring touch</a>,</li>
+                    <li><a class="spell touch cold" href="https://d20pfsrd.com/magic/all-spells/f/frigid-touch">frigid touch</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/levitate">levitate</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mirror-image">mirror image</a>,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/w/web">web</a>.</li>
+                </ul>
+
+                <h2>Flight</h2>
+                <ul>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/feather-fall">feather fall</a> at will,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/levitate">levitate</a> 1/day,</li>
+                    <li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/fly">fly</a> <u title="6 magus">6 min/day</u>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- title COMBAT -->
+        <hr>
+        <section class="row">
+            <!--Basics: Statblock and Weapons-->
+            <div>
+            <ul>
+                <li class="br">
+                    <span class="numberFirst">7</span>
+                    <b class="listBonusBreaker">Init</b>
+                    <span class="listBonuses">6 dex, <u title="Dusty Rose Prism Ioun Stone">1 competence</u></span>
+                </li>
+                <li>
+                    <span class="numberFirst">66</span>
+                    <b class="listBonusBreaker">HP</b>
+                    <span class="listBonuses">6 magus: 8 class, 2 con; 6 fc</span>
+                </li>
+                <li class="br">
+                    <span class="numberFirst">23</span>
+                    <span class="listBonusBreaker"><b>AC</b> touch 18, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 16</span>
+                    <span class="listBonuses">10, 6 dex, 5 armor, <u title="Dodge">1 dodge</u>, <u title="Ring of Protection">1 deflection</u></span>
+                </li>
+                <li>
+                    <span class="numberFirst">9</span>
+                    <b class="listBonusBreaker">Fort</b>
+                    <span class="listBonuses">2 con, 6 class, <u title="Cloak of Resistance">1 resistance</u></span>
+                </li>
+                <li>
+                    <span class="numberFirst">11</span>
+                    <b class="listBonusBreaker">Ref</b>
+                    <span class="listBonuses">6 dex, 3 class, <u title="Heart of the Fey">1 racial</u>, <u title="Cloak of Resistance">1 resistance</u></span>
+                </li>
+                <li class="br">
+                    <span class="numberFirst">9</span>
+                    <b class="listBonusBreaker">Will</b>
+                    <span class="listBonuses">1 wis, 6 class, <u title="Heart of the Fey">1 racial</u>, <u title="Cloak of Resistance">1 resistance</u></span>
+                </li>
+                <li>
+                    <span class="numberFirst">6</span>
+                    <span class="listBonusBreaker"><b>CMB</b>;  24 <b>CMD</b></span>
+                    <span class="listBonuses">6 bab, 0 str, 6 dex, <u title="Dodge">1 dodge</u>, <u title="Ring of Protection">1 deflection</u></span>
+                </li>
+            </ul>
+                <!--Scimitar-->
+                <div class="weapon">
+                    <h2>Scimitar <b>18x2</b> <b>P</b></h2>
+                    <span class="listBonusBreaker">+<b>11</b> vs AC</span>
+                    <span class="listBonuses">4 bab, <u title="Weapon Finesse">6 dex</u>, 1 enh</span>
+                    <br>
+                    <b class="listBonusBreaker">1d6+8</b>
+                    <span class="listBonuses"><u title="Weapon Finesse">6 dex</u>, 1 enh, <u title="Voidglass">1 material</u></span>
+                </div>
+
+                <!--Longbow-->
+                <div class="weapon">
+                    <h2>Longbow <b>20x3</b> <b>110ft.</b> <b>P</b></h2>
+                    <span class="listBonusBreaker">+<b>11</b> vs AC</span>
+                    <span class="listBonuses">4 bab, 6 dex, 1 mwk</span>
+                    <br>
+                    <b class="listBonusBreaker">1d8</b>
+                    <span class="listBonuses">0 str</span>
+                </div>
+            </div>
+            <div>
+                <h2>Pearl of Power <u title="3 item">3/day</u></h2>
+
+                <h2>Arcane Pool <u title="2 int, 3 magus&frac12;">5/day</u></h2>
+                <dl id="listArcanas">
+                    <dd>For 1 arcane, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+                        grant your weapon a <u title="Increases at 1st, 5th, 9th, 13th, 17th level.">+2 enhancement</u> for 1 minute. Can be used to add
+                        <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/keen">keen</a> (+1),
+                        or any <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/flaming">element</a> (+1),
+                        or any <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/flaming-burst">element burst</a> (+2).</dd>
+                </dl>
+            </div>
+        </section>
+
+        <!-- title EQUIPMENT -->
+        <hr>
+        <ul>
+            <!--Weapons-->
+            <li><!--2320-->
+                <a href="https://d20pfsrd.com/equipment/weapons/weapon-descriptions/scimitar">Scimitar</a>
+                +1 <a href="https://d20pfsrd.com/equipment/special-materials#TOC-Voidglass" class="listBonusBreaker">Voidglass</a>
+                <span class="listBonuses noprint">martial light, 1d6, 20x2, S.</span>
+            </li>
+            <li><!--400 (ammo: 1gp for 20)-->
+                <a href="https://d20pfsrd.com/equipment/weapons/weapon-descriptions/longbow-composite">Longbow</a>,
+                <span class="listBonusBreaker">masterwork</span>
+                <span class="listBonuses noprint">martial ranged, 1d8, 20x3, P, 110ft.</span>
+                <div class="circumstancialBonus">40 arrows</div>
+            </li>
+            <li class="br"><!--3*304-->
+                3 &times; <a href="https://d20pfsrd.com/equipment/weapons/weapon-descriptions/dagger">Daggers</a>,
+                <span class="listBonusBreaker">cold-iron masterwork</span>
+                <span class="listBonuses noprint">simple light, 1d4, 19x2, PS, 10ft.</span>
+            </li>
+
+            <!--Armors-->
+            <li class="br"><!--2100-->
+                <a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a>
+                <span class="listBonusBreaker">+1</span>
+                <span class="listBonuses noprint">light, 4 armor, 6 dex, 0 acp, 10% asf</span>
+            </li>
+
+            <li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
+            <li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+            <li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+            <li><!--3*1000-->3 &times; <a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a>, lvl1</li>
+            <li><!--500--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/ioun-stones/dusty-rose-prism-ioun-stone">Dusty Rose Prism Ioun Stone</a>, cracked</li>
+        </ul>
+
+        <!-- title NOTES -->
+        <section class="noprint">
+            <hr>
+            <p>
+                <a href="https://docs.google.com/document/edit?id=1DB6sOfbAzFmKVPgcyLWipTVqvWFjfDSv6v_YiGQb5Yw&pli=1">Guide used</a>,
+                <a href="https://docs.google.com/document/d/1NzctTRYgBVzNanNnzSpOCdTyifV3elCgpkBeayua97s/pub">Kensai Guide (spell section! &lt;3)</a>,
+                <a href="https://d20pfsrd.com/feats/metamagic-feats">Metamagic feats</a>
+            </p>
+
+            <p>The plan is to hover <u title="12ft exactly. You have a fly speed of 60, halved because you're tumbling, and it cost half movement to go down (6) and double to go back up (24).">above</u> the enemy just out of reach,
+                use your arcane pool to get <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/keen">Keen</a>
+                &amp; <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost">Frost</a>,
+                cast <a href="https://d20pfsrd.com/feats/metamagic-feats/rime-spell-metamagic">Rime</a> <a class="spell touch cold" href="https://d20pfsrd.com/magic/all-spells/f/frostbite">frostbite</a>,
+                and deliver them all as flyby attacks. It's <code>3d6+14 + fatigued + entangled</code>!</p>
+
+            <dl class="charInfo">
+                <dt>Qualities</dt>
+                <dd>Resilient and devoted</dd>
+
+                <dt>Fault</dt>
+                <dd><a href="https://d20pfsrd.com/traits/drawbacks/insatiable">Insatiable</a></dd>
+
+                <dt>Eyes</dt>
+                <dd>Grey</dd>
+
+                <dt>Hair</dt>
+                <dd>White</dd>
+
+                <dt>Weight</dt>
+                <dd>138 lbs</dd>
+
+                <dt>Height</dt>
+                <dd>5' 9''</dd>
+            </dl>
+        </section>
+    </div>
+</body>
+</html>
