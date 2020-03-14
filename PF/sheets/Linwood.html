@@ -3,9 +3,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Grey's Arcanist</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.fire::after { content: " [fire]"; font-size: .8em; color: #2599b9; }
+	</style>
 </head>
 <body>
 	<nav id="fixref" class="noprint">
@@ -44,11 +46,11 @@
 
 				<dt>Class</dt>
 				<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/arcanist">Arcanist</a> 6</dd>
-				<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/arcanist/archetypes/paizo---arcanist-archetypes/school-savant">School Savant</a></dd>
+				<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/arcanist/archetypes/paizo-arcanist-archetypes/school-savant">School Savant</a></dd>
 				<dd class="archetype">
 					School
-					<a href="https://d20pfsrd.com/classes/core-classes/wizard/arcane-schools/paizo---arcane-schools/classic-arcane-schools/evocation">Evocation</a>
-					(<a href="https://d20pfsrd.com/classes/core-classes/wizard/arcane-schools/paizo---arcane-schools/classic-arcane-schools/evocation/admixture">Admixture</a>)
+					<a href="https://d20pfsrd.com/classes/core-classes/wizard/arcane-schools/paizo-arcane-schools/classic-arcane-schools/evocation">Evocation</a>
+					(<a href="https://d20pfsrd.com/classes/core-classes/wizard/arcane-schools/paizo-arcane-schools/classic-arcane-schools/evocation/admixture">Admixture</a>)
 				</dd>
 				<dd class="archetype">Opposed Divinitation &amp; Enchantment</dd>
 			</dl>
@@ -83,7 +85,7 @@
 			<dd><a href="https://d20pfsrd.com/feats/general-feats/spell-specialization">Spell Specialization</a>
 				<span class="listBonuses noprint">min.1</span></dd>
 			<dt>level 5</dt>
-			<dd><a href="https://d20pfsrd.com/feats/general-feats/extra-arcanist-exploit">Extra Exploit</a> >
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/extra-arcanist-exploit">EAE</a> &gt;
 				<a href="https://d20pfsrd.com/classes/hybrid-classes/arcanist/arcane-exploits/potent-magic-su">Potent Magic</a>
 				<span class="listBonuses noprint">min.1</span></dd>
 			<dt>arcanist 5</dt>
@@ -133,39 +135,9 @@
 				<span class="listBonuses">6 int, 6 ranks, 3 class</span>
 			</li>
 			<li>
-				<span class="numberFirst">10</span>
-				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (dungeoneering)</a>
-				<span class="listBonuses">6 int, 1 ranks, 3 class</span>
-			</li>
-			<li>
-				<span class="numberFirst">10</span>
-				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (engineering)</a>
-				<span class="listBonuses">6 int, 1 ranks, 3 class</span>
-			</li>
-			<li>
-				<span class="numberFirst">10</span>
-				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (geography)</a>
-				<span class="listBonuses">6 int, 1 ranks, 3 class</span>
-			</li>
-			<li>
-				<span class="numberFirst">10</span>
-				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (history)</a>
-				<span class="listBonuses">6 int, 1 ranks, 3 class</span>
-			</li>
-			<li>
-				<span class="numberFirst">10</span>
-				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (local)</a>
-				<span class="listBonuses">6 int, 1 ranks, 3 class</span>
-			</li>
-			<li>
 				<span class="numberFirst">15</span>
 				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (nature)</a>
 				<span class="listBonuses">6 int, 6 ranks, 3 class</span>
-			</li>
-			<li>
-				<span class="numberFirst">10</span>
-				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (nobility)</a>
-				<span class="listBonuses">6 int, 1 ranks, 3 class</span>
 			</li>
 			<li>
 				<span class="numberFirst">15</span>
@@ -174,8 +146,8 @@
 			</li>
 			<li class="br">
 				<span class="numberFirst">10</span>
-				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (religion)</a>
-				<span class="listBonuses">6 int, 1 ranks, 3 class</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (all)</a>
+				<span class="listBonuses">6 int, 7 ranks, 3 class</span>
 			</li>
 
 			<li class="noprint">
@@ -203,6 +175,9 @@
 				<h2 class="spell evocation">Evocation spells</h2>
 				<div title="Intense Spells">Increase damage by <u title="Intense Spells, arcanist&frac12;">3</u>.</div>
 				<p title="Creative Destruction">Gain 1 temp hp per damage dice.</p>
+
+				<h2>Pyromancer</h2>
+				<p>+1 damage with <span class="spell evocation fire">spells</span>.</p>
 
 				<h2>Gifted Adept</h2>
 				<p><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/m/magic-missile">magic missile</a> (+1  CL)</p>
@@ -248,7 +223,7 @@
 			<div>
 				<h2 title="Prepare 2 class + 1 school">Level 2 <u title="4 class, 2 int">6/day</u></h2>
 				<ul>
-					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/b/burning-arc">burning arc</a>,</li>
+					<li><a class="spell evocation fire" href="https://d20pfsrd.com/magic/all-spells/b/burning-arc">burning arc</a>,</li>
 					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a>,</li>
 					<li class="br"><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/w/web">web</a>.</li>
 
@@ -256,7 +231,7 @@
 					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/c/create-pit">create pit</a>,</li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/d/darkvision">darkvision</a>,</li>
 					<li><a class="spell necromancy" href="https://d20pfsrd.com/magic/all-spells/f/false-life">false life</a>,</li>
-					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/f/flaming-sphere">flaming sphere</a>,</li>
+					<li><a class="spell evocation fire" href="https://d20pfsrd.com/magic/all-spells/f/flaming-sphere">flaming sphere</a>,</li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/k/knock">knock</a>,</li>
 					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/i/invisibility">invisibility</a>,</li>
 					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/m/mirror-image">mirror image</a>,</li>
@@ -269,7 +244,7 @@
 			<div>
 				<h2 title="Prepare 1 class + 1 school">Level 3 <u title="2 class, 1 int">3/day</u></h2>
 				<ul>
-					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/f/fireball">fireball</a>,</li>
+					<li><a class="spell evocation fire" href="https://d20pfsrd.com/magic/all-spells/f/fireball">fireball</a>,</li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/h/haste">haste</a>.</li>
 				</ul>
 			</div>
@@ -292,29 +267,29 @@
 						<span class="listBonuses">6 arcanist: 6 class, 2 con; 6 FC</span>
 					</li>
 					<li class="br">
-						<span class="numberFirst">12</span>
-						<span class="listBonusBreaker"><b>AC</b> touch 12, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 10</span>
-						<span class="listBonuses">10, 2 dex</span>
+						<span class="numberFirst">17</span>
+						<span class="listBonusBreaker"><b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 15</span>
+						<span class="listBonuses">10, 2 dex, 2 armor, 2 shield, <u title="Ring of Protection">1 deflection</u></span>
 					</li>
 					<li>
-						<span class="numberFirst">4</span>
+						<span class="numberFirst">5</span>
 						<b class="listBonusBreaker">Fort</b>
-						<span class="listBonuses">2 con, 2 class</span>
+						<span class="listBonuses">2 con, 2 class, <u title="Cloak of Resistance">1 resistance</u></span>
 					</li>
 					<li>
-						<span class="numberFirst">4</span>
+						<span class="numberFirst">5</span>
 						<b class="listBonusBreaker">Ref</b>
-						<span class="listBonuses">2 dex, 2 class</span>
+						<span class="listBonuses">2 dex, 2 class, <u title="Cloak of Resistance">1 resistance</u></span>
 					</li>
 					<li class="br">
-						<span class="numberFirst">6</span>
+						<span class="numberFirst">7</span>
 						<b class="listBonusBreaker">Will</b>
-						<span class="listBonuses">1 wis, 5 class</span>
+						<span class="listBonuses">1 wis, 5 class, <u title="Cloak of Resistance">1 resistance</u></span>
 					</li>
 					<li>
 						<span class="numberFirst">3</span>
-						<span class="listBonusBreaker"><b>CMB</b>;	15 <b>CMD</b></span>
-						<span class="listBonuses">3 bab, 0 str, 2 dex</span>
+						<span class="listBonusBreaker"><b>CMB</b>;	16 <b>CMD</b></span>
+						<span class="listBonuses">3 bab, 0 str, 2 dex, <u title="Ring of Protection">1 deflection</u></span>
 					</li>
 				</ul>
 
@@ -336,6 +311,7 @@
 			<!--end of Basics: Statblock and Weapons-->
 
 			<div>
+				<h2>Headband of Ponderous Recollection <u title="3 item">3/day</u></h2>
 				<h2>Pearl of power <u title="1 class">1/day</u></h2>
 
 				<h2>Versatile Evocation (Su) <u title="3 class, 6 int">9/day</u></h2>
@@ -362,23 +338,31 @@
 		<hr>
 		<ul>
 			<!--Weapons-->
-			<li class="br">
-				<a href="https://d20pfsrd.com/equipment---final/weapons">Light Crossbow</a>,
+			<li class="br"><!--335-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Light Crossbow</a>,
 				<span class="listBonusBreaker">masterwork</span>
 				<span class="listBonuses noprint">simple ranged, 1d8, 19x2, P, 80ft.</span>
 				<div class="circumstancialBonus">20 bolts</div>
 			</li>
 
-			<!--Misc-->
-			<li>
-				<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-vast-intelligence">Headband of Vast Intelligence</a> +2 (Fly)
+			<!--Armors-->
+			<li><!--1153-->
+				<a href="https://d20pfsrd.com/equipment/armor/eastern-armor-and-shields">Haramaki</a>
+				<span class="listBonusBreaker">+1</span>
+				<span class="listBonuses noprint">light, 1 armor, - dex, 0 acp, 0% asf</span>
 			</li>
-			<li>
-				<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a>, lvl1
+			<li class="br"><!--2003-->
+				<a href="https://d20pfsrd.com/equipment/special-materials#Mithral">Mithral</a>
+				<a href="https://d20pfsrd.com/equipment/armor/buckler">Buckler</a>
+				<span class="listBonusBreaker">+1</span>
+				<span class="listBonuses noprint">1 shield, - dex, 1 acp, 5% asf</span>
 			</li>
-			<li>
-				<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/ioun-stones/dusty-rose-prism-ioun-stone">Dusty Rose Prism Ioun Stone</a>, cracked<br/>
-			</li>
+
+			<li><!--5100--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-ponderous-recollection">Headband of Ponderous Recollection</a> +2 (Know Planes)</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a>, lvl1</li>
+			<li><!--500--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/ioun-stones/dusty-rose-prism-ioun-stone">Dusty Rose Prism Ioun Stone</a>, cracked</li>
 		</ul>
 
 		<!-- title NOTES -->

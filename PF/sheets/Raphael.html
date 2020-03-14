@@ -46,7 +46,7 @@
 
 				<dt>Class</dt>
 				<dd><a href="https://d20pfsrd.com/classes/core-classes/bard">Bard</a> 6</dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/bard/archetypes/paizo---bard-archetypes/arcane-duelist">Arcane Duelist</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/bard/archetypes/paizo-bard-archetypes/arcane-duelist">Arcane Duelist</a></dd>
 			</dl>
 			<dl class="charInfo">
 				<dt>Deity</dt>
@@ -172,8 +172,8 @@
 			<!--Typed Skills-->
 			<li>
 				<span class="numberFirst">4</span>
-				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (any)</a>
-				<span class="listBonuses">0 int, 1 ranks, 3 class</span>
+				<a href="https://d20pfsrd.com/skills/knowledge" class="listBonusBreaker">Knowledge (all)</a>
+				<span class="listBonuses">0 int, 10 ranks, 3 class</span>
 			</li>
 			<li class="br">
 				<span class="numberFirst">12</span>
@@ -256,9 +256,9 @@
 						<span class="listBonuses">6 bard: 8 class, 1 con</span>
 					</li>
 					<li class="br">
-						<span class="numberFirst">21</span>
-						<span class="listBonusBreaker"><b>AC</b> touch 16, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 15</span>
-						<span class="listBonuses">10, 6 dex, 4 armor, 1 shield</span>
+						<span class="numberFirst">22</span>
+						<span class="listBonusBreaker"><b>AC</b> touch 17, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 16</span>
+						<span class="listBonuses">10, 6 dex, 5 armor, <u title="Ring of Protection">1 deflection</u></span>
 					</li>
 					<li>
 						<span class="numberFirst">4</span>
@@ -277,8 +277,8 @@
 					</li>
 					<li>
 						<span class="numberFirst">4</span>
-						<span class="listBonusBreaker"><b>CMB</b>;	20 <b>CMD</b></span>
-						<span class="listBonuses">4 bab, 0 str, 6 dex</span>
+						<span class="listBonusBreaker"><b>CMB</b>;	21 <b>CMD</b></span>
+						<span class="listBonuses">4 bab, 0 str, 6 dex, <u title="Ring of Protection">1 deflection</u></span>
 					</li>
 				</ul>
 
@@ -291,6 +291,12 @@
 					<b class="listBonusBreaker">1d6+7</b>
 					<span class="listBonuses"><u title="Fencing Grace">6 dex</u>, 1 enh</span>
 				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<h2>Arcane Strike</h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, add <u title="Increases at 1st, 5th, 10th, 15th, 20th level">2 damage</u> to your weapons.</p>
 
 				<h2>Bonded Object (Sp) <u title="1 class">1/day</u></h2>
 				<p>
@@ -298,10 +304,7 @@
 					The bonded object returns to full HP when you prepare spells.<br>
 					Casting without bonded object requires concentration 20 + spell level.
 				</p>
-			</div>
-			<!--end of Basics: Statblock and Weapons-->
 
-			<div>
 				<h2>Bardic Performance <u title="2 class, 3 cha, 12 bard*2">17 rounds/day</u></h2>
 				As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, start any:<br/>
 				<dl id="listPerformances">
@@ -329,7 +332,9 @@
 					<dt>Inspire Competence <small>(Su, Audible)</small></dt>
 					<dd>An ally (not yourself) within 30 feet gets +2 (competence) on a skill check.</dd>
 					<dt>Bladethirst <small>(Su)</small></dt>
-					<dd>Give a weapon an additional +1, Keen, or Shocking.</dd>
+					<dd>Give a weapon an additional <u title="Increases at 6th, 9th, 12th, 15th, 18th">+1</u>,
+						<a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/keen">keen</a> (+1),
+						or <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/shocking">shocking</a> (+1).</dd>
 				</dl>
 			</div>
 		</section>
@@ -338,29 +343,23 @@
 		<hr>
 		<ul>
 			<!--Weapons-->
-			<li>
+			<li><!--2320-->
 				<a href="https://d20pfsrd.com/equipment/weapons">Rapier</a>
 				<span class="listBonusBreaker">+1</span>
 				<span class="listBonuses noprint">martial one-handed, 1d6, 18x2, P.</span>
 			</li>
 
 			<!--Armors-->
-			<li><!--1100-->
-				<a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" class="listBonusBreaker">Mithral Shirt</a>
+			<li class="br"><!--2100-->
+				<a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a>
+				<span class="listBonusBreaker">+1</span>
 				<span class="listBonuses noprint">light, 4 armor, 6 dex, 0 acp, 10%asf</span>
 			</li>
-            <li class="br"><!--257-->
-				<a href="https://www.d20pfsrd.com/equipment/armor/buckler">Buckler</a>,
-                <span class="listBonusBreaker">masterwork</span>
-				<span class="listBonuses noprint">1 shield, - dex, 1 acp, 5% asf</span>
-			</li>
 
-			<li>
-				<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/swordmaster-s-flair">Swordmaster's flair (Blue Scarf)</a>
-			</li>
-			<li>
-				<a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1
-			</li>
+			<li><!--2500--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/swordmaster-s-flair">Swordmaster's flair (Blue Scarf)</a></li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
 		</ul>
 
 		<!-- title NOTES -->
