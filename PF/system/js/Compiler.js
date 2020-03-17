@@ -346,7 +346,7 @@ function checkSingleEquip(weapon) {
 		logError("Bad equipment name");
 	else if (weapon.name.includes("masterwork"))
 		logError("Masterwork equipments are assumed");
-	if (weapon.url && typeof weapon.url != "string") // Optional: always https://www.d20pfsrd.com/equipment/weapons if omitted
+	if (weapon.url && typeof weapon.url != "string") // Optional: always https://d20pfsrd.com/equipment/weapons if omitted
 		logError("Bad equipment url");
 	if (weapon.value && (typeof weapon.value != "number" || weapon.value < 1)) // Optional: always 300 (mwk) if omitted
 		logError("Bad equipment value");

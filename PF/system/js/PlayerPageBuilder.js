@@ -95,7 +95,7 @@ function addEquip(equip) {
 	}
 	
 	let isWeapon = equip.slot != "shield" && equip.slot != "armor";
-	let fakeObject = { name: equip.name, url: equip.url || "https://www.d20pfsrd.com/equipment/" + (isWeapon ? "weapons" : "armor") };
+	let fakeObject = { name: equip.name, url: equip.url || "https://d20pfsrd.com/equipment/" + (isWeapon ? "weapons" : "armor") };
 	returnValue.push(buildLink(fakeObject));
 	
 	if (equip.bonus) {

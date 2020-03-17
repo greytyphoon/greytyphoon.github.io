@@ -7,14 +7,14 @@ Greytyphoon.Characters.push({
 	alignment: "",
 	deity: "",
 	languages: "Common",
-	ancestry: { name: "Human", url: "https://www.d20pfsrd.com/races/core-races/human" },
+	ancestry: { name: "Human", url: "https://d20pfsrd.com/races/core-races/human" },
 	level: [ {
 		name: "Bloodrager",
-		url: "https://www.d20pfsrd.com/classes/hybrid-classes/bloodrager",
+		url: "https://d20pfsrd.com/classes/hybrid-classes/bloodrager",
 		quantity: 3,
 		archetypes: [
-			{ title: "Bloodline", name: "Aberrant", url: "https://www.d20pfsrd.com/classes/hybrid-classes/bloodrager/bloodrager-bloodlines/paizo---bloodrager-bloodlines/aberrant" },
-			{ name: "Greenrager", url: "https://www.d20pfsrd.com/classes/hybrid-classes/bloodrager/archetypes/paizo---bloodrager-archetypes/greenrager" }
+			{ title: "Bloodline", name: "Aberrant", url: "https://d20pfsrd.com/classes/hybrid-classes/bloodrager/bloodrager-bloodlines/paizo-bloodrager-bloodlines/aberrant" },
+			{ name: "Greenrager", url: "https://d20pfsrd.com/classes/hybrid-classes/bloodrager/archetypes/paizo-bloodrager-archetypes/greenrager" }
 		]
 	} ],
 	"str": [ 17, { points: 2, reason: "Racial" } ],
@@ -24,15 +24,15 @@ Greytyphoon.Characters.push({
 	"wis": 14,
 	"cha": 12,
 	traits: [
-		{ name: "Helpful", url: "https://www.d20pfsrd.com/traits/combat-traits/helpful-combat" },
-		{ name: "Honorable Champion", url: "https://www.d20pfsrd.com/traits/combat-traits/honorable-champion-combat" }
+		{ name: "Helpful", url: "https://d20pfsrd.com/traits/combat-traits/helpful-combat" },
+		{ name: "Honorable Champion", url: "https://d20pfsrd.com/traits/combat-traits/honorable-champion-combat" }
 	],
 	startingFeats: [
-		{ name: "Power Attack", reason: "Human", url: "https://www.d20pfsrd.com/feats/combat-feats/power-attack-combat-final" },
-		{ name: "Combat Reflexes", reason: "Level 1", url: "https://www.d20pfsrd.com/feats/combat-feats/combat-reflexes-combat" }
+		{ name: "Power Attack", reason: "Human", url: "https://d20pfsrd.com/feats/combat-feats/power-attack-combat" },
+		{ name: "Combat Reflexes", reason: "Level 1", url: "https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat" }
 	],
 	progressFeats: [
-		{ name: "Bodyguard", reason: "Level 3", url: "https://www.d20pfsrd.com/feats/combat-feats/bodyguard-combat" }
+		{ name: "Bodyguard", reason: "Level 3", url: "https://d20pfsrd.com/feats/combat-feats/bodyguard-combat" }
 	],
 	targetFeats: [],
 	spells: [],
@@ -42,7 +42,7 @@ Greytyphoon.Characters.push({
 		{ slot: "armor", value: 250, name: "Chain Shirt" }
     ],
 	loot: [
-		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
-		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://www.d20pfsrd.com/magic-items/rings/ring-of-protection" }
+		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
+		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://d20pfsrd.com/magic-items/rings/ring-of-protection" }
 	]
 });
