@@ -80,7 +80,7 @@
 .spell.bloodline.off-class::before { content: "\0394\00a0"; }
 
 /********************
- * CharStudies and Tables
+ * CharStudies and Tables (tblComparison / playerInfo)
  */
 #tblComparison {
 	text-align: center;
@@ -90,3 +90,15 @@
 .good { background-color:#00c851; }
 .average{ background-color:#ffbb33; }
 .bad { background-color:#ff4444; }
+
+table.playerInfo  {
+	border: 1px solid var(--murder-grey);
+	border-collapse: collapse;
+	margin-bottom: .5rem;
+	width: 100%; }
+table.playerInfo th {
+	background-color: var(--murder-grey);
+	text-align: center; }
+table.playerInfo td {
+	border: 1px solid var(--murder-grey);
+	text-align: center; }
