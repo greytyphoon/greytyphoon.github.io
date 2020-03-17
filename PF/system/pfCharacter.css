@@ -60,14 +60,12 @@ dl#featsWrapper > dd{
 	border-radius: 4px;
 	padding: 4px 10px;
 	margin-bottom: 0.75rem; }
-.weapon > .weaponHead,
 .weapon > h2 {
 	background-color: var(--murder-red);
 	border-bottom: 1px solid var(--murder-red);
 	margin: -4px -10px 4px -10px;
 	padding: .15em .5em;
 	font-weight: bold; }
-.weaponHead > * { float: right; margin-left: .75em; } /* Remove this once you're done replacing WeaponHEad with h2 */
 
 /*equipments*/
 #mundaneItemsWrapper{
