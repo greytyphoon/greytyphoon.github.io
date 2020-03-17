@@ -1,48 +1,52 @@
-Almanach de Production d'Alcohol :  base de la production d’alcool commun, distillation et source de produit.
+Almanach de Production d'Alcohol :  base de la production d'alcool commun, distillation et source de produit.
 Livre de recettes "Tout le monde peut faire comme Prisk" : voir le vrai livre
-Recueil de chants "Les chants de Tséis" :  Receuil de champs commun de la région
+Recueil de chants "Les chants de TsÃ©is" :  Receuil de chants communs de la rÃ©gion
 Livre d'herboristerie sur les champignons : livre sur les champignons les plus communs et leur utilisation
+
 Histoire de la famille Darren & Monarchie de l'Est (lot de 10 livres)
--  Histoire de la famille Darren, Généalogie
--  Système monarchique du comté de l’est depuis 100 ans
--   Blason et symbole des générations des familles de  la dernière décennie 1
--   Blason et symbole des générations des familles de  la dernière décennie 
--   Généalogie de la famille Dunst  
--   Généalogie de la famille Lavarin
--  Généalogie de la famille Mimbore
--  Généalogie des riches et célèbres
--  Déclin des noblesses suite à la compagnie marchante
--  Étiquette oublié de la noblesse  
+- Histoire de la famille Darren, GÃ©nÃ©alogie
+- SystÃ¨me monarchique du comtÃ© de l'est depuis 100 ans
+- Blason et symbole des gÃ©nÃ©rations des familles de la derniÃ¨re dÃ©cennie 1
+- Blason et symbole des gÃ©nÃ©rations des familles de la derniÃ¨re dÃ©cennie 2
+- GÃ©nÃ©alogie de la famille Dunst  
+- GÃ©nÃ©alogie de la famille Lavarin
+- GÃ©nÃ©alogie de la famille Mimbore
+- GÃ©nÃ©alogie des riches et cÃ©lÃ¨bres
+- DÃ©clin des noblesses suite Ã  la compagnie marchande
+- Ã‰tiquette oubliÃ©e de la noblesse  
+
 Recettes de cuisine (lot de 10 livres)
-- odracir  recette pour la femme de tous les jours
--  Trois fois par jour, chez les orcs
+- Odracir: recette pour la femme de tous les jours
+- Trois fois par jour, chez les orcs
 - Sirop de bouleau : 30 recettes
-- Viande sans légume
-- Légume sans viande
--  Kiosque de jus de citron
--  Grand livre de l’école culinaire  d’Hélos
--  De la nature à votre assiette
--  Solution elf, pour en finir avec les maux de ventre
--  Carnet rouge sang,  recette dont vous être le plat principale
-Richesses de ce Monde: les joyaux et pierres précieuses (lot de 10 livres)
+- Viande sans lÃ©gume
+- LÃ©gume sans viande
+- Kiosque de jus de citron
+- Grand livre de l'Ã©cole culinaire d'HÃ©los
+- De la nature Ã  votre assiette
+- Solution elfe, pour en finir avec les maux de ventre
+- Carnet rouge sang, recettes dont vous Ãªtes le plat principal
+
+Richesses de ce Monde: les joyaux et pierres prÃ©cieuses (lot de 10 livres)
 - Game of stone : les endroits les plus dangereux ou trouver des pierres
--  Prospector : comment trouver des pierres semi-précieuses
--  Gems hunter : pierre des pays exotiques
--  Pierre précieuse et semi précieuse
--  Les 7 plus grands trésors perdu des 100 dernières années
--  Bijou et orfèvrerie : l’Art de production
+- Prospector : comment trouver des pierres semi-prÃ©cieuses
+- Gems hunter : pierre des pays exotiques
+- Pierre prÃ©cieuse et semi prÃ©cieuse
+- Les 7 plus grands trÃ©sors perdu des 100 derniÃ¨res annÃ©es
+- Bijou et orfÃ¨vrerie: l'art de production
 - Les joyaux des grands nobles
-- Trésor des 4 provinces
-- Pierre semi précieuse et cristaux
-- Visite des mines d’émeraude du nord
-- trésor des mythes et légendes
+- TrÃ©sor des 4 provinces
+- Pierre semi-prÃ©cieuses et cristaux
+- Visite des mines d'Ã©meraude du nord
+- TrÃ©sor des mythes et lÃ©gendes
+
 Architecture: Manoirs, Forts, Donjons et villes (lot de 10 livres)
--  13 merveilles du monde commun
--   Architecture rurale de l’Est
--  Mine et leur construction
--  Le bois de pin, matériau sous-estimé
--  Pierre des champs et son utilisation
--  Innovation du Kiosque Ernal Avamira
--  Fort et muraille de fortune 
--  Bâtir avec la nature
-- Cité souterraine,  la construction naine
+- 13 merveilles du monde commun
+- Architecture rurale de l'Est
+- Mine et leur construction
+- Le bois de pin, matÃ©riau sous-estimÃ©
+- Pierre des champs et son utilisation
+- Innovation du Kiosque Ernal Avamira
+- Fort et muraille de fortune 
+- BÃ¢tir avec la nature
+- CitÃ© souterraine,  la construction naine
