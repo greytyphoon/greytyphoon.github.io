@@ -34,12 +34,12 @@ Greytyphoon.Characters.push({
 		{ level: 1, name: "share language", url: "https://d20pfsrd.com/magic/all-spells/s/share-language" },
 		{ level: 1, name: "unseen servant", url: "https://d20pfsrd.com/magic/all-spells/u/unseen-servant" }
 	],
-    equips: [
+	equips: [
 		{ slot: "weapon-m", value: 302, name: "Punching Dagger" },
 		{ slot: "weapon-r", value: 330, name: "Shortbow [0]" },
 		{ slot: "armor", value: 175, name: "Studded Leather Armor" },
 		{ slot: "shield", value: 155, name: "Buckler" }
-    ],
+	],
 	loot: [
 		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
 		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://d20pfsrd.com/magic-items/rings/ring-of-protection" }

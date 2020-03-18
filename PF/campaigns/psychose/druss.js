@@ -36,11 +36,11 @@ Greytyphoon.Characters.push({
 	],
 	targetFeats: [],
 	spells: [],
-    equips: [
+	equips: [
 		{ slot: "weapon-m", value: 320, name: "Greataxe" },
 		{ slot: "weapon-r", value: 700, name: "Longbow [3]" },
 		{ slot: "armor", value: 250, name: "Chain Shirt" }
-    ],
+	],
 	loot: [
 		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
 		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://d20pfsrd.com/magic-items/rings/ring-of-protection" }

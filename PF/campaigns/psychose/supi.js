@@ -37,11 +37,11 @@ Greytyphoon.Characters.push({
 		{ level: 1, name: "expeditious excavation", url: "https://d20pfsrd.com/magic/all-spells/e/expeditious-excavation" },
 		{ level: 1, name: "summon nature's ally", url: "https://d20pfsrd.com/magic/all-spells/s/summon-natures-ally" }
 	],
-    equips: [
+	equips: [
 		{ slot: "weapon-m", value: 350, name: "Greatsword" },
 		{ slot: "weapon-r", value: 375, name: "Longbow [0]" },
 		{ slot: "armor", value: 175, name: "Studded Leather Armor" }
-    ],
+	],
 	loot: [
 		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
 		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://d20pfsrd.com/magic-items/rings/ring-of-protection" }

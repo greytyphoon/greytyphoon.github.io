@@ -41,11 +41,11 @@ Greytyphoon.Characters.push({
 		{ level: 1, name: "true strike", url: "http://d20pfsrd.com/magic/all-spells/t/true-strike" },
 		{ level: 1, name: "vanish", url: "http://d20pfsrd.com/magic/all-spells/v/vanish" }
 	],
-    equips: [
+	equips: [
 		{ slot: "weapon-m", value: 320, name: "Rapier" },
 		{ slot: "weapon-r", value: 375, name: "Longbow [0]" },
 		{ slot: "armor", value: 175, name: "Studded Leather Armor" }
-    ],
+	],
 	loot: [
 		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance", url: "http://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance" },
 		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "http://d20pfsrd.com/magic-items/rings/ring-of-protection" },

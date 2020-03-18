@@ -32,13 +32,13 @@ Greytyphoon.Characters.push({
 	],
 	targetFeats: [],
 	spells: [],
-    equips: [
+	equips: [
 		{ slot: "weapon-m", value: 302, name: "Dagger", bonus: 1, enchants: [ { valueB: 1, name: "UndeadBane", url: "https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/bane" } ] },
 		{ slot: "weapon-m", value: 8302, name: "Dagger of Venom", url: "https://d20pfsrd.com/magic-items/magic-weapons/specific-magic-weapons/dagger-of-venom" },
 		{ slot: "weapon-m", value: 302, name: "Dagger", quantity: 4 },
 		{ slot: "weapon-r", value: 335, name: "Light Crossbow" },
 		{ slot: "armor", value: 160, name: "Leather Armor" }
-    ],
+	],
 	loot: [
 		{ slot: "head", value: 1800, name: "Hat of Disguise", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/hat-of-disguise" },
 		{ slot: "neck", value: 16000, name: "Amulet of Shield", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },

@@ -67,11 +67,11 @@ Greytyphoon.Characters.push({
 		{ level: 3, name: "heroism", url: "https://d20pfsrd.com/magic/all-spells/h/heroism" },
 		{ level: 3, name: "righteous vigor", url: "https://d20pfsrd.com/magic/all-spells/r/righteous-vigor" }
 	],
-    equips: [
+	equips: [
 		{ slot: "weapon-m", value: 305, name: "Longspear" },
 		{ slot: "weapon-r", value: 375, name: "Longbow", bonus: 1, enchants: [ { valueB: 1, name: "Frost", url: "https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost" } ] },
 		{ slot: "armor", value: 175, name: "Studded Leather Armor", bonus: 2, enchants: [ { valueF: 3750, name: "Shadow", url: "https://d20pfsrd.com/magic-items/magic-armor/magic-armor-and-shield-special-abilities/shadow" } ] },
-    ],
+	],
 	loot: [
 		{ slot: "eyes", value: 3500, name: "Lens of Detection", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/lens-of-detection" },
 		{ slot: "neck", value: 16000, name: "Amulet of Shield", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },

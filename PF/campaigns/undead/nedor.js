@@ -3,7 +3,7 @@ Greytyphoon.Characters.push({
 	meta: {
 		quest: "Undead",
 		owner: "Didier",
-        source: { name: "Google Drive", url: "https://docs.google.com/spreadsheets/d/1wPLH8TjP9sonulneFimgJYCNdmREQVuBRkD7h5qcn_A/edit?usp=drive_web&ouid=115282848900712416421" }
+		source: { name: "Google Drive", url: "https://docs.google.com/spreadsheets/d/1wPLH8TjP9sonulneFimgJYCNdmREQVuBRkD7h5qcn_A/edit?usp=drive_web&ouid=115282848900712416421" }
 	},
 	alignment: "NG",
 	deity: "Cayden Cailean",
@@ -17,7 +17,7 @@ Greytyphoon.Characters.push({
 	"wis": 12,
 	"cha": 14,
 	traits: [
-        { name: "Reactionary", url: "https://d20pfsrd.com/traits/combat-traits/reactionary" },
+		{ name: "Reactionary", url: "https://d20pfsrd.com/traits/combat-traits/reactionary" },
 		{ name: "Weapon Proficiency: Longbow", url: "#" }
 	],
 	startingFeats: [
@@ -47,22 +47,22 @@ Greytyphoon.Characters.push({
 		{ level: 3, name: "thundering drums", url: "https://d20pfsrd.com/magic/all-spells/t/thundering-drums" },
 		{ level: 3, name: "seek thoughts", url: "https://d20pfsrd.com/magic/all-spells/s/seek-thoughts" }
 	],
-    equips: [
-        { slot: "weapon-m", value: 320, name: "Rapier", material: { value: 1000, name: "Voidglass", url: "https://d20pfsrd.com/equipment/special-materials/#TOC-Voidglass" } },
+	equips: [
+		{ slot: "weapon-m", value: 320, name: "Rapier", material: { value: 1000, name: "Voidglass", url: "https://d20pfsrd.com/equipment/special-materials/#TOC-Voidglass" } },
 		{ slot: "weapon-r", value: 330, name: "Longbow [0]", bonus: 1, enchants: [{ valueB: 1, name: "Musehair", url: "#" }] },
-        { slot: "armor", value: 1100, name: "Mithral Shirt", bonus: 1, url: "https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" },
-        { slot: "shield", value: 5, name: "Buckler", material: { value: 1000, name: "Mithral", url: "https://d20pfsrd.com/equipment/special-materials/#TOC-Mithral" } }
-    ],
+		{ slot: "armor", value: 1100, name: "Mithral Shirt", bonus: 1, url: "https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" },
+		{ slot: "shield", value: 5, name: "Buckler", material: { value: 1000, name: "Mithral", url: "https://d20pfsrd.com/equipment/special-materials/#TOC-Mithral" } }
+	],
 	loot: [
 		{ slot: "head", value: 4500, name: "Circlet of Persuasion", url: "https://d20pfsrd.com/magic-items/wondrous-items/c-d/circlet-of-persuasion" },
 		{ slot: "neck", value: 2000, name: "Amulet of Natural Armor", url: "https://d20pfsrd.com/magic-items/wondrous-items/a-b/amulet-of-natural-armor" },
 		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance [Royal]", url: "https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance" },
 		{ slot: "wrists", value: 5000, name: "Bracers of Archery", url: "https://d20pfsrd.com/magic-items/wondrous-items/a-b/bracers-of-archery" },
 		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://d20pfsrd.com/magic-items/rings/ring-of-protection" },
-        { slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", url: "https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
-        { slot: "none", value: 4800, name: "Fork of Perfect Tuning", url: "#" },
-        { slot: "none", value: 3400, name: "Bag of Tricks, Gray", url: "https://d20pfsrd.com/magic-items/wondrous-items/a-b/bag-of-tricks" },
-        { slot: "none", value: 4000, name: "Endless Quiver", url: "https://d20pfsrd.com/magic/all-spells/a/abundant-ammunition" },
-        { slot: "none", value: 2000, name: "Handy Haversack", url: "https://d20pfsrd.com/magic-items/wondrous-items/a-b/bag-handy-haversack" }
+		{ slot: "belt", value: 4000, name: "Belt of Incredible Dexterity", url: "https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-incredible-dexterity" },
+		{ slot: "none", value: 4800, name: "Fork of Perfect Tuning", url: "#" },
+		{ slot: "none", value: 3400, name: "Bag of Tricks, Gray", url: "https://d20pfsrd.com/magic-items/wondrous-items/a-b/bag-of-tricks" },
+		{ slot: "none", value: 4000, name: "Endless Quiver", url: "https://d20pfsrd.com/magic/all-spells/a/abundant-ammunition" },
+		{ slot: "none", value: 2000, name: "Handy Haversack", url: "https://d20pfsrd.com/magic-items/wondrous-items/a-b/bag-handy-haversack" }
 	]
 });

@@ -3,7 +3,7 @@ Greytyphoon.Characters.push({
 	meta: {
 		quest: "Manors & Genies",
 		owner: "Elizabeth",
-        companion: { name: "Bat Familiar", url: "https://d20pfsrd.com/bestiary/monster-listings/animals/bat" }
+		companion: { name: "Bat Familiar", url: "https://d20pfsrd.com/bestiary/monster-listings/animals/bat" }
 	},
 	alignment: "N",
 	languages: "Common, Abyssal, Celestial, Elven, Necril, Terran",
@@ -21,21 +21,21 @@ Greytyphoon.Characters.push({
 	"wis": 10,
 	"cha": 14,
 	traits: [
-        { name: "Reactionary", url: "https://d20pfsrd.com/traits/combat-traits/reactionary" }
-    ],
+		{ name: "Reactionary", url: "https://d20pfsrd.com/traits/combat-traits/reactionary" }
+	],
 	startingFeats: [
 		{ name: "Improved Initiative", reason: "Human", url: "https://d20pfsrd.com/feats/general-feats/improved-initiative" },
 		{ name: "Accursed Hex", reason: "Level 1", url: "https://d20pfsrd.com/feats/general-feats/accursed-hex" },
-        { name: "Evil Eye", reason: "Witch 1", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-evil-eye-su" }
+		{ name: "Evil Eye", reason: "Witch 1", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-evil-eye-su" }
 	],
 	progressFeats: [
-        { name: "Fortune", reason: "Witch 2", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-fortune-su" },
-        { name: "Cackle", reason: "Level 3 Extra Hex", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-cackle-su" },
-        { name: "Misfortune", reason: "Witch 2", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-misfortune-su" },
+		{ name: "Fortune", reason: "Witch 2", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-fortune-su" },
+		{ name: "Cackle", reason: "Level 3 Extra Hex", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-cackle-su" },
+		{ name: "Misfortune", reason: "Witch 2", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-misfortune-su" },
 		{ name: "Quick Draw", reason: "Level 5", url: "https://d20pfsrd.com/feats/combat-feats/quick-draw-combat" },
-        { name: "Flight", reason: "Witch 6", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-flight-su" },
+		{ name: "Flight", reason: "Witch 6", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-flight-su" },
 		{ name: "Spell Focus (Necromancy)", reason: "Level 7", url: "https://d20pfsrd.com/feats/general-feats/spell-focus" },
-        { name: "Charm", reason: "Witch 8", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-charm-su" },
+		{ name: "Charm", reason: "Witch 8", url: "https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-charm-su" },
 		{ name: "Magical Aptitude", reason: "Level 9", url: "https://d20pfsrd.com/feats/general-feats/magical-aptitude" }
 	],
 	targetFeats: [],
@@ -67,10 +67,10 @@ Greytyphoon.Characters.push({
 		{ level: 5, name: "cure critical wounds", url: "https://d20pfsrd.com/magic/all-spells/c/cure-critical-wounds" },
 		{ level: 5, name: "pain strike, mass", url: "https://d20pfsrd.com/magic/all-spells/p/pain-strike" }
 	],
-    equips: [
+	equips: [
 		{ slot: "weapon-m", value: 305, name: "Longspear" },
 		{ slot: "weapon-r", value: 335, name: "Light Crossbow" }
-    ],
+	],
 	loot: [
 		{ slot: "neck", value: 16000, name: "Amulet of Shield", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },
 		{ slot: "none", value: 20000, name: "Stone of Good Luck", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/stone-of-good-luck-luckstone" },

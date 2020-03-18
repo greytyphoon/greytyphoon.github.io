@@ -43,11 +43,11 @@ Greytyphoon.Characters.push({
 		{ level: 2, name: "air step", url: "https://d20pfsrd.com/magic/all-spells/a/air-step" },
 		{ level: 2, name: "stone call", url: "https://d20pfsrd.com/magic/all-spells/s/stone-call" },
 	],
-    equips: [
+	equips: [
 		{ slot: "weapon-m", value: 350, name: "Greasword" },
 		{ slot: "weapon-r", value: 700, name: "Longbow [3]", bonus: 1,  enchants: [ { valueB: 1, name: "Flaming", url: "https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/flaming" } ] },
-        { slot: "armor", value: 1100, name: "Mithral Shirt", url: "https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" }
-    ],
+		{ slot: "armor", value: 1100, name: "Mithral Shirt", url: "https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt" }
+	],
 	loot: [
 		{ slot: "neck", value: 16000, name: "Amulet of Shield", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/bracers-of-armor" },
 		{ slot: "chest", value: 10000, name: "Bane Baldric", url: "https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/baldric-bane" },
