@@ -21,7 +21,7 @@
 /* I use this when I want to say who taught me this song. */
 span.credit { /* inspired from Pathfinder's .listBonuses */
 	display: inline-block;
-    color: var(--html-darkgrey);
-    font-size: .75rem; }
+	color: var(--html-darkgrey);
+	font-size: .75rem; }
 span.credit::before { content: "("; }
 span.credit::after { content: ")"; }

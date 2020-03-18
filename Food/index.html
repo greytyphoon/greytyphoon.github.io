@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Grey's Cookbook</title>
-    <link rel="stylesheet" href="Food.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Grey's Cookbook</title>
+	<link rel="stylesheet" href="Food.css">
 </head>
 <body>
-    <div class="container">
-        <header id="header">
-            <h1>Livre de recettes</h1>
-        </header>
-        <section class="row">
-            <div>
-                <h2>Repas Gratifiants</h2>
-                <ul>
-                    <li>Fondue &lt;3</li>
-                    <li><a target="recipeViewer" href="boeuf-thai.html">Boeuf Thai &agrave; la mijoteuse <span class="credit">Julie-Anne</span></a></li>
-                    <li>Cr&egrave;me de zucchini <span class="credit">Louise-H&eacute;l&egrave;ne</span></li>
-                    <li>Risotto aux crevettes</li>
-                    <li>Papillote de saumon</li>
-                    <li>Macaroni au fromage, fait maison</li>
-                    <li>P&acirc;t&eacute; Chinois</li>
-                    <li>Riz Indien</li>
-                    <li>Lasagne</li>
-                    <li>Ramen</li>
-                    <li>Filet de porc à la sauce <i>spare ribs</i>, avec rouleaux impériaux et riz</li>
-                    <li><i>Flammekueche</i> sur pain naan</li>
-                </ul>
-                <h2>Repas Faciles</h2>
-                <ul>
-                    <li>McDoutre <span class="credit">Bernard</span></li>
-                    <li>Mini-pizzas</li>
-                    <li>Riz frit aux saucisses</li>
-                    <li>Grilled Cheese</li>
-                    <li>Burritos</li>
-                    <li>Nachos</li>
-                    <li>P&acirc;tes, sauce pesto ou &agrave; la vodka</li>
-                </ul>
-            </div>
-            <div>
-                <h2>&Agrave;-c&ocirc;t&eacute;s</h2>
-                <ul>
-                    <li>Salade Grecque <span class="credit">Tania</span></li>
-                    <li>Chou-fleur gratin&eacute;</li>
-                    <li>Asperges au bacon</li>
-                    <li>Patates au four</li>
-                    <li>Jalapeno / bacon / fromage &agrave; la cr&egrave;me <span class="credit">Marie</span></li>
-                </ul>
-                <h2>D&eacute;jeuners</h2>
-                <ul>
-                    <li>Cr&ecirc;pes &lt;3</li>
-                    <li>Oeufs B&eacute;n&eacute;dictine <span class="credit">Roselyne</span></li>
-                    <li><a target="recipeViewer" href="riz-au-lait.html">Riz au lait</a></li>
-                </ul>
-                <h2>Desserts</h2>
-                <ul>
-                    <li>Bonbon aux patates</li>
-                    <li>Pets de soeur</li>
-                    <li>G&acirc;teau Mille-Cr&ecirc;pe</li>
-                    <li>Clafoutis</li>
-                    <li>Trifle</li>
-                    <li><a target="recipeViewer" href="galette-avoine-banane.html">Biscuits Banane-Avoine</a></li>
-                    <li><a target="recipeViewer" href="biscuit-geant.html">Biscuit G&eacute;ant</a></li>
-                    <li><a target="recipeViewer" href="biscuit-chocolat.html">Biscuits au Chocolat</a></li>
-                    <li><a target="recipeViewer" href="tarte-au-chocolat.html">Tarte au chocolat</a></li>
-                    <li>Bagatelle Butterscotch <span class="credit">Steph Genest</span></li>
-                    <li><a target="recipeViewer" href="brownie.html">Brownies</a></li>
-                    <li><a target="recipeViewer" href="gateau-renverse.html">G&acirc;teau renvers&eacute; aux pommes et au sirop d'&eacute;rable</a></li>
-                </ul>
-            </div>
-        </section>
-    </div>
-    <script type="text/javascript">
-        function ViewRecipe(viewer) {
-            viewer.style.height = "50vh";
-            if("about:blank" === viewer.contentWindow.location.href)
-                viewer.style.height = "0";
-        }
-    </script>
-    <div id="fixref">
-        <div>Current Recipe <a id="minimize" target="recipeViewer" href="about:blank">&times;</a></div>
-        <iframe name="recipeViewer" src="about:blank" onLoad="ViewRecipe(this)"></iframe>
-    </div>
+	<div class="container">
+		<header id="header">
+			<h1>Livre de recettes</h1>
+		</header>
+		<section class="row">
+			<div>
+				<h2>Repas Gratifiants</h2>
+				<ul>
+					<li>Fondue &lt;3</li>
+					<li><a target="recipeViewer" href="boeuf-thai.html">Boeuf Thai &agrave; la mijoteuse <span class="credit">Julie-Anne</span></a></li>
+					<li>Cr&egrave;me de zucchini <span class="credit">Louise-H&eacute;l&egrave;ne</span></li>
+					<li>Risotto aux crevettes</li>
+					<li>Papillote de saumon</li>
+					<li>Macaroni au fromage, fait maison</li>
+					<li>P&acirc;t&eacute; Chinois</li>
+					<li>Riz Indien</li>
+					<li>Lasagne</li>
+					<li>Ramen</li>
+					<li>Filet de porc à la sauce <i>spare ribs</i>, avec rouleaux impériaux et riz</li>
+					<li><i>Flammekueche</i> sur pain naan</li>
+				</ul>
+				<h2>Repas Faciles</h2>
+				<ul>
+					<li>McDoutre <span class="credit">Bernard</span></li>
+					<li>Mini-pizzas</li>
+					<li>Riz frit aux saucisses</li>
+					<li>Grilled Cheese</li>
+					<li>Burritos</li>
+					<li>Nachos</li>
+					<li>P&acirc;tes, sauce pesto ou &agrave; la vodka</li>
+				</ul>
+			</div>
+			<div>
+				<h2>&Agrave;-c&ocirc;t&eacute;s</h2>
+				<ul>
+					<li>Salade Grecque <span class="credit">Tania</span></li>
+					<li>Chou-fleur gratin&eacute;</li>
+					<li>Asperges au bacon</li>
+					<li>Patates au four</li>
+					<li>Jalapeno / bacon / fromage &agrave; la cr&egrave;me <span class="credit">Marie</span></li>
+				</ul>
+				<h2>D&eacute;jeuners</h2>
+				<ul>
+					<li>Cr&ecirc;pes &lt;3</li>
+					<li>Oeufs B&eacute;n&eacute;dictine <span class="credit">Roselyne</span></li>
+					<li><a target="recipeViewer" href="riz-au-lait.html">Riz au lait</a></li>
+				</ul>
+				<h2>Desserts</h2>
+				<ul>
+					<li>Bonbon aux patates</li>
+					<li>Pets de soeur</li>
+					<li>G&acirc;teau Mille-Cr&ecirc;pe</li>
+					<li>Clafoutis</li>
+					<li>Trifle</li>
+					<li><a target="recipeViewer" href="galette-avoine-banane.html">Biscuits Banane-Avoine</a></li>
+					<li><a target="recipeViewer" href="biscuit-geant.html">Biscuit G&eacute;ant</a></li>
+					<li><a target="recipeViewer" href="biscuit-chocolat.html">Biscuits au Chocolat</a></li>
+					<li><a target="recipeViewer" href="tarte-au-chocolat.html">Tarte au chocolat</a></li>
+					<li>Bagatelle Butterscotch <span class="credit">Steph Genest</span></li>
+					<li><a target="recipeViewer" href="brownie.html">Brownies</a></li>
+					<li><a target="recipeViewer" href="gateau-renverse.html">G&acirc;teau renvers&eacute; aux pommes et au sirop d'&eacute;rable</a></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript">
+		function ViewRecipe(viewer) {
+			viewer.style.height = "50vh";
+			if("about:blank" === viewer.contentWindow.location.href)
+				viewer.style.height = "0";
+		}
+	</script>
+	<div id="fixref">
+		<div>Current Recipe <a id="minimize" target="recipeViewer" href="about:blank">&times;</a></div>
+		<iframe name="recipeViewer" src="about:blank" onLoad="ViewRecipe(this)"></iframe>
+	</div>
 </body>
 </html>

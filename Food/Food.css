@@ -18,30 +18,30 @@
  * Custom Components   (#fixref, #header, .credit, .actionStep)
  */
 #fixref {
-    bottom: -2px; /* In this page, fixref looks like a draggable tab from the bottom. Solves weird issues with iframes and bottom border. */ }
-#fixref > div { 
-    padding: .35em; 
-    border-bottom: 1px solid var(--html-darkgrey); }
+	bottom: -2px; /* In this page, fixref looks like a draggable tab from the bottom. Solves weird issues with iframes and bottom border. */ }
+#fixref > div {
+	padding: .35em;
+	border-bottom: 1px solid var(--html-darkgrey); }
 #fixref #minimize { float: right; }
 #fixref iframe {
-    transition: height .8s ease;
-    height: 50vh;
-    border: none; }
+	transition: height .8s ease;
+	height: 50vh;
+	border: none; }
 @media screen and (max-width: 767px){
-    #fixref iframe { width: 100%; margin-left: 0; }
+	#fixref iframe { width: 100%; margin-left: 0; }
 }
 
 /* I use this when I want to say who gave me this recipe. */
 span.credit { /* inspired from Pathfinder's .listBonuses */
 	display: inline-block;
-    color: var(--html-darkgrey);
-    font-size: .75rem;
-    font-weight: normal; }
+	color: var(--html-darkgrey);
+	font-size: .75rem;
+	font-weight: normal; }
 span.credit::before { content: "(\00e0  la "; }
 span.credit::after { content: ")"; }
 
 /* I use this when I'm writing directions for a recipe */
 li.actionStep {
-    color: var(--html-darkgrey);
-    padding-left: 1rem;
-    list-style-type: circle; }
+	color: var(--html-darkgrey);
+	padding-left: 1rem;
+	list-style-type: circle; }
