@@ -137,16 +137,6 @@ h2 > *:not(a), .subtitle > *:not(a) {
 	float: right;
 	margin-left: .75em; }
 
-.apartee {
-	background-color: var(--murder-grey);
-	border: 1px dashed var(--html-darkgrey);
-	border-radius: 6px;
-	padding: .25em .5em;
-	font-size: .75rem; }
-
-.float-right { /* Shamefully stolen from Bootstrap until I can purge it.*/
-	float: right; }
-
 .br { /*for 'breathing room' after a paragraph. Does not simply replace random <br>s in my code, no sir. Obviously not. */
 	margin-bottom: 0.75rem; }
 
