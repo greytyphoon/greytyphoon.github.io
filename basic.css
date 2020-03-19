@@ -198,7 +198,7 @@ th[role=columnheader]:not(.no-sort):hover:after {
 
 @media print {
 	.newPage { page-break-before: always; }
-	.noprint { display: none !important; }
+	.noprint, #fixref { display: none !important; }
 
 	/* make stuff smaller, so more can fit on a page. */
 	:root { font-size: 12px !important; }
