@@ -1,4 +1,4 @@
-/** Created by Rémi Doutre, 2015-2019. Public domain. **/
+/** Created by Rémi Doutre, 2015-2020. Public domain. **/
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap");
 /**
@@ -9,8 +9,6 @@
  * #fcf7f9 murder-white
  * #eaebef murder-grey
  * #c62825 murder-red
- *
- * Custom Palette 'Valiance':
  **/
 :root {
 	--murder-black: #0b0608;
@@ -18,6 +16,16 @@
 	--murder-red: #c62825;
 	--html-white: #ffffff;
 	--html-darkgrey: #a9a9a9;
+
+	--divination-blue: #2613f2;
+	--conjuration-green: #13aa26;
+	--illusion-grey: #aaaaaa;
+	--evocation-red: #f22613;
+	--abjuration-gold: #f0c010;
+	--transmutation-teal: #2599b9;
+	--enchantment-lilac: #bf55ec;
+	--necromancy-purple: #800080;
+
 	font-size: 16px;
 	font-family: 'Roboto', 'Segoe UI', sans-serif;
 	color: var(--murder-black); }

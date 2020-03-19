@@ -40,29 +40,21 @@
 .spell.patron, a.spell.patron, a.spell.patron:visited,
 .spell.bloodline, a.spell.bloodline, a.spell.bloodline:visited,
 .spell.divination, a.spell.divination, a.spell.divination:visited{
-	font-style:italic;
-	color: #2613f2;} /* Blue! */
+	color: var(--divination-blue);}
 .spell.conjuration, a.spell.conjuration, a.spell.conjuration:visited {
-	font-style:italic;
-	color: #13aa26;} /* Green! */
+	color: var(--conjuration-green);}
 .spell.illusion, a.spell.illusion, a.spell.illusion:visited{
-	font-style:italic;
-	color: #aaaaaa;} /* Grey! */
+	color: var(--illusion-grey);}
 .spell.evocation, a.spell.evocation, a.spell.evocation:visited{
-	font-style:italic;
-	color: #f22613;} /* Red! */
+	color: var(--evocation-red);}
 .spell.abjuration, a.spell.abjuration , a.spell.abjuration:visited{
-	font-style:italic;
-	color: #f0c010;} /* Gold! */
+	color: var(--abjuration-gold);}
 .spell.transmutation, a.spell.transmutation, a.spell.transmutation:visited{
-	font-style:italic;
-	color: #2599b9;} /* Teal! */
+	color: var(--transmutation-teal);}
 .spell.enchantment, a.spell.enchantment, a.spell.enchantment:visited{
-	font-style:italic;
-	color: #bf55ec;} /* Lilac! */
+	color: var(--enchantment-lilac);}
 .spell.necromancy, a.spell.necromancy, a.spell.necromancy:visited{
-	font-style:italic;
-	color: #800080;} /* Purple! */
+	color: var(--necromancy-purple);}
 
 .spell.bonus::before,
 .spell.domain::before,
