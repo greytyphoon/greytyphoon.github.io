@@ -29,7 +29,7 @@
 	font-size: 16px;
 	font-family: 'Roboto', 'Segoe UI', sans-serif;
 	color: var(--murder-black); }
-* { 
+* {
 	box-sizing: border-box;
 	line-height: 1.2em; }
 body { margin: 0; }
@@ -51,7 +51,7 @@ code {
 ul, ol, dl, p { margin: 0 0 .75em 0; }
 
 /********************
- * Basic page layout	(.container, #fixref, #header)
+ * Basic page layout	(.container, #fixref, header)
  */
 
 body > .container { padding: 10px 25px .5px 25px; }
@@ -97,7 +97,7 @@ body > .container { padding: 10px 25px .5px 25px; }
 	}
 }
 
-header, #header {
+header {
 	padding: 8px;
 	margin: 0px -15px 15px -15px;
 	border-radius: 6px;
@@ -105,7 +105,7 @@ header, #header {
 	background-color: var(--murder-red);
 	border: 1px solid var(--murder-red);
 	box-shadow: 2px 2px 2px var(--html-darkgrey); }
-header h1, #header h1 {
+header h1 {
 	font-size: inherit;
 	font-weight: bold;
 	margin: 0; }
@@ -124,13 +124,8 @@ header h1, #header h1 {
 }
 
 /********************
- * Custom Components   (.title, h2/.subtitle, .apartee, .float-right, .br)
+ * Custom Components   (h2/.subtitle, .apartee, .float-right, .br)
  */
-
-.title {
-	border-top: 1px solid var(--murder-black);
-	border-bottom: 1px solid var(--murder-black);
-	clear: both; }
 
 h2, .subtitle {
 	border-bottom: 1px solid var(--murder-grey);
@@ -162,7 +157,7 @@ table { width: 100%; border-collapse: collapse; }
 table > thead > tr > th { border-bottom: 1px solid var(--html-darkgrey); }
 table th, table td { padding: .15em; }
 table > tbody > tr:hover { background-color: var(--murder-grey); }
-	
+
 table.table-cornered th,
 table.table-cornered td {
 	border-left: 1px solid var(--html-darkgrey);
@@ -207,8 +202,8 @@ th[role=columnheader]:not(.no-sort):hover:after {
 
 	/* make stuff smaller, so more can fit on a page. */
 	:root { font-size: 12px !important; }
-	
+
 	/* less padding. Removes negative margin on header, rounded corners were cut off. */
 	body { padding: 0; }
-	header, #header { margin-left: 0; margin-right: 0; }
+	header { margin-left: 0; margin-right: 0; }
 }
