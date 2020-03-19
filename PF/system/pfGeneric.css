@@ -13,17 +13,12 @@
 	width: calc(15px + 1em); }
 
 /* Uniform style and auto-parenthesis for anywhere I list bonus types */
-.listBonuses {
-	color: var(--html-darkgrey);
-	font-size: .75rem;
-	font-weight: normal; }
-.listBonuses:before { content: "("; }
-.listBonuses:after { content: ")"; }
-/*cool hack to have the listbonus on the same line, but they all break off if the display is too small, and they align with circumstancial bonuses*/
-.listBonusBreaker { margin-right: -20px; }
-.listBonusBreaker + .listBonuses {
+small {
 	display: inline-block;
-	margin-left: 20px; }
+	color: var(--html-darkgrey);
+	font-size: .75rem; }
+small::before { content: "("; }
+small::after { content: ")"; }
 
 /* circumstancial bonuses are displayed on the line below what they affect, slightly smaller, with a "tab" */
 .circumstancialBonus {
