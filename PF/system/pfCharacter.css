@@ -47,6 +47,9 @@ dl#featsWrapper > dd{
 @media print, screen and (min-width: 768px) {
 	#featsWrapper { float: right; }
 }
+@media print {
+	#featsWrapper small { display: none !important; }
+}
 
 /*spells*/
 #spellHeader {
@@ -93,11 +96,14 @@ ul#magicItemsWrapper{
 	.emptyitemslot {
 		display: none; }
 }
+@media print {
+	#inventory small { display: none !important; }
+}
 
 /*source*/
 #sources { font-size: .6rem; float: right; }
 ul#sources { list-style: none; padding-left: 0; }
-ul#sources ul { margin-left: 15px; }
+ul#sources ul { margin-left: 1rem; }
 #sources:before {
 	content: "Sources:";
 	font-weight: bold;
@@ -107,6 +113,7 @@ ul#sources ul { margin-left: 15px; }
 
 /*xp*/
 #xp {
-	color: var(--html-white);
+	display: block;
 	margin-top: -1.2em;
-	text-align: left; }
+	text-align: left;
+	color: var(--html-white); }
