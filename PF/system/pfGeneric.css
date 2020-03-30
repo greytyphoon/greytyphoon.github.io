@@ -20,6 +20,10 @@ small {
 small::before { content: "("; }
 small::after { content: ")"; }
 
+/********************
+ * Side-notes
+ */
+
 .apartee {
 	background-color: var(--murder-grey);
 	border: 1px dashed var(--html-darkgrey);
@@ -27,14 +31,9 @@ small::after { content: ")"; }
 	padding: .25em .5em;
 	font-size: .75rem; }
 
-/* maybe combine float-right with apartee. Right now it's mostly TWF, NaturalAttacks, and CompanionTricks. Also move it to PF (with apartee). */
-.float-right { /* Shamefully stolen from Bootstrap until I can purge it. Could be replaced...*/
-	float: right; }
-
-/* circumstancial bonuses are displayed on the line below what they affect, slightly smaller, with a "tab" */
-.circumstancialBonus {
-	font-size: .75rem;
-	margin-left: 20px; } /*align with the beginning of a text that goes after a .numberfirst*/
+/* Right now it's mostly TWF, NaturalAttacks, and CompanionTricks. */
+.apartee.float { float: right; }
+.apartee.align { text-align: right; }
 
 /********************
  * Spells and Schools

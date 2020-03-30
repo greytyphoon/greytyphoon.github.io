@@ -52,7 +52,7 @@ dl#featsWrapper > dd{
 }
 
 /*spells*/
-#spellHeader {
+#spellHeader.apartee {
 	font-size: .6rem; /*overrides apartee's font-size*/
 	margin-bottom: .75rem;
 	padding: 1em; /*overrides apartee's padding*/}
@@ -95,7 +95,6 @@ dl#featsWrapper > dd{
 
 /*source*/
 #sources { font-size: .6rem; float: right; }
-ul#sources { list-style: none; padding-left: 0; }
 ul#sources ul { margin-left: 1rem; }
 #sources:before {
 	content: "Sources:";
