@@ -75,16 +75,9 @@ dl#featsWrapper > dd{
 	float: right;
 	font-size: 0.75rem;
 	margin-left: 1rem; }
-ul#mundaneItemsWrapper{
-	list-style: none;
-	padding-left: 0; }
 #magicItemsWrapper{
 	float: right;
-	text-align: right;
-	margin-bottom: 10px }
-ul#magicItemsWrapper{
-	list-style: none;
-	padding-left: 0; }
+	text-align: right; }
 .emptyitemslot {
 	color: var(--html-darkgrey); }
 @media screen and (max-width: 767px) {
