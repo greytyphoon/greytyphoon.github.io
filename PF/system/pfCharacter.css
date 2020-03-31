@@ -67,7 +67,10 @@ dl#featsWrapper > dd{
 	background-color: var(--murder-red);
 	border-bottom: 1px solid var(--murder-red);
 	margin: -4px -10px 4px -10px;
-	padding: .15em .5em;
+	padding: .15em .5em; }
+.weapon > .summation > strong:first-child {
+	min-width: unset;
+	margin-left: -1rem;
 	font-weight: bold; }
 
 /*equipments*/

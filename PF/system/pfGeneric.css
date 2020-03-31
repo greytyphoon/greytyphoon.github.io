@@ -2,15 +2,22 @@
 @import url("../../basic.css");
 
 /********************
- * Custom Components   (.numberFirst, .listbonuses, .listBonusBreaker, .circumstancialBonus)
+ * Custom Components (.summation(s), strong, small, .circumstancialBonus)
  */
 
+/* Every line has some padding. The first element gets to bypass it on the first line, creating a reverse indent. */
+.summation,
+ul.summations > li {
+	padding-left: 1rem; }
+
 /* number at the beginning of a line get an Excel-like "cell", aligned right inside it, so the skills/names/whatevers line up. */
-.numberFirst {
+.summation > strong:first-child,
+ul.summations > li > strong:first-child {
 	display: inline-block;
+	margin-left: -2rem;
+	min-width: 2rem;
 	text-align: right;
-	margin-left: -15px; /*cancel the container-fluid's margin, so numbers in excess of 1em will overflow to the left in the margin.*/
-	width: calc(15px + 1em); }
+	font-weight: normal; }
 
 /* Uniform style and auto-parenthesis for anywhere I list bonus types */
 small {
@@ -19,6 +26,13 @@ small {
 	font-size: .75rem; }
 small::before { content: "("; }
 small::after { content: ")"; }
+
+/* circumstancial bonuses are displayed on the line below what they affect, slightly smaller, with a "tab" */
+.circumstancialBonus {
+	padding-left: 1rem;
+	font-size: .75rem; }
+.summation > .circumstancialBonus,
+ul.summations > li > .circumstancialBonus { padding-left: 0; }
 
 /********************
  * Side-notes
