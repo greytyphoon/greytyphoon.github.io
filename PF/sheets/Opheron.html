@@ -6,7 +6,8 @@
 	<title>Grey's Cleric</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
 	<style>
-		@media print { table#wild-shapes * { font-size: 14px; }
+		@media print { table#wild-shapes * { font-size: 14px; } }
+		#tblInventory td + td, #tblInventory th + th { text-align: right; }
 	</style>
 </head>
 <body>
@@ -110,9 +111,9 @@
 		<!-- SKILLS -->
 		<ul class="summations">
 			<li>
-				<strong>11</strong>
+				<strong>12</strong>
 				<a href="https://2e.aonprd.com/Skills.aspx?ID=1" title="Trained by Druid Dedication">Acrobatics</a>
-				<small>2 dex, 2 prf, 7 lvl</small>
+				<small>2 dex, 2 prf, 7 lvl, <u title="Boots of Elvenkind">1 item</u></small>
 			</li>
 			<li>
 				<strong>15</strong>
@@ -168,9 +169,9 @@
 					<small>8 human, 7 lvl: 8 cleric, 4 con, <u title="Toughness">1 feat</u></small>
 				</li>
 				<li class="br">
-					<strong>24</strong>
+					<strong>25</strong>
 					<b>AC</b>
-					<small>10, 2 dex, 2 prf, 7 lvl, <u title="Hide Armor">3 item</u></small>
+					<small>10, 2 dex, 2 prf, 7 lvl, <u title="3 Hide Armor, 1 Potency">4 item</u></small>
 					<div class="circumstancialBonus">+2 circ (Shield: 8 Hardness, 64 HP)</div>
 				</li>
 				<li>
@@ -283,9 +284,10 @@
 			<div>
 				<h2>Level 1 <u title="3 cleric">3/day</u></h2>
 				<ul>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=25">bless</a>,</li>
 					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=110">fear</a>,</li>
 					<li><a class="spell bonus off-class" href="https://2e.aonprd.com/Spells.aspx?ID=143">gust of wind</a>,</li>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=238">protection</a>.</li>
+					<li><u title="Blessed Tattoo"><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=238">protection from evil</a></u>.</li>
 				</ul>
 			</div>
 			<div>
@@ -341,13 +343,7 @@
 					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=102">enlarge</a>.</li>
 				</ul>
 			</div>
-			<div>
-				<h2>Prayer Beads</h2>
-				<ul>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=25">bless</a>,</li>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=148">heal</a> lvl1</li>
-				</ul>
-			</div>
+			<div></div>
 			<div>
 				<h2>Staff <u title="4 spell tier">4 charges</u></h2>
 				<ul>
@@ -382,9 +378,10 @@
 		</ul>
 		<ul id="magicItemsWrapper">
 			<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=441">Handwraps of Mighty Blows</a> +1</li>
+			<li title="L Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=413">Boots of Elvenkind</a></li>
 			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=357">Staff of Healing</a></li>
-			<li class="br"><a href="https://2e.aonprd.com/Equipment.aspx?ID=256">Prayer Beads</a></li>
-			<li>186.28<b>GP</b></li>
+			<li class="br"><a href="https://2e.aonprd.com/Equipment.aspx?ID=498">Blessed Tattoo</a></li>
+			<li>66.53<b>GP</b></li>
 		</ul>
 
 		<ul id="inventory">
@@ -399,7 +396,6 @@
 			<li title="L Bulk">
 				<a href="https://2e.aonprd.com/Weapons.aspx?ID=9">Sickle</a>
 				<small>simple, 1d4S, 1Hand, Knife Group, Agile Finesse Trip.</small>
-				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=230">Owlbear Claw</a></div>
 			</li>
 			<li title="5 x L Bulk" class="br">
 				5 &times; <a href="https://2e.aonprd.com/Weapons.aspx?ID=71">Javelin</a>
@@ -408,20 +404,20 @@
 
 			<!--Armors-->
 			<li title="2 Bulk">
-				<a href="https://2e.aonprd.com/Armor.aspx?ID=7">Hide Armor</a>
+				<a href="https://2e.aonprd.com/Armor.aspx?ID=7">Hide Armor</a> +1
 				<small>medium, 3 armor, 2 dex, -2 acp, -5ft, 14 str, Leather Group.</small>
 				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=217">Hunter's Bane</a></div>
 			</li>
 			<li title="L Bulk">
 				<a href="https://2e.aonprd.com/Armor.aspx?ID=3">Padded Armor</a>
 				<small>light, 1 armor, 3 dex, &ndash; acp, &ndash;ft, 10 str, &ndash; Group, Comfort.</small>
-				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=203">Crying Angel Pendant</a></div>
 			</li>
 			<li title="1 Bulk" class="br">
 				<a href="https://2e.aonprd.com/Equipment.aspx?ID=327">Sturdy Shield</a> aux armoiries de Belor
 				<small>2 shield, -0ft, 8 Hard, 64 HP.</small>
 				<div class="circumstancialBonus">
-					with a <a href="https://2e.aonprd.com/Weapons.aspx?ID=41">Shield Boss</a>
+					with a <a href="https://2e.aonprd.com/Weapons.aspx?ID=41">Shield Boss</a> +1
+					<a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
 					<small>martial, 1d6B, 1Hand, Shield Group</small>
 				</div>
 				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=522">Fortifying Pebble</a></div>
@@ -472,16 +468,110 @@
 				<dd>5' 9''</dd>
 			</dl>
 			<p>Guide to PF2 domains: <a href="https://www.reddit.com/r/Pathfinder2e/comments/cufg6f/the_gentlemans_guide_to_deities_and_domains_pf2">TheGentlemanDM</a>.</p>
-			<h2>Item Wishlist</h2>
-			<ul>
-				<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=432">Doubling Rings</a> (lvl3, 50gp)</li>
-				<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=417">Bracers of Missile Deflection</a> (lvl3, 52gp)</li>
-				<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=447">Lifting Belt</a> (lvl4, 80gp)</li>
-				<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=498">Blessed Tattoo</a> (lvl4, 90gp, uncommon)</li>
-				<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=413">Boots of Elvenkind</a> (lvl5, 145gp)</li>
-				<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=480">Stalwart's Ring</a> (lvl5 160gp, uncommon) 5 free hp</li>
-				<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=325">Spellguard Shield</a> (lvl6, 250gp) is also metal</li>
-			</ul>
+		</section>
+		<section class="row noprint">
+			<div>
+				<h2>Item Wishlist</h2>
+				<ul>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=447">Lifting Belt</a> (lvl4, 80gp)</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=325">Spellguard Shield</a> (lvl6, 250gp)</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=424">Cloak of Elvenkind</a> (lvl7, 360gp)</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=327">Lesser Sturdy Shield</a> (lvl7, 360gp)</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=357">Greater Staff of Healing</a> (lvl8, 460gp)</li>
+				</ul>
+			</div>
+
+			<table id="tblInventory">
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Level</th>
+						<th>Value</th>
+						<th>Bulk</th>
+						<th>Invest</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=441">Handwraps of Mighty Blows</a> +1</td>
+						<td>2</td>
+						<td>35</td>
+						<td>&nbsp;</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Trident <a href="https://2e.aonprd.com/Equipment.aspx?ID=301">Returning</a></td>
+						<td>3</td>
+						<td>55</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools (expanded)</a></td>
+						<td>3</td>
+						<td>50</td>
+						<td>1</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Trident <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">+1</a> <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">Striking</a></td>
+						<td>4</td>
+						<td>100</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Shield Boss <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">+1</a> <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">Striking</a></td>
+						<td>4</td>
+						<td>100</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=327">Sturdy Shield</a>, minor</td>
+						<td>4</td>
+						<td>100</td>
+						<td>1</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=357">Staff of Healing</a></td>
+						<td>4</td>
+						<td>90</td>
+						<td>1</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=498">Blessed Tattoo</a></td>
+						<td>4</td>
+						<td>90</td>
+						<td>&nbsp;</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Hide Armor <a href="https://2e.aonprd.com/Equipment.aspx?ID=278">+1</a></td>
+						<td>5</td>
+						<td>160</td>
+						<td>&nbsp;</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=413">Boots of Elvenkind</a></td>
+						<td>5</td>
+						<td>145</td>
+						<td>L</td>
+						<td>1</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Total</th>
+						<th>&nbsp;</th>
+						<th>925</th>
+						<th>3.1</th>
+						<th>4</th>
+				</tfoot>
+			</table>
 		</section>
 	</div>
 </body>
