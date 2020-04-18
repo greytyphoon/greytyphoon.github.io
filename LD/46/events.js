@@ -12,4 +12,14 @@ function attack(station)
 	}
 
 	// Enemy's turn
+	viruses.forEach(moveVirus);
+}
+
+function heal(seed)
+{
+	// Your turn, replenish the seed
+	seed.currentHP = 20;
+
+	// Enemy's turn
+	viruses.forEach(moveVirus);
 }

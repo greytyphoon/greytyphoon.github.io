@@ -23,15 +23,15 @@ function setupMaze()
 	{
 		for (let y = 1; y <= gridSize; y++)
 		{
-			let stationDiv = document.createElement("div");
-			stationDiv.classList.add("station");
-			stationDiv.style = "grid-column-start: " + (x*2) + "; "
+			let stationDom = document.createElement("div");
+			stationDom.classList.add("station");
+			stationDom.style = "grid-column-start: " + (x*2) + "; "
 							 + "grid-row-start: " + (y*2) + ";";
-			gameBoard.appendChild(stationDiv);
+			gameBoard.appendChild(stationDom);
 
-			let station = { positionX: x, positionY: y, dom: stationDiv, combines: null };
+			let station = { positionX: x, positionY: y, dom: stationDom, combines: null };
 			stations.push(station);
-			stationDiv.addEventListener("click", function() { attack(station); });
+			stationDom.addEventListener("click", function() { attack(station); });
 		}
 	}
 
@@ -43,6 +43,7 @@ function setupMaze()
 				  + "grid-row-start: " + (seedPosition*2-1) + "; ";
 	gameBoard.appendChild(seedDom);
 	seed = { positionX: seedPosition, positionY: seedPosition, dom: seedDom, currentHP: 20 };
+	seedDom.addEventListener("click", function() { heal(seed); });
 
 	// Setup Viruses (
 	for (let i = 0; i < gridSize; i++)
