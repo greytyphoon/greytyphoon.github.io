@@ -105,6 +105,12 @@ function refreshVirus(virus)
 				   + "grid-row-start: " + (virus.positionY*2-1) + "; ";
 }
 
+function destroyVirus(virus)
+{
+	virus.dom.parentNode.removeChild(virus.dom);
+	viruses.splice(viruses.indexOf(virus), 1);
+}
+
 // Returns an int between 0 and [max], excluding [max].
 function myRandom(max)
 {
