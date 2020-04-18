@@ -81,11 +81,11 @@ function spawnVirus()
 	var existingVirus = viruses.find(existingVirus => existingVirus.positionX === x && existingVirus.positionY === y);
 	if (existingVirus)
 	{
-		existingVirus.potency++;
+		augmentPotency(existingVirus, 1);
 		return;
 	}
 
-	let virusDom = document.createElement("strong");
+	let virusDom = document.createElement("div");
 	virusDom.classList.add("virus");
 	virusDom.style = "grid-column-start: " + (x*2-1) + "; "
 				   + "grid-row-start: " + (y*2-1) + "; ";
@@ -93,6 +93,12 @@ function spawnVirus()
 
 	let virus = { positionX: x, positionY: y, dom: virusDom, potency: 1 };
 	viruses.push(virus);
+}
+
+function augmentPotency(virus, increment)
+{
+	virus.potency += increment;
+	virus.dom.innerHTML = virus.potency;
 }
 
 // Returns an int between 0 and [max], excluding [max].

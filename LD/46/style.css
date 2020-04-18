@@ -18,6 +18,9 @@
 	box-shadow: 0px 0px 14px rgba(0, 0, 139, .6); }
 .virus {
 	background-color: var(--neon-red);
+	color: var(--html-white);
+	text-align: center;
+	font-size: .8rem;
 	border-radius: 50%; }
 .seed {
 	background-color: var(--neon-green);
