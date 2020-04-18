@@ -28,6 +28,15 @@ function setupMaze()
 		}
 	}
 
+	// Setup Seed
+	let seedPosition = Math.floor(gridSize/2) + 1;
+	let seedDom = document.createElement("div");
+	seedDom.classList.add("seed");
+	seedDom.style = "grid-column-start: " + (seedPosition*2-1) + "; "
+				  + "grid-row-start: " + (seedPosition*2-1) + "; ";
+	gameBoard.appendChild(seedDom);
+	seed = { positionX: seedPosition, positionY: seedPosition, dom: seedDom, currentHP: 20 };
+
 	// Setup Viruses (
 	for (let i = 0; i < gridSize; i++)
 	{

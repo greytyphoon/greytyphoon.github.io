@@ -19,3 +19,6 @@
 .virus {
 	background-color: var(--neon-red);
 	border-radius: 50%; }
+.seed {
+	background-color: var(--neon-green);
+	border-radius: 50%; }
