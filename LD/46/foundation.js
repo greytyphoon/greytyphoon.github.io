@@ -31,6 +31,7 @@ function setupMaze()
 
 			let station = { positionX: x, positionY: y, dom: stationDiv, combines: null };
 			stations.push(station);
+			stationDiv.addEventListener("click", function() { attack(station); });
 		}
 	}
 
