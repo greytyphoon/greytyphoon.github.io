@@ -1,5 +1,3 @@
-var paths= [];
-
 function spawnVirus()
 {
 	virusesSpawned++;

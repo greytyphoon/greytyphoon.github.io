@@ -2,6 +2,7 @@ var gridSize = 10;
 var virusesSpawned = 0;
 var stations = [];
 var viruses = [];
+var paths= [];
 var seed;
 
 function setupMaze()
@@ -82,7 +83,7 @@ function heal(seed)
 
 function eneymyTurn()
 {
-	// TODO: compute paths
+	computePaths();
 	viruses.forEach(moveVirus);
 	spawnVirus();
 	fuseViruses();
