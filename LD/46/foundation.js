@@ -6,13 +6,19 @@ var seed;
 
 function setupMaze()
 {
+	// Reset
+	stations = [];
+	viruses = [];
+	virusesSpawned = 0
+	
+	// Setup board
 	let gameBoard = document.getElementById("gameBoard");
-
-	// Setup Stations
 	let stationSize = Math.floor(gameBoard.offsetWidth / gridSize * 0.6);
 	gameBoard.style = "grid-template-columns: 1rem repeat(" + gridSize + ", " + stationSize + "px 1rem); "
 					+ "grid-template-rows: 1rem repeat(" + gridSize + ", " + stationSize + "px 1rem); "
 					+ "width: calc(" + (gridSize+1) + "rem + " + (gridSize*stationSize) + "px)";
+
+	// Setup Stations
 	for (let x = 1; x <= gridSize; x++)
 	{
 		for (let y = 1; y <= gridSize; y++)
@@ -59,12 +65,12 @@ function spawnVirus()
 			y = 1;
 			break;
 		case 1:
-			x = 11;
+			x = gridSize + 1;
 			y = position;
 			break;
 		case 2:
 			x = position + 1; // (Needs to enable (11,11)
-			y = 11;
+			y = gridSize + 1;
 			break;
 		case 3:
 			x = 1;
