@@ -1,0 +1,16 @@
+/* div#gameBoard 
+ *  Contains other divs to make a 7*7 checkerboard, centered.
+ *  When possible, every square will be 80px by 80px
+ *  Don't specify rows: just throw all 49 tiles in there, and the rows will make themselves.
+ */
+
+#gameBoard {
+	display: grid;
+	margin-left: auto;
+	margin-right: auto; }
+.station {
+	border: 1px solid #00008B; }
+.station:hover {
+	box-shadow: 0px 0px 14px rgba(0, 0, 139, .6); }
+.virus {
+	border: 1px solid red; }

@@ -1,0 +1,23 @@
+
+STATION
+-------
+.positionX (int)
+.positionY (int)
+.dom (htmlElement)
+.combines (station)
+
+
+VIRUS
+-----
+.positionX (int)
+.positionY (int)
+.dom (htmlElement)
+.potency (int)
+
+
+SEED
+----
+.positionX (int)
+.positionY (int)
+.dom (htmlElement)
+.currentHP (int)
