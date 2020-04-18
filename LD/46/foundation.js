@@ -81,24 +81,27 @@ function spawnVirus()
 	var existingVirus = viruses.find(existingVirus => existingVirus.positionX === x && existingVirus.positionY === y);
 	if (existingVirus)
 	{
-		augmentPotency(existingVirus, 1);
+		existingVirus.potency++;
+		refreshVirus(existingVirus);
 		return;
 	}
 
 	let virusDom = document.createElement("div");
 	virusDom.classList.add("virus");
-	virusDom.style = "grid-column-start: " + (x*2-1) + "; "
-				   + "grid-row-start: " + (y*2-1) + "; ";
 	gameBoard.appendChild(virusDom);
 
 	let virus = { positionX: x, positionY: y, dom: virusDom, potency: 1 };
+	refreshVirus(virus);
 	viruses.push(virus);
 }
 
-function augmentPotency(virus, increment)
+function refreshVirus(virus)
 {
-	virus.potency += increment;
-	virus.dom.innerHTML = virus.potency;
+	virus.dom.innerHTML = virus.potency > 1
+		? virus.potency
+		: "";
+	virus.dom.style = "grid-column-start: " + (virus.positionX*2-1) + "; "
+				   + "grid-row-start: " + (virus.positionY*2-1) + "; ";
 }
 
 // Returns an int between 0 and [max], excluding [max].
