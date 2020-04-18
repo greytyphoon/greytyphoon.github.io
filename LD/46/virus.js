@@ -49,13 +49,14 @@ function spawnVirusAt(x, y, potency)
 
 function moveVirus(virus)
 {
-	return;
 	var optimalPath = paths.find(path => path.positionX === virus.positionX && path.positionY === virus.positionY);
-	if (!optimalPath.splitX)
+	virus.positionX = optimalPath.nextX;
+	virus.positionY = optimalPath.nextY;
+	if (optimalPath.splitX)
 	{
-		virus.positionX = optimalPath.nextX;
-		virus.positionY = optimalPath.nextY;
-		return;
+		let newPotency = Math.Ceiling(virus.potency / 2);
+		virus.potency = newPotency;
+		spawnVirusAt(optimalPath.splitX, optimalPath.splitY, newPotency);
 	}
 }
 

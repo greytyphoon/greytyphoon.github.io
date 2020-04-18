@@ -64,6 +64,7 @@ function attack(station)
 	{
 		// YOU WIN
 		alert("YOU WIN");
+		return;
 	}
 
 	// Enemy's turn
