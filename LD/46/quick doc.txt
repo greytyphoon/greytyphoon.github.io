@@ -21,3 +21,12 @@ SEED
 .positionY (int)
 .dom (htmlElement)
 .currentHP (int)
+
+PATH
+----
+.positionX (int)
+.positionY (int)
+.nextX (int)
+.nextY (int)
+.splitX (int?)
+.splitY (int?)

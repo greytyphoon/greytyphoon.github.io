@@ -50,6 +50,7 @@ function setupMaze()
 	{
 		spawnVirus();
 	}
+	refreshViruses();
 }
 
 function attack(station)
@@ -66,7 +67,7 @@ function attack(station)
 	}
 
 	// Enemy's turn
-	viruses.forEach(moveVirus);
+	eneymyTurn();
 }
 
 function heal(seed)
@@ -75,7 +76,27 @@ function heal(seed)
 	seed.currentHP = 20;
 
 	// Enemy's turn
+	eneymyTurn();
+}
+
+function eneymyTurn()
+{
+	// TODO: compute paths
 	viruses.forEach(moveVirus);
+	spawnVirus();
+	fuseViruses();
+	refreshViruses();
+
+	var damageVirus = viruses.find(virus => virus.positionX === seed.positionX && virus.positionY === seed.positionY);
+	if (damageVirus)
+	{
+		seed.currentHP -= damageVirus.potency;
+		if (seed.currentHP <= 0)
+		{
+			// YOU LOSE
+			alert("YOU LOSE!");
+		}
+	}
 }
 
 // Returns an int between 0 and [max], excluding [max].

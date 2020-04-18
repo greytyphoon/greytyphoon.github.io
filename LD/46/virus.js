@@ -1,9 +1,7 @@
-
+var paths= [];
 
 function spawnVirus()
 {
-	let gameBoard = document.getElementById("gameBoard");
-
 	virusesSpawned++;
 	let x = 0;
 	let y = 0;
@@ -27,35 +25,71 @@ function spawnVirus()
 			y = position + 1; // (Needs to enable (0,11)
 			break;
 	}
+	
+	spawnVirusAt(x, y, 1);
+}
 
+function spawnVirusAt(x, y, potency)
+{
 	var existingVirus = viruses.find(existingVirus => existingVirus.positionX === x && existingVirus.positionY === y);
 	if (existingVirus)
 	{
-		existingVirus.potency++;
-		refreshVirus(existingVirus);
+		existingVirus.potency += potency;
 		return;
 	}
 
+	let gameBoard = document.getElementById("gameBoard");
 	let virusDom = document.createElement("div");
 	virusDom.classList.add("virus");
 	gameBoard.appendChild(virusDom);
 
-	let virus = { positionX: x, positionY: y, dom: virusDom, potency: 1 };
-	refreshVirus(virus);
+	let virus = { positionX: x, positionY: y, dom: virusDom, potency: potency };
 	viruses.push(virus);
 }
 
 function moveVirus(virus)
 {
+	return;
+	var optimalPath = paths.find(path => path.positionX === virus.positionX && path.positionY === virus.positionY);
+	if (!optimalPath.splitX)
+	{
+		virus.positionX = optimalPath.nextX;
+		virus.positionY = optimalPath.nextY;
+		return;
+	}
 }
 
-function refreshVirus(virus)
+function fuseViruses()
 {
-	virus.dom.innerHTML = virus.potency > 1
-		? virus.potency
-		: "";
-	virus.dom.style = "grid-column-start: " + (virus.positionX*2-1) + "; "
-				   + "grid-row-start: " + (virus.positionY*2-1) + "; ";
+	let duplicatedViruses = [];
+	for (let i = 1; i < viruses.length; i++)
+	{
+		let otherVirus = viruses[i];
+		for (let j = 0; j < i; j++)
+		{
+			let baseVirus = viruses[j];
+			if (baseVirus.positionX === otherVirus.positionX && baseVirus.positionY === otherVirus.positionY)
+			{
+				baseVirus.potency += otherVirus.potency;
+				duplicatedViruses.push(otherVirus);
+				break;
+			}
+		}
+	}
+
+	duplicatedViruses.forEach(destroyVirus);
+}
+
+function refreshViruses()
+{
+	viruses.forEach(virus =>
+	{
+		virus.dom.innerHTML = virus.potency > 1
+			? virus.potency
+			: "";
+		virus.dom.style = "grid-column-start: " + (virus.positionX*2-1) + "; "
+						+ "grid-row-start: " + (virus.positionY*2-1) + "; ";
+	});
 }
 
 function destroyVirus(virus)
