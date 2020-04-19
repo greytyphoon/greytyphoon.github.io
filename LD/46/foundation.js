@@ -109,9 +109,12 @@ function attack(station)
 	// Enemy's turn
 	computePaths();
 	viruses.forEach(moveVirus);
-	spawnVirus();
-	virusesSpawned++;
-	fuseViruses();
+	if (viruses.length > 1)
+	{
+		spawnVirus();
+		virusesSpawned++;
+		fuseViruses();
+	}
 	refreshViruses();
 
 	var damageVirus = viruses.find(virus => virus.positionX === seed.positionX && virus.positionY === seed.positionY);
