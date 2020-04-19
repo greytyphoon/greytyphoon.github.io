@@ -195,19 +195,18 @@ function attack(station)
 function readOptions()
 {
 	options = {};
-	options.gridSize = document.querySelector('input[name="gridSizeOption"]:checked')?.value*1 || 8;
+	options.gridSize = document.querySelector('input[name="gridSizeOption"]:checked').value*1;
 
-	options.largeBlocksCount = (document.querySelector('input[name="largeBlocksOption"]:checked')?.value*1) * options.gridSize;
+	options.largeBlocksCount = document.querySelector('input[name="largeBlocksOption"]:checked').value * options.gridSize;
 
-	switch (document.querySelector('input[name="hpOption"]:checked')?.value*1)
+	switch (document.querySelector('input[name="hpOption"]:checked')?.value)
 	{
-		case 2:
+		case "2":
 			options.seedHp = Math.pow(options.gridSize, 2);
 			break;
-		case 1:
+		case "1":
 			options.seedHp = options.gridSize;
 			break;
-		case 0:
 		default:
 			options.seedHp = 1;
 			break;
