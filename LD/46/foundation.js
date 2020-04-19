@@ -133,7 +133,17 @@ function startGame()
 				break;
 		}
 	}
-	computePaths();
+
+	// Set distance for the point that's directly on the seed
+	seed.position.distance = 0;
+	let toProcess = [seed.position];
+	for (let i = 0; i < toProcess.length; i++)
+	{
+		let point = toProcess[i];
+		let unrankedChildren = point.links.filter(lnk => lnk.distance === undefined);
+		unrankedChildren.forEach(pt => { pt.distance = point.distance + 1; });
+		toProcess.push(...unrankedChildren);
+	}
 
 	refreshStats();
 }
