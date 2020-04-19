@@ -13,7 +13,8 @@
 	margin-left: auto;
 	margin-right: auto; }
 .station {
-	border: 1px solid var(--neon-blue); }
+	border: 1px solid var(--neon-blue);
+	border-radius: 5px;}
 .station:hover {
 	box-shadow: 0px 0px 14px rgba(0, 0, 139, .6); }
 .virus {
@@ -23,11 +24,13 @@
 	font-size: .8rem;
 	border-radius: 50%; }
 .seed {
+	place-self: center;
 	background-color: var(--neon-green);
 	color: var(--html-white);
 	text-align: center;
 	font-size: .8rem;
-	border-radius: 50%;
+	border-radius: 5px;
+	padding: 0 .15em;
 	z-index: 1; }
 .seed[data-under-attack]:after {
 	content: attr(data-under-attack);
