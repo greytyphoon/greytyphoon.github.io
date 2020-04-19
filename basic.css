@@ -81,10 +81,11 @@ body > .container { padding: 10px 25px .5px 25px; }
 	body > .container { max-width: 1140px; }
 }
 
-#fixref  {
+#fixref {
 	background-color: var(--html-white);
-	border-bottom: 1px solid var(--html-darkgrey);
 	text-align: center; }
+#fixref:first-child { border-bottom: 1px solid var(--html-darkgrey); }
+#fixref:last-child { border-top: 1px solid var(--html-darkgrey); }
 @media screen and (min-width: 768px){
 	#fixref {
 		position: fixed;
