@@ -35,7 +35,8 @@
 body { margin: 0; }
 a, a:link, a:visited, a:active {
 	color: var(--murder-red);
-	text-decoration: none; }
+	text-decoration: none;
+	cursor: pointer; }
 a:hover {
 	text-decoration: underline;
 	text-shadow: 0px 0px 1px; }
@@ -49,6 +50,7 @@ code {
 	border-radius: .25em;
 	padding: 0 .15em; }
 ul, ol, dl, p { margin: 0 0 .75em 0; }
+summary { cursor: pointer; }
 
 /********************
  * Basic page layout	(.container, #fixref, header)
