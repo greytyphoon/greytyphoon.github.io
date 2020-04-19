@@ -27,9 +27,29 @@ function startGame()
 
 	// Setup board
 	let stationSize = Math.floor(document.getElementById("score").offsetWidth / gridSize * 0.6);
-	gameBoard.style = "grid-template-columns: 1rem repeat(" + gridSize + ", " + stationSize + "px 1rem); "
-					+ "grid-template-rows: 1rem repeat(" + gridSize + ", " + stationSize + "px 1rem); "
-					+ "width: calc(" + (gridSize+1) + "rem + " + (gridSize*stationSize) + "px)";
+	gameBoard.style.gridTemplateColumns = "1rem repeat(" + gridSize + ", " + stationSize + "px 1rem)";
+	gameBoard.style.gridTemplateRows = "1rem repeat(" + gridSize + ", " + stationSize + "px 1rem)"
+	gameBoard.style.width = "calc(" + (gridSize+1) + "rem + " + (gridSize*stationSize) + "px)";
+
+	// Setup Points
+	for (let x = 1; x - 1 <= gridSize; x++)
+	{
+		for (let y = 1; y - 1 <= gridSize; y++)
+		{
+			let edgeCheck = x === 1 || x === gridSize
+						 || y === 1 || y === gridSize;
+			let newPoint = { cx: x, cy: y, links: undefined, distance: undefined, isEdge: edgeCheck };
+
+			// Link new point to existing points
+			newPoint.links = points.filter(existingPoint => (newPoint.cx === existingPoint.cx && newPoint.cy - 1 === existingPoint.cy)
+														 || (newPoint.cy === existingPoint.cy && newPoint.cx - 1 === existingPoint.cx));
+
+			// Link existing points to new point
+			newPoint.links.forEach(l => { l.links.push(newPoint); });
+
+			points.push(newPoint);
+		}
+	}
 
 	// Setup Stations
 	for (let x = 1; x <= gridSize; x++)
@@ -38,11 +58,14 @@ function startGame()
 		{
 			let stationDom = document.createElement("div");
 			stationDom.classList.add("station");
-			stationDom.style = "grid-column-start: " + (x*2) + "; "
-							 + "grid-row-start: " + (y*2) + ";";
+			stationDom.style.gridColumnStart =  x*2;
+			stationDom.style.gridRowStart = y*2;
 			gameBoard.appendChild(stationDom);
 
-			let station = { positionX: x, positionY: y, dom: stationDom, combines: null };
+			let corners = points.filter(pt => (pt.cx === x || pt.cx - 1 === x)
+										   && (pt.cy === y || pt.cy - 1 === y));
+
+			let station = { positionX: x, positionY: y, dom: stationDom, combined: false, threatens: corners };
 			stations.push(station);
 			stationDom.addEventListener("click", function() { attack(station); });
 		}
@@ -52,10 +75,12 @@ function startGame()
 	let seedPosition = Math.floor(gridSize/2) + 1;
 	let seedDom = document.createElement("div");
 	seedDom.classList.add("seed");
-	seedDom.style = "grid-column-start: " + (seedPosition*2-1) + "; "
-				  + "grid-row-start: " + (seedPosition*2-1) + "; ";
+	seedDom.style.gridColumnStart = seedPosition*2-1;
+	seedDom.style.gridRowStart = seedPosition*2-1;
 	gameBoard.appendChild(seedDom);
-	seed = { positionX: seedPosition, positionY: seedPosition, dom: seedDom, currentHP: Math.pow(gridSize, 2) };
+
+	let seedPoint = points.find(pt => pt.cx === seedPosition && pt.cy === seedPosition);
+	seed = { position: seedPoint, dom: seedDom, currentHP: Math.pow(gridSize, 2) };
 	seedDom.innerHTML = seed.currentHP;
 
 	// Setup Viruses (
@@ -66,23 +91,44 @@ function startGame()
 	}
 	refreshViruses();
 
-	// Setup Points
-	for (let x = 1; x - 1 <= gridSize; x++)
+	//Paths shenanigans
+	for (let i = 0; i < gridSize; i++)
 	{
-		for (let y = 1; y - 1 <= gridSize; y++)
+		var randomStation = stations[myRandom(stations.length)];
+		if (randomStation.combined)	continue;
+
+		switch (myRandom(2))
 		{
-			var newPoint = { positionX: x, positionY: y, links: undefined, distance: undefined };
+			case 0: // Combine with SOUTH
+				let southStation = stations.find(st => st.positionX === randomStation.positionX && st.positionY === randomStation.positionY + 1 && !st.combines);
+				if (!southStation)	break;
+				southStation.dom.remove();
+				stations.splice(stations.indexOf(southStation), 1);
+				randomStation.combined = true;
+				randomStation.dom.style.gridRowEnd = "span 3";
+				randomStation.threatens.push(...southStation.threatens);
+				let pointA = points.find(pt => pt.cx === randomStation.positionX && pt.cy === randomStation.positionY + 1);
+				let pointB = points.find(pt => pt.cx === randomStation.positionX + 1 && pt.cy === randomStation.positionY + 1);
+				pointA.links.splice(pointA.links.indexOf(pointB), 1);
+				pointB.links.splice(pointB.links.indexOf(pointA), 1);
+				break;
 
-			// Link new point to existing points
-			newPoint.links = points.filter(existingPoint => (newPoint.positionX === existingPoint.positionX && newPoint.positionY - 1 === existingPoint.positionY)
-														 || (newPoint.positionY === existingPoint.positionY && newPoint.positionX - 1 === existingPoint.positionX));
-
-			// Link existing points to new point
-			newPoint.links.forEach(l => { l.links.push(newPoint); });
-
-			points.push(newPoint);
+			case 1: // Combine with EAST
+				let eastStation = stations.find(st => st.positionY === randomStation.positionY && st.positionX === randomStation.positionX + 1 && !st.combines);
+				if (!eastStation)	break;
+				randomStation.combines = eastStation;
+				eastStation.dom.remove();
+				stations.splice(stations.indexOf(eastStation), 1);
+				randomStation.dom.style.gridColumnEnd = "span 3";
+				randomStation.threatens.push(...eastStation.threatens);
+				let pointC = points.find(pt => pt.cy === randomStation.positionY && pt.cx === randomStation.positionX + 1);
+				let pointD = points.find(pt => pt.cy === randomStation.positionY + 1 && pt.cx === randomStation.positionX + 1);
+				pointC.links.splice(pointC.links.indexOf(pointD), 1);
+				pointD.links.splice(pointD.links.indexOf(pointC), 1);
+				break;
 		}
 	}
+	computePaths();
 
 	refreshStats();
 }
@@ -91,8 +137,7 @@ function attack(station)
 {
 	// Your turn, attack all 4 corners
 	viruses
-		.filter(virus => (virus.positionX === station.positionX || virus.positionX - 1 === station.positionX)
-					  && (virus.positionY === station.positionY || virus.positionY - 1 === station.positionY))
+		.filter(virus => station.threatens.includes(virus.position))
 		.forEach(virus => {
 			virusesKilled++;
 			destroyVirus(virus);
@@ -107,17 +152,16 @@ function attack(station)
 	}
 
 	// Enemy's turn
-	computePaths();
 	viruses.forEach(moveVirus);
 	if (viruses.length > 1)
 	{
 		spawnVirus();
 		virusesSpawned++;
-		fuseViruses();
 	}
+	fuseViruses();
 	refreshViruses();
 
-	var damageVirus = viruses.find(virus => virus.positionX === seed.positionX && virus.positionY === seed.positionY);
+	var damageVirus = viruses.find(virus => virus.position === seed.position);
 	if (damageVirus)
 	{
 		seed.currentHP -= damageVirus.potency;
@@ -128,7 +172,7 @@ function attack(station)
 			alert("YOU LOSE!");
 		}
 	}
-	
+
 	// Stats
 	if (!timer)	timer = setTimeout(tick, 1000);
 	turnCounter++;

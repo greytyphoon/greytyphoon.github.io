@@ -4,10 +4,10 @@ function computePaths()
 	points.forEach(point => { point.distance = undefined; });
 
 	// Set distance for the point that's directly on the seed
-	var target = points.find(point => point.positionX === seed.positionX && point.positionY === seed.positionY);
+	var target = seed.position;
 	target.distance = 0;
 
-	var toProcess = [target];
+	let toProcess = [target];
 	for (let i = 0; i < toProcess.length; i++)
 	{
 		var point = toProcess[i];

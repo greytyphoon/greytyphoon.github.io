@@ -4,28 +4,28 @@ STATION
 .positionX (int)
 .positionY (int)
 .dom (htmlElement)
-.combines (station)
+.combined (bool)
+.threatens[] (point)
 
 
 VIRUS
 -----
-.positionX (int)
-.positionY (int)
+.position (point)
 .dom (htmlElement)
 .potency (int)
 
 
 SEED
 ----
-.positionX (int)
-.positionY (int)
+.position (point)
 .dom (htmlElement)
 .currentHP (int)
 
 
 POINT
 ----
-.positionX (int)
-.positionY (int)
+.cx (int)
+.cy (int)
 .links[] (point)
 .distance (int)
+.isEdge (bool)

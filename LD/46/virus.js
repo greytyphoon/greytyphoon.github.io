@@ -1,34 +1,13 @@
 function spawnVirus()
 {
-	let x = 0;
-	let y = 0;
-	let position = myRandom(gridSize) + 1; // random 1-10
-	switch (myRandom(4)) // 1:NORTH  2:EAST  3:SOUTH  0:WEST
-	{
-		case 0:
-			x = position;
-			y = 1;
-			break;
-		case 1:
-			x = gridSize + 1;
-			y = position;
-			break;
-		case 2:
-			x = position + 1; // (Needs to enable (11,11)
-			y = gridSize + 1;
-			break;
-		case 3:
-			x = 1;
-			y = position + 1; // (Needs to enable (0,11)
-			break;
-	}
-
-	spawnVirusAt(x, y, 1);
+	var edges = points.filter(pt => pt.isEdge);
+	var randomEdge = edges[myRandom(edges.length)];
+	spawnVirusAt(randomEdge, 1);
 }
 
-function spawnVirusAt(x, y, potency)
+function spawnVirusAt(point, potency)
 {
-	var existingVirus = viruses.find(existingVirus => existingVirus.positionX === x && existingVirus.positionY === y);
+	var existingVirus = viruses.find(existingVirus => existingVirus.position === point);
 	if (existingVirus)
 	{
 		existingVirus.potency += potency;
@@ -40,23 +19,21 @@ function spawnVirusAt(x, y, potency)
 	virusDom.classList.add("virus");
 	gameBoard.appendChild(virusDom);
 
-	let virus = { positionX: x, positionY: y, dom: virusDom, potency: potency };
+	let virus = { position: point, dom: virusDom, potency: potency };
 	viruses.push(virus);
 }
 
 function moveVirus(virus)
 {
-	var currentPosition = points.find(point => point.positionX === virus.positionX && point.positionY === virus.positionY);
-	var minimumDistance = currentPosition.links.reduce((a,b) => { return a.distance < b.distance ? a : b; }).distance;
-	if (minimumDistance > currentPosition.distance)
+	var minimumDistance = virus.position.links.reduce((a,b) => { return a.distance < b.distance ? a : b; }).distance;
+	if (minimumDistance > virus.position.distance)
 	{
 		// You're already as good as can be. Don't move.
 		return;
 	}
 
-	var optimalPaths = currentPosition.links.filter(link => link.distance === minimumDistance);
-	virus.positionX = optimalPaths[0].positionX;
-	virus.positionY = optimalPaths[0].positionY;
+	var optimalPaths = virus.position.links.filter(lnk => lnk.distance === minimumDistance);
+	virus.position = optimalPaths[0];
 
 	// Many equal paths: the "Zombicide" rule.
 	if (optimalPaths.length !== 1)
@@ -64,7 +41,7 @@ function moveVirus(virus)
 		let newPotency = Math.ceil(virus.potency / optimalPaths.length);
 		virus.potency = newPotency;
 		optimalPaths.shift();
-		optimalPaths.forEach(point => spawnVirusAt(point.positionX, point.positionY, newPotency));
+		optimalPaths.forEach(point => spawnVirusAt(point, newPotency));
 	}
 }
 
@@ -77,7 +54,7 @@ function fuseViruses()
 		for (let j = 0; j < i; j++)
 		{
 			let baseVirus = viruses[j];
-			if (baseVirus.positionX === otherVirus.positionX && baseVirus.positionY === otherVirus.positionY)
+			if (baseVirus.position === otherVirus.position)
 			{
 				baseVirus.potency += otherVirus.potency;
 				duplicatedViruses.push(otherVirus);
@@ -96,8 +73,8 @@ function refreshViruses()
 		virus.dom.innerHTML = virus.potency > 1
 			? virus.potency
 			: "";
-		virus.dom.style = "grid-column-start: " + (virus.positionX*2-1) + "; "
-						+ "grid-row-start: " + (virus.positionY*2-1) + "; ";
+		virus.dom.style.gridColumnStart = virus.position.cx*2-1;
+		virus.dom.style.gridRowStart = virus.position.cy*2-1;
 	});
 }
 
