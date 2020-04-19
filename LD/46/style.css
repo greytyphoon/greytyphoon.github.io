@@ -38,11 +38,18 @@
 #score {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	padding: 0;
 	text-align:center; }
 ul#score {
+	padding: 0;
 	list-style: none; }
 #score > :first-child {
 	text-align: left; }
 #score > :last-child {
 	text-align: right; }
+
+#options ul {
+	padding: 0;
+	list-style: none; }
+details#options > summary { color: var(--murder-red); }
+details#options > summary:hover { text-decoration: underline; }
+details#options > summary::-webkit-details-marker { display: none; }
