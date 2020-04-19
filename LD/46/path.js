@@ -1,5 +1,3 @@
-var points= []; // Tous les 121 points sont ici: A1, B1, C1, A2, B2, etc.
-
 function computePaths()
 {
 	// Reset distances

@@ -24,4 +24,7 @@
 	border-radius: 50%; }
 .seed {
 	background-color: var(--neon-green);
+	color: var(--html-white);
+	text-align: center;
+	font-size: .8rem;
 	border-radius: 50%; }

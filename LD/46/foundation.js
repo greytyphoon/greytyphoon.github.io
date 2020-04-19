@@ -1,8 +1,9 @@
-var gridSize = 6;
+var gridSize = 8;
 var virusesSpawned = 0;
 var stations = [];
 var viruses = [];
 var seed;
+var points= [];
 
 function setupMaze()
 {
@@ -43,8 +44,7 @@ function setupMaze()
 	seedDom.style = "grid-column-start: " + (seedPosition*2-1) + "; "
 				  + "grid-row-start: " + (seedPosition*2-1) + "; ";
 	gameBoard.appendChild(seedDom);
-	seed = { positionX: seedPosition, positionY: seedPosition, dom: seedDom, currentHP: 20 };
-	seedDom.addEventListener("click", function() { heal(seed); });
+	seed = { positionX: seedPosition, positionY: seedPosition, dom: seedDom, currentDamage: 0 };
 
 	// Setup Viruses (
 	for (let i = 0; i < gridSize; i++)
@@ -90,15 +90,6 @@ function attack(station)
 	eneymyTurn();
 }
 
-function heal(seed)
-{
-	// Your turn, replenish the seed
-	seed.currentHP = 20;
-
-	// Enemy's turn
-	eneymyTurn();
-}
-
 function eneymyTurn()
 {
 	computePaths();
@@ -110,8 +101,9 @@ function eneymyTurn()
 	var damageVirus = viruses.find(virus => virus.positionX === seed.positionX && virus.positionY === seed.positionY);
 	if (damageVirus)
 	{
-		seed.currentHP -= damageVirus.potency;
-		if (seed.currentHP <= 0)
+		seed.currentDamage += damageVirus.potency;
+		seed.dom.innerHTML = seed.currentDamage;
+		if (seed.currentDamage >= Math.pow(gridSize, 2))
 		{
 			// YOU LOSE
 			alert("YOU LOSE!");
