@@ -6,7 +6,7 @@
 	<meta name="author" content="Rémi Doutre">
 	<meta name="description" content="Greytyphoon's entry for LudumDare 46.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Keep it alive</title>
+	<title>Virus Sweeper</title>
 	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<script type="text/javascript" src="foundation.js"></script>
@@ -16,13 +16,13 @@
 <body onload="startGame()">
 	<div class="container">
 		<header id="header">
+			<h1>Virus Sweeper</h1>
 			Greytyphoon's LD 46
-			<h1>Keep it alive</h1>
 		</header>
 
 		<ul id="score">
 			<li><b>Turn</b> #<span id="turnNumber"></span></li>
-			<li><b>Viruses</b> killed: <span id="virusesKilled"></span></li>
+			<li><b id="virusesKilled">0</b> viruses killed</li>
 			<li><span id="timer"></span></li>
 		</ul>
 		<div id="gameBoard"></div>
@@ -71,7 +71,7 @@
 		</span>
 		<hr>
 
-		<a onClick="alert('Title Pending \n ¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 46 \n By Greytyphoon (Rémi Doutre) \n ©2020 Montréal, Québec, Canada')">Credits</a>
+		<a onClick="alert('Virus Sweeper \n ¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 46 \n By Greytyphoon (Rémi Doutre) \n ©2020 Montréal, Québec, Canada')">Credits</a>
 	</nav>
 </body>
 </html>
