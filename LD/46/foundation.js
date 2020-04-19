@@ -36,8 +36,8 @@ function startGame()
 	{
 		for (let y = 1; y - 1 <= gridSize; y++)
 		{
-			let edgeCheck = x === 1 || x === gridSize
-						 || y === 1 || y === gridSize;
+			let edgeCheck = x === 1 || x-1 === gridSize
+						 || y === 1 || y-1 === gridSize;
 			let newPoint = { cx: x, cy: y, links: undefined, distance: undefined, isEdge: edgeCheck };
 
 			// Link new point to existing points
