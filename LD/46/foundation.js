@@ -138,6 +138,8 @@ function startGame()
 function attack(station)
 {
 	if (gameOver)	return;
+	if (!timer)	timer = setTimeout(tick, 1000);
+	turnCounter++;
 
 	// Your turn, attack all 4 corners
 	viruses
@@ -149,9 +151,7 @@ function attack(station)
 	if (viruses.length == 0)
 	{
 		// YOU WIN
-		gameOver = true;
-		clearTimeout(timer);
-		timer = null;
+		finishGame();
 		alert("YOU WIN");
 		return;
 	}
@@ -175,8 +175,9 @@ function attack(station)
 		if (seed.currentHP <= 0)
 		{
 			// YOU LOSE
-			gameOver = true;
+			finishGame();
 			alert("YOU LOSE!");
+			return;
 		}
 	}
 	else
@@ -185,8 +186,6 @@ function attack(station)
 	}
 
 	// Stats
-	if (!timer)	timer = setTimeout(tick, 1000);
-	turnCounter++;
 	refreshStats();
 }
 
@@ -199,6 +198,14 @@ function tick()
 	}
 
 	timer = setTimeout(tick, 1000);
+	refreshStats();
+}
+
+function finishGame()
+{
+	gameOver = true;
+	clearTimeout(timer);
+	timer = null;
 	refreshStats();
 }
 
