@@ -5,6 +5,7 @@ var seed;
 var points= [];
 
 // Stats
+var gameOver = false;
 var virusesSpawned = 0;
 var virusesKilled = 0;
 var turnCounter = 0;
@@ -18,6 +19,7 @@ function startGame()
 	stations = [];
 	viruses = [];
 	points= [];
+	gameOver = false;
 	virusesSpawned = 0;
 	virusesKilled = 0;
 	turnCounter = 0;
@@ -135,6 +137,8 @@ function startGame()
 
 function attack(station)
 {
+	if (gameOver)	return;
+
 	// Your turn, attack all 4 corners
 	viruses
 		.filter(virus => station.threatens.includes(virus.position))
@@ -145,6 +149,7 @@ function attack(station)
 	if (viruses.length == 0)
 	{
 		// YOU WIN
+		gameOver = true;
 		clearTimeout(timer);
 		timer = null;
 		alert("YOU WIN");
@@ -169,6 +174,7 @@ function attack(station)
 		if (seed.currentHP <= 0)
 		{
 			// YOU LOSE
+			gameOver = true;
 			alert("YOU LOSE!");
 		}
 	}
