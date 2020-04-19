@@ -27,6 +27,12 @@
 	color: var(--html-white);
 	text-align: center;
 	font-size: .8rem;
+	border-radius: 50%;
+	z-index: 1; }
+.seed[data-under-attack]:after {
+	content: attr(data-under-attack);
+	display: block;
+	background-color: var(--neon-red);
 	border-radius: 50%; }
 
 #score {

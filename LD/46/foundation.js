@@ -170,6 +170,7 @@ function attack(station)
 	if (damageVirus)
 	{
 		seed.currentHP -= damageVirus.potency;
+		seed.dom.setAttribute("data-under-attack", damageVirus.potency);
 		seed.dom.innerHTML = seed.currentHP;
 		if (seed.currentHP <= 0)
 		{
@@ -177,6 +178,10 @@ function attack(station)
 			gameOver = true;
 			alert("YOU LOSE!");
 		}
+	}
+	else
+	{
+		seed.dom.removeAttribute("data-under-attack");
 	}
 
 	// Stats
