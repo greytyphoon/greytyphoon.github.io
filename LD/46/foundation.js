@@ -22,7 +22,6 @@ function startGame()
 	virusesKilled = 0;
 	turnCounter = 0;
 	if (timer)	clearTimeout(timer);
-	timer = setTimeout(tick, 1000)
 	seconds = 0;
 	minutes = 0;
 
@@ -101,7 +100,8 @@ function attack(station)
 	if (viruses.length == 0)
 	{
 		// YOU WIN
-		if (timer)	clearTimeout(timer);
+		clearTimeout(timer);
+		timer = null;
 		alert("YOU WIN");
 		return;
 	}
@@ -130,6 +130,7 @@ function attack(station)
 	}
 	
 	// Stats
+	if (!timer)	timer = setTimeout(tick, 1000);
 	turnCounter++;
 	refreshStats();
 }
