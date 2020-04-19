@@ -1,6 +1,5 @@
 function spawnVirus()
 {
-	virusesSpawned++;
 	let x = 0;
 	let y = 0;
 	let position = myRandom(gridSize) + 1; // random 1-10
@@ -104,6 +103,6 @@ function refreshViruses()
 
 function destroyVirus(virus)
 {
-	virus.dom.parentNode.removeChild(virus.dom);
+	virus.dom.remove();
 	viruses.splice(viruses.indexOf(virus), 1);
 }

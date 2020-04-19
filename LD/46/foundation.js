@@ -1,21 +1,33 @@
 var gridSize = 8;
-var virusesSpawned = 0;
 var stations = [];
 var viruses = [];
 var seed;
 var points= [];
 
-function setupMaze()
+// Stats
+var virusesSpawned = 0;
+var virusesKilled = 0;
+var turnCounter = 0;
+var timer, seconds = 0, minutes = 0;
+
+function startGame()
 {
 	// Reset
+	let gameBoard = document.getElementById("gameBoard");
+	while (gameBoard.firstChild)	gameBoard.firstChild.remove();
 	stations = [];
 	viruses = [];
 	points= [];
-	virusesSpawned = 0
-	
+	virusesSpawned = 0;
+	virusesKilled = 0;
+	turnCounter = 0;
+	if (timer)	clearTimeout(timer);
+	timer = setTimeout(tick, 1000)
+	seconds = 0;
+	minutes = 0;
+
 	// Setup board
-	let gameBoard = document.getElementById("gameBoard");
-	let stationSize = Math.floor(gameBoard.offsetWidth / gridSize * 0.6);
+	let stationSize = Math.floor(document.getElementById("score").offsetWidth / gridSize * 0.6);
 	gameBoard.style = "grid-template-columns: 1rem repeat(" + gridSize + ", " + stationSize + "px 1rem); "
 					+ "grid-template-rows: 1rem repeat(" + gridSize + ", " + stationSize + "px 1rem); "
 					+ "width: calc(" + (gridSize+1) + "rem + " + (gridSize*stationSize) + "px)";
@@ -50,6 +62,7 @@ function setupMaze()
 	for (let i = 0; i < gridSize; i++)
 	{
 		spawnVirus();
+		virusesSpawned++;
 	}
 	refreshViruses();
 
@@ -59,7 +72,7 @@ function setupMaze()
 		for (let y = 1; y - 1 <= gridSize; y++)
 		{
 			var newPoint = { positionX: x, positionY: y, links: undefined, distance: undefined };
-			
+
 			// Link new point to existing points
 			newPoint.links = points.filter(existingPoint => (newPoint.positionX === existingPoint.positionX && newPoint.positionY - 1 === existingPoint.positionY)
 														 || (newPoint.positionY === existingPoint.positionY && newPoint.positionX - 1 === existingPoint.positionX));
@@ -70,6 +83,8 @@ function setupMaze()
 			points.push(newPoint);
 		}
 	}
+
+	refreshStats();
 }
 
 function attack(station)
@@ -78,23 +93,23 @@ function attack(station)
 	viruses
 		.filter(virus => (virus.positionX === station.positionX || virus.positionX - 1 === station.positionX)
 					  && (virus.positionY === station.positionY || virus.positionY - 1 === station.positionY))
-		.forEach(destroyVirus);
+		.forEach(virus => {
+			virusesKilled++;
+			destroyVirus(virus);
+		});
 	if (viruses.length == 0)
 	{
 		// YOU WIN
+		if (timer)	clearTimeout(timer);
 		alert("YOU WIN");
 		return;
 	}
 
 	// Enemy's turn
-	eneymyTurn();
-}
-
-function eneymyTurn()
-{
 	computePaths();
 	viruses.forEach(moveVirus);
 	spawnVirus();
+	virusesSpawned++;
 	fuseViruses();
 	refreshViruses();
 
@@ -109,6 +124,30 @@ function eneymyTurn()
 			alert("YOU LOSE!");
 		}
 	}
+	
+	// Stats
+	turnCounter++;
+	refreshStats();
+}
+
+function tick()
+{
+	seconds++;
+	if (seconds >= 60) {
+		seconds = 0;
+		minutes++;
+	}
+
+	timer = setTimeout(tick, 1000);
+	refreshStats();
+}
+
+function refreshStats()
+{
+	document.getElementById("turnNumber").innerHTML = turnCounter;
+	document.getElementById("virusesSpawned").innerHTML = virusesSpawned;
+	document.getElementById("virusesKilled").innerHTML = virusesKilled;
+	document.getElementById("timer").innerHTML = (minutes > 9 ? minutes : "0" + minutes) + ":" + (seconds > 9 ? seconds : "0" + seconds);
 }
 
 // Returns an int between 0 and [max], excluding [max].

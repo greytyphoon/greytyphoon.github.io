@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <!-- ©2020 Rémi Doutre / Greytyphoon -->
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="author" content="Rémi Doutre">
+	<meta name="description" content="Greytyphoon's entry for LudumDare 46.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Keep it alive</title>
 	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
@@ -10,20 +13,34 @@
 	<script type="text/javascript" src="path.js"></script>
 	<script type="text/javascript" src="virus.js"></script>
 </head>
-<body onload="setupMaze()">
+<body onload="startGame()">
 	<div class="container">
 		<header id="header">
 			Greytyphoon's LD 46
 			<h1>Keep it alive</h1>
 		</header>
 
-		<div id="score"></div>
+		<ul id="score">
+			<li><b>Turn</b> #<span id="turnNumber"></span></li>
+			<li><b>Viruses</b> spawned: <span id="virusesSpawned"></span>, killed: <span id="virusesKilled"></span></li>
+			<li><span id="timer"></span></li>
+		</ul>
 		<div id="gameBoard"></div>
 	</div>
 
 	<!--Credits-->
 	<nav id="fixref">
-		<a onClick="alert('How to Play\n ¯¯¯¯¯¯¯¯¯¯ \n Protect the green Seed at the center from the red Virus!')">How to play</a><br>
+		<a onclick="document.getElementById('restartConfirm').style.display = 'inline-block';">Restart</a>
+		<span id="restartConfirm" style="display: none;">
+			&gt; <a onclick="document.getElementById('restartConfirm').style.display = 'none'; startGame();">confirm</a>
+			or <a onclick="document.getElementById('restartConfirm').style.display = 'none';">cancel</a>.
+		</span><br>
+		<a onClick="alert('How to Play\n¯¯¯¯¯¯¯¯¯¯¯¯¯\n'
+			+ 'Protect the green Seed at the center from the red Virus!\n'
+			+ 'Click on the square Stations to destroy adjacent viruses.\n'
+			+ 'Viruses will move forward and will fuse when they meet other viruses.\n'
+			+ 'They will split evenly (multiply) if there a two fastest paths!\n'
+			+ 'Your seed can take [GridSize&sup2;] damage before breaking.')">How to play</a><br>
 		<a onClick="alert('Title Pending \n ¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 46 \n By Greytyphoon (Rémi Doutre) \n ©2020 Montréal, Québec, Canada')">Credits</a>
 	</nav>
 </body>
