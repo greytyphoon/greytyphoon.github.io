@@ -92,7 +92,7 @@ function startGame()
 	refreshViruses();
 
 	//Paths shenanigans
-	for (let i = 0; i < gridSize; i++)
+	for (let i = -gridSize; i < gridSize; i++)
 	{
 		var randomStation = stations[myRandom(stations.length)];
 		if (randomStation.combined)	continue;
@@ -100,7 +100,7 @@ function startGame()
 		switch (myRandom(2))
 		{
 			case 0: // Combine with SOUTH
-				let southStation = stations.find(st => st.positionX === randomStation.positionX && st.positionY === randomStation.positionY + 1 && !st.combines);
+				let southStation = stations.find(st => st.positionX === randomStation.positionX && st.positionY === randomStation.positionY + 1 && !st.combined);
 				if (!southStation)	break;
 				southStation.dom.remove();
 				stations.splice(stations.indexOf(southStation), 1);
@@ -114,11 +114,11 @@ function startGame()
 				break;
 
 			case 1: // Combine with EAST
-				let eastStation = stations.find(st => st.positionY === randomStation.positionY && st.positionX === randomStation.positionX + 1 && !st.combines);
+				let eastStation = stations.find(st => st.positionY === randomStation.positionY && st.positionX === randomStation.positionX + 1 && !st.combined);
 				if (!eastStation)	break;
-				randomStation.combines = eastStation;
 				eastStation.dom.remove();
 				stations.splice(stations.indexOf(eastStation), 1);
+				randomStation.combined = true;
 				randomStation.dom.style.gridColumnEnd = "span 3";
 				randomStation.threatens.push(...eastStation.threatens);
 				let pointC = points.find(pt => pt.cy === randomStation.positionY && pt.cx === randomStation.positionX + 1);
