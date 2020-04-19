@@ -56,7 +56,8 @@ function startGame()
 	seedDom.style = "grid-column-start: " + (seedPosition*2-1) + "; "
 				  + "grid-row-start: " + (seedPosition*2-1) + "; ";
 	gameBoard.appendChild(seedDom);
-	seed = { positionX: seedPosition, positionY: seedPosition, dom: seedDom, currentDamage: 0 };
+	seed = { positionX: seedPosition, positionY: seedPosition, dom: seedDom, currentHP: Math.pow(gridSize, 2) };
+	seedDom.innerHTML = seed.currentHP;
 
 	// Setup Viruses (
 	for (let i = 0; i < gridSize; i++)
@@ -116,9 +117,9 @@ function attack(station)
 	var damageVirus = viruses.find(virus => virus.positionX === seed.positionX && virus.positionY === seed.positionY);
 	if (damageVirus)
 	{
-		seed.currentDamage += damageVirus.potency;
-		seed.dom.innerHTML = seed.currentDamage;
-		if (seed.currentDamage >= Math.pow(gridSize, 2))
+		seed.currentHP -= damageVirus.potency;
+		seed.dom.innerHTML = seed.currentHP;
+		if (seed.currentHP <= 0)
 		{
 			// YOU LOSE
 			alert("YOU LOSE!");
@@ -145,7 +146,6 @@ function tick()
 function refreshStats()
 {
 	document.getElementById("turnNumber").innerHTML = turnCounter;
-	document.getElementById("virusesSpawned").innerHTML = virusesSpawned;
 	document.getElementById("virusesKilled").innerHTML = virusesKilled;
 	document.getElementById("timer").innerHTML = (minutes > 9 ? minutes : "0" + minutes) + ":" + (seconds > 9 ? seconds : "0" + seconds);
 }

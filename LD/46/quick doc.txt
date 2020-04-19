@@ -20,7 +20,7 @@ SEED
 .positionX (int)
 .positionY (int)
 .dom (htmlElement)
-.currentDamage (int)
+.currentHP (int)
 
 
 POINT
