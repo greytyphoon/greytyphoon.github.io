@@ -23,9 +23,15 @@ SEED
 
 
 POINT
-----
+-----
 .cx (int)
 .cy (int)
 .links[] (point)
 .distance (int)
 .isEdge (bool)
+
+OPTIONS
+-------
+.gridSize (int)
+.seedHp (int)
+.largeBlocksCount

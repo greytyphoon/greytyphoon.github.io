@@ -1,4 +1,4 @@
-var gridSize = 8;
+var options;
 var stations = [];
 var viruses = [];
 var seed;
@@ -27,19 +27,22 @@ function startGame()
 	seconds = 0;
 	minutes = 0;
 
+	// Options
+	readOptions();
+
 	// Setup board
-	let stationSize = Math.floor(document.getElementById("score").offsetWidth / gridSize * 0.6);
-	gameBoard.style.gridTemplateColumns = "1rem repeat(" + gridSize + ", " + stationSize + "px 1rem)";
-	gameBoard.style.gridTemplateRows = "1rem repeat(" + gridSize + ", " + stationSize + "px 1rem)"
-	gameBoard.style.width = "calc(" + (gridSize+1) + "rem + " + (gridSize*stationSize) + "px)";
+	let stationSize = Math.floor(document.getElementById("score").offsetWidth / options.gridSize * 0.6);
+	gameBoard.style.gridTemplateColumns = "1rem repeat(" + options.gridSize + ", " + stationSize + "px 1rem)";
+	gameBoard.style.gridTemplateRows = "1rem repeat(" + options.gridSize + ", " + stationSize + "px 1rem)"
+	gameBoard.style.width = "calc(" + (options.gridSize+1) + "rem + " + (options.gridSize*stationSize) + "px)";
 
 	// Setup Points
-	for (let x = 1; x - 1 <= gridSize; x++)
+	for (let x = 1; x - 1 <= options.gridSize; x++)
 	{
-		for (let y = 1; y - 1 <= gridSize; y++)
+		for (let y = 1; y - 1 <= options.gridSize; y++)
 		{
-			let edgeCheck = x === 1 || x-1 === gridSize
-						 || y === 1 || y-1 === gridSize;
+			let edgeCheck = x === 1 || x-1 === options.gridSize
+						 || y === 1 || y-1 === options.gridSize;
 			let newPoint = { cx: x, cy: y, links: undefined, distance: undefined, isEdge: edgeCheck };
 
 			// Link new point to existing points
@@ -54,9 +57,9 @@ function startGame()
 	}
 
 	// Setup Stations
-	for (let x = 1; x <= gridSize; x++)
+	for (let x = 1; x <= options.gridSize; x++)
 	{
-		for (let y = 1; y <= gridSize; y++)
+		for (let y = 1; y <= options.gridSize; y++)
 		{
 			let stationDom = document.createElement("div");
 			stationDom.classList.add("station");
@@ -74,19 +77,19 @@ function startGame()
 	}
 
 	// Setup Seed
-	let seedPosition = Math.floor(gridSize/2) + 1;
+	let seedPosition = Math.floor(options.gridSize/2) + 1;
 	let seedDom = document.createElement("div");
 	seedDom.classList.add("seed");
 	seedDom.style.gridColumnStart = seedPosition*2-1;
 	seedDom.style.gridRowStart = seedPosition*2-1;
+	seedDom.innerHTML = options.seedHp === 1 ? "" : options.seedHp;
 	gameBoard.appendChild(seedDom);
 
 	let seedPoint = points.find(pt => pt.cx === seedPosition && pt.cy === seedPosition);
-	seed = { position: seedPoint, dom: seedDom, currentHP: Math.pow(gridSize, 2) };
-	seedDom.innerHTML = seed.currentHP;
+	seed = { position: seedPoint, dom: seedDom, currentHP: options.seedHp };
 
 	// Setup Viruses (
-	for (let i = 0; i < gridSize; i++)
+	for (let i = 0; i < options.gridSize; i++)
 	{
 		spawnVirus();
 		virusesSpawned++;
@@ -94,7 +97,7 @@ function startGame()
 	refreshViruses();
 
 	//Paths shenanigans
-	for (let i = -gridSize; i < gridSize; i++)
+	for (let i = 0; i < options.largeBlocksCount; i++)
 	{
 		var randomStation = stations[myRandom(stations.length)];
 		if (randomStation.combined)	continue;
@@ -187,6 +190,28 @@ function attack(station)
 
 	// Stats
 	refreshStats();
+}
+
+function readOptions()
+{
+	options = {};
+	options.gridSize = document.querySelector('input[name="gridSizeOption"]:checked')?.value*1 || 8;
+
+	options.largeBlocksCount = (document.querySelector('input[name="largeBlocksOption"]:checked')?.value*1) * options.gridSize;
+
+	switch (document.querySelector('input[name="hpOption"]:checked')?.value*1)
+	{
+		case 2:
+			options.seedHp = Math.pow(options.gridSize, 2);
+			break;
+		case 1:
+			options.seedHp = options.gridSize;
+			break;
+		case 0:
+		default:
+			options.seedHp = 1;
+			break;
+	}
 }
 
 function tick()

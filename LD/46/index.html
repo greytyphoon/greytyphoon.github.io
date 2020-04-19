@@ -42,21 +42,21 @@
 			<form>
 				<b>Grid Size</b>
 				<ul>
-					<li><input type="radio" id="gridSizeOption6" name="gridSizeOption" value="gridSizeOption6"><label for="gridSizeOption6">6 &times; 6</label></li>
-					<li><input type="radio" id="gridSizeOption8" name="gridSizeOption" value="gridSizeOption8" checked><label for="gridSizeOption8">8 &times; 8</label></li>
-					<li><input type="radio" id="gridSizeOption10" name="gridSizeOption" value="gridSizeOption10"><label for="gridSizeOption10">10 &times; 10</label></li>
+					<li><input type="radio" id="gridSizeOption6" name="gridSizeOption" value="6"><label for="gridSizeOption6">6 &times; 6</label></li>
+					<li><input type="radio" id="gridSizeOption8" name="gridSizeOption" value="8" checked><label for="gridSizeOption8">8 &times; 8</label></li>
+					<li><input type="radio" id="gridSizeOption10" name="gridSizeOption" value="10"><label for="gridSizeOption10">10 &times; 10</label></li>
 				</ul>
 				<b>Large blocks</b>
 				<ul>
-					<li><input type="radio" id="largeBlocksOption0" name="largeBlocksOption" value="largeBlocksOption0"><label for="largeBlocksOption0">None</label></li>
-					<li><input type="radio" id="largeBlocksOption1" name="largeBlocksOption" value="largeBlocksOption1" checked><label for="largeBlocksOption1">Some</label></li>
-					<li><input type="radio" id="largeBlocksOption2" name="largeBlocksOption" value="largeBlocksOption2"><label for="largeBlocksOption2">Many</label></li>
+					<li><input type="radio" id="largeBlocksOption0" name="largeBlocksOption" value="0"><label for="largeBlocksOption0">None</label></li>
+					<li><input type="radio" id="largeBlocksOption1" name="largeBlocksOption" value="1"><label for="largeBlocksOption1">Some</label></li>
+					<li><input type="radio" id="largeBlocksOption2" name="largeBlocksOption" value="2" checked><label for="largeBlocksOption2">Many</label></li>
 				</ul>
 				<b>Starting HP</b>
 				<ul>
-					<li><input type="radio" id="hpOptionHigh" name="hpOption" value="hpOptionHigh" checked><label for="hpOptionHigh">High</label></li>
-					<li><input type="radio" id="hpOptionLow" name="hpOption" value="hpOptionLow"><label for="hpOptionLow">Low</label></li>
-					<li><input type="radio" id="hpOptionMin" name="hpOption" value="hpOptionMin"><label for="hpOptionMin">Sudden Death</label></li>
+					<li><input type="radio" id="hpOptionHigh" name="hpOption" value="2" checked><label for="hpOptionHigh">High</label></li>
+					<li><input type="radio" id="hpOptionLow" name="hpOption" value="1"><label for="hpOptionLow">Low</label></li>
+					<li><input type="radio" id="hpOptionMin" name="hpOption" value="0"><label for="hpOptionMin">Sudden Death</label></li>
 				</ul>
 				<a onclick="document.getElementById('options').removeAttribute('open'); startGame();">Apply</a>
 				or <a onclick="document.getElementById('options').removeAttribute('open');">cancel</a>.
