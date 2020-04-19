@@ -23,7 +23,7 @@ function spawnVirus()
 			y = position + 1; // (Needs to enable (0,11)
 			break;
 	}
-	
+
 	spawnVirusAt(x, y, 1);
 }
 
@@ -47,14 +47,25 @@ function spawnVirusAt(x, y, potency)
 
 function moveVirus(virus)
 {
-	var optimalPath = paths.find(path => path.positionX === virus.positionX && path.positionY === virus.positionY);
-	virus.positionX = optimalPath.nextX;
-	virus.positionY = optimalPath.nextY;
-	if (optimalPath.splitX)
+	var currentPosition = points.find(point => point.positionX === virus.positionX && point.positionY === virus.positionY);
+	var minimumDistance = currentPosition.links.reduce((a,b) => { return a.distance < b.distance ? a : b; }).distance;
+	if (minimumDistance > currentPosition.distance)
 	{
-		let newPotency = Math.Ceiling(virus.potency / 2);
+		// You're already as good as can be. Don't move.
+		return;
+	}
+
+	var optimalPaths = currentPosition.links.filter(link => link.distance === minimumDistance);
+	virus.positionX = optimalPaths[0].positionX;
+	virus.positionY = optimalPaths[0].positionY;
+
+	// Many equal paths: the "Zombicide" rule.
+	if (optimalPaths.length !== 1)
+	{
+		let newPotency = Math.ceil(virus.potency / optimalPaths.length);
 		virus.potency = newPotency;
-		spawnVirusAt(optimalPath.splitX, optimalPath.splitY, newPotency);
+		optimalPaths.shift();
+		optimalPaths.forEach(point => spawnVirusAt(point.positionX, point.positionY, newPotency));
 	}
 }
 

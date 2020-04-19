@@ -1,8 +1,7 @@
-var gridSize = 10;
+var gridSize = 6;
 var virusesSpawned = 0;
 var stations = [];
 var viruses = [];
-var paths= [];
 var seed;
 
 function setupMaze()
@@ -10,6 +9,7 @@ function setupMaze()
 	// Reset
 	stations = [];
 	viruses = [];
+	points= [];
 	virusesSpawned = 0
 	
 	// Setup board
@@ -52,6 +52,24 @@ function setupMaze()
 		spawnVirus();
 	}
 	refreshViruses();
+
+	// Setup Points
+	for (let x = 1; x - 1 <= gridSize; x++)
+	{
+		for (let y = 1; y - 1 <= gridSize; y++)
+		{
+			var newPoint = { positionX: x, positionY: y, links: undefined, distance: undefined };
+			
+			// Link new point to existing points
+			newPoint.links = points.filter(existingPoint => (newPoint.positionX === existingPoint.positionX && newPoint.positionY - 1 === existingPoint.positionY)
+														 || (newPoint.positionY === existingPoint.positionY && newPoint.positionX - 1 === existingPoint.positionX));
+
+			// Link existing points to new point
+			newPoint.links.forEach(l => { l.links.push(newPoint); });
+
+			points.push(newPoint);
+		}
+	}
 }
 
 function attack(station)

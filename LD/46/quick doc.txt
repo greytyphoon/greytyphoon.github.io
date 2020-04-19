@@ -22,11 +22,10 @@ SEED
 .dom (htmlElement)
 .currentHP (int)
 
-PATH
+
+POINT
 ----
 .positionX (int)
 .positionY (int)
-.nextX (int)
-.nextY (int)
-.splitX (int?)
-.splitY (int?)
+.links[] (point)
+.distance (int)
