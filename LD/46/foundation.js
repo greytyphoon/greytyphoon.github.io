@@ -33,7 +33,7 @@ function startGame()
 	// Setup board
 	let stationSize = Math.floor(document.getElementById("score").offsetWidth / options.gridSize * 0.6);
 	gameBoard.style.gridTemplateColumns = "1rem repeat(" + options.gridSize + ", " + stationSize + "px 1rem)";
-	gameBoard.style.gridTemplateRows = "1rem repeat(" + options.gridSize + ", " + stationSize + "px 1rem)"
+	gameBoard.style.gridTemplateRows = "1rem repeat(" + options.gridSize + ", " + stationSize + "px 1rem)";
 	gameBoard.style.width = "calc(" + (options.gridSize+1) + "rem + " + (options.gridSize*stationSize) + "px)";
 
 	// Setup Points
@@ -199,7 +199,7 @@ function readOptions()
 
 	options.largeBlocksCount = document.querySelector('input[name="largeBlocksOption"]:checked').value * options.gridSize;
 
-	switch (document.querySelector('input[name="hpOption"]:checked')?.value)
+	switch (document.querySelector('input[name="hpOption"]:checked').value)
 	{
 		case "2":
 			options.seedHp = Math.pow(options.gridSize, 2);
