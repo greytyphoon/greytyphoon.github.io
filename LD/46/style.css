@@ -24,7 +24,7 @@
 	font-size: .8rem;
 	border-radius: 50%; }
 .seed {
-	place-self: center;
+	place-self: stretch center;
 	background-color: var(--neon-green);
 	color: var(--html-white);
 	text-align: center;
@@ -34,7 +34,8 @@
 	z-index: 1; }
 .seed[data-under-attack]:after {
 	content: attr(data-under-attack);
-	display: block;
+	display: inline-block;
+	min-width: 1rem;
 	background-color: var(--neon-red);
 	border-radius: 50%; }
 
