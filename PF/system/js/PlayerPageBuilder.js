@@ -110,8 +110,7 @@ function addEquip(equip) {
 	if (equip.quantity)
 		returnValue.push(document.createTextNode(" x " + equip.quantity));
 	
-	let priceSpan = document.createElement("span");
-	priceSpan.className = "listBonuses";
+	let priceSpan = document.createElement("small");
 	priceSpan.appendChild(document.createTextNode(calcEquipPrice(equip)));
 	returnValue.push(priceSpan);
 	
@@ -177,8 +176,7 @@ function addSingleItemSlot(questChars, slot) {
 	return returnValue;
 }
 function addItem(item) {
-	let priceSpan = document.createElement("span");
-	priceSpan.className = "listBonuses";
+	let priceSpan = document.createElement("small");
 	priceSpan.appendChild(document.createTextNode(item.value));
 	return [buildLink(item), priceSpan];
 }
@@ -259,9 +257,7 @@ function addAncestry(character) {
 	if (!character.ancestry.archetypes)
 		return [lnk];
 
-	lnk.className = 'listBonusBreaker';
-	let archetypeDesc = document.createElement("span");
-	archetypeDesc.className = 'listBonuses';
+	let archetypeDesc = document.createElement("small");
 	archetypeDesc.appendChild(document.createTextNode(character.ancestry.archetypes.join(", ")));
 	return [lnk, archetypeDesc];
 }
@@ -284,15 +280,13 @@ function addClass(level)
 		return [buildLink(level), document.createTextNode(" " + level.quantity)];
 
 	let classSpan = document.createElement("span");
-	classSpan.className = "listBonusBreaker";
 	classSpan.appendChild(buildLink(level));
 	classSpan.appendChild(document.createTextNode(" " + level.quantity));
 
 	let spanArray = [classSpan];
 	for (let archetype of level.archetypes)
 	{
-		let currSpan = document.createElement("span");
-		currSpan.className = "listBonuses"
+		let currSpan = document.createElement("small");
 		currSpan.appendChild(buildLink(archetype));
 
 		if (archetype.title && archetype.title != "")
@@ -309,8 +303,7 @@ function addStat(characterStat) {
 	}
 
 	// We want to get: "22 (17, 2, 1, 2)"
-	let spanBonuses = document.createElement("span");
-	spanBonuses.className = "listBonuses";
+	let spanBonuses = document.createElement("small");
 	let sum  = characterStat[0];
 	let desc = characterStat[0];
 	let mods = characterStat.slice(1, characterStat.length);
