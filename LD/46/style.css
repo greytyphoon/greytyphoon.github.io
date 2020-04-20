@@ -25,6 +25,7 @@
 	border-radius: 50%; }
 .seed {
 	place-self: stretch center;
+	min-width: 1rem;
 	background-color: var(--neon-green);
 	color: var(--html-white);
 	text-align: center;
