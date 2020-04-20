@@ -27,7 +27,6 @@ function newTurn()
     showCurrentPower(currentPower);
     showCurrentCards(gameTroops[0], gameTroops[1], gameTroops[2], gameTroops[3], gameTroops[4], 1); // TODO dead players
     showCurrentMap(gameTiles);
-    log("Turn " + turnNumber + ".");
 }
 function attack(tile, troop = undefined)
 {
@@ -55,10 +54,7 @@ function attack(tile, troop = undefined)
     {
         gameTiles[tile].owner = _Red;
         gameTiles[tile].seenByPlayerRed = true;
-        log("Red attacks Tile " + tile + " and succeeds.");
     }
-    else 
-        log("Red attacks Tile " + tile + " and fails.");
     
     // check for victory
     if (gameTiles.every(function (t) { return t.seenByPlayerRed; }))
@@ -170,10 +166,7 @@ var KnotPrivate = {
         if (gameTiles[tile].owner == _Unclaimed || gameTiles[tile].capture(player, _power, _troop))
         {
             gameTiles[tile].owner = player;
-            log(PlayerName(player) + " attacks Tile " + tile + " and succeeds.");
         }
-        else 
-            log(PlayerName(player) + " attacks Tile " + tile + " and fails.");
     
         // check if others are dead
         if (!isYellowDead && gameTiles.every(function (t) { return t.owner != _Yellow; }))

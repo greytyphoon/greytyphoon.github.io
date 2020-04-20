@@ -55,23 +55,6 @@ function showCurrentMap(tiles) // tiles should be an array of Tile objects
     document.getElementById('gameBoard').innerHTML = html;
 }
 
-var nbMessage = 0;
-function log(message)
-{
-    nbMessage++
-    document.getElementById('chatterbox').innerHTML += "<p id='message" + nbMessage + "'>" + message + "</p>";
-    var currentLog = document.getElementById('message' + nbMessage);
-    setTimeout(function (){
-        currentLog.className = "chatter-shown ";
-        setTimeout(function (){
-            currentLog.className = "";
-            setTimeout(function (){
-                currentLog.parentNode.removeChild(currentLog);
-                }, 2000);
-            }, 5000);
-        }, 500);
-}
-
 function showScoutInfo(title, power, desc, mouseX, mouseY)
 {
     var floater = document.getElementById('mouseoverInfo');

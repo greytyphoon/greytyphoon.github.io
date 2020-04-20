@@ -1,28 +1,37 @@
+<!DOCTYPE html>
 <!-- ©2017 Rémi Doutre / Greytyphoon -->
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Color War</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script type="text/javascript" src="foundation.js"></script>
-    <script type="text/javascript" src="tilesNail.js"></script>
-    <script type="text/javascript" src="boardGlue.js"></script>
-    <script type="text/javascript" src="gameKnot.js"></script>
+	<meta charset="utf-8">
+	<meta name="author" content="Rémi Doutre">
+	<meta name="description" content="Greytyphoon's entry for LudumDare 46.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Color Conquest</title>
+	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript" src="foundation.js"></script>
+	<script type="text/javascript" src="tilesNail.js"></script>
+	<script type="text/javascript" src="boardGlue.js"></script>
+	<script type="text/javascript" src="gameKnot.js"></script>
 </head>
 <body onload="setupStart()">
-    <div id="mouseoverInfo" style="top: 0; left: 0; opacity : 0;"></div>
-    <div id="title">Color War</div>
+	<div class="container">
+		<header id="header">
+			<h1>Color Conquest</h1>
+			Greytyphoon's LD 38
+		</header>
 
-    <div id="powerLevel"></div>
-    <div id="cardTray"></div>
-    <div id="gameBoard"></div>
-    <div id="chatterbox"></div>
-    <div id="cornerAttack"></div>
+		<div id="mouseoverInfo" style="top: 0; left: 0; opacity : 0;"></div>
+		<div id="powerLevel"></div>
+		<div id="cardTray"></div>
+		<div id="gameBoard"></div>
+		<div id="cornerAttack"></div>
+	</div>
 
-    <!--Credits-->
-    <div id="fixedBottomRight">
-        <a onClick="alert('Rules \n ¯¯¯¯¯ \n You are Red! Click on other tiles to conquer. \n You must have owned every tile to win.')">Rules</a><br>
-        <a onClick="alert('Color War \n ¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 38 \n By Greytyphoon (Rémi Doutre) \n ©2017 Montréal, Québec, Canada')">Credits</a>
-    </div>
+	<!--Credits-->
+	<nav id="fixref">
+		<a onClick="alert('Rules \n ¯¯¯¯¯ \n You are Red! Click on other tiles to conquer. \n You must have owned every tile to win.')">Rules</a><hr>
+		<a onClick="alert('Color Conquest \n ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 38 \n By Greytyphoon (Rémi Doutre) \n ©2017 Montréal, Québec, Canada')">Credits</a>
+	</nav>
 </body>
 </html>
