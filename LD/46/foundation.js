@@ -9,7 +9,6 @@ var gameOver = false;
 var virusesSpawned = 0;
 var virusesKilled = 0;
 var turnCounter = 0;
-var timer, seconds = 0, minutes = 0;
 
 function startGame()
 {
@@ -23,7 +22,7 @@ function startGame()
 	virusesSpawned = 0;
 	virusesKilled = 0;
 	turnCounter = 0;
-	if (timer)	clearTimeout(timer);
+	timer.zero();
 	seconds = 0;
 	minutes = 0;
 
@@ -151,7 +150,7 @@ function startGame()
 function attack(station)
 {
 	if (gameOver)	return;
-	if (!timer)	timer = setTimeout(tick, 1000);
+	timer.start();
 	turnCounter++;
 
 	// Your turn, attack all 4 corners
@@ -223,23 +222,10 @@ function readOptions()
 	}
 }
 
-function tick()
-{
-	seconds++;
-	if (seconds >= 60) {
-		seconds = 0;
-		minutes++;
-	}
-
-	timer = setTimeout(tick, 1000);
-	refreshStats();
-}
-
 function finishGame()
 {
 	gameOver = true;
-	clearTimeout(timer);
-	timer = null;
+	timer.stop();
 	refreshStats();
 }
 
@@ -247,7 +233,6 @@ function refreshStats()
 {
 	document.getElementById("turnNumber").innerHTML = turnCounter;
 	document.getElementById("virusesKilled").innerHTML = virusesKilled;
-	document.getElementById("timer").innerHTML = (minutes > 9 ? minutes : "0" + minutes) + ":" + (seconds > 9 ? seconds : "0" + seconds);
 }
 
 // Returns an int between 0 and [max], excluding [max].
