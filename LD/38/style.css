@@ -1,123 +1,108 @@
 /* div#gameBoard 
  *  Contains other divs to make a 7*7 checkerboard, centered.
- *  When possible, every square will be 80px by 80px
- *  Don't specify rows: just throw all 49 tiles in there, and the rows will make themselves.
  */
-@media screen and (min-width: 768px) {
-    #gameBoard { width: 615px; }
-    #gameBoard > div{
-        width: 80px;
-        height: 80px;
-        margin: 2px; }
-}
-@media screen and (max-width: 767px) {
-    #gameBoard { 
-        min-width: 400px;
-        width: 95%; }
-    #gameBoard > div{
-        width: 13%;
-        height: 80px; }
-}
 #gameBoard {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;}
-#gameBoard > div{
-    display: inline-block;
-    transition: background-color 1s;
-    vertical-align: top;
-    text-align: left; }
+	display: grid;
+	gap: 5px;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.75rem; }
+@media screen and (min-width: 576px) {
+	#gameBoard {
+		width: 478px;
+		grid-template-rows: repeat(7, 64px); }
+}
+@media screen and (min-width: 768px) {
+	#gameBoard {
+		width: 625px;
+		grid-template-rows: repeat(7, 85px); }
+}
 
-/* tiles 
- * These are the divs contained in the game board.
- * If they are currently menaced, they should contain an <img> (directly), and they should have the menaced class.
- * They should all have an "owner-Foo" class.
- */
-.owner-Red {
-    background-color:red; }
-.owner-Yellow {
-    background-color:yellow; }
-.owner-Blue {
-    background-color:blue; }
-.owner-Green {
-    background-color:green; }
-.owner-None {
-    background-color:grey; }
+/* tiles */
+.tile.owner-red { background-color:red; }
+.tile.owner-yellow { background-color:yellow; }
+.tile.owner-blue { background-color:blue; }
+.tile.owner-green { background-color:green; }
+.tile.owner-none { background-color:grey; }
 
-/* tiles.menaced */
-.menaced:hover {
-    box-shadow: 1px 1px 12px black;
-    background-image: url(assets/sword.png);
-    background-position: right;
-    background-repeat: no-repeat; }
-.menaced.corner:hover { background-image: url(assets/sword2.png); }
+.tile.fortified { border: .5em dashed darkgrey; }
 
-/* tiles.scouted */
-.scoutBadge {
-    border-radius: 0.5em;
-    background-color: darkred;
-    color: white;
-    display: inline-block;
-    min-width: 1em;
-    text-align: center;
-    margin: 10px;}
-    
-/* div#mouseoverInfo
- *  Contains the information learned from scouting, while you hover over the (S).
- */
-#mouseoverInfo {
-    position: absolute;
-    display: inline-block;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 4px;
-    padding: 5px; }
-#mouseoverInfo > h3 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    border-bottom: 1px solid lightgrey; }
+.tile.menaced: { cursor: poointer; }
+.tile.menaced:hover {
+	box-shadow: 1px 1px 12px black;
+	background-image: url(assets/sword.png);
+	background-position: right;
+	background-repeat: no-repeat; }
+.tile.menaced.corner:hover { background-image: url(assets/sword2.png); }
 
-/* div#cardTray 
- *  Contains the 5 Troop Cards, every round.
- */
-#cardTray {
-    text-align: center; }
-#cardTray > div{
-    display: inline-block;
-    margin: 5px;
-    vertical-align: top; }
-#cardTray > div > img.disabled{
-    box-shadow: 0px 0px 8px black;
-    opacity: 0.6; }
+.tile::before, .tile::after {
+	display: inline-block;
+	min-width: 1em;
+	margin: .5em 0 0 .5em;
+	border-radius: 0.15em;
+	text-align: center;
+	color: var(--murder-black); }
+.tile:hover::before, .tile:hover::after { background-color: var(--html-white); }
 
-/* div#powerLevel
- *  Contains the player's current power. No explanation, but they'llfigure it out.
- */
-#powerLevel{ text-align: center; }
+.tile.seen::before { content: "S";}
 
-/* div#cornerAttack
- *  Greys out the whole screen to make a modal-window-looking selection
- *  When attacking in a corner, you get to choose which unused card to use. This modal window is where you make this choice.
- */
-#cornerAttack {
-    display:none;
-    background-color: rgba(0,0,0,.7);
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-#cornerAttack.in { display:block; }
-#cornerAttack > div {
-    margin-top:20vh;
-    display:inline-block;
-    background-color:white;
-    border: 2px solid black;
-    border-radius: 0.5em;
-    padding: 5px;}
-#cornerAttack > div > h3{
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    border-bottom: 1px solid lightgrey; }
-#cornerAttack > div img{ margin: 5px; }
+.tile.weak-to-king:hover::before { content: "W: \265a"; } /* Black King */
+.tile.weak-to-queen:hover::before { content: "W: \265b"; } /* Black Queen */
+.tile.weak-to-rook:hover::before { content: "W: \265c"; } /* Black Rook */
+.tile.weak-to-bishop:hover::before { content: "W: \265d"; } /* Black Bishop */
+.tile.weak-to-knight:hover::before { content: "W: \265e"; } /* Black Knight */
+.tile.weak-to-pawn:hover::before { content: "W: \265f"; } /* Black Pawn */
+
+.tile.resist-king:hover::after { content: "R: \2654"; } /* White Queen */
+.tile.resist-queen:hover::after { content: "R: \2655"; } /* White Queen */
+.tile.resist-rook:hover::after { content: "R: \2656"; } /* White Rook */
+.tile.resist-bishop:hover::after { content: "R: \2657"; } /* White Bishop */
+.tile.resist-knight:hover::after { content: "R: \2658"; } /* White Knight */
+.tile.resist-pawn:hover::after { content: "R: \2659"; } /* White Pawn */
+
+.tile.resist-king.resist-queen:hover::after { content: "R: \2654 \2655"; }
+.tile.resist-king.resist-rook:hover::after { content: "R: \2654 \2656"; }
+.tile.resist-king.resist-bishop:hover::after { content: "R: \2654 \2657"; }
+.tile.resist-king.resist-knight:hover::after { content: "R: \2654 \2658"; }
+.tile.resist-king.resist-pawn:hover::after { content: "R: \2654 \2659"; }
+.tile.resist-queen.resist-rook:hover::after { content: "R: \2655 \2656"; }
+.tile.resist-queen.resist-bishop:hover::after { content: "R: \2655 \2657"; }
+.tile.resist-queen.resist-knight:hover::after { content: "R: \2655 \2658"; }
+.tile.resist-queen.resist-pawn:hover::after { content: "R: \2655 \2659"; }
+.tile.resist-rook.resist-bishop:hover::after { content: "R: \2656 \2657"; }
+.tile.resist-rook.resist-knight:hover::after { content: "R: \2656 \2658"; }
+.tile.resist-rook.resist-pawn:hover::after { content: "R: \2656 \2659"; }
+.tile.resist-bishop.resist-knight:hover::after { content: "R: \2657 \2658"; }
+.tile.resist-bishop.resist-pawn:hover::after { content: "R: \2657 \2659"; }
+.tile.resist-knight.resist-pawn:hover::after { content: "R: \2658 \2659"; }
+
+
+ul#score, ul#cardTray {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 .75em 0; }
+
+#cardTray { text-align: center; }
+#cardTray > .troop {
+	display: inline-block;
+	font-size: 4rem; }
+#cardTray > .troop > .active { color: var(--murder-red);}
+#cardTray.active-king > #king > .standby,
+#cardTray.active-king > :not(#king) > .active,
+#cardTray.active-queen > #queen > .standby,
+#cardTray.active-queen > :not(#queen) > .active,
+#cardTray.active-rook > #rook > .standby,
+#cardTray.active-rook > :not(#rook) > .active,
+#cardTray.active-bishop > #bishop > .standby,
+#cardTray.active-bishop > :not(#bishop) > .active,
+#cardTray.active-knight > #knight > .standby,
+#cardTray.active-knight > :not(#knight) > .active,
+#cardTray.active-pawn > #pawn > .standby,
+#cardTray.active-pawn > :not(#pawn) > .active { display: none; }
+
+#score {
+	display: grid;
+	grid-template-columns: 1fr 1fr; }
+ul#score > li:last-child { text-align: right; }

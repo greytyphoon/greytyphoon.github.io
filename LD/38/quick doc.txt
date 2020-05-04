@@ -1,32 +1,27 @@
 
 TILE
 ----
-.number (int)
-.costToCapture (int)
+.index (int)
+.fortified (bool)
 .seenByPlayerRed (bool)
 .owner (int)
-.name (string)
-.description (string)
-.capture (function (
-    int attacker, 
-    int advancePoints, 
-    int troop) 
-    => bool)
+.weakTo (int)
+.resist[] (int)
+.dom (htmlElement)
 
-
-TROOP
+Troop
 -----
-0 -> Archers
-1 -> Knights
-2 -> Lancers
-3 -> Assassins
-4 -> Monks
+_King = 0;
+_Queen = 1;
+_Rook = 2;
+_Bishop = 3;
+_Knight = 4;
+_Pawn = 5;
 
-
-PLAYER
+Player
 ------
-0 -> Unclaimed
-1 -> Red
-2 -> Blue
-3 -> Yellow
-4 -> Green
+_Unclaimed = 0;
+_Red = 1;
+_Blue = 2;
+_Yellow = 3;
+_Green = 4;

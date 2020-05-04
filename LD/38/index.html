@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ©2017 Rémi Doutre / Greytyphoon -->
+<!-- ©2017-2020 Rémi Doutre / Greytyphoon -->
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -13,6 +13,7 @@
 	<script type="text/javascript" src="tilesNail.js"></script>
 	<script type="text/javascript" src="boardGlue.js"></script>
 	<script type="text/javascript" src="gameKnot.js"></script>
+	<script type="text/javascript" src="../46/timer.js"></script>
 </head>
 <body onload="setupStart()">
 	<div class="container">
@@ -21,16 +22,46 @@
 			Greytyphoon's LD 38
 		</header>
 
-		<div id="mouseoverInfo" style="top: 0; left: 0; opacity : 0;"></div>
-		<div id="powerLevel"></div>
-		<div id="cardTray"></div>
+		<ul id="score">
+			<li><b>Turn</b> #<span id="turnNumber"></span></li>
+			<li><span id="timer"></span></li>
+		</ul>
+		<center>Attack as:</center>
+		<ul id="cardTray" class="active-king">
+			<li id="king" class="troop">
+				<span class="active">&#x265a;</span>
+				<span class="standby">&#x2654;</span></li>
+			<li id="queen" class="troop">
+				<span class="active">&#x265b;</span>
+				<span class="standby">&#x2655;</span></li>
+			<li id="rook" class="troop">
+				<span class="active">&#x265c;</span>
+				<span class="standby">&#x2656;</span></li>
+			<li id="bishop" class="troop">
+				<span class="active">&#x265d;</span>
+				<span class="standby">&#x2657;</span></li>
+			<li id="knight" class="troop">
+				<span class="active">&#x265e;</span>
+				<span class="standby">&#x2658;</span></li>
+			<li id="pawn" class="troop">
+				<span class="active">&#x265f;</span>
+				<span class="standby">&#x2659;</span></li>
+		</ul>
 		<div id="gameBoard"></div>
-		<div id="cornerAttack"></div>
 	</div>
 
 	<!--Credits-->
 	<nav id="fixref">
-		<a onClick="alert('Rules \n ¯¯¯¯¯ \n You are Red! Click on other tiles to conquer. \n You must have owned every tile to win.')">Rules</a><hr>
+		<a onClick="alert('Rules \n ¯¯¯¯¯ \n You are Red! Click on other tiles to conquer. \n You must have owned every tile to win.')">Rules</a>
+		<hr>
+
+		<a onclick="document.getElementById('restartConfirm').style.display = 'inline-block';">Restart</a>
+		<span id="restartConfirm" style="display: none;">
+			&gt; <a onclick="document.getElementById('restartConfirm').style.display = 'none'; setupStart();">confirm</a>
+			or <a onclick="document.getElementById('restartConfirm').style.display = 'none';">cancel</a>.
+		</span>
+		<hr>
+
 		<a onClick="alert('Color Conquest \n ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 38 \n By Greytyphoon (Rémi Doutre) \n ©2017 Montréal, Québec, Canada')">Credits</a>
 	</nav>
 </body>
