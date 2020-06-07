@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Grey's Investigator</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		#tblInventory { flex: 2; }
+		#tblInventory td + td, #tblInventory th + th { text-align: right; }
+	</style>
+</head>
+<body>
+	<nav id="fixref">
+		<a href="../notes/terres-sacrees/index.html">Inventaire de groupe</a><br>
+		<a href="Remy.html">Familiar</a><br>
+		<a href="https://greytyphoon.space/PF/index.html">Table of Contents</a>
+	</nav>
+
+	<div class="container">
+		<header>
+			<h1>Jebif Tanaxis Orzu Arivèr Kasmop Horybar Ponti Lohim, faeries' primal flair</h1>
+			CG Small Humanoid
+			<div id="xp">460 / 1,000</div>
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>10 <small>A-, L5</small></dd>
+
+				<dt>Dex</dt>
+				<dd>18 <small>A, B, L1, L5</small></dd>
+
+				<dt>Con</dt>
+				<dd>14 <small>A, L1</small></dd>
+
+				<dt>Int</dt>
+				<dd>16 <small>C, L1, L5</small></dd>
+
+				<dt>Wis</dt>
+				<dd>16 <small>B, L1, L5</small></dd>
+
+				<dt>Cha</dt>
+				<dd>12 <small>A</small></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Ancestry</dt>
+				<dd><a href="https://2e.aonprd.com/Ancestries.aspx?ID=3">Gnome</a></dd>
+				<dd class="archetype">Sensate Heritage</dd>
+
+				<dt>Background</dt>
+				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=5">Artist</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://paizo-images.s3-us-west-2.amazonaws.com/image/download/PZO2105+Character+Playtest.pdf">Investigator (Playtest)</a> 8</dd>
+				<dd class="archetype">Forensic Methodology</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd><a href="https://2e.aonprd.com/Deities.aspx?ID=92">Count Ranalc</a></dd>
+
+				<dt>Senses</dt>
+				<dd title="Gnome Ancestry"><a href="https://2e.aonprd.com/Rules.aspx?ID=416">Low-light vision</a></dd>
+				<dd title="Sensate Gnome Heritage"><a href="https://2e.aonprd.com/Rules.aspx?ID=412">Imprecise</a>
+					<a href="https://2e.aonprd.com/MonsterAbilities.aspx?ID=33">Scent</a> 30ft</dd>
+
+				<dt>Speed</dt>
+				<dd>25 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Elven, Gnomish, Sylvan, Draconic, Orcish</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>gnome 1</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=29">Gnome Obsession</a></dd>
+			<dt>investigator 1</dt>
+			<dd><a href="#">Known Weaknesses</a></dd>
+			<dt>investigator 2</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=665">Alchemist Dedication</a></dd>
+			<dt>general 3</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=855">Toughness</a></dd>
+			<dt>investigator 4</dt>
+			<dd><a href="#">Scalpel's Point</a></dd>
+			<dt>gnome 5</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=995">Eclectic Obsession</a></dd>
+			<dt>investigator 6</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=669">Expert Alchemy</a></dd>
+			<dt>general 7</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=753">AP</a> &gt;
+				<a href="https://2e.aonprd.com/Feats.aspx?ID=25">Animal Accomplice</a></dd>
+			<dt>investigator 8</dt>
+			<dd class="br"><a href="#">Predictive Purchase</a></dd>
+
+			<dt>background</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=844">Specialty Crafting</a> (Alchemy)</dd>
+			<dt>investigator 1</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=760">Battle Medecine</a></dd>
+			<dd><a href="#">Forensic Acumen</a></dd>
+			<dt>alchemist 2</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=752">Alchemical Crafting</a></dd>
+			<dt>skill 2</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=771">Continual Recovery</a></dd>
+			<dt>skill 3</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=754">Arcane Sense</a></dd>
+			<dt>skill 4</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=834">Recognize Spell</a></dd>
+			<dt>skill 5</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=860">Unmistakable Lore</a></dd>
+			<dt>skill 6</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=864">Ward Medic</a></dd>
+			<dt>skill 7</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=798">Inventor</a></dd>
+			<dt>skill 8</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=792">Impeccable Crafter</a></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>15</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=1" title="Trained Class (Free)">Acrobatics</a>
+				<small>4 dex, 2 prf, 8 lvl, <u title="Boots of Elvenkind">1 item</u></small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=3" title="Trained by Class(Free)">Athletics</a>
+				<small>0 str, 2 prf, 8 lvl</small>
+			</li>
+			<li>
+				<strong>18</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=4" title="Trained by Background, Expert by Increase (lvl3), Master by Increase (lvl8)">Crafting</a>
+				<small>3 int, 6 prf, 8 lvl, <u title="Crafter's Tools (expanded)">1 item</u></small>
+				<div class="circumstancialBonus"><u title="Specialty Crafting: 2 Master">+2 circumstance</u> for alchemy</div>
+				<div class="circumstancialBonus"><u title="Impeccable Crafter">Success becomes Critical</u> for alchemy</div>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=5" title="Trained by Class (Free)">Deception</a>
+				<small>1 cha, 2 prf, 8 lvl</small>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=6" title="Trained by Class (Free)">Diplomacy</a>
+				<small>1 cha, 2 prf, 8 lvl</small>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=7" title="Trained by Class (Free)">Intimidation</a>
+				<small>1 cha, 2 prf, 8 lvl</small>
+			</li>
+			<li>
+				<strong>18</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=9" title="Trained by Class (Fixed by Methodology), Expert by Increase (lvl2), Master by Increase (lvl7)">Medecine</a>
+				<small>3 wis, 6 prf, 8 lvl, <u title="Healer's Tools (expanded)">1 item</u></small>
+				<div class="circumstancialBonus"><u title="Forensic Methodology">Every hour</u>, <u title="Battle Medecine">use it as one action</u> and <u title="Forensic Methodology, 8 investigator">heal 8 extra HP</u>.</div>
+			</li>
+			<li>
+				<strong>13</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=14" title="Trained by Class (Fixed)">Society</a>
+				<small>3 int, 2 prf, 8 lvl</small>
+			</li>
+			<li class="br">
+				<strong>15</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=15" title="Trained by Class(Free)">Stealth</a>
+				<small>4 dex, 2 prf, 8 lvl, <u title="Cloak of Elvenkind">1 item</u></small>
+			</li>
+			<li>
+				<strong>15</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=2" title="Trained by Dedication (Crafting was already Trained), Expert by Increase (lvl4)">Arcana</a>
+				<small>3 int, 4 prf, 8 lvl</small>
+			</li>
+			<li>
+				<strong>15</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=10" title="Trained by Class (Free), Expert by Increase (lvl5)">Nature</a>
+				<small>3 wis, 4 prf, 8 lvl</small>
+			</li>
+			<li>
+				<strong>13</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=10" title="Trained by Class (Free)">Occultist</a>
+				<small>3 int, 4 prf, 8 lvl</small>
+			</li>
+			<li class="br">
+				<strong>15</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=13" title="Trained by Class (Free), Expert by Increase (lvl6)">Religion</a>
+				<small>3 wis, 2 prf, 8 lvl</small>
+			</li>
+			<li>
+				<strong>17</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Background, Expert by Gnome Obsession, Master by Gnome Obsession">Art Lore</a>
+				<small>3 int, 6 prf, 8 lvl</small>
+			</li>
+			<li>
+				<strong>17</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Background, Expert by Gnome Obsession, Master by Gnome Obsession">Dairy Lore</a>
+				<small>3 int, 6 prf, 8 lvl</small>
+			</li>
+			<li>
+				<strong>13</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Eclectic Obsession">[Flexible] Lore</a>
+				<small>3 int, 2 prf, 8 lvl</small>
+			</li>
+			<li class="circumstancialBonus"><u title="Unmistakable Lore">Fumble becomes failure</u> for all lores</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<ul class="summations">
+				<li class="br">
+					<strong>17</strong>
+					<b>Perception</b>
+					<small>3 wis, 6 prf, 8 lvl</small>
+				</li>
+				<li>
+					<strong>96</strong>
+					<b>HP</b>
+					<small>8 gnome, 8 lvl: 8 investigator, 2 con, <u title="Toughness">1 feat</u></small>
+				</li>
+				<li class="br">
+					<strong>26</strong>
+					<b>AC</b>
+					<small>10, 4 dex, 2 prf, 8 lvl, <u title="1 Leather Armor, 1 Potency">2 item</u></small>
+					<div class="circumstancialBonus">+2 circ (Shield)</div>
+				</li>
+				<li>
+					<strong>12</strong>
+					<b>Fort</b>
+					<small>2 con, 2 prf, 8 lvl</small>
+				</li>
+				<li>
+					<strong>16</strong>
+					<b>Ref</b>
+					<small>4 dex, 4 prf, 8 lvl</small>
+				</li>
+				<li>
+					<strong>15</strong>
+					<b>Will</b>
+					<small>3 wis, 4 prf, 8 lvl</small>
+				</li>
+			</ul>
+			<div>
+				<!--Rapier-->
+				<div class="weapon">
+					<h2>Rapier +1 Striking <b>P</b></h2>
+					<div class="summation"><strong>+17</strong>/<strong>12</strong>/<strong>7</strong> vs AC <small>4 dex, 4 prf, 8 lvl, <u title="Potency Rune">1 item</u></small></div>
+					<div class="summation"><strong>2d6+2</strong> <small>0 str, 2 w.spec</small></div>
+					<div class="circumstancialBonus">Deadly d8, Disarm, Finesse.</div>
+				</div>
+
+				<!--ShortBow-->
+				<div class="weapon">
+					<h2>ShortBow +1 Striking <b>P</b> <b>60ft</b></h2>
+					<div class="summation"><strong>+17</strong>/<strong>12</strong>/<strong>7</strong> vs AC <small>4 dex, 4 prf, 8 lvl, <u title="Potency Rune">1 item</u></small></div>
+					<div class="summation"><strong>2d6+2</strong> <small>2 w.spec</small></div>
+					<div class="circumstancialBonus">Deadly d10.</div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+		</section>
+		<section class="row">
+			<div>
+				<h2>Study Suspect <u title="Damage increases at 1st, 5th, 9th, 13th, 17th">+1 circumstance, +2d6</u></h2>
+				<p>
+					As one action, study an enemy with a Perception check vs Will DC.<br>
+					<span title="Scalpel's point">Also use a Medecine check vs Fort DC. On crit, add 1d6 bleeding.</span><br>
+					During the same action, you can <a href="https://2e.aonprd.com/Actions.aspx?ID=26">recall knowledge</a>. On crit, allies get +1.
+				</p>
+			</div>
+			<div>
+				<h2>Take the case <u title="Increases at 1st, 9th">+1 circumstance</u></h2>
+				<p>Designate one item, creature, or room as your case. Grant the bonus to allies as a reaction, every 10 min.</p>
+				
+				<h2>Infused Reagents <u title="8 alchemist, 1 familiar">9 reagents</u></h2>
+				<p>Pick 9 recipes each morning and prepare 2 items of each.</p>
+			</div>
+		</section>
+
+		<!-- title SPELLS -->
+		<hr>
+		<section class="row">
+			<div>
+				<h2>Innate Arcane Spells</h2>
+				<p class="summation">
+					<strong>13</strong>
+					<b>Attack</b>; 23 <b>DC</b>
+					<small>10, 3 int, 2 prf, 8 lvl</small>
+				</p>
+			</div>
+			<div>
+				<h2>Innate Arcane Cantrips</h2>
+				<ul>
+					<li title="Arcane Sense"><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=66">detect magic</a>,</li>
+					<li title="Cloak of Elvenkind"><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=132">ghost sound</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Items</h2>
+				<ul>
+					<li title="Cloak of Elvenkind"><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=164">invisibility</a> &times 2/day.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="mundaneItemsWrapper">
+			<li title="L Bulk">Rations (10)</li>
+			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools (expanded)</a></li>
+			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=2">Alchemist's Tools</a></li>
+			<li title="L Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=6">Basic Crafter's Book</a></li>
+			<li>Backpack</li>
+			<li title="L Bulk">Bedroll</li>
+			<li>Bandolier</li>
+			<li class="br">Sheath</li>
+			<li>Flint &amp; Steel</li>
+			<li title="L Bulk">Rope</li>
+			<li>Signal whistle</li>
+			<li>Soap</li>
+			<li title="L Bulk">Waterskin</li>
+		</ul>
+		<ul id="magicItemsWrapper">
+			<li title="0 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=427">Crafter's Eyepiece</a></li>
+			<li title="L Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=413">Boots of Elvenkind</a></li>
+			<li title="L Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=424">Cloak of Elvenkind</a></li>
+			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=249">Bag of Holding</a>, type 1</a></li>
+		</ul>
+
+		<ul id="inventory">
+			<!--Weapons-->
+			<li title="1 Bulk">
+				<a href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold-iron</a>
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=36">Rapier</a> +1
+				<a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
+				<small>martial, 1d6P, 1Hand, Sword Group, Deadly d8, Disarm, Finesse.</small>
+			</li>
+			<li title="1 Bulk" class="br">
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=75">Composite Shortbow</a> +1
+				<a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
+				<small>martial, 1d6P, 1+Hand, Bow Group, Range 60ft, Deadly d10.</small>
+			</li>
+
+			<!--Armors-->
+			<li title="1 Bulk">
+				<a href="https://2e.aonprd.com/Armor.aspx?ID=4">Leather Armor</a> +1
+				<small>light, 1 armor, 4 dex, -1 acp, &ndash;ft, 10 str, &ndash; Group.</small>
+			</li>
+			<li title="1 Bulk" class="br">
+				<a href="https://2e.aonprd.com/Equipment.aspx?ID=325">Spellguard Shield</a> [Magical Parmesan Wheel]
+				<small>2 shield, -0ft, 6 Hard, 24 HP.</small>
+			</li>
+
+			<!--Consumables-->
+			<li>2 &times; Lesser <a href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a>
+				<small><u title="Lesser">+2 item</u> vs poison, lasts 6h</small></li>
+			<li>2 &times; Lesser <a href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a>
+				<small><u title="Lesser">+2 item</u> vs disease, lasts 24h</small></li>
+			<li>2 &times; Lesser <a href="https://2e.aonprd.com/Equipment.aspx?ID=89">Darkvision Elixir</a>
+				<small>darkvision, lasts 10m</small></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p lang="fr">Jebif est un Tyromancien, un magicien du fromage. Il a un nez absurdement aiguisé et identifie les enemis avec ça.
+				Ses bombes et autres concoctions d'alchimiste sont reflavorées pour être du fromage fondu qui explose sur ses ennemis, comme son bouclier de parmesan.</p>
+			<p lang="fr">Son nom complet est Jebif Tanaxis Orzu Arivèr Kasmop Horybar Ponti Lohim, du clan des Perspective-Claire-Et-Enrichissante-Des-Montagnes,
+				mais il accepte de se faire appeller Jebif du clan des Échos.</p>
+			<p lang="fr">Son familier, Rémy, lui a été offert par une fée florale pour excuser un malentendu.
+				Il est doué d'une intelligence surnaturelle.
+				Il connait la préparation du fromage et peut aider en empêchant un oubli; il aide aussi en allant chercher des potions en cas d'urgence.</p>
+			<p lang="fr">Jebif est un suivant du compte Ranalc, et il associe le processus de création du fromage à une espèce d'exception magique dans la nature, qui remonte à lui il y a très longtemps.
+				Il était un commerçant et parfumier, maintenant ruiné, qui ne se souciait pas des allégeances et offrait ses parfums à tous dans le Feywild jusqu'à ce que la Green Mother le punisse de "fournir des ennemis". Il ne pardonnera jamais à son culte.</p>
+			<dl class="charInfo">
+				<dt>Quality</dt>
+				<dd>Tolerant and quick-witted</dd>
+
+				<dt>Drawback</dt>
+				<dd>Obsessive</dd>
+
+				<dt>Eyes</dt>
+				<dd>Blue</dd>
+
+				<dt>Hair</dt>
+				<dd>Red and Blonde mix</dd>
+
+				<dt>Age</dt>
+				<dd>489</dd>
+
+				<dt>Weight</dt>
+				<dd>74 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>3' 2''</dd>
+			</dl>
+		</section>
+		<section class="row noprint">
+			<div>
+				<h2>Known Recipes</h2>
+				<ul>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=74">Acid Flask</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=75">Alchemist's Fire</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=76">Bottled Lightning</a>,</li>
+					<li class="br"><a href="https://2e.aonprd.com/Equipment.aspx?ID=77">Frost Vial</a>,</li>
+
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=84">Bravo's Brew</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=85">Cat's Eye Elixir</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=88">Comprehension Elixir</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=90">Eagle-eye Elixir</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=91">Elixir of Life</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=93">Infiltrator's Elixir</a>,</li>
+					<li class="br"><a href="https://2e.aonprd.com/Equipment.aspx?ID=134">Silversheen</a>,</li>
+
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=87">Cognitive Mutagen</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=474">Energy Mutagen</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=94">Juggernaut Mutagen</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=97">Quicksilver Mutagen</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=100">Serene Mutagen</a>,</li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=101">Silvertongue Mutagen</a>.</li>
+				</ul>
+			</div>
+
+			<div>
+				<h2>Unrelated Cheeses</h2>
+				<ul>
+					<li>Camembert,</li>
+					<li>Havarti,</li>
+					<li>Gruyere,</li>
+					<li class="br">Bleu,</li>
+
+					<li>Goat,</li>
+					<li>Gouda,</li>
+					<li>Cheddar,</li>
+					<li>Feta,</li>
+					<li>Monterey Jack,</li>
+					<li>Bocconcini,</li>
+					<li>Brie,</li>
+					<li>Colby,</li>
+					<li class="br">&mdash;</li>
+
+					<li>Mozzarella,</li>
+					<li>Stilton,</li>
+					<li>Gorgonzola,</li>
+					<li>Emmental,</li>
+					<li>Ricotta,</li>
+					<li>Marble.</li>
+				</ul>
+			</div>
+
+			<table id="tblInventory">
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Level</th>
+						<th>Value</th>
+						<th>Bulk</th>
+						<th>Invest</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold-iron</a> rapier</td>
+						<td>2</td>
+						<td>20</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools (expanded)</a></td>
+						<td>3</td>
+						<td>50</td>
+						<td>1</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=427">Crafter's Eyepiece</a></td>
+						<td>3</td>
+						<td>60</td>
+						<td>&nbsp;</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td>Rapier <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">+1</a> <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">Striking</a></td>
+						<td>4</td>
+						<td>100</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Shortbow <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">+1</a> <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">Striking</a></td>
+						<td>4</td>
+						<td>100</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=249">Bag of Holding</a>, Type I</td>
+						<td>4</td>
+						<td>75</td>
+						<td>1</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Leather Armor <a href="https://2e.aonprd.com/Equipment.aspx?ID=278">+1</a></td>
+						<td>5</td>
+						<td>160</td>
+						<td>&nbsp;</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=413">Boots of Elvenkind</a></td>
+						<td>5</td>
+						<td>145</td>
+						<td>L</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=325">Spellguard Shield</a></td>
+						<td>6</td>
+						<td>250</td>
+						<td>1</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=424">Cloak of Elvenkind</a></td>
+						<td>7</td>
+						<td>360</td>
+						<td>L</td>
+						<td>1</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Total</th>
+						<th>&nbsp;</th>
+						<th>1320</th>
+						<th>3.2</th>
+						<th>4</th>
+				</tfoot>
+			</table>
+		</section>
+	</div>
+</body>
+</html>
