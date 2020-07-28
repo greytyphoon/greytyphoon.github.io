@@ -5,6 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Venture</title>
 	<link rel="stylesheet" href="basic.css">
+	<style>
+		dl { margin-left: 3em; }
+		dt { font-weight: bold; }
+		small { color: var(--html-darkgrey); }
+		table > tfoot > tr > td { border-top: 1px solid var(--html-darkgrey); }
+		table#tbl-proficiency > thead > tr > th { min-width: 3em; max-width: 3em; }
+		table#tbl-proficiency > thead > tr > th:nth-child(6) { min-width: unset; max-width: unset; }
+		table#tbl-proficiency > tbody > tr > td { text-align: center; }
+		table#tbl-proficiency > tbody > tr > td:nth-child(6) { text-align: unset; }
+	</style>
 </head>
 <body>
 	<div class="container">
@@ -18,26 +28,20 @@
 				<li>
 					PHYSICAL
 					<ul>
-						<li>Acrobatics</li>
-						<li>Athletics</li>
-						<li>Performance</li>
+						<li>Stamina <small>replaces HP &amp; Fortitude</small></li>
+						<li>Melee Weapons</li>
+						<li>Ranged Weapons</li>
+						<li class="br">Armors</li>
+						<li>Acrobatics <small>replaces Reflex</small></li>
+						<li>Athletics <small>replaces Climb &amp; Swim</small></li>
 						<li>Stealth</li>
-						<li>Thievery</li>
-						<li>Stamina</li>
-						<li>Fortitude</li>
-						<li>Reflex</li>
-						<li>Will</li>
-						<li>Weapons - Simple</li>
-						<li>Weapons - Martial</li>
-						<li>Weapons - Exotic</li>
-						<li>Armors - Simple</li>
-						<li>Armors - Martial</li>
-						<li>Armors - Exotic</li>
+						<li>Thievery <small>replaces Disable Device &amp; Sleight of Hand</small></li>
 					</ul>
 				</li>
 				<li>
 					MAGIC
 					<ul>
+						<li>Concentration <small>replaces Will</small></li>
 						<li>Abjuration</li>
 						<li>Conjuration</li>
 						<li>Divination</li>
@@ -54,17 +58,18 @@
 						<li>Diplomacy</li>
 						<li>Bluff</li>
 						<li>Intimidation</li>
-						<li>Insight</li>
+						<li>Insight <small>replaces Sense Motive</small></li>
 					</ul>
 				</li>
 				<li>
-					KNOWLEDGE/LORE
+					LORE
 					<ul>
 						<li>Crafting</li>
-						<li>Investigation</li>
+						<li>Cosmology <small>replaces Religion &amp; Know Planes</small></li>
+						<li>Investigation <small>replaces Initiative* &amp; Perception*</small></li>
 						<li>Medicine</li>
 						<li>Nature</li>
-						<li>Religion</li>
+						<li>Performance</li>
 						<li>Society</li>
 					</ul>
 				</li>
@@ -94,34 +99,70 @@
 				<li><b>Specific Weapons</b></li>
 				<li><b>Specific Spells</b></li>
 				<li><b>Low-light vision</b> if everyone has is, it's just complicated for nothing. Scrap.</li>
+				<li><b>Martial &amp; Exotic Weapons</b> all weapons are abstract and have one "weapon quality". Better weapons are a mechanic.</li>
+				<li><b>Medium &amp; Heavy Armors</b> all armors are abstract. It makes no sense if we no longer have dex-based / not-dex-based characters.</li>
 			</ul>
 		</details>
 
 		<h2>Character creation: Skills</h2>
 		<p>
 			In Venture, everything is a skill. See the full list in the sidebar.
-			You'll notice that even HP (Stamina), Fortitude, Reflex, and Weapons are now skills.
+			You'll notice that many unusual things are now skills.
 			That's because it all follows the TEML Proficiency system, so everything has been regrouped.
 			Now when you roll a D20, it's a skill check.
 		</p>
 		<p>Perception has been removed in favor of 5E's Insight and Investigate.</p>
 		<p>Arcana, Occultism, etc have been replaced with the specific schools of magic. Every spellcaster must become trained in a school to cast its spells.</p>
+		<p>Your score in each skill is determined by three factors:</p>
+		<ol>
+			<li>your level, but not the full value, it gives a bonus similar to 5E,</li>
+			<li>your proficiency, on a scale of Trained / Expert / Master / Legendary,</li>
+			<li>having an Edge, which represents your character's greatest strength, giving an extra +1.</li>
+		</ol>
+		<p>We are keeping the rule that limits being an Expert / Master / Legendary to certain later levels.</p>
 		<p>
-			Your score in each skill is determined by three factors:<br>
-			1) your level, but not the full value, it gives a bonus similar to 5E,<br>
-			2) your proficiency, where Trained/Expert/Master/Legendary proficiency gives +3/5/6/7,<br>
-			3) having an Edge, which represents your character's greatest strength, giving an extra +1.
+			The proficiencies are changed from +2/4/6/8 to feel more varied,
+			to have a bigger impact when you get trained despite not including level (PF1's initial +3 was nice!),
+			and to limit the advantage of legendary proficiency (increments of +1 instead of +2 don't change the game as much).
 		</p>
 		<p>
-			TEML is very similar to PF2's system.
-			We are keeping the rule that limits being an Expert to level 2+, Master to level 7+, Legendary to level 15+.
-			The proficiencies are +3/5/6/7 instead of +2/4/6/8 to feel more varied, to have a bigger impact when you get trained (PF1's initial +3 was nice!), and to limit the advantage of legendary proficiency (caps at +7, not +8).
+			DCs have changed a little.
+			An active character is always the one who rolls, choosing which skill to attack with.
+			A defensive character chooses a skill to defend with, adding <b>12</b> to their proficiency bonus.
+			For example, with <i>fireball</i>, the mage would roll <b>d20+Evocation</b> against the goblin's <b>12+Acrobatics</b>.
+			In this example, if there were 6 goblins, the mage would roll 6 times.
+			12 reflects the fact that characters invest more in offense than defense, and we can't assume the target's defense will be trained, so this helps everyone's survivability a bit.
 		</p>
 		<p>
-			There is a technicality with Weapons and Armors:
-			if you want to be Expert at Martial Weapons, you must be Expert at Simple weapons;
-			similarly, if you want to be Expert at Exotic Weapons, you must be Expert at Martial weapons.
+			So far the table goes to level 15. You can introduce a higher +1 proficiency, Godlike, to scale it up to 20.
 		</p>
+		<table id="tbl-proficiency" class="br">
+			<thead>
+				<tr><th>Level</th>	<th>T</th>	<th>E (+2)</th>	<th>M (+1)</th>	<th>L (+1)</th>	<th>Features</th></tr>
+			</thead>
+			<tbody>
+				<tr><td>1st</td>	<td>3</td>	<td>-</td>		<td>-</td>		<td>-</td>		<td>10 skill increases, 1 quirk, 1 edge, 2 mechanics</td></tr>
+				<tr><td>2nd</td>	<td>3</td>	<td>5</td>		<td>-</td>		<td>-</td>		<td>+2 skill increases</td></tr>
+				<tr><td>3rd</td>	<td>4</td>	<td>6</td>		<td>-</td>		<td>-</td>		<td>+2 skill increases</td></tr>
+				<tr><td>4th</td>	<td>4</td>	<td>6</td>		<td>-</td>		<td>-</td>		<td>+2 skill increases, +1 edge</td></tr>
+				<tr><td>5th</td>	<td>4</td>	<td>6</td>		<td>-</td>		<td>-</td>		<td>+2 skill increases, +1 mechanic</td></tr>
+
+				<tr><td>6th</td>	<td>4</td>	<td>6</td>		<td>7</td>		<td>-</td>		<td>+2 skill increases</td></tr>
+				<tr><td>7th</td>	<td>4</td>	<td>6</td>		<td>7</td>		<td>-</td>		<td><b>+5</b> skill increases</td></tr>
+				<tr><td>8th</td>	<td>5</td>	<td>7</td>		<td>8</td>		<td>-</td>		<td>+2 skill increases</td></tr>
+				<tr><td>9th</td>	<td>5</td>	<td>7</td>		<td>8</td>		<td>-</td>		<td>+2 skill increases, +1 edge</td></tr>
+				<tr><td>10th</td>	<td>5</td>	<td>7</td>		<td>8</td>		<td>-</td>		<td>+2 skill increases, +1 mechanic</td></tr>
+
+				<tr><td>11th</td>	<td>5</td>	<td>7</td>		<td>8</td>		<td>9</td>		<td>+2 skill increases</td></tr>
+				<tr><td>12th</td>	<td>5</td>	<td>7</td>		<td>8</td>		<td>9</td>		<td><b>+5</b> skill increases</td></tr>
+				<tr><td>13th</td>	<td>6</td>	<td>8</td>		<td>9</td>		<td>10</td>		<td>+2 skill increases</td></tr>
+				<tr><td>14th</td>	<td>6</td>	<td>8</td>		<td>9</td>		<td>10</td>		<td>+2 skill increases, +1 edge</td></tr>
+				<tr><td>15th</td>	<td>6</td>	<td>8</td>		<td>9</td>		<td>10</td>		<td>+2 skill increases, +1 mechanics</td></tr>
+			<tbody>
+			<tfoot>
+				<tr><td></td>	<td></td>	<td></td>		<td></td>		<td></td>		<td>44 skill increases, 1 quirk, 4 edges, 5 mechanics</td></tr>
+			</tfoot>
+		</table>
 
 		<h2>Character creation: Mechanics</h2>
 		<p>
@@ -131,33 +172,108 @@
 			resources you can spend to gain some kind of advantage,
 			or special senses or movements.
 		</p>
+		<dl>
+			<dt>Magus Training</dt>
+			<dd>
+				Whenever you cast a spell with a range of touch, as part of the actions required to cast it, you can use your Melee Weapons proficiency to determine if it hits instead of the spell's school of magic.
+				This counts as making a normal melee attack with your weapon, including applying damage and weapon qualities.
+				Casting a spell this way does not provoke attacks of opportunity if you are Expert or better in Melee Weapons. Casting a spell gains the [Manipulate] trait, if it didn't already have it.
+				If you do not have the Spellcasting mechanic, choose one school of magic. You can cast one spell of that school per day. You cannot cast cantrips. You can Refocus.
+			</dd>
+			<dt>Spellcasting</dt>
+			<dd>
+				Choose two schools of magic in which you are trained or better.<br>
+				You can always cast <i>detect magic</i>, <i>identify spell</i>, <i>mage hand</i>, <i>prestidigitation</i>, and any cantrip from a school of magic you chose.<br>
+				You can cast a number of spells each day equal to the <b>best</b> proficiency bonus you have in a school of magic you chose.<br>
+				You can use the Refocus mechanic to regain spells per day, but like refocus, you can't chain it.<br>
+				You can choose the Spellcasting mechanic more than once; if you do, pick two other schools of magic, and you can cast two extra spells per day.
+			</dd>
+			<dt>Weapon Training</dt>
+			<dd>
+				During your daily preparations, you can choose a Weapon Quality. Attacks you make with any weapons today will have that quality.
+				If you are a Master, choose two Weapon Qualities. If you are Legendary, choose three.
+			</dd>
+			<dt>Wings</dt>
+			<dd class="br">
+				You gain a Fly speed of 40ft.
+			</dd>
+			<dt>Animal Companion</dt>
+			<dt>Challenge / Smite</dt>
+			<dt>Channel Energy</dt>
+			<dt>Flurry of Blows</dt>
+			<dt>Inspire Allies</dt>
+			<dt>Kinesis (a.k.a. "Bending")</dt>
+			<dt>Metamagics</dt>
+			<dt>Rage</dt>
+			<dt>Parry and Riposte</dt>
+			<dt>Sneak Attack</dt>
+			<dt>Wild Shape</dt>
+		</dl>
 
 		<h2>Character creation: Quirks</h2>
 		<p>
-			Every character gets two quirks.
+			Every character gets a quirk.
 			They have less effects than full-fledged Mechanics, but help characters feel unique.
-			For now, the only Quirks I've thought of are 1) get an Edge on a skill, 2) get Darkvision.
 		</p>
+		<dl>
+			<dt>Arcane Sense</dt>
+			<dd>You can always cast <i>detect magic</i>, <i>identify spell</i>, <i>mage hand</i> and <i>prestidigitation</i>.</dd>
+			<dt>Darkvision</dt>
+			<dd>You can see in complete darkness up to 60 ft, but only in black and white. Depth perception is harder in darkvision; treat this as an imprecise sense.</dd>
+			<dt>Favored Enemy</dt>
+			<dd>Choose a creature type and a Weapon Quality. Whenever you make a weapon attack against a creature with that type, apply the Weapon Quality as if your weapon had it also.
+				This applies to melee or ranged attacks. If you chose "Outsider" or "Humanoid", you must also select a subtype.</dd>
+			<dt>Flair</dt>
+			<dd>You gain Scent as an imprecise sense up to 60ft.</dd>
+			<dt>Hidden Storage</dt>
+			<dd>You can hide one object of one bulk or less in your cheek pouches, empty compartment, secret pockets, or extradimensional space.
+				Retrieve it as a free action. Hide it as 3 actions.
+				Creatures attempting to notice / remove such objects have disadvantage.</dd>
+			<dt>Jack of All Trades</dt>
+			<dd>For all purposes, for all skills where you're untrained, use +2 as your proficiency bonus.</dd>
+			<dt>Journeyman's Edge</dt>
+			<dd>Gain another Edge at level 1.</dd>
+			<dt>Trance</dt>
+			<dd>You are immune to sleep and have advantage against enchantment spells.</dd>
+		</dl>
+
+		<h2>Character creation: Weapon Qualities</h2>
+		<p>
+			Each weapon has a damage type [B, P, S] and a quality.
+			They must be chosen in advance, as the weapon is crafted or bought.
+			You cannot use a weapon's qualities if you are not at least Trained.
+		</p>
+		<dl>
+			<dt>Agile</dt>
+			<dd>MultiAttack Penalty is only -3.</dd>
+			<dt>Flaming</dt>
+			<dd>If you hit an enemy with Weakness to fire, they take one extra damage.</dd>
+			<dt>Pushing</dt>
+			<dd>When you hit with this weapon, make an Athletics check vs Stamina DC. On a success, the enemy is pushed 5 ft in the direction of your choice, as long as it's not closer to you. This is forced movement.</dd>
+			<dt>Reach</dt>
+			<dd>Use PF2's version. You can hit adjacent enemies.</dd>
+			<dt>Tripping</dt>
+			<dd>When you hit with this weapon, make an Athletics check vs Acrobatics DC. On a success, the enemy is knocked prone.</dd>
+		</dl>
 
 		<h2>Playing the game</h2>
-		<p>
-			Hastily adding this section to say a few things:
-			1) everyone can use Attacks of Opportunity,
-			2) everyone gets a free Step every turn if they don't otherwise move,
-			3) we're still doing the "3 actions per turn",
-			4) multi-attack penalty is still a thing,
-			5) +10 is crit, -10 is fumble, is still a thing.
-		</p>
+		<p>Hastily adding this section to say a few things:</p>
+		<ol>
+			<li>we're still doing the "3 actions per turn",</li>
+			<li>multi-attack penalty is still a thing,</li>
+			<li class="br">+10 is crit, -10 is fumble, is still a thing,</li>
+			<li>everyone can use Attacks of Opportunity,</li>
+			<li>everyone gets a free Step every turn if they don't otherwise move,</li>
+			<li>you can take damage equal to your proficiency bonus in Stamina before being unconsious/dying. Most attacks deal 1 damage, and crits deal 2.</li>
+		</ol>
 
 		<h2>TO DO</h2>
 		<ul>
-			<li>Write down how "Stamina" tells you how many HP you have</li>
 			<li>Details of Conditions (including Dying and Wounded)</li>
-			<li>Weapons Traits: how they work with Exotic/Martial/Simple, create some examples</li>
-			<li>Create and detail some Mechanics</li>
 			<li>Create some spell examples. Explain how spellcasting can just vary.</li>
 			<li>Create some Action examples. Explain how using skills in combat can just vary.</li>
 			<li>Create a list of "Classes": basically an index that says "if you wanna play a wizard, pick such and such skills, and such and such mechanics". Same for Ancestries and Backgrounds.</li>
+			<li>Moar Mechanics, Quirks, and Weapon Qualities!</li>
 		</ul>
 	</div>
 </body>
