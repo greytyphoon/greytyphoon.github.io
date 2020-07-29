@@ -9,6 +9,14 @@
 		dl { margin-left: 3em; }
 		dt { font-weight: bold; }
 		small { color: var(--html-darkgrey); }
+		.side-note {
+			display: block; 
+			margin: .15em 0;
+			border: 1px dashed var(--murder-red);
+			border-radius: .25em;
+			padding: .15em;
+			background-color: var(--murder-grey);
+			font-size: .85rem; }
 		table > tfoot > tr > td { border-top: 1px solid var(--html-darkgrey); }
 		table#tbl-proficiency > thead > tr > th { min-width: 3em; max-width: 3em; }
 		table#tbl-proficiency > thead > tr > th:nth-child(6) { min-width: unset; max-width: unset; }
@@ -126,12 +134,20 @@
 			and to limit the advantage of legendary proficiency (increments of +1 instead of +2 don't change the game as much).
 		</p>
 		<p>
-			DCs have changed a little.
+			<b>DC</b>s have changed a little.
 			An active character is always the one who rolls, choosing which skill to attack with.
 			A defensive character chooses a skill to defend with, adding <b>12</b> to their proficiency bonus.
 			For example, with <i>fireball</i>, the mage would roll <b>d20+Evocation</b> against the goblin's <b>12+Acrobatics</b>.
 			In this example, if there were 6 goblins, the mage would roll 6 times.
 			12 reflects the fact that characters invest more in offense than defense, and we can't assume the target's defense will be trained, so this helps everyone's survivability a bit.
+		</p>
+		<p>
+			Your character will gain an <b>Edge</b> at 1st, 4th, 9th, and 14th level.
+			Having an Edge in a skill gives a +1 to your proficiency bonus in that skill, on top the normal value for your level and training.
+			The edges you gain from normal advancement cannot be placed in the same skill "family".
+			For example, if your 1st-level Edge was placed in Melee Weapons (Physical group), your 4th-level Edge could not be placed in Armor, but could be in Bluff or Crafting.
+			Edges gained from other sources than normal advancement are exempt from this rule and can be placed freely.
+			When scaling up to level 20 or more, the subsequent edges can be placed freely.
 		</p>
 		<p>
 			So far the table goes to level 15. You can introduce a higher +1 proficiency, Godlike, to scale it up to 20.
@@ -141,26 +157,26 @@
 				<tr><th>Level</th>	<th>T</th>	<th>E (+2)</th>	<th>M (+1)</th>	<th>L (+1)</th>	<th>Features</th></tr>
 			</thead>
 			<tbody>
-				<tr><td>1st</td>	<td>3</td>	<td>-</td>		<td>-</td>		<td>-</td>		<td>10 skill increases, 1 quirk, 1 edge, 2 mechanics</td></tr>
+				<tr><td>1st</td>	<td>3</td>	<td>-</td>		<td>-</td>		<td>-</td>		<td>15 skill increases, 1 edge, 2 mechanics, 1 quirk</td></tr>
 				<tr><td>2nd</td>	<td>3</td>	<td>5</td>		<td>-</td>		<td>-</td>		<td>+2 skill increases</td></tr>
 				<tr><td>3rd</td>	<td>4</td>	<td>6</td>		<td>-</td>		<td>-</td>		<td>+2 skill increases</td></tr>
 				<tr><td>4th</td>	<td>4</td>	<td>6</td>		<td>-</td>		<td>-</td>		<td>+2 skill increases, +1 edge</td></tr>
-				<tr><td>5th</td>	<td>4</td>	<td>6</td>		<td>-</td>		<td>-</td>		<td>+2 skill increases, +1 mechanic</td></tr>
+				<tr><td>5th</td>	<td>4</td>	<td>6</td>		<td>-</td>		<td>-</td>		<td>+1 skill increases, +1 mechanic</td></tr>
 
 				<tr><td>6th</td>	<td>4</td>	<td>6</td>		<td>7</td>		<td>-</td>		<td>+2 skill increases</td></tr>
 				<tr><td>7th</td>	<td>4</td>	<td>6</td>		<td>7</td>		<td>-</td>		<td><b>+5</b> skill increases</td></tr>
 				<tr><td>8th</td>	<td>5</td>	<td>7</td>		<td>8</td>		<td>-</td>		<td>+2 skill increases</td></tr>
 				<tr><td>9th</td>	<td>5</td>	<td>7</td>		<td>8</td>		<td>-</td>		<td>+2 skill increases, +1 edge</td></tr>
-				<tr><td>10th</td>	<td>5</td>	<td>7</td>		<td>8</td>		<td>-</td>		<td>+2 skill increases, +1 mechanic</td></tr>
+				<tr><td>10th</td>	<td>5</td>	<td>7</td>		<td>8</td>		<td>-</td>		<td>+1 skill increases, +1 mechanic</td></tr>
 
 				<tr><td>11th</td>	<td>5</td>	<td>7</td>		<td>8</td>		<td>9</td>		<td>+2 skill increases</td></tr>
 				<tr><td>12th</td>	<td>5</td>	<td>7</td>		<td>8</td>		<td>9</td>		<td><b>+5</b> skill increases</td></tr>
 				<tr><td>13th</td>	<td>6</td>	<td>8</td>		<td>9</td>		<td>10</td>		<td>+2 skill increases</td></tr>
 				<tr><td>14th</td>	<td>6</td>	<td>8</td>		<td>9</td>		<td>10</td>		<td>+2 skill increases, +1 edge</td></tr>
-				<tr><td>15th</td>	<td>6</td>	<td>8</td>		<td>9</td>		<td>10</td>		<td>+2 skill increases, +1 mechanics</td></tr>
+				<tr><td>15th</td>	<td>6</td>	<td>8</td>		<td>9</td>		<td>10</td>		<td>+1 skill increases, +1 mechanics</td></tr>
 			<tbody>
 			<tfoot>
-				<tr><td></td>	<td></td>	<td></td>		<td></td>		<td></td>		<td>44 skill increases, 1 quirk, 4 edges, 5 mechanics</td></tr>
+				<tr><td></td>	<td></td>	<td></td>		<td></td>		<td></td>		<td>46 skill increases, 4 edges, 5 mechanics, 1 quirk</td></tr>
 			</tfoot>
 		</table>
 
@@ -176,9 +192,14 @@
 			<dt>Magus Training</dt>
 			<dd>
 				Whenever you cast a spell with a range of touch, as part of the actions required to cast it, you can use your Melee Weapons proficiency to determine if it hits instead of the spell's school of magic.
-				This counts as making a normal melee attack with your weapon, including applying damage and weapon qualities.
-				Casting a spell this way does not provoke attacks of opportunity if you are Expert or better in Melee Weapons. Casting a spell gains the [Manipulate] trait, if it didn't already have it.
-				If you do not have the Spellcasting mechanic, choose one school of magic. You can cast one spell of that school per day. You cannot cast cantrips. You can Refocus.
+				This counts as making a normal melee attack with your weapon, including applying damage and weapon qualities.<br>
+				Casting a spell in this way does not provoke attacks of opportunity if you are Expert or better in Melee Weapons.<br>
+				Casting a spell in this way gains the [Manipulate] trait, if it didn't already have it.<br>
+				<div class="side-note">If you do not have the Spellcasting mechanic, choose one school of magic. You can cast one spell of that school per day. You cannot cast cantrips. You can Refocus.</div>
+			</dd>
+			<dt>Quirky</dt>
+			<dd>
+				When you gain this mechanic, you gain three extra quirks.
 			</dd>
 			<dt>Spellcasting</dt>
 			<dd>
@@ -186,7 +207,7 @@
 				You can always cast <i>detect magic</i>, <i>identify spell</i>, <i>mage hand</i>, <i>prestidigitation</i>, and any cantrip from a school of magic you chose.<br>
 				You can cast a number of spells each day equal to the <b>best</b> proficiency bonus you have in a school of magic you chose.<br>
 				You can use the Refocus mechanic to regain spells per day, but like refocus, you can't chain it.<br>
-				You can choose the Spellcasting mechanic more than once; if you do, pick two other schools of magic, and you can cast two extra spells per day.
+				<div class="side-note">You can choose the Spellcasting mechanic more than once; if you do, pick two other schools of magic, and you can cast two extra spells per day.</div>
 			</dd>
 			<dt>Weapon Training</dt>
 			<dd>
@@ -200,12 +221,14 @@
 			<dt>Animal Companion</dt>
 			<dt>Challenge / Smite</dt>
 			<dt>Channel Energy</dt>
+			<dt>Eldritch Blast</dt>
 			<dt>Flurry of Blows</dt>
 			<dt>Inspire Allies</dt>
 			<dt>Kinesis (a.k.a. "Bending")</dt>
 			<dt>Metamagics</dt>
 			<dt>Rage</dt>
 			<dt>Parry and Riposte</dt>
+			<dt>Sentinel / Bodyguard</dt>
 			<dt>Sneak Attack</dt>
 			<dt>Wild Shape</dt>
 		</dl>
@@ -221,7 +244,7 @@
 			<dt>Darkvision</dt>
 			<dd>You can see in complete darkness up to 60 ft, but only in black and white. Depth perception is harder in darkvision; treat this as an imprecise sense.</dd>
 			<dt>Favored Enemy</dt>
-			<dd>Choose a creature type and a Weapon Quality. Whenever you make a weapon attack against a creature with that type, apply the Weapon Quality as if your weapon had it also.
+			<dd>When you gain this quirk, choose a creature type and a Weapon Quality. Whenever you make a weapon attack against a creature with that type, apply the Weapon Quality as if your weapon had it also.
 				This applies to melee or ranged attacks. If you chose "Outsider" or "Humanoid", you must also select a subtype.</dd>
 			<dt>Flair</dt>
 			<dd>You gain Scent as an imprecise sense up to 60ft.</dd>
@@ -232,7 +255,9 @@
 			<dt>Jack of All Trades</dt>
 			<dd>For all purposes, for all skills where you're untrained, use +2 as your proficiency bonus.</dd>
 			<dt>Journeyman's Edge</dt>
-			<dd>Gain another Edge at level 1.</dd>
+			<dd>When you gain this quirk, gain an Edge in a skill of your choice.<br>
+				<div class="side-note">You can use the Quirky mechanic to gain this quirk multiple times, giving you that many extra Edges.
+				If you do, all Edges gained from this quirk must be put in different skill families.</div></dd>
 			<dt>Trance</dt>
 			<dd>You are immune to sleep and have advantage against enchantment spells.</dd>
 		</dl>
