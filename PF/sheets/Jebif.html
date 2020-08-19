@@ -6,6 +6,7 @@
 	<title>Grey's Investigator</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
 	<style>
+		.cold { color: var(--transmutation-teal); }
 		#tblInventory { flex: 2; }
 		#tblInventory td + td, #tblInventory th + th { text-align: right; }
 	</style>
@@ -21,7 +22,7 @@
 		<header>
 			<h1>Jebif Tanaxis Orzu Arivèr Kasmop Horybar Ponti Lohim, faeries' primal flair</h1>
 			CG Small Humanoid
-			<div id="xp">30 / 1,000</div>
+			<div id="xp">230 / 1,000</div>
 		</header>
 
 		<section id="headerInfo" class="row">
@@ -241,26 +242,27 @@
 				<li>
 					<strong>18</strong>
 					<b>Fort</b>
-					<small>3 con, 4 prf, 10 lvl, 1 boon</small>
+					<small>3 con, 4 prf, 10 lvl, <u title="1 Resilient">1 item</u></small>
 				</li>
 				<li>
 					<strong>19</strong>
 					<b>Ref</b>
-					<small>4 dex, 4 prf, 10 lvl, 1 boon</small>
+					<small>4 dex, 4 prf, 10 lvl, <u title="1 Resilient">1 item</u></small>
 				</li>
 				<li>
 					<strong>19</strong>
 					<b>Will</b>
-					<small>4 wis, 4 prf, 10 lvl, 1 boon</small>
+					<small>4 wis, 4 prf, 10 lvl, <u title="1 Resilient">1 item</u></small>
 				</li>
 			</ul>
 			<div>
 				<!--Rapier-->
 				<div class="weapon">
-					<h2>Rapier +1 Striking <b>P</b></h2>
-					<div class="summation"><strong>+19</strong>/<strong>14</strong>/<strong>9</strong> vs AC <small>4 dex, 4 prf, 10 lvl, <u title="Potency Rune">1 item</u></small></div>
-					<div class="summation"><strong>2d6+2</strong> <small>0 str, 2 w.spec</small></div>
-					<div class="circumstancialBonus">Deadly d8, Disarm, Finesse.</div>
+					<h2>Rapier +2 Striking <b>P</b></h2>
+					<div class="summation"><strong>+20</strong>/<strong>15</strong>/<strong>10</strong> vs AC <small>4 dex, 4 prf, 10 lvl, <u title="Potency Rune">2 item</u></small></div>
+					<div class="summation"><strong>2d6+2<span class="cold">+1d6</span></strong> <small>0 str, 2 w.spec</small></div>
+					<div class="circumstancialBonus">Deadly d8, Disarm, Finesse, Bleed 1d6.</div>
+					<div class="circumstancialBonus">On crit, slow 1 (Fort DC 24 negates) &amp; Bleed 1d12.</div>
 				</div>
 
 				<!--Shortbow-->
@@ -339,7 +341,7 @@
 			<li title="L Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=410">Belt of the Five Kings</a></li>
 			<li title="L Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=424">Cloak of Elvenkind</a></li>
 			<li title="1 Bulk"class="br"><a href="https://2e.aonprd.com/Equipment.aspx?ID=249">Bag of Holding</a>, Type I</a></li>
-			<li>210 <b>gp</b></li>
+			<li>340 <b>gp</b></li>
 			<li>Plant de Calathgar pour Framboise</li>
 			<li>Miroir élégant de Ranalc et Nyrissa</li>
 			<li>Échelle de corde</li>
@@ -350,9 +352,10 @@
 			<!--Weapons-->
 			<li title="1 Bulk">
 				<a href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold-iron</a>
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=36">Rapier</a> +1
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=36">Rapier</a> +2
 				<a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
-				&mdash; <a href="https://2e.aonprd.com/Equipment.aspx?ID=309">Wounding</a>
+				&mdash; <a href="https://2e.aonprd.com/Equipment.aspx?ID=296">Frost</a>
+				&amp; <a href="https://2e.aonprd.com/Equipment.aspx?ID=309">Wounding</a>
 				<small>martial, 1d6P, 1Hand, Sword Group, Deadly d8, Disarm, Finesse.</small>
 				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=230">Owlbear's Claw</a></div>
 				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=227">Mummified Bat</a></div>
@@ -366,6 +369,7 @@
 			<!--Armors-->
 			<li title="1 Bulk">
 				<a href="https://2e.aonprd.com/Armor.aspx?ID=4">Leather Armor</a> +1
+				<a href="https://2e.aonprd.com/Equipment.aspx?ID=279">Resilient</a>
 				<small>light, 1 armor, 4 dex, -1 acp, &ndash;ft, 10 str, &ndash; Group.</small>
 			</li>
 			<li title="1 Bulk" class="br">
@@ -374,6 +378,7 @@
 			</li>
 
 			<!--Consumables-->
+			<li>1 &times; Calathgar Poison</li>
 			<li>1 &times; Moderate <a href="https://2e.aonprd.com/Equipment.aspx?ID=91">Elixir of Life</a>
 				<small>heals <u title="Moderate">5d6+12</u></small></li>
 			<li>1 &times; Lesser <a href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a>
@@ -518,13 +523,6 @@
 						<td>&nbsp;</td>
 					</tr>
 					<tr>
-						<td>Rapier <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">+1</a> <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">Striking</a></td>
-						<td>4</td>
-						<td>100</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-					</tr>
-					<tr>
 						<td>Shortbow <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">+1</a> <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">Striking</a></td>
 						<td>4</td>
 						<td>100</td>
@@ -537,13 +535,6 @@
 						<td>75</td>
 						<td>1</td>
 						<td>&nbsp;</td>
-					</tr>
-					<tr>
-						<td>Leather Armor <a href="https://2e.aonprd.com/Equipment.aspx?ID=278">+1</a></td>
-						<td>5</td>
-						<td>160</td>
-						<td>&nbsp;</td>
-						<td>1</td>
 					</tr>
 					<tr>
 						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=413">Boots of Elvenkind</a></td>
@@ -560,6 +551,13 @@
 						<td>&nbsp;</td>
 					</tr>
 					<tr>
+						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=424">Cloak of Elvenkind</a></td>
+						<td>7</td>
+						<td>360</td>
+						<td>L</td>
+						<td>1</td>
+					</tr>
+					<tr>
 						<td>Rapier of <a href="https://2e.aonprd.com/Equipment.aspx?ID=309">Wounding</a></td>
 						<td>7</td>
 						<td>340</td>
@@ -567,18 +565,32 @@
 						<td>&nbsp;</td>
 					</tr>
 					<tr>
-						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=424">Cloak of Elvenkind</a></td>
-						<td>7</td>
-						<td>360</td>
-						<td>L</td>
-						<td>1</td>
+						<td>Rapier of <a href="https://2e.aonprd.com/Equipment.aspx?ID=309">Frost</a></td>
+						<td>8</td>
+						<td>500</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Leather Armor <a href="https://2e.aonprd.com/Equipment.aspx?ID=278">+1</a> <a href="https://2e.aonprd.com/Equipment.aspx?ID=279">Resilient</a></td>
+						<td>8</td>
+						<td>500</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>Rapier <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">+2</a> <a href="https://2e.aonprd.com/Equipment.aspx?ID=281">Striking</a></td>
+						<td>10</td>
+						<td>1000</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
 					</tr>
 				</tbody>
 				<tfoot>
 					<tr>
 						<th>Total</th>
 						<th>&nbsp;</th>
-						<th>1600</th>
+						<th>3340</th>
 						<th>3.2</th>
 						<th>3</th>
 				</tfoot>
