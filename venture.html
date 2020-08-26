@@ -6,6 +6,11 @@
 	<title>Venture</title>
 	<link rel="stylesheet" href="basic.css">
 	<style>
+		@media screen and (min-width: 576px) {
+			#skills-list {
+				float: right;
+				background-color: var(--html-white); }
+		}
 		dl { margin-left: 3em; }
 		dt { font-weight: bold; }
 		small { color: var(--html-darkgrey); }
@@ -30,7 +35,7 @@
 			<h1>Venture TTRPG</h1>
 		</header>
 
-		<div style="float: right; background-color: white;">
+		<div id="skills-list">
 			<h2>Venture's Skills</h2>
 			<ul>
 				<li>
@@ -201,6 +206,23 @@
 			<dd>
 				When you gain this mechanic, you gain three extra quirks.
 			</dd>
+			<dt>Sneak Attack</dt>
+			<dd>
+				When you gain this mechanic, choose a skill to be your Sneak Attack skill, like Stealth, Illusion, or Bluff.<br>
+				Whenever you damage a foe that is flat-footed to you, you deal one extra damage.<br>
+				If you are a Master in your Sneak Attack skill, this damage increases to two. If you are Legendary, to three.
+				<div class="side-note">
+					You must deal at least one damage to apply this, after resistance.
+					This doesn't apply to persistent damage or bleeding: you're not causing it, the condition is.
+					This applies even if you're not using the Melee Weapons skill to deal damage, it works with Ranged Weapons, Evocation, etc.
+					However, you can never use the same skill to deal damage AND as your sneak attack skill.
+					If you find yourself in this situation, you should choose a second skill to be your "backup sneak attack skill" and use that to calculate your damage and set up sneak attacks.
+				</div>
+				Once per round, as a single action, you can set up an enemy for a Sneak Attack.
+				Make a skill check with your Sneak Attack skill against your enemy's Armors* DC.
+				If you succeed, your next damage against that enemy this turn will benefit from your Sneak Attack damage, even if the enemy is not flat-footed to you.
+				If you critically succeed, any further damage against that enemy this turn will benefit from your Sneak Attack damage, even if the enemy is not flat-footed to you.
+			</dd>
 			<dt>Spellcasting</dt>
 			<dd>
 				Choose two schools of magic in which you are trained or better.<br>
@@ -277,6 +299,8 @@
 		<dl>
 			<dt>Agile</dt>
 			<dd>MultiAttack Penalty is only -3.</dd>
+			<dt>Deadly</dt>
+			<dd>Deals an extra damage on a critical hit.</dd>
 			<dt>Flaming</dt>
 			<dd>If you hit an enemy with Weakness to fire, they take one extra damage.</dd>
 			<dt>Pushing</dt>
@@ -298,6 +322,30 @@
 			<li>everyone gets a free Step every turn if they don't otherwise move,</li>
 			<li>you can take damage equal to your proficiency bonus in Stamina before being unconsious/dying. Most attacks deal 1 damage, and crits deal 2.</li>
 		</ol>
+
+		<h2>Conditions</h2>
+		<p>Some conditions exist relative to one another or share a similar theme. It can be useful to look at these conditions together, rather than viewing them in isolation, to understand how they interact.</p>
+		<ul>
+			<li><b>Death and Dying</b>: Doomed, Dying, Unconscious, Wounded</li>
+			<li><b>Attitudes</b>: Friendly, Helpful, Hostile, Indifferent, Unfriendly</li>
+			<li><b>Degrees of Detection</b>: Hidden, Observed, Undetected, Unnoticed</li>
+			<li><b>Senses</b>: Blinded, Concealed, Dazzled, Deafened, Invisible</li>
+			<li><b>Enchanted</b>: Charmed, Confused, Controlled, Fascinated</li>
+			<li><b>Fear</b>: Shaken, Frightened, Fleeing, Cowering</li>
+			<li><b>Grappling</b>: Grabbed, Immobilized, Restrained</li>
+			<li><b>Speed</b>: Quickened, Slowed, Stunned</li>
+			<li><b>Poison</b>: Sickened, Nauseated</li>
+			<li><b>Others</b>: Clumsy, Fatigued, Flat-Footed, Paralyzed, Petrified, Prone, Stupefied</li>
+		</ul>
+		<p>When conditions affect checks, it's always by giving +/-2 or advantage/disadvantage. You gain never gain more than +2 / -2 by stacking conditions, nor can you gain "double advantage".</p>
+		<dl>
+			<dt>Clumsy</dt>
+			<dd>You get a -2 penalty on all skill checks from skills in the Physical group. DCs are unaffected.</dd>
+			<dt>Fatigued</dt>
+			<dd>You get a disadvantage on all skill checks. DCs are unaffected.</dd>
+			<dt>Flat-Footed</dt>
+			<dd>You get a -2 penalty on all DCs from skills in the Physical group. Skill checks are unaffected.</dd>
+		</dl>
 
 		<h2>TO DO</h2>
 		<ul>
