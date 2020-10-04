@@ -320,7 +320,30 @@ var jokerController = {
 	{
 		// the purple joker moves like the blue joker, then moves cards around it clockwise.
 		jokerController.blueJokerMove(joker);
-		// TODO
+
+		let x = joker.platform.positionX;
+		let y = joker.platform.positionY;
+		var adjacentPlatforms = [
+			platforms.find(p => p.card && p.positionX === x+1 && p.positionY === y+1),
+			platforms.find(p => p.card && p.positionX === x && p.positionY === y+1),
+			platforms.find(p => p.card && p.positionX === x-1 && p.positionY === y+1),
+			platforms.find(p => p.card && p.positionX === x-1 && p.positionY === y),
+			platforms.find(p => p.card && p.positionX === x-1 && p.positionY === y-1),
+			platforms.find(p => p.card && p.positionX === x && p.positionY === y-1),
+			platforms.find(p => p.card && p.positionX === x+1 && p.positionY === y-1),
+			platforms.find(p => p.card && p.positionX === x+1 && p.positionY === y)
+		].filter(p => p);
+
+		let firstCard = adjacentPlatforms[0].card;
+		for (let i = 1; i < adjacentPlatforms.length; i++)
+		{
+			let previousPlatform = adjacentPlatforms[i-1];
+			previousPlatform.card = adjacentPlatforms[i].card;
+			previousPlatform.card.platform = previousPlatform;
+		}
+		let lastPlatform = adjacentPlatforms[adjacentPlatforms.length -1];
+		lastPlatform.card = firstCard;
+		lastPlatform.card.platform = lastPlatform;
 	},
 
 	greenJokerCreate: function (platform, domSize)
@@ -330,8 +353,31 @@ var jokerController = {
 	greenJokerMove: function (joker)
 	{
 		// the green joker moves like the orange joker, then moves cards around it counterclockwise.
-		jokerController.yellowJokerMove(joker);
-		// TODO
+		jokerController.orangeJokerMove(joker);
+
+		let x = joker.platform.positionX;
+		let y = joker.platform.positionY;
+		var adjacentPlatforms = [
+			platforms.find(p => p.card && p.positionX === x+1 && p.positionY === y),
+			platforms.find(p => p.card && p.positionX === x+1 && p.positionY === y-1),
+			platforms.find(p => p.card && p.positionX === x && p.positionY === y-1),
+			platforms.find(p => p.card && p.positionX === x-1 && p.positionY === y-1),
+			platforms.find(p => p.card && p.positionX === x-1 && p.positionY === y),
+			platforms.find(p => p.card && p.positionX === x-1 && p.positionY === y+1),
+			platforms.find(p => p.card && p.positionX === x && p.positionY === y+1),
+			platforms.find(p => p.card && p.positionX === x+1 && p.positionY === y+1)
+		].filter(p => p);
+
+		let firstCard = adjacentPlatforms[0].card;
+		for (let i = 1; i < adjacentPlatforms.length; i++)
+		{
+			let previousPlatform = adjacentPlatforms[i-1];
+			previousPlatform.card = adjacentPlatforms[i].card;
+			previousPlatform.card.platform = previousPlatform;
+		}
+		let lastPlatform = adjacentPlatforms[adjacentPlatforms.length -1];
+		lastPlatform.card = firstCard;
+		lastPlatform.card.platform = lastPlatform;
 	},
 };
 
