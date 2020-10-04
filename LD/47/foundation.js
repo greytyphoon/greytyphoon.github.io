@@ -149,8 +149,8 @@ var jokerController = {
 		{
 			let jokerDom = document.createElement("img");
 			jokerDom.classList.add("joker");
-			jokerDom.src = "cards/jokers/yellow_joker.svg";
-			jokerDom.alt = "Yellow Joker";
+			jokerDom.src = "cards/jokers/orange_joker.svg";
+			jokerDom.alt = "Orange Joker";
 			jokerDom.width = domSize;
 			jokerDom.height = domSize;
 

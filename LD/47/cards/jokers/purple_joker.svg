@@ -16,7 +16,7 @@
 	xml:space="preserve"
 	version="1.1">
 <style>
-	:root { --letter-color: #fff; --bg-color: #0000df; --heart-color: #fff; --spade-color: #fff; }
+	:root { --letter-color: #fff; --bg-color: #ba55d3; --heart-color: #fff; --spade-color: #fff; }
 </style>
 <metadata><rdf:RDF><cc:Work
 		rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
