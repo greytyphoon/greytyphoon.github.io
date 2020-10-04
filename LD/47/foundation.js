@@ -38,6 +38,15 @@ function startGame()
 	allCards = cards.createAndShuffle(platformSize);
 	let nextCardIndex = 0;
 
+	// Bug fix: make sure we're not dead at the start
+	var firstTargetSuit = allCards[0].suit + 1;
+	if (firstTargetSuit === 4) firstTargetSuit = 0;
+	if ([allCards[1].suit, allCards[7].suit, allCards[51].suit, allCards[50].suit, allCards[49].suit, allCards[48].suit].every(suit => suit != firstTargetSuit))
+	{
+		startGame();
+		return;
+	}
+
 	// Platforms
 	for (let x = 0; x < 7; x++)
 	{
@@ -94,17 +103,6 @@ function startGame()
 			break;
 	}
 
-	// Bug fix: make sure we're not dead at the start
-	var firstTargetSuit = platforms[0].card.suit + 1;
-	if (firstTargetSuit === 4) firstTargetSuit = 0;
-	if (platforms[1].card.suit != firstTargetSuit
-		&& platforms[7].card.suit != firstTargetSuit
-		&& allCards.every(card => card.platform || card.suit != firstTargetSuit))
-	{
-		startGame();
-		return;
-	}
-
 	refreshView();
 }
 
@@ -138,7 +136,8 @@ function readOptions()
 	options = {};
 	options.goalCount = document.querySelector('input[name="objectiveOption"]:checked').value;
 	options.jokerCount = document.querySelector('input[name="jokerCountOption"]:checked').value*1;
-	options.jokerDifficulty = document.querySelector('input[name="jokerDifficultyOption"]:checked').value*1;
+	options.jokerDifficulty = document.querySelector('input[name="jokerDifficultyOption"]:checked').value;
+	jokerController.jokerPrototypes = jokerController.initJokers();
 }
 
 var domCreator = {
@@ -168,52 +167,97 @@ var domCreator = {
 };
 
 var jokerController = {
+	jokerPrototypes: [],
+	initJokers: function()
+	{
+		switch (options.jokerDifficulty)
+		{
+			case "Hard":
+				switch (options.jokerCount)
+				{
+					case 3:
+						return [3,2,myRandom(2)+2];
+					case 2:
+						return [3,2];
+					default:
+						return [myRandom(2)+2];
+				}
+			case "Mixed":
+				switch (options.jokerCount)
+				{
+					case 3:
+						return [myRandom(2),myRandom(2)+2,myRandom(4)];
+					case 2:
+						return [myRandom(2),myRandom(2)+2];
+					default:
+						return [myRandom(4)];
+				}
+			default:
+				switch (options.jokerCount)
+				{
+					case 3:
+						return [1,0,myRandom(2)];
+					case 2:
+						return [1,0];
+					default:
+						return [myRandom(2)];
+				}
+		}
+	},
+
 	createIfNecessary: function (platform, domSize)
 	{
 		if (platform.positionX === 1 && platform.positionY === 5 && options.jokerCount !== 1)
 		{
-			let jokerDom = document.createElement("img");
-			jokerDom.classList.add("joker");
-			jokerDom.src = "cards/jokers/blue_joker.svg";
-			jokerDom.alt = "Blue Joker";
-			jokerDom.width = domSize;
-			jokerDom.height = domSize;
-
-			let myJoker = { platform: platform, dom: jokerDom, move: jokerController.blueJokerMove };
-			platform.joker = myJoker;
-			platform.dom.appendChild(jokerDom);
-			jokers.push(myJoker);
+			jokerController.createJokerFromPrototype(platform, domSize, jokerController.jokerPrototypes.shift());
 		}
 		else if (platform.positionX === 5 && platform.positionY === 1 && options.jokerCount !== 1)
 		{
-			let jokerDom = document.createElement("img");
-			jokerDom.classList.add("joker");
-			jokerDom.src = "cards/jokers/orange_joker.svg";
-			jokerDom.alt = "Orange Joker";
-			jokerDom.width = domSize;
-			jokerDom.height = domSize;
-
-			let myJoker = { platform: platform, dom: jokerDom, move: jokerController.yellowJokerMove };
-			platform.joker = myJoker;
-			platform.dom.appendChild(jokerDom);
-			jokers.push(myJoker);
+			jokerController.createJokerFromPrototype(platform, domSize, jokerController.jokerPrototypes.shift());
 		}
 		else if (platform.positionX === 5 && platform.positionY === 5 && options.jokerCount !== 2)
 		{
-			let jokerDom = document.createElement("img");
-			jokerDom.classList.add("joker");
-			jokerDom.src = "cards/jokers/blue_joker.svg";
-			jokerDom.alt = "Blue Joker";
-			jokerDom.width = domSize;
-			jokerDom.height = domSize;
-
-			let myJoker = { platform: platform, dom: jokerDom, move: jokerController.blueJokerMove };
-			platform.joker = myJoker;
-			platform.dom.appendChild(jokerDom);
-			jokers.push(myJoker);
+			jokerController.createJokerFromPrototype(platform, domSize, jokerController.jokerPrototypes.shift());
 		}
 	},
 
+	createJokerFromPrototype: function(platform, domSize, prototypeNumber)
+	{
+		switch (prototypeNumber)
+		{
+			case 3:
+				jokerController.purpleJokerCreate(platform, domSize);
+				break;
+			case 2:
+				jokerController.greenJokerCreate(platform, domSize);
+				break;
+			case 1:
+				jokerController.orangeJokerCreate(platform, domSize);
+				break;
+			default:
+				jokerController.blueJokerCreate(platform, domSize);
+				break;
+		}
+	},
+	createJoker: function(platform, domSize, fileName, altName, moveFunction)
+	{
+		let jokerDom = document.createElement("img");
+		jokerDom.classList.add("joker");
+		jokerDom.src = "cards/jokers/" + fileName + ".svg";
+		jokerDom.alt = altName;
+		jokerDom.width = domSize;
+		jokerDom.height = domSize;
+
+		let myJoker = { platform: platform, dom: jokerDom, move: moveFunction };
+		platform.joker = myJoker;
+		platform.dom.appendChild(jokerDom);
+		jokers.push(myJoker);
+	},
+
+	blueJokerCreate: function (platform, domSize)
+	{
+		jokerController.createJoker(platform, domSize, "blue_joker", "Blue Joker", jokerController.blueJokerMove);
+	},
 	blueJokerMove: function (joker)
 	{
 		// the blue joker moves by trading places with an adjacent card. Higher-ranked cards have a higher chance of being targeted.
@@ -239,9 +283,13 @@ var jokerController = {
 		joker.platform = targetPlatform;
 	},
 
-	yellowJokerMove: function (joker)
+	orangeJokerCreate: function (platform, domSize)
 	{
-		// the yellow joker moves by trading places with an adjacent card. Lower-ranked cards have a higher chance of being targeted.
+		jokerController.createJoker(platform, domSize, "orange_joker", "Orange Joker", jokerController.orangeJokerMove);
+	},
+	orangeJokerMove: function (joker)
+	{
+		// the orange joker moves by trading places with an adjacent card. Lower-ranked cards have a higher chance of being targeted.
 		let proratedAdjacentPlaforms = [];
 		joker.platform.adjacent.forEach(adjacentPlatform => 
 		{
@@ -262,7 +310,29 @@ var jokerController = {
 		targetPlatform.joker = joker;
 		targetPlatform.card = null;
 		joker.platform = targetPlatform;
-	}
+	},
+
+	purpleJokerCreate: function (platform, domSize)
+	{
+		jokerController.createJoker(platform, domSize, "purple_joker", "Purple Joker", jokerController.purpleJokerMove);
+	},
+	purpleJokerMove: function (joker)
+	{
+		// the purple joker moves like the blue joker, then moves cards around it clockwise.
+		jokerController.blueJokerMove(joker);
+		// TODO
+	},
+
+	greenJokerCreate: function (platform, domSize)
+	{
+		jokerController.createJoker(platform, domSize, "green_joker", "Green Joker", jokerController.greenJokerMove);
+	},
+	greenJokerMove: function (joker)
+	{
+		// the green joker moves like the orange joker, then moves cards around it counterclockwise.
+		jokerController.yellowJokerMove(joker);
+		// TODO
+	},
 };
 
 var eventHandlers = {
