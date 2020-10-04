@@ -30,3 +30,12 @@ CARD
 .isSelected (bool)
 .platform (platform?)
 .dom (htmlElement)
+
+
+
+
+
+TODO
+animations
+bigger display on mobile
+fix How-to-play on iOS
