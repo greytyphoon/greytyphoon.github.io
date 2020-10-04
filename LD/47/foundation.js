@@ -131,7 +131,7 @@ function refreshView()
 var jokerController = {
 	createIfNecessary: function (platform, domSize)
 	{
-		if (platform.positionX === 0 && platform.positionY === 6)
+		if (platform.positionX === 1 && platform.positionY === 5)
 		{
 			let jokerDom = document.createElement("img");
 			jokerDom.classList.add("joker");
@@ -145,7 +145,7 @@ var jokerController = {
 			platform.dom.appendChild(jokerDom);
 			jokers.push(myJoker);
 		}
-		else if (platform.positionX === 6 && platform.positionY === 0)
+		else if (platform.positionX === 5 && platform.positionY === 1)
 		{
 			let jokerDom = document.createElement("img");
 			jokerDom.classList.add("joker");
