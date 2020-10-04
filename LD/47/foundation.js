@@ -1,6 +1,7 @@
 var platforms = [];
 var jokers = [];
 var allCards = [];
+var options;
 
 // Stats
 var gameOver = false;
@@ -21,13 +22,18 @@ function startGame()
 	turnCounter = 0;
 	timer.zero();
 
+	readOptions();
+
 	// Setup board
 	let platformSize = Math.floor(document.getElementById("score").offsetWidth / 7 * 0.6);
 	gameBoard.style.gridTemplateColumns = "repeat(7, " + platformSize + "px)";
 	gameBoard.style.gridTemplateRows = "repeat(7, " + platformSize + "px)";
 	gameBoard.style.width = "calc(" + (7*platformSize) + "px)";
-	handDom.style.gridTemplateColumns = "repeat(5, " + platformSize + "px)";
-	handDom.style.width = "calc(.6rem + " + (5*platformSize) + "px)";
+	
+	// Setup hand
+	var handSize = 3 + options.jokerCount;
+	handDom.style.gridTemplateColumns = "repeat(" + handSize + ", " + platformSize + "px)";
+	handDom.style.width = "calc(" + ((handSize-1)*.15) + "rem + " + (handSize*platformSize) + "px)";
 
 	allCards = cards.createAndShuffle(platformSize);
 	let nextCardIndex = 0;
@@ -73,7 +79,7 @@ function startGame()
 	domCreator.createPeon(platforms[0], platformSize);
 
 	// Create goals
-	switch (document.querySelector('input[name="objectiveOption"]:checked').value)
+	switch (options.goalCount)
 	{
 		case "3":
 			domCreator.createGoal(platforms[6], platformSize);
@@ -127,6 +133,14 @@ function refreshView()
 	platforms.find(platform => platform.isCurrent).dom.appendChild(document.getElementById("peon"));
 }
 
+function readOptions()
+{
+	options = {};
+	options.goalCount = document.querySelector('input[name="objectiveOption"]:checked').value;
+	options.jokerCount = document.querySelector('input[name="jokerCountOption"]:checked').value*1;
+	options.jokerDifficulty = document.querySelector('input[name="jokerDifficultyOption"]:checked').value*1;
+}
+
 var domCreator = {
 	createGoal: function (platform, domSize)
 	{
@@ -156,7 +170,7 @@ var domCreator = {
 var jokerController = {
 	createIfNecessary: function (platform, domSize)
 	{
-		if (platform.positionX === 1 && platform.positionY === 5)
+		if (platform.positionX === 1 && platform.positionY === 5 && options.jokerCount !== 1)
 		{
 			let jokerDom = document.createElement("img");
 			jokerDom.classList.add("joker");
@@ -170,7 +184,7 @@ var jokerController = {
 			platform.dom.appendChild(jokerDom);
 			jokers.push(myJoker);
 		}
-		else if (platform.positionX === 5 && platform.positionY === 1)
+		else if (platform.positionX === 5 && platform.positionY === 1 && options.jokerCount !== 1)
 		{
 			let jokerDom = document.createElement("img");
 			jokerDom.classList.add("joker");
@@ -180,6 +194,20 @@ var jokerController = {
 			jokerDom.height = domSize;
 
 			let myJoker = { platform: platform, dom: jokerDom, move: jokerController.yellowJokerMove };
+			platform.joker = myJoker;
+			platform.dom.appendChild(jokerDom);
+			jokers.push(myJoker);
+		}
+		else if (platform.positionX === 5 && platform.positionY === 5 && options.jokerCount !== 2)
+		{
+			let jokerDom = document.createElement("img");
+			jokerDom.classList.add("joker");
+			jokerDom.src = "cards/jokers/blue_joker.svg";
+			jokerDom.alt = "Blue Joker";
+			jokerDom.width = domSize;
+			jokerDom.height = domSize;
+
+			let myJoker = { platform: platform, dom: jokerDom, move: jokerController.blueJokerMove };
 			platform.joker = myJoker;
 			platform.dom.appendChild(jokerDom);
 			jokers.push(myJoker);
