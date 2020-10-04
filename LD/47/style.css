@@ -1,4 +1,3 @@
-
 #gameBoard {
 	display: grid;
 	grid-row-gap: .5rem;
@@ -37,7 +36,7 @@ ul#score {
 #score > :last-child {
 	text-align: right; }
 
-
+/* modal.css */
 dialog:not([open]) { display: none !important; }
 dialog[open] {
 	display: block;
