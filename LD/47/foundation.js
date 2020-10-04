@@ -69,25 +69,24 @@ function startGame()
 		}
 	}
 
-	platforms[0].isCurrent = true;
-	let peonDom = document.createElement("img");
-	peonDom.classList.add("peon");
-	peonDom.id = "peon";
-	peonDom.src = "img/peon.png";
-	peonDom.alt = "Player Token";
-	peonDom.width = platformSize;
-	peonDom.height = platformSize;
-	platforms[0].dom.appendChild(peonDom);
+	// Create player Token
+	domCreator.createPeon(platforms[0], platformSize);
 
-	platforms[48].isGoal = true;
-	let goalDom = document.createElement("img");
-	goalDom.classList.add("goal");
-	goalDom.id = "goal";
-	goalDom.src = "img/goal.png";
-	goalDom.alt = "Goal";
-	goalDom.width = platformSize/2;
-	goalDom.height = platformSize/2;
-	platforms[48].dom.appendChild(goalDom);
+	// Create goals
+	switch (document.querySelector('input[name="objectiveOption"]:checked').value)
+	{
+		case "3":
+			domCreator.createGoal(platforms[6], platformSize);
+			domCreator.createGoal(platforms[42], platformSize);
+			domCreator.createGoal(platforms[48], platformSize);
+			break;
+		case "49":
+			platforms.forEach(p => domCreator.createGoal(p, platformSize));
+			break;
+		default:
+			domCreator.createGoal(platforms[48], platformSize);
+			break;
+	}
 
 	// Bug fix: make sure we're not dead at the start
 	var firstTargetSuit = platforms[0].card.suit + 1;
@@ -127,6 +126,32 @@ function refreshView()
 	// put the player token on the current platform
 	platforms.find(platform => platform.isCurrent).dom.appendChild(document.getElementById("peon"));
 }
+
+var domCreator = {
+	createGoal: function (platform, domSize)
+	{
+		platform.isGoal = true;
+		let goalDom = document.createElement("img");
+		goalDom.classList.add("goal");
+		goalDom.src = "img/goal.png";
+		goalDom.alt = "Goal";
+		goalDom.width = domSize/2;
+		goalDom.height = domSize/2;
+		platform.dom.appendChild(goalDom);
+	},
+	createPeon: function (platform, domSize)
+	{
+		platform.isCurrent = true;
+		let peonDom = document.createElement("img");
+		peonDom.classList.add("peon");
+		peonDom.id = "peon";
+		peonDom.src = "img/peon.png";
+		peonDom.alt = "Player Token";
+		peonDom.width = domSize;
+		peonDom.height = domSize;
+		platform.dom.appendChild(peonDom);
+	}
+};
 
 var jokerController = {
 	createIfNecessary: function (platform, domSize)
@@ -347,10 +372,19 @@ function play(cardInHand, cardInPlatform)
 	}
 
 	// Check wins
-	if (platforms.some(p => p.isCurrent && p.isGoal))
+	let currentGoal = platforms.find(p => p.isCurrent && p.isGoal);
+	if (currentGoal)
 	{
-		gameEnded(WIN);
-		return;
+		currentGoal.isGoal = false;
+		Array.prototype.forEach.call(
+			currentGoal.dom.getElementsByClassName("goal"),
+			goalDom => currentGoal.dom.removeChild(goalDom));
+		
+		if (platforms.every(p => !p.isGoal))
+		{
+			gameEnded(WIN);
+			return;
+		}
 	}
 
 	// Move jokers
