@@ -32,8 +32,7 @@
 
 	<!--Credits-->
 	<nav id="fixref">
-		<a onClick="alert('How to Play\n¯¯¯¯¯¯¯¯¯¯¯¯¯\n'
-			+ 'I honestly have no clue')">How to play</a>
+		<a onClick="document.getElementById('how-to-play').showModal();">How to play</a>
 		<hr>
 
 		<a onclick="document.getElementById('restartConfirm').style.display = 'inline-block';">Restart</a>
@@ -43,7 +42,37 @@
 		</span>
 		<hr>
 
-		<a onClick="alert('Suit Loop \n ¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 47 \n By Greytyphoon (Rémi Doutre) \n ©2020 Montréal, Québec, Canada')">Credits</a>
+		<a onClick="document.getElementById('credits').showModal();">Credits</a>
 	</nav>
+
+	<dialog id="how-to-play">
+		<h2>How to play</h2>
+		<p>The objective of the game is to bring your token <img src="img/peon.png" alt="Player Token" height="16" width="16">
+			to the goal <img src="img/goal.png" alt="Goal" height="16" width="16">.</p>
+		<p>The token will move on its own, every turn, to an adjacent card.<br>
+			That card must be of the next suit in the serie: &spades; <span style="color:red">&hearts;</span> &clubs; <span style="color:red">&diams;</span>.<br>
+			For example, if the token is on a &clubs;, it will move to an adjacent <span style="color:red">&diams;</span>.<br>
+			If there is no valid destination, you'll lose!<br>
+			If there are multiple, one will be chosen at random.</p>
+		<p>The Jokers will also move, semi-randomly, every turn, by trading place with an adjacent card.<br>
+			The <span style="color:#0000df">Blue Joker</span> will prefer trading with cards of higher value (Kings &amp; Queens).<br>
+			The <span style="color:#dfdf00; text-shadow: 1px 1px 1px var(--murder-black);">Yellow Joker</span> will prefer trading with cards of lower value (Aces &amp; Twos).<br>
+			If your token <img src="img/peon.png" alt="Player Token" height="16" width="16"> ends up on a joker, you lose! Plan accordingly!</p>
+		<p>Every turn, you will trade a card from your hand (at the bottom) with a card on the field.<br>
+			Simply drag &amp; drop a card in either direction, or click the cards you wish to swap.</br>
+			Use this to create a path to the goal, to place a desired card in your hand, or to lure away the jokers.</p>
+		<p>You will need both strategy and luck to win.<br>
+			Here's a hint: you can get your token stuck in a square &spades; <span style="color:red">&hearts;</span> &clubs; <span style="color:red">&diams;</span> loop
+			while you deal with the jokers!</p>
+		<center><a onClick="document.getElementById('how-to-play').close();">Ok!</a></center>
+	</dialog>
+
+	<dialog id="credits">
+		<h2>Suit Loop</h2>
+		<p>A game made for LudumDare 47</p>
+		<p>By Greytyphoon (Rémi Doutre)</p>
+		<p>©2020 Montréal, Québec, Canada</p>
+		<center><a onClick="document.getElementById('credits').close();">Ok!</a></center>
+	</dialog>
 </body>
 </html>
