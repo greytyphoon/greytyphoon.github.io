@@ -1,0 +1,6 @@
+Obtained from https://code.google.com/archive/p/vector-playing-cards/
+
+This pages states "Other Open Source License" but can't load it.
+Anyway, it's code.google.com, so everything it open source one way or another.
+
+Created by Byron Knoll (according to https://opengameart.org/content/playing-cards-vector-png)
