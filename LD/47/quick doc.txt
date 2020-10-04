@@ -1,0 +1,32 @@
+
+SUIT
+----
+0: Spades
+1: Hearts
+2: Clubs
+3: Diamonds
+
+PLATFORM
+--------
+.positionX (int, zero-based)
+.positionY (int, zero-based)
+.dom (htmlElement)
+.card (card?)
+.joker (joker?)
+.isCurrent (bool)
+.isGoal (bool)
+.adjacent[] (platform[])
+
+JOKER
+-----
+.platform (platform)
+.move (function)
+.dom (htmlElement)
+
+CARD
+----
+.suit (int)
+.rank (int)
+.isSelected (bool)
+.platform (platform?)
+.dom (htmlElement)

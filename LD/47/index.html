@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- ©2020 Rémi Doutre / Greytyphoon -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Rémi Doutre">
+	<meta name="description" content="Greytyphoon's entry for LudumDare 47.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Stuck in a loop</title>
+	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript" src="foundation.js"></script>
+	<script type="text/javascript" src="cards.js"></script>
+	<script type="text/javascript" src="timer.js"></script>
+</head>
+<body onload="startGame()">
+	<div class="container">
+		<header id="header">
+			<h1>Stuck in a loop</h1>
+			Greytyphoon's LD 47
+		</header>
+
+		<ul id="score">
+			<li><b>Turn</b> #<span id="turnNumber">0</span></li>
+			<li><span id="timer"></span></li>
+		</ul>
+		<div id="gameBoard">
+		</div>
+		<div id="hand">
+		</div>
+	</div>
+
+	<!--Credits-->
+	<nav id="fixref">
+		<a onClick="alert('How to Play\n¯¯¯¯¯¯¯¯¯¯¯¯¯\n'
+			+ 'I honestly have no clue')">How to play</a>
+		<hr>
+
+		<a onclick="document.getElementById('restartConfirm').style.display = 'inline-block';">Restart</a>
+		<span id="restartConfirm" style="display: none;">
+			&gt; <a onclick="document.getElementById('restartConfirm').style.display = 'none'; startGame();">confirm</a>
+			or <a onclick="document.getElementById('restartConfirm').style.display = 'none';">cancel</a>.
+		</span>
+		<hr>
+
+		<a onClick="alert('Stuck in a loop \n ¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 47 \n By Greytyphoon (Rémi Doutre) \n ©2020 Montréal, Québec, Canada')">Credits</a>
+	</nav>
+</body>
+</html>
