@@ -89,6 +89,17 @@ function startGame()
 	goalDom.height = platformSize/2;
 	platforms[48].dom.appendChild(goalDom);
 
+	// Bug fix: make sure we're not dead at the start
+	var firstTargetSuit = platforms[0].card.suit + 1;
+	if (firstTargetSuit === 4) firstTargetSuit = 0;
+	if (platforms[1].card.suit != firstTargetSuit
+		&& platforms[7].card.suit != firstTargetSuit
+		&& allCards.every(card => card.platform || card.suit != firstTargetSuit))
+	{
+		startGame();
+		return;
+	}
+
 	refreshView();
 }
 
