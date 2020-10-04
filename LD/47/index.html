@@ -34,21 +34,24 @@
 
 	<!--Credits-->
 	<nav id="fixref">
-		<a onClick="modal.showModal('how-to-play');">How to play</a>
-		<hr>
+		<div><a onClick="modal.showModal('how-to-play');">How to play</a></div>
 
-		<a onclick="document.getElementById('restartConfirm').style.display = 'inline-block';">Restart</a>
-		<span id="restartConfirm" style="display: none;">
-			&gt; <a onclick="document.getElementById('restartConfirm').style.display = 'none'; startGame();">confirm</a>
-			or <a onclick="document.getElementById('restartConfirm').style.display = 'none';">cancel</a>.
-		</span>
-		<hr>
+		<div><a onClick="modal.showModal('options');">Options</a></div>
 
-		<a onClick="modal.showModal('credits');">Credits</a>
+		<div>
+			<a onclick="document.getElementById('restartConfirm').style.display = 'inline-block';">Restart</a>
+			<span id="restartConfirm" style="display: none;">
+				&gt; <a onclick="document.getElementById('restartConfirm').style.display = 'none'; startGame();">confirm</a>
+				or <a onclick="document.getElementById('restartConfirm').style.display = 'none';">cancel</a>.
+			</span>
+		</div>
+
+		<div><a onClick="modal.showModal('credits');">Credits</a></div>
 	</nav>
 
 	<dialog id="how-to-play">
-		<h2>How to play</h2>
+		<h2>How to play
+			<b><a onClick="modal.closeModal('how-to-play');">&times;</a></b></h2>
 		<p>The objective of the game is to bring your token <img src="img/peon.png" alt="Player Token" height="16" width="16">
 			to the goal <img src="img/goal.png" alt="Goal" height="16" width="16">.</p>
 		<p>The token will move on its own, every turn, to an adjacent card.<br>
@@ -69,8 +72,35 @@
 		<center><a onClick="modal.closeModal('how-to-play');">Ok!</a></center>
 	</dialog>
 
+	<dialog id="options">
+		<h2>Options
+			<b><a onClick="modal.closeModal('options');">&times;</a></b></h2>
+			TODO: There options don't work yet!
+			<form>
+				<b>Joker Count</b>
+				<ul>
+					<li><input type="radio" id="jokerCountOption2" name="jokerCountOption" value="2" checked><label for="jokerCountOption2">2 jokers</label></li>
+					<li><input type="radio" id="jokerCountOption3" name="jokerCountOption" value="3"><label for="jokerCountOption3">3 jokers</label></li>
+				</ul>
+				<b>Joker Difficulty</b>
+				<ul>
+					<li><input type="radio" id="jokerDifficultyEasy" name="jokerDifficulty" value="0"><label for="jokerDifficultyEasy">Easy jokers</label></li>
+					<li><input type="radio" id="jokerDifficultyMedium" name="jokerDifficulty" value="1"><label for="jokerDifficultyMedium">Some easy jokers, some hard jokers</label></li>
+					<li><input type="radio" id="jokerDifficultyHard" name="jokerDifficulty" value="2" checked><label for="jokerDifficultyHard">Hards jokers</label></li>
+				</ul>
+				<b>Goal Count</b>
+				<ul>
+					<li><input type="radio" id="objectiveOption1" name="objectiveOption" value="1" checked><label for="objectiveOption1">1, in the far corner</label></li>
+					<li><input type="radio" id="objectiveOption3" name="objectiveOption" value="3"><label for="objectiveOption3">3, in all corners</label></li>
+					<li><input type="radio" id="objectiveOption49" name="objectiveOption" value="49"><label for="objectiveOption49">All squares are goals</label></li>
+				</ul>
+			</form>
+		<center><a onClick="modal.closeModal('options'); startGame();">Apply</a> - <a onClick="modal.closeModal('options');">Cancel</a></center>
+	</dialog>
+
 	<dialog id="credits">
-		<h2>Suit Loop</h2>
+		<h2>Suit Loop
+			<b><a onClick="modal.closeModal('credits');">&times;</a></b></h2>
 		<p>A game made for LudumDare 47</p>
 		<p>By Greytyphoon (Rémi Doutre)</p>
 		<p>©2020 Montréal, Québec, Canada</p>
@@ -78,13 +108,15 @@
 	</dialog>
 
 	<dialog id="win">
-		<h2>You win!</h2>
+		<h2>You win!
+			<b><a onClick="modal.closeModal('win');">&times;</a></b></h2>
 		<p>Congratulations!</p>
 		<center><a onClick="modal.closeModal('win');">Yay!</a></center>
 	</dialog>
 
 	<dialog id="lose">
-		<h2>You lose!</h2>
+		<h2>You lose!
+			<b><a onClick="modal.closeModal('lose');">&times;</a></b></h2>
 		<p>Better luck next time!</p>
 		<center><a onClick="modal.closeModal('lose');">Ok...</a></center>
 	</dialog>

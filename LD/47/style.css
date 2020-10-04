@@ -36,6 +36,12 @@ ul#score {
 #score > :last-child {
 	text-align: right; }
 
+#fixref, #fixref * {
+	line-height: 200%; }
+#options ul {
+	padding: 0;
+	list-style: none; }
+
 /* modal.css */
 dialog:not([open]) { display: none !important; }
 dialog[open] {
@@ -48,11 +54,14 @@ dialog[open] {
 	margin: auto;
 	border: .15rem solid var(--murder-black);
 	border-radius: .5rem;
-	padding: 1em; }
+	padding: 1em;
+	background: var(--html-white);
+	z-index: 100; }
 #backdrop {
 	position: fixed;
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
-	background: rgba(0, 0, 0, 0.1); }
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 99; }
