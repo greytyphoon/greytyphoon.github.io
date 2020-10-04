@@ -11,9 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<script type="text/javascript" src="foundation.js"></script>
 	<script type="text/javascript" src="cards.js"></script>
+	<script type="text/javascript" src="modal.js"></script>
 	<script type="text/javascript" src="timer.js"></script>
 </head>
-<body onload="startGame()">
+<body onload="startGame(); modal.showOnce('how-to-play', 'LD47');">
 	<div class="container">
 		<header id="header">
 			<h1>Suit Loop</h1>
@@ -22,7 +23,7 @@
 
 		<ul id="score">
 			<li><b>Turn</b> #<span id="turnNumber">0</span></li>
-			<li style="font-size:1.5rem;">&spades; <span style="color:red">&hearts;</span> &clubs; <span style="color:red">&diams;</span></li>
+			<li>&spades; <span style="color:red">&hearts;</span> &clubs; <span style="color:red">&diams;</span></li>
 			<li><span id="timer"></span></li>
 		</ul>
 		<div id="gameBoard" style="width:0">
@@ -33,7 +34,7 @@
 
 	<!--Credits-->
 	<nav id="fixref">
-		<a onClick="document.getElementById('how-to-play').showModal();">How to play</a>
+		<a onClick="modal.showModal('how-to-play');">How to play</a>
 		<hr>
 
 		<a onclick="document.getElementById('restartConfirm').style.display = 'inline-block';">Restart</a>
@@ -43,7 +44,7 @@
 		</span>
 		<hr>
 
-		<a onClick="document.getElementById('credits').showModal();">Credits</a>
+		<a onClick="modal.showModal('credits');">Credits</a>
 	</nav>
 
 	<dialog id="how-to-play">
@@ -65,7 +66,7 @@
 		<p>You will need both strategy and luck to win.<br>
 			Here's a hint: you can get your token stuck in a square &spades; <span style="color:red">&hearts;</span> &clubs; <span style="color:red">&diams;</span> loop
 			while you deal with the jokers!</p>
-		<center><a onClick="document.getElementById('how-to-play').close();">Ok!</a></center>
+		<center><a onClick="modal.closeModal('how-to-play');">Ok!</a></center>
 	</dialog>
 
 	<dialog id="credits">
@@ -73,7 +74,19 @@
 		<p>A game made for LudumDare 47</p>
 		<p>By Greytyphoon (Rémi Doutre)</p>
 		<p>©2020 Montréal, Québec, Canada</p>
-		<center><a onClick="document.getElementById('credits').close();">Ok!</a></center>
+		<center><a onClick="modal.closeModal('credits');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="win">
+		<h2>You win!</h2>
+		<p>Congratulations!</p>
+		<center><a onClick="modal.closeModal('win');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="lose">
+		<h2>You lose!</h2>
+		<p>Better luck next time!</p>
+		<center><a onClick="modal.closeModal('lose');">Ok...</a></center>
 	</dialog>
 </body>
 </html>

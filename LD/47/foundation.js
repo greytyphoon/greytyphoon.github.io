@@ -367,9 +367,9 @@ function play(cardInHand, cardInPlatform)
 function gameEnded(win)
 {
 	if (win)
-		alert("YOU WIN");
+		modal.showModal("win");
 	else
-		alert("YOU LOSE");
+		modal.showModal("lose");
 	gameOver = true;
 	allCards.forEach(card => { card.dom.draggable = false; });
 	timer.stop();
