@@ -23,8 +23,6 @@ function startGame()
 	virusesKilled = 0;
 	turnCounter = 0;
 	timer.zero();
-	seconds = 0;
-	minutes = 0;
 
 	// Options
 	readOptions();
