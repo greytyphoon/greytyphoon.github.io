@@ -75,18 +75,18 @@
 	<dialog id="options">
 		<h2>Options
 			<b><a onClick="modal.closeModal('options');">&times;</a></b></h2>
-			TODO: There options don't work yet!
 			<form>
 				<b>Joker Count</b>
 				<ul>
+					<li><input type="radio" id="jokerCountOption1" name="jokerCountOption" value="1" checked><label for="jokerCountOption1">1 joker</label></li>
 					<li><input type="radio" id="jokerCountOption2" name="jokerCountOption" value="2" checked><label for="jokerCountOption2">2 jokers</label></li>
 					<li><input type="radio" id="jokerCountOption3" name="jokerCountOption" value="3"><label for="jokerCountOption3">3 jokers</label></li>
 				</ul>
 				<b>Joker Difficulty</b>
 				<ul>
-					<li><input type="radio" id="jokerDifficultyEasy" name="jokerDifficulty" value="0"><label for="jokerDifficultyEasy">Easy jokers</label></li>
-					<li><input type="radio" id="jokerDifficultyMedium" name="jokerDifficulty" value="1"><label for="jokerDifficultyMedium">Some easy jokers, some hard jokers</label></li>
-					<li><input type="radio" id="jokerDifficultyHard" name="jokerDifficulty" value="2" checked><label for="jokerDifficultyHard">Hards jokers</label></li>
+					<li><input type="radio" id="jokerDifficultyEasy" name="jokerDifficulty" value="0" checked><label for="jokerDifficultyEasy">Easy jokers</label></li>
+					<li><input type="radio" id="jokerDifficultyMedium" name="jokerDifficulty" value="1"><label for="jokerDifficultyMedium">Mixed jokers</label></li>
+					<li><input type="radio" id="jokerDifficultyHard" name="jokerDifficulty" value="2"><label for="jokerDifficultyHard">Hard jokers</label></li>
 				</ul>
 				<b>Goal Count</b>
 				<ul>
@@ -95,7 +95,7 @@
 					<li><input type="radio" id="objectiveOption49" name="objectiveOption" value="49"><label for="objectiveOption49">All squares are goals</label></li>
 				</ul>
 			</form>
-		<center><a onClick="modal.closeModal('options'); startGame();">Apply</a> - <a onClick="modal.closeModal('options');">Cancel</a></center>
+		<center>TODO <a onClick="modal.closeModal('options'); startGame();">Apply</a> - <a onClick="modal.closeModal('options');">Cancel</a></center>
 	</dialog>
 
 	<dialog id="credits">
