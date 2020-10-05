@@ -1,0 +1,22 @@
+/* MODAL DIALOG */
+dialog:not([open]) { display: none !important; }
+dialog[open] {
+	display: block;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	width: fit-content;
+	margin: auto;
+	border: .15rem solid var(--murder-black);
+	border-radius: .5rem;
+	padding: 1em;
+	background: var(--html-white);
+	z-index: 100; }
+#backdrop {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 99; }

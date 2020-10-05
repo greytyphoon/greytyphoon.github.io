@@ -8,10 +8,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Virus Sweeper</title>
 	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
+	<link rel="stylesheet" type="text/css" href="../game.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<script type="text/javascript" src="foundation.js"></script>
 	<script type="text/javascript" src="virus.js"></script>
-	<script type="text/javascript" src="timer.js"></script>
+	<script type="text/javascript" src="../game.js"></script>
 </head>
 <body onload="startGame()">
 	<div class="container">
@@ -30,38 +31,10 @@
 
 	<!--Credits-->
 	<nav id="fixref">
-		<a onClick="alert('How to Play\n¯¯¯¯¯¯¯¯¯¯¯¯¯\n'
-			+ 'Protect the green Seed at the center from the red Viruses!\n'
-			+ 'Click on the square Stations to destroy adjacent viruses.\n'
-			+ 'Viruses always move forward and will fuse when they meet others,\n'
-			+ 'but they multiply if they see two paths to the seed!')">How to play</a>
+		<a onClick="modal.showModal('how-to-play');">How to play</a>
 		<hr>
 
-		<details id="options">
-			<summary>Options</summary>
-			<form>
-				<b>Grid Size</b>
-				<ul>
-					<li><input type="radio" id="gridSizeOption6" name="gridSizeOption" value="6"><label for="gridSizeOption6">6 &times; 6</label></li>
-					<li><input type="radio" id="gridSizeOption8" name="gridSizeOption" value="8" checked><label for="gridSizeOption8">8 &times; 8</label></li>
-					<li><input type="radio" id="gridSizeOption10" name="gridSizeOption" value="10"><label for="gridSizeOption10">10 &times; 10</label></li>
-				</ul>
-				<b>Large blocks</b>
-				<ul>
-					<li><input type="radio" id="largeBlocksOption0" name="largeBlocksOption" value="0"><label for="largeBlocksOption0">None</label></li>
-					<li><input type="radio" id="largeBlocksOption1" name="largeBlocksOption" value="1"><label for="largeBlocksOption1">Some</label></li>
-					<li><input type="radio" id="largeBlocksOption2" name="largeBlocksOption" value="2" checked><label for="largeBlocksOption2">Many</label></li>
-				</ul>
-				<b>Starting HP</b>
-				<ul>
-					<li><input type="radio" id="hpOptionHigh" name="hpOption" value="2" checked><label for="hpOptionHigh">High</label></li>
-					<li><input type="radio" id="hpOptionLow" name="hpOption" value="1"><label for="hpOptionLow">Low</label></li>
-					<li><input type="radio" id="hpOptionMin" name="hpOption" value="0"><label for="hpOptionMin">Sudden Death</label></li>
-				</ul>
-				<a onclick="document.getElementById('options').removeAttribute('open'); startGame();">Apply</a>
-				or <a onclick="document.getElementById('options').removeAttribute('open');">cancel</a>.
-			</form>
-		</details>
+		<a onclick="modal.showModal('options');">Options</a>
 		<hr>
 
 		<a onclick="document.getElementById('restartConfirm').style.display = 'inline-block';">Restart</a>
@@ -71,7 +44,68 @@
 		</span>
 		<hr>
 
-		<a onClick="alert('Virus Sweeper \n ¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 46 \n By Greytyphoon (Rémi Doutre) \n ©2020 Montréal, Québec, Canada')">Credits</a>
+		<a onClick="modal.showModal('credits');">Credits</a>
 	</nav>
+
+	<dialog id="how-to-play">
+		<h2>How to play
+			<b><a onClick="modal.closeModal('how-to-play');">&times;</a></b></h2>
+		<p>Protect the <b style="color:var(--neon-green)">green Seed</b> at the center from the <b style="color:var(--neon-red)">red Viruses</b>!</p>
+		<p>Click on the square <b style="color:var(--neon-blue)">Stations</b> to destroy adjacent <b style="color:var(--neon-red)">viruses.</b></p>
+		<p><b style="color:var(--neon-red)">Viruses</b> will then move, always one step towards the <b style="color:var(--neon-green)">seed</b>.<br>
+			They will fuse with other <b style="color:var(--neon-red)">viruses</b> they meet,<br>
+			but they multiply if they see two paths to the <b style="color:var(--neon-green)">seed</b>!</p>
+		<center><a onClick="modal.closeModal('how-to-play');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="options">
+		<h2>Options
+			<b><a onClick="modal.closeModal('options');">&times;</a></b></h2>
+		<form>
+			<b>Grid Size</b>
+			<ul>
+				<li><input type="radio" id="gridSizeOption6" name="gridSizeOption" value="6"><label for="gridSizeOption6">6 &times; 6</label></li>
+				<li><input type="radio" id="gridSizeOption8" name="gridSizeOption" value="8" checked><label for="gridSizeOption8">8 &times; 8</label></li>
+				<li><input type="radio" id="gridSizeOption10" name="gridSizeOption" value="10"><label for="gridSizeOption10">10 &times; 10</label></li>
+			</ul>
+			<b>Large blocks</b>
+			<ul>
+				<li><input type="radio" id="largeBlocksOption0" name="largeBlocksOption" value="0"><label for="largeBlocksOption0">None</label></li>
+				<li><input type="radio" id="largeBlocksOption1" name="largeBlocksOption" value="1"><label for="largeBlocksOption1">Some</label></li>
+				<li><input type="radio" id="largeBlocksOption2" name="largeBlocksOption" value="2" checked><label for="largeBlocksOption2">Many</label></li>
+			</ul>
+			<b>Starting HP</b>
+			<ul>
+				<li><input type="radio" id="hpOptionHigh" name="hpOption" value="2" checked><label for="hpOptionHigh">High</label></li>
+				<li><input type="radio" id="hpOptionLow" name="hpOption" value="1"><label for="hpOptionLow">Low</label></li>
+				<li><input type="radio" id="hpOptionMin" name="hpOption" value="0"><label for="hpOptionMin">Sudden Death</label></li>
+			</ul>
+			<a onclick="modal.closeModal('options'); startGame();">Apply</a>
+			or <a onclick="modal.closeModal('options');">cancel</a>.
+		</form>
+	</dialog>
+
+	<dialog id="credits">
+		<h2>Virus Sweeper
+			<b><a onclick="modal.closeModal('credits');">&times;</a></b></h2>
+		<p>A game made for LudumDare 46</p>
+		<p>By Greytyphoon (Rémi Doutre)</p>
+		<p>©2020 Montréal, Québec, Canada</p>
+		<center><a onclick="modal.closeModal('credits');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="win">
+		<h2>You win!
+			<b><a onClick="modal.closeModal('win');">&times;</a></b></h2>
+		<p>Congratulations!</p>
+		<center><a onClick="modal.closeModal('win');">Yay!</a></center>
+	</dialog>
+
+	<dialog id="lose">
+		<h2>You lose!
+			<b><a onClick="modal.closeModal('lose');">&times;</a></b></h2>
+		<p>Better luck next time!</p>
+		<center><a onClick="modal.closeModal('lose');">Ok...</a></center>
+	</dialog>
 </body>
 </html>

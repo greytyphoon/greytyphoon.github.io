@@ -161,8 +161,7 @@ function attack(station)
 	if (viruses.length == 0)
 	{
 		// YOU WIN
-		finishGame();
-		alert("YOU WIN");
+		finishGame(true);
 		return;
 	}
 
@@ -186,7 +185,6 @@ function attack(station)
 		{
 			// YOU LOSE
 			finishGame();
-			alert("YOU LOSE!");
 			return;
 		}
 	}
@@ -220,8 +218,12 @@ function readOptions()
 	}
 }
 
-function finishGame()
+function finishGame(win)
 {
+	if (win)
+		modal.showModal("win");
+	else
+		modal.showModal("lose");
 	gameOver = true;
 	timer.stop();
 	refreshStats();
