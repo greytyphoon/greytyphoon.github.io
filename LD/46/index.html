@@ -29,22 +29,14 @@
 		<div id="gameBoard"></div>
 	</div>
 
-	<!--Credits-->
 	<nav id="fixref">
-		<a onClick="modal.showModal('how-to-play');">How to play</a>
-		<hr>
-
-		<a onclick="modal.showModal('options');">Options</a>
-		<hr>
-
-		<a onclick="document.getElementById('restartConfirm').style.display = 'inline-block';">Restart</a>
-		<span id="restartConfirm" style="display: none;">
-			&gt; <a onclick="document.getElementById('restartConfirm').style.display = 'none'; startGame();">confirm</a>
-			or <a onclick="document.getElementById('restartConfirm').style.display = 'none';">cancel</a>.
-		</span>
-		<hr>
-
-		<a onClick="modal.showModal('credits');">Credits</a>
+		<ul>
+			<li><a class="how-to-play" onClick="modal.showModal('how-to-play');">How to play</a></li>
+			<li><a class="options" onclick="modal.showModal('options');">Options</a></li>
+			<li><a class="confirm" onclick="document.getElementById('confirm-restart').toggleAttribute('visible'); startGame();" id="confirm-restart">Confirm</a>
+				<a class="restart" onclick="document.getElementById('confirm-restart').toggleAttribute('visible');">Restart</a>
+			<li><a class="credits" onClick="modal.showModal('credits');">Credits</a></li>
+		</ul>
 	</nav>
 
 	<dialog id="how-to-play">
@@ -80,8 +72,7 @@
 				<li><input type="radio" id="hpOptionLow" name="hpOption" value="1"><label for="hpOptionLow">Low</label></li>
 				<li><input type="radio" id="hpOptionMin" name="hpOption" value="0"><label for="hpOptionMin">Sudden Death</label></li>
 			</ul>
-			<a onclick="modal.closeModal('options'); startGame();">Apply</a>
-			or <a onclick="modal.closeModal('options');">cancel</a>.
+			<a onclick="modal.closeModal('options'); startGame();">Apply</a> or <a onclick="modal.closeModal('options');">cancel</a>.
 		</form>
 	</dialog>
 

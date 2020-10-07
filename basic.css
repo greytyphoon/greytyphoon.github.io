@@ -28,50 +28,59 @@
 
 	font-size: 16px;
 	font-family: 'Roboto', 'Segoe UI', sans-serif;
-	color: var(--murder-black); }
+	color: var(--murder-black);
+}
 * {
 	box-sizing: border-box;
-	line-height: 1.2em; }
+	line-height: 1.2em;
+}
 body { margin: 0; }
 a, a:link, a:visited, a:active {
 	color: var(--murder-red);
 	text-decoration: none;
-	cursor: pointer; }
+	cursor: pointer;
+}
 a:hover {
 	text-decoration: underline;
-	text-shadow: 0px 0px 1px; }
+	text-shadow: 0px 0px 1px;
+}
 hr {
 	border: none;
 	border-bottom: 1px solid var(--html-darkgrey);
-	clear: both; }
+	clear: both;
+}
 code {
 	display: inline-block;
 	background-color: var(--murder-grey);
 	border-radius: .25em;
-	padding: 0 .15em; }
+	padding: 0 .15em;
+}
 ul, ol, dl, p { margin: 0 0 .75em 0; }
 summary { cursor: pointer; }
 
 /********************
- * Basic page layout	(.container, #fixref, header)
+ * Basic page layout	(.container, #fixref)
  */
 
 body > .container { padding: 10px 25px .5px 25px; }
 @media screen and (min-width: 576px) {
 	body {
 		overflow-y: scroll;
-		background-color: var(--murder-grey); }
+		background-color: var(--murder-grey);
+	}
 	body > .container {
 		background-color: var(--html-white);
 		border-left: 1px solid var(--html-darkgrey);
 		border-right: 1px solid var(--html-darkgrey);
 		margin: 0 auto;
 		max-width: 540px;
-		min-height: 100vh; }
-	body > .container::after {
+		min-height: 100vh;
+	}
+	body > .container::after { /* clearfix */
 		content: "";
 		display: block;
-		clear: both; } /* clearfix */
+		clear: both;
+	}
 }
 @media screen and (min-width: 768px) {
 	body > .container { max-width: 720px; }
@@ -84,34 +93,67 @@ body > .container { padding: 10px 25px .5px 25px; }
 }
 
 #fixref {
+	border-width: 0;
+	border-style: solid;
+	border-color: var(--html-darkgrey);
+	border-bottom-width: 1px;
 	background-color: var(--html-white);
-	text-align: center; }
-#fixref:first-child { border-bottom: 1px solid var(--html-darkgrey); }
-#fixref:last-child { border-top: 1px solid var(--html-darkgrey); }
-@media screen and (min-width: 768px){
+	text-align: center;
+}
+.container ~ #fixref {
+	margin-top: .75em;
+	border-bottom-width: 0;
+	border-top-width: 1px;
+}
+#fixref > ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#fixref > ul > li {
+	display: block;
+	margin: .75rem;
+	font-size: .75rem;
+}
+#fixref > ul > li > a::before {
+	content: "?"; /* override this with useful icons */
+	display: block;
+	padding: .15rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+#fixref > ul > li > a.home::before { content: "\2302"; content: "⌂"; } /* overrides should look like this */
+
+@media screen and (min-width: 576px){
 	#fixref {
 		position: fixed;
 		bottom: .5rem;
 		right: .5rem;
 		z-index: 5;
-		border: 1px solid var(--html-darkgrey);
+		margin: 0;
+		border-width: 1px;
 		border-radius: 3px;
 		padding: .1em .25em;
 	}
+	.container ~ #fixref { border-bottom-width: 1px; }
+	#fixref > ul {
+		display: block;
+	}
+	#fixref > ul > li > a::before {
+		display: inline-block;
+		padding: 0 .15rem 0 0;
+		font-size: 1rem;
+	}
+	#fixref > ul > li {
+		display: list-item;
+		margin: .5rem 0;
+		font-size: 1rem;
+		text-align: center;
+	}
 }
-
-header {
-	padding: 8px;
-	margin: 0px -15px 15px -15px;
-	border-radius: 6px;
-	text-align: center;
-	background-color: var(--murder-red);
-	border: 1px solid var(--murder-red);
-	box-shadow: 2px 2px 2px var(--html-darkgrey); }
-header h1 {
-	font-size: inherit;
-	font-weight: bold;
-	margin: 0; }
 
 /********************
  * Grid
@@ -120,28 +162,46 @@ header h1 {
 	section.row {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -.5rem; }
+		margin: 0 -.5rem;
+	}
 	section.row > * {
 		flex: 1;
-		margin: 0 .5rem; }
+		margin: 0 .5rem;
+	}
 }
 
 /********************
- * Custom Components   (h2/.subtitle, .apartee, .float-right, .br)
+ * Custom Components   (h1/header, h2/.subtitle, .br)
  */
+
+header {
+	padding: 8px;
+	margin: 0px -15px 15px -15px;
+	border-radius: 6px;
+	text-align: center;
+	background-color: var(--murder-red);
+	border: 1px solid var(--murder-red);
+	box-shadow: 2px 2px 2px var(--html-darkgrey);
+}
+header h1 {
+	font-size: inherit;
+	font-weight: bold;
+	margin: 0;
+}
 
 h2, .subtitle {
 	border-bottom: 1px solid var(--murder-grey);
 	display: block;
 	font-size: inherit;
 	font-weight: bold;
-	margin: 0 0 .3em 0; }
+	margin: 0 0 .3em 0;
+}
 h2 > *:not(a), .subtitle > *:not(a) {
 	float: right;
-	margin-left: .75em; }
+	margin-left: .75em;
+}
 
-.br { /*for 'breathing room' after a paragraph. Does not simply replace random <br>s in my code, no sir. Obviously not. */
-	margin-bottom: 0.75rem; }
+.br { margin-bottom: 0.75rem; } /*for 'breathing room' after a paragraph. Does not simply replace random <br>s in my code, no sir. Obviously not. */
 
 /********************
  * tables (table, .table-cornered, TableSort library)
@@ -157,11 +217,13 @@ table.table-cornered td {
 	border-bottom: 1px solid var(--html-darkgrey);
 	color: var(--murder-black);
 	text-align:center;
-	width:25%; }
+	width:25%;
+}
 
 /* MIT License http://tristen.ca/tablesort/demo/ */
 th[role=columnheader]:not(.no-sort) {
-	cursor: pointer; }
+	cursor: pointer;
+}
 th[role=columnheader]:not(.no-sort):after {
 	content: '';
 	float: right;
@@ -174,16 +236,20 @@ th[role=columnheader]:not(.no-sort):after {
 	-ms-user-select: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
-	user-select: none; }
+	user-select: none;
+}
 th[aria-sort=ascending]:not(.no-sort):after {
 	border-bottom: none;
-	border-width: .25em .25em 0; }
+	border-width: .25em .25em 0;
+}
 th[aria-sort]:not(.no-sort):after {
 	visibility: visible;
-	opacity: 0.4; }
+	opacity: 0.4;
+}
 th[role=columnheader]:not(.no-sort):hover:after {
 	visibility: visible;
-	opacity: 1; }
+	opacity: 1;
+}
 
 /********************
  * Printing tweaks

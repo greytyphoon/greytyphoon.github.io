@@ -55,6 +55,3 @@ ul#score {
 #options ul {
 	padding: 0;
 	list-style: none; }
-details#options > summary { color: var(--murder-red); }
-details#options > summary:hover { text-decoration: underline; }
-details#options > summary::-webkit-details-marker { display: none; }

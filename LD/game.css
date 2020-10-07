@@ -11,7 +11,8 @@ dialog[open] {
 	border-radius: .5rem;
 	padding: 1em;
 	background: var(--html-white);
-	z-index: 100; }
+	z-index: 100;
+}
 #backdrop {
 	position: fixed;
 	top: 0px;
@@ -19,4 +20,14 @@ dialog[open] {
 	bottom: 0px;
 	left: 0px;
 	background: rgba(0, 0, 0, 0.2);
-	z-index: 99; }
+	z-index: 99;
+}
+
+/* NAV */
+#confirm-restart:not([visible]) { display: none !important; }
+#confirm-restart { color: var(--murder-black); }
+#fixref > ul > li > a.how-to-play::before { content: "?"; }
+#fixref > ul > li > a.options::before { content: "\2699"; content: "⚙"; }
+#fixref > ul > li > a.restart::before { content: "\21ba"; content: "↺"; }
+#fixref > ul > li > a.confirm::before { content: "\26a0"; content: "⚠"; }
+#fixref > ul > li > a.credits::before { content: "\1f6c8"; content: "🛈"; }
