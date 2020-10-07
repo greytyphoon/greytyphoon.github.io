@@ -88,6 +88,10 @@ var allPossibleHints = [
 	"longDecription": "Right in the doorway as you were just stepping in this room, there was a hanging mask, of shamanic african inspiration. Its deep eyes are somewhat intimidating, even after the initial shock. You can't see any reason to why it's hanging in the doorway, but decide to leave it, just in case."
 },
 {
+	"shortDecription": "Address Book",
+	"longDecription": "An address book is found, neatly displayed on a table. The handwriting inside looks like it might be the mansion's owner's, but you don't recognize any of the names, appart from yours."
+},
+{
 	"shortDecription": "Rainbow Flag",
 	"longDecription": "There is a trash can upside-down in a corner of this room. A quick glance lets you find a palm-sized rainbow-colored flag in it, a weird thing to throw away."
 }
