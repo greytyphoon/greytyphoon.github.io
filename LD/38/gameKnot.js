@@ -41,7 +41,6 @@ function attack(tile, hasAdvantage)
 	if (gameTiles.every(t => t.seenByPlayerRed))
 	{
 		modal.showModal("win");
-		alert("You have explored every tile of the Small World! You win!");
 		gameOver = true;
 		timer.stop();
 		return;
