@@ -61,7 +61,7 @@ body > .container { padding: 10px 25px .5px 25px; }
 		border-right: 1px solid var(--html-darkgrey);
 		margin: 0 auto;
 		max-width: 540px;
-		min-height: 100%; }
+		min-height: 100vh; }
 	body > .container::after {
 		content: "";
 		display: block;
