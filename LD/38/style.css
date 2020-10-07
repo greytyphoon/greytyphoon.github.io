@@ -106,3 +106,7 @@ ul#score, ul#cardTray {
 	display: grid;
 	grid-template-columns: 1fr 1fr; }
 ul#score > li:last-child { text-align: right; }
+
+#options ul {
+	padding: 0;
+	list-style: none; }

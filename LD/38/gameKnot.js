@@ -40,6 +40,7 @@ function attack(tile, hasAdvantage)
 	// check for victory
 	if (gameTiles.every(t => t.seenByPlayerRed))
 	{
+		modal.showModal("win");
 		alert("You have explored every tile of the Small World! You win!");
 		gameOver = true;
 		timer.stop();
@@ -111,7 +112,7 @@ var KnotPrivate = {
 			isBlueDead = true;
 		if (gameTiles.every(t => t.owner !== _Red))
 		{
-			alert("You got wiped off! You lose!");
+			modal.showModal('lose');
 			gameOver = true;
 			timer.stop();
 		}

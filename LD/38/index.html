@@ -8,14 +8,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Color Conquest</title>
 	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
+	<link rel="stylesheet" type="text/css" href="../game.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript" src="../game.js"></script>
 	<script type="text/javascript" src="foundation.js"></script>
 	<script type="text/javascript" src="tilesNail.js"></script>
 	<script type="text/javascript" src="boardGlue.js"></script>
 	<script type="text/javascript" src="gameKnot.js"></script>
-	<script type="text/javascript" src="../46/timer.js"></script>
 </head>
-<body onload="setupStart()">
+<body onload="setupStart(); modal.showOnce('how-to-play', 'LD38');">
 	<div class="container">
 		<header id="header">
 			<h1>Color Conquest</h1>
@@ -50,19 +51,68 @@
 		<div id="gameBoard"></div>
 	</div>
 
-	<!--Credits-->
 	<nav id="fixref">
-		<a onClick="alert('Rules \n ¯¯¯¯¯ \n You are Red! Click on other tiles to conquer. \n You must have owned every tile to win.')">Rules</a>
-		<hr>
-
-		<a onclick="document.getElementById('restartConfirm').style.display = 'inline-block';">Restart</a>
-		<span id="restartConfirm" style="display: none;">
-			&gt; <a onclick="document.getElementById('restartConfirm').style.display = 'none'; setupStart();">confirm</a>
-			or <a onclick="document.getElementById('restartConfirm').style.display = 'none';">cancel</a>.
-		</span>
-		<hr>
-
-		<a onClick="alert('Color Conquest \n ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ \n A game made for LudumDare 38 \n By Greytyphoon (Rémi Doutre) \n ©2017 Montréal, Québec, Canada')">Credits</a>
+		<ul>
+			<li><a class="how-to-play" onClick="modal.showModal('how-to-play');">How to play</a></li>
+			<li><a class="options" onclick="modal.showModal('options');">Options</a></li>
+			<li><a class="confirm" onclick="document.getElementById('confirm-restart').toggleAttribute('visible'); setupStart();" id="confirm-restart">Confirm</a>
+				<a class="restart" onclick="document.getElementById('confirm-restart').toggleAttribute('visible');">Restart</a>
+			<li><a class="credits" onClick="modal.showModal('credits');">Credits</a></li>
+		</ul>
 	</nav>
+
+	<dialog id="how-to-play">
+		<h2>How to play
+			<b><a onClick="modal.closeModal('how-to-play');">&times;</a></b></h2>
+		<p>You are the <b style="color:red">Red</b> army, out to conquer!</p>
+		<p>Click on neighboring squares to attempt to conquer them.<br>
+			Every time you take a move, your adversaries do too, so try to pit them against each other.</p>
+		<p>Every turn, you are randomly assigned a troop to use, among &#x2654;, &#x2655;, &#x2656;, &#x2657;, &#x2658; and &#x2659;.<br>
+			If you attempt to attack a square that <b>resists</b> (<em>R</em>) your current troop, you will fail.<br>
+			Your opponents may try to <b style="display:inline-block; border: 1px dashed darkgrey;">fortify</b> their squares, as their action in a turn.<br>
+			To capture a fortified square, attack it with its <b>weakness</b> (<em>W</em>).</p>
+		<p>You can also attack squares that are adjacent to two <b style="color:red">Red</b> squares in a <b>corner attack</b>.<br>
+			In a corner attack, your victory is guaranteed, regardless of troops, fortifications, or resistances.</p>
+		<p>Squares marked with an <em>S</em> are the ones you have visited.<br>
+			The basic objective of the game is to visit them all. Good luck!</p>
+		<center><a onClick="modal.closeModal('how-to-play');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="options">
+		<h2>Options
+			<b><a onClick="modal.closeModal('options');">&times;</a></b></h2>
+		<form>
+			<b>Objective</b>
+			<ul>
+				<li><input type="radio" id="objectiveOptionVisit" name="objectiveOption" value="visit" checked><label for="objectiveOptionVisit">Visit all squares</label></li>
+				<li><input type="radio" id="objectiveOptionConquer" name="objectiveOption" value="conquer"><label for="objectiveOptionConquer">Conquer all squares</label></li>
+				<li><input type="radio" id="objectiveOptionProtect" name="objectiveOption" value="protect"><label for="objectiveOptionProtect">Protect the neutral square</label></li>
+			</ul>
+			<a onclick="modal.closeModal('options'); setupStart();">Apply</a> or <a onclick="modal.closeModal('options');">cancel</a>.
+		</form>
+	</dialog>
+
+	<dialog id="credits">
+		<h2>Virus Sweeper
+			<b><a onclick="modal.closeModal('credits');">&times;</a></b></h2>
+		<p>A game made for LudumDare 38</p>
+		<p>By Greytyphoon (Rémi Doutre)</p>
+		<p>©2017-2020 Montréal, Québec, Canada</p>
+		<center><a onclick="modal.closeModal('credits');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="win">
+		<h2>You win!
+			<b><a onClick="modal.closeModal('win');">&times;</a></b></h2>
+		<p>You conquered every square of this small world!<br>Congratulations!</p>
+		<center><a onClick="modal.closeModal('win');">Yay!</a></center>
+	</dialog>
+
+	<dialog id="lose">
+		<h2>You lost!
+			<b><a onClick="modal.closeModal('lose');">&times;</a></b></h2>
+		<p>You got wiped off!<br>Better luck next time!</p>
+		<center><a onClick="modal.closeModal('lose');">Ok...</a></center>
+	</dialog>
 </body>
 </html>
