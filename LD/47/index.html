@@ -8,11 +8,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Suit Loop</title>
 	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
+	<link rel="stylesheet" type="text/css" href="../game.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript" src="../game.js"></script>
 	<script type="text/javascript" src="foundation.js"></script>
 	<script type="text/javascript" src="cards.js"></script>
-	<script type="text/javascript" src="modal.js"></script>
-	<script type="text/javascript" src="timer.js"></script>
 </head>
 <body onload="startGame(); modal.showOnce('how-to-play', 'LD47');">
 	<div class="container">
@@ -32,21 +32,14 @@
 		</div>
 	</div>
 
-	<!--Credits-->
 	<nav id="fixref">
-		<div><a onClick="modal.showModal('how-to-play');">How to play</a></div>
-
-		<div><a onClick="modal.showModal('options');">Options</a></div>
-
-		<div>
-			<a onclick="document.getElementById('restartConfirm').style.display = 'inline-block';">Restart</a>
-			<span id="restartConfirm" style="display: none;">
-				&gt; <a onclick="document.getElementById('restartConfirm').style.display = 'none'; startGame();">confirm</a>
-				or <a onclick="document.getElementById('restartConfirm').style.display = 'none';">cancel</a>.
-			</span>
-		</div>
-
-		<div><a onClick="modal.showModal('credits');">Credits</a></div>
+		<ul>
+			<li><a class="how-to-play" onClick="modal.showModal('how-to-play');">How to play</a></li>
+			<li><a class="options" onclick="modal.showModal('options');">Options</a></li>
+			<li><a class="confirm" onclick="document.getElementById('confirm-restart').toggleAttribute('visible'); startGame();" id="confirm-restart">Confirm</a>
+				<a class="restart" onclick="document.getElementById('confirm-restart').toggleAttribute('visible');">Restart</a>
+			<li><a class="credits" onClick="modal.showModal('credits');">Credits</a></li>
+		</ul>
 	</nav>
 
 	<dialog id="how-to-play">
