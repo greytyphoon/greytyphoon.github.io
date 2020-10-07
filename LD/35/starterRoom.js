@@ -27,20 +27,20 @@ function getRandomRoom()
     {
         case 0:
             newRoom["description"]     = "The manor's interior garden is growing in front of you, neglected. Some plants have withered and died, some have grown out of control.";
-            newRoom["doorNorthOpen"]   = "A door to the north leads outside the mansion."; // this shouldn't be used.
-            newRoom["doorNorthClosed"] = "There is a very small shed in the north of the room, where rakes and shovels are lined up.";
-            newRoom["doorSouthOpen"]   = "To the south, you can see a way across the climbing plants and gardening tools.";
-            newRoom["doorSouthClosed"] = "To the south, climbing plants have blocked off a large section of the wall.";
-            newRoom["doorWestOpen"]    = "A door to the west leads outside the mansion."; // this shouldn't be used.
-            newRoom["doorWestClosed"]  = "High windows on the western wall let a flood of moonlight in, a delight for the wild vegetation.";
-            newRoom["doorEastOpen"]    = "East of you is a small door, leading back inside the sturdy walls of the mansion. You also notice a small pillar, with a sun clock on it.";
-            newRoom["doorEastClosed"]  = "The eastern wall's paint has started peeling off. You notice a small pillar, with a sun clock on it.";
+            newRoom["doorNorthOpen"]   = "";
+            newRoom["doorNorthClosed"] = "";
+            newRoom["doorSouthOpen"]   = "";
+            newRoom["doorSouthClosed"] = "";
+            newRoom["doorWestOpen"]    = "";
+            newRoom["doorWestClosed"]  = "";
+            newRoom["doorEastOpen"]    = "";
+            newRoom["doorEastClosed"]  = "";
             break;
         case 1:
         // TODO big job here
             newRoom["description"]     = "This is a narrow room that smells like smoke, with heavy leather armchairs.";
-            newRoom["doorNorthOpen"]   = "A door to the north leads outside the mansion."; // this shouldn't be used.
-            newRoom["doorNorthClosed"] = "An old gramophone is on a shelf on the north wall, and the shelf is filled with discs. A window, nearby, lets some moonlight and fresh air in.";
+            newRoom["doorNorthOpen"]   = "";
+            newRoom["doorNorthClosed"] = "";
             newRoom["doorSouthOpen"]   = "";
             newRoom["doorSouthClosed"] = "";
             newRoom["doorWestOpen"]    = "";
@@ -50,7 +50,7 @@ function getRandomRoom()
             break;
         case 2:
             newRoom["description"]     = "You have stepped in a small room that looks like an addendum to the main dinning room.";
-            newRoom["doorNorthOpen"]   = "A door to the north leads outside the mansion."; // this shouldn't be used.
+            newRoom["doorNorthOpen"]   = "";
             newRoom["doorNorthClosed"] = "";
             newRoom["doorSouthOpen"]   = "";
             newRoom["doorSouthClosed"] = "";
@@ -288,7 +288,7 @@ function getRandomRoom()
             newRoom["doorWestOpen"]    = "";
             newRoom["doorWestClosed"]  = "";
             newRoom["doorEastOpen"]    = "";
-            newRoom["doorEastClosed"]  = "The windows on the east side are taller than you are, but the heavy red curtains are pulled to shield from the darkness of the night outside.";
+            newRoom["doorEastClosed"]  = "";
             break;
         case 24:
             newRoom["description"]     = "This is a wardrobe, but there is ample room to walk around.";
@@ -391,36 +391,36 @@ function getRandomRoom()
             break;
         case 33:
             newRoom["description"]     = "This is the first room you explored in the mansion: the vestible. It's never a good sign, though, that the lights don't work.";
-            newRoom["doorNorthOpen"]   = "A double door on the northern wall leads to the hall.";
-            newRoom["doorNorthClosed"] = "You could have sworn that a double door led further in the mansion, but obviously there is no such door. The vestible feels oppressively small.";
-            newRoom["doorSouthOpen"]   = "A door to the south leads outside the mansion."; // this shouldn't be used.
-            newRoom["doorSouthClosed"] = "The main door is behind you, on the south wall. You could leave, but you're not done here.";
-            newRoom["doorWestOpen"]    = "A white french door on the west wall looks pretty inviting. An elaborate umbrella hangs from a hook next to it.";
-            newRoom["doorWestClosed"]  = "There is a bench on the western side, to sit on when removing boots. An elaborate umbrella hangs from a hook next to it.";
-            newRoom["doorEastOpen"]    = "A narrow door, probably to be used by the personnel, is on the eastern wall.";
-            newRoom["doorEastClosed"]  = "A rich collection of fur coats is lined up on the eastern wall.";
+            newRoom["doorNorthOpen"]   = "";
+            newRoom["doorNorthClosed"] = "";
+            newRoom["doorSouthOpen"]   = "";
+            newRoom["doorSouthClosed"] = "";
+            newRoom["doorWestOpen"]    = "";
+            newRoom["doorWestClosed"]  = "";
+            newRoom["doorEastOpen"]    = "";
+            newRoom["doorEastClosed"]  = "";
             break;
         case 34:
             newRoom["description"]     = "A billiard room. There are no balls to be found, though.";
-            newRoom["doorNorthOpen"]   = "The main door to this room is on the north side, leading to the hallway.";
-            newRoom["doorNorthClosed"] = "The room feels somewhat oppressive, perhaps because of the suspicious plain wall on the north side.";
-            newRoom["doorSouthOpen"]   = "A door to the south leads outside the mansion."; // this shouldn't be used.
-            newRoom["doorSouthClosed"] = "A golden ashtray, and some gaming equipment, are stored on the shelves of the south wall.";
-            newRoom["doorWestOpen"]    = "An unassuming wooden door is on the western wall, on a section outside of the light's radius.";
-            newRoom["doorWestClosed"]  = "High chairs are lined up on the western wall.";
-            newRoom["doorEastOpen"]    = "There is a small bar on the east side, with a narrow door behind it.";
-            newRoom["doorEastClosed"]  = "There is a small bar on the east side, but there are no bottle left anywhere.";
+            newRoom["doorNorthOpen"]   = "";
+            newRoom["doorNorthClosed"] = "";
+            newRoom["doorSouthOpen"]   = "";
+            newRoom["doorSouthClosed"] = "";
+            newRoom["doorWestOpen"]    = "";
+            newRoom["doorWestClosed"]  = "";
+            newRoom["doorEastOpen"]    = "";
+            newRoom["doorEastClosed"]  = "";
             break;
         default:
             newRoom["description"]     = "The first thing you see in this room in a life-sized stuffed bear, probably not meant to be as menacing as it looks now in the moonlight.";
-            newRoom["doorNorthOpen"]   = "The northern wall rises highest, following the curve in the roof, and an imposing, leathered door makes good use of the wall's size.";
-            newRoom["doorNorthClosed"] = "The northern wall rises highest, following the curve in the roof, and an imposing portrait of a general makes good use of the wall's size.";
-            newRoom["doorSouthOpen"]   = "A door to the south leads outside the mansion."; // this shouldn't be used.
-            newRoom["doorSouthClosed"] = "A fireplace on the southern wall is dark and cold, and clearly has been for a while.";
-            newRoom["doorWestOpen"]    = "Between the large libraries on the western wall, you can see a small door, made of the same wood as the walls and libraries.";
-            newRoom["doorWestClosed"]  = "Large, wooden libraries span the western walls. Most of the books are old, and titles mention various saints.";
-            newRoom["doorEastOpen"]    = "A door to the east leads outside the mansion."; // this shouldn't be used.
-            newRoom["doorEastClosed"]  = "There are a few windows on the east side of the room, and a few pictures show the owner of the mansion's fishing trips.";
+            newRoom["doorNorthOpen"]   = "";
+            newRoom["doorNorthClosed"] = "";
+            newRoom["doorSouthOpen"]   = "";
+            newRoom["doorSouthClosed"] = "";
+            newRoom["doorWestOpen"]    = "";
+            newRoom["doorWestClosed"]  = "";
+            newRoom["doorEastOpen"]    = "";
+            newRoom["doorEastClosed"]  = "";
 			roomNumberHack = -1;
             break;
     }
