@@ -51,7 +51,3 @@ ul#score {
 	text-align: left; }
 #score > :last-child {
 	text-align: right; }
-
-#options ul {
-	padding: 0;
-	list-style: none; }

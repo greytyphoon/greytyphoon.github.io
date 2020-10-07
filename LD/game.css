@@ -31,3 +31,7 @@ dialog[open] {
 #fixref > ul > li > a.restart::before { content: "\21ba"; content: "↺"; }
 #fixref > ul > li > a.confirm::before { content: "\26a0"; content: "⚠"; }
 #fixref > ul > li > a.credits::before { content: "\1f6c8"; content: "🛈"; }
+
+#options ul {
+	padding: 0;
+	list-style: none; }
