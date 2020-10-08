@@ -1,3 +1,4 @@
+var objective;
 var gameTiles;
 var currentTroop;
 var isYellowDead = false;
@@ -8,7 +9,8 @@ var gameOver = false;
 
 function setupStart()
 {
-	gameTiles = setupTilesArray();
+	objective = document.querySelector('input[name="objectiveOption"]:checked').value;
+	gameTiles = setupTilesArray(objective);
 	initGameBoard(gameTiles);
 
 	// Reset
@@ -38,12 +40,32 @@ function attack(tile, hasAdvantage)
 	}
 
 	// check for victory
-	if (gameTiles.every(t => t.seenByPlayerRed))
+	switch (objective)
 	{
-		modal.showModal("win");
-		gameOver = true;
-		timer.stop();
-		return;
+		case "conquer":
+			if (gameTiles.every(t => t.owner === _Red))
+			{
+				endGame('win');
+				return;
+			}
+			break;
+
+		case "protect":
+			if (gameTiles.every(t => t.owner === _Red || t.owner === _Unclaimed))
+			{
+				endGame('win');
+				return;
+			}
+			break;
+
+		case "visit":
+		default:
+			if (gameTiles.every(t => t.seenByPlayerRed))
+			{
+				endGame('win');
+				return;
+			}
+			break;
 	}
 
 	// check if others are dead
@@ -111,9 +133,11 @@ var KnotPrivate = {
 			isBlueDead = true;
 		if (gameTiles.every(t => t.owner !== _Red))
 		{
-			modal.showModal('lose');
-			gameOver = true;
-			timer.stop();
+			endGame('lose');
+		}
+		if (objective === 'protect' && gameTiles.every(t => t.owner !== _Unclaimed))
+		{
+			endGame('lose');
 		}
 	}
 };
@@ -165,3 +189,12 @@ var KnotArtificalIntelligence = {
 		KnotPrivate.checkDeadPlayers();
 	}
 };
+
+function endGame(ending)
+{
+	modal.showModal(ending);
+	gameOver = true;
+	timer.stop();
+	refreshAllTilesClasses(gameTiles);
+	refreshScore(turnNumber);
+}
