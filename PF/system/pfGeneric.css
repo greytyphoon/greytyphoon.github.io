@@ -115,6 +115,8 @@ table.playerInfo td {
 	text-align: center; }
 
 /* icons for campaigns */
+#fixref > ul > li > a.houserule::before { content: "+"; }
+#fixref > ul > li > a.experience::before { content: "XP"; }
 #fixref > ul > li > a.names::before { content: "\1f3ad"; content: "🎭"; }
 #fixref > ul > li > a.injury::before { content: "\1f915"; content: "🤕"; }
 #fixref > ul > li > a.reward::before { content: "\1f4b0"; content: "💰"; }
