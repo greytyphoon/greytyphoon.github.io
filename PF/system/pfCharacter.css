@@ -65,6 +65,7 @@ dl#featsWrapper > dd{
 	margin-bottom: 0.75rem; }
 .weapon > h2 {
 	background-color: var(--murder-red);
+	color: var(--html-white);
 	border-bottom: 1px solid var(--murder-red);
 	margin: -4px -10px 4px -10px;
 	padding: .15em .5em; }
@@ -112,3 +113,18 @@ ul#sources ul { margin-left: 1rem; }
 	margin-top: -1.2em;
 	text-align: left;
 	color: var(--html-white); }
+
+#fixref > ul > li > a.notes::before { content: "\1f5c8"; content: "🗈"; }
+#fixref > ul > li > a.companion::before,
+#fixref > ul > li > a.familiar::before { content: "\2658"; content: "♘"; }
+#fixref > ul > li > a.master::before { content: "\2654"; content: "♔"; }
+
+/* find more at https://graphemica.com/characters/tags/animal */
+#fixref > ul > li > a.familiar.mouse::before { content: "\1f401"; content: "🐁"; }
+#fixref > ul > li > a.familiar.snake::before { content: "\1f40d"; content: "🐍"; }
+#fixref > ul > li > a.familiar.bird::before { content: "\1f426"; content: "🐦"; }
+#fixref > ul > li > a.companion.dragon::before { content: "\1f409"; content: "🐉"; }
+#fixref > ul > li > a.companion.crocodile::before { content: "\1f40a"; content: "🐊"; }
+#fixref > ul > li > a.companion.horse::before { content: "\1f40e"; content: "🐎"; }
+#fixref > ul > li > a.companion.wolf::before { content: "\1f43a"; content: "🐺"; }
+#fixref > ul > li > a.companion.bear::before { content: "\1f43b"; content: "🐻"; }
