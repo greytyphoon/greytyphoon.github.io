@@ -113,3 +113,9 @@ table.playerInfo th {
 table.playerInfo td {
 	border: 1px solid var(--murder-grey);
 	text-align: center; }
+
+/* icons for campaigns */
+#fixref > ul > li > a.names::before { content: "\1f3ad"; content: "🎭"; }
+#fixref > ul > li > a.injury::before { content: "\1f915"; content: "🤕"; }
+#fixref > ul > li > a.reward::before { content: "\1f4b0"; content: "💰"; }
+#fixref > ul > li > a.player::before { content: "\1f513"; content: "🔓"; }
