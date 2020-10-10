@@ -8,6 +8,7 @@
 	<style>
 		#all-games { list-style: none; }
 		summary.subtitle { margin-left: -30px; }
+		.number-of-cards-at-start { font-weight: normal; text-shadow: 0px 0px 3px var(--murder-red); }
 	</style>
 </head>
 <body>
@@ -27,7 +28,7 @@
 			<li><details>
 				<summary class="subtitle">Portraits <b>1-4</b></summary>
 				<p>The single-player version can be found on <a href="https://www.pagat.com/invented/portraits.html">Pagat.com: Portraits</a>.</p>
-				<p>For a coop game, simply give each player their own line of 5 assets.
+				<p>For a coop game, simply give each player their own line of <b class="number-of-cards-at-start">5</b> assets.
 					The players then take turns trading and/or swapping with the public and private markets.
 					Players are allowed to swap assets <b>of equal value</b> with each other at any time, without using their action.</p>
 				<p><b>Easier:</b> Players can buy assets (not portraits!) from the public market by paying with cards from any suits.</p>
@@ -39,7 +40,7 @@
 				<p>Idea suggested by many people on forums, and the only version I found is
 					<a href="https://shkspr.mobi/blog/2017/01/rules-for-cooperative-poker-janjam17/">this guy who doesn't know what he's talking about</a>.
 					So I made my own.</p>
-				<p><b>Setup:</b> Deal 4 cards to each player, and place 4 cards in the corners of a 4&times;4 grid in the middle.</p>
+				<p><b>Setup:</b> Deal <b class="number-of-cards-at-start">4</b> cards to each player, and place 4 cards in the corners of a 4&times;4 grid in the middle.</p>
 				<p>The aim is to clear the table. If at any moment the table is empty, the players win.</p>
 				<p>Players take turns adding cards to the table.
 					They may add only one card, and it must be adjacent to a card on the table.
@@ -58,13 +59,64 @@
 				<summary class="subtitle">Controlled Infection <b>1-4</b></summary>
 				<p>Originally found on <a href="https://drive.google.com/file/d/1GH4bwmstSHC4vhOzqVfm8DrEYKH9IG0P/view">Google Drive</a>.</p>
 				<p>A pandemic game about social distancing!</p>
-				<p><b>Setup:</b> Separate the suits into four decks (<i>regions</i>) and take out the Aces (<i>hospitals</i>). Shuffle the Jokers in two decks.</p>
+				<p><b>Setup:</b> Separate the suits into four decks (<i>regions</i>) and take out the Aces (<i>hospitals</i>).
+					Keep only one hospital per player, placing them face-up on the table, remove the rest from the game.
+					Shuffle the Jokers (<i>doctors</i>) in any two decks, I usually put them in the Black decks.
+					Place a token in each region: each player should choose one token as theirs, the rest are <i>rogue</i>.
+					Each player should draw <b class="number-of-cards-at-start">2</b> cards.</p>
+				<p>Drawing cards in this game is special: you should always draw the first card in the deck next to your token, then the next card in the next deck clockwise, and so on.
+					If you need to draw from an empty deck, skip it and draw from the next deck clockwise instead.</p>
+				<p>Then, each round:</p>
+				<ol>
+					<li><b>Move rogue tokens:</b> Each rogue token discards the top card of its region, and moves that many squares clockwise. Figures are always 0.</li>
+					<li><b>Move players:</b> Each player plays a card from their hand, and moves that many squares. A player with no card in hand doesn't move.</li>
+					<li><b>Draw cards:</b> Each player draws a card for each token in their region. Their token counts, so players will always draw one card.</li>
+					<li><b>Resolve infections:</b> Players that have two or more cards of the same suit are <i>infected</i>.
+						They discard all cards that made them infected, and must either flip a face-up hospital upside-down or remove a face-down hospital from the game to be cured.</li>
+					<li><b>Upkeep hospitals:</b> If no player was infected this round, turn all face-down hospitals face up.</li>
+				</ol>
+				<p>Players lose if an infected player cannot be treated because all hospitals are removed from the game.
+					Players win if they can survive until all decks run out of cards (even if drawing the last cards would have infected one player too many, they win just in time).</p>
+				<p>Doctors never count as any suit to make you infected, and when played, let the player choose which region to move to.</p>
+				<p>When a deck runs out of cards, the region has managed to get rid of the virus and will close off at the end of the round.
+					All tokens will be moved clockwise to the next region.
+					From now on, moving tokens no longer step on this region.</p>
+				<!--<iframe src="https://drive.google.com/file/d/1GH4bwmstSHC4vhOzqVfm8DrEYKH9IG0P/preview" width="640" height="480" class="br"></iframe><!---->
+				<p><b>Easier:</b> Add an extra hospital.</p>
+				<p><b>Harder:</b> Remove the doctors.</p>
 			</details></li>
 
 			<li><details>
 				<summary class="subtitle">Multi-Stacks <b>2-4</b></summary>
 				<p>Originally found on <a href="https://boardgamegeek.com/filepage/172110/rule-pamphlet">BoardGameGeek</a>.</p>
-				<p>Interesting, need to try it.</p>
+				<p>Your goal is to work together to play all the cards in everyone’s hands before the deck runs out.
+					Get rid of cards by playing them on any of the stacks in the middle of the table.
+					Cards are played in consecutive order (ex. a 5 or a 3 can be played on a 4).
+					An ace is both the high and low card: you can play upward to a 2 or downward to a king.</p>
+				</p>Each player is assigned a role, which limits the cards you can play on the stacks (always one step at a time):
+					Write the roles that you will use on small pieces of paper and hand one role to each player.
+					Whenever a Jack is played, roles are cycled to the next player in a clockwise motion, which is sure to disrupt your strategy.</p>
+				<ul>
+					<li><b>Monochrome:</b> You can only play a card that is the same color as the top card on a stack.</li>
+					<li><b>Alternating:</b> You can only play a card that is a different color from the stack.</li>
+					<li><b>Upward:</b> You can only play a card that is one number higher than the top number on that stack, regardless of color.</li>
+					<li><b>Downward:</b> You can only play a card that is one number lower than the top number on that stack, regardless of color.</li>
+				</ul>
+				<p>In a 2-players game, use only Monochrome and Alternating.
+					In a 3-players game, keep all four roles: one role is left unused on the side will be cycled back into play whenever a Jack is played.</p>
+				<p><b>Setup:</b> Assign roles. Deal <b class="number-of-cards-at-start">4</b> cards to each player. Use cards from the deck to start as many stacks as there are players, plus one.</p>
+				<p>Then, players take turns doing these three steps:</p>
+				<ol>
+					<li>Draw as many cards as you like.</li>
+					<li>Play as many cards as you like.</li>
+					<li>Pass up to one card to each other player. You must have played at least one card to do this.</li>
+				</ol>
+				<p>All card drawing and passing must stay within the hand limit of eight cards.</p>
+				<p>All players win if, at any moment, all players have successfully played all the cards in their hands.
+					All players lose if players can't draw (the deck is empty or all hands are full) and no one can play a card.</p>
+				<p><b>Harder:</b> One less stack.</p>
+				<p><b>Harder:</b> Roles are cycled when Queens or Kings are played too, not just Jacks.</p>
+				<p><b>Harder:</b> Play with secret hands; players are not allowed to discuss the specifics of their hand.</p>
 			</details></li>
 
 			<li><details>
@@ -94,7 +146,7 @@
 				<p>Originally found on <a href="http://www.logicmazes.com/games/eleusis/express.html">LogicMazes.com: Eleusis</a>
 					and on <a href="https://www.pagat.com/eights/eleusis.html">Pagat.com: Eleusis</a>.</p>
 				<p>It's a classic game, where a leader secretly makes up a rule about which cards can be played, and the other players attempt to play cards or to guess the rule.</p>
-				<p><b>Setup:</b> Deal 7 cards to each player, and start the mainline with a single card.</p>
+				<p><b>Setup:</b> Deal <b class="number-of-cards-at-start">7</b> cards to each player, and start the mainline with a single card.</p>
 				<p>Players take turns attempting to play a card: the leader tells them if it's right or not.
 					Each correctly played card continues the mainline horizontally, wrong guesses are added vertically.
 					If a players plays correctly, he is given a chance to guess the rule;
