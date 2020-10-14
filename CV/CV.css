@@ -18,7 +18,7 @@
 	--murder-red: #c62825;
 	--html-white: #ffffff;
 	--html-darkgrey: #a9a9a9;
-	
+
 	font-size: 16px;
 	font-family: 'Roboto', 'Segoe UI', sans-serif;
 	color: var(--murder-black); }
@@ -152,34 +152,35 @@ h2 {
 }
 
 dl.competences > dt {
-	color: var(--html-darkgrey); /*html-darkgrey*/
+	color: var(--html-darkgrey);
 	font-style: italic;
 	float: left;
 	text-align: right;
 	min-width: 145px; }
 dl.competences > dd { margin-left: 150px; } /* the floating <dt> will go above this margin */
 
+ul.general { list-style: circle; }
+
 .timeline {
-  transition: all .4s ease;
-  position: relative;
-  counter-reset: section;
-  margin-left: 4em;
+	transition: all .4s ease;
+	position: relative;
+	margin-left: 4em;
 }
 .timeline:before { /* The vertical line at the middle */
-  content: "";
-  width: .5rem;
-  height: 100%;
-  background: var(--murder-grey);
-  position: absolute;
-  top: .25rem;
-  left: -2.25rem;
-  border-radius: 1rem 1rem;
+	content: "";
+	width: .5rem;
+	height: 100%;
+	position: absolute;
+	top: .25rem;
+	left: -2.25rem;
+	background: var(--murder-grey);
+	border-radius: .25rem;
 }
 
 .experience {
 	position: relative;
 	border: 3px solid var(--murder-red);
-	border-radius: 0 15px;
+	border-radius: 0 1rem;
 	margin-bottom: 1rem;
 }
 .experience > h3 {
@@ -187,7 +188,7 @@ dl.competences > dd { margin-left: 150px; } /* the floating <dt> will go above t
 	background-color: var(--murder-red);
 	border-top-right-radius: 10px;
 	font-size: 1rem;
-	margin: -1px;
+	margin: -1px -1px .75rem -1px;
 	padding: .5rem 1rem;
 }
 .experience > time { /* The circle on the timeline with the number */
@@ -218,21 +219,19 @@ dl.competences > dd { margin-left: 150px; } /* the floating <dt> will go above t
 	border-left: .75rem solid var(--murder-red);
 	z-index: 1;
 }
-.experience > a {
-	display: none;
-}
 .experience > em {
 	display: block;
-	padding: .75em;
-	padding-bottom: 0;
+	margin: 0 .75em;
 	text-align: center;
-	font-weight: bold;
 }
+.experience > em.organisation { font-weight: bold; }
+.experience > em.time-range { color: var(--html-darkgrey); }
+
 .experience > ul {
-	padding: .75rem;
-	padding-left: 40px;
-	margin: 0;
+	margin: .75rem;
+	padding-left: 1.25rem;
 }
+.experience > a { display: none; }
 
 @supports (display: grid) {
 @media print, screen and (min-width: 768px) {
@@ -242,7 +241,7 @@ dl.competences > dd { margin-left: 150px; } /* the floating <dt> will go above t
 		margin: 0;
 		display: grid;
 	}
-	
+
 	/* block the top-right spot. Disaligns the left and right columns. */
 	.timeline::after {
 		content: "";
@@ -253,10 +252,12 @@ dl.competences > dd { margin-left: 150px; } /* the floating <dt> will go above t
 	}
 
 	.experience {
-		grid-row: span 2;
+		grid-row: span 3;
 		margin-bottom: auto;
 	}
-	.timeline:before {
+	.experience:last-child { grid-row: span 2; }
+
+	.timeline::before {
 		left: calc(50% - .25rem);
 	}
 	.experience:nth-of-type(odd) > time {
