@@ -236,4 +236,7 @@ dl.projects > dt {
 	color: var(--html-darkgrey);
 	font-weight: bold;
 }
-dl.projects > dd { margin-bottom: .75rem; }
+dl.projects > dd {
+	margin-bottom: .75rem;
+	text-align: justify;
+}
