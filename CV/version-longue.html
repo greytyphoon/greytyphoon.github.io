@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<!-- Wow, you know how to check my CV's source code! I want to work for you even more now. -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Grey's CV</title>
+	<link rel="stylesheet" href="version-longue.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Rémi Doutre</h1>
+			<a href="mailto://remidoutre@gmail.com" style="color:black;">remidoutre@gmail.com</a>
+		</header>
+		<ul class="apartee">
+			<li><a href="tel:438-494-4593">(438) 494-4593</a></li>
+			<li>2148, blvd Rosemont, Mtl QC, H2G 1T4</li>
+			<li style="margin-bottom: .5em">Français, Anglais</li>
+			<li>Citoyenneté canadienne</li>
+			<li>Permis de conduire</li>
+		</ul>
+
+		<h2>Qui je suis</h2>
+		<p>Je suis un développeur généraliste (<i lang="en">full-stack</i>) de sites web, spécialisé en C# et Javascript.
+			Je suis très orienté résultats: j'aime créer, j'aime faire un site qui sera utile aux autres, j'aime la fierté d'un travail impeccable.
+			Je suis aussi un excellent ajout à une équipe! Responsable, prêt à aider, solidaire, ouvert d'esprit, diplomate, et prêt à rire me décrivent très bien.</p>
+
+		<h2>Formation</h2>
+		<section class="row">
+			<div class="experience formation">
+				<h3>DEC &ndash; Informatique de gestion</h3>
+				<em class="organisation">Collège de Valleyfield</em>
+				<em class="time-range">Obtenu <time datetime="2011-12">en décembre 2011</time></em>
+				<ul>
+					<li>Formation avec alternance travail-étude (stages)</li>
+				</ul>
+			</div>
+
+			<div class="experience formation">
+				<h3>Certification &ndash; <i>Professional Scrum Developer</i> (<i>PSD I</i>)</h3>
+				<em class="organisation"><a href="https://www.scrum.org/certificates/430945">Scrum.org</a></em>
+				<em class="time-range">Obtenu <time datetime="2019-07-15">en juillet 2019</time></em>
+				<ul>
+					<li>Reconnait ma maîtrise de la méthodologie Agile Scrum</li>
+				</ul>
+			</div>
+		</section>
+
+		<h2>Expérience professionnelle</h2>
+		<section class="timeline">
+			<div class="experience">
+				<time datetime="2018-04-09">2018</time>
+				<h3>Développeur <i>back-end</i> / <i>full-stack</i></h3>
+				<em class="organisation">Absolunet</em>
+				<em class="time-range">De <time datetime="2018-04-09">avril 2018</time> à ce jour</em>
+				<ul>
+					<li>Participer à toutes les étapes de l'implantation d'un PIM chez les client de l'agence, de la phase <i lang="en">discovery</i> à la maintenance;</li>
+					<li>En équipe, utiliser la méthode Scrum pour définir les priorités, estimer les tâches à venir, et planifier les tâches en cours;</li>
+					<li>Travailler en étroite collaboration avec le client, directement par téléphone, courriel ou un forum interne, en plus de présenter l'avancement du projet toutes les trois semaines;</li>
+					<li>Écrire des tests unitaires et des tests d'intégration;</li>
+					<li>Agir en tant qu'expert Git et devOps dans mon équipe, en plus des responsabilités normales d'un programmeur.</li>
+				</ul>
+				<dl class="competences" lang="en">
+					<dt>Languages:</dt>
+					<dd>C#, .NET Standard<wbr>/Framework<wbr>/Core</dd>
+
+					<dt>Tools:</dt>
+					<dd>Visual Studio, LINQ, NuGet, Castle (IoC), MOQ (unit testing), Bamboo (automated builds & deploys), StyleCop, OpenXML, AWS Cloudwatch, IIS, FileZilla (FTP), Postman (Rest)</dd>
+
+					<dt>Platforms:</dt>
+					<dd><a href="https://www.inriver.com/">inRiver</a>, <a href="https://www.episerver.com/campaign/insite">Insite</a></dd>
+
+					<dt>Source Control:</dt>
+					<dd>Git (Sourcetree, command line), BitBucket, <a href="https://github.com/absoremi">Github</a>, PuTTY (SSH)</dd>
+
+					<dt>Extra mentions</dt>
+					<dd>Powershell, ElasticSearch, SQL [MS-SQL, T-SQL], SoapUI, HTMl, JS, CSS, Angular, JSON, XML</dd>
+				</dl>
+				<em>Mes projets solo</em>
+				<dl class="projects" lang="en">
+					<dt>Intégration SXe [MAC]</dt>
+					<dd>J'ai débogué la communication entre SXe (le ERP d'un client) et un site web Insite qui était en support long-terme.
+						Les prix, tels que reçus, s'affichaient souvent à 0$ dans la boutique, causant beaucoup de problèmes.
+						J'ai épluché tout l'API Soap de SXe, tout le code du projet, et travaillé directement avec le client à réessayer des communications pendant des heures au téléphone, et le problème a été réglé pour de bon.</dd>
+					<dt><i lang="en">Product Lifecycle</i> [NEWBPI]</dt>
+					<dd>J'ai créé une vue sur le PIM inRiver d'un client pour simplifier le cycle de vie d'un produit.
+						Il devait passer la l'enrichissement, puis être approuvé par le chef de campagne, puis par le chef d'équipe, puis par le département légal (2 approbations),
+						et tout ce monde pouvait approuver, refuser, ou approuver partiellement.
+						La vue rendait possible de suivre l'état d'un produit dans ce large cycle, et incluait des boutons simples qui réassignaient le produit automatiquement (avec courriels).
+						Ce projet est une grande partie de notre prix "Meilleure collaboration client 2019" dans les <i lang="en">PIM Awards</i> de inRiver.</dd>
+					<dt><i lang="en">CredentialProvider</i> [ABSOAM]</dt>
+					<dd>Pour obtenir notre certification PCI-DSS, nous avons dû retirer toutes traces de clefs d'API de notre code source.
+						Pour pouvoir continuer d'exécuter des tests d'intégration sur les données de nos serveurs inRiver distants, j'ai créé un interface rapide qui permet de lire un fichier de clés encryptés sur le disque des programmeurs.
+						Mes collègues peuvent donc tester avec leurs clefs d'accès personnelles.
+						J'ai fait toute la documentation et toute la mise en place, incluant aider ceux qui ont de la difficulté à l'installer et convaincre les récalcitrants.</dd>
+				</dl>
+				<!--<a href="mailto:fvaillancourt@absolunet.com">Félix Vaillancourt</a>-->
+				<!--<a href="mailto:sjourquin@absolunet.com">Soumaya Jourquin</a>-->
+				<!--<a href="mailto:arichard@absolunet.com">Alexandre Richard</a>-->
+				<!--Karen Mou Kui-->
+			</div>
+
+			<div class="experience">
+				<time datetime="2016-01-04">2016</time>
+				<h3>Développeur <i>full-stack</i> & Chef d'équipe technique</h3>
+				<em class="organisation">Athlete RMS</em>
+				<em class="time-range">De <time datetime="2016-01-04">janvier 2016</time> à <time datetime="2018-04">avril 2018</time></em>
+				<ul>
+					<li>Maintenir et développer plusieurs sites web pour les médecins des équipes sportives professionnelles (NHL, etc.), un site par client;</li>
+					<li>Évaluer des librairies externes afin de décider si elles doivent ou peuvent être inclues dans notre projet, toujours en tenant compte du niveau de confidentialité maximum dû à des données médicales;</li>
+					<li>Assurer la qualité du code dans l'équipe en faisant la promotion de la lisibilité et de la réutilisabilité, ainsi qu'en faisant les révisions de code;</li>
+					<li>Mettre l'application en production;</li>
+					<li>Réagir aux urgences, en tout temps.</li>
+				</ul>
+				<dl class="competences" lang="en">
+					<dt>Languages:</dt>
+					<dd>C#, .NET Standard<wbr>/Framework, ASP.NET WebApp, ASP.Net MVC, SQL, HTML, JS, CSS</dd>
+
+					<dt>Tools:</dt>
+					<dd>Visual Studio, LINQ, Bootstrap, jQuery, NuGet, StyleCop, IIS, Microsoft SQL Server</dd>
+
+					<dt>Source Control:</dt>
+					<dd>Git (Sourcetree, command line), BitBucket</dd>
+
+					<dt>Extra mentions</dt>
+					<dd>Powershell, Postman (Rest), JSON, XML</dd>
+				</dl>
+				<em>Mes projets</em>
+				<dl class="projects" lang="en">
+					<dt><a href="https://nhl.ahmscloud.com/nhl/">NHL Athlete Health Management System</a></dt>
+					<dd>Le site web utilisé par la NHL pour suivre l'état de santé de ses joueurs.
+						Les médecins et thérapeutes y ont accès pour sauvegarder leurs notes,
+						les coachs et propriétaires pour des statistiques sur leurs joueurs et leur retour au jeu,
+						les joueurs pour consulter leur dossier et prouver leur condition physique lors de négociations d'échanges. Le tout sécurisé, confidentiel, et accessible.</dd>
+					<dt><i lang="en">Tommy John Tracker</i></dt>
+					<dd>L'<a href="https://fr.wikipedia.org/wiki/Op%C3%A9ration_Tommy_John">opération Tommy John</a> est une procédure plus ou moins fréquente dans le monde du sport, qui demande une longue convalescence.
+						J'ai fait une page de suivi hyper-spécialisée pour suivre ces convalescences facilement,
+						utilisant un standard différent des autres pages de l'application afin de permettre d'afficher rapidement la quantité énorme d'information modulaire qu'il faut pouvoir consulter.</dd>
+				</dl>
+				<!--Louis Vaugeois-->
+				<!--Guillaume Neveu-->
+				<!--Jonathan Rouillard-->
+				<!--Etienne Scott-->
+				<!--Patrick Laudy-->
+			</div>
+
+			<div class="experience">
+				<time datetime="2014-09-02">2014</time>
+				<h3>Analyste-Programmeur</h3>
+				<em class="organisation">Desjardins - Direction Solutions Service Client</em>
+				<em class="time-range">De <time datetime="2014-09-02">septembre 2014</time> à <time datetime="2016-01-04">janvier 2016</time></em>
+				<ul>
+					<li>Développer l'outil Opérations en Mode Assisté, utilisé par les caissiers;</li>
+					<li>Maintenir de larges systèmes peu documentés en langage <i>Cobol</i>;</li>
+					<li>Prévoir les améliorations et conseiller mes superviseurs en préparant la migration à une technologie plus récente;</li>
+					<li>Diviser mon temps entre plusieurs projets, prioriser et agir en conséquence;</li>
+					<li>Respecter les exigences de qualité les plus strictes, dans les meilleurs délais.</li>
+				</ul>
+				<dl class="competences" lang="en">
+					<dt>Languages:</dt>
+					<dd>Cobol, Powershell</dd>
+				</dl>
+				<!--<a href="mailto:helene.gervais@desjardins.com">Hélène Gervais</a>-->
+				<!--<a href="mailto:stephane.lacouture@desjardins.com">Stéphane Lacouture</a>-->
+			</div>
+		</section>
+
+		<h2>Autres expériences</h2>
+		<section class="row">
+			<div class="experience connexe">
+				<h3>Concours de création de Jeu Vidéo (<i>Game Jams</i>)</h3>
+				<em class="organisation">LudumDare, Yoyo Games, etc.</em>
+				<em class="time-range">De <time datetime="2008-12">décembre 2008</time> à ce jour</em>
+				<ul>
+					<li>Créer des jeux sur un thème imposé, dans une limite de 48h;</li>
+					<li>Développer la créativité et l'originalité;</li>
+					<li>Faire des recherches efficaces et prendre des décisions rapidement;</li>
+				</ul>
+				<dl class="competences" lang="en">
+					<dt>Languages:</dt>
+					<dd>Java, Javascript, HTML, CSS</dd>
+				</dl>
+			</div>
+			<div class="experience connexe">
+				<h3>Mon site perso</h3>
+				<em class="organisation"><a href="https://greytyphoon.space/CV">greytyphoon.space</a></em>
+				<em class="time-range">De <time datetime="2016-11">novembre 2016</time> à ce jour</em>
+				<ul>
+					<li>Concevoir un site statique ultra-rapide</li>
+					<li>Garder mes connaissances web à jour.</li>
+				</ul>
+				<dl class="competences" lang="en">
+					<dt>Languages:</dt>
+					<dd>HTML [HTML5], CSS [CSS3.0], JS [ES6+]</dd>
+
+					<dt>Hosting:</dt>
+					<dd>CPanel, Github Pages, <a href="https://letsencrypt.org/">Let's Encrypt</a></dd>
+
+					<dt>Source Control:</dt>
+					<dd>Git (Github Desktop), <a href="https://github.com/greytyphoon">Github</a></dd>
+
+					<dt>Best practices</dt>
+					<dd>Google Lighthouse, <a href="https://caniuse.com/">Can I Use</a>, <a href="https://developer.mozilla.org/">MDN web docs</a></dd>
+				</dl>
+			</div>
+		</section>
+
+		<h2>Et en général...</h2>
+		<ul class="general">
+			<li>Au courant des nouveautés et des enjeux dans le domaine des technologies;</li>
+			<li>Propriétaire d'une console Ouya, d'une Raspberry Pi 3 avec RetroPie, et d'une imprimante 3D;</li>
+			<li>Capable de lire l'espagnol, d'essayer de l'écrire et l'écouter, et de prononcer quelques phrases malhabiles;</li>
+			<li>En général intéressé par les langues, connaissant quelques mots en italien, allemand, russe, japonais, klingon et autres;</li>
+			<li>Grand amateur d'étoiles filantes.</li>
+		</ul>
+	</div>
+	<nav id="fixref" class="noprint">
+		Rémi Doutre -
+		<a href="mailto://remidoutre@gmail.com">remidoutre@gmail.com</a> -
+		<a href="https://www.linkedin.com/in/remidoutre">LinkedIn</a>
+	</nav>
+</body>
+</html>
