@@ -95,6 +95,7 @@ header h1 {
 	font-size: inherit;
 	font-weight: bold;
 	margin: 0; }
+header, header * { color: var(--html-white) !important; }
 
 /********************
  * Grid
@@ -233,8 +234,7 @@ dl.competences > dt {
 }
 dl.competences > dd { margin-left: 150px; } /* the floating <dt> will go above this margin */
 dl.projects > dt {
-	color: var(--html-darkgrey);
-	font-weight: bold;
+	text-decoration: underline;
 }
 dl.projects > dd {
 	margin-bottom: .75rem;
