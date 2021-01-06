@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Grey's Rogue</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		#tblInventory { flex: 2; width: unset; }
+		#tblInventory td + td, #tblInventory th + th { text-align: right; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="notes" href="../notes/terres-sacrees/index.html">Notes</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Raug Mok'Pog, despicable idealist</h1>
+			NG Small Humanoid
+			<div id="xp">0 / 1,000</div>
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>10</dd>
+
+				<dt>Dex</dt>
+				<dd>18 <small>A, B, C, L1</small></dd>
+
+				<dt>Con</dt>
+				<dd>14 <small>A, B</small></dd>
+
+				<dt>Int</dt>
+				<dd>12 <small>L1</small></dd>
+
+				<dt>Wis</dt>
+				<dd>10 <small>A-, L1</small></dd>
+
+				<dt>Cha</dt>
+				<dd>14 <small>A, L1</small></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Ancestry</dt>
+				<dd><a href="https://2e.aonprd.com/Ancestries.aspx?ID=4">Goblin</a></dd>
+				<dd class="archetype">Unbreakable Heritage</dd>
+
+				<dt>Background</dt>
+				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=166">Barber</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=10">Rogue</a> 3</dd>
+				<dd class="archetype">Thief Racket</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd><a href="https://2e.aonprd.com/Deities.aspx?ID=17">Shelyn</a></dd>
+
+				<dt>Senses</dt>
+				<dd title="Gnome Ancestry"><a href="https://2e.aonprd.com/Rules.aspx?ID=415">Darkvision</a></dd>
+
+				<dt>Speed</dt>
+				<dd>25 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Goblin, Lizardfolk</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>goblin 1</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=41">Goblin Scuttle</a></dd>
+			<dt>rogue 1</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=552">Twin Feint</a></dd>
+			<dt>rogue 2</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2047">Scout Dedication</a></dd>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=505">Scout's Warning</a></dd>
+			<dt>general 3</dt>
+			<dd class="br"><a href="https://2e.aonprd.com/Feats.aspx?ID=855">Toughness</a></dd>
+
+			<dt>background</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2146">Risky Surgery</a></dd>
+			<dt>skill 1</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=760">Battle Medecine</a></dd>
+			<dt>skill 2</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=771">Continual Recovery</a></dd>
+			<dt>skill 3</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=864">Ward Medic</a></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>9</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=1" title="Trained Class (Free)">Acrobatics</a>
+				<small>4 dex, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=3" title="Trained by Class(Free)">Athletics</a>
+				<small>0 str, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=5" title="Trained by Class (Free)">Deception</a>
+				<small>2 cha, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>9</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=6" title="Trained by Class (Free), Expert by Increase (lvl10)">Diplomacy</a>
+				<small>2 cha, 4 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=7" title="Trained by Class (Free)">Intimidation</a>
+				<small>2 cha, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=9" title="Trained by Background, Expert by Increase (lvl2)">Medecine</a>
+				<small>0 wis, 4 prf, 3 lvl, <u title="Healer's Tools (expanded)">1 item</u></small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=14" title="Trained by Class (Free)">Society</a>
+				<small>1 int, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=15" title="Trained by Class(Fixed), Expert by HOUSERULE">Stealth</a>
+				<small>4 dex, 4 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=9" title="Trained by Class (Free)">Survival</a>
+				<small>0 wis, 2 prf, 3 lvl</small>
+			</li>
+			<li class="br">
+				<strong>10</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=15" title="Trained by Class(Racket)">Thievery</a>
+				<small>4 dex, 2 prf, 3 lvl, <u title="Thieves' Tools (Infiltrator)">1 item</u></small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Background, Expert by HOUSERULE">Surgery Lore</a>
+				<small>1 int, 4 prf, 3 lvl</small>
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<ul class="summations">
+				<li class="br">
+					<strong>7</strong>
+					<b>Perception</b>
+					<small>0 wis, 4 prf, 3 lvl</small>
+					<div class="circumstancialBonus">Scout's Warning, Surprise Attack</div>
+				</li>
+				<li>
+					<strong>40</strong>
+					<b>HP</b>
+					<small>10 goblin, 3 lvl: 8 rogue, 2 con, <u title="Toughness">1 feat</u></small>
+				</li>
+				<li class="br">
+					<strong>20</strong>
+					<b>AC</b>
+					<small>10, 4 dex, 2 prf, 3 lvl, <u title="1 Leather Armor">1 item</u></small>
+					<div class="circumstancialBonus">Deny Advantage</div>
+				</li>
+				<li>
+					<strong>7</strong>
+					<b>Fort</b>
+					<small>2 con, 2 prf, 3 lvl</small>
+				</li>
+				<li>
+					<strong>11</strong>
+					<b>Ref</b>
+					<small>4 dex, 4 prf, 3 lvl</small>
+				</li>
+				<li>
+					<strong>7</strong>
+					<b>Will</b>
+					<small>0 wis, 4 prf, 3 lvl</small>
+				</li>
+			</ul>
+			<div>
+				<!--Rapier-->
+				<div class="weapon">
+					<h2>Rapier +1</h2>
+					<div class="summation"><strong>+10</strong>/<strong>5</strong>/<strong>0</strong> vs AC <small>4 dex, 2 prf, 3 lvl, <u title="Potency Rune">1 item</u></small></div>
+					<div class="summation"><strong>1d6+4</strong> <small>4 dex</small></div>
+					<div class="circumstancialBonus">Deadly d8, Disarm, Finesse.</div>
+				</div>
+
+				<!--Shortbow-->
+				<div class="weapon">
+					<h2>Shortbow +1 <b>P</b> <b>60ft</b></h2>
+					<div class="summation"><strong>+10</strong>/<strong>5</strong>/<strong>0</strong> vs AC <small>4 dex, 2 prf, 3 lvl, <u title="Potency Rune">1 item</u></small></div>
+					<div class="summation"><strong>1d6</strong></div>
+					<div class="circumstancialBonus">Deadly d10.</div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+		</section>
+		<section class="row">
+			<div>
+				<h2>Goblin Scuttle</h2>
+				<h2>Battle Medic</h2>
+			</div>
+			<div>
+				<h2>Sneak Attack <b title="Increases at 1st, 5th, 11th, 17th">1d6</b></h2>
+				<h2>Twin Feint</h2>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="mundaneItemsWrapper">
+			<li title="L Bulk">Rations (10)</li>
+			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools (expanded)</a></li>
+			<li title="L Bulk" class="br"><a href="https://2e.aonprd.com/Equipment.aspx?ID=58">Thieves' Tools (infiltrator)</a></li>
+			<li>Backpack</li>
+			<li title="L Bulk">Bedroll</li>
+			<li>Bandolier</li>
+			<li class="br">Sheath</li>
+			<li>Flint &amp; Steel</li>
+			<li title="L Bulk">Rope</li>
+			<li>Signal whistle</li>
+			<li>Soap</li>
+			<li>Crowbar</li>
+			<li title="L Bulk">Waterskin</li>
+		</ul>
+		<ul id="magicItemsWrapper">
+			<li>8 <b>gp</b></li>
+		</ul>
+
+		<ul id="inventory">
+			<!--Weapons-->
+			<li title="1 Bulk">
+				<a href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold-iron</a>
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=36">Rapier</a> +1
+				<small>martial, 1d6P, 1Hand, Sword Group, Deadly d8, Disarm, Finesse.</small>
+				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=230">Owlbear's Claw</a></div>
+			</li>
+			<li title="1 Bulk" class="br">
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=77">Shortbow</a> +1
+				<small>martial, 1d6P, 1+Hand, Bow Group, Range 60ft, Deadly d10.</small>
+			</li>
+
+			<!--Armors-->
+			<li title="1 Bulk">
+				<a href="https://2e.aonprd.com/Armor.aspx?ID=4">Leather Armor</a>
+				<small>light, 1 armor, 4 dex, -1 acp, &ndash;ft, 10 str, &ndash; Group.</small>
+			</li>
+			<li title="1 Bulk" class="br">
+				<a href="https://2e.aonprd.com/Shields.aspx?ID=3">Steel Shield</a>
+				<small>2 shield, -0ft, 5 Hard, 20 HP.</small>
+			</li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p>Based on <a href="https://docs.google.com/document/d/1jksJ0jkRNdQ1r6veBdDpYY-4wuBRTsLmQlVMIX_j27U/edit#heading=h.i33i8scykn3g">Tarondor's guide</a>.</p>
+			<dl class="charInfo">
+				<dt>Quality</dt>
+				<dd>Driven and honourable</dd>
+
+				<dt>Drawback</dt>
+				<dd>Glutton</dd>
+
+				<dt>Eyes</dt>
+				<dd>Red</dd>
+
+				<dt>Hair</dt>
+				<dd>None</dd>
+
+				<dt>Age</dt>
+				<dd>6</dd>
+
+				<dt>Weight</dt>
+				<dd>73 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>3' 1''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
