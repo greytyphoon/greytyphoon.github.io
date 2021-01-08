@@ -114,7 +114,7 @@ ul#sources ul { margin-left: 1rem; }
 	text-align: left;
 	color: var(--html-white); }
 
-#fixref > ul > li > a.notes::before { content: "\1f5c8"; content: "🗈"; }
+#fixref > ul > li > a.notes::before { content: "\1f4dd"; content: "📝"; }
 #fixref > ul > li > a.companion::before,
 #fixref > ul > li > a.familiar::before { content: "\2658"; content: "♘"; }
 #fixref > ul > li > a.master::before { content: "\2654"; content: "♔"; }
