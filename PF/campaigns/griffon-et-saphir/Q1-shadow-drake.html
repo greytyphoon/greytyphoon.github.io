@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grey's Drake</title>
+	<link rel="stylesheet" href="../../system/pfCharacter.css">
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Shadow Drake</h1>
+			NE Medium dragon (cold)
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>13 <small title="Giant">+4</small></dd>
+
+				<dt>Dex</dt>
+				<dd>18 <small title="Giant">-2</small></dd>
+
+				<dt>Con</dt>
+				<dd>16 <small title="Giant">+4</small></dd>
+
+				<dt>Int</dt>
+				<dd>11</dd>
+
+				<dt>Wis</dt>
+				<dd>12</dd>
+
+				<dt>Cha</dt>
+				<dd>16</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://www.d20pfsrd.com/bestiary/monster-listings/dragons/drakes/drake-shadow">Shadow Drake</a></dd>
+				<dd class="archetype"><a href="https://www.d20pfsrd.com/bestiary/monster-listings/templates/simple-template-giant-cr-1">Giant</a></dd>
+				<dt>CR</dt>
+				<dd>3</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>None</dd>
+
+				<dt>Senses</dt>
+				<dd title="Shadow Drake"><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">Darkvision</a> 60ft.</dd>
+				<dd title="Shadow Drake"><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+
+				<dt>Speed</dt>
+				<dd title="Shadow Drake">20 ft.</dd>
+				<dd title="Shadow Drake">Fly 90 ft. (<a href="https://d20pfsrd.com/skills/fly">perfect</a>)</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Draconic</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>Houserule feats</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Perception)</dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse">Weapon Finesse</a></dd>
+			<dt>Shadow Drake</dt>
+			<dd title="Replaces Weapon Finesse"><a href="https://www.d20pfsrd.com/feats/combat-feats/improved-initiative-combat">Improved Initiative</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/monster-feats/flyby-attack">Flyby Attack</a></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>
+				<div class="circumstancialBonus"><u>-4 racial</u> when jumping</div>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/disable-device">Disable Device</a>
+			</li>
+			<li>
+				<strong>18</strong>
+				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/sleight-of-hand">Sleight of Hand</a>
+			</li>
+			<li class="br">
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>8</strong>
+						<b>Init</b>
+						<small>4 dex, <u title="Improved Initiative">4</u></small>
+					</li>
+					<li>
+						<strong>45</strong>
+						<b>HP</b>
+						<small>3 drake: 12 class, 3 con</small>
+						<div class="circumstancialBonus" title="Dragon subtype">
+							<u>Immune</u> cold, paralysis, sleep.
+						</div>
+						<div class="circumstancialBonus" title="Shadow Drake">
+							<u>Vulnerable</u> fire, <a href="https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Light-Sensitivity-Ex-">light sensitivity</a>
+						</div>
+					</li>
+					<li class="br">
+						<strong>19</strong>
+						<b>AC</b> touch 14, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 15
+						<small>10, 4 dex, <u title="Shadow Drake 2, Giant Template 3">5 natural</u></small>
+					</li>
+					<li>
+						<strong>6</strong>
+						<b>Fort</b>
+						<small>3 con, 3 class</small>
+					</li>
+					<li>
+						<strong>7</strong>
+						<b>Ref</b>
+						<small>4 dex, 3 class</small>
+					</li>
+					<li class="br">
+						<strong>4</strong>
+						<b>Will</b>
+						<small>1 wis, 3 class</small>
+					</li>
+
+					<li>
+						<strong>7</strong>
+						<b>CMB</b>;	18 <b>CMD</b>
+						<small>3 bab, 1 str, 4 dex</small>
+					</li>
+				</ul>
+
+				<h2>Shadow Blend</h2>
+				<p>Always <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Concealment">concealed</a>, except in bright light.</p>
+
+				<h2>Speed Surge <b>3/day</b></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+					take an extra <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>.</p>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<!--Stygian Breath-->
+				<div class="weapon">
+					<h2>Stygian Breath <b>60ft strict</b> <b>Cold</b></h2>
+					<div class="summation"><strong>14</strong> Reflex halves <small>10, 1 drake&frac12;, 3 con</small></div>
+					<div class="summation"><strong>2d6</strong></div>
+					<div class="circumstancialBonus">5-foot-radius spread. Snuffs out all lights (except magical level 2+). Can't be used for 1d6 rounds.</div>
+				</div>
+
+				<!--Claws-->
+				<div class="weapon">
+					<h2>Bite <b>20x2</b> <b>BPS</b></h2>
+					<div class="summation"><strong>7</strong> vs AC <small>3 bab, 4 dex</small></div>
+					<div class="summation"><strong>1d6+1</strong> <small>1 str</small></div>
+				</div>
+
+				<!--Tail Slap-->
+				<div class="weapon">
+					<h2>Tail Slap <b>20x2</b> <b>BPS</b></h2>
+					<div class="summation"><strong>2</strong> vs AC <small>3 bab, 4 dex, -5 secondary</small></div>
+					<div class="summation"><strong>1d6+1</strong> <small>1 str</small></div>
+				</div>
+			</div>
+		</section>
+
+		<h2>Notes</h2>
+		<p>Shadow drakes are mischievous and greedy.
+			They often use their whiplike tails as third limbs, grasping small objects or even using their tails to work locks or swipe small objects they desire.
+			Because they are so small and fast, they are master thieves and pickpockets.
+			Unlike most drakes and dragonkin, shadow drakes like to haunt the fringes of civilization, often making lairs in abandoned buildings, forgotten attics, or unused bell towers, and stashing their tiny treasure hoards there.
+			Young shadow drakes are almost pure black and have lustrous hides.
+			As they age, their scales lose this luster and turn dull gray.
+			Much like their larger dragon cousins, shadow drakes are long-lived, and can reach 150 to 200 years in age.</p>
+	</div>
+</body>
+</html>
