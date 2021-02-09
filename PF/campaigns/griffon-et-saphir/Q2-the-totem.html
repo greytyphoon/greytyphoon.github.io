@@ -21,10 +21,10 @@
 		</header>
 		<p>Cette aventure est conçue pour 2 personnages de niveau 3. Cette aventure donnera 3 Expérience et 8 Réputation.</p>
 		<p>Pour espérer survivre, tout le groupe devra avoir de bons bonus de <a href="https://www.d20pfsrd.com/skills/stealth">Stealth</a>,
-			en plus de s'assurer d'avoir suffisamment de <a href="https://www.d20pfsrd.com/skills/perception">Perception</a>,
+			en plus de s'assurer d'avoir accès à <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>
+			et suffisamment de <a href="https://www.d20pfsrd.com/skills/perception">Perception</a>,
 			<a href="https://www.d20pfsrd.com/skills/spellcraft">Spellcraft</a>,
-			<a href="https://www.d20pfsrd.com/skills/survival">Survival</a>.
-			et accès à <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>.</p>
+			<a href="https://www.d20pfsrd.com/skills/survival">Survival</a>.</p>
 
 		<section class="row">
 			<div>
@@ -56,16 +56,16 @@
 		</section>
 
 		<section class="row">
-			<div>
+			<div style="flex:2">
 				<h2>Combats</h2>
 				<ul>
 					<li><a href="https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/wendigo">Wendigo</a> (CR17 ⚠️)
 						<ul>
-							<li>coincé dans la vallée par les totems</li>
+							<li>Un esprit maléfique ancestral qui est coincé dans la vallée par les totems.</li>
 						</ul></li>
 					<li><a href="https://www.d20pfsrd.com/gamemastering/haunts/cr-4-6/dead-tree-cr-4">Dead Trees</a> (CR4)
 						<ul>
-							<li>Planté pour protéger le sortilège, il tire se force vitale du totem.</li>
+							<li>Planté pour protéger le sortilège, il tire sa force vitale du totem.</li>
 							<li>Enfouis ses victimes.
 								Chaque round, dans un rayon de 3 cases, Reflex <b>DC13</b> vs <a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Entangled">entangled</a> + <a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Sickened">sickened</a> + <b>2d6</b>dmg [B], success negates.</li>
 						</ul></li>
@@ -99,12 +99,13 @@
 				<h2>Navigation</h2>
 				<p>Tous les jours, les joueurs font des jets de <b>Stealth</b> &ndash;tous les joueurs&ndash;, <b>Perception</b>, <b>Survival</b>, &amp; <b>Spellcraft</b> (vs <b>DC20</b>).
 					Les échecs s'accumulent au fil des jours.</p>
-				<p>Après <b>3</b> échecs, le Wendigo les remarque, choisit une Victime, et envoie du <a href="https://www.d20pfsrd.com/magic/all-spells/c/control-weather">mauvais temps</a>.
-					Après <b>6</b> échecs, le Wendigo lance <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/n/nightmare">cauchemar</a> (Will DC14) contre le groupe, toutes les nuits.
-					Après <b>9</b> et <b>12</b> échecs, le Wendigo apparaît au prochain totem et hurle (<a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Shaken">shaken</a>, Will DC=failures to negate).
-					Après <b>15</b> échecs, le Wendigo corrompt sa Victime. Elle est tuée, la mission échoue. Le rescapé doit échapper à la victime pour survivre.</p>
-				<p><em>Les DCs du Wendigo sont augmentés de 1 pour la Victime. Si les joueurs s'en rendent compte, ils réalisent qui est la victime.</em></p>
-				</dl>
+				<ul>
+					<li><b>3</b> échecs: le Wendigo les remarque, choisit une Victime, et envoie du <a href="https://www.d20pfsrd.com/magic/all-spells/c/control-weather">mauvais temps</a>.</li>
+					<li><b>6</b> échecs: le Wendigo lance <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/n/nightmare">cauchemar</a> (Will negates) contre le groupe, toutes les nuits.</li>
+					<li><b>9</b> et <b>12</b> échecs: le Wendigo apparaît au prochain totem et hurle (<a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Shaken">shaken</a>, Will negates).</li>
+					<li><b>15</b> échecs: le Wendigo corrompt sa Victime. Elle est tuée, la mission échoue. Le rescapé doit échapper à la victime pour survivre.</li>
+				</ul>
+				<p><em>Les DCs du Wendigo sont égals à <b>10 + nbEchecs&frac12;</b>. Ils sont augmentés de 1 pour la Victime. Si les joueurs s'en rendent compte, ils réalisent qui est la Victime.</em></p>
 			</div>
 		</section>
 	</div>
