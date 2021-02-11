@@ -56,31 +56,38 @@
 				<dd>40 ft.</dd>
 
 				<dt>Languages</dt>
-				<dd>Common, Aklo (cannot speak)</dd>
+				<dd>None, cannot speak</dd>
 			</dl>
 		</section>
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
 		<dl id="featsWrapper">
-			<dd><a href="https://d20pfsrd.com/feats/monster-feats/ability-focus">Ability Focus</a> (Blast)</dd>
-			<dd><a href="https://www.d20pfsrd.com/feats/combat-feats/improved-initiative-combat">Improved Initiative</a></dd>
+			<dt>bonus</dt>
 			<dd><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Stealth)</dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat">Weapon Finesse</a></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/monster-feats/ability-focus">Ability Focus</a> (Blast)</dd>
+			<dt>level 3</dt>
+			<dd><a href="https://www.d20pfsrd.com/feats/combat-feats/improved-initiative-combat">Improved Initiative</a></dd>
 		</dl>
 
 		<!-- SKILLS -->
 		<ul class="summations">
 			<li>
-				<strong>1</strong>
+				<strong>5</strong>
 				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
-				<small>1 wis, 0 ranks, 0 class</small>
+				<small>1 wis, 1 ranks, 3 class</small>
 			</li>
 			<li>
 				<strong>21</strong>
 				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
-				<small>3 dex, 5 ranks, 3 class, 10 racial</small>
+				<small>3 dex, 2 ranks, 3 class, 3 s.focus, 10 racial</small>
 			</li>
 		</ul>
+		<p class="circumstancialBonus noprint">
+			<u title="3 aberration: 4 class, -3 int">3 ranks</u>.
+		</p>
 
 		<!-- title COMBAT -->
 		<hr>
@@ -91,12 +98,12 @@
 					<li class="br">
 						<strong>7</strong>
 						<b>Init</b>
-						<small>3 dex, <u title="Improved Initiative">4</u></small>
+						<small>3 dex, <u title="Improved Initiative">4 feat</u></small>
 					</li>
 					<li>
-						<strong>31</strong>
+						<strong>19</strong>
 						<b>HP</b>
-						<small>5 creeper: 8 class, 2 con</small>
+						<small>3 creeper: 8 class, 2 con</small>
 						<div class="circumstancialBonus" title="Dragon subtype">
 							<u>Resist 20</u> electricity.
 						</div>
@@ -117,17 +124,18 @@
 						<small>3 dex, 1 class</small>
 					</li>
 					<li>
-						<strong>5</strong>
+						<strong>4</strong>
 						<b>Will</b>
-						<small>1 wis, 4 class</small>
+						<small>1 wis, 3 class</small>
 						<div class="circumstancialBonus" title="Aberration"> <u>+4</u> vs mind-affecting</div>
 					</li>
 					<li class="br"><strong>11</strong> <a href="https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">SR</a></li>
 
 					<li>
-						<strong>4</strong>
-						<b>CMB</b>;	17 <b>CMD</b>
-						<small>3 bab, 1 str, 3 dex</small>
+						<strong>3</strong>
+						<b>CMB</b>;	16 <b>CMD</b>
+						<small>2 bab, 1 str, 3 dex</small>
+						<div class="circumstancialBonus" title="4-legged"> <u>+2</u> vs trip</div>
 					</li>
 				</ul>
 
@@ -145,28 +153,32 @@
 				<!--Bite-->
 				<div class="weapon">
 					<h2>Bite <b>20x2</b> <b>BPS</b></h2>
-					<div class="summation"><strong>-1</strong> vs AC</div>
-					<div class="summation"><strong>1d3</strong></div>
+					<div class="summation"><strong>0</strong> vs AC <small>2 bab, <u title="Weapon Finesse">3 dex</u>, -5 secondary</small></div>
+					<div class="summation"><strong>1d3</strong> <small>0 str&frac12;</small></div>
 				</div>
 
 				<h2>Blast (Ex)</h2>
 				<p>As a full-round action, a creeper may burst in a 15ft-radius blast. This kills the creeper and inflicts <b>5d6</b>dmg [B, fire] to all adjacent.
 					All within the radius include <b>3d6</b>dmg [B] (this stacks with the close-range damage).
-					Reflex <u title="2 creeper&frac12;, 3 con, 1 ability focus">DC16</u> halves.
-					The explosion creates a crater with a 15-foot radius &ndash; 15 ft. deep at the center and raising by five feet for every square outward.
+					Reflex <u title="1 creeper&frac12;, 2 con, 2 ability focus">DC15</u> halves.
+					The explosion creates a crater with a 15ft-radius &ndash; 15ft deep at the center and raising by 5ft for every square outward.
 					The crater is treated as difficult terrain.
-					This crater is negated if the explosion takes place underwater, and the radius is decreased to 5 feet if the creeper is standing on strong stone.</p>
+					This crater is negated if the explosion takes place underwater, and the radius is decreased to 5ft if the creeper is standing on strong stone.</p>
 				<h2>Charge (Ex)</h2>
 				<p>A creeper struck by lightning or dealt at least 10 electricity damage has its blast heightened.
-					The blast now possesses a 25-foot radius and inflicts <b>8d6</b>dmg [B, electricity] to all within 10ft of the creeper.
+					The blast now possesses a 25ft-radius and inflicts <b>8d6</b>dmg [B, electricity] to all within 10ft of the creeper.
 					All within the radius take <b>3d6</b>dmg [B, fire].
-					Reflex <u title="2 creeper&frac12;, 3 con, 1 ability focus, 4 charge">DC20</u> halves.
+					Reflex <u title="1 creeper&frac12;, 2 con, 2 ability focus, 4 charge">DC19</u> halves.
 					This affects the crater likewise.
 			</div>
 		</section>
 
 		<h2>Notes</h2>
-		<p>Created by <b>Kobold Cleaver</b> in <a href="https://paizo.com/threads/rzs2s9ax?Minefinder-Minecraft-Monsters">this thread on Paizo forums</a>, thanks a ton!</p>
+		<p>Created by <b>Kobold Cleaver</b> in <a href="https://paizo.com/threads/rzs2s9ax?Minefinder-Minecraft-Monsters">this thread on Paizo forums</a>, thanks a ton!
+			I toned it down juuuust a bit.
+			<a href="https://www.youtube.com/watch?v=RK0WyUqrI54">Obligatory sound effect.</a></p>
+
+		<h2>Lore</h2>
 		<p>Originally known only within the depths of the Darklands, these "creepers" have become more and more prevalent in dwarven mines and kobold warrens.
 			Their origins are unknown—they seem to know no master, and indeed don't even appear particularly malicious.
 			Some speculate that they were created in drow fleshwarping experiments, but drow, having suffered great losses from the awful monsters, furiously deny this.</p>
@@ -175,7 +187,6 @@
 			They don't appear to be fully aware of what comes after the "boom", but they really, really want it.
 			And they want people to notice.</p>
 		<p>Those few who have managed to communicate with creepers have said that, above all, above even their self-destructive instincts, the creatures appear to be intensely lonely.</p>
-		<p><a href="https://www.youtube.com/watch?v=RK0WyUqrI54">Sound effect!</a></p>
 	</div>
 </body>
 </html>
