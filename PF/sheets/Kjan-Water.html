@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Grey's Kineticist 🌊</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.prismatic, a.prismatic { color:var(--conjuration-green); }
+		.burn { color:blue; }
+		li.infusionForm { list-style-type: circle; }
+		li.infusionSubstance { list-style-type: square; }
+		li.metakinesis { list-style-type: disc; }
+		li.burnReduction { list-style-type: none; }
+		#fixref > ul > li > *.aether-form::before { content: "✨"; }
+		#fixref > ul > li > *.air-form::before { content: "🎐"; }
+		#fixref > ul > li > *.earth-form::before { content: "🗻"; }
+		#fixref > ul > li > *.fire-form::before { content: "🔥"; }
+		#fixref > ul > li > *.water-form::before { content: "🌊"; }
+		#fixref > ul > li > *.wood-form::before { content: "🌳"; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="aether-form" href="Kjan-Aether.html">Aether Form</a></li>
+		<li><a class="air-form" href="Kjan-Air.html">Air Form</a></li>
+		<li><a class="earth-form" href="Kjan-Earth.html">Earth Form</a></li>
+		<li><a class="fire-form" href="Kjan-Fire.html">Fire Form</a></li>
+		<li><span class="water-form">Water Form</span></li>
+		<li><a class="wood-form" href="Kjan-Wood.html">Wood Form</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Kjan Sol, the prismatic</h1>
+			NG Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>9</dd>
+
+				<dt>Dex</dt>
+				<dd>16</dd>
+
+				<dt>Con</dt>
+				<dd>19 <small>17, <u title="Racial">2</u></small></dd>
+
+				<dt>Int</dt>
+				<dd>10</dd>
+
+				<dt>Wis</dt>
+				<dd>14</dd>
+
+				<dt>Cha</dt>
+				<dd>8</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/human/#Alternate_Racial_Traits">Heart of the Fey</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/occult-adventures/occult-classes/kineticist">Kineticist</a> 3</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/kineticist/archetypes/paizo-llc-kineticist-archetypes/terrakineticist-kineticist-archetype">Terrakineticist</a>
+					&ndash; <a class="prismatic" href="https://d20pfsrd.com/occult-adventures/occult-classes/kineticist/kineticist-elements/#Water">Water</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Desna</dd>
+
+				<dt>Senses</dt>
+				<dd title="Heart of the Fey"><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+
+				<dt>Speed</dt>
+				<dd>30ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Sylvan</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/race-traits/auspicious-tattoo">Auspicious Tattoo</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/regional-traits/awakened-from-stasis">Awakened from Stasis</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/deft-dodger">Deft Dodger</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/campaign-traits/rise-of-the-runelords/outlander">Outlander</a> (Exile)</dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/additional-traits">Additional Traits</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/point-blank-shot-combat">Point-Blank Shot</a></dd>
+			<dt>human</dt>
+			<dd><a href="https://d20pfsrd.com/feats/monster-feats/ability-focus">Ability Focus</a> (Kinetic Blast)
+				<small>min.1</small></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/precise-shot-combat">Precise Shot</a>
+				<small>min.1</small></dd>
+			<dt>kin. 1</dt>
+			<dd><a class="prismatic" href="https://d20pfsrd.com/occult-adventures/occult-classes/kineticist/kineticist-elements/#TOC-Basic-Hydrokinesis">Basic Hydrokinesis</a>
+				<small>bonus</small></dd>
+			<dd><a class="prismatic" href="https://d20pfsrd.com/occult-adventures/occult-classes/kineticist/kineticist-elements/#TOC-Water-Blast">Water Blast</a>
+				<small>bonus</small></dd>
+			<dd><a class="prismatic" href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/kineticist/infusion-wild-talents#TOC-Pushing-Infusion">Pushing Infusion</a>
+				<small>min.1</small></dd>
+			<dt>kin. 2</dt>
+			<dd><a class="prismatic" href="https://d20pfsrd.com/occult-adventures/occult-classes/kineticist/kineticist-elements/#Shroud_of_Water">Shroud of Water</a>
+				<small>min.2</small></dd>
+			<dd><a class="prismatic" href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/kineticist/utility-wild-talents#TOC-Slick">Slick</a>
+				<small>min.2</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat">Weapon Focus</a> (Kinetic Blast)
+				<small>min.2</small></dd>
+			<dt>kin. 3</dt>
+			<dd><a class="prismatic" href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/kineticist/infusion-wild-talents#TOC-Extended-Range">Extended Range</a>
+				<small>min.1</small></dd>
+			<dt>kin. 4</dt>
+			<dd><a class="prismatic" href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/kineticist/utility-wild-talents#TOC-Icewalker">Icewalker</a>
+				<small>min.2</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/deadly-aim-combat">Deadly Aim</a>
+				<small>min.2</small></dd>
+			<dt>kin. 5</dt>
+			<dd><a class="prismatic" href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/kineticist/infusion-wild-talents#TOC-Slick-Infusion">Slick Infusion</a>
+				<small>min.4</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>2 wis, 3 ranks, 3 class</small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>
+				<small>3 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>0</strong>
+				<a href="https://d20pfsrd.com/skills/climb">Climb</a>
+				<small>-1 str, 1 ranks, 0 class</small>
+			</li>
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/escape-artist">Escape Artist</a>
+				<small>3 dex, 1 ranks, 0 class</small>
+			</li>
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
+				<small>3 dex, 1 ranks, 0 class</small>
+			</li>
+			<li>
+				<strong>1</strong>
+				<a href="https://d20pfsrd.com/skills/handle-animal">Handle Animal</a>
+				<small>-1 cha, 2 ranks, 0 class</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/heal">Heal</a>
+				<small>2 wis, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/sleight-of-hand">Sleight of Hand</a>
+				<small>3 dex, 1 ranks, 0 class</small>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+				<small>3 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>3</strong>
+				<a href="https://d20pfsrd.com/skills/swim" class="prismatic">Swim</a>
+				<small>-1 str, 1 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>3</strong>
+				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
+				<small>-1 cha, 1 ranks, 3 class</small>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (nature)</a>
+				<small>0 int, 1 ranks, <span title="Heart of the Fey">3 class</span></small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/profession">Profession (herbalist)</a>
+				<small>2 wis, 3 ranks, 3 class</small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="3 kineticist: 4 class, 0 int, 2 background-skills">18 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>.
+		</p>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>6</strong>
+						<b>Init</b>
+					<small>3 dex, <u title="Outlander">2 trait</u>, <u title="Dusty Rose Prism Ioun Stone">1 competence</u></small>
+					</li>
+					<li>
+						<strong>36</strong>
+						<b>HP</b>
+						<small>3 kineticist: 8 class, 4 con; 3 FC; -3 rolled</small>
+					</li>
+					<li class="br">
+						<strong>20</strong>
+						<b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 17
+						<small>10, 3 dex, 4 armor, <u title="Shroud of Water" class="prismatic">3 shield</u></small>
+					</li>
+					<li>
+						<strong>8</strong>
+						<b>Fort</b>
+						<small>4 con, 3 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>9</strong>
+						<b>Ref</b>
+						<small>3 dex, 3 class, <u title="Heart of the Fey">1 racial</u>, <u title="Deft Dodger">1 trait</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li class="br">
+						<strong>6</strong>
+						<b>Will</b>
+						<small>2 wis, 1 class, <u title="Heart of the Fey">1 racial</u>, <u title="Auspicious Tattoo">1 trait</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>1</strong>
+						<b>CMB</b>;	14 <b>CMD</b>
+						<small>2 bab, -1 str, 3 dex</small>
+					</li>
+				</ul>
+
+				<!--Water Blast-->
+				<div class="weapon">
+					<h2>Water Blast <b>20x2</b> <b>30 ft. strict</b> <b>B, Magic</b></h2>
+					<div class="summation"><strong>+8</strong> vs AC <small>2 bab, 3 dex, <u title="Weapon Focus, Point-Blank Shot">2 feat</u>, <u title="Elemental Overflow" class="burn">1 burn</u></small></div>
+					<div class="summation"><strong>2d6+9</strong> <small>4 con, <u title="Physical Blast: increases at 1st, 3rd, 5th... along with damage dice">2 class</u>, <u title="Point-Blank Shot">1 feat</u>, <u title="Elemental Overflow" class="burn">2 burn</u></small></div>
+					<div class="circumstancialBonus" title="Kinetic Blast">Deals full damage to swarms</div>
+					<div class="circumstancialBonus" title="Wild Talents">Sp, counts as a 1st-level spell</div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<h2 class="prismatic">Shroud of Water</h2>
+				<p class="prismatic">You have <u title="Starts at 2, increases at 6th, 10th... + Burn accepted (max half initial amount)">2+X</u> shield AC
+					or <u title="Starts at 4, increases at 6th, 10th... + Burn accepted (max half initial amount)">4+X</u> armor AC.
+					Both when taking burn.</p>
+
+				<h2>Burn <b title="3 class, 4 con">7/day</b></h2>
+				<div class="apartee float">
+					<u title="3 kineticist"><b>3</b></u> nonlethal per burn<br>
+					<u title="Increases at 1st, 6th, 9th, 12th..."><b>1</b></u> burn per round max
+				</div>
+				<ul>
+					<li class="infusionSubstance prismatic" title="Pushing Infusion">
+						For 1 burn, add a <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Bull-Rush">bull rush</a>
+						to a blast at <u title="2 bab, 4 con, 1 w.focus"><b>+7</b></u>, max 5ft.</li>
+					<li class="infusionForm prismatic br" title="Extended Range">For 1 burn, increase range to 120ft.</li>
+
+					<li class="burnReduction">As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>, reduce burn by 1.</li>
+					<li class="burnReduction">As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Full-Round-Actions">full-round action</a>, reduce burn by 2 in next round.</li>
+				</ul>
+
+				<h2 class="prismatic">Slick (as <a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a>)</h2>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--500--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/ioun-stones/dusty-rose-prism-ioun-stone">Dusty Rose Prism Ioun Stone</a>, cracked [implanted]</li>
+			<li class="emptyitemslot">Headband</li>
+			<li class="emptyitemslot">Eyes</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+			<li class="emptyitemslot">Neck</li>
+			<li class="emptyitemslot">Chest</li>
+			<li class="emptyitemslot">Body</li>
+			<li class="emptyitemslot">Wrists</li>
+			<li class="emptyitemslot">Hands</li>
+			<li class="emptyitemslot">Ring</li>
+			<li class="emptyitemslot">Ring</li>
+			<li class="emptyitemslot">Belt</li>
+			<li class="emptyitemslot">Feet</li>
+		</ul>
+
+		<!--Weapons-->
+		<ul id="inventory">
+			<li><!--4-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Dagger</a>, cold-iron
+				<small>simple light, 1d4, 19x2, PS, 10ft.</small>
+			</li>
+			<li class="br"><!--0-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Sling</a>
+				<small>simple ranged, 1d4, 20x2, B, 50ft.</small>
+			</li>
+
+			<!--Armors-->
+			<li><!--1100-->
+				<a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a>
+				<small>light, 4 armor, 6 dex, 0 acp, 10% asf</small>
+			</li>
+			<li class="br"><!--155-->
+				<a href="https://d20pfsrd.com/equipment/armor">Buckler</a>, masterwork
+				<small>1 shield, - dex, 1 acp, 5% asf</small>
+			</li>
+
+			<!--Misc-->
+			<li><!--35--><a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a></li>
+			<li>206 <b>GP</b><!--/3000--></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p>
+				<a href="https://docs.google.com/document/d/1utgJVtJStEtZ8B923VWFYKIx6kbWQS_44zSMOb8rkT0/edit">Guide NJolly</a>,
+				<a href="https://docs.google.com/document/d/1HRGbMv5ySOTYUeEXBl8WtysJxaZFxa-pr00xHV-scFQ/edit">Guide 3rd</a>
+			</p>
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Generous and modest</dd>
+
+				<dt>Drawback</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/self-doubting">Self-doubting</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>White</dd>
+
+				<dt>Hair</dt>
+				<dd>White</dd>
+
+				<dt>Weight</dt>
+				<dd>170 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 11''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
