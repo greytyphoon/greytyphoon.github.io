@@ -109,6 +109,7 @@ body > .container { padding: 10px 25px .5px 25px; }
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-end;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -118,14 +119,14 @@ body > .container { padding: 10px 25px .5px 25px; }
 	margin: .75rem;
 	font-size: .75rem;
 }
-#fixref > ul > li > a::before {
+#fixref > ul > li > *::before {
 	content: "?"; /* override this with useful icons */
 	display: block;
 	padding: .15rem;
 	font-size: 1.5rem;
 	font-weight: bold;
 }
-#fixref > ul > li > a.home::before { content: "\2302"; content: "⌂"; } /* overrides should look like this */
+#fixref > ul > li > *.home::before { content: "\2302"; content: "⌂"; } /* overrides should look like this */
 
 @media screen and (min-width: 576px){
 	#fixref {
