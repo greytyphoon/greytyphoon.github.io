@@ -1,0 +1,15 @@
+/** Created by Rémi Doutre, 2015-2021. Public domain. **/
+.burn { color:blue; }
+li.infusionForm { list-style-type: circle; }
+li.infusionSubstance { list-style-type: square; }
+li.metakinesis { list-style-type: disc; }
+li.burnReduction { list-style-type: none; }
+
+/* used for Kjan's Terrakineticist forms */
+.prismatic, a.prismatic { color:var(--conjuration-green); }
+#fixref > ul > li > *.aether-form::before { content: "✨"; }
+#fixref > ul > li > *.air-form::before { content: "🎐"; }
+#fixref > ul > li > *.earth-form::before { content: "🗻"; }
+#fixref > ul > li > *.fire-form::before { content: "🔥"; }
+#fixref > ul > li > *.water-form::before { content: "🌊"; }
+#fixref > ul > li > *.wood-form::before { content: "🌳"; }

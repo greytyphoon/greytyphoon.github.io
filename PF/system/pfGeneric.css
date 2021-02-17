@@ -1,4 +1,4 @@
-/** Created by Rémi Doutre, 2015-2019. Public domain. **/
+/** Created by Rémi Doutre, 2015-2021. Public domain. **/
 @import url("../../basic.css");
 
 /********************
@@ -115,9 +115,9 @@ table.playerInfo td {
 	text-align: center; }
 
 /* icons for campaigns */
-#fixref > ul > li > a.houserule::before { content: "+"; }
-#fixref > ul > li > a.experience::before { content: "XP"; }
-#fixref > ul > li > a.names::before { content: "\1f3ad"; content: "🎭"; }
-#fixref > ul > li > a.injury::before { content: "\1f915"; content: "🤕"; }
-#fixref > ul > li > a.reward::before { content: "\1f4b0"; content: "💰"; }
-#fixref > ul > li > a.player::before { content: "\1f513"; content: "🔓"; }
+#fixref > ul > li > *.houserule::before { content: "+"; }
+#fixref > ul > li > *.experience::before { content: "XP"; }
+#fixref > ul > li > *.names::before { content: "\1f3ad"; content: "🎭"; }
+#fixref > ul > li > *.injury::before { content: "\1f915"; content: "🤕"; }
+#fixref > ul > li > *.reward::before { content: "\1f4b0"; content: "💰"; }
+#fixref > ul > li > *.player::before { content: "\1f513"; content: "🔓"; }
