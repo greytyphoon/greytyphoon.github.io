@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grey's Dire Boar</title>
+	<link rel="stylesheet" href="../../system/pfCharacter.css">
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Nago</h1>
+			CN Huge animal (augmented)
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>27 <small title="Giant">+4</small></dd>
+
+				<dt>Dex</dt>
+				<dd>8 <small title="Giant">-2</small></dd>
+
+				<dt>Con</dt>
+				<dd>21 <small title="Giant">+4</small></dd>
+
+				<dt>Int</dt>
+				<dd>3</dd>
+
+				<dt>Wis</dt>
+				<dd>13</dd>
+
+				<dt>Cha</dt>
+				<dd>8</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/bestiary/monster-listings/animals/boar/dire-boar">Dire Boar</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/bestiary/monster-listings/templates/simple-template-giant-cr-1">Giant</a></dd>
+				<dt>CR</dt>
+				<dd>5</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>None</dd>
+
+				<dt>Senses</dt>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+				<dd><a href="https://d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Scent-Ex-">Scent</a></dd>
+
+				<dt>Speed</dt>
+				<dd>40 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd title="Because I'm the GM">Common, Sylvan, Druidic</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>feats</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Perception)</dd>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/iron-will">Iron Will</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/toughness">Toughness</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-initiative-combat">Improved Initiative</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/monster-feats/awesome-blow">Awesome Blow</a></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>12</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>1 wis, 5 ranks, 3 class, 3 s.focus</small>
+			</li>
+		</ul>
+		<p class="circumstancialBonus noprint">
+			<u title="5 animal: 2 class, -4 int">5 ranks</u>.
+		</p>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>3</strong>
+						<b>Init</b>
+						<small>-1 dex, <u title="Improved Initiative">4 feat</u></small>
+					</li>
+					<li>
+						<strong>70</strong>
+						<b>HP</b>
+						<small>5 animal: 8 class, 5 con, <u title="Toughness">1 feat</u></small>
+						<div class="circumstancialBonus" title="Dragon subtype">
+							<u title="Because I'm the GM, and Black-Blooded would do that">Resist 5</u> cold.
+						</div>
+					</li>
+					<li class="br">
+						<strong>16</strong>
+						<b>AC</b> touch 7, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 16
+						<small>10, -1 dex, -2 size, <u title="6 boar, 3 giant">9 natural</u></small>
+					</li>
+					<li>
+						<strong>9</strong>
+						<b>Fort</b>
+						<small>5 con, 4 class</small>
+					</li>
+					<li>
+						<strong>3</strong>
+						<b>Ref</b>
+						<small>-1 dex, 4 class</small>
+					</li>
+					<li class="br">
+						<strong>4</strong>
+						<b>Will</b>
+						<small>1 wis, 1 class, <u title="Iron Will">2 feat</u></small>
+					</li>
+
+					<li>
+						<strong>13</strong>
+						<b>CMB</b>;	22 <b>CMD</b>
+						<small>3 bab, 8 str, -1 dex, 2 size</small>
+						<div class="circumstancialBonus" title="Quadruped"> <u>+4</u> vs trip, overrun</div>
+					</li>
+				</ul>
+
+				<h2><a href="https://d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Ferocity-Ex-">Ferocity</a> (Ex)</h2>
+				<p>Keep fighting below 0 HP, still <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Staggered">staggered</a> and losing 1 HP / round.</p>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<!--Gore-->
+				<div class="weapon">
+					<h2>Gore <b>20x2</b> <b>P</b></h2>
+					<div class="summation"><strong>9</strong> vs AC <small>3 bab, 8 str, -2 size</small></div>
+					<div class="summation"><strong>2d8+12</strong> <small>12 str&frac12;</small></div>
+					<div class="circumstancialBonus" title="Huge">Reach 10ft.</div>
+					<div class="circumstancialBonus" title="Awesome Blow">Creatures are sent flying 10ft.
+						If blocked by an obstacle +<b>1d6</b>dmg and <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Prone">prone</a>.</div>
+				</div>
+
+				<h2 title="Because I'm the GM">Corruption Tendrils (Su)</h2>
+				<p>Each turn, create 3 tendrils creatures around Nago.
+					They will take their turn 1d4 steps later in initiative.
+					On their turn, they attack if able, then wither away.
+					The tendrils have <b>9</b>HP and <b>13</b>AC and cannot move.</p>
+				<!--Tendril-->
+				<div class="weapon">
+					<h2>Tendril Slam <b>20x2</b> <b>B, Cold</b></h2>
+					<div class="summation"><strong>6</strong> vs AC</div>
+					<div class="summation"><strong>1d6+4</strong></div>
+					<div class="circumstancialBonus" title="Huge">Reach 10ft.</div>
+					<div class="circumstancialBonus"><a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Sickened">Sickened</a> for 1d4 rounds, Fortitude DC11 negates</div>
+				</div>
+			</div>
+		</section>
+
+		<h2>Lore</h2>
+		<p>Whereas the boar is ill-tempered and generally unfriendly, the towering daeodon (known as the dire boar to most commoners and hunters) is legitimately hateful and violent.
+			Although omnivorous like its smaller kin, the daeodon prefers to feed on flesh, and its razor-sharp tusks and keen eyesight make it particularly well suited as a predator.
+			While the daeodon is primarily a scavenger, it isn’t averse to attacking smaller creatures it encounters while searching for easier meals, or those who stumble unwittingly into its territory.</p>
+		<p>Particularly brave or skilled orcs are fond of using daeodons as mounts, and orc cavalry mounted on dire boars make for a fearsome force indeed.</p>
+		<p>A typical adult daeodon is 10 feet long and 7 feet tall at the shoulder. It weighs approximately 2,000 pounds.</p>
+
+		<h2>What Nago looks like</h2>
+		<details>
+			<summary>Boar form</summary>
+			<a href="https://static.wikia.nocookie.net/mononokehime/images/5/5f/Demon_Worm.png">
+				<img src="https://static.wikia.nocookie.net/mononokehime/images/5/5f/Demon_Worm.png" width="720px" height="400px"></a>
+		</details>
+		<details>
+			<summary>Demon form</summary>
+			<a href="https://static.wikia.nocookie.net/mononokehime/images/c/c9/Ksiezniczka-mononoke-1997_6518_800_600.jpg">
+				<img src="https://static.wikia.nocookie.net/mononokehime/images/c/c9/Ksiezniczka-mononoke-1997_6518_800_600.jpg" width="800px" height="600px"></a>
+		</details>
+	</div>
+</body>
+</html>
