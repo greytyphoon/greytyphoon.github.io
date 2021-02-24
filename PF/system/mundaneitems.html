@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="pfCharacter.css">
 	<style>
 		#mundaneItemsChart { width: 80%; }
+		table.table-cornered th,
+		table.table-cornered td { width: unset; }
 	</style>
 </head>
 <body>
@@ -18,39 +20,44 @@
 		<header>
 			<h1>Mundane Items</h1>
 		</header>
-		List of all non-magical items that my characters should have:
+
 		<ul id="mundaneItemsWrapper">
-			<li>Rations (3)</li>
+			<li>Rations (4)</li>
 			<li class="br">Wandermeal (2)</li>
 			<li>Backpack</li>
 			<li>Bedroll</li>
 			<li>Blanket</li>
-			<li>Flint &amp; steel</li>
 			<li>Hammock</li>
 			<li>Mess kit</li>
 			<li>Pot, Iron</li>
-			<li>Soap</li>
-			<li class="br">Waterskin</li>
+			<li class="br">Soap</li>
 			<li>Crowbar</li>
 			<li>Grappling hook</li>
 			<li>Rope (50ft)</li>
-			<li>Shovel</li>
-			<li class="br">Signal whistle</li>
+			<li class="br">Shovel</li>
 			<li>Bell</li>
 			<li>Candles (5)</li>
 			<li>Cards</li>
 			<li>Chalk</li>
+			<li>Compass</li>
+			<li>Dagger, Cold-Iron</li>
 			<li>Dice</li>
 			<li>Fishhook</li>
+			<li>Flint &amp; steel</li>
 			<li>Ink &amp; pen</li>
 			<li>Mirror</li>
 			<li>Parchment (5)</li>
 			<li>Sewing Needle</li>
+			<li>Signal whistle</li>
 			<li>String (50ft)</li>
+			<li>Waterproof bag</li>
+			<li>Waterskin</li>
 		</ul>
 
-		<table id="mundaneItemsChart" class="table-cornered">
+		<table id="mundaneItemsChart" class="table-cornered br">
+			<caption class="br">List of all non-magical items that my characters should have:</caption>
 			<tr>
+				<th rowspan="4" class="group" title="You can ditch these if you plan on hunting for your food. It's also reasonable to leave part of it at your campsite.">Rations</th>
 				<th>Item</th>
 				<th>Cost</th>
 				<th>Weight</th>
@@ -60,7 +67,7 @@
 				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-Rations">Trail Rations, 1 day</a></td>
 				<td>.5 gp</td>
 				<td>1 lbs</td>
-				<td>3</td>
+				<td>4</td>
 			</tr>
 			<tr>
 				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-Rations-Wandermeal">Rations, Wandermeal</a></td>
@@ -70,11 +77,12 @@
 			</tr>
 			<tr>
 				<th>TOTAL</th>
-				<th>1.52 gp</th>
-				<th>4 lbs</th>
+				<th>2.02 gp</th>
+				<th>5 lbs</th>
 				<th>&nbsp;</th>
 			</tr>
 			<tr>
+				<th rowspan="9" class="group" title="You can leave these at your campsite, or on your donkey outside the dungeon, safely.">Camping</th>
 				<td colspan="4">&nbsp;</td>
 			</tr>
 			<tr>
@@ -93,12 +101,6 @@
 				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-Blanket">Blanket, winter</a></td>
 				<td>.5 gp</td>
 				<td>3 lbs</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits#TOC-Flint-and-Steel">Flint &amp; Steel</a></td>
-				<td>1 gp</td>
-				<td>-</td>
 				<td>1</td>
 			</tr>
 			<tr>
@@ -126,18 +128,13 @@
 				<td>1</td>
 			</tr>
 			<tr>
-				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/containers-bags-boxes-more#TOC-Waterskin">Waterskin</a></td>
-				<td>1 gp</td>
-				<td>4 lbs</td>
-				<td>1</td>
-			</tr>
-			<tr>
 				<th>TOTAL</th>
-				<th>5.71 gp</th>
-				<th>22.5 lbs</th>
+				<th>3.71 gp</th>
+				<th>18.5 lbs</th>
 				<th>&nbsp;</th>
 			</tr>
 			<tr>
+				<th rowspan="6" class="group" title="If you've got less than 13 STR, you probably can't carry those, so leave then at your campsite.">Heavy</th>
 				<td colspan="4">&nbsp;</td>
 			</tr>
 			<tr>
@@ -165,18 +162,13 @@
 				<td>1</td>
 			</tr>
 			<tr>
-				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-Whistle">Signal Whistle</a></td>
-				<td>.8 gp</td>
-				<td>-</td>
-				<td>1</td>
-			</tr>
-			<tr>
 				<th>TOTAL</th>
-				<th>6.8 gp</th>
+				<th>6 gp</th>
 				<th>27 lbs</th>
 				<th>&nbsp;</th>
 			</tr>
 			<tr>
+				<th rowspan="20" class="group" title="No matter what, always have these on you.">Utility</th>
 				<td colspan="4">&nbsp;</td>
 			</tr>
 			<tr>
@@ -204,6 +196,18 @@
 				<td>1</td>
 			</tr>
 			<tr>
+				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear/#TOC-Compass">Compass</a></td>
+				<td>10 gp</td>
+				<td>.5 lbs</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td><a href="https://d20pfsrd.com/equipment/weapons/weapon-descriptions/dagger">Dagger</a>, cold-iron</td>
+				<td>4 gp</td>
+				<td>1 lbs</td>
+				<td>1</td>
+			</tr>
+			<tr>
 				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/toys-games-puzzles#TOC-Dice">Dice, normal 6-sided</a></td>
 				<td>.1 gp</td>
 				<td>-</td>
@@ -212,6 +216,12 @@
 			<tr>
 				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-Fishhook">Fishhook</a></td>
 				<td>.1 gp</td>
+				<td>-</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits#TOC-Flint-and-Steel">Flint &amp; Steel</a></td>
+				<td>1 gp</td>
 				<td>-</td>
 				<td>1</td>
 			</tr>
@@ -246,24 +256,43 @@
 				<td>1</td>
 			</tr>
 			<tr>
+				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-Whistle">Signal Whistle</a></td>
+				<td>.8 gp</td>
+				<td>-</td>
+				<td>1</td>
+			</tr>
+			<tr>
 				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-String-or-Twine">String (50ft)</a></td>
 				<td>.01 gp</td>
 				<td>.5 lbs</td>
 				<td>1</td>
 			</tr>
 			<tr>
+				<td><a href="https://d20pfsrd.com/equipmenT/goods-and-services/containers-bags-boxes-more/#TOC-Bag-Waterproof">Waterproof Bag</a></td>
+				<td>.5 gp</td>
+				<td>.5 lbs</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td><a href="https://d20pfsrd.com/equipment/goods-and-services/containers-bags-boxes-more#TOC-Waterskin">Waterskin</a></td>
+				<td>1 gp</td>
+				<td>4 lbs</td>
+				<td>1</td>
+			</tr>
+			<tr>
 				<th>TOTAL</th>
-				<th>20.97 gp</th>
-				<th>2 lbs</th>
+				<th>38.27 gp</th>
+				<th>8 lbs</th>
 				<th>&nbsp;</th>
 			</tr>
 			<tr>
+				<th rowspan="2" class="group">&nbsp;</th>
 				<td colspan="4">&nbsp;</td>
 			</tr>
 			<tr>
 				<th>GRAND TOTAL</th>
-				<th>35 gp</th>
-				<th>55.5 lbs</th>
+				<th>50 gp</th>
+				<th>58.5 lbs</th>
 				<th>&nbsp;</th>
 			</tr>
 		</table>
@@ -281,6 +310,7 @@
 					<li><a href="https://d20pfsrd.com/equipmenT/goods-and-services/hunting-camping-survival-gear/#TOC-Candle">Candle</a></li>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/books-paper-writing-supplies#TOC-Chalk">Chalk</a></li>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits#TOC-Crowbar">Crowbar</a></li>
+					<li><a href="https://d20pfsrd.com/equipment/weapons/weapon-descriptions/dagger">Dagger</a></li>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-Fishhook">Fishhook</a></li>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits#TOC-Flint-and-Steel">Flint &amp; Steel</a></li>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits#TOC-Hook-Grappling">Grappling Hook, common</a></li>
@@ -301,12 +331,14 @@
 				Ultimate Equipment (2012)
 				<ul>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/toys-games-puzzles#TOC-Cards">Cards</a></li>
+					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear/#TOC-Compass">Compass</a></li>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/toys-games-puzzles#TOC-Dice">Dice</a></li>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-Hammock">Hammock</a></li>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits#TOC-Kit-Mess">Mess kit</a></li>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-Rations-Wandermeal">Rations, Wandermeal</a></li>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-Soap">Soap</a></li>
 					<li><a href="https://d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-String-or-Twine">String (50ft)</a></li>
+					<li><a href="https://d20pfsrd.com/equipmenT/goods-and-services/containers-bags-boxes-more/#TOC-Bag-Waterproof">Waterproof Bag</a></li>
 				</ul>
 			</li>
 		</ul>
