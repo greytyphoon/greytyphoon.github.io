@@ -167,7 +167,7 @@ function attack(station)
 
 	// Enemy's turn
 	viruses.forEach(moveVirus);
-	if (viruses.length > 1)
+	if (viruses.length > 2)
 	{
 		spawnVirus();
 		virusesSpawned++;
