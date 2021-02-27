@@ -6,6 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Grey's Fighter</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.enlarged { color: var(--divination-blue); }
+		.enlarged > .weapon { color: var(--murder-black); border-color: var(--divination-blue); }
+		.enlarged > .weapon > h2 { background-color: var(--divination-blue); border-color: var(--divination-blue); }
+	</style>
 </head>
 <body>
 	<nav id="fixref"><ul>
@@ -44,7 +49,7 @@
 				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/Human/#Alternate_Racial_Traits">Giant Ancestry</a></dd>
 
 				<dt>Class</dt>
-				<dd><a href="https://d20pfsrd.com/classes/core-classes/fighter">Fighter</a> 2</dd>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/fighter">Fighter</a> 3</dd>
 				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/fighter/archetypes/paizo-fighter-archetypes/mutation-warrior">Mutation Warrior</a></dd>
 				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/fighter/archetypes/paizo-fighter-archetypes/siegebreaker-fighter-archetype">Siegebreaker</a></dd>
 
@@ -74,7 +79,7 @@
 		<hr>
 		<dl id="featsWrapper">
 			<dt>traits</dt>
-			<dd><a href="https://d20pfsrd.com/traits/combat-traits/accelerated-drinker">Accelerated Drinker</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/defender-of-the-society-fighter-pathfinder-society">Defender of the Society</a></dd>
 			<dd><a href="https://d20pfsrd.com/traits/regional-traits/snowstride-usually-under-cold-mountains">Snowstride</a></dd>
 			<dt>bonus</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a></dd>
@@ -99,9 +104,9 @@
 		<!-- SKILLS -->
 		<ul class="summations">
 			<li class="br">
-				<strong>4</strong>
+				<strong>5</strong>
 				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
-				<small>2 wis, 2 ranks, 0 class</small>
+				<small>2 wis, 3 ranks, 0 class</small>
 			</li>
 
 			<!--Misc Skills-->
@@ -120,6 +125,11 @@
 				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
 				<small>2 dex, 0 ranks, 0 class, -3 armor, <u title="Giant Ancestry">-2 racial</u></small>
 			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/survival">Survival</a>
+				<small>2 wis, 1 ranks, 3 class</small>
+			</li>
 			<li class="br">
 				<strong>5</strong>
 				<a href="https://d20pfsrd.com/skills/swim">Swim</a>
@@ -128,25 +138,24 @@
 
 			<!--Knowledge Skills-->
 			<li>
-				<strong>4</strong>
+				<strong>5</strong>
 				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (engineering)</a>
-				<small>0 int, 1 ranks, 3 class</small>
+				<small>0 int, 2 ranks, 3 class</small>
 			</li>
 			<li>
-				<strong>6</strong>
+				<strong>8</strong>
 				<a href="https://d20pfsrd.com/skills/knowledge">Profession (carpenter)</a>
-				<small>2 wis, 2 ranks, 3 class</small>
+				<small>2 wis, 3 ranks, 3 class</small>
 			</li>
 		</ul>
 
 		<p class="circumstancialBonus noprint">
-			<u title="2 fighter: 2 class, 0 int, 2 background-skills">8 ranks</u>.
+			<u title="3 fighter: 2 class, 0 int, 2 background-skills">12 ranks</u>.
 			Other class skills:
 			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
 			<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>,
 			<a href="https://d20pfsrd.com/skills/knowledge">Knowledge</a> (dungeoneering),
-			<a href="https://d20pfsrd.com/skills/ride">Ride</a>,
-			<a href="https://d20pfsrd.com/skills/survival">Survival</a>.
+			<a href="https://d20pfsrd.com/skills/ride">Ride</a>.
 		</p>
 
 		<!-- title COMBAT -->
@@ -161,55 +170,43 @@
 						<small>2 dex</small>
 					</li>
 					<li>
-						<strong>21</strong>
+						<strong>33</strong>
 						<b>HP</b>
-						<small>2 fighter: 10 class, 1 con; 2 FC; -3 rolled</small>
+						<small>3 fighter: 10 class, 1 con; 3 FC; -3 rolled</small>
 					</li>
 					<li class="br">
-						<strong>18</strong>
-						<b>AC</b> touch 12, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 16
-						<small>10, 2 dex, 6 armor</small>
+						<strong>20</strong>
+						<b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 18
+						<small>10, 2 dex, 7 armor, <u title="Defender of the Society">1 trait</u></small>
+					</li>
+					<li>
+						<strong>5</strong>
+						<b>Fort</b>
+						<small>1 con, 3 class, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li>
 						<strong>4</strong>
-						<b>Fort</b>
-						<small>1 con, 3 class</small>
-					</li>
-					<li>
-						<strong>2</strong>
 						<b>Ref</b>
-						<small>2 dex, 0 class</small>
+						<small>2 dex, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li class="br">
-						<strong>2</strong>
+						<strong>4</strong>
 						<b>Will</b>
-						<small>2 wis, 0 class</small>
+						<small>2 wis, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li>
-						<strong>7</strong>
-						<b>CMB</b>;	19 <b>CMD</b>
-						<small>2 bab, 4 str, 2 dex, <u title="Giant Ancestry">1 racial</u></small>
+						<strong>8</strong>
+						<b>CMB</b>;	20 <b>CMD</b>
+						<small>3 bab, 4 str, 2 dex, <u title="Giant Ancestry">1 racial</u></small>
 						<div class="circumstancialBonus" title="Powerful Maneuver"><u>+2</u> to/vs Bull Rush, Overrun, Trip. These maneuvers don't provoke.</div>
 						<div class="circumstancialBonus" title="Powerful Maneuver"> Overrun targets can't choose to avoid you.</div>
 					</li>
 				</ul>
-				
-				<h2>Breaker Rush (Ex)</h2>
-				<p><a href="https://d20pfsrd.com/gamemastering/combat#TOC-Bull-Rush">Bull rush</a> and <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Overrun">overrun</a>
-					deal <b title="4 str, 2 Powerful Maneuver, 0 armor enhancement">6</b>dmg [B].</p>
-					
-				<h2>Breaker Momentum (Ex)</h2>
-				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free</a> action,
-					when you <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Bull-Rush">bull rush</a>,
-					you can <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Overrun">overrun</a>.</p>
-			</div>
-			<!--end of Basics: Statblock and Weapons-->
 
-			<div>
 				<!--Bardiche-->
 				<div class="weapon">
 					<h2>Bardiche <b>19x2</b> <b>S</b></h2>
-					<div class="summation"><strong>+7</strong> vs AC <small>2 bab, 4 str, 1 mwk</small></div>
+					<div class="summation"><strong>+8</strong> vs AC <small>3 bab, 4 str, 1 mwk</small></div>
 					<div class="summation"><strong>1d10+6</strong> <small>6 str&frac12;</small></div>
 					<div class="circumstancialBonus">
 						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-brace">Brace</a>,
@@ -217,20 +214,97 @@
 					</div>
 				</div>
 
+				<h2>Breaker Rush (Ex)</h2>
+				<p><a href="https://d20pfsrd.com/gamemastering/combat#TOC-Bull-Rush">Bull rush</a> and <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Overrun">overrun</a>
+					deal <b title="4 str, 2 Powerful Maneuver, 1 armor enhancement">7</b>dmg [B].</p>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<!--Enlarged-->
+			<div class="enlarged">
+				<ul class="summations">
+					<li class="br">
+						<strong>1</strong>
+						<b>Init</b>
+						<small>1 dex</small>
+					</li>
+					<li>
+						<strong>33</strong>
+						<b>HP</b>
+						<small>3 fighter: 10 class, 1 con; 3 FC; -3 rolled</small>
+					</li>
+					<li class="br">
+						<strong>18</strong>
+						<b>AC</b> touch 11, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 17
+						<small>10, 1 dex, 7 armor, -1 size, <u title="Defender of the Society">1 trait</u></small>
+					</li>
+					<li>
+						<strong>5</strong>
+						<b>Fort</b>
+						<small>1 con, 3 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>3</strong>
+						<b>Ref</b>
+						<small>1 dex, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li class="br">
+						<strong>4</strong>
+						<b>Will</b>
+						<small>2 wis, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>10</strong>
+						<b>CMB</b>;	20 <b>CMD</b>
+						<small>3 bab, 5 str, 2 dex, 1 size, <u title="Giant Ancestry">1 racial</u></small>
+						<div class="circumstancialBonus" title="Powerful Maneuver"><u>+2</u> to/vs Bull Rush, Overrun, Trip. These maneuvers don't provoke.</div>
+						<div class="circumstancialBonus" title="Powerful Maneuver"> Overrun targets can't choose to avoid you.</div>
+					</li>
+				</ul>
+
+				<!--Bardiche-->
+				<div class="weapon">
+					<h2>Bardiche <b>19x2</b> <b>S</b></h2>
+					<div class="summation"><strong>+8</strong> vs AC <small>3 bab, 5 str, 1 mwk, -1 size</small></div>
+					<div class="summation"><strong>2d8+7</strong> <small>7 str&frac12;</small></div>
+					<div class="circumstancialBonus">
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-brace">Brace</a>,
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-reach">reach 15ft</a>.
+					</div>
+				</div>
+
+				<h2>Breaker Rush (Ex)</h2>
+				<p><a href="https://d20pfsrd.com/gamemastering/combat#TOC-Bull-Rush">Bull rush</a> and <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Overrun">overrun</a>
+					deal <b title="5 str, 2 Powerful Maneuver, 1 armor enhancement">8</b>dmg [B].</p>
+
+				<h2>Enlarge (Su)<u title="3 class, 2 wis">5/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, for 1 round,
+					<a href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge</a> yourself.</p>
+			</div>
+			<!--end of Enlarged-->
+
+			<div>
 				<h2>Aura (Ex)</h2>
 				<p>Faint aura of Good</p>
+
+				<h2>Breaker Momentum (Ex)</h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free</a> action,
+					when you <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Bull-Rush">bull rush</a>,
+					you can <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Overrun">overrun</a>.</p>
 
 				<h2>Armored Vigor <b title="3 class, 1 con">4/day</b></h2>
 				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift</a> action, gain <u title="Increases by 2 at 2nd, 6th, 10th, 14th, 18th">2</u> temp HP.</p>
 
-				<h2>Enlarge (Su)</h2>
 				<h2>Mutagen (Su)</h2>
-				<p>Coming at level 3...</p>
+				<p>Lasts <u title="3 fighter * 10">30</u> min, +4 str, -2 int.</p>
 			</div>
 		</section>
 
 		<!-- title EQUIPMENT -->
 		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+		</ul>
 		<ul id="inventory">
 			<!--Weapons-->
 			<li><!--326-->
@@ -243,8 +317,8 @@
 			</li>
 
 			<!--Armors-->
-			<li class="br"><!--350-->
-				<a href="https://d20pfsrd.com/equipment/armor">Breastplate</a>, masterwork
+			<li class="br"><!--1350-->
+				<a href="https://d20pfsrd.com/equipment/armor">Breastplate</a> +1
 				<small>medium, 6 armor, 3 dex, 4 acp, 25% asf</small>
 			</li>
 
@@ -258,7 +332,7 @@
 			<li><!--50-->
 				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
 			</li>
-			<li>18 <b>GP</b><!--/1000--></li>
+			<li>18 <b>GP</b><!--/3000--></li>
 		</ul>
 
 		<!-- title NOTES -->
