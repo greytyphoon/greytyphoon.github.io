@@ -179,7 +179,7 @@
 			</table>
 		</details>
 		<details open>
-			<summary class="subtitle">Characters sheets <b id="charactersCount"></b></summary>
+			<summary class="subtitle">Characters sheets <b id="charactersCount" onClick="RandomRedirect()"></b></summary>
 			<table id="tblCharacters" class="br">
 			<thead>
 				<tr>
@@ -691,6 +691,12 @@
 		document.getElementById("charactersCount").innerHTML = document.getElementById("tblCharacters").tBodies[0].rows.length + " total";
 		new Tablesort(document.getElementById('tblCharacters'));
 		new Tablesort(document.getElementById('tblCompanions'));
+		function RandomRedirect()
+		{
+			var allCharLinks = document.querySelectorAll("table#tblCharacters td:first-child > a[href]");
+			var randomIndex = Math.floor(Math.random() * allCharLinks.length);
+			window.location.href = allCharLinks[randomIndex].href;
+		}
 	</script>
 </body>
 </html>
