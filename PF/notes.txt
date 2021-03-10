@@ -36,6 +36,7 @@ Gontran attaque alors Émilienne. On la sauve in extremis. Elle décrit les yeux
 Une grosse créature a fui la scène. On la piste jusqu'à ce que les traces disparaîssent, et on sent une odeur de souffre. On sort a été lancé là!
 Yanni retrouve miraculeusement la piste, 120ft plus loin. Cette piste nous mène à la caverne. L'odeur de souffre s'y retrouve.
 Un nain roux en sort... Il nous voit, mais on le rattrape. Il révèle sa vraie forme: un Glabrezu demon, et l'assassine se trouve dans la caverne. Fight!
+On rammasse des parchemins dans la grotte! On les ramène au village pour les lire là-bas, avec notre prisonnière (le démon est retourné dans son plan en mourrant).
 
 
 Raug's Inventory
@@ -45,10 +46,8 @@ Battle Medecine (1/day/person)
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 Raug	
 Kerblam	
-Ringo	
+Ringo	vs bog mummy
 Maddoc	
-Bao		
+Bao		vs bog mummy
 Barnik	
 Barnak	
-
-elixir of life
