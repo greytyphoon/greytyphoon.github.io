@@ -9,9 +9,18 @@
 	<style>
 		.mind-affecting::after { content: " [mind]"; font-size: .8em; color: var(--enchantment-lilac); }
 		.coming-soon { display: none !important; }
-		#starseeker-spells { flex: 2; }
-		#constellations-chart { max-width: 20%; }
-		#constellations-chart > img { max-width: 100%; }
+		#starseeker-spells > ul:first-child { display: none; }
+		#starseeker-spells > ul { padding-left: .75rem; }
+		#starseeker-spells > ul > li:first-child { margin-left: -.75rem; }
+		img#constellations-chart { max-width: 100%; }
+
+		@media print, screen and (min-width: 768px) {
+			#starseeker-spells { flex: 4; order: -1; }
+			#starseeker-spells > ul { display: flex; margin: 0 0 .25rem 0; }
+			#starseeker-spells > ul > li { flex: 1; }
+			#starseeker-spells > ul:first-child { display: flex; border-bottom: 1px solid var(--murder-grey); font-weight: bold; }
+			#starseeker-spells > ul:hover:not(:first-child) { background-color: var(--murder-grey); }
+		}
 	</style>
 </head>
 <body>
@@ -68,7 +77,7 @@
 				<dd>30 ft.</dd>
 
 				<dt>Languages</dt>
-				<dd title="2 racial, 4 int, 3 linguistics">Common, Elven, Dwarven, Halfling, Gnomish, Sylvan, Undercommon, Aklo, Necril</dd>
+				<dd title="2 racial, 4 int, 3 linguistics">Common, Elven, Dwarven, Halfling, Gnomish, Sylvan, Draconic, Goblin, Aklo</dd>
 			</dl>
 		</section>
 
@@ -107,7 +116,7 @@
 			<!--Social Skills-->
 			<li>
 				<strong>13</strong>
-				<a href="https://d20pfsrd.com/skills/intimidate">Linguistics</a>
+				<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>
 				<small>4 int, 3 ranks, 3 class, 3 s.focus</small>
 				<div class="circumstancialBonus">⮩ <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Automatic_Writing_Linguistics">Automatic Writing</a> 1/week</div>
 			</li>
@@ -214,98 +223,99 @@
 		</section>
 
 		<section class="row">
-			<table id="starseeker-spells">
-				<thead>
-					<tr>
-						<th>Constellation</th>
-						<th>Level 1</th>
-						<th class="coming-soon">Level 2</th>
-						<th class="coming-soon">Level 3</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td title="Opposed School: Conjuration">The Thrush</td>
-						<td><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a></td>
-						<td><a class="spell illusion coming-soon" href="https://d20pfsrd.com/magic/all-spells/m/magic-mouth">magic mouth</a></td>
-						<td><a class="spell evocation coming-soon" href="https://d20pfsrd.com/magic/all-spells/t/tiny-hut">tiny hut</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Abjuration">The Lantern Bearer</td>
-						<td><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/l/liberating-command">liberating command</a></td>
-						<td><a class="spell conjuration coming-soon" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a></td>
-						<td><a class="spell divination coming-soon" href="https://d20pfsrd.com/magic/all-spells/g/guiding-star">guiding star</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Conjuration">The Newlyweds</td>
-						<td><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/charm-person">charm person</a></td>
-						<td><a class="spell enchantment mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/e/enthrall">enthrall</a></td>
-						<td><a class="spell illusion mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/s/synesthesia">synesthesia</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Conjuration">The Bridge</td>
-						<td><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/e/endure-elements">endure elements</a></td>
-						<td><a class="spell abjuration coming-soon" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a></td>
-						<td><a class="spell evocation coming-soon" href="https://d20pfsrd.com/magic/all-spells/d/daylight">daylight</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Abjuration">The Daughter</td>
-						<td><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/b/bless">bless</a></td>
-						<td><a class="spell illusion mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/h/hypnotic-pattern">hypnotic pattern</a></td>
-						<td><a class="spell enchantment mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/h/heroism">heroism</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Abjuration">The Rider</td>
-						<td><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/a/anticipate-peril">anticipate peril</a></td>
-						<td><a class="spell transmutation coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/acute-senses">acute senses</a></td>
-						<td><a class="spell conjuration coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/ablative-barrier">ablative barrier</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Conjuration">The Patriarch</td>
-						<td><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/command">command</a></td>
-						<td><a class="spell evocation coming-soon" href="https://d20pfsrd.com/magic/all-spells/s/spiritual-weapon">spiritual weapon</a></td>
-						<td><a class="spell abjuration coming-soon" href="https://d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Conjuration">The Wagon</td>
-						<td><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/e/expeditious-retreat">expeditious retreat</a></td>
-						<td><a class="spell transmutation coming-soon" href="https://d20pfsrd.com/magic/all-spells/t/twisted-space">twisted-space</a></td>
-						<td><a class="spell transmutation coming-soon" href="https://d20pfsrd.com/magic/all-spells/h/haste">haste</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Abjuration">The Pack</td>
-						<td><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/calm-animals">calm animals</a></td>
-						<td><a class="spell transmutation coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/animal-aspect">animal aspect</a></td>
-						<td><a class="spell enchantment mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/r/rage">rage</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Abjuration">The Mother</td>
-						<td><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/i/identify">identify</a></td>
-						<td><a class="spell enchantment mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/aid">aid</a></td>
-						<td><a class="spell evocation coming-soon" href="https://d20pfsrd.com/magic/all-spells/i/invisibility-purge">invisibility purge</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Conjuration">The Stargazer</td>
-						<td><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/k/know-the-enemy">know the enemy</a></td>
-						<td><a class="spell divination coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/augury">augury</a></td>
-						<td><a class="spell divination coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/arcane-sight">arcane sight</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Abjuration">The Stranger</td>
-						<td><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/d/disguise-self">disguise self</a></td>
-						<td><a class="spell illusion coming-soon" href="https://d20pfsrd.com/magic/all-spells/i/invisibility">invisibility</a></td>
-						<td><a class="spell illusion coming-soon" href="https://d20pfsrd.com/magic/all-spells/d/displacement">displacement</a></td>
-					</tr>
-					<tr>
-						<td title="Opposed School: Conjuration">The Follower</td>
-						<td><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/f/forced-quiet">forced quiet</a></td>
-						<td><a class="spell evocation coming-soon" href="https://d20pfsrd.com/magic/all-spells/d/darkness">darkness</a></td>
-						<td><a class="spell illusion coming-soon" href="https://d20pfsrd.com/magic/all-spells/v/vision-of-hell">vision of hell</a></td>
-					</tr>
-				</tbody>
-			</table>
-			<a id="constellations-chart" href="https://pathfinderwiki.com/mediawiki/images/thumb/4/44/Cosmic_Caravan.jpg/781px-Cosmic_Caravan.jpg">
-				<img src="https://pathfinderwiki.com/mediawiki/images/thumb/4/44/Cosmic_Caravan.jpg/781px-Cosmic_Caravan.jpg"></a>
+			<div>
+				<h2>Written in the stars</h2>
+				<p>Choose a constellation each day and gain its spells as spells known.</p>
+				<p>Choose a school of magic each day and increase casting time for those spells.</p>
+				<a class="noprint" href="https://pathfinderwiki.com/mediawiki/images/thumb/4/44/Cosmic_Caravan.jpg/781px-Cosmic_Caravan.jpg">
+				<img id="constellations-chart" src="https://pathfinderwiki.com/mediawiki/images/thumb/4/44/Cosmic_Caravan.jpg/781px-Cosmic_Caravan.jpg"></a>
+			</div>
+			<div id="starseeker-spells">
+				<ul>
+					<li>Constellation</th>
+					<li>Level 1</th>
+					<li class="coming-soon">Level 2</th>
+					<li class="coming-soon">Level 3</th>
+				</ul>
+				<ul>
+					<li title="Opposed School: Conjuration">The Thrush</li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a></li>
+					<li class="coming-soon"><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/m/magic-mouth">magic mouth</a></li>
+					<li class="coming-soon"><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/t/tiny-hut">tiny hut</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Abjuration">The Lantern Bearer</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/l/liberating-command">liberating command</a></li>
+					<li class="coming-soon"><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a></li>
+					<li class="coming-soon"><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/g/guiding-star">guiding star</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Conjuration">The Newlyweds</li>
+					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/charm-person">charm person</a></li>
+					<li class="coming-soon"><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/e/enthrall">enthrall</a></li>
+					<li class="coming-soon"><a class="spell illusion mind-affecting" href="https://d20pfsrd.com/magic/all-spells/s/synesthesia">synesthesia</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Conjuration">The Bridge</li>
+					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/e/endure-elements">endure elements</a></li>
+					<li class="coming-soon"><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a></li>
+					<li class="coming-soon"><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/d/daylight">daylight</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Abjuration">The Daughter</li>
+					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/b/bless">bless</a></li>
+					<li class="coming-soon"><a class="spell illusion mind-affecting" href="https://d20pfsrd.com/magic/all-spells/h/hypnotic-pattern">hypnotic pattern</a></li>
+					<li class="coming-soon"><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/h/heroism">heroism</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Abjuration">The Rider</li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/a/anticipate-peril">anticipate peril</a></li>
+					<li class="coming-soon"><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/a/acute-senses">acute senses</a></li>
+					<li class="coming-soon"><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/a/ablative-barrier">ablative barrier</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Conjuration">The Patriarch</li>
+					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/command">command</a></li>
+					<li class="coming-soon"><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/s/spiritual-weapon">spiritual weapon</a></li>
+					<li class="coming-soon"><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Conjuration">The Wagon</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/e/expeditious-retreat">expeditious retreat</a></li>
+					<li class="coming-soon"><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/t/twisted-space">twisted space</a></li>
+					<li class="coming-soon"><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/h/haste">haste</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Abjuration">The Pack</li>
+					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/calm-animals">calm animals</a></li>
+					<li class="coming-soon"><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/a/animal-aspect">animal aspect</a></li>
+					<li class="coming-soon"><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/r/rage">rage</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Abjuration">The Mother</li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/i/identify">identify</a></li>
+					<li class="coming-soon"><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/a/aid">aid</a></li>
+					<li class="coming-soon"><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/i/invisibility-purge">invisibility purge</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Conjuration">The Stargazer</li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/k/know-the-enemy">know the enemy</a></li>
+					<li class="coming-soon"><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/a/augury">augury</a></li>
+					<li class="coming-soon"><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/a/arcane-sight">arcane sight</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Abjuration">The Stranger</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/d/disguise-self">disguise self</a></li>
+					<li class="coming-soon"><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/i/invisibility">invisibility</a></li>
+					<li class="coming-soon"><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/d/displacement">displacement</a></li>
+				</ul>
+				<ul>
+					<li title="Opposed School: Conjuration">The Follower</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/f/forced-quiet">forced quiet</a></li>
+					<li class="coming-soon"><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/d/darkness">darkness</a></li>
+					<li class="coming-soon"><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/v/vision-of-hell">vision of hell</a></li>
+				</ul>
+			</div>
 		</section>
 
 		<!-- title COMBAT -->
