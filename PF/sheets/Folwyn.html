@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grey's Psychic</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.mind-affecting::after { content: " [mind]"; font-size: .8em; color: var(--enchantment-lilac); }
+		.coming-soon { display: none !important; }
+		#starseeker-spells { flex: 2; }
+		#constellations-chart { max-width: 20%; }
+		#constellations-chart > img { max-width: 100%; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Folwyn Freyar'wyntalaen, elven astrologist</h1>
+			CG Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>10</dd>
+
+				<dt>Dex</dt>
+				<dd>16 <small>14, <u title="Racial">2</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>10 <small>12, <u title="Racial">-2</u></small></dd>
+
+				<dt>Int</dt>
+				<dd>19 <small>17, <u title="Racial">2</u></small></dd>
+
+				<dt>Wis</dt>
+				<dd>14</dd>
+
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/elf">Elf</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/elf/#Alternate_Racial_Traits">Fey-sighted</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/elf/#Alternate_Racial_Traits">Fey Thoughts</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/occult-adventures/occult-classes/psychic">Psychic</a> 3</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/psychic/archetypes/paizo-llc-psychic-archetypes/esoteric-starseeker-psychic-archetype">Esoteric Starseeker</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/psychic/psychic-disciplines/psychic-disciplines-paizo-inc/tranquility">Tranquility</a> discipline</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Desna</dd>
+
+				<dt>Senses</dt>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd title="2 racial, 4 int, 3 linguistics">Common, Elven, Dwarven, Halfling, Gnomish, Sylvan, Undercommon, Aklo, Necril</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/magic-traits/pragmatic-activator">Pragmatic Activator</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/religion-traits/stoic-optimism">Stoic Optimism</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/breadth-of-experience">Breadth of Experience</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Linguistics)</dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/orator">Orator</a>
+				<small>min.1</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/toughness">Toughness</a>
+				<small>min.1</small></dd>
+			<dt>psychic 3</dt>
+			<dd>Overpowering Mind
+				<small>min.1</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/great-fortitude">Great Fortitude</a>
+				<small>min.1</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>2 wis, 3 ranks, 3 class, <u title="Keen Senses">2 racial</u></small>
+				<div class="circumstancialBonus">⮩ <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Read_Aura_Perception">Read Aura</a> 1/day</div>
+			</li>
+
+			<!--Social Skills-->
+			<li>
+				<strong>13</strong>
+				<a href="https://d20pfsrd.com/skills/intimidate">Linguistics</a>
+				<small>4 int, 3 ranks, 3 class, 3 s.focus</small>
+				<div class="circumstancialBonus">⮩ <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Automatic_Writing_Linguistics">Automatic Writing</a> 1/week</div>
+			</li>
+			<li class="br">
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>
+				<small>2 wis, 3 ranks, 3 class</small>
+				<div class="circumstancialBonus">⮩ <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Prognostication_Sense_Motive">Astrology</a> 1/day</div>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/intimidate">Fly</a>
+				<small>3 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+				<small>4 int, 1 ranks, 3 class</small>
+				<div class="circumstancialBonus" title="Elven Magic"><u>+2 racial</u> to identify magic items</div>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+				<small>3 dex, 1 ranks, <u title="Fey Thoughts">3 class</u></small>
+			</li>
+			<li class="br">
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
+				<small><u title="Pragmatic Activator">4 int</u>, 2 ranks, <u title="Fey Thoughts">3 class</u></small>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (all)</a>
+				<small>4 int, 1 ranks, 3 class, <u title="Breadth of Experience">2 feat</u></small>
+				<div class="circumstancialBonus">⮩ <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Phrenology_Knowledge_arcana">Phrenology</a> 1/day</div>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="3 psychic: 2 class, 4 int, 2 background-skills">24 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/bluff">Bluff</a>,
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>,
+			<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+		</p>
+
+		<!-- title Spells -->
+		<hr>
+		<div id="spellHeader" class="apartee">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Intelligence modifier.<br>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Intelligence modifier.<br>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.<br>
+
+			<h3><a href="https://d20pfsrd.com/occult-adventures/psychic-magic">Occult Magic Rules</a></h3>
+			Somatic --> Emotion (cannot be cast while under [emotion|fear] effect)<br>
+			Verbal --> Thought (concentration -10, safe move action negates)<br>
+			Undercasting (If I know Summon Monster IV, I also automatically know Summon Monster III, II, I)
+		</div>
+		<section class="row">
+			<div>
+				<h2 title="Fey-sighted">Constant <a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a></h2>
+				<h2 title="5 known: 5 psychic">Level 0</h2>
+				<ul>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
+					<li><a class="spell necromancy" href="https://d20pfsrd.com/magic/all-spells/g/grave-words">grave words</a>,</li>
+					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a></li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/s/sift">sift</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="4 known: 3 psychic, 1 detect thoughts">Level 1 <u title="5 class, 1 int">6/day</u></h2>
+				<ul>
+					<li><a class="spell divination bonus mind-affecting" href="https://d20pfsrd.com/magic/all-spells/d/detect-thoughts">detect thoughts</a>,</li>
+					<li class="coming-soon"><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/b/burst-of-adrenaline">burst of adrenaline</a>,</li>
+					<li class="coming-soon"><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/b/burst-of-insight">burst of insight</a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/s/silent-image">silent image</a>,</li>
+					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/s/sleep">sleep</a>,</li>
+					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/t/telempathic-projection">telempathic projection</a>.</li>
+					<li class="coming-soon"><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>,</li>
+				</ul>
+
+				<h2><a class="spell divination bonus mind-affecting" href="https://d20pfsrd.com/magic/all-spells/d/detect-thoughts">detect thoughts</a> <u title="Detect Thoughts">+1/day</u></h2>
+
+				<h2 class="coming-soon"><a class="spell bonus mind-affecting" href="https://d20pfsrd.com/magic/all-spells/calm-emotions">calm emotions</a> <u title="Calming Presence, 2 wis">2/day</u></h2>
+			</div>
+			<div>
+				<h2>Scrolls</h2><!--6x25-->
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/decompose-corpse">decompose corpse</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/disguise-self">disguise self</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/expeditious-retreat">expeditious retreat</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/hermean-potential">hermean potential</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/sow-thought">sow thought</a>.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="row">
+			<table id="starseeker-spells">
+				<thead>
+					<tr>
+						<th>Constellation</th>
+						<th>Level 1</th>
+						<th class="coming-soon">Level 2</th>
+						<th class="coming-soon">Level 3</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td title="Opposed School: Conjuration">The Thrush</td>
+						<td><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a></td>
+						<td><a class="spell illusion coming-soon" href="https://d20pfsrd.com/magic/all-spells/m/magic-mouth">magic mouth</a></td>
+						<td><a class="spell evocation coming-soon" href="https://d20pfsrd.com/magic/all-spells/t/tiny-hut">tiny hut</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Abjuration">The Lantern Bearer</td>
+						<td><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/l/liberating-command">liberating command</a></td>
+						<td><a class="spell conjuration coming-soon" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a></td>
+						<td><a class="spell divination coming-soon" href="https://d20pfsrd.com/magic/all-spells/g/guiding-star">guiding star</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Conjuration">The Newlyweds</td>
+						<td><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/charm-person">charm person</a></td>
+						<td><a class="spell enchantment mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/e/enthrall">enthrall</a></td>
+						<td><a class="spell illusion mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/s/synesthesia">synesthesia</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Conjuration">The Bridge</td>
+						<td><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/e/endure-elements">endure elements</a></td>
+						<td><a class="spell abjuration coming-soon" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a></td>
+						<td><a class="spell evocation coming-soon" href="https://d20pfsrd.com/magic/all-spells/d/daylight">daylight</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Abjuration">The Daughter</td>
+						<td><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/b/bless">bless</a></td>
+						<td><a class="spell illusion mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/h/hypnotic-pattern">hypnotic pattern</a></td>
+						<td><a class="spell enchantment mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/h/heroism">heroism</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Abjuration">The Rider</td>
+						<td><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/a/anticipate-peril">anticipate peril</a></td>
+						<td><a class="spell transmutation coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/acute-senses">acute senses</a></td>
+						<td><a class="spell conjuration coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/ablative-barrier">ablative barrier</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Conjuration">The Patriarch</td>
+						<td><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/command">command</a></td>
+						<td><a class="spell evocation coming-soon" href="https://d20pfsrd.com/magic/all-spells/s/spiritual-weapon">spiritual weapon</a></td>
+						<td><a class="spell abjuration coming-soon" href="https://d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Conjuration">The Wagon</td>
+						<td><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/e/expeditious-retreat">expeditious retreat</a></td>
+						<td><a class="spell transmutation coming-soon" href="https://d20pfsrd.com/magic/all-spells/t/twisted-space">twisted-space</a></td>
+						<td><a class="spell transmutation coming-soon" href="https://d20pfsrd.com/magic/all-spells/h/haste">haste</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Abjuration">The Pack</td>
+						<td><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/calm-animals">calm animals</a></td>
+						<td><a class="spell transmutation coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/animal-aspect">animal aspect</a></td>
+						<td><a class="spell enchantment mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/r/rage">rage</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Abjuration">The Mother</td>
+						<td><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/i/identify">identify</a></td>
+						<td><a class="spell enchantment mind-affecting coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/aid">aid</a></td>
+						<td><a class="spell evocation coming-soon" href="https://d20pfsrd.com/magic/all-spells/i/invisibility-purge">invisibility purge</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Conjuration">The Stargazer</td>
+						<td><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/k/know-the-enemy">know the enemy</a></td>
+						<td><a class="spell divination coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/augury">augury</a></td>
+						<td><a class="spell divination coming-soon" href="https://d20pfsrd.com/magic/all-spells/a/arcane-sight">arcane sight</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Abjuration">The Stranger</td>
+						<td><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/d/disguise-self">disguise self</a></td>
+						<td><a class="spell illusion coming-soon" href="https://d20pfsrd.com/magic/all-spells/i/invisibility">invisibility</a></td>
+						<td><a class="spell illusion coming-soon" href="https://d20pfsrd.com/magic/all-spells/d/displacement">displacement</a></td>
+					</tr>
+					<tr>
+						<td title="Opposed School: Conjuration">The Follower</td>
+						<td><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/f/forced-quiet">forced quiet</a></td>
+						<td><a class="spell evocation coming-soon" href="https://d20pfsrd.com/magic/all-spells/d/darkness">darkness</a></td>
+						<td><a class="spell illusion coming-soon" href="https://d20pfsrd.com/magic/all-spells/v/vision-of-hell">vision of hell</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<a id="constellations-chart" href="https://pathfinderwiki.com/mediawiki/images/thumb/4/44/Cosmic_Caravan.jpg/781px-Cosmic_Caravan.jpg">
+				<img src="https://pathfinderwiki.com/mediawiki/images/thumb/4/44/Cosmic_Caravan.jpg/781px-Cosmic_Caravan.jpg"></a>
+		</section>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+				<!--Basics: Statblock and Weapons-->
+				<ul class="summations">
+					<li class="br">
+						<strong>3</strong>
+						<b>Init</b>
+						<small>3 dex</small>
+					</li>
+					<li>
+						<strong>20</strong>
+						<b>HP</b>
+						<small>3 psychic: 6 class, 0 con, <u title="Toughness">1 feat</u>; 3 fc; -4 rolled</small>
+					</li>
+					<li class="br">
+						<strong>18</strong>
+						<b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 15
+						<small>10, 3 dex, 4 armor, 1 shield</small>
+					</li>
+					<li>
+						<strong>2</strong>
+						<b>Fort</b>
+						<small>0 con, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>5</strong>
+						<b>Ref</b>
+						<small>3 dex, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>6</strong>
+						<b>Will</b>
+						<small>2 wis, 3 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li class="circumstancialBonus" title="Elven Immunities"><u>+2 racial</u> vs enchantment, Immune sleep</li>
+					<li class="circumstancialBonus br" title="Stoic Optimism"><u>+2 trait</u> vs fear</li>
+					<li>
+						<strong>1</strong>
+						<b>CMB</b>;	14 <b>CMD</b>
+						<small>1 bab, 0 str, 3 dex</small>
+					</li>
+				</ul>
+				<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<h2>Mental Placidity <u title="2 wis">2/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> when rolling Will,
+					gain +2 (+4 vs <span class="spell enchantment">enchantment</span>).
+					Your allies get half this bonus.
+					If you succeed, regain 1 phrenic point.</p>
+
+				<h2>Phrenic Pool <u title="1 psychic&frac12;, 2 wis">3/day</u></h2>
+				<ul>
+					<li title="Overpowering Mind">For 2|4, increase Will DC of a <span class="spell mind-affecting">spell</span> by 1|2.</li>
+				</ul>
+
+				<!--Light Crossbow-->
+				<div class="weapon">
+					<h2>Light Crossbow <b>19x2</b> <b>80ft.</b> <b>P</b></h2>
+					<div class="summation"><strong>+5</strong> vs AC <small>1 bab, 3 dex, 1 mwk</small></div>
+					<div class="summation"><strong>1d8</strong> <small>0 str</small></div>
+					<div class="circumstancialBonus">
+						Loading a light crossbow is an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>.
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+			<li><!--200--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/sleeves-of-many-garments">Sleeves of Many Garment</a></li>
+		</ul>
+		<ul>
+			<!--Weapons-->
+			<li class="br"><!--335 (ammo: 1 gp for 10)-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Light Crossbow</a>, masterwork
+				<small>simple ranged, 1d8, 19x2, P, 80ft.</small>
+				<div class="circumstancialBonus">20 bolts</div>
+			</li>
+
+			<!--Armors-->
+			<li><!--1100-->
+				<a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a>
+				<small>light, 4 armor, 6 dex, 0 acp, 10% asf</small>
+			</li>
+			<li class="br"><!--155-->
+				<a href="https://d20pfsrd.com/equipment/armor/buckler">Buckler</a>, masterwork
+				<small>1 shield, - dex, 1 acp, 5% asf</small>
+			</li>
+
+			<li><!--50-->
+				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</li>
+			<li>8 <b>GP</b><!--/3000--></li>
+		</li>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Calm &amp; free-spirited</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/hedonistic">Hedonistic</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>White</dd>
+
+				<dt>Hair</dt>
+				<dd>Blonde, very short</dd>
+
+				<dt>Weight</dt>
+				<dd>136 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>6' 1''</dd>
+			</dl>
+			<p>Guides used: <a href="https://docs.google.com/document/d/19ucZQWoJVw02H_7uyEeGrex4A-MgVRzfz1f-yUjG9uQ/edit">cockroachTeaParty</a>,
+				<a href="https://docs.google.com/document/d/1rttZANEWOsIC4bX6EzL2GEUfa9xOtrV4PzK5A0VMjew/edit">dnoisette</a></p>
+		</section>
+	</div>
+</body>
+</html>
