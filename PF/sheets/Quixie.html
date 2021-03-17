@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grey's Sorcerer</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.spell.charm::after { content: " [charm]"; font-size: .8em; color: var(--enchantment-lilac); }
+		.spell.compulsion::after { content: " [compulsion]"; font-size: .8em; color: var(--enchantment-lilac); }
+		.spell.charm.compulsion::after { content: " [charm|compulsion]"; font-size: .8em; color: var(--enchantment-lilac); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Quixie, clamor fairy</h1>
+			NG Tiny <u title="Me Too!: counts as Humanoid and Outsider (Native)">Fey</u>
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>5 <small>7, <u title="Size">-2</u></small></dd>
+
+				<dt>Dex</dt>
+				<dd>17 <small>13, <u title="Racial">2</u>, <u title="Size">2</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>12</dd>
+
+				<dt>Int</dt>
+				<dd>12</dd>
+
+				<dt>Wis</dt>
+				<dd>12 <small>14, <u title="Racial">-2</u></small></dd>
+
+				<dt>Cha</dt>
+				<dd>20 <small>18, <u title="Racial">2</u></small></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/extras/community-creations/black-flame-studios-lab/races/fairy">Fairy</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/sorcerer">Sorcerer</a> 3</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/sorcerer/bloodlines/bloodlines-from-paizo/fey-bloodline">Fey</a> bloodline</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Shelyn</dd>
+
+				<dt>Senses</dt>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+
+				<dt>Speed</dt>
+				<dd>5 ft.</dd>
+				<dd><b>Fly</b> 30ft. (<a href="https://d20pfsrd.com/skills/fly">average</a>)
+
+				<dt>Languages</dt>
+				<dd>Common, Sylvan, Elven</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/faith-traits/indomitable-faith">Indomitable Faith</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/social-traits/mediator-social/">Mediator</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/magic-traits/two-world-magic">Two-World Magic</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/additional-traits">Additional Traits</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Stealth)</dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/noble-scion">Noble Scion of War</a>
+				<small>min.1</small></dd>
+			<dt>sorcerer 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/eschew-materials">Eschew Materials</a>
+				<small>bonus</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/spell-focus">Spell Focus</a>
+				<small>min.1</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/greater-spell-focus">Greater Spell Focus</a>
+				<small>min.1</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>1 wis, 3 ranks, <u title="Fey">3 class</u></small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>12</strong>
+				<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>
+				<small>5 cha, 1 ranks, <u title="Fey">3 class</u>, <u title="Pleading Stare">2</u>, <u title="Mediator">1 trait</u></small>
+				<div class="circumstancialBonus" title="Pleading Stare"><u>+2/+6</u> vs targets that are unfriendly/hostile.</div>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/escape-artist">Escape Artist</a>
+				<small>3 dex, 1 ranks, <u title="Fey">3 class</u></small>
+			</li>
+			<li>
+				<strong>13</strong>
+				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
+				<small>3 dex, 3 ranks, 3 class, 4 size</small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/handle-animal">Handle Animal</a>
+				<small>5 cha, 3 ranks, 0 class</small>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+				<small>1 int, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>20</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+				<small>3 dex, 3 ranks, <u title="Fey">3 class</u>, 8 size, 3 s.focus</small>
+			</li>
+			<li class="br">
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
+				<small>5 cha, 1 ranks, 3 class</small>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (arcana)</a>
+				<small>1 int, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (nature)</a>
+				<small>1 int, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/perform">Perform (Wind)</a>
+				<small>5 cha, 3 ranks, <u title="Fey">3 class</u></small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="3 sorcerer: 4 class, 1 int, 2 background-skills">21 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>,
+			<a href="https://d20pfsrd.com/skills/bluff">Bluff</a>,
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>,
+			and more skills granted by the <a href="https://d20pfsrd.com/bestiary/rules-for-monsters/Creature-types/#Fey">Fey creature type</a>.
+		</p>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<ul class="summations">
+				<li class="br">
+					<strong>10</strong>
+					<b>Init</b>
+					<small>3 dex, <u title="Noble Scion of War">5 cha</u>, <u title="Reactionary">2 trait</u></small>
+				</li>
+				<li>
+					<strong>22</strong>
+					<b>HP</b>
+					<small>3 sorcerer: 6 class, 1 con; 3 FC; -2 rolled</small>
+				</li>
+				<li class="br">
+					<strong>17</strong>
+					<b>AC</b> touch 16, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 14
+					<small>10, 3 dex, 1 armor, 2 size, <u title="Ring of Protection">1 deflection</u></small>
+					<div class="circumstancialBonus" title="Fairy Resistance"><b>DR</b> 5/cold-iron</div>
+				</li>
+				<li>
+					<strong>2</strong>
+					<b>Fort</b>
+					<small>1 con, 1 class</small>
+				</li>
+				<li>
+					<strong>4</strong>
+					<b>Ref</b>
+					<small>3 dex, 1 class</small>
+				</li>
+				<li class="br">
+					<strong>5</strong>
+					<b>Will</b>
+					<small>1 wis, 3 class, <u title="Indomitable Faith">1 trait</u></small>
+					<div class="circumstancialBonus" title="Irrepressible"><u>+5 cha</u> vs charm/compulsion</div>
+				</li>
+				<li title="Tiny creatures (or smaller) use Dex to determine their CMB.">
+					<strong>2</strong>
+					<b>CMB</b>;	10 <b>CMD</b>
+					<small>1 bab, -3 str, 3 dex, -2 size, <u title="Ring of Protection">1 deflection</u></small>
+				</li>
+			</ul>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<!--Light Crossbow-->
+				<div class="weapon">
+					<h2>Light Crossbow <b>19x2</b> <b>80ft.</b> <b>P</b></h2>
+					<div class="summation"><strong>+7</strong> vs AC <small>1 bab, 3 dex, 2 size, 1 mwk</small></div>
+					<div class="summation"><strong>1d4</strong> <small>0 str</small></div>
+					<div class="circumstancialBonus">
+						Loading a light crossbow is an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>.
+					</div>
+				</div>
+
+				<h2>Laughing Touch (Sp) <b title="3 class, 5 cha">8/day</b></h2>
+				<p>As an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
+					an enemy hit by your melee touch attack (<u title="1 bab, -3 str, 2 size">+0</u>, reach 0ft.)
+					can only take a move action on his next turn.
+					It can't be affected again today.
+					This is a mind-affecting effect.</p>
+
+				<h2><a href="https://d20pfsrd.com/classes/Core-classes/Druid/#Woodland_Stride_Ex">Woodland Stride</a></h2>
+				<h2>Fairy Dust</h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>,
+					grant an ally in your square a Fly speed (15ft, average) for <u title="1 sorcerer&frac12;">1</u> round,
+					or increase their fly speed by 5.</p>
+			</div>
+		</section>
+
+		<!-- title Spells -->
+		<hr>
+		<div id="spellHeader" class="apartee">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Intelligence modifier.<br/>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Intelligence modifier.<br>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.
+		</div>
+		<section class="row">
+			<div>
+				<h2>DC Boosters</h2>
+				<p title="Spell Focus">Your <span class="spell enchantment">spells</span> have +1 DC.</p>
+				<p title="Fey Bloodline Arcana">Your <span class="spell compulsion">spells</span> have +2 DC.</p>
+				<p title="Mediator">Your <span class="spell charm compulsion">spells</span> have +1 DC if they result in peaceful acts.</p>
+			</div>
+			<div>
+				<h2 title="5 spells known: 5 class">Level 0</h2>
+				<ul>
+					<li><a class="spell enchantment compulsion" href="https://d20pfsrd.com/magic/all-spells/d/daze">daze</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+					<li><a class="spell bonus off-class" title="Two-World Magic" href="https://d20pfsrd.com/magic/all-spells/g/guidance">guidance</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="4 spells known: 3 class, 1 bloodline">Level 1 <u title="5 class, 2 cha">7/day</u></h2>
+				<ul>
+					<li><a class="spell bloodline off-class" href="https://d20pfsrd.com/magic/all-spells/e/entangle">entangle</a>,</li>
+					<li><a class="spell enchantment compulsion" href="https://d20pfsrd.com/magic/all-spells/d/deja-vu">déjà vu</a>,</li>
+					<li><a class="spell enchantment compulsion" href="https://d20pfsrd.com/magic/all-spells/s/sleep">sleep</a>.</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/silent-image">silent image</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Scrolls<!--12x25--></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/alter-musical-instrument">alter musical instrument</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a> &times;2,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/identify">identify</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/k/keep-watch">keep watch</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mage-armor">mage armor</a> &times;2,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-weapon">magic weapon</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mount">mount</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/o/obscuring-mist">obscuring mist</a>.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--5000--><s><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/robe-sorcerer-s">Sorcerer's Robe</a></s></li>
+			<li><!--4000--><s><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-alluring-charisma">Headband of Alluring Charisma</a> +2</s></li>
+			<li><!--3000--><s><a href="https://d20pfsrd.com/magic-items/rods/metamagic-rods/metamagic-extend"><i>Extend</i> Metamagic Rod</a></s></li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--1000--><s><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-Resistance">Cloak of Resistance</a> +1</s></li>
+		</ul>
+		<ul id="inventory">
+			<!--Weapons-->
+			<li class="br"><!--335 (ammo: 1 gp for 10)-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Light Crossbow</a>, masterwork
+				<small>simple ranged, 1d8, 19x2, P, 80ft.</small>
+				<div class="circumstancialBonus">20 bolts</div>
+			</li>
+
+			<!--Armors-->
+			<li class="br"><!--3-->
+				<a href="https://d20pfsrd.com/equipment/armor/eastern-armor-and-shields">Haramaki</a>
+				<small>light, 1 armor, - dex, 0 acp, 0% asf</small>
+			</li>
+
+			<li><!--50-->
+				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</li>
+			<li>310 <b>gp</b><!--/3000--></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p>Guides:
+				<a href="https://www.reddit.com/r/Pathfinder_RPG/comments/fs3fuv/sorcerers_robe_question/">thread by u/ShiningAstrid</a>,
+				<a href="https://www.reddit.com/r/Pathfinder/comments/9ghjl4/as_a_sorcerer_with_fey_bloodline_do_i/">comment by u/kitsunewarlock</a>.</p>
+			<p>Quixie adore jouer des tours! Elle s'est cachée dans la Clamor Box de Gidea.</p>
+			<details>
+				<summary class="subtitle">What Quixie looks like</summary>
+				<a href="https://www.deviantart.com/darkhhhhhh/art/Light-fairy-690183641">
+				<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d20e1645-772c-4f93-9883-f3ab5cffd29f/dbex13t-2eebe5d2-8f4e-42d3-8b2e-f241d2473d15.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDIwZTE2NDUtNzcyYy00ZjkzLTk4ODMtZjNhYjVjZmZkMjlmXC9kYmV4MTN0LTJlZWJlNWQyLThmNGUtNDJkMy04YjJlLWYyNDFkMjQ3M2QxNS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.bCY3jS5CMBUqf0BA4t2TFgFfz-mwJQtM63-gW-ZEYrk"></a>
+			</details>
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Happy-go-lucky and bubbly</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/oblivious">Oblivious</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Sky blue</dd>
+
+				<dt>Hair</dt>
+				<dd>Blue and white, like toothpaste</dd>
+
+				<dt>Weight</dt>
+				<dd>17 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>1' 1''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
