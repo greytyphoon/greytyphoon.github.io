@@ -5,7 +5,7 @@ li.infusionSubstance { list-style-type: square; }
 li.metakinesis { list-style-type: disc; }
 li.burnReduction { list-style-type: none; }
 
-/* used for Kjan's Terrakineticist forms */
+/* used for Kuzon's Terrakineticist forms */
 .prismatic, a.prismatic { color:var(--conjuration-green); }
 #fixref > ul > li > *.aether-form::before { content: "✨"; }
 #fixref > ul > li > *.air-form::before { content: "🎐"; }
