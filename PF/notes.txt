@@ -46,8 +46,9 @@ Battle Medecine (1/day/person)
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 Raug	
 Kerblam	
-Ringo	vs bog mummy
+Ringo	
 Maddoc	
-Bao		vs bog mummy
-Barnik	
-Barnak	
+Bao		
+
+Graveroot
+Elixir of Life
