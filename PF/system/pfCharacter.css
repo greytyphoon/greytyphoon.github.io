@@ -66,6 +66,7 @@ dl#featsWrapper > dd{
 .weapon > h2 {
 	background-color: var(--murder-red);
 	color: var(--html-white);
+	text-shadow: 1px 1px 1px var(--murder-black);
 	border-bottom: 1px solid var(--murder-red);
 	margin: -4px -10px 4px -10px;
 	padding: .15em .5em; }
@@ -111,8 +112,7 @@ ul#sources ul { margin-left: 1rem; }
 #xp {
 	display: block;
 	margin-top: -1.2em;
-	text-align: left;
-	color: var(--html-white); }
+	text-align: left; }
 
 #fixref > ul > li > *.notes::before { content: "\1f4dd"; content: "📝"; }
 #fixref > ul > li > *.companion::before,
