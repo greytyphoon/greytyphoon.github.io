@@ -183,6 +183,8 @@ header {
 	background-color: var(--murder-red);
 	border: 1px solid var(--murder-red);
 	box-shadow: 2px 2px 2px var(--html-darkgrey);
+	color: var(--html-white);
+	text-shadow: 1px 1px 2px var(--murder-black);
 }
 header h1 {
 	font-size: inherit;
@@ -197,6 +199,7 @@ h2, .subtitle {
 	font-weight: bold;
 	margin: 0 0 .3em 0;
 }
+summary.subtitle { display: list-item; } /* display:block; makes the arrow thing disappear */
 h2 > *:not(a), .subtitle > *:not(a) {
 	float: right;
 	margin-left: .75em;
