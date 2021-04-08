@@ -50,7 +50,7 @@ Greytyphoon.Characters.push({
 		{ slot: "neck", value: 3999.9, name: "Amulet of Mighty Fists", url: "https://d20pfsrd.com/magic-items/wondrous-items/a-b/amulet-of-mighty-fists" },
 		{ slot: "neck", value: 0.1, name: "Frost", url: "https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/frost" },
 		{ slot: "shoulders", value: 1000, name: "Cloak of Resistance [Foliage]", url: "https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance" },
-		{ slot: "body", value: 13000, name: "Monk's robe", url: "https://d20pfsrd.com/magic-items/wondrous-items/r-z/robe-monk-s/" },
+		{ slot: "body", value: 13000, name: "Monk's robe", url: "https://d20pfsrd.com/magic-items/wondrous-items/r-z/robe-monk-s" },
 		{ slot: "body", value: 4500, name: "Body Wrap of Mighty Strikes", url: "https://d20pfsrd.com/magic-items/wondrous-items/a-b/body-wrap-of-mighty-strikes" },
 		{ slot: "wrists", value: 1000, name: "Bracers of Armor", url: "https://d20pfsrd.com/magic-items/wondrous-items/a-b/bracers-of-armor" },
 		{ slot: "ring", value: 2000, name: "Ring of Protection", url: "https://d20pfsrd.com/magic-items/rings/ring-of-swarming-stabs" },
