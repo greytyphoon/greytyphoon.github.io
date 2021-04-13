@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Riddle</title>
+	<link rel="stylesheet" href="../../system/pfGeneric.css">
+	<style>
+		#instructions { max-width: 540px; margin: 0 auto .75rem auto; }
+		#controls-help { text-align: center; size: .8em; color: var(--html-darkgrey); }
+		ul.cards { list-style: none; padding-left: 1.5rem; padding-right: 1.5rem; margin-right: 66px; text-align: center; }
+		ul.cards img { width: 100px; }
+		ul.cards b { position: absolute; top: 1.5em; left: .15em; color: var(--divination-blue); }
+		ul.cards li { display: inline-block; margin-right: -66px; position: relative; cursor: pointer; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<!--<li><a class="back" href="Q8-deck-of-cards.html">Back to Quest</a></li>-->
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Encore un jeu de cartes</h1>
+		</header>
+		<p>Sur le bureau de Dostaek, bien en évidence, vous trouvez - sans surprise - un jeu de cartes.
+			Il y a des lettres sur toutes les cartes, et une petite note en-dessous.</p>
+		<div id="instructions" class="apartee">
+			<p>G&amp;S, remettez les cartes dans l'ordre!</p>
+			<ul>
+				<li>Les nombres impairs, incluant As, Valet et Roi, sont avant tous les nombres plus petits,</li>
+				<li>Les nombres multiples de 3 (incluant la Dame) sont adjacents à un multiple de 5,</li>
+				<li>Les nombres pairs sont adjacents à exactement un autre nombre pair.</li>
+			</ul>
+			<p>Cordialement, D.</p>
+		</div>
+		<ul id="clubs-cards" class="cards">
+			<li><img alt="A♣" src="../../../LD/47/cards/ace_of_clubs.svg">		<b>Z</b></li>
+			<li><img alt="2♣" src="../../../LD/47/cards/2_of_clubs.svg">		<b>Z</b></li>
+			<li><img alt="3♣" src="../../../LD/47/cards/3_of_clubs.svg">		<b>Z</b></li>
+			<li><img alt="4♣" src="../../../LD/47/cards/4_of_clubs.svg">		<b>Z</b></li>
+			<li><img alt="5♣" src="../../../LD/47/cards/5_of_clubs.svg">		<b>Z</b></li>
+			<li><img alt="6♣" src="../../../LD/47/cards/6_of_clubs.svg">		<b>Z</b></li>
+			<li><img alt="7♣" src="../../../LD/47/cards/7_of_clubs.svg">		<b>Z</b></li>
+			<li><img alt="8♣" src="../../../LD/47/cards/8_of_clubs.svg">		<b>Z</b></li>
+			<li><img alt="9♣" src="../../../LD/47/cards/9_of_clubs.svg">		<b>Z</b></li>
+			<li><img alt="10♣" src="../../../LD/47/cards/10_of_clubs.svg">		<b>Z</b></li>
+			<li><img alt="J♣" src="../../../LD/47/cards/jack_of_clubs2.svg">	<b>Z</b></li>
+			<li><img alt="Q♣" src="../../../LD/47/cards/queen_of_clubs2.svg">	<b>Z</b></li>
+			<li><img alt="K♣" src="../../../LD/47/cards/king_of_clubs2.svg">	<b>Z</b></li>
+		</ul>
+		<p id="controls-help">Click and drag! 👆</p>
+		<ul id="diamonds-cards" class="cards">
+			<li><img alt="A♦" src="../../../LD/47/cards/ace_of_diamonds.svg">	<b>Z</b></li>
+			<li><img alt="2♦" src="../../../LD/47/cards/2_of_diamonds.svg">		<b>Z</b></li>
+			<li><img alt="3♦" src="../../../LD/47/cards/3_of_diamonds.svg">		<b>Z</b></li>
+			<li><img alt="4♦" src="../../../LD/47/cards/4_of_diamonds.svg">		<b>Z</b></li>
+			<li><img alt="5♦" src="../../../LD/47/cards/5_of_diamonds.svg">		<b>Z</b></li>
+			<li><img alt="6♦" src="../../../LD/47/cards/6_of_diamonds.svg">		<b>Z</b></li>
+			<li><img alt="7♦" src="../../../LD/47/cards/7_of_diamonds.svg">		<b>Z</b></li>
+			<li><img alt="8♦" src="../../../LD/47/cards/8_of_diamonds.svg">		<b>Z</b></li>
+			<li><img alt="9♦" src="../../../LD/47/cards/9_of_diamonds.svg">		<b>Z</b></li>
+			<li><img alt="10♦" src="../../../LD/47/cards/10_of_diamonds.svg">	<b>Z</b></li>
+			<li><img alt="J♦" src="../../../LD/47/cards/jack_of_diamonds2.svg">	<b>Z</b></li>
+			<li><img alt="Q♦" src="../../../LD/47/cards/queen_of_diamonds2.svg"><b>Z</b></li>
+			<li><img alt="K♦" src="../../../LD/47/cards/king_of_diamonds2.svg">	<b>Z</b></li>
+		</ul>
+		<ul id="hearts-cards" class="cards">
+			<li><img alt="A♥" src="../../../LD/47/cards/ace_of_hearts.svg">		<b>Z</b></li>
+			<li><img alt="2♥" src="../../../LD/47/cards/2_of_hearts.svg">		<b>Z</b></li>
+			<li><img alt="3♥" src="../../../LD/47/cards/3_of_hearts.svg">		<b>Z</b></li>
+			<li><img alt="4♥" src="../../../LD/47/cards/4_of_hearts.svg">		<b>Z</b></li>
+			<li><img alt="5♥" src="../../../LD/47/cards/5_of_hearts.svg">		<b>Z</b></li>
+			<li><img alt="6♥" src="../../../LD/47/cards/6_of_hearts.svg">		<b>Z</b></li>
+			<li><img alt="7♥" src="../../../LD/47/cards/7_of_hearts.svg">		<b>Z</b></li>
+			<li><img alt="8♥" src="../../../LD/47/cards/8_of_hearts.svg">		<b>Z</b></li>
+			<li><img alt="9♥" src="../../../LD/47/cards/9_of_hearts.svg">		<b>Z</b></li>
+			<li><img alt="10♥" src="../../../LD/47/cards/10_of_hearts.svg">		<b>Z</b></li>
+			<li><img alt="J♥" src="../../../LD/47/cards/jack_of_hearts2.svg">	<b>Z</b></li>
+			<li><img alt="Q♥" src="../../../LD/47/cards/queen_of_hearts2.svg">	<b>Z</b></li>
+			<li><img alt="K♥" src="../../../LD/47/cards/king_of_hearts2.svg">	<b>Z</b></li>
+		</ul>
+		<ul id="spades-cards" class="cards">
+			<li><img alt="A♠" src="../../../LD/47/cards/ace_of_spades.svg">		<b>Z</b></li>
+			<li><img alt="2♠" src="../../../LD/47/cards/2_of_spades.svg">		<b>Z</b></li>
+			<li><img alt="3♠" src="../../../LD/47/cards/3_of_spades.svg">		<b>Z</b></li>
+			<li><img alt="4♠" src="../../../LD/47/cards/4_of_spades.svg">		<b>Z</b></li>
+			<li><img alt="5♠" src="../../../LD/47/cards/5_of_spades.svg">		<b>Z</b></li>
+			<li><img alt="6♠" src="../../../LD/47/cards/6_of_spades.svg">		<b>Z</b></li>
+			<li><img alt="7♠" src="../../../LD/47/cards/7_of_spades.svg">		<b>Z</b></li>
+			<li><img alt="8♠" src="../../../LD/47/cards/8_of_spades.svg">		<b>Z</b></li>
+			<li><img alt="9♠" src="../../../LD/47/cards/9_of_spades.svg">		<b>Z</b></li>
+			<li><img alt="10♠" src="../../../LD/47/cards/10_of_spades.svg">		<b>Z</b></li>
+			<li><img alt="J♠" src="../../../LD/47/cards/jack_of_spades2.svg">	<b>Z</b></li>
+			<li><img alt="Q♠" src="../../../LD/47/cards/queen_of_spades2.svg">	<b>Z</b></li>
+			<li><img alt="K♠" src="../../../LD/47/cards/king_of_spades2.svg">	<b>Z</b></li>
+		</ul>
+	</div>
+	<script src="http://SortableJS.github.io/Sortable/Sortable.js"></script>
+	<script>
+		let sortableOptions = { animation: 150 };
+		
+		// CLUBS
+		// Solution: K♣ J♣ Q♣ 10♣ 9♣ 7♣ 8♣ 6♣ 5♣ 3♣ A♣ 4♣ 2♣
+		Sortable.create(document.getElementById("clubs-cards"), sortableOptions);
+		let msgClubs =	"FIBONACCI,PUIS LES FIGURES,PUIS LES PAIRS RESTANTS,DÉCROISSANTS";
+		let clubsResult = ["", "", "", "", "", "", "", "", "", "", "", "", ""];
+		for (let i = 0; i < msgClubs.length; i++) {
+			clubsResult[i%13] += "<br>" + msgClubs.charAt(i);
+		}
+		document.querySelector("[alt='K♣'] + b").innerHTML = clubsResult[0];
+		document.querySelector("[alt='J♣'] + b").innerHTML = clubsResult[1];
+		document.querySelector("[alt='Q♣'] + b").innerHTML = clubsResult[2];
+		document.querySelector("[alt='10♣'] + b").innerHTML = clubsResult[3];
+		document.querySelector("[alt='9♣'] + b").innerHTML = clubsResult[4];
+		document.querySelector("[alt='7♣'] + b").innerHTML = clubsResult[5];
+		document.querySelector("[alt='8♣'] + b").innerHTML = clubsResult[6];
+		document.querySelector("[alt='6♣'] + b").innerHTML = clubsResult[7];
+		document.querySelector("[alt='5♣'] + b").innerHTML = clubsResult[8];
+		document.querySelector("[alt='3♣'] + b").innerHTML = clubsResult[9];
+		document.querySelector("[alt='A♣'] + b").innerHTML = clubsResult[10];
+		document.querySelector("[alt='4♣'] + b").innerHTML = clubsResult[11];
+		document.querySelector("[alt='2♣'] + b").innerHTML = clubsResult[12];
+		
+		// DIAMONDS
+		// Solution: A♦ 2♦ 3♦ 5♦ 8♦ K♦ Q♦ J♦ 10♦ 6♦ 4♦ 9♦ 7♦
+		Sortable.create(document.getElementById("diamonds-cards"), sortableOptions);
+		let msgDiams =	"COMME TREFLE MAIS DECALE A DROITE TROIS FOIS. LES STATUES VOIENT";
+		let diamsResult = ["", "", "", "", "", "", "", "", "", "", "", "", ""];
+		for (let i = 0; i < msgDiams.length; i++) {
+			diamsResult[i%13] += "<br>" + msgDiams.charAt(i);
+		}
+		document.querySelector("[alt='A♦'] + b").innerHTML = diamsResult[0];
+		document.querySelector("[alt='2♦'] + b").innerHTML = diamsResult[1];
+		document.querySelector("[alt='3♦'] + b").innerHTML = diamsResult[2];
+		document.querySelector("[alt='5♦'] + b").innerHTML =diamsResult[3];
+		document.querySelector("[alt='8♦'] + b").innerHTML = diamsResult[4];
+		document.querySelector("[alt='K♦'] + b").innerHTML = diamsResult[5];
+		document.querySelector("[alt='Q♦'] + b").innerHTML = diamsResult[6];
+		document.querySelector("[alt='J♦'] + b").innerHTML = diamsResult[7];
+		document.querySelector("[alt='10♦'] + b").innerHTML = diamsResult[8];
+		document.querySelector("[alt='6♦'] + b").innerHTML = diamsResult[9];
+		document.querySelector("[alt='4♦'] + b").innerHTML = diamsResult[10];
+		document.querySelector("[alt='9♦'] + b").innerHTML = diamsResult[11];
+		document.querySelector("[alt='7♦'] + b").innerHTML = diamsResult[12];
+		
+		// HEARTS
+		// Solution: A♥ 4♥ 2♥ K♥ J♥ Q♥ 10♥ 9♥ 7♥ 8♥ 6♥ 5♥ 3♥
+		Sortable.create(document.getElementById("hearts-cards"), sortableOptions);
+		let msgHearts =	"TOUT CAXTON.JAI MIS LE RENDEZ-VOUS TROP TARD,ILS MAURONT PRIS.";
+		let heartsResult = ["", "", "", "", "", "", "", "", "", "", "", "", ""];
+		for (let i = 0; i < msgHearts.length; i++) {
+			heartsResult[i%13] += "<br>" + msgHearts.charAt(i);
+		}
+		document.querySelector("[alt='A♥'] + b").innerHTML = heartsResult[0];
+		document.querySelector("[alt='4♥'] + b").innerHTML = heartsResult[1];
+		document.querySelector("[alt='2♥'] + b").innerHTML = heartsResult[2];
+		document.querySelector("[alt='K♥'] + b").innerHTML = heartsResult[3];
+		document.querySelector("[alt='J♥'] + b").innerHTML = heartsResult[4];
+		document.querySelector("[alt='Q♥'] + b").innerHTML = heartsResult[5];
+		document.querySelector("[alt='10♥'] + b").innerHTML = heartsResult[6];
+		document.querySelector("[alt='9♥'] + b").innerHTML = heartsResult[7];
+		document.querySelector("[alt='7♥'] + b").innerHTML = heartsResult[8];
+		document.querySelector("[alt='8♥'] + b").innerHTML = heartsResult[9];
+		document.querySelector("[alt='6♥'] + b").innerHTML = heartsResult[10];
+		document.querySelector("[alt='5♥'] + b").innerHTML = heartsResult[11];
+		document.querySelector("[alt='3♥'] + b").innerHTML = heartsResult[12];
+		
+		// SPADES
+		// Solution: 4♠ 9♠ 7♠ A♠ 2♠ 3♠ 5♠ 8♠ K♠ Q♠ J♠ 10♠ 6♠
+		Sortable.create(document.getElementById("spades-cards"), sortableOptions);
+		let msgSpades =	"JAI UN DETECTEUR.LE SEPT DE CARREAU DE CE JEU ME POINTE.A LANCER.";
+		let spadesResult = ["", "", "", "", "", "", "", "", "", "", "", "", ""];
+		for (let i = 0; i < msgSpades.length; i++) {
+			spadesResult[i%13] += "<br>" + msgSpades.charAt(i);
+		}
+		document.querySelector("[alt='4♠'] + b").innerHTML = spadesResult[0];
+		document.querySelector("[alt='9♠'] + b").innerHTML = spadesResult[1];
+		document.querySelector("[alt='7♠'] + b").innerHTML = spadesResult[2];
+		document.querySelector("[alt='A♠'] + b").innerHTML = spadesResult[3];
+		document.querySelector("[alt='2♠'] + b").innerHTML = spadesResult[4];
+		document.querySelector("[alt='3♠'] + b").innerHTML = spadesResult[5];
+		document.querySelector("[alt='5♠'] + b").innerHTML = spadesResult[6];
+		document.querySelector("[alt='8♠'] + b").innerHTML = spadesResult[7];
+		document.querySelector("[alt='K♠'] + b").innerHTML = spadesResult[8];
+		document.querySelector("[alt='Q♠'] + b").innerHTML = spadesResult[9];
+		document.querySelector("[alt='J♠'] + b").innerHTML = spadesResult[10];
+		document.querySelector("[alt='10♠'] + b").innerHTML = spadesResult[11];
+		document.querySelector("[alt='6♠'] + b").innerHTML = spadesResult[12];
+	</script>
+</body>
+</html>
