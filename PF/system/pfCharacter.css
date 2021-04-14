@@ -123,6 +123,7 @@ ul#sources ul { margin-left: 1rem; }
 #fixref > ul > li > *.familiar.mouse::before { content: "\1f401"; content: "🐁"; }
 #fixref > ul > li > *.familiar.snake::before { content: "\1f40d"; content: "🐍"; }
 #fixref > ul > li > *.familiar.bird::before { content: "\1f426"; content: "🐦"; }
+#fixref > ul > li > *.familiar.bat::before { content: "\1f987"; content: "🦇"; }
 #fixref > ul > li > *.companion.dragon::before { content: "\1f409"; content: "🐉"; }
 #fixref > ul > li > *.companion.crocodile::before { content: "\1f40a"; content: "🐊"; }
 #fixref > ul > li > *.companion.horse::before { content: "\1f40e"; content: "🐎"; }
