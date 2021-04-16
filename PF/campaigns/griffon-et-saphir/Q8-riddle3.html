@@ -9,6 +9,7 @@
 	<style>
 		#instructions { max-width: 540px; margin: 0 auto .75rem auto; }
 		#solved { text-align: center; text-shadow: 0 0 1px var(--conjuration-green); }
+		#extra-credits { text-align: center; }
 		.hidden:not(.visible) { display: none; }
 		.latest { text-shadow: 0 0 3px var(--murder-red); }
 		form { text-align: center; position: relative; }
@@ -149,21 +150,24 @@
 			Des mots s'affichent alors sur la porte, au-dessus des gemmes...
 			<ul class="hints">
 				<li class="hidden" id="repeat">Deux dés ne peuvent pas avoir la même valeur.</li>
+				<li class="hidden" id="minimumd100">Le d100 doit avoir la plus petite valeur possible, mais rester plus grand que la somme de tous les autres.</li>
 				<li class="hidden" id="divide">Un dé ne peut pas être un diviseur d'un de ses voisins.</li>
 				<li class="hidden" id="even">Un seul dé peut afficher un nombre pair.</li>
+				<li class="hidden" id="greatd20">Le d20 doit avoir la plus grande valeur possible sans contredire les autres règles.</li>
 			</ul>
 		</div>
 		<p id="solved" class="hidden">La porte s'ouvre avec un bruit sourd.</p>
+		<p id="extra-credits" class="hidden"><a href="Q8-riddle4.html">Avec un glissement sec, un autre panneau s'ouvre dans la porte.</a></p>
 	</div>
 	<script>
 		function checkAnswer() {
-			let answerD4 = document.getElementById("d4").value;
-			let answerD6 = document.getElementById("d6").value;
-			let answerD8 = document.getElementById("d8").value;
-			let answerD10 = document.getElementById("d10").value;
-			let answerD100 = document.getElementById("d100").value;
-			let answerD12 = document.getElementById("d12").value;
-			let answerD20 = document.getElementById("d20").value;
+			let answerD4 = parseInt(document.getElementById("d4").value);
+			let answerD6 = parseInt(document.getElementById("d6").value);
+			let answerD8 = parseInt(document.getElementById("d8").value);
+			let answerD10 = parseInt(document.getElementById("d10").value);
+			let answerD100 = parseInt(document.getElementById("d100").value);
+			let answerD12 = parseInt(document.getElementById("d12").value);
+			let answerD20 = parseInt(document.getElementById("d20").value);
 
 			// RULE #1
 			if (answerD4 === answerD6 || answerD4 === answerD8 || answerD4 === answerD10 || answerD4 === answerD12 || answerD4 === answerD20
@@ -178,6 +182,15 @@
 			}
 
 			// RULE #2
+			let sumOfAll = answerD4 + answerD6 + answerD8 + answerD10 + answerD12 + answerD20;
+			let ruleD100 = 10* (Math.floor(sumOfAll / 10) + 1);
+			if (answerD100 !== ruleD100)
+			{
+				revealHint("minimumd100");
+				return;
+			}
+
+			// RULE #3
 			if (answerD4 % answerD6 === 0 || answerD6 % answerD4 === 0
 			 || answerD4 % answerD12 === 0 || answerD12 % answerD4 === 0
 			 || answerD4 % answerD20 === 0 || answerD20 % answerD4 === 0
@@ -194,7 +207,7 @@
 				return;
 			}
 
-			// RULE #3
+			// RULE #4
 			let evenCount = 0;
 			if (answerD4 % 2 === 0) evenCount++;
 			if (answerD6 % 2 === 0) evenCount++;
@@ -208,10 +221,21 @@
 				revealHint("even");
 				return;
 			}
-			
+
+			// RULE #5
+			if (answerD20 !== 19)
+			{
+				revealHint("greatd20");
+				return;
+			}
+
 			// SOLVED
 			document.getElementById("instructions").classList.remove("visible");
-			document.getElementById("solved").classList.add("visible");
+			let currentHour = new Date().getHours();
+			if (currentHour > 21 || currenthour < 6)
+				document.getElementById("solved").classList.add("visible");
+			else
+				document.getElementById("extra-credits").classList.add("visible");
 		}
 		function revealHint(hintId) {
 			let oldLatest = document.querySelector(".latest")
