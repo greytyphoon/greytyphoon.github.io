@@ -153,8 +153,7 @@
 				<li class="hidden" id="greatd20">Le d20 doit avoir la plus grande valeur possible sans contredire les autres règles.</li>
 			</ul>
 		</div>
-		<p id="solved" class="hidden">La porte s'ouvre avec un bruit sourd.</p>
-		<p id="extra-credits" class="hidden"><a href="Q8-riddle4.html">Avec un glissement sec, un autre panneau s'ouvre dans la porte.</a></p>
+		<p id="solved" class="hidden"><a href="Q8-riddle4.html">Avec un glissement sec, un autre panneau s'ouvre dans la porte.</a></p>
 	</div>
 	<script>
 		function checkAnswer() {
@@ -228,11 +227,7 @@
 
 			// SOLVED
 			document.getElementById("instructions").classList.remove("visible");
-			let currentHour = new Date().getHours();
-			if (currentHour > 21 || currenthour < 6)
-				document.getElementById("solved").classList.add("visible");
-			else
-				document.getElementById("extra-credits").classList.add("visible");
+			document.getElementById("solved").classList.add("visible");
 		}
 		function revealHint(hintId) {
 			let oldLatest = document.querySelector(".latest")
