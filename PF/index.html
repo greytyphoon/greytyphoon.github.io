@@ -558,22 +558,6 @@
 					<td>Free</td>
 				</tr>
 				<tr>
-					<td><a href="sheets/Sabrina.html">Sabrina the Sphinx</a>, sworn into servitude</td>
-					<td>Vampire</td>
-					<td>Monster (Sphinx)</td>
-					<td>10</td>
-					<td>PF</td>
-					<td>Flexible</td>
-				</tr>
-				<tr>
-					<td><a href="sheets/Slithers.html">Slithers IV</a>, the hydra's sacrifice</td>
-					<td>Ghost</td>
-					<td>Monster (Naga)</td>
-					<td>11</td>
-					<td>PF</td>
-					<td>Flexible</td>
-				</tr>
-				<tr>
 					<td><a href="sheets/Mathilda.html">Mathilda Nalaar</a>, Pharasma's mountain warden</td>
 					<td>Elf</td>
 					<td>Witch</td>
@@ -720,6 +704,63 @@
 			</tbody>
 			</table>
 		</details>
+		<details>
+			<summary class="subtitle">Monsters</summary>
+			<table id="tblMonsters" class="br">
+			<thead>
+				<tr>
+					<th data-sort-default>Name</th>
+					<th>Type</th>
+					<th data-sort-method="number">CR</th>
+					<th>Edition</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="campaigns/manors-n-genies/Sabrina.html">Sabrina the Sphinx</a>, sworn into servitude</td>
+					<td>Vampire Gynosphinx</td>
+					<td>10</td>
+					<td>PF</td>
+				</tr>
+				<tr>
+					<td><a href="campaigns/manors-n-genies/Slithers.html">Slithers IV</a>, the hydra's sacrifice</td>
+					<td>Ghost Naga</td>
+					<td>11</td>
+					<td>PF</td>
+				</tr>
+				<tr>
+					<td>Generic <a href="campaigns/griffon-et-saphir/Q1-shadow-drake.html">Shadow Drake</a></td>
+					<td>Giant Drake</td>
+					<td>3</td>
+					<td>PF</td>
+				</tr>
+				<tr>
+					<td>Generic <a href="campaigns/griffon-et-saphir/Q3-creeper.html">Creeper</a></td>
+					<td>Aberration</td>
+					<td>2</td>
+					<td>PF</td>
+				</tr>
+				<tr>
+					<td><a href="campaigns/griffon-et-saphir/Q4-nago.html">Nago</a>, corrupted lord of boars</td>
+					<td>Giant Dire Boar</td>
+					<td>5</td>
+					<td>PF</td>
+				</tr>
+				<tr>
+					<td><a href="campaigns/griffon-et-saphir/Q4-moro.html">Moro</a>, defiant lord of wolves</td>
+					<td>Giant Advanced Dire Wolf</td>
+					<td>5</td>
+					<td>PF</td>
+				</tr>
+				<tr>
+					<td><a href="campaigns/griffon-et-saphir/Q4-jiko-bo.html">Jiko-Bô</a>, black-blooded dryad</td>
+					<td>Dryad + Oracle</td>
+					<td>5</td>
+					<td>PF</td>
+				</tr>
+			</tbody>
+			</table>
+		</details>
 	</div>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/tablesort.min.js"></script>
@@ -728,6 +769,7 @@
 		document.getElementById("charactersCount").innerHTML = document.getElementById("tblCharacters").tBodies[0].rows.length + " total";
 		new Tablesort(document.getElementById('tblCharacters'));
 		new Tablesort(document.getElementById('tblCompanions'));
+		new Tablesort(document.getElementById('tblMonsters'));
 		function RandomRedirect()
 		{
 			var allCharLinks = document.querySelectorAll("table#tblCharacters td:first-child > a[href]");
