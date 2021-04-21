@@ -56,7 +56,7 @@
 			</details>
 		</section>
 		<details>
-			<summary class="subtitle">Companions &amp; Familiars</summary>
+			<summary class="subtitle">Companions &amp; Familiars <b id="companionsCount" onClick="RandomRedirect('tblCompanions')"></b></summary>
 			<table id="tblCompanions" class="br">
 			<thead>
 				<tr>
@@ -200,7 +200,7 @@
 			</table>
 		</details>
 		<details open>
-			<summary class="subtitle">Characters sheets <b id="charactersCount" onClick="RandomRedirect()"></b></summary>
+			<summary class="subtitle">Characters sheets <b id="charactersCount" onClick="RandomRedirect('tblCharacters')"></b></summary>
 			<table id="tblCharacters" class="br">
 			<thead>
 				<tr>
@@ -705,7 +705,7 @@
 			</table>
 		</details>
 		<details>
-			<summary class="subtitle">Monsters</summary>
+			<summary class="subtitle">Monsters <b id="monstersCount" onClick="RandomRedirect('tblMonsters')"></b></summary>
 			<table id="tblMonsters" class="br">
 			<thead>
 				<tr>
@@ -767,12 +767,14 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/sorts/tablesort.number.min.js"></script>
 	<script type="text/javascript">
 		document.getElementById("charactersCount").innerHTML = document.getElementById("tblCharacters").tBodies[0].rows.length + " total";
+		document.getElementById("companionsCount").innerHTML = document.getElementById("tblCompanions").tBodies[0].rows.length + " total";
+		document.getElementById("monstersCount").innerHTML = document.getElementById("tblMonsters").tBodies[0].rows.length + " total";
 		new Tablesort(document.getElementById('tblCharacters'));
 		new Tablesort(document.getElementById('tblCompanions'));
 		new Tablesort(document.getElementById('tblMonsters'));
-		function RandomRedirect()
+		function RandomRedirect(target)
 		{
-			var allCharLinks = document.querySelectorAll("table#tblCharacters td:first-child > a[href]");
+			var allCharLinks = document.querySelectorAll("table#"+target+" td:first-child > a[href]");
 			var randomIndex = Math.floor(Math.random() * allCharLinks.length);
 			window.location.href = allCharLinks[randomIndex].href;
 		}
