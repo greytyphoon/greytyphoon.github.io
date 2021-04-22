@@ -129,3 +129,4 @@ ul#sources ul { margin-left: 1rem; }
 #fixref > ul > li > *.companion.horse::before { content: "\1f40e"; content: "🐎"; }
 #fixref > ul > li > *.companion.wolf::before { content: "\1f43a"; content: "🐺"; }
 #fixref > ul > li > *.companion.bear::before { content: "\1f43b"; content: "🐻"; }
+#fixref > ul > li > *.companion.bull::before { content: "\1f43b"; content: "🐂"; }
