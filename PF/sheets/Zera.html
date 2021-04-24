@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Shifter</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.row.row122 > *+* { flex: 2; }
+		.choices { font-size: 0.8rem; }
+		ul.choices { list-style-type: circle; margin-left: 1.5rem; }
+		.choices em:first-child { display: inline-block; min-width: 4.5em; }
+		.choices em:first-child::after { content: ":" }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="familiar bird" href="Kim.html">Familiar</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Zera Uskorm, wildling</h1>
+			N Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>22 <small>17, <u title="Racial">2</u>, <u title="Advancement">1</u>, <u title="Minor Form: Bull">2</u></small></dd>
+
+				<dt>Dex</dt>
+				<dd>14</dd>
+
+				<dt>Con</dt>
+				<dd>12</dd>
+
+				<dt>Int</dt>
+				<dd>10</dd>
+
+				<dt>Wis</dt>
+				<dd>14</dd>
+
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/Human/#Alternate_Racial_Traits">Heart of the Fey</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/base-classes/shifter">Shifter</a> 4</dd>
+
+				<dt>VMC</dt>
+				<dd><a href="https://d20pfsrd.com/classes/character-advancement#TOC-Wizard">Wizard</a></dd>
+				<dd class="archetype">
+					<a href="https://d20pfsrd.com/classes/core-classes/wizard/arcane-schools/paizo-arcane-schools/classic-arcane-schools/divination">Divination</a> school
+					(<a href="https://d20pfsrd.com/classes/core-classes/wizard/arcane-schools/paizo-arcane-schools/classic-arcane-schools/divination/foresight">Foresight</a>)
+				</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Gozreh</dd>
+
+				<dt>Senses</dt>
+				<dd title="Heart of the Fey"><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
+				<dd><a href="https://d20pfsrd.com/classes/Core-classes/Druid/#Woodland_Stride_Ex">Woodland Stride</a></dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Druidic</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/dirty-fighter">Dirty Fighter</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/regional-traits/militia-amanandar">Group Fighter</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/step-up-combat">Step Up</a></dd>
+			<dt>human</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/feral-combat-training-combat">Weapon Focus</a> (Natural)
+				<small>min.1</small></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-grapple-combat">Powerful Manoeuvers</a> (BR, Gr, Tr)
+				<small>min.1</small></dd>
+			<dt>shifter 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/feral-combat-training-combat">Feral Combat Training</a> (Claws)
+				<small>bonus</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/alertness">Alertness</a>
+				<small>bonus</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://www.d20pfsrd.com/feats/general-feats/shifters-rush">Shifter's Rush</a>
+				<small>min.4</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>2 wis, 4 ranks, 3 class, <u title="Alertness">2</u></small>
+			</li>
+
+			<!--Animal Skills-->
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/handle-animal">Handle Animal</a>
+				<small>0 cha, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/ride">Ride</a>
+				<small>2 dex, 1 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/classes/core-classes/druid#TOC-Wild-Empathy-Ex-">Wild Empathy</a>
+				<small>0 cha, 4 shifter, 3 familiar</small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/climb">Acrobatics</a>
+				<small>2 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/climb">Climb</a>
+				<small>6 str, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
+				<small>2 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/spellcraft">Stealth</a>
+				<small>2 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/survival">Survival</a>
+				<small>2 wis, 4 ranks, 3 class</small>
+				<div class="circumstancialBonus" title="Track, shifter&frac12;"><u>+2</u> when tracking</div>
+			</li>
+			<li class="br">
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/swim">Swim</a>
+				<small>6 str, 1 ranks, 3 class</small>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (nature)</a>
+				<small>0 int, 1 ranks, 3 class</small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="4 shifter: 4 class, 0 int">16 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+		</p>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<ul class="summations">
+				<li class="br">
+					<strong>2</strong>
+					<b>Init</b>
+					<small>2 dex</small>
+					<div class="circumstancialBonus" title="Ever Ready"><u>Trade initiative</u> with Familiar</div>
+				</li>
+				<li>
+					<strong>42</strong>
+					<b>HP</b>
+					<small>4 shifter: 10 class, 1 con; 4 FC; -6 rolled</small>
+				</li>
+				<li class="br">
+					<strong>19</strong>
+					<b>AC</b> touch 14, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 17
+					<small>10, 2 dex, 3 armor, 2 shield, <u title="Defensive Instinct, wis&frac12; + shifter&frac14;">2</u></small>
+				</li>
+				<li>
+					<strong>6</strong>
+					<b>Fort</b>
+					<small>1 con, 4 class, <u title="Cloak of Resistance">1 resistance</u></small>
+				</li>
+				<li>
+					<strong>8</strong>
+					<b>Ref</b>
+					<small>2 dex, 4 class, <u title="Heart of the Fey">1 racial</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+				</li>
+				<li class="br">
+					<strong>5</strong>
+					<b>Will</b>
+					<small>2 wis, 1 class, <u title="Heart of the Fey">1 racial</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+				</li>
+				<li>
+					<strong>10</strong>
+					<b>CMB</b>;	24 <b>CMD</b>
+					<small>4 bab, 6 str, 2 dex, <u title="Defensive Instinct, wis&frac12; + shifter&frac14;">2</u></small>
+					<div class="circumstancialBonus" title="Powerful Maneuver"><u>+2</u> to/vs Bull Rush, Grapple, Trip. These maneuvers don't provoke.</div>
+				</li>
+			</ul>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<!--Shifter Claws-->
+				<div class="weapon">
+					<h2>Shifter Claws <b>20x2</b> <b>BS</b></h2>
+					<div class="summation"><strong>+11</strong>/<strong>11</strong> vs AC <small>4 bab, 6 str, 1 w.focus</small></div>
+					<div class="summation"><strong>1d4+6</strong> <small>6 str</small></div>
+					<div class="circumstancialBonus" title="Shifter Claws">Counts as magic, cold-iron, and silver.</div>
+				</div>
+
+				<h2>Major Forms <u title="4 shifter">4 min/day</u></h2>
+				<div>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, gain a form's abilities. <small>Stacks with Wild Shape.</small></div>
+				<dl class="choices">
+					<dt>Falcon</dt>
+					<dd><b>Fly</b> 60ft (<a href="https://d20pfsrd.com/skills/fly">good</a>),	<u>+4 racial</u> to Perception,		Bite (1d4), 2&times; Claw (1d3)</dd>
+				</dl>
+			</div>
+		</section>
+&nbsp;
+		<!--Minor Forms-->
+		<h2>Minor Forms (Su)</h2>
+		<section class="row">
+			<div>
+				<p class="apartee">Have <u title="Increases at 1st, 9th, 14th">one</u> active at all time.<br>
+					Change as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>.<br>
+					Assume <b>Bull</b> is active by default.</p>
+				<ul class="choices">
+					<li><em>Bat</em> Gain <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">darkvision</a> 60ft.</li>
+					<li class="br"><em>Wolf</em> Gain <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Scent">scent</a> 10ft, or +10ft.</li>
+
+					<li><em>Boar</em> Gain <a href="https://d20pfsrd.com/feats/general-feats/diehard">Diehard</a>.</li>
+					<li><em>Horse</em> Gain <a href="https://d20pfsrd.com/feats/general-feats/endurance">Endurance</a> &amp; <u>+5ft enhancement</u> speed.</li>
+					<li><em>Mantis</em> Gain <a href="https://d20pfsrd.com/feats/combat-feats/lunge-combat">Lunge</a>.</li>
+					<li><em>Mouse</em> Gain <a href="https://d20pfsrd.com/classes/Core-Classes/Rogue/#Evasion_Ex">evasion</a>.</li>
+				</ul>
+			</div>
+			<ul class="choices">
+				<li><b><em>Bull</em> <u>+2 enhancement</u> to STR</b></li>
+				<li><em>Tiger</em> <u>+2 enhancement</u> to DEX</li>
+				<li><em>Bear</em> <u>+2 enhancement</u> to CON</li>
+				<li><em title="Snapping Turtle">Turtle</em> <u>+2 enhancement</u> to WIS</li>
+				<li class="br"><em>Peafowl</em> <u>+2 enhancement</u> to CHA</li>
+
+				<li><em>Dragonfly</em> <u>+10ft enhancement</u> speed when charging.</li>
+				<li><em title="Electric Eel">Eel</em> <u>+1dmg [electricity]</u> on each attack.</li>
+				<li><em title="Deinonychus">Raptor</em> <u>+2</u> initiative.</li>
+				<li><em>Snake</em> <u>+2</u> to/vs attacks of opportunity.</li>
+				<li><em title="Giant Wasp">Wasp</em> <u>+4</u> vs mind-affecting.</li>
+				<li><em>Wolverine</em> <u>+1 HP/level</u>, and die 4 HP later.</li>
+			</ul>
+			<ul class="choices">
+				<li><em>Crocodile</em>	<u>+2 competence</u> to Swim / grapple</li>
+				<li><em>Dolphin</em>	<u>+4 competence</u> to recall Knowledge</li>
+				<li><em>Elephant</em>	<u>+4 enhancement</u> to bull rush / overrun</li>
+				<li><em>Falcon</em>		<u>+4 competence</u> to Perception</li>
+				<li><em>Frog</em>		<u>+4 competence</u> to Acrobatics (Jump) and Swim</li>
+				<li><em>Lion</em>		<u>+4 competence</u> to Intimidate</li>
+				<li><em>Lizard</em>		<u>+4 competence</u> to Acrobatics</li>
+				<li><em>Monkey</em>		<u>+4 competence</u> to Climb</li>
+				<li><em>Octopus</em>	<u>+4 competence</u> to Escape Artist</li>
+				<li><em>Owl</em>		<u>+4 competence</u> to Stealth</li>
+				<li><em>Scorpion</em>	<u>+2 competence</u> to Stealth / grapple</li>
+				<li><em>Spider</em>		<u>+2 competence</u> to Climb / Stealth / vs webs</li>
+			</ul>
+		</section>
+&nbsp;
+		<!--Wild Shape-->
+		<h2>Wild Shape (Su) <u title="4 shifter, 2 wis">6h/day</u></h2>
+		<section class="row row122">
+			<div>
+				<p class="apartee">Start as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>
+					(<u title="Shifter's Rush">or <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a> when moving</u>).</p>
+			</div>
+			<!--Cheetah-->
+			<div>
+				<h2>
+					<a href="https://d20pfsrd.com/bestiary/monster-listings/animals/felines/cat-great/cheetah">Cheetah</a>,
+					N Medium Animal
+				</h2>
+				<dl class="charInfo">
+					<dt>Senses</dt>
+					<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Scent">Scent</a></dd>
+
+					<dt>Speed</dt>
+					<dd>50 ft.</dd>
+				</dl>
+
+				<ul class="summations">
+					<li>
+						<strong>17</strong>
+						<b>AC</b> touch 15, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 15
+						<small>10, 2 dex, 2 natural, <u title="Defensive Instinct, wis + shifter&frac14;">3</u></small>
+					</li>
+					<li>
+						<strong>11</strong>
+						<b>CMB</b>;	26 <b>CMD</b>
+						<small>4 bab, 7 str, 2 dex, <u title="Defensive Instinct, wis + shifter&frac14;">3</u></small>
+					</li>
+				</ul>
+
+				<p class="apartee"><b>Full Attack:</b> 1 Bite, 2 Claw</p>
+
+				<!--Bite-->
+				<div class="weapon">
+					<h2>Bite <b>20x2</b> <b>BPS</b></h2>
+					<div class="summation"><strong>+12</strong> vs AC <small>4 bab, 7 str, 1 w.focus</small></div>
+					<div class="summation"><strong>1d6+7</strong> <small>7 str</small></div>
+				</div>
+
+				<!--Claw-->
+				<div class="weapon">
+					<h2>Claw <b>20x2</b> <b>BS</b></h2>
+					<div class="summation"><strong>+12</strong> vs AC <small>4 bab, 7 str, 1 w.focus</small></div>
+					<div class="summation"><strong>1d4+7</strong> <small>7 str</small></div>
+				</div>
+			</div>
+			<!--end of Leopard-->
+
+			<!--Eagle-->
+			<div>
+				<h2>
+					<a href="https://d20pfsrd.com/bestiary/monster-listings/animals/birds/eagle">Eagle</a>,
+					N Small Animal
+				</h2>
+				<dl class="charInfo">
+					<dt>Speed</dt>
+					<dd>10 ft.</dd>
+					<dd>Fly 30 ft. (<a href="https://d20pfsrd.com/skills/fly">average</a>)</dd>
+				</dl>
+
+				<ul class="summations">
+					<li>
+						<strong>18</strong>
+						<b>AC</b> touch 17, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 15
+						<small>10, 3 dex, 1 size, 1 natural, <u title="Defensive Instinct, wis + shifter&frac14;">3</u></small>
+					</li>
+					<li>
+						<strong>9</strong>
+						<b>CMB</b>;	25 <b>CMD</b>
+						<small>4 bab, 6 str, 3 dex, -1 size, <u title="Defensive Instinct, wis + shifter&frac14;">3</u></small>
+					</li>
+				</ul>
+
+				<p class="apartee"><b>Full Attack:</b> 2 Talon, 1 Bite</p>
+
+				<!--Talon-->
+				<div class="weapon">
+					<h2>Talon <b>20x2</b> <b>S</b></h2>
+					<div class="summation"><strong>+12</strong> vs AC <small>4 bab, 6 str, 1 size, 1 w.focus</small></div>
+					<div class="summation"><strong>1d4+6</strong> <small>6 str</small></div>
+				</div>
+
+				<!--Bite-->
+				<div class="weapon">
+					<h2>Bite <b>20x2</b> <b>BPS</b></h2>
+					<div class="summation"><strong>+12</strong> vs AC <small>4 bab, 6 str, 1 size, 1 w.focus</small></div>
+					<div class="summation"><strong>1d4+6</strong> <small>6 str</small></div>
+				</div>
+
+				<p>Also gets +1 Reflex, +1 Init, <u title="1 dex increase, 2 size">+3</u> Fly, <u title="1 dex increase, 4 size">+5</u> Stealth</p>
+			</div>
+			<!--end of Eagle-->
+
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--4000-->
+				<a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/amulet-of-mighty-fists">Amulet of Mighty Fist</a>,
+				<a href="https://aonprd.com/MagicWeaponsDisplay.aspx?ItemName=Guided">guided</a>
+			</li>
+			<li><!--4000--><s><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a> +2</s></li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+		</ul>
+		<ul id="inventory">
+			<!--Weapons-->
+			<li class="br"><!--300 (ammo: 1 gp for 100)-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Sling</a>, masterwork
+				<small>simple ranged, 1d4, 20x2, B, 50ft.</small>
+				<div class="circumstancialBonus">100 pellets</div>
+			</li>
+
+			<!--Armors-->
+			<li><!--170-->
+				<a href="https://d20pfsrd.com/equipment/armor">Hide Shirt</a>, masterwork
+				<small>light, 3 armor, 4 dex, 1 acp, 15% asf</small>
+			</li>
+			<li class="br"><!--257-->
+				<a href="https://d20pfsrd.com/equipment/special-materials#TOC-Darkwood">Darkwood</a>
+				<a href="https://d20pfsrd.com/equipment/armor">Heavy Wooden Shield</a>
+				<small>2 shield, - dex, 2 acp, 15% asf</small>
+			</li>
+
+			<!--Misc-->
+			<li><!--2x50-->
+				2 &times; Potion of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>
+			</li>
+			<li><!--4x25-->
+				4 &times; Scroll of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/mage-armor">mage armor</a>
+			</li>
+			<li><!--50-->
+				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</li>
+			<li>22 <b>GP</b><!--/6000--></li>
+		</ul>
+
+		<!--title NOTES-->
+		<section class="noprint">
+			<hr>
+			<p>Guide used: <a href="https://docs.google.com/document/d/1uhp5v8_tu_rLMX4T266g4rh-ceu_u-8kCZHjFFNHJcY/edit#">Archmage Variel: Becoming the Chimera</a>.</p>
+			<p>Notes on Wild Shape:
+				<a href="http://wildshape.easytool.es/">Wild Shape Easytool</a>,
+				<a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/b/beast-shape">beast shape</a>,
+				<a href="https://d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Natural-Attacks">Natural Attack Types</a> &amp;
+				<a href="https://d20pfsrd.com/gamemastering/combat/space-reach-threatened-area-templates#Creature_Sizes">Sizes Bonuses</a>.</p>
+		</section>
+	</div>
+</body>
+</html>
