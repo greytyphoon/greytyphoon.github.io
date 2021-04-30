@@ -10,8 +10,9 @@
 		.mind-affecting::after { content: " [mind]"; font-size: .8em; color: var(--enchantment-lilac); }
 		.coming-soon { display: none !important; }
 		#starseeker-spells > ul:first-child { display: none; }
-		#starseeker-spells > ul { padding-left: .75rem; }
+		#starseeker-spells > ul { padding-left: .75rem; cursor: pointer; }
 		#starseeker-spells > ul > li:first-child { margin-left: -.75rem; }
+		#starseeker-spells > ul.selected:not(:first-child) { background-color: var(--murder-grey); }
 		img#constellations-chart { max-width: 100%; }
 
 		@media print, screen and (min-width: 768px) {
@@ -482,5 +483,14 @@
 			</dl>
 		</section>
 	</div>
+	<script>
+		function rememberClick(target) {
+			return () => {
+				document.querySelectorAll(".selected").forEach(e => e.classList.remove("selected"));
+				target.classList.add("selected");
+			};
+		}
+		document.querySelectorAll("#starseeker-spells > ul").forEach(e => { e.addEventListener("click", rememberClick(e)); });
+	</script>
 </body>
 </html>
