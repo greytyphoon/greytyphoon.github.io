@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Arcanist</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.fire::after { content: " [fire]"; font-size: .8em; color: var(--murder-black); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Arwen Telrunyá, specialist of ancient writings</h1>
+			LG Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>10</dd>
+
+				<dt>Dex</dt>
+				<dd>16 <small>14, <u title="Racial">2</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>12 <small>14, <u title="Racial">-2</u></small></dd>
+
+				<dt>Int</dt>
+				<dd>19 <small>17, <u title="Racial">2</u></small></dd>
+
+				<dt>Wis</dt>
+				<dd>12</dd>
+
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/elf">Elf</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/Elf#Alternate_Racial_Traits">Crossbow Training</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/arcanist">Arcanist</a> 3</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Nethys</dd>
+
+				<dt>Senses</dt>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd title="2 racial, 4 int, 3 linguistics">Common, Elven, Draconic, Celestial, Infernal, Aquan, Auran, Ignan, Terran</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/social-traits/seeker">Seeker</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/race-traits/warrior-of-old">Warrior of Old</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Linguistics)</dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/point-blank-shot-combat">Point-Blank Shot</a></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/dodge-combat">Dodge</a>
+				+ <a href="https://d20pfsrd.com/feats/combat-feats/mobility-combat">Mobility</a>
+				<small>min.1</small></dd>
+			<dt>arcanist 1</dt>
+			<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/arcanist/arcane-exploits/potent-magic-su">Potent Magic</a>
+				<small>min.1</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-initiative-combat">Improved Initiative</a>
+				<small>min.1</small></dd>
+			<dt>arcanist 3</dt>
+			<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/arcanist/arcane-exploits/arcane-barrier">Arcane Barrier</a>
+				<small>min.1</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/classes/core-classes/wizard/arcane-discoveries/arcane-discoveries-paizo/fast-study">Fast Study</a>
+				<small>min.1</small></dd>
+			<dt>arcanist 3</dt>
+			<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/arcanist/arcane-exploits/quick-study-su">Quick Study</a>
+				<small>min.1</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>1 wis, 3 ranks, 3 class, <u title="Seeker">1 trait</u>, <u title="Keen Senses">2 racial</u></small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>
+				<small>4 int, 3 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
+				<small>3 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>13</strong>
+				<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>
+				<small>4 int, 3 ranks, 3 class, 3 s.focus</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+				<small>4 int, 3 ranks, 3 class</small>
+				<div class="circumstancialBonus" title="Elven Magic"><u>+2 racial</u> to identify magic items</div>
+			</li>
+			<li class="br">
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
+				<small>0 cha, 1 ranks, 3 class</small>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (all)</a>
+				<small>4 int, 1 ranks, 3 class</small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="3 arcanist: 2 class, 4 int, 2 background-skills">24 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+		</p>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<ul class="summations">
+				<li class="br">
+					<strong>9</strong>
+					<b>Init</b>
+					<small>3 dex, <u title="Improved Initiative">4 feat</u>, <u title="Warrior of Old">2 trait</u></small>
+				</li>
+				<li>
+					<strong>23</strong>
+					<b>HP</b>
+					<small>3 arcanist: 6 class, 1 con; 3 FC; -1 rolled</small>
+				</li>
+				<li class="br">
+					<strong>16</strong>
+					<b>AC</b> touch 14, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 12
+					<small>10, 3 dex, 1 armor, 1 shield, <u title="Dodge">1 dodge</u></small>
+					<div class="circumstancialBonus" title="Mobility"><u>+2 dodge</u> vs AoO from moving</div>
+				</li>
+				<li>
+					<strong>3</strong>
+					<b>Fort</b>
+					<small>1 con, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+				</li>
+				<li>
+					<strong>5</strong>
+					<b>Ref</b>
+					<small>3 dex, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+				</li>
+				<li>
+					<strong>5</strong>
+					<b>Will</b>
+					<small>1 wis, 3 class, <u title="Cloak of Resistance">1 resistance</u></small>
+				</li>
+				<li class="circumstancialBonus br" title="Elven Immunities"><u>+2 racial</u> vs enchantment, Immune sleep</li>
+				<li>
+					<strong>1</strong>
+					<b>CMB</b>;	15 <b>CMD</b>
+					<small>1 bab, 0 str, 3 dex, <u title="Dodge">1 dodge</u></small>
+				</li>
+			</ul>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<!--Light Crossbow-->
+				<div class="weapon">
+					<h2>Light Crossbow <b>19x2</b> <b>80ft.</b> <b>P</b></h2>
+					<div class="summation"><strong>+5</strong> vs AC <small>1 bab, 3 dex, 1 mwk</small></div>
+					<div class="summation"><strong title="Marksman">1d10</strong></div>
+					<div class="circumstancialBonus" title="Crossbow Training">
+						Loading a light crossbow is, for Arwen, a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a>.
+					</div>
+				</div>
+
+				<h2>Arcane Reservoir (Su) <u title="3 class, 1 arcanist&frac12;">4 points</u></h2>
+				<ul>
+					<li title="Potent Magic">Spend 1 as part of casting to increase DC by <u>2</u>.</li>
+					<li title="Potent Magic">Spend 1 as part of casting to increase CL by <u>2</u>.</li>
+					<li title="Arcane Barrier">
+						Spend 1* as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>
+						to gain <u title="3 arcanist, 0 cha">3</u> temporary HP for <u title="3 arcanist">3</u> minutes.
+						<small>*Cost increases every time.</small>
+					</li>
+				</ul>
+				<h2>Consume Spell (Su) <u title="0 cha, minimum 1">1/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>,
+					sacrifice a spell of level X to regain X arcane points.</p>
+			</div>
+		</section>
+
+		<!-- title Spells -->
+		<hr>
+		<div id="spellHeader" class="apartee">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Intelligence modifier.<br>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Intelligence modifier.<br>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.
+		</div>
+		<section class="row">
+			<div>
+				<h2 title="5 prepared">Level 0</h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/arcane-mark">arcane mark</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mage-hand">mage hand</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>.</li>
+				</ul>
+
+				<h2>Elven Magic</h2>
+				<p>+2 vs Spell Resistance</p>
+			</div>
+			<div>
+				<h2 title="3 prepared">Level 1 <u title="4 class, 2 int">6/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mage-armor">mage armor</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Scrolls</h2><!--15x25-->
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/crafter-s-fortune">crafter's fortune</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/expeditious-retreat">expeditious retreat</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/floating-disk">floating disk</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/identify">identify</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/k/keep-watch">keep watch</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mage-armor">mage armor</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-weapon">magic weapon</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mount">mount</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/o/obscuring-mist">obscuring mist</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/reduce-person">reduce person</a>,</li>
+					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Spellbook</h2><!--(10 spellbook + 15 scroll - 7 free - 1 off-class)x10-->
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/charm-person">charm person</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/ear-piercing-scream">ear-piercing scream</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/infernal-healing">infernal healing</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-missile">magic missile</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/ray-of-enfeeblement">ray of enfeeblement</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/silent-image">silent image</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/sleep">sleep</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster I</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/u/unseen-servant">unseen servant</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>,</li>
+					<li>and everything listed under Scrolls.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+		</ul>
+		<ul id="inventory">
+			<!--Weapons-->
+			<li class="br"><!--335 (ammo: 2gp for 10)-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Light Crossbow</a>, masterwork
+				<small>simple ranged, 1d8, 19x2, P, 80ft.</small>
+				<div class="circumstancialBonus">20 bolts, cold-iron</div>
+			</li>
+
+			<!--Armors-->
+			<li><!--3-->
+				<a href="https://d20pfsrd.com/equipment/armor/eastern-armor-and-shields">Haramaki</a>
+				<small>light, 1 armor, - dex, 0 acp, 0% asf</small>
+			</li>
+			<li class="br"><!--1003-->
+				<a href="https://d20pfsrd.com/equipment/special-materials#Mithral">Mithral</a>
+				<a href="https://d20pfsrd.com/equipment/armor/buckler">Buckler</a>
+				<small>1 shield, - dex, 1 acp, 5% asf</small>
+			</li>
+
+			<!--Misc-->
+			<li><!--50--><a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a></li>
+			<li><!--15, 5-->Spellbook &amp; Spell Component Pouch</li>
+			<li>20 <b>GP</b><!--/3000--></li>
+		</ul>
+	</div>
+</body>
+</html>
