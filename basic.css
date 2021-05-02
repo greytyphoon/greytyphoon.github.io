@@ -166,9 +166,11 @@ body > .container { padding: 10px 25px .5px 25px; }
 		margin: 0 -.5rem;
 	}
 	section.row > * {
-		flex: 1;
+		flex: 2;
 		margin: 0 .5rem;
 	}
+	section.row > .slim { flex: 1; }
+	section.row > .wide { flex: 4; }
 }
 
 /********************
