@@ -792,6 +792,14 @@
 					<td>PF</td>
 					<td>Flexible</td>
 				</tr>
+				<tr>
+					<td><a href="sheets/Zoe.html">Zoe Buras</a>, charming diplomat, a.k.a. <a href="sheets/Zoe.html">Akroma</a>, celestial warlock</td>
+					<td>Aasimar</td>
+					<td>Vigilante</td>
+					<td>4</td>
+					<td>PF</td>
+					<td>Flexible</td>
+				</tr>
 			</tbody>
 			</table>
 		</details>
@@ -865,8 +873,8 @@
 		new Tablesort(document.getElementById('tblMonsters'));
 		function RandomRedirect(target)
 		{
-			var allCharLinks = document.querySelectorAll("table#"+target+" td:first-child > a[href]");
-			var randomIndex = Math.floor(Math.random() * allCharLinks.length);
+			let allCharLinks = document.querySelectorAll("table#"+target+" td:first-child > a[href]:first-child");
+			let randomIndex = Math.floor(Math.random() * allCharLinks.length);
 			window.location.href = allCharLinks[randomIndex].href;
 		}
 	</script>
