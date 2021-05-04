@@ -6,10 +6,12 @@
 	<title>GM Screen</title>
 	<link rel="stylesheet" href="../../system/pfGeneric.css">
 	<style>
+		a.pantheon { color: var(--divination-blue); }
 		#history { padding-left: 12rem; }
-		#history summary, #history h3 { margin-left: -12rem; }
-		#history h3 { float: left; }
-		li.hook.caxton { list-style-type: circle; }
+		#history summary { margin-left: -12rem; }
+		#history h3, #history h4 { margin-top: .15em; margin-left: -11rem; float: left; }
+		ul.caxton, li.caxton { list-style-type: circle; }
+		ul.forest, li.forest { list-style-type: square; }
 	</style>
 </head>
 <body>
@@ -47,18 +49,23 @@
 					<li><a href="../../sheets/Folwyn.html">Folwyn Freyar'wyntalaen</a>.</li>
 				</ul>
 			</details>
-			<details open>
+			<details class="wide" open>
 				<summary class="subtitle">My adventures</summary>
+				<section class="row">
 				<ul>
 					<li><a href="Q1-abandonned-outpost.html">Faeqen</a>,</li>
 					<li><a href="Q2-the-totem.html">Wendigo</a>,</li>
 					<li><a href="Q3-minecraft.html">Minecraft</a>,</li>
 					<li><a href="Q4-demon-boar.html">Démon Sanglier</a>,</li>
 					<li><a href="Q5-monastery.html">Monastère</a>,</li>
+				</ul>
+				<ul>
 					<li><a href="Q6-minecart.html">Chariots nains</a>,</li>
 					<li><a href="Q7-dinosaurs.html">Dinosaures</a>,</li>
-					<li><a href="Q8-deck-of-cards.html">Jeux de cartes</a>.</li>
+					<li><a href="Q8-deck-of-cards.html">Jeux de cartes</a>,</li>
+					<li>TBD.</li>
 				</ul>
+				</section>
 			</details>
 		</section>
 
@@ -67,9 +74,12 @@
 		<section class="row">
 			<div class="wide">
 				<h2>St-Élie</h2>
-				<ul>
+				<ul class="st-elie">
+					<li><b>Coralie Gaudreault</b>, mairesse de St-Élie, mécène fervente de <a class="pantheon" href="https://pathfinderwiki.com/wiki/Shelyn">Shelyn</a> avec une vision d'avenir</li>
+					<li><b>Hugo Béland</b>, prêtre d'<a class="pantheon" href="https://pathfinderwiki.com/wiki/Erastil">Erastil</a>, guérisseur et maître d'école</li>
 					<li><b>Oletha</b>, la doyenne de St-Élie</li>
-					<li><b>Peter Faeqen</b></li>
+					<li><b>Peter Faeqen</b>, pêcheur entreprenant</li>
+					<li><b>Pietro-Alvarez</b>, halfling palefrenier, endeuillé de l'auberge Faeqen</li>
 					<li><a href="../../sheets/Arwen.html">Arwen Telrunyá</a>, arcaniste et historienne spécialisée en écritures anciennes</li>
 					<li><b>Sargaro Malek</b>, bras droit de la mairesse</li>
 					<li><b>Tarken Malek</b>, le maréchal-ferrant</li>
@@ -77,20 +87,22 @@
 				</ul>
 
 				<h2>Caxton</h2>
-				<ul>
+				<ul class="caxton">
+					<li><b title="Male Dwarf, Middle-Aged, +CHA">Dotok JadeRune</b>, lieutenant-général de Caxton et diaboliste</li>
 					<li><b title="Male Dwarf, +CON">Cole DiamondOre</b>, chef d'équipe minière de Caxton</li>
 					<li><b title="Female Dwarf, +STR +CHA">Fortrude PeridotBrander</b>, maître-gladiatrice au <i title="Arène de Glagiateurs, plutôt récente">Pinacle de Caxton</i></li>
 					<li><b title="Male Dwarf, +INT">Dostaek d'Onyx</b>, propriétaire du <i title="Magasin de Cristaux Magiques, plutôt récente">Crystal Peak</i></li>
-					<li><a title="Female Dwarf" href="../../sheets/Renka.html">Renka Topazworth</a>, prêtresse de Pharasma et sage-femme</li>
+					<li><a title="Female Dwarf" href="../../sheets/Renka.html">Renka Topazworth</a>, prêtresse de <a class="pantheon" href="https://pathfinderwiki.com/wiki/Pharasma">Pharasma</a> et sage-femme</li>
 					<li><b title="Female Dwarf, Young, +INT">Camelia Jadesong</b>, alchimiste avec un salon de thé</li>
 					<li><b title="Male Dwarf, Middle-aged, +WIS">Rolf</b>
 						et <b title="Male Dwarf, Middle-aged, +CHA">Malo Quartzcatcher</b>, propriétaires de la <i title="Taverne, bien établie">Jealous Unicorn</i></li>
 					<li><b title="Female Halfling, +CHA">Isaris Lune-Baie</b>, pianiste à la <i>Jealous Unicorn</i></li>
-					<li><a title="Male Human" href="https://d20pfsrd.com/bestiary/monster-listings/undead/vampire">Salomon Archibald Thrausvult</a>, wealthy investor</li>
+					<li><a title="Male Human" href="https://d20pfsrd.com/bestiary/monster-listings/undead/vampire">Salomon Archibald Thrausvult</a>, wealthy investor, mafia boss, anti-diabolist</li>
+					<li class="circumstancialBonus">et ses <a href="https://d20pfsrd.com/bestiary/monster-listings/templates/zombie-juju-cr-1">zombies Ju-Ju</a> de garde</li>
 				</ul>
 
 				<h2>La forêt</h2>
-				<ul>
+				<ul class="forest">
 					<li><a href="https://d20pfsrd.com/gamemastering/haunts/cr-4-6/mad-monk-cr-5">Revere</a>, le moine fantôme</li>
 					<li><a href="https://d20pfsrd.com/bestiary/monster-listings/fey/kikimora">Tu</a>, le kikimora</li>
 					<li><a href="Q4-jiko-bo.html">Jiko-Bô</a>, dryade corrompue</li>
@@ -100,13 +112,13 @@
 			<div>
 				<h2>Quest Hooks</h2>
 				<ul>
-					<li class="hook caxton">What trials await Gladiators?</li>
-					<li class="hook caxton">Who stole from the mines?</li>
-					<li class="hook caxton">Who's extorting money?</li>
-					<li class="hook caxton">Who wants to normalize devils?</li>
-					<li class="hook forest">What's under the monastery?</li>
-					<li class="hook forest">Where does the black blood come from?</li>
-					<li class="hook forest">Where is Jiko-Bô, the black-blooded dryad?</p>
+					<li class="caxton">What trials await Gladiators?</li>
+					<li class="caxton">Who stole from the mines?</li>
+					<li class="caxton">Who's extorting money?</li>
+					<li class="caxton">Who wants to normalize devils?</li>
+					<li class="forest">What's under the monastery?</li>
+					<li class="forest">Where does the black blood come from?</li>
+					<li class="forest">Where is Jiko-Bô, the black-blooded dryad?</p>
 				</ul>
 
 				<h2>Gladiators</h2>
@@ -139,8 +151,8 @@
 				He was chained at the heart of this world, cursed to remain there eternally.
 				He decayed into a mass of his pure magic, corrupted and necromantic.
 				(<a href="https://pathfinderwiki.com/wiki/Moldering_Emperor">Moldering Emperor</a>, <a href="https://d20pfsrd.com/bestiary/monster-listings/aberrations/neothelid">neothelid</a>)</p>
-			<p><b>Conjunction of Spheres: Pain</b>
-				Outsiders discovered this plane.
+			<h4>Spheres: Pain</h4>
+			<p>Outsiders discovered this plane.
 				<a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/kyton">Kytons</a>
 				felt the magic of the captive, tried to harness it, but were turned into eternal <a href="https://d20pfsrd.com/bestiary/monster-listings/templates/runeslave-cr1">runeslaves</a>.
 				They are currently mostly dormant, but still seek ways to free their master, though none seems to exist.</p>
@@ -156,15 +168,15 @@
 				those who seeked the "blessing" of the black blood,
 				those who betrayed their queen under a new advantageous leadership,
 				and those who kept serving their distant queen.</p>
-			<p><b>Conjunction of the Spheres: Antagonists</b>
-				Other races discovered this places.
+			<h4>Spheres: Antagonists</h4>
+			<p>Other races discovered this places.
 				More elves arrived, and competing drows appeared.
 				The Drow kingdom shattered, and abandonned this colony.</p>
 
 			<h3 title="700 years ago">The Era of Outlaws</h3>
 			<p>The forest had long been abandonned, thought to be "cursed".
 				Bandits used it as a safe hiding spot, as the curse was safer for them than the law.
-				A rebelious bandit leader emerged, and seceded from the established country: he became <b>King Eloïm the Faithful</b> under the patronage of <a href="https://pathfinderwiki.com/wiki/Gorum">Gorum</a>.
+				A rebelious bandit leader emerged, and seceded from the established country: he became <b>King Eloïm the Faithful</b> under the patronage of <a class="pantheon" href="https://pathfinderwiki.com/wiki/Gorum">Gorum</a>.
 				His country was brutal.
 				He harnessed Orcs as slaves, soldiers, and general labor.
 				"Faithful" was his own chosen name, which he spread through propaganda: in truth, he was ruthless and feared.
@@ -173,7 +185,8 @@
 				They were quickly sent to the circus.</p>
 			<p>His son, <b>King Coramund the Beast</b>, was very similar, and just as lavish.
 				He did not hold religion to the same standard, and his already not-very-erudite-or-religious kingdom became just a little more brutal.</p>
-			<p><b>Conjunction of spheres: Bureaucrat</b> When travel was possible, <b>King Sigfried the Fair</b> tried explanding on other planes &mdash; and succeeded.
+			<h4>Spheres: Bureaucrat</h4>
+			<p>When travel was possible, <b>King Sigfried the Fair</b> tried explanding on other planes &mdash; and succeeded.
 				Many of his warriors were moved to other planes were magic was more plentiful, the land was less hostile, and armies of vicious warriors ready to be magically enhanced were an unstoppable force.
 				The king himself eventually moved to the new world.</p>
 			<p>As the planes dissociated, his sister took up leadership.
