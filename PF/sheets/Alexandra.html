@@ -8,9 +8,9 @@
 	<link rel="stylesheet" href="../system/pfCharacter.css">
 	<style>
 		#listPerformances { font-size: 0.8rem; }
-		.raging-song { color: var(--transmutation-teal); }
-		.raging-song > .weapon { color: var(--murder-black); border-color: var(--transmutation-teal); }
-		.raging-song > .weapon > h2 { background-color: var(--transmutation-teal); border-color: var(--transmutation-teal); }
+		.rage { color: var(--transmutation-teal); }
+		.rage > .weapon { color: var(--murder-black); border-color: var(--transmutation-teal); }
+		.rage > .weapon > h2 { background-color: var(--transmutation-teal); border-color: var(--transmutation-teal); }
 	</style>
 </head>
 <body>
@@ -21,7 +21,7 @@
 
 	<div class="container">
 		<header>
-			<h1>Alexandra Faeqen, red mage</h1>
+			<h1>Alexandra Faeqen, knight errant</h1>
 			LG Medium humanoid
 		</header>
 
@@ -237,7 +237,7 @@
 			<!--end of Basics: Statblock and Weapons-->
 
 			<!--Raging Song-->
-			<div class="raging-song">
+			<div class="rage">
 				<ul class="summations">
 					<li class="br">
 						<strong>4</strong>
@@ -299,16 +299,14 @@
 				<h2>Raging Song <u title="1 class, 2 cha, 8 bard*2, 6 feat, 3 trait">20 rounds/day</u></h2>
 				As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions" title="Diminishes at 7th, 13th.">standard action</a>, start any:<br/>
 				<dl id="listPerformances">
-					<dt>Inspired Rage <small>Su, Audible</small></dt>
-					<dd>
+					<dt class="rage">Inspired Rage <small>Su, Audible</small></dt>
+					<dd class="rage">
 						Allies get
 						<u title="Increases by 2 at 1st, 8th, 16th.">+2 morale</u> to STR/CON,
 						<u title="Increases at 1st, 4th, 8th, 12th, 16th, 20th.">+2 morale</u> to Will,
 						-1 to AC.
 					</dd>
-					<dd>By spending twice as many rounds, allies also get
-						<a href="https://d20pfsrd.com/feats/combat-feats/precise-strike-combat-teamwork">Precise Strike</a>.
-					</dd>
+					<dd class="rage">Allies also get <a href="https://d20pfsrd.com/feats/combat-feats/precise-strike-combat-teamwork">Precise Strike</a> if you spend 2 rounds.</dd>
 					<dt>Song of Marching <small>Su, Audible</small></dt>
 					<dd>
 						Allies within 60ft. may hustle without penalty for 1 hour.
@@ -361,13 +359,13 @@
 				<p>+2 CL when casting <span class="spell divination">divinations</span> with your heirloom harrow deck.</p>
 			</div>
 			<div>
-				<h2>Scrolls</h2><!--6x25-->
+				<h2>Scrolls</h2><!--5x25-->
 				<ul>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/feather-step">feather step</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-weapon">magic weapon</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a> &times; 2,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a>.</li>
 				</ul>
 
 				<h2>Potions</h2><!--2x50-->
@@ -412,7 +410,7 @@
 			<li><!--50-->
 				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
 			</li>
-			<li>8 <b>GP</b><!--/6000--></li>
+			<li>33 <b>GP</b><!--/6000--></li>
 		</ul>
 	</div>
 </body>
