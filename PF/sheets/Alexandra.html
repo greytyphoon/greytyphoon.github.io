@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Skald</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		#listPerformances { font-size: 0.8rem; }
+		.raging-song { color: var(--transmutation-teal); }
+		.raging-song > .weapon { color: var(--murder-black); border-color: var(--transmutation-teal); }
+		.raging-song > .weapon > h2 { background-color: var(--transmutation-teal); border-color: var(--transmutation-teal); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Alexandra Faeqen, red mage</h1>
+			LG Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>20 <small>17, <u title="Racial">2</u>, <u title="Advancement">1</u></small></dd>
+
+				<dt>Dex</dt>
+				<dd>14</dd>
+
+				<dt>Con</dt>
+				<dd>12</dd>
+
+				<dt>Int</dt>
+				<dd>10</dd>
+
+				<dt>Wis</dt>
+				<dd>10</dd>
+
+				<dt>Cha</dt>
+				<dd>14</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/skald">Skald</a> 4</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/hybrid-classes/skald/archetypes/paizo-skald-archetypes/battle-scion-skald-archetype">Battle Scion</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Iomedae &amp; Irori</dd>
+
+				<dt>Senses</dt>
+				<dd>Normal</dd>
+
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/race-traits/harrow-chosen">Harrow Chosen</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/social-traits/maestro-of-society">Maestro of the Society</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/magic-traits/two-world-magic">Two-World Magic</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/additional-traits">Additional Traits</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-unarmed-strike-combat">Improved Unarmed Strike</a></dd>
+			<dt>human</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/spellsong">Combat Reflexes</a>
+				<small>min.1</small></dd>
+			<dt>skald 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/extra-performance">Extra Performance</a>
+				<small>bonus</small></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/arcane-strike-combat">Arcane Strike</a>
+				<small>min.1</small></dd>
+			<dt>skald 2</dt>
+			<dd><u title="Versatile Performance">Oratory</u>: Diplomacy, Sense Motive</dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a>
+				<small>min.2</small></dd>
+			<dt>skald 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/precise-strike-combat-teamwork">Precise Strike</a>
+				<small>min.2</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>0 wis, 4 ranks, 3 class</small>
+			</li>
+
+			<!--Social Skills-->
+			<li>
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/perform">Perform (Oratory)</a>
+				<small>2 cha, 4 ranks, 3 class</small>
+				<div class="circumstancialBonus"><u title="Versatile Performance">replaces</u> Diplomacy &amp; Sense Motive</div>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/bluff">Bluff</a>
+				<small>2 cha, 1 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>
+				<small>2 cha, 1 ranks, 3 class</small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>
+				<small>2 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/climb">Climb</a>
+				<small>5 str, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/escape-artist">Escape Artist</a>
+				<small>2 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+				<small>0 int, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/swim">Swim</a>
+				<small>5 str, 1 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
+				<small>2 cha, 1 ranks, 3 class</small>
+			</li>
+
+			<!--Typed Skills-->
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (geography, history, local, nobility)</a>
+				<small>0 int, 4 ranks, 3 class, <u title="Bardic Knowledge, 2 skald&frac12;">2</u></small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="4 skald: 4 class, 0 int, 1 human, 2 background-skills">28 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>,
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>,
+			<a href="https://d20pfsrd.com/skills/handle-animal">Handle Animal</a>,
+			<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>,
+			<a href="https://d20pfsrd.com/skills/ride">Ride</a>,
+			<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>.
+		</p>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>4</strong>
+						<b>Init</b>
+						<small>2 dex, <u title="Reactionary">2 trait</u></small>
+					</li>
+					<li>
+						<strong>32</strong>
+						<b>HP</b>
+						<small>4 skald: 8 class, 1 con; -4 rolled</small>
+					</li>
+					<li class="br">
+						<strong>18</strong>
+						<b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
+						<small>10, 2 dex, 5 armor, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+					<li>
+						<strong>6</strong>
+						<b>Fort</b>
+						<small>1 con, 4 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>4</strong>
+						<b>Ref</b>
+						<small>2 dex, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>5</strong>
+						<b>Will</b>
+						<small>0 wis, 4 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li class="circumstancialBonus br" title="Well-Versed"><u>+4</u> vs bardic performance, sonic, language-dependant</li>
+					<li>
+						<strong>8</strong>
+						<b>CMB</b>;	21 <b>CMD</b>
+						<small>3 bab, 5 str, 2 dex, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<!--Lucerne Hammer-->
+				<div class="weapon">
+					<h2>Lucerne Hammer <b>20x2</b> <b>BP</b></h2>
+					<div class="apartee float"><b>PA</b> -1/+3</div>
+					<div class="summation"><strong>+9</strong> vs AC <small>3 bab, 5 str, 1 mwk</small></div>
+					<div class="summation"><strong>1d12+7</strong> <small>7 str&frac12;</small></div>
+					<div class="circumstancialBonus">
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-brace">Brace</a>,
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-reach">reach</a>,
+						+2 to sunder medium/heavy armor.
+					</div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<!--Raging Song-->
+			<div class="raging-song">
+				<ul class="summations">
+					<li class="br">
+						<strong>4</strong>
+						<b>Init</b>
+						<small>2 dex, <u title="Reactionary">2 trait</u></small>
+					</li>
+					<li>
+						<strong>36</strong>
+						<b>HP</b>
+						<small>4 skald: 8 class, 2 con; -4 rolled</small>
+					</li>
+					<li class="br">
+						<strong>17</strong>
+						<b>AC</b> touch 12, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
+						<small>10, 2 dex, 5 armor, <u title="Ring of Protection">1 deflection</u>, -1 rage</small>
+					</li>
+					<li>
+						<strong>7</strong>
+						<b>Fort</b>
+						<small>2 con, 4 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>4</strong>
+						<b>Ref</b>
+						<small>2 dex, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>7</strong>
+						<b>Will</b>
+						<small>0 wis, 4 class, <u title="Cloak of Resistance">1 resistance</u>, 2 rage</small>
+					</li>
+					<li class="circumstancialBonus br" title="Well-Versed"><u>+4</u> vs bardic performance, sonic, language-dependant</li>
+					<li>
+						<strong>9</strong>
+						<b>CMB</b>;	21 <b>CMD</b>
+						<small>3 bab, 6 str, 2 dex, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<!--Lucerne Hammer-->
+				<div class="weapon">
+					<h2>Lucerne Hammer <b>20x2</b> <b>BP</b></h2>
+					<div class="apartee float"><b>PA</b> -1/+3</div>
+					<div class="summation"><strong>+10</strong> vs AC <small>3 bab, 6 str, 1 mwk</small></div>
+					<div class="summation"><strong>1d12+9</strong> <small>9 str&frac12;</small></div>
+					<div class="circumstancialBonus">
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-brace">Brace</a>,
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-reach">reach</a>,
+						+2 to sunder medium/heavy armor.
+					</div>
+				</div>
+			</div>
+			<!--end of Raging Song-->
+
+			<div>
+				<h2>Arcane Strike</h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, add <u title="Increases at 1st, 5th, 10th, 15th, 20th level">1 damage</u> to your weapons.</p>
+
+				<h2>Raging Song <u title="1 class, 2 cha, 8 bard*2, 6 feat, 3 trait">20 rounds/day</u></h2>
+				As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions" title="Diminishes at 7th, 13th.">standard action</a>, start any:<br/>
+				<dl id="listPerformances">
+					<dt>Inspired Rage <small>Su, Audible</small></dt>
+					<dd>
+						Allies get
+						<u title="Increases by 2 at 1st, 8th, 16th.">+2 morale</u> to STR/CON,
+						<u title="Increases at 1st, 4th, 8th, 12th, 16th, 20th.">+2 morale</u> to Will,
+						-1 to AC.
+					</dd>
+					<dd>By spending twice as many rounds, allies also get
+						<a href="https://d20pfsrd.com/feats/combat-feats/precise-strike-combat-teamwork">Precise Strike</a>.
+					</dd>
+					<dt>Song of Marching <small>Su, Audible</small></dt>
+					<dd>
+						Allies within 60ft. may hustle without penalty for 1 hour.
+					</dd>
+				</dl>
+			</div>
+		</section>
+
+		<!-- title Spells -->
+		<hr>
+		<div id="spellHeader" class="apartee">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Charisma modifier.<br/>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Charisma modifier.<br/>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.<br/>
+		</div>
+		<section class="row">
+			<div>
+				<h2 title="9 spells known: 6 class, 3 fc">Level 0</h2>
+				<ul>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
+					<li><a class="spell divination bonus off-class" title="Two-World Magic" href="https://d20pfsrd.com/magic/all-spells/g/guidance">guidance</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mending">mending</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/message">message</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>,</li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/r/read-magic">read magic</a>,</li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/s/sift">sift</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="5 spells known: 4 class, 1 fc">Level 1 <u title="3 class, 1 cha">4/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/moment-of-greatness">moment of greatness</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/saving-finale">saving finale</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/solid-note">solid note</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="2 spells known: 2 class">Level 2<u title="1 class, 1 cha">2/day</u></h2>
+				<ul>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/g/gallant-inspiration">galant inspiration</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/heroism">heroism</a>.</li>
+				</ul>
+
+				<h2 title="Harrow Chosen"><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/a/augury">augury</a> <b>2/week</b></h2>
+				<h2>Harrow Chosen</h2>
+				<p>+2 CL when casting <span class="spell divination">divinations</span> with your heirloom harrow deck.</p>
+			</div>
+			<div>
+				<h2>Scrolls</h2><!--6x25-->
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/feather-step">feather step</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-weapon">magic weapon</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a> &times; 2,</li>
+				</ul>
+
+				<h2>Potions</h2><!--2x50-->
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a>.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+		</ul>
+		<ul id="inventory">
+			<!--Weapons-->
+			<li><!--330-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Lucerne Hammer</a>, cold-iron masterwork
+				<small>martial two-handed, 1d12, 20x2, BP, brace reach.</small>
+			</li>
+			<li class="br"><!--100 (ammo: 2 gp for 20)-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Longbow</a>, composite[0]
+				<small>martial ranged, 1d8, 20x3, P, 80ft.</small>
+				<div class="circumstancialBonus">20 arrows, cold-iron</div>
+			</li>
+
+			<!--Armors-->
+			<li><!--2100-->
+				<a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a> +1
+				<small>light, 4 armor, 6 dex, 0 acp, 10% asf</small>
+			</li>
+			<li class="br"><!--155-->
+				<a href="https://d20pfsrd.com/equipment/armor">Buckler</a>, masterwork
+				<small>1 shield, - dex, 1 acp, 5% asf</small>
+			</li>
+
+			<li><!--5-->
+				Spell Component Pouch &amp; Heirloom harrow deck
+			</li>
+			<li><!--50-->
+				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</li>
+			<li>8 <b>GP</b><!--/6000--></li>
+		</ul>
+	</div>
+</body>
+</html>
