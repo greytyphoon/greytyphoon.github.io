@@ -9,7 +9,6 @@
 		@media print { table#wild-shapes * { font-size: 14px; } }
 		#tblInventory { width: unset; }
 		#tblInventory td + td, #tblInventory th + th { text-align: right; }
-		.emblazon-energy { color: var(--transmutation-teal); }
 	</style>
 </head>
 <body>
@@ -201,15 +200,15 @@
 				<div class="weapon">
 					<h2>Trident +1 Striking, Returning <b>P</b></h2>
 					<div class="summation"><strong>+18</strong>/<strong>13</strong>/<strong>8</strong> vs AC <small>4 str, 4 prf, 9 lvl, <u title="Potency Rune">1 item</u></small></div>
-					<div class="summation"><strong>2d8+4</strong><em class="emblazon-energy">+1d4</em> <small>4 str</small></div>
+					<div class="summation"><strong>2d8+4+<span class="cold" title="Emblazon Energy">1d4❄</span></strong> <small>4 str</small></div>
 					<div class="circumstancialBonus">Thrown 20ft. On crit, <a href="https://2e.aonprd.com/Conditions.aspx?ID=3">clumsy 1</a> for 1 round.</div>
 				</div>
 
 				<!--Ray of Frost-->
 				<div class="weapon">
-					<h2>Ray of Frost <b>Cold</b> <b>120ft strict</b></h2>
+					<h2>Ray of Frost <b class="cold">❄</b> <b>120ft strict</b></h2>
 					<div class="summation"><strong>+14</strong> vs AC <small>primal spell attack</small></div>
-					<div class="summation"><strong>5d4+3</strong> <small>3 wis</small></div>
+					<div class="summation"><strong class="cold">5d4+3</strong> <small>3 wis</small></div>
 				</div>
 			</div>
 			<!--end of Basics: Statblock and Weapons-->

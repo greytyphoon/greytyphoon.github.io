@@ -50,7 +50,7 @@ ul.summations > li > .circumstancialBonus { padding-left: 0; }
 .apartee.align { text-align: right; }
 
 /********************
- * Spells and Schools
+ * Spells, Schools, damage types
  */
 .spell, a.spell { font-style:italic;}
 
@@ -89,6 +89,11 @@ ul.summations > li > .circumstancialBonus { padding-left: 0; }
 .spell.domain.off-class::before,
 .spell.patron.off-class::before,
 .spell.bloodline.off-class::before { content: "\0394\00a0"; }
+
+.fire, a.fire, a.fire:visited { color: var(--evocation-red); }
+.cold, a.cold, a.cold:visited { color: var(--transmutation-teal); }
+.acid, a.acid, a.acid:visited { color: var(--conjuration-green); }
+.electricity, a.electricity, a.electricity:visited { color: var(--abjuration-gold); }
 
 /********************
  * CharStudies and Tables (tblComparison / playerInfo)
