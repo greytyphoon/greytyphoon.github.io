@@ -90,10 +90,10 @@ ul.summations > li > .circumstancialBonus { padding-left: 0; }
 .spell.patron.off-class::before,
 .spell.bloodline.off-class::before { content: "\0394\00a0"; }
 
-.fire, a.fire, a.fire:visited { color: var(--evocation-red); }
-.cold, a.cold, a.cold:visited { color: var(--transmutation-teal); }
-.acid, a.acid, a.acid:visited { color: var(--conjuration-green); }
-.electricity, a.electricity, a.electricity:visited { color: var(--abjuration-gold); }
+.fire:not(.spell), a.fire:not(.spell), a.fire:not(.spell):visited { color: var(--evocation-red); }
+.cold:not(.spell), a.cold:not(.spell), a.cold:not(.spell):visited { color: var(--transmutation-teal); }
+.acid:not(.spell), a.acid:not(.spell), a.acid:not(.spell):visited { color: var(--conjuration-green); }
+.electricity:not(.spell), a.electricity:not(.spell), a.electricity:not(.spell):visited { color: var(--abjuration-gold); }
 
 /********************
  * CharStudies and Tables (tblComparison / playerInfo)
