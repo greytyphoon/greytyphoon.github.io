@@ -9,10 +9,10 @@
 	<title>Grey's Sorcerer</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
 	<style>
+		section.row > .wider { flex: 6; }
 		.spell.charm::after { content: " [charm]"; font-size: .8em; color: var(--enchantment-lilac); }
 		.spell.compulsion::after { content: " [compulsion]"; font-size: .8em; color: var(--enchantment-lilac); }
 		.spell.charm.compulsion::after { content: " [charm|compulsion]"; font-size: .8em; color: var(--enchantment-lilac); }
-		.sleep-deprived { color: var(--html-darkgrey); font-size: .75em; }
 	</style>
 </head>
 <body>
@@ -84,7 +84,7 @@
 			<dd><a href="https://d20pfsrd.com/feats/general-feats/additional-traits">Additional Traits</a></dd>
 			<dd><a href="https://d20pfsrd.com/feats/general-feats/stealthy">Stealthy</a></dd>
 			<dt>level 1</dt>
-			<dd><a href="https://d20pfsrd.com/feats/general-feats/noble-scion">Noble Scion of War</a>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-initiative-combat">Improved Initiative</a>
 				<small>min.1</small></dd>
 			<dt>sorcerer 1</dt>
 			<dd><a href="https://d20pfsrd.com/feats/general-feats/eschew-materials">Eschew Materials</a>
@@ -178,9 +178,9 @@
 			<!--Basics: Statblock and Weapons-->
 			<ul class="summations">
 				<li class="br">
-					<strong>11</strong>
+					<strong>10</strong>
 					<b>Init</b>
-					<small>4 dex, <u title="Noble Scion of War">5 cha</u>, <u title="Reactionary">2 trait</u></small>
+					<small>4 dex, <u title="Improved Initiative">4 feat</u>, <u title="Reactionary">2 trait</u></small>
 				</li>
 				<li>
 					<strong>31</strong>
@@ -231,8 +231,7 @@
 				<p>As an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
 					an enemy hit by your melee touch attack (<u title="2 bab, -3 str, 2 size">+1</u>, reach 0ft.)
 					can only take a move action on his next turn.
-					It can't be affected again today.
-					This is a mind-affecting effect.</p>
+					<small>Once per day per enemy, counts as mind-affecting.</small></p>
 
 				<h2>Fairy Dust</h2>
 				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>,
@@ -275,40 +274,19 @@
 					<li><a class="spell enchantment compulsion" href="https://d20pfsrd.com/magic/all-spells/s/sleep">sleep</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>.</li>
 				</ul>
-				<h2 class="sleep-deprived">Immune to Sleep</h2>
-				<ul class="sleep-deprived">
-					<li>Elves,</li>
-					<li>Dragons,</li>
-					<li>Constructs,</li>
-					<li>Oozes,</li>
-					<li>Plants,</li>
-					<li>Undeads.</li>
-				</ul>
 			</div>
 			<div>
 				<h2 title="1 spells known: 1 class">Level 2 <u title="3 class, 1 cha">4/day</u></h2>
 				<ul>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a>.</li>
 				</ul>
+				<p class="apartee">
+					Elves &amp; Dragons are immune to <span class="spell enchantment">sleep</span>.<br>
+					Constructs, Oozes, Plants, Undead are immune to <span class="spell enchantment">mind-affecting</span>.
+				</p>
 			</div>
-			<div>
-				<h2>Scrolls</h2><!--20x25-->
-				<ul>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/alter-musical-instrument">alter musical instrument</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/identify">identify</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/k/keep-watch">keep watch</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mage-armor">mage armor</a> &times;4,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-weapon">magic weapon</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mount">mount</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/o/obscuring-mist">obscuring mist</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/protection-from-evil">protection from evil</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/reduce-person">reduce person</a>,
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a> &times;2,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a> &times;4.</li>
-				</ul>
-			</div>
+		</section>
+		<section class="row">
 			<div>
 				<h2>Potions</h2><!--8x50-->
 				<ul>
@@ -316,6 +294,29 @@
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a> &times;3,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/inflict-light-wounds">inflict light wounds</a> &times;2</li>
 				</ul>
+			</div>
+			<div class="wider">
+				<h2>Scrolls</h2><!--20x25-->
+				<section class="row">
+				<ul>
+					<li><a class="spell domain off-class" href="https://d20pfsrd.com/magic/all-spells/b/bless">bless</a> <u title="20 scroll, 1 caster level">[DC 21 UMD]</u>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mage-armor">mage armor</a> &times;4,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-weapon">magic weapon</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/o/obscuring-mist">obscuring mist</a>,</li>
+				</ul><ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/protection-from-evil">protection from evil</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/reduce-person">reduce person</a>,
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a> &times;2,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a> &times;3,</li>
+				</ul><ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/alter-musical-instrument">alter musical instrument</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/identify">identify</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/k/keep-watch">keep watch</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mount">mount</a>.</li>
+				</ul>
+				</section>
 			</div>
 		</section>
 
