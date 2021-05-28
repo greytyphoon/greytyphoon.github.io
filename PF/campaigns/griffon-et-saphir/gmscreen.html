@@ -10,8 +10,7 @@
 		#history { padding-left: 12rem; }
 		#history summary { margin-left: -12rem; }
 		#history h3, #history h4 { margin-top: .15em; margin-left: -11rem; float: left; }
-		ul.caxton, li.caxton { list-style-type: circle; }
-		ul.forest, li.forest { list-style-type: square; }
+		ul.list-unstyled, ul.apartee { list-style-type: none; }
 	</style>
 </head>
 <body>
@@ -62,19 +61,19 @@
 				</ul>
 				<h2>Quest Hooks</h2>
 				<ul>
-					<li class="caxton">What trials await Gladiators?</li>
-					<li class="caxton">Who stole from the mines?</li>
-					<li class="caxton">Who's extorting money?</li>
-					<li class="caxton">Who wants to normalize devils?</li>
-					<li class="forest">What's under the monastery?</li>
-					<li class="forest">What is that tower near Cape Yon?</li>
-					<li class="forest">Where does the black blood come from?</li>
-					<li class="forest">Where is Jiko-Bô?</p>
+					<li>What trials await Gladiators?</li>
+					<li>Who stole from the mines?</li>
+					<li>Who's extorting money?</li>
+					<li>Who wants to normalize devils?</li>
+					<li>What's under the monastery?</li>
+					<li>What is that tower near Cape Yon?</li>
+					<li>Where does the black blood come from?</li>
+					<li>Where is Jiko-Bô?</p>
 				</ul>
 			</div>
 			<div class="wide">
 				<h2>St-Élie</h2>
-				<ul class="st-elie">
+				<ul>
 					<li><b>Coralie Gaudreault</b>, mairesse de St-Élie, mécène fervente de <a class="pantheon" href="https://pathfinderwiki.com/wiki/Shelyn">Shelyn</a> avec une vision d'avenir</li>
 					<li><b>Hugo Béland</b>, prêtre d'<a class="pantheon" href="https://pathfinderwiki.com/wiki/Erastil">Erastil</a>, guérisseur et maître d'école</li>
 					<li><b>Oletha</b>, la doyenne de St-Élie</li>
@@ -88,12 +87,18 @@
 				</ul>
 
 				<h2>Caxton</h2>
-				<ul class="caxton">
+				<ul>
 					<li><b title="Male Dwarf, Middle-Aged, +CHA">Dotok JadeRune</b>, lieutenant-général de Caxton et diaboliste</li>
 					<li><b title="Male Dwarf, +CON">Cole DiamondOre</b>, chef d'équipe minière de Caxton</li>
 					<li><b title="Female Dwarf, +STR +CHA">Fortrude PeridotBrander</b>, maître-gladiatrice au <i title="Arène de Glagiateurs, plutôt récente">Pinacle de Caxton</i></li>
 					<li><b title="Male Dwarf, +INT">Dostaek d'Onyx</b>, propriétaire du <i title="Magasin de Cristaux Magiques, plutôt récente">Crystal Peak</i></li>
-					<li><a title="Female Dwarf" href="../../sheets/Renka.html">Renka Topazworth</a>, prêtresse de <a class="pantheon" href="https://pathfinderwiki.com/wiki/Pharasma">Pharasma</a> et sage-femme. <em>Grey</em> porte son <i>Holy Symbol</i>.</li>
+					<li><details>
+						<summary><a title="Female Dwarf" href="../../sheets/Renka.html">Renka Topazworth</a>, prêtresse de <a class="pantheon" href="https://pathfinderwiki.com/wiki/Pharasma">Pharasma</a> et sage-femme.</summary>
+						<ul class="apartee">
+							<li>Une prêtresse dévouée de Pharasma, qui n'a jamais eu accès au pouvoir divin, sentant que Pharasma avait d'autres plans pour elle. Elle est ravie de voir ce plan enfin en marche.</li>
+							<li>&#x2ba9; <b>Grey</b> porte son <i>Holy Symbol</i> de <a class="pantheon" href="https://pathfinderwiki.com/wiki/Pharasma">Pharasma</a>, trouvé dans la Rivière des Brumes.</li>
+						</ul>
+					</details></li>
 					<li><b title="Female Dwarf, Young, +INT">Camelia Jadesong</b>, alchimiste avec un salon de thé</li>
 					<li><b title="Male Dwarf, Middle-aged, +WIS">Rolf</b>
 						et <b title="Male Dwarf, Middle-aged, +CHA">Malo Quartzcatcher</b>, propriétaires de la <i title="Taverne, bien établie">Jealous Unicorn</i></li>
@@ -103,11 +108,54 @@
 				</ul>
 
 				<h2>La forêt</h2>
-				<ul class="forest">
-					<li><a href="https://d20pfsrd.com/gamemastering/haunts/cr-4-6/mad-monk-cr-5">Revere</a>, le moine fantôme d'<a class="pantheon" href="https://pathfinderwiki.com/wiki/Irori">Irori</a></li>
-					<li><a href="https://d20pfsrd.com/bestiary/monster-listings/fey/kikimora">Tu</a>, le kikimora</li>
-					<li><a href="Q4-jiko-bo.html">Jiko-Bô</a>, dryade corrompue au sang noir</li>
-					<li><a href="https://d20pfsrd.com/bestiary/monster-listings/fey/satyr">Arroyo</a> et <a href="https://d20pfsrd.com/bestiary/monster-listings/fey/satyr">Boreas</a>, frères satyres</li>
+				<ul class="list-unstyled">
+					<li><details>
+						<summary><a href="https://d20pfsrd.com/gamemastering/haunts/cr-4-6/mad-monk-cr-5">Revere</a>, le moine fantôme</summary>
+						<ul class="apartee">
+							<li>🏷️ Aucun visage. Gestes lents et délibérés.</li>
+							<li>Doyen du monastère, servant d'<a class="pantheon" href="https://pathfinderwiki.com/wiki/Irori">Irori</a>. Human Monk Sensei 6.</li>
+							<li>Tué par le Wendigo, sa mission de gardien l'a transformé en fantôme à sa mort.</li>
+							<li>Il n'aime pas savoir le passage ouvert, mais s'il y a quelqu'un à qui il fait confiance, il laisse faire. Il attaquera toute corruption remontée à la surface.</li>
+							<li>&#x2ba9; Offre un <a href="https://d20pfsrd.com/magic/all-spells/p/poison">poison</a> (<b>DC16</b>) pour <b>Brett</b>.</li>
+							<li>&#x2ba9; Offre <a href="https://d20pfsrd.com/magic/all-spells/c/cure-critical-wounds">cure critical wounds</a> pour <b>Denise</b>, <b>Indy</b>.</li>
+							<li>&#x2ba9; Offre du vin blanc normal pour <b>Rhald</b>, <b>Dunne</b>, <b>Matilda</b>, <b>Grey</b>.</li>
+							<li>Il n'apparaît tout simplement pas si personne qu'il connait n'est là.</li>
+						</ul>
+					</details></li>
+					<li><details>
+						<summary><a href="https://d20pfsrd.com/bestiary/monster-listings/fey/kikimora">Tu</a>, le kikimora</summary>
+						<ul class="apartee">
+							<li>🏷️ "Reeee!"</li>
+							<li>Elle vivait chez <b>Isaris Lune-Baie</b>, pianiste à la Jealous Unicorn, mais la pianiste a fait un pacte de protection avec un Imp qui a chassé Tu sur-le-champ.</li>
+							<li>Much more "Good" than a typical Kikimora, she’s not really the vermin type.</li>
+							<li>She loves manufactured items, though, for the time it took to make them. And she loves breaking them.</li>
+							<li>Elle en veut beaucoup à sa précédente victime, et aux diables de Caxton. Elle tente de convaincre d’autres fées d’aider.</li>
+							<li>En attendant, elle suit <b>Brett</b>, et casse des choses près de lui.</li>
+							<li>Elle ne sait pas, honnêtement, quoi faire de la promesse de Brett: elle sait juste que c’est précieux. Elle risque de la vendre à une autre fée.</li>
+						</ul>
+					</details></li>
+					<li><details>
+						<summary><a href="Q4-jiko-bo.html">Jiko-Bô</a>, dryade corrompue au sang noir</summary>
+						<ul class="apartee">
+							<li>🏷️ Condescendante, surtout avec des mortels</li>
+							<li>Corrompue par la violence du Wendigo. Elle ne pouvait pas abandonner ses arbres, et le Wendigo n'était pas intéressé par elle, elle a donc vu des siècles de morts atroces et de massacres insensés.</li>
+							<li>&#x2ba9; <b>Kuzon</b> a été kidnappé et marqué par elle: elle voulait se servir de son pouvoir pour rendre la forêt immortelle.</li>
+							<li>&#x2ba9; <b>Dunne</b>, <b>Gormak</b>, <b>Brett</b>, <b>Anethar</b> sont ses ennemis et seront attaqués à vue.</li>
+							<li>&#x2ba9; Elle a une entente avec <b>Arroyo</b> et <b>Boreas</b>: chacun respecte le territoire de l'autre. Pour elle, cette entente est temporaire.</li>
+						</ul>
+					</details></li>
+					<li><details>
+						<summary><a href="https://d20pfsrd.com/bestiary/monster-listings/fey/satyr">Arroyo</a> et <a href="https://d20pfsrd.com/bestiary/monster-listings/fey/satyr">Boreas</a>, frères satyres</summary>
+						<ul class="apartee">
+							<li>🏷️ "Taa-daah!"</li>
+							<li>Immortels dans le premier monde, ils sentent la forêt soudain accueillante et veulent en faire leur pied-à-terre.</li>
+							<li>Tout est plus intéressant quand il y a un risque!</li>
+							<li>Arroyo est un alcoolique, et échangera des faveurs contre de l’alcool. Il pense plus à la forêt.</li>
+							<li>Boreas est un poète, et prêtera ses services contre un bon sonnet. Il s’inquiète plus de Caxton.</li>
+							<li>Les deux frères sont toujours en train de se quereller de leur côté, mais s’arrangent pour que ça ne paraisse pas trop devant la guilde.</li>
+							<li>Ils sont parfaitement identiques, à part leur boucle d’oreille: Arroyo la porte à droite, Boreas à gauche.</li>
+						</ul>
+					</details></li>
 				</ul>
 
 				<h2>Gladiators</h2>
