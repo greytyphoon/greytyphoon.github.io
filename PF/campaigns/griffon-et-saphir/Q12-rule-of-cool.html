@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Plan</title>
+	<link rel="stylesheet" href="../../system/pfGeneric.css">
+	<style>
+		#fixref > ul > li > *.back::before { content:"\21a9"; content: "↩"; }
+		a.pantheon { color: var(--divination-blue); }
+		.bonus::before { content: "✅ "; }
+		.malus::before { content: "❌ "; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="back" href="gmscreen.html">G&amp;S</a></li>
+		<li><a class="names" href="http://rinkworks.com/namegen/fnames.cgi?d=1&f=2">Names</a></li>
+		<li><a class="injury" href="https://d20pfsrd.com/gamemastering/conditions">Conditions</a></li>
+		<li><a class="reward" href="https://donjon.bin.sh/pathfinder/magic/shop.html">Rewards</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Quête #12: Gladiteurs &amp;s Mafiosos</h1>
+		</header>
+		<p>Cette aventure est conçue pour 3-4 personnages de niveau 4. Cette aventure donnera 4 Expérience et 18 Réputation.</p>
+
+		<section class="row">
+			<div>
+				<h2>Convocation</h2>
+				<p>Aux champions gladiateurs du Griffon &amp; Saphir,</p>
+				<p>Notre arène a développé un sort prototype qui augmente la capacité au spectacle des combattants.
+					Nous en sommes aux derniers tests, et nous voulons le tester dans un combat réel.</p>
+				<p>Nous vous invitons donc à un combat de gladiateur plus simple, dans un esprit similaire au test des Gladiateurs.
+					Envoyez une équipe de trois ou quatre gladiateurs pour un spectacle sans compétition, et nous amènerons le public!</p>
+				<p>Puisque vous testez notre nouveau système, nous garantissons votre sécurité: cette fois, vous ne pourrez pas mourir dans l'arène.
+					Ne le dites pas trop fort, on veut garder les apparences pour notre public.</p>
+				<p>Fortrude, maître-gladiatrice au <em>Pinnacle de Caxton</em></p>
+			</div>
+			<div>
+				<h2>Convocation</h2>
+				<p>Cher Griffon &amp; Saphir,</p>
+				<p>Je vous remercie encore de votre aide.
+					Je suis en sécurité dans mon commerce, mais mes soucis ne s'arrêtent pas là.
+					Passez au <i>Crystal Peak</i>, je vous dirai le reste de vive voix.</p>
+				<p>Dostaek d'Onyx, propriétaire du <em>Crystal Peak</em></p>
+
+				<h2>Convocation</h2>
+				<p>Avec tout ce qui se passe à Sherbook, la guilde ne peut pas vraiment se permettre d'envoyer plein de monde à Caxton.
+					Il est donc décidé qu'on enverra un seul groupe pour ces deux missions en même temps.</p>
+			</div>
+		</section>
+
+		<section class="row">
+			<div>
+				<h2>Combats de Gladiateurs</h2>
+				<ul>
+					<li><a href="https://d20pfsrd.com/bestiary/monster-listings/dragons/sea-serpents-TOHC/sea-serpent-spitting">Spitting Sea Serpent</a> (CR9) &times; 2</li>
+					<li><a href="https://d20pfsrd.com/bestiary/monster-listings/dragons/dragon/chromatic-white/white-dragon-young-adult">YA White Dragon</a> (CR9)</a></li>
+				</ul>
+
+				<h2 lang="en">Rule of Cool</h2>
+				<p>Un sort spécial de Fortrude encourage les actes spectaculaires.
+					Si c'est <i>cool</i>, c'est fait à <b>+5</b>!
+					Il n'est cependant pas possible de se donner de bonus quand ce n'est pas toi qui roule (AC, spell DC, etc).
+					Le sort régénère aussi les Trophy Points, avant et après chaque combat.</p>
+
+
+				<h2>Juges</h2>
+				<p>Pour chaque combattant, la foule aura une attitude sur l'échelle de la diplomacie: <i>friendly</i>, <i>helpful</i>, <i>neutral</i>, <i>unhelpful</i>, <i>hostile</i>.
+					Chaque fois qu'un combattant fait une action qui plaît - ou déplaît - à la foule, ce combattant devra faire un Performance ou Diplomacy <b>DC 15</b>
+					pour avancer - ou éviter de reculer - sur cette échelle.</p>
+
+				<p>Actions évaluées:</p>
+				<ul>
+					<li class="bonus">Porter le premier coup (qui blesse),</li>
+					<li class="bonus">charger,</li>
+					<li class="bonus">intimider,</li>
+					<li class="bonus">faire un coup critique,</li>
+					<li class="malus">tomber par terre,</li>
+					<li class="malus">se faire déplacer,</li>
+					<li class="malus">se faire frapper par des ennemis en <i>flanking</i>,</li>
+					<li class="malus">se soigner en combat.</li>
+				</ul>
+				<p>Récompenses:</p>
+				<ul>
+					<li class="bonus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/anticipate-peril">anticipate peril</a> +5 initiative au prochain combat</li>
+					<li class="bonus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds">cure moderate wounds</a> pour 2d8+3</li>
+					<li class="bonus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a> pour 1 round (juste la taille et le reach, rien de plus)</li>
+					<li class="bonus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a> +2 AC pour 3 rounds</li>
+					<li class="malus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a> DC16 sur ton arme ou sous tes pieds, ne reste pas</li>
+					<li class="malus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a> pour 3 rounds: -40 stealth, <a href="https://d20pfsrd.com/Gamemastering/Conditions/#Dazzled">dazzled</a>.</li>
+					<li class="malus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/reduce-person">reduce person</a> pour un round (juste -speed et -damage dice)</li>
+					<li class="malus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster</a>
+						un <a href="https://d20pfsrd.com/bestiary/monster-listings/animals/dinosaur/dinosaur-troodon">troodon</a> apparaît derrière toi</li>
+				</ul>
+			</div>
+
+			<div>
+				<h2>Plan</h2>
+				<p>Dostaek ne reçoit plus de marchandises de la mine, et vous envoie voir <b>Cole</b>.</p>
+				<p><b>Cole</b> n'est pas très au courant, mais s'est fait dire que les cargaisons ont été annulées.</p>
+				<p><b>Dotok</b>??</p>
+				<p><b>Fortrude</b>??</p>
+				<p><b>Renka</b>??</p>
+				<p><b>Salomon</b>??</p>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
