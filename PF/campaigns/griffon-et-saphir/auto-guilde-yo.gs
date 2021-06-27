@@ -28,7 +28,8 @@ function myFunction() {
 
 function BuildCharactersArray() {
 	var mainSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Main");
-	var mainValues = mainSheet.getRange("A10:H54").getValues();
+	var mainValues = mainSheet.getRange("A10:H52").getValues()
+		.concat(mainSheet.getRange("A65:H68").getValues());
 	for (var i = 0; i < mainValues.length; i++) {
 		var playerName = mainValues[i][0];
 		var player = allPlayers.find(p => p.name === playerName);
