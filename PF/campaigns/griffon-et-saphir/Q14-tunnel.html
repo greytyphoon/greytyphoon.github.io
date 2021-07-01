@@ -31,8 +31,8 @@
 				<p>Arwen ne se sent pas bien et ne veut pas venir cette fois.
 					Elle ne veut pas nuire.
 					<b>[DC 25]</b> Pour se faire pardonner, elle offre deux scrolls:
-					<a href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a>
-					et <a href="https://d20pfsrd.com/magic/all-spells/r/restoration#Restoration_Lesser">lesser restoration</a>.</p>
+					<a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a>
+					et <a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/restoration#Restoration_Lesser">lesser restoration</a>.</p>
 				<p>La rivière est maintenant sécuritaire.</p>
 				<p>Le moine est encore à l'entrée. Il est habillé différemment, comme un guerrier, maintenant que le passage est ouvert.</p>
 				<p>Le passage est facile à ouvrir (dès que le lune est visible), on skip cette partie.</p>
@@ -44,13 +44,15 @@
 						<li>Il parle en mots très rudimentaires car il maîtrise mal le commun, mais en Terran il est très éloquent.</li>
 						<li>Il aime les serpents, et a été créé de l'âme d'un Lamia puissant.</li>
 						<li>On peut le combattre, lui amener un fruit de son arbre (Nature <b>DC 18</b> pour le faire pousser), ou Dunne peut faire un pacte d'honneur permanent avec lui.</li>
-						<li>Le pacte consiste à lier leurs âmes: si l'un meurt, l'autre meurt aussi; s'ils ne sont pas sur le même plan, ils dépérissent; tu gagnes <u class="acid">Resist 1 dmg 🧪</u> mais <u>Weakness 1 dmg 🔥<span class="cold">❄</span>⚡</u>; d'autres détails sont inconnus.</li>
+						<li>Le pacte consiste à lier leurs âmes: si l'un meurt, l'autre meurt aussi; s'ils ne sont pas sur le même plan, ils dépérissent;
+							tu gagnes <u class="acid">Resist 1 dmg 🧪</u> mais <u>Weakness 1 dmg 🔥<span class="cold">❄</span>⚡</u>
+							<b>ou</b> <u>+1 to CMD when touching the ground</u> mais <u>-1 to all Saving Throws when not touching the ground</u>;
+							tu dois réussir un jet de Will pour attaquer un Outsider [earth] (voir <a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/sanctuary">sanctuary</a>);
+							d'autres détails sont inconnus.</li>
 					</ul>
 				</details>
-				<p>Le tunnel s'enfonce. Il y a une cascade.</p>
-				<p>Des ruines anciennes commencent.</p>
-				<p>Illusions!</p>
-				<p>Le retour de <a href="Q4-jiko-bo.html">Jiko-Bô</a>!</p>
+				<p>Le tunnel s'enfonce. Il y a une cascade. <b>DC 18</b> Climb/Acrobatics pour descendre (Swim/Survival/Knowledge/Profession acceptés à <b>DC 22</b>).</p>
+				<p>Des ruines anciennes commencent. Il faut passer sous la cascade (ici commencent les illusions).</p>
 			</div>
 
 			<div>
@@ -61,12 +63,44 @@
 							<li>Protège éternellement le passage pour les moines.</li>
 							<li>Le groupe réussira-t-il à passer le gardien?</li>
 						</ul></li>
-					<li><b>S:</b> <a href="https://d20pfsrd.com/bestiary/monster-listings/undead/mummy/mummy-bog">Bog Mummy</a> (CR5) &times; 2</li>
-					<li><b>N:</b> <a href="https://d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/insanity-mist-trap-cr-5">Insanity Mist</a> (CR5)</li>
-					<li><b>W:</b> <a href="https://d20pfsrd.com/bestiary/monster-listings/plants/scythe-tree">Scythe Tree</a> (CR6)</li>
-					<li><b>E:</b> <a href="https://d20pfsrd.com/bestiary/monster-listings/magical-beasts/owlbear">Owlbear</a> (CR4) &times; 2</li>
+					<li><b>Côté lumière:</b> <a href="https://d20pfsrd.com/bestiary/monster-listings/undead/shadow">Shadow</a> (CR3) &times; 4</li>
+					<li><b>Côté rivière:</b> <a href="https://d20pfsrd.com/bestiary/npc-s/npcs-cr-5/expert-bodyguard-human-warrior-7">Dark Brett</a> (CR5)</li>
+					<li><a href="Q4-jiko-bo.html">Jiko-Bô</a>, dryade déchue (CR5)</li>
 				</ul>
+
+				<h2>Illusions</h2>
+				<p>La ville sousterraine est défendue par de puissantes illusions.
+					Il faut un caster level check <b>DC 23</b> pour même sentir l'illusion via <a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>.
+					Un personnage qui meurt dans l'illusion va probablement mourir dans la vie réelle, car son corps lâche, persuadé d'être incapable de fonctionner.
+					Si le personnage réussit un <b>Will DC 19</b>, son corps continue malgré tout, et le personnage se retrouve inconscient dans la vie réelle.</p>
 			</div>
+		</section>
+
+		<p>Un couloir en pierre verte se divise en deux. Une section laisse voir un peu de lumière, de l'autre côté on entend le roulement d'une rivière.</p>
+		<section class="row">
+			<div>
+				<h2>Côté lumière</h2>
+				<p>Une grande pièce de style cathédrale contient un chalice argent regorgeant de sang noir.
+					Le sang coule vers le plafond avec un débit modéré mais continu.</p>
+				<p>Un sort [light/fire/electricity] fera arrêter le débit pendant un temps,
+					mais réveillera les <a href="https://d20pfsrd.com/bestiary/monster-listings/undead/shadow">Shadows</a>.</p>
+				<p>Les Shadows sont une distraction pour faire entrer les joueurs dans la pièce. Dès qu'ils y sont tous, les portes se ferment et le plafond commence à descendre.
+					Les joueurs ont <b>5</b> tours avant que le plafond ne les écrase au sol; ils peuvent utiliser une standard pour tenter un <b>DC 15</b> Disable Device/Strength qui empêche le compteur d'avancer.
+					Plus qu'un succès par tour ne ralentit pas le temps d'avantage, mais désarme un peu le mécanisme: après trois désarmements, le toit arrête de descendre.</p>
+				<p>Le chalice peut être arrêté de la même façon (sans actual effets).
+					Un jet de Spellcraft/etc pour identifier révèlera que le chiffre 7 se répète sur le chalice: 7 côtés, 7 joyaux, 7 anneaux, 7 personnages. Cela laisse penser qu'il y a 7 chalices.</p>
+				<p>Il n'y a pas d'autre issue: les joueurs doivent rebrousser chemin.</p>
+			</div>
+			<div>
+				<h2>Côté rivière</h2>
+				<p>On arrive à une crevasse. Sur le pont de pierre qui traverse cette crevasse se tient <b>Brett</b>.</p>
+				<p>Il se fait passer pour un allié au début, et tente de persuader le groupe qu'il est le vrai Brett, qu'il est blessé et doit remonter à la surface.
+					<b>Sense Motive DC 18.</b> Si le groupe mord à l'hameçon, Brett tombera dans la cascade en remontant, et disparaîtra. Il sera au même endroit, pas blessé du tout, lorsque le groupe reviendra.</p>
+				<p>Dès qu'il lance sa <a href="https://d20pfsrd.com/magic-items/magic-weapons/specific-magic-weapons/screaming-bolt">screaming bolt</a>, des clones de chaque personnage apparaissent.
+					Ils ont le même HP total/restant que les joueurs, font la même chose chaque tour (juste après les joueurs), et chaque dégât est partagé entre un joueur et son clone.
+					Exception: l'énergie positive les blesse.</p>
+				<p>Brett va <i>bull rush</i> avec toutes ses attaques. Il tente de pousser des gens dans la rivière, qui est <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/p/poison">empoisonnée</a>.</p>
+				<p>Il y a un chemin pour descendre à la rivière rejoindre des bateaux, ou il y a un chemin droit devant, qui mène à une cathédrale identique au côté lumière.</p>
 		</section>
 	</div>
 </body>
