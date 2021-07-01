@@ -7,6 +7,7 @@
 	<title>Grey's Plan</title>
 	<link rel="stylesheet" href="../../system/pfGeneric.css">
 	<style>
+		.illusion { color: var(--illusion-grey); }
 		ul.list-unstyled, ul.apartee { list-style-type: none; }
 	</style>
 </head>
@@ -39,7 +40,7 @@
 				<details class="br">
 					<summary><b>Acastetrios</b> garde toujours le tunnel.</summary>
 					<ul class="apartee">
-						<li>Il est là depuis que les moines lui ont offert les fruits de leur <a href="https://www.d20pfsrd.com/magic-items/magic-plants/#Tree_of_Knowledge">Tree of Knowledge</a>, dans le verger, et défend cet arbre aussi.
+						<li>Il est là depuis que les moines lui ont offert les fruits de leur <a href="https://d20pfsrd.com/magic-items/magic-plants/#Tree_of_Knowledge">Tree of Knowledge</a>, dans le verger, et défend cet arbre aussi.
 							Tant que l'arbre sera vivant et pur, Acastetrios restera.</li>
 						<li>Il parle en mots très rudimentaires car il maîtrise mal le commun, mais en Terran il est très éloquent.</li>
 						<li>Il aime les serpents, et a été créé de l'âme d'un Lamia puissant.</li>
@@ -51,8 +52,13 @@
 							d'autres détails sont inconnus.</li>
 					</ul>
 				</details>
-				<p>Le tunnel s'enfonce. Il y a une cascade. <b>DC 18</b> Climb/Acrobatics pour descendre (Swim/Survival/Knowledge/Profession acceptés à <b>DC 22</b>).</p>
-				<p>Des ruines anciennes commencent. Il faut passer sous la cascade (ici commencent les illusions).</p>
+				<p>Le tunnel s'enfonce. Il y a une cascade. <b>DC 18</b> Climb/Acrobatics pour descendre (Swim/Survival/Knowledge/Profession acceptés à <b>DC 22</b>).
+					Pour chaque point sous le DC, un joueur <a href="https://d20pfsrd.com/Gamemastering/environment/environmental-rules/#Falling">tombe</a> de 5ft
+					(un autre joueur peut diminuer en soustrayant 3 de son jet pour chaque 5ft aidé).</p>
+				<p>La cascade descend jusqu'à un lac sousterrain plutôt lugubre.
+					Il ne semble pas y avoir d'issue hors de l'eau.
+					Si les joueurs essaient de traverser le lac, ils réveillent un monstre.
+					Il faut trouver le passage sous la cascade, <b>Perception DC 20</b>.</p>
 			</div>
 
 			<div>
@@ -63,21 +69,21 @@
 							<li>Protège éternellement le passage pour les moines.</li>
 							<li>Le groupe réussira-t-il à passer le gardien?</li>
 						</ul></li>
-					<li><b>Côté lumière:</b> <a href="https://d20pfsrd.com/bestiary/monster-listings/undead/shadow">Shadow</a> (CR3) &times; 4</li>
-					<li><b>Côté rivière:</b> <a href="https://d20pfsrd.com/bestiary/npc-s/npcs-cr-5/expert-bodyguard-human-warrior-7">Dark Brett</a> (CR5)</li>
+					<li class="illusion"><b>Côté lumière:</b> <a href="https://d20pfsrd.com/bestiary/monster-listings/undead/shadow">Shadow</a> (CR3) &times; 4</li>
+					<li class="illusion"><b>Côté rivière:</b> <a href="https://d20pfsrd.com/bestiary/npc-s/npcs-cr-5/expert-bodyguard-human-warrior-7">Dark Brett</a> (CR5)</li>
 					<li><a href="Q4-jiko-bo.html">Jiko-Bô</a>, dryade déchue (CR5)</li>
 				</ul>
 
-				<h2>Illusions</h2>
-				<p>La ville sousterraine est défendue par de puissantes illusions.
+				<h2 class="illusion">Illusions</h2>
+				<p class="illusion">La ville sousterraine est défendue par de puissantes illusions.
 					Il faut un caster level check <b>DC 23</b> pour même sentir l'illusion via <a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>.
 					Un personnage qui meurt dans l'illusion va probablement mourir dans la vie réelle, car son corps lâche, persuadé d'être incapable de fonctionner.
 					Si le personnage réussit un <b>Will DC 19</b>, son corps continue malgré tout, et le personnage se retrouve inconscient dans la vie réelle.</p>
 			</div>
 		</section>
 
-		<p>Un couloir en pierre verte se divise en deux. Une section laisse voir un peu de lumière, de l'autre côté on entend le roulement d'une rivière.</p>
-		<section class="row">
+		<p class="illusion">Un couloir en pierre verte se divise en deux. Une section laisse voir un peu de lumière, de l'autre côté on entend le roulement d'une rivière.</p>
+		<section class="row illusion">
 			<div>
 				<h2>Côté lumière</h2>
 				<p>Une grande pièce de style cathédrale contient un chalice argent regorgeant de sang noir.
@@ -99,9 +105,19 @@
 				<p>Dès qu'il lance sa <a href="https://d20pfsrd.com/magic-items/magic-weapons/specific-magic-weapons/screaming-bolt">screaming bolt</a>, des clones de chaque personnage apparaissent.
 					Ils ont le même HP total/restant que les joueurs, font la même chose chaque tour (juste après les joueurs), et chaque dégât est partagé entre un joueur et son clone.
 					Exception: l'énergie positive les blesse.</p>
-				<p>Brett va <i>bull rush</i> avec toutes ses attaques. Il tente de pousser des gens dans la rivière, qui est <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/p/poison">empoisonnée</a>.</p>
+				<p>Brett va <i>bull rush</i> avec toutes ses attaques. Il tente de pousser des gens dans la rivière, qui est <a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/poison">empoisonnée</a>.</p>
 				<p>Il y a un chemin pour descendre à la rivière rejoindre des bateaux, ou il y a un chemin droit devant, qui mène à une cathédrale identique au côté lumière.</p>
+				<p>Si les joueurs tentent de descendre la rivière en bateau: <b>DC 15</b> Swim/Sailor/etc pour naviguer les bateaux sans toucher l'eau, mais la rivière tourne en rond.</p>
 		</section>
+		
+		<p>Avec le temps, un joueur devrait se séparer du groupe / réaliser qu'on est dans une illusion / mourir (ou passer proche).
+			À ce moment, l'illusion perd de sa force: les joueurs retrouvent leurs sens dans une large grotte vide, derrière la cascade.
+			On y tourne en rond depuis le début.
+			Une autre illusion camoufle un passage, dans le mur à gauche.
+			Le joueur qui se réveille en premier arrive juste à temps pour surprendre une silhouette eflique sombre qui allait attaquer un de ses alliés:
+			c'est <a href="Q4-jiko-bo.html">Jiko-Bô</a>, la dryade déchue, qui peut être reconnue si le joueur l'a déjà vue et réussit un <b>Perception DC15</b>.</p>
+		<p>Elle s'échappe par le tunnel illusoire.
+			Elle sèmera toute poursuite, mais les joueurs se retrouveront devant le coeur d'une ville ancienne d'elfes noirs, bâtie en trois dimension comme une toile d'araignée qui remplirait une caverne immense.</p>
 	</div>
 </body>
 </html>
