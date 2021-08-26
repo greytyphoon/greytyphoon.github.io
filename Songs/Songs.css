@@ -19,9 +19,17 @@
  */
 
 /* I use this when I want to say who taught me this song. */
-span.credit { /* inspired from Pathfinder's .listBonuses */
+.credit { /* inspired from Pathfinder's .listBonuses */
 	display: inline-block;
 	color: var(--html-darkgrey);
 	font-size: .75rem; }
-span.credit::before { content: "("; }
-span.credit::after { content: ")"; }
+.credit::before { content: "("; }
+.credit::after { content: ")"; }
+
+.refrain { font-style: italic; color: var(--html-darkgrey); }
+
+.reprise::before { content: "\21bb "; content: "↻ "; color: var(--html-darkgrey); }
+
+@media screen and (min-width: 576px) {
+	.lyrics { margin-left: 3em; }
+}
