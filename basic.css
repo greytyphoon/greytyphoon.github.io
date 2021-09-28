@@ -57,6 +57,7 @@ code {
 }
 ul, ol, dl, p { margin: 0 0 .75em 0; }
 summary { cursor: pointer; }
+img { max-width: 100%; }
 
 /********************
  * Basic page layout	(.container, #fixref)
