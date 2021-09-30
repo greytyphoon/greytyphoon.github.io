@@ -78,7 +78,10 @@
 				<dd>30 ft.</dd>
 
 				<dt>Languages</dt>
-				<dd title="2 racial, 5 int, 4 linguistics">Common, Elven, Dwarven, Halfling, Gnomish, Sylvan, Draconic, Goblin, Orc, Aklo, Undercommon</dd>
+				<dd title="2 racial, 6 int, 5 linguistics">
+					Common, Elven, Dwarven, Halfling, Gnome,
+					Sylvan, Draconic, Goblin, Orc, Giant,
+					Aklo, Undercommon, Infernal</dd>
 			</dl>
 		</section>
 
@@ -136,9 +139,9 @@
 				<div class="circumstancialBonus">&#x2ba9; <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Psychometry_Appraise">Psychometry</a> 1/day</div>
 			</li>
 			<li>
-				<strong>8</strong>
+				<strong>9</strong>
 				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
-				<small>3 dex, 2 ranks, 3 class</small>
+				<small>3 dex, 3 ranks, 3 class</small>
 			</li>
 			<li>
 				<strong>14</strong>
@@ -146,27 +149,27 @@
 				<small>6 int, 5 ranks, 3 class</small>
 			</li>
 			<li>
-				<strong>10</strong>
+				<strong>9</strong>
 				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
-				<small>3 dex, 4 ranks, <u title="Fey Thoughts">3 class</u></small>
+				<small>3 dex, 3 ranks, <u title="Fey Thoughts">3 class</u></small>
 			</li>
 			<li class="br">
-				<strong>13</strong>
+				<strong>14</strong>
 				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
-				<small><u title="Pragmatic Activator">6 int</u>, 4 ranks, <u title="Fey Thoughts">3 class</u></small>
+				<small><u title="Pragmatic Activator">6 int</u>, 5 ranks, <u title="Fey Thoughts">3 class</u></small>
 			</li>
 
 			<!--Knowledge Skills-->
 			<li>
-				<strong>13</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (arcane, nature, local, religion, planes)</a>
-				<small>6 int, 10 ranks, 3 class, <u title="Breadth of Experience">2 feat</u></small>
+				<strong>16</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (arcana)</a>
+				<small>6 int, 5 ranks, 3 class, <u title="Breadth of Experience">2 feat</u></small>
 				<div class="circumstancialBonus">&#x2ba9; <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Phrenology_Knowledge_arcana">Phrenology</a> 1/day</div>
 			</li>
 			<li>
 				<strong>12</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (engineering, dungeoneering, geography, history, nobility)</a>
-				<small>6 int, 5 ranks, 3 class, <u title="Breadth of Experience">2 feat</u></small>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (all others)</a>
+				<small>6 int, 9 ranks, 3 class, <u title="Breadth of Experience">2 feat</u></small>
 			</li>
 		</ul>
 
@@ -344,7 +347,8 @@
 		<!-- title COMBAT -->
 		<hr>
 		<section class="row">
-				<!--Basics: Statblock and Weapons-->
+			<!--Basics: Statblock and Weapons-->
+			<div>
 				<ul class="summations">
 					<li class="br">
 						<strong>3</strong>
@@ -384,7 +388,18 @@
 						<small>2 bab, 0 str, 3 dex</small>
 					</li>
 				</ul>
-				<!--end of Basics: Statblock and Weapons-->
+
+				<!--Light Crossbow-->
+				<div class="weapon">
+					<h2>Light Crossbow <b>19x2</b> <b>80ft.</b> <b>P</b></h2>
+					<div class="summation"><strong>+6</strong> vs AC <small>2 bab, 3 dex, 1 mwk</small></div>
+					<div class="summation"><strong title="Marksman Weapon +1size">1d10</strong></div>
+					<div class="circumstancialBonus">
+						Loading a light crossbow is an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>.
+					</div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
 
 			<div>
 				<h2>Mental Placidity <u title="2 wis">2/day</u></h2>
@@ -397,23 +412,20 @@
 				<ul>
 					<li title="Overpowering Mind">For 2|4, increase Will DC of a <span class="spell mind-affecting">spell</span> by 1|2.</li>
 				</ul>
-
-				<!--Light Crossbow-->
-				<div class="weapon">
-					<h2>Light Crossbow <b>19x2</b> <b>80ft.</b> <b>P</b></h2>
-					<div class="summation"><strong>+6</strong> vs AC <small>2 bab, 3 dex, 1 mwk</small></div>
-					<div class="summation"><strong title="Marksman Weapon +1size">1d10</strong></div>
-					<div class="circumstancialBonus">
-						Loading a light crossbow is an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>.
-					</div>
-				</div>
+				
+				<h2>Diviner's Delve</h2>
+				<p>Gain information from <a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/d/detect-thoughts">divination spells</a> one round earlier.</p>
+				
+				<h2>Headband of Ponderous Recollection <b>3/day</b></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+					recall knowledge as if you rolled 10 now and 15 on the next round.</p>
 			</div>
 		</section>
 
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="magicItemsWrapper">
-			<li><!--5100--><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-ponderous-recollection">Headband of Ponderous Recollection</a> +2 (Appraise)</li>
+			<li><!--5100--><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-ponderous-recollection">Headband of Ponderous Recollection</a> +2 (Know Arcana)</li>
 			<li><!--2000--><s><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</s></li>
 			<li>2&times; <!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/spell-lattice">Spell Lattice</a>, 1st</li>
 			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
