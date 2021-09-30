@@ -77,7 +77,7 @@ function CalculateVerifiedValues() {
 		FindAndIncrementCharacter(statValues[i][8], questExperience, questReputation, questDate);
 		FindAndIncrementCharacter(statValues[i][9], questExperience, questReputation, questDate);
 		//Bonus XP for DM
-		FindAndIncrementCharacter(statValues[i][10], 1, 0, questDate);
+		FindAndIncrementCharacter(statValues[i][10], 1, 0, null);
 	}
 
 	CalculateAndUpdateLevel();
@@ -97,7 +97,8 @@ function FindAndIncrementCharacter(name, experience, reputation, date) {
 
 	character.experience_verified += experience;
 	character.reputation_verified += reputation;
-	character.player.gamesPlayed.push(date);
+  if (date != null)
+	  character.player.gamesPlayed.push(date);
 }
 
 function CalculateAndUpdateLevel() {
