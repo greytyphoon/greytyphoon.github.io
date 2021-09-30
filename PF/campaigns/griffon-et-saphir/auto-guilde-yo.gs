@@ -28,7 +28,7 @@ function myFunction() {
 
 function BuildCharactersArray() {
 	var mainSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Main");
-	var mainValues = mainSheet.getRange("A10:H52").getValues()
+	var mainValues = mainSheet.getRange("A10:H53").getValues()
 		.concat(mainSheet.getRange("A65:H68").getValues());
 	for (var i = 0; i < mainValues.length; i++) {
 		var playerName = mainValues[i][0];
@@ -62,7 +62,7 @@ function BuildCharactersArray() {
 
 function CalculateVerifiedValues() {
 	var statSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Stats for nerds");
-	var statValues = statSheet.getRange("A2:J").getValues();
+	var statValues = statSheet.getRange("A2:K").getValues();
 	for (var i = 0; i < statValues.length; i++) {
 		var questName = statValues[i][3];
 		if (questName.indexOf("Q: ") != 0) continue;
@@ -76,13 +76,15 @@ function CalculateVerifiedValues() {
 		FindAndIncrementCharacter(statValues[i][7], questExperience, questReputation, questDate);
 		FindAndIncrementCharacter(statValues[i][8], questExperience, questReputation, questDate);
 		FindAndIncrementCharacter(statValues[i][9], questExperience, questReputation, questDate);
+		//Bonus XP for DM
+		FindAndIncrementCharacter(statValues[i][10], 1, 0, questDate);
 	}
 
 	CalculateAndUpdateLevel();
 }
 
 function FindAndIncrementCharacter(name, experience, reputation, date) {
-	if (!name || !/\S/.test(name)) return;
+	if (!name || !/[\S]/.test(name) || name == '?' || name == '—') return;
 
 	// find a character whose full name contains the short name from "Stats for nerds".
 	// This is error-prone, especially with shorter names like "Lod", "Daff", "Yon", or "Indy", but I think we're okay so far
