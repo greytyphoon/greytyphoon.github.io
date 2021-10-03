@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Alchemist</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.wide3 { flex: 3 !important; }
+		.mutagen { color: var(--transmutation-teal); }
+		.mutagen > .weapon { color: var(--murder-black); border-color: var(--transmutation-teal); }
+		.mutagen > .weapon > h2 { background-color: var(--transmutation-teal); border-color: var(--transmutation-teal); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Desmund Rufo, the unfortunate brother</h1>
+			LN Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>10</dd>
+
+				<dt>Dex</dt>
+				<dd>18 <small>14, <u title="Racial">2</u>, <u title="Belt of Incredible Dexterity">2</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>14</dd>
+
+				<dt>Int</dt>
+				<dd>22 <small>16, <u title="Racial">2</u>, <u title="Advancement">2</u>, <u title="Headband of Vast Intelligence">2</u></small></dd>
+
+				<dt>Wis</dt>
+				<dd>14</dd>
+
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/human#Alternate_Racial_Traits">Dual Talent</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/base-classes/alchemist">Alchemist</a> 9</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/base-classes/alchemist/archetypes/paizo-alchemist-archetypes/grenadier">Grenadier</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Erastil</dd>
+
+				<dt>Senses</dt>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd title="1 racial, 6 int">Common, Dwarven, Elven, Halfling, Gnome, Sylvan, Draconic</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/firebug">Firebug</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/magic-traits/focused-burn">Focused Burn</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/campaign-traits/rescued">Rescued</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/social-traits/student-of-philosophy">Student of Philosphy</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/additional-traits">Additional Traits</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/point-blank-shot-combat">Point-Blank Shot</a></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/precise-shot-combat">Precise Shot</a>
+				<small>min.1</small></dd>
+			<dt>alch. 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/throw-anything-combat">Throw Anything</a>
+				<small>bonus</small></dd>
+			<dt>alch. 2</dt>
+			<dd><a href="https://d20pfsrd.com/classes/base-classes/alchemist/discoveries/paizo-alchemist-discoveries/frost-bomb">Frost Bomb</a>
+				<small>min.2</small></dd>
+			<dd><a href="https://d20pfsrd.com/classes/base-classes/alchemist/discoveries/paizo-alchemist-discoveries/precise-bombs">Precise Bombs</a>
+				<small>bonus</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/extra-discovery">ED</a> &gt;
+				<a href="https://d20pfsrd.com/classes/base-classes/alchemist/discoveries/paizo-alchemist-discoveries/infusion">Infusion</a>
+				<small>min.2</small></dd>
+			<dt>alch. 4</dt>
+			<dd><a href="https://d20pfsrd.com/classes/base-classes/alchemist/discoveries/paizo-alchemist-discoveries/directed-bomb">Directed Bomb</a>
+				<small>min.2</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-initiative-combat">Improved Initiative</a>
+				<small>min.1</small></dd>
+			<dt>alch. 6</dt>
+			<dd><a href="https://d20pfsrd.com/classes/base-classes/alchemist/discoveries/paizo-alchemist-discoveries/wings-ex">Wings</a>
+				<small>min.6</small></dd>
+			<dt>level 7</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/extra-bombs">Extra Bombs</a>
+				<small>min.1</small></dd>
+			<dt>alch. 8</dt>
+			<dd><a href="https://d20pfsrd.com/classes/base-classes/alchemist/discoveries/paizo-alchemist-discoveries/fast-bombs">Fast Bombs</a>
+				<small>min.8</small></dd>
+			<dt>level 9</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/rapid-shot-combat">Rapid Shot</a>
+				<small>min.1</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>14</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>2 wis, 9 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>16</strong>
+				<a href="https://d20pfsrd.com/skills/disable-device">Disable Device</a>
+				<small>4 dex, 9 ranks, 3 class</small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>17</strong>
+				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>
+				<small>4 dex, 9 ranks, <u title="Rescued">3 class, 1 trait</u></small>
+			</li>
+			<li>
+				<strong>14</strong>
+				<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>
+				<small>6 int, 5 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>16</strong>
+				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
+				<small>4 dex, 9 ranks, 3 class</small>
+				<div class="circumstancialBonus" title="4 Good Maneuverability, 4 alchemist&frac12; from Fly"><u>+8</u> when using
+					<a href="https://d20pfsrd.com/classes/base-classes/alchemist/discoveries/paizo-alchemist-discoveries/wings-ex">Wings</a>.</div>
+			</li>
+			<li>
+				<strong>14</strong>
+				<a href="https://d20pfsrd.com/skills/heal">Heal</a>
+				<small>2 wis, 9 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/sleight-of-hands">Sleight of Hands</a>
+				<small>4 dex, 4 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>18</strong>
+				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+				<small>6 int, 9 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>14</strong>
+				<a href="https://d20pfsrd.com/skills/survival">Survival</a>
+				<small>2 wis, 9 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>12</strong>
+				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
+				<small>0 cha, 9 ranks, 3 class</small>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<strong>18</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (arcane)</a>
+				<small>6 int, 9 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>18</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (nature)</a>
+				<small>6 int, 9 ranks, 3 class</small>
+			</li>
+
+			<li>
+				<strong>18</strong>
+				<a href="https://d20pfsrd.com/skills/craft">Craft (alchemy)</a>
+				<small>6 int, 9 ranks, 3 class</small>
+				<div class="circumstancialBonus"><u title="Extracts, 9 alchemist">+9 competence</u> when creating alchemical items</div>
+				<div class="circumstancialBonus">Use as <a href="https://d20pfsrd.com/magic/all-spells/d/detect-magic" class="spell">detect magic</a> on potions</div>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="9 alchemist: 4 class, 6 int, 2 background-skills">108 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+		</p>
+
+		<!-- title Extracts -->
+		<hr>
+		<div id="spellHeader" class="apartee">
+			The Difficulty Class for a saving throw against your extracts is 10 + the spell level + your Intelligence modifier.<br/>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.<br/>
+		</div>
+		<section class="row">
+			<div>
+				<h2>Level 1 <u title="5 class, 2 int">7/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/heightened-awareness">heightened awareness</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/illusion-of-calm">illusion of calm</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/long-arm">long arm</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/reduce-person">reduce person</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/t/targeted-bomb-admixture">targeted bomb admixture</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 2 <u title="4 class, 2 int">6/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/alchemical-alteration">alchemical alteration</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/alter-self">alter self</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/barkskin">barkskin</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds">cure moderate wounds</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/focused-scrutiny">focused scrutiny</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/invisibility">invisibility</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/restoration">lesser restoration</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/t/tattoo-potion">tattoo potion</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 3 <u title="3 class, 1 int">4/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/channel-vigor">channel vigor</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/displacement">displacement</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/monstrous-physique-i">monstrous physique</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/paragon-surge">paragon surge</a>.</li>
+				</ul>
+
+				<h2>Wings <u title="9 alchemist">9 min/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/fly">fly</a>.</li>
+				</ul>
+			</div>
+			<div class="wide">
+				<h2>Alchemical Items</h2>
+				<p>List of <a href="https://d20pfsrd.com/gamemastering/afflictions/poison">poisons</a>
+					and <a href="https://d20pfsrd.com/equipmenT/goods-and-services/herbs-oils-other-substances">alchemical items</a>.</p>
+				<ul>
+					<li><a href="https://d20pfsrd.com/equipmenT/goods-and-services/herbs-oils-other-substances#Tanglefoot_Bag">Tanglefoot Bag</a>:
+						<a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Entangled">entangle</a> for 2d4 rounds <small>&le;L</small>,</li>
+					<li><a href="https://d20pfsrd.com/gamemastering/afflictions/poison/large-scorpion-venom">Large Scorpion Venom</a>:
+						1d2 STR <small>Fort DC 17 negates, 6 rounds</small>,</li>
+					<li><a href="https://d20pfsrd.com/gamemastering/afflictions/poison/giant-wasp-poison">Giant Wasp Poison</a>:
+						1d2 DEX <small>Fort DC 18 negates, 6 rounds</small>.</li>
+				</ul>
+
+				<h2>Alchemical Weapon</h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, apply an alchemical item's effect to the next creature you hit with a weapon.
+			</div>
+		</section>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>8</strong>
+						<b>Init</b>
+						<small>4 dex, <u title="Improved Initiative">4 feat</u></small>
+					</li>
+					<li>
+						<strong>78</strong>
+						<b>HP</b>
+						<small>9 alchemist: 8 class, 2 con; 9 FC; -21 rolled</small>
+					</li>
+					<li class="br">
+						<strong>22</strong>
+						<b>AC</b> touch 15, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 18
+						<small>10, 4 dex, 5 armor, 2 shield, <u title="Ring of Protection">1 deflection</u></small>
+					</il>
+					<li>
+						<strong>10</strong>
+						<b>Fort</b>
+						<small>2 con, 6 class, <u title="Cloak of Resistance">2 resistance</u></small>
+					</li>
+					<li>
+						<strong>12</strong>
+						<b>Ref</b>
+						<small>4 dex, 6 class, <u title="Cloak of Resistance">2 resistance</u></small>
+					</li>
+					<li class="br">
+						<strong>7</strong>
+						<b>Will</b>
+						<small>2 wis, 3 class, <u title="Cloak of Resistance">2 resistance</u></small>
+					</li>
+					<li>
+						<strong>6</strong>
+						<b>CMB</b>;	21 <b>CMD</b>
+						<small>6 bab, 0 str, 4 dex, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<h2>Precise Bombs</h2>
+				<p>Ignore up to <b><u title="6 int">6</u></b> squares of splash damage.</p>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<!--MUTAGEN: DEX-->
+			<div class="mutagen">
+				<ul class="summations">
+					<li class="br">
+						<strong>10</strong>
+						<b>Init</b>
+						<small>6 dex, <u title="Improved Initiative">4 feat</u></small>
+					</li>
+					<li>
+						<strong>78</strong>
+						<b>HP</b>
+						<small>9 alchemist: 8 class, 2 con; 9 FC; -21 rolled</small>
+					</li>
+					<li class="br">
+						<strong>26</strong>
+						<b>AC</b> touch 17, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 20
+						<small>10, 6 dex, 5 armor, 2 shield, <u title="Ring of Protection">1 deflection</u>, <u title="Mutagen">2 natural</u></small>
+					</il>
+					<li>
+						<strong>10</strong>
+						<b>Fort</b>
+						<small>2 con, 6 class, <u title="Cloak of Resistance">2 resistance</u></small>
+					</li>
+					<li>
+						<strong>14</strong>
+						<b>Ref</b>
+						<small>6 dex, 6 class, <u title="Cloak of Resistance">2 resistance</u></small>
+					</li>
+					<li class="br">
+						<strong>6</strong>
+						<b>Will</b>
+						<small>1 wis, 3 class, <u title="Cloak of Resistance">2 resistance</u></small>
+					</li>
+					<li>
+						<strong>6</strong>
+						<b>CMB</b>;	23 <b>CMD</b>
+						<small>6 bab, 0 str, 6 dex, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+				<h2>Mutagen</h2>
+				<p>Lasts <u title="10 &times; 9 alchemist">90 minutes</u>, +4 Dex -2 Wis.</p>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div class="wide3">
+				<!--Bombs-->
+				<h2>Bombs <u title="9 alchemist, 6 int, 2 Extra Bombs">17/day</u></h2>
+				<div class="weapon">
+					<h2>Bomb <b>20x2</b> <u title="20 base, +10 Bombchucker">30ft.</u> <b>🔥/<span class="cold">❄</span></b></h2>
+					<div class="summation"><strong>+12/+7</strong> vs TouchAC <small>6 bab, 4 dex, <u title="Firebug">1 trait</u>, <u title="Throw Anything">1 circumstance</u></small></div>
+					<div class="circumstancialBonus" title="Rescued"><u>+1 trait</u> vs targets that threaten my older brother.</div>
+					<div class="circumstancialBonus">Miss: hit a <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Throw-Splash-Weapon">semi-random</a> adjacent square instead.</div>
+
+					<div class="summation" title="Increases by 1d6 every odd level"><strong class="fire">5d6+8</strong> <small>6 int, <u title="Focused Burn, increases every 2d6, only fire, not in splash">2 trait</u></small></div>
+					<div class="circumstancialBonus">Splash: adjacents creatures take <b class="fire">11 dmg 🔥</b>, <u title="10, 4 alchemist&frac12; 6 int">Reflex DC 20</u> halves.</div>
+					<hr>
+					<div class="summation" title="Increases by 1d6 every odd level"><strong class="cold">5d6+6</strong> <small>6 int</small></div>
+					<div class="circumstancialBonus">Target is <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Staggered">staggered</a> for 1 round, <u title="10, 4 alchemist&frac12; 6 int">Fort DC 20</u> negates.</div>
+					<div class="circumstancialBonus">Splash: adjacents creatures take <b class="cold">11 dmg ❄</b>, <u title="10, 4 alchemist&frac12; 6 int">Reflex DC 20</u> halves.</div>
+				</div>
+
+				<p class="apartee">+<b>13</b>/+<b>13</b>/+<b>8</b> with Mutagen-Dex (2), Point-Blank (1), Rapid Shot (-2).<br>
+					<b class="fire">5d6+9</b> <small>Splash 12</small> with Point-Blank (1).</p>
+
+				<h2>Directed Bomb, Directed Blast</h2>
+				<p>Can splash in a 15ft-cone instead of all adjacent.
+					Can splash a 20ft-cone from your square (with one main target in it).</p>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/h-l/headband-of-vast-intelligence">Headband of Vast Intelligence</a> +2 (Fly)</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +2</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/bead-boro">Boro Bead</a> L1</li>
+			<li><!--5000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/admixture-vial">Admixture Vial</a></li>
+		</ul>
+		<ul id="inventory">
+			<!--Weapons-->
+			<li><!--12-->
+				<a href="https://d20pfsrd.com/equipmenT/goods-and-services/tools-kits#Bombchucker">Bombchucker</a>
+			</li>
+			<li class="br"><!--375-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Longbow</a>, masterwork
+				<small>martial ranged, 1d8, 20x3, P, 100ft.</small>
+				<div class="circumstancialBonus">20 arrows, cold-iron</div>
+			</li>
+
+			<!--Armors-->
+			<li><!--2100-->
+				<a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a> +1
+				<small>light, 4 armor, 6 dex, 0 acp, 10% asf</small>
+			</li>
+			<li class="br"><!--1155-->
+				<a href="https://d20pfsrd.com/equipment/armor/buckler">Buckler</a> +1
+				<small>1 shield, - dex, 1 acp, 5% asf</small>
+			</li>
+
+			<!--Misc-->
+			<li><!--5 + 50-->
+				Spell Component Pouch, Healer's kit
+			</li>
+			<li><!--50-->
+				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</li>
+			<li>251 <b>GP</b><!--/24,000--></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p>Guide used: <a href="https://zenithgames.blogspot.com/2015/11/zeniths-guide-to-alchemist-part-i.html">Guide to the Alchemist &copy;Zenith</a>.</p>
+
+			<p>Desmund is the brother of <a href="Sigmund.html">Sigmund</a>, and they adventured together for many years.
+				Now they have retired from the adventuring life, and Desmund really hoped for a peaceful time, but his brother's patron is demanding more.
+				Desmund owes his brother his life, multiple times over, and will assist however he can, despite not being directly involved.</p>
+
+			<details>
+				<summary class="subtitle">What Rufo looks like</summary>
+				<a href="https://www.deviantart.com/willobrien/art/Pathfinder-Amaznen-756174508">
+				<img src="https://i.pinimg.com/originals/54/9e/03/549e03df12600dd688a9deed92b713a3.jpg" alt="Amaznen &copy;Paizo Pathfinder Adventure Path #123 The Flooded Cathedral"></a>
+				Art by Paizo.
+			</details>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Curious and open-minded</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/scarred">Scarred</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Green</dd>
+
+				<dt>Hair</dt>
+				<dd>Blonde-ish Red</dd>
+
+				<dt>Age</dt>
+				<dd>49</dd>
+
+				<dt>Weight</dt>
+				<dd>170 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 11''</dd>
+			</dl>
+
+			<p>Should be a <a href="https://d20pfsrd.com/classes/base-classes/alchemist/archetypes/paizo-alchemist-archetypes/sacrament-alchemist">Sacrament Alchemist</a>, maybe?</p>
+		</section>
+	</div>
+</body>
+</html>
