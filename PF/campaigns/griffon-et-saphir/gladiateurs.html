@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Gladiators</title>
+	<link rel="stylesheet" href="../../system/pfGeneric.css">
+	<style>
+		.bonus::before { content: "✅ "; }
+		.malus::before { content: "❌ "; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Gladiateurs</h1>
+		</header>
+		<p>Rassemble les notes pour les combats de gladiateurs.</p>
+
+		<section class="row">
+			<div>
+				<h2>Test d'admission</h2>
+				<ul>
+					<li><a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/devil/bearded">Barbazu Devil</a> (CR5),
+						conjuré via <a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/infernal-challenger">infernal challenger</a>
+						<ul>
+							<li>Le défi est de toucher le diable <b>3</b> fois, ou de survivre <b>5</b> rounds.</li>
+							<li>Même si le test est échoué, on peut devenir gladiateur en réussissant <b>Gladiator DC 18/20/25</b>.</li>
+						</ul></li>
+					<li><b>Stolzearoch le bref</b> se bat au glaive, autant qu'il peut</li>
+					<li><b>Bilmodoz le balafré</b> inflige une blessure infernale puis sort les griffes</li>
+				</ul>
+			</div>
+
+			<div>
+				<h2 lang="en">Rule of Cool</h2>
+				<p>Un sort spécial de Fortrude encourage les actes spectaculaires.
+					Si c'est <em>cool</em>, c'est fait à <b>+5</b>!
+					Il n'est cependant pas possible de se donner de bonus quand ce n'est pas toi qui roule (AC, spell DC, etc).</p>
+				<p>Le sort régénère aussi les Trophy Points, avant et après chaque combat.</p>
+			</div>
+
+			<div>
+				<h2 lang="en">Gladiator DC</h2>
+				<p>Un <i>Gladiator DC</i> est un jet de n'importe quel skill de CHA: performance, diplomacy, intimidate, etc.
+					Si on n'a pas de ranks dans un skill de CHA, on peut remplacer par BAB + CHA.
+					Une arme de <a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-performance">performance</a> applique son bonus +2 sur ce jet.</P>
+				<p>C'est une variante maison de <a href="https://d20pfsrd.com/gamemastering/other-rules/performance-combat#Performance_Combat_Check">cette règle</a>.</p>
+				<p>Le <em>Rule of Cool</em> ne s'applique pas ici: les juges voient bien le sort de Fortrude à l'oeuvre.</p>
+		</section>
+
+		<h2>Juges</h2>
+		<p>Pour chaque combattant, chaque juge aura une attitude sur l'échelle de la diplomacie: <i>friendly</i>, <i>helpful</i>, <i>neutral</i>, <i>unhelpful</i>, <i>hostile</i>.
+			Chaque fois qu'un combattant fait une action qui plaît - ou déplaît - à un juge, ce combattant devra réussir un <b>Gladiator DC 15</b>
+			pour avancer - ou éviter de reculer - sur cette échelle.</p>
+
+		<section class="row">
+			<div>
+				<p>La foule regarde:</p>
+				<ul>
+					<li class="bonus">first blood,</li>
+					<li class="bonus">killing blow on worthy foe,</li>
+					<li class="bonus">charge,</li>
+					<li class="bonus">intimidate,</li>
+					<li class="bonus">critical hit,</li>
+
+					<li class="malus">fall prone,</li>
+					<li class="malus">forced movement,</li>
+					<li class="malus">get hit while being <i>flanked</i>,</li>
+					<li class="malus">get healed in combat.</li>
+				</ul>
+			</div>
+			<div>
+				<p>Desmund Rufo regarde:</p>
+				<ul>
+					<li class="bonus">energy damage,</li>
+					<li class="bonus">poisons,</li>
+					<li class="bonus">damaging multiple foes,</li>
+					<li class="bonus">natural attacks,</li>
+					<li class="bonus">giving someone else a potion,</li>
+
+					<li class="malus">provoking an AoO,</li>
+					<li class="malus">badly missing a ranged attack,</li>
+					<li class="malus">buffs expiring too early,</li>
+					<li class="malus">hitting an ally.</li>
+				</ul>
+			</div>
+			<div>
+				<p>Sigmund Rufo regarde:</p>
+				<ul>
+					<li class="bonus">pre-buffing,</li>
+					<li class="bonus">success on concentration,</li>
+					<li class="bonus">abjuration,</li>
+					<li class="bonus">divination,</li>
+					<li class="bonus">readied/immediate actions,</li>
+
+					<li class="malus">being surprised,</li>
+					<li class="malus">failure on concentration,</li>
+					<li class="malus">necromancy,</li>
+					<li class="malus">failing a will save.</li>
+				</ul>
+			</div>
+		</section>
+
+		<h2>Récompenses</h2>
+		<p>Toujours <a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds">cure moderate wounds</a> pour 2d8+3, en plus de:</p>
+		<ul>
+			<li class="bonus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a> reach &amp; size augmentée pour 1 round <small>rien de plus</small></li>
+			<li class="bonus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/haste">haste</a> +1 attaque ou +30ft speed pour 1 round <small>rien de plus</small></li>
+			<li class="bonus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a> +4 AC pour 1 round</li>
+			<li class="bonus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/vanish">vanish</a> invisible pour 1 round</li>
+
+			<li class="malus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a> DC16 sur ton arme ou sous tes pieds, ne reste pas</li>
+			<li class="malus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a> pour 3 rounds: -40 stealth, <a href="https://d20pfsrd.com/Gamemastering/Conditions/#Dazzled">dazzled</a>.</li>
+			<li class="malus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/reduce-person">reduce person</a> pour 1 round (juste -speed et -damage dice)</li>
+			<li class="malus"><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster</a> un monstre faible apparaît derrière toi</li>
+		</ul>
+	</div>
+</body>
+</html>
