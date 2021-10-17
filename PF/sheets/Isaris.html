@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Bard</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		#listPerformances { font-size: 0.8rem; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Isaris Lune-Baie, pianist at the <i>Jealous Unicorn</i></h1>
+			NG Small humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>9 <small>11, <u title="Racial">-2</u></small></dd>
+
+				<dt>Dex</dt>
+				<dd>18 <small>16, <u title="Racial">2</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>12</dd>
+
+				<dt>Int</dt>
+				<dd>12</dd>
+
+				<dt>Wis</dt>
+				<dd>12</dd>
+
+				<dt>Cha</dt>
+				<dd>18 <small>15, <u title="Racial">2</u>, <u title="Advancement">1</u></small></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/halfling">Halfling</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/halfling#Alternate_Racial_Traits">Driven Worker</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/halfling#Alternate_Racial_Traits">Underfoot Dodger</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/bard">Bard</a> 4</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/bard/archetypes/paizo-bard-archetypes/faith-singer">Faith Singer</a> w/
+					<a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/charm-domain">Charm</a> domain</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/bard/archetypes/paizo-bard-archetypes/street-performer">Street Performer</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd><a href="https://pathfinderwiki.com/wiki/Shelyn">Shelyn</a></dd>
+
+				<dt>Senses</dt>
+				<dd>Normal</dd>
+
+				<dt>Speed</dt>
+				<dd title="Halfling">20 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Halfling, Dwarven</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/race-traits/helpful">Helpful</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Perform &ndash; Keyboard)</dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat">Weapon Finesse</a></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a>
+				<small>min.1</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/bodyguard-combat">Bodyguard</a>
+				<small>min.1</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/dodge-combat">Dodge</a>
+				+ <a href="https://d20pfsrd.com/feats/combat-feats/mobility-combat">Mobility</a>
+				<small>min.1</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>1 wis, 4 ranks, 3 class, <u title="Keen Senses">2 racial</u></small>
+			</li>
+
+			<!--Social Skills-->
+			<li>
+				<strong>13</strong>
+				<a href="https://d20pfsrd.com/skills/bluff">Bluff</a>
+				<small>4 cha, 4 ranks, 3 class, <u title="Streetwise, 2 bard&frac12;">2</u></small>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>
+				<small>4 cha, 4 ranks, 3 class</small>
+				<div class="circumstancialBonus" title="Streetwise, 2 bard&frac12;"><u>+2</u> to influence crowds / gather information</div>
+			</li>
+			<li class="br">
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>
+				<small>1 wis, 1 ranks, 3 class</small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>
+				<small>4 dex, 1 ranks, 3 class</small>
+				<div class="circumstancialBonus" title="Underfoot Dodger"><u>+5</u> to move through the space of larger foes</div>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>
+				<small>1 int, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>13</strong>
+				<a href="https://d20pfsrd.com/skills/disguise">Disguise</a>
+				<small>4 cha, 4 ranks, 3 class, <u title="Streetwise, 2 bard&frac12;">2</u></small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/escape-artist">Escape Artist</a>
+				<small>4 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/sleight-of-hand">Sleight of Hand</a>
+				<small>4 dex, 1 ranks, 3 class, <u title="Streetwise, 2 bard&frac12;">2</u></small>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+				<small>1 int, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>15</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+				<small>4 dex, 4 ranks, 3 class, 4 size</small>
+			</li>
+			<li class="br">
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
+				<small>4 cha, 4 ranks, 3 class</small>
+			</li>
+
+			<!--Knowledge/Perform Skills-->
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (local)</a>
+				<small>1 int, 1 ranks, 3 class, <u title="Streetwise, 2 bard&frac12;">2</u></small>
+			</li>
+			<li>
+				<strong>20</strong>
+				<a href="https://d20pfsrd.com/skills/perform">Perform (Keyboard)</a>
+				<small>4 cha, 4 ranks, 3 class, 3 s.focus, <u title="Driven Worker">4 racial</u>, <u title="Masterwork Musical Instrument">2 circumstance</u></small>
+				<div class="circumstancialBonus" title="Gladhanding">Earn double the regular amount.</div>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="4 bard: 6 class, 1 int, 2 background-skills">36 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/climb">Climb</a>,
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>,
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge</a> (all),
+			<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+		</p>
+
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>6</strong>
+						<b>Init</b>
+						<small>4 dex, <u title="Reactionnary">2 trait</u></small>
+					</li>
+					<li>
+						<strong>33</strong>
+						<b>HP</b>
+						<small>4 bard: 8 class, 1 con; 4 fc; -7 rolled</small>
+					</li>
+					<li class="br">
+						<strong>22</strong>
+						<b>AC</b> touch 16, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 18
+						<small>10, 4 dex, 5 armor, 1 shield, 1 size, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+					<li>
+						<strong>4</strong>
+						<b>Fort</b>
+						<small>1 con, 1 class, <u title="Halfling Luck">1 racial</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>10</strong>
+						<b>Ref</b>
+						<small>4 dex, 4 class, <u title="Halfling Luck">1 racial</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>7</strong>
+						<b>Will</b>
+						<small>1 wis, 4 class, <u title="Halfling Luck">1 racial</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li class="circumstancialBonus br" title="Well-Versed"><u>+4</u> vs bardic performance, sonic, language-dependant</li>
+					<li>
+						<strong>1</strong>
+						<b>CMB</b>;	16 <b>CMD</b>
+						<small>3 bab, -1 str, 4 dex, -1 size, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<!--Rapier-->
+				<div class="weapon">
+					<h2>Rapier <b>18x2</b> <b>P</b></h2>
+					<div class="summation"><strong>+9</strong> vs AC <small>3 bab, <u title="Weapon Finesse">4 dex</u>, 1 size, 1 mwk</small></div>
+					<div class="summation"><strong>1d4-1</strong> <small>-1 str</small></div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<h2><a href="https://d20pfsrd.com/feats/combat-feats/bodyguard-combat">Bodyguard</a></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity">attack of opportunity</a>, add <u title="Helpful"><b>4</b></u> to adjacent ally's AC.</p>
+
+				<h2>Underfoot Dodger</h2>
+				<p>Crowds aren't difficult terrain.</p>
+
+				<h2>Bardic Performance <u title="2 class, 4 cha, 8 bard*2">14 rounds/day</u></h2>
+				<div>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, start any:</div>
+				<dl id="listPerformances">
+					<dt>Disappearing Act <small>Su, Visual [mind-affecting]</small></dt>
+					<dd>
+						<u title="Increases at 1st, 5th, 11th, 17th.">One</u> ally becomes <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Invisible">invisible</a>
+						to all creatures within 30ft <small>Will <u title="10, 2 bard&frac12;, 4 cha">DC 16</u> negates</small>.
+					</dd>
+					<dt>Distraction <small>Su, Visual</small></dt>
+					<dd>
+						Nearby creatures can take your Perform (oratory*) skill check as saving throw, and get a new saving throw each round.
+						Affects only illusion (pattern) or illusion (figment) magical attack.
+					</dd>
+					<dt>Fascinate <small>Su, Audible &amp; Visual, [enchantment (compulsion), mind-affecting]</small></dt>
+					<dd>
+						You can <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Fascinated">fascinate</a>
+						up to <u title="Increases at 1st, 4th, 7th, 10th, 13th, 16th, 19th.">two</u> creatures within 90 feet <small>Will <u title="10, 2 bard&frac12;, 4 cha">DC 16</u> negates</small>.
+					</dd>
+					<dt>Harmless Performer <small>Su, Audible || Visual [mind-affecting]</small></dt>
+					<dd>Foes lose the attacks that target you, as <a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/sanctuary">sanctuary</a>
+						<small>Will <u title="10, 2 bard&frac12;, 4 cha">DC 16</u> negates</small>.
+						Caster </dd>
+				</dl>
+			</div>
+		</section>
+
+		<!-- title Spells -->
+		<hr class="noprint">
+		<div id="spellHeader" class="apartee newPage">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Charisma modifier.<br>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Charisma modifier.<br/>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.
+		</div>
+		<section class="row">
+			<div>
+				<h2>Devout Spells (<a href="https://d20pfsrd.com/Magic#Spell-Like_Abilities_Sp">Sp</a>)</h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/charm-person">charm person</a> 1/day.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="6 spells known: 6 class">Level 0</h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mending">mending</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/message">message</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/summon-instrument">summon instrument</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="4 spells known: 4 class">Level 1 <u title="3 class, 1 cha">4/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>,</li>
+					<li><a class="spell reaction" href="https://d20pfsrd.com/magic/all-spells/s/saving-finale">saving finale</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/songbird">songbird</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/t/tap-inner-beauty">tap inner beauty</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="2 spells known: 2 class">Level 2<u title="1 class, 1 cha">2/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/invisibility">invisibility</a>.</li>
+				</ul>
+			</div>
+			<div class="wider">
+				<h2>Scrolls</h2><!--6x25-->
+				<section class="row">
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/alter-musical-instrument">alter musical instrument</a>,</li>
+					<li><a class="spell domain off-class" href="https://d20pfsrd.com/magic/all-spells/b/bless">bless</a> <u title="20 scroll, 1 caster level">[DC 21 UMD]</u>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-weapon">magic weapon</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/o/obscuring-mist">obscuring mist</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/protection-from-evil">protection from evil</a>.</li>
+				</ul>
+				</section>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--4500--><s><a href="https://d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/circlet-of-persuasion">Circlet of Persuasion</a></s></li>
+			<li><!--4000--><s><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</s></li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-Resistance">Cloak of Resistance</a> +1</li>
+		</ul>
+		<ul id="inventory">
+			<!--Weapons-->
+			<li><!--340-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Rapier</a>, cold-iron masterwork
+				<small>martial one-handed, 1d6, 18x2, P.</small>
+			</li>
+			<li class="br"><!--75 (ammo: 2 gp for 20)-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Shortbow</a>
+				<small>martial ranged, 1d6, 20x3, P, 70ft.</small>
+				<div class="circumstancialBonus">20 arrows</div>
+			</li>
+
+			<!--Armors-->
+			<li><!--2100-->
+				<a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a> +1
+				<small>light, 4 armor, 6 dex, 0 acp, 10% asf</small>
+			</li>
+			<li class="br"><!--155-->
+				<a href="https://d20pfsrd.com/equipment/armor/buckler">Buckler</a>, masterwork
+				<small>1 shield, - dex, 1 acp, 5% asf</small>
+			</li>
+
+			<!--Misc-->
+			<li><!--50--><a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a></li>
+			<li><!--100--><a href="https://d20pfsrd.com/equipment/goods-and-services/toys-games-puzzles#TOC-Musical-Instrument">Masterwork piano</a></li>
+			<li><!--5-->Spell Component Pouch</li>
+			<li>23 <b>GP</b><!--/6000--></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Gentle and romantic</dd>
+
+				<dt>Fault</dt>
+				<dd>Jealous</dd>
+
+				<dt>Eyes</dt>
+				<dd>Brown</dd>
+
+				<dt>Hair</dt>
+				<dd>Red</dd>
+
+				<dt>Age</dt>
+				<dd>24</dd>
+
+				<dt>Weight</dt>
+				<dd>49 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>2' 9''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
