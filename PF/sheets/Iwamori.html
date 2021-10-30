@@ -52,7 +52,7 @@
 				<dt>Gestalt</dt>
 				<dd><a href="https://d20pfsrd.com/classes/base-classes/oracle">Oracle</a> 6</dd>
 				<dd class="archetype"><a href="https://d20pfsrd.com/classes/base-classes/oracle/mysteries/paizo-oracle-mysteries/time">Time</a> Mystery</dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/classes/base-classes/Oracle/oracle-curses/#Possessed_Curse_of_Corruption">Possessed</a> Curse</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/base-classes/Oracle/oracle-curses#Possessed">Possessed</a> Curse</dd>
 			</dl>
 			<dl class="charInfo">
 				<dt>Deity</dt>
@@ -93,7 +93,7 @@
 				<small>min.1</small></dd>
 			<dt>ninja 2</dt>
 			<dd><a href="https://d20pfsrd.com/classes/alternate-classes/ninja/ninja-tricks/paizo-ninja-tricks/vanishing-trick">Vanishing Trick</a>
-				<small>min.3</small></dd>
+				<small>min.1</small></dd>
 			<dt>level 3</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/piranha-strike-combat">Piranha Strike</a>
 				<small>min.2</small></dd>
@@ -275,6 +275,7 @@
 						<strong>8</strong>
 						<b>Init</b>
 						<small>6 dex, <u title="Reactionnary">2 trait</u></small>
+						<div class="circumstancialBonus" title="Temporal Celerity"><u>Advantage</u> at will.</div>
 					</li>
 					<li>
 						<strong>54</strong>
@@ -309,24 +310,18 @@
 					</li>
 				</ul>
 
-				<!--Dagger-->
+				<!--Wakizashi-->
 				<div class="weapon">
-					<h2>Katana &amp; Wakizashi <b>18x2</b> <b>PS</b></h2>
-					<div class="apartee float align">TWF <b>+9</b>: 1d8<br> <b>+9</b>: 1d6</div>
+					<h2>Wakizashi <b>18x2</b> <b>PS</b></h2>
 					<div class="summation"><strong>+11</strong> vs AC <small>4 bab, <u title="Weapon Finesse">6 dex</u>, 1 mwk</small></div>
-					<div class="summation"><strong>1d8</strong> <small>0 str</small></div>
+					<div class="summation"><strong>1d6+6</strong> <small><u title="Ninja gets Unchained Rogue's Finesse Training">6 dex</u></small></div>
 					<div class="circumstancialBonus"><a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-deadly">Deadly</a>.</div>
 				</div>
 
-				<p class="apartee">+<b>15</b> with Flanking (2), Invisible (2), Canny Tumble (2), Piranha Strike (-2).<br>
-					<b>1d8+3d6+4</b> with Sneak (3d6), Piranha Strike (4).</p>
-
-				<!--Shortbow-->
-				<div class="weapon">
-					<h2>Shortbow <b>20x3</b> <b>60 ft.</b> <b>P</b></h2>
-					<div class="summation"><strong>+10</strong> vs AC <small>4 bab, 6 dex</small></div>
-					<div class="summation"><strong>1d6</strong> <small>0 str</small></div>
-				</div>
+				<p class="apartee">+<b>15</b> with Invisible (2), Canny Tumble (2), Divine Favor (2), Piranha Strike (-2).<br>
+					<b>4d6+12</b> with Sneak (3d6), Piranha Strike (4), Divine Favor (2).</p>
+				<p class="apartee">+<b>11</b>/+<b>9</b> with Invisible (2¹), Divine Favor (2), Piranha Strike (-2), TWF (-2).<br>
+					<b>4d6+12</b>/<b>4d6+7</b> with Sneak (3d6), Piranha Strike (4¹/2²), Divine Favor (2), TWF (-3²).</p>
 			</div>
 			<!--end of Basics: Statblock and Weapons-->
 
@@ -355,10 +350,9 @@
 					<li class="minki">Always have a running start when jumping.</li>
 				</ul>
 				<h2>Light Steps (Ex)</h2>
-				<h2>Temporal Celerity (Su)</h2>
-				<p>Always get advantage on Initiative</p>
 				<h2>Erase from Time (Su) <u title="Increases at 1st, 11th">1/day</u></h2>
-				<p>Make a melee touch attack: target is suspended in time for <u title="3 oracle&frac12;">3 rounds</u> (Fort <u title="10, 3 oracle&frac12;, 4 cha">DC 17</u> negates).</p>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, make a melee touch attack (<u title="4 bab, 6 dex">+10</u>).
+					Target is suspended in time for <u title="3 oracle&frac12;">3 rounds</u> (Fort <u title="10, 3 oracle&frac12;, 4 cha">DC 17</u> negates).</p>
 			</div>
 		</section>
 
@@ -380,14 +374,10 @@
 			<li class="emptyitemslot">Feet</li>
 		</ul>
 		<ul id="inventory">
-			<li><!-- 400 + 50 -->
-				<a href="https://d20pfsrd.com/equipment/weapons/eastern-weapons">Katana</a>, cold-iron masterwork
+			<li><!-- 370×2 + 50 -->
+				2&times; <a href="https://d20pfsrd.com/equipment/weapons/eastern-weapons">Wakizashi</a>, cold-iron masterwork
 				<small>exotic one-handed, 1d8, 18x2, PS, deadly.</small>
 				<div class="circumstancialBonus"><a href="https://paizo.com/pathfinderRPG/prd/ultimateEquipment/gear">Poisoning Sheath</a></div>
-			</li>
-			<li><!-- 370 -->
-				<a href="https://d20pfsrd.com/equipment/weapons/eastern-weapons">Wakizashi</a>, cold-iron masterwork
-				<small>exotic light, 1d6, 18x2, PS, deadly.</small>
 			</li>
 			<li><!--30 (ammo: 1 gp for 20)-->
 				<a href="https://d20pfsrd.com/equipment/weapons">Shortbow</a>
@@ -409,14 +399,17 @@
 			</li>
 
 			<li><!--200--><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/ioun-stones">Ioun Stone</a>, Deep Red Sphere, cracked</li>
-			<li>38 <b>gp</b><!--/16000--></li>
+			<li><!--50-->
+				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</li>
+			<li>18 <b>gp</b><!--/16000--></li>
 		</ul>
 
 		<!-- title NOTES -->
 		<section class="noprint">
 			<hr>
-			<p><a href="https://docs.google.com/document/d/1dEZyEP-yooZdGprglxcEorpL_EnPfUqr6M89uHmF8Bo/edit?pli=1">Guide used today</a>,
-				<a href="https://docs.google.com/document/d/1BkI5ph1ZDPRt8YrkCl9hG1VF8vHYbkC1nMRT9RcQGGE/edit">Oracle Guide</a></p>
+			<p>Guides used: <a href="https://docs.google.com/document/d/1dEZyEP-yooZdGprglxcEorpL_EnPfUqr6M89uHmF8Bo/edit?pli=1">Death from the Shadow &copy;Jb200</a> (ninja),
+				<a href="https://docs.google.com/document/d/1BkI5ph1ZDPRt8YrkCl9hG1VF8vHYbkC1nMRT9RcQGGE/edit">Bell, Book, &amp; Candle &copy;Allerseelen</a> (oracle).</p>
 			<p>
 				Invisibility gives +2 to hit against sighted opponents, in addition to denying Dex in AC.<br/>
 				Haste gives +1 to hit, +1 AC, +1 Reflex, x2 Speed, not only the "extra attack in full round action".<br/>
@@ -437,6 +430,12 @@
 				<li>Gain <i>Combat Trick</i>: <a href="https://d20pfsrd.com/feats/combat-feats/spring-attack-combat">Spring Attack</a></li>
 				<li>Gain <i>Combat Trick</i>: <a href="https://d20pfsrd.com/feats/combat-feats/step-up-combat">Step Up</a></li>
 			</ul>
+
+			<details>
+				<summary class="subtitle">What Iwamori looks like</summary>
+				<img src="https://i.pinimg.com/originals/20/d5/94/20d5941bf604d708c6a24095c25b6101.jpg">
+				Could not find source. <!--by "Yuan", or from a chinese drama movie named "The Silent Criminal", 2020-->
+			</details>
 
 			<dl class="charInfo">
 				<dt>Qualities</dt>
