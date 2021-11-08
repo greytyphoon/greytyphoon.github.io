@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Mount</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.challenge { color: var(--transmutation-teal); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="master" href="Sargaro.html">Master</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Rupert, the beautiful</h1>
+			N Large animal
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>19 <small>16, <u title="4th level Advancement">2</u>, <u title="Str/Dex Bonus">1</u></small></dd>
+
+				<dt>Dex</dt>
+				<dd>14 <small>13, <u title="Str/Dex Bonus">1</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>17 <small>15, <u title="4th level Advancement">2</u></small></dd>
+
+				<dt>Int</dt>
+				<dd>3 <small>2, <u title="Ability Score Increase">1</u></small></dd>
+
+				<dt>Wis</dt>
+				<dd>12</dd>
+
+				<dt>Cha</dt>
+				<dd>6</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/druid/animal-companions#TOC-Horse">Horse</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/druid/animal-companions">Animal Companion</a> 4</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/druid/animal-companions/animal-companion-archetypes/charger-companion-archetype">Charger</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Senses</dt>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Scent">Scent</a></dd>
+
+				<dt>Speed</dt>
+				<dd title="50 racial, 5 Thoroughbred">55 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common (cannot speak)</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>cavalier 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/armor-proficiency-light">Light Armor Proficiency</a>
+				<small>bonus</small></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a>
+				<small>min.1</small></dd>
+			<dt>level 2</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-bull-rush-combat">Powerful Manoeuvers</a> (BR, Ov, Tr)
+				<small>min.1</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/animal-companion-feats/forceful-charge">Forceful Charge</a> or
+				<a href="https://d20pfsrd.com/feats/combat-feats/charge-through-combat">Charge Through</a>
+				<small>min.1</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>1 wis, 1 ranks, 3 class</small>
+			</li>
+
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>
+				<small>2 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>2</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+				<small>2 dex, 1 ranks, 3 class, -4 size</small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/swim">Swim</a>
+				<small>4 str, 1 ranks, 3 class</small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="4 companion">4 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/intimidate" title="Charger Archetype">Intimidate</a>.
+		</p>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<ul class="summations">
+				<li class="br">
+					<strong>2</strong>
+					<b>Init</b>
+					<small>2 dex</small>
+				</li>
+				<li>
+					<strong>42</strong>
+					<b>HP</b>
+					<small>4 animal: 8 class, 3 con; -2 rolled</small>
+				</li>
+				<li class="br">
+					<strong>21</strong>
+					<b>AC</b> touch 11, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 19
+					<small>10, 2 dex, 4 armor, -1 size, <u title="4 racial, 2 class">6 natural</u></small>
+				<div class="circumstancialBonus challenge" title="Mounted Challenge"><u>-1</u> vs creatures other than your target.</div>
+				</li>
+				<li>
+					<strong>7</strong>
+					<b>Fort</b>
+					<small>3 con, 4 class</small>
+				</li>
+				<li>
+					<strong>6</strong>
+					<b>Ref</b>
+					<small>2 dex, 4 class</small>
+				</li>
+				<li class="br">
+					<strong>2</strong>
+					<b>Will</b>
+					<small>1 wis, 1 class</small>
+				</li>
+				<li>
+					<strong>8</strong>
+					<b>CMB</b>; 20 <b>CMD</b>
+					<small>3 bab, 4 str, 2 dex, 1 size</small>
+					<div class="circumstancialBonus" title="Powerful Maneuver"><u>+2</u> to/vs Bull Rush, Overrun, Trip. These maneuvers don't provoke.</div>
+					<div class="circumstancialBonus" title="Powerful Maneuver"> Overrun targets can't choose to avoid you.</div>
+					<div class="circumstancialBonus" title="Quadruped"> <u>+4</u> vs trip, overrun</div>
+				</li>
+			</ul>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<h2 title="8 known: 6' int, 1 level (halved by Charger Archetype), 1 Thoroughbred"><a href="https://d20pfsrd.com/skills/handle-animal">Tricks</a></h2>
+				<div class="apartee float">
+					Doing any of these is DC10 HA as free,<br>
+					Doing anything else is DC25 HA as move,<br>
+					DC increases by +2 when wounded.
+				</div>
+				<ul>
+					<li>Attack</li>
+					<li>Come</li>
+					<li>Defend</li>
+					<li>Deliver</li>
+					<li>Down</li>
+					<li>Get Help</li>
+					<li>Maneuver (Overrun)</li>
+					<li>Rescue</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="row">
+			<div>
+				<!--Bite-->
+				<div class="weapon">
+					<h2>Bite <b>20x2</b> <b>BPS</b></h2>
+					<div class="apartee float"><b>Full Attack:</b><br>Bite, 2 Hooves</div>
+					<div class="summation"><strong>+6</strong> vs AC <small>3 bab, 4 str, -1 size</small></div>
+					<div class="summation"><strong>1d4+4</strong> <small>4 str</small></div>
+				</div>
+
+				<p class="apartee">+<b>8</b> with PA (-1),
+					<span class="challenge" title="Mounted Challenge">Challenge (<u>1 morale</u>)</span>, Charge (2).<br>
+					<b>1d4+8</b> with PA (2), <span class="challenge" title="Mounted Challenge">Challenge (<u>2</u>)</span>.</p>
+			</div>
+
+			<!--Hoof-->
+			<div class="weapon">
+				<h2>Hoof <b>20x2</b> <b>B</b></h2>
+				<div class="summation"><strong>+1</strong> vs AC <small>3 bab, 4 str, -1 size, -5 secondary</small></div>
+				<div class="summation"><strong>1d6+2</strong> <small>2 str&frac12;</small></div>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="inventory"
+			<!--Armor-->
+			<li><!--450 (75×4 + 150)-->
+				<a href="https://d20pfsrd.com/equipment/armor">Chain Coat</a>, masterwork
+				<small>medium, 4 armor, 5 dex, 2 acp, 30% asf</small>
+				<div class="circumstancialBonus"><u title="Barding Training">+1 dex, -1 acp, no speed penalty</u></div>
+			</li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<details>
+				<summary class="subtitle">What Rupert looks like</summary>
+				<a href="https://www.flickr.com/photos/raphaelmacek/4911592992/in/photostream">
+				<img src="https://i.pinimg.com/originals/79/47/2a/79472a5798a9e3c260642a4190dd9e8b.jpg" alt="Huge... &copy;Raphael Macek"></a>
+				Photo by <a href="https://raphaelmacek.com/">Raphael Macek</a>.
+			</details>
+			<dl class="charInfo">
+				<dt>Eyes</dt>
+				<dd>Black</dd>
+
+				<dt>Hair</dt>
+				<dd>Caramel brown, with a long white spot on the head</dd>
+
+				<dt>Age</dt>
+				<dd>7</dd>
+
+				<dt>Weight</dt>
+				<dd>1212 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>7' 1''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
