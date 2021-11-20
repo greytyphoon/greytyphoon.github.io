@@ -10,7 +10,9 @@
 	<link rel="stylesheet" href="../../system/pfGeneric.css">
 	<style>
 		#main td { text-align: center; }
+		#character-creation > li { margin-bottom: .75em; }
 		iframe { width: 100%; }
+		details[open] + .after-closed-details { display: none; }
 	</style>
 </head>
 <body>
@@ -40,41 +42,22 @@
 		<section class="row">
 			<div lang="en">
 				<h2>Character creation</h2>
-				<ul>
-					<li class="br">25 <a href="https://d20pfsrd.com/basics-ability-scores/ability-scores">points-buy</a>.</li>
-					<li class="br">
-						HD beyond the first are rolled, with a minimum of half the dice (round down) <em>plus one</em>. Then, you'll "catch up" one HP per session.</li>
-					<li class="br">
-						Start at level <em>3</em>*.
+				<ul id="character-creation">
+					<li>25 <a href="https://d20pfsrd.com/basics-ability-scores/ability-scores">points-buy</a>.</li>
+					<li>
+						Start at level 3.
 						<div class="circumstancialBonus">Unless the guild invests in buildings to start at higher levels.</div></li>
-					<li class="br">
-						Level cap is 6, for the first season. After level 6, every 20 XP, players may pick a feat from the <a href="http://p6codex.com/AbridgedP6CodexV0p2.pdf">P6 Codex</a> <small>PDF, 767 kb</small>.
-						<div class="circumstancialBonus">We encourage players to start new characters instead.</div>
-						<div class="circumstancialBonus">As we change seasons, we might not keep the P6 rules: these extra feats <em>might be lost</em> in the transition. Keep that in mind!</div></li>
-					<li class="br">
+					<li>
+						We use all <a href="https://docs.google.com/document/d/1vhwAw2KgXBohwIwTGGuga5SaddjMf4ul0P5CXWag6HU">these houserules</a>.
+						<div class="circumstancialBonus">All characters gain at least 2 bonus feats, check it out.</div></li>
+					<li>
+						We use the <a href="https://d20pfsrd.com/skills/background-skills">background skills</a> system.
+						<div class="circumstancialBonus">Each level, gain two additional skill points to spend in these skills.</div></li>
+					<li>
 						Characters get 2 traits.
 						<div class="circumstancialBonus">Do not use Pathfinder's drawback system to get a third trait.</div>
 						<div class="circumstancialBonus">Feel free to give roleplay drawbacks to your characters!</div></li>
-					<li class="br">
-						Encumberance will not be tracked.
-						<div class="circumstancialBonus">Unless you really go overboard.</div></li>
-					<li class="br">
-						We use the <a href="https://d20pfsrd.com/skills/background-skills">background skills</a> system.
-						<div class="circumstancialBonus">Each level, gain two additional skill points to spend in these skills.</div></li>
-					<li class="br">
-						When outside combat, every healing spell is maximized.
-						<div class="circumstancialBonus">Any dice roll counts as if it rolled the maximum possible value.</div>
-						<div class="circumstancialBonus">Much like taking 20, the spell takes proportionally more time to cast.</div></li>
-					<li class="br">
-						The XP curve is simplified. A session designed for 4th-level players will give 4 XP. Leveling up from Nth level requires N&times;(N-1) XP.
-						<div class="circumstancialBonus">Simplifies XP balancing across multiple DMs.</div></li>
-					<li class="br">
-						Player wealth is simplified. Players get the normal wealth-by-level.
-						<div class="circumstancialBonus">Simplifies gold balancing across multiple DMs.</div>
-					<li class="br">
-						We use all <a href="https://docs.google.com/document/d/1vhwAw2KgXBohwIwTGGuga5SaddjMf4ul0P5CXWag6HU">these houserules</a>.
-						<div class="circumstancialBonus">All characters gain at least 2 bonus feats, check it out.</div></li>
-					<li class="br">
+					<li>
 						Item creation/crafting in downtime is not supported.
 						<div class="circumstancialBonus">
 							Wizards get <a href="https://d20pfsrd.com/feats/general-feats/spell-focus">spell focus</a>
@@ -87,35 +70,60 @@
 							instead of <a href="https://d20pfsrd.com/feats/item-creation-feats/scribe-scroll-item-creation">scribe scroll</a>.</div>
 						<div class="circumstancialBonus">If your class or archetype would give you an item creation feat, refer to
 							<a href="https://paizo.com/pathfinderSociety/additional">Pathfinder Society Rules</a> to see what you get instead.</div></li>
+					<li>
+						HD beyond the first are rolled, with a minimum of half the dice (round down) <em>plus one</em>. Then, you'll "catch up" one HP per session.
+						<div class="circumstancialBonus">A 3rd-level <a href="https://d20pfsrd.com/classes/core-classes/cleric">cleric</a> will have <code>3d8 = <b>8</b>+5+5 = 18</code> HP, or more if he rolls high.</div></li>
+					<li>
+						Encumberance will not be tracked.
+						<div class="circumstancialBonus">Unless you really go overboard.</div></li>
+					<li>
+						When outside combat, every healing spell is maximized.
+						<div class="circumstancialBonus">Any dice roll counts as if it rolled the maximum possible value.</div>
+						<div class="circumstancialBonus">Much like taking 20, the spell takes proportionally more time to cast.</div></li>
+					<li>
+						The XP curve is simplified.
+						<div class="circumstancialBonus">A session designed for Nth-level players will give N XP.</div>
+						<div class="circumstancialBonus">Leveling up from Nth level requires N&times;(N-1) XP.</div>
+						<div class="circumstancialBonus">Simplifies XP balancing across multiple DMs.</div></li>
+					<li>
+						Player wealth is simplified.
+						<div class="circumstancialBonus">Players get the normal wealth-by-level.</div>
+						<div class="circumstancialBonus">Simplifies gold balancing across multiple DMs.</div>
+					<details>
+						<summary class="subtitle">Wealth FAQ</summary>
+						<ul>
+							<li class="br">Players may find "treasures", but don't actually gain wealth until they level up, at which point they get exactly the expected wealth by level.</li>
+							<li class="br">If a DM drops an item, you get to keep it immediately.
+								Once you level up, it counts in your wealth by level (so you "gain" less than a player who didn't get an item drop, reaching the same total).</li>
+							<li class="br">The maximum you can spend on a single item is 6,000 gold, to create rarity.
+								Any item more expensive than that should be the target of a quest to get it.
+								That quest should be at least level 6.
+								The only exceptions are upgradable items, like +2 weapons <small>8,000gp</small> and +3 armors <small>9,000gp</small>,
+								when the diffence with the previous level <small>e.g. +1 weapon: 2,000gp</small> is 6,000 gold or less.
+								In effect, the "upgrade" counts as a different item.</li>
+							<li class="br">Consumables are replenished when you come back to the guild, up to <em>10%</em> of your maximum wealth.
+								If you spent more than that in consumables, there remains a gap in your budget:
+								it can be filled next time you go adventuring, if you spend less in consumables then.</li>
+							<li class="br">If your character has a spellbook and you want to learn more spells than those you would normally have by levelling up, you can.
+								Add the cost of <a href="https://d20pfsrd.com/Magic/#TOC-Adding-Spells-to-a-Wizard-s-Spellbo">learning a spell of that level</a>
+								to the cost of your spellbook.
+								This isn't a consumable, and it isn't replenished when you go adventuring.</li>
+						</ul>
+					</details>
+					<div class="circumstancialBonus after-closed-details">Expand to see how we handle consumables, loot, spellbooks...</div></li>
 				</ul>
 
-				<details>
-					<summary class="subtitle">Wealth FAQ</summary>
-					<ul>
-						<li class="br">Players may find "treasures", but don't actually gain wealth until they level up, at which point they get exactly the expected wealth by level.</li>
-						<li class="br">If a DM drops an item, you get to keep it immediately.
-							Once you level up, it counts in your wealth by level (so you "gain" less than a player who didn't get an item drop, reaching the same total).</li>
-						<li class="br">The maximum you can spend on a single item is 6,000 gold, to create rarity.
-							Any item more expensive than that should be the target of a quest to get it.
-							That quest should be at least level 6.</li>
-						<li class="br">Consumables are replenished when you come back to the guild, up to <em>10%</em> of your maximum wealth.
-							If you spent more than that in consumables, there remains a gap in your budget:
-							it can be filled next time you go adventuring, if you spend less in consumables then.</li>
-						<li class="br">If your character has a spellbook and you want to learn more spells than those you would normally have by levelling up, you can.
-							Add the cost of <a href="https://d20pfsrd.com/Magic/#TOC-Adding-Spells-to-a-Wizard-s-Spellbo">learning a spell of that level</a>
-							to the cost of your spellbook.
-							This isn't a consumable, and it isn't replenished when you go adventuring.</li>
-					</ul>
-				</details>
 			</div>
 			<div>
 				<h2>Conventions sur le Worldbuilding</h2>
-				<p>On est une nouvelle guilde d'aventuriers intrépides, fraîchement installés dans une auberge à l'orée d'une ville.</p>
+				<p>On est une guilde d'aventuriers intrépides, installés dans une auberge à l'orée de la ville de <em>Sherbouc</em>.
+					Voir la <a href="https://i.redd.it/4w7yt1zus8f71.jpg">carte du monde</a>.</p>
 				<p>Notre auberge fait partie d'une colonie sur un nouveau plan d'existence.
 					La civilisation telle qu'on la connait est installée là depuis ~250 ans.
 					Le portail s'est fermé après un siècle, il y a ~150 ans.
 					Malheureusement, il est devenu extrêmement difficile de communiquer avec le "vieux monde".
 					Il y a des <i>waypoints</i> entre les villes, permettant des voyages rapides au besoin, mais ils ne traversent pas les dimensions.</p>
+
 				<ul>
 					<li>Setting médiéval fantastique.</li>
 					<li><a href="https://aonprd.com/DeitiesByGroup.aspx">Panthéon de Pathfinder.</a></li>
@@ -141,7 +149,7 @@
 				<details>
 					<summary class="subtitle">Retraining</summary>
 					<p>Besoin de changer d'idée sur un feat?
-						Un personnage peut être déclaré "en retraining", et passer un certain nombre de temps en retraining tel que spécifié sur 
+						Un personnage peut être déclaré "en retraining", et passer un certain nombre de temps en retraining tel que spécifié sur
 						<a href="https://d20pfsrd.com/basics-ability-scores/more-character-options/retraining">la page <i>retraining</i> du d20pfsrd</a>.
 						Le personnage doit rester en retraining pour le temps prescrit en temps réel (dans la vraie vie) pour changer une option.
 						Tant qu'il est en retraining, le personnage ne peut pas être utilisé dans une aventure.
