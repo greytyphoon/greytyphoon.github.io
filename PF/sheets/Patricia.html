@@ -72,8 +72,7 @@
 		<hr>
 		<dl id="featsWrapper">
 			<dt>traits</dt>
-			<dd><a href="https://d20pfsrd.com/traits/social-traits/adopted">Adopted</a>:
-				<a href="https://d20pfsrd.com/traits/race-traits/helpful">Helpful</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/religion-traits/blade-of-mercy-goddess-of-dawn/">Blade of Mercy</a></dd>
 			<dd><a href="https://d20pfsrd.com/traits/regional-traits/wary">Wary</a></dd>
 			<dt>bonus</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a></dd>
@@ -88,11 +87,11 @@
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat">Weapon Finesse</a>
 				<small>bonus</small></dd>
 			<dt>level 3</dt>
-			<dd><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/following-step-combat">Following Step</a>
 				<small>min.1</small></dd>
 			<dt>level 5</dt>
-			<dd><a href="https://d20pfsrd.com/feats/combat-feats/bodyguard-combat">Bodyguard</a>
-				<small>min.1</small></dd>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/reward-of-grace">Reward of Grace</a>
+				<small>min.2</small></dd>
 		</dl>
 
 		<!-- SKILLS -->
@@ -204,13 +203,15 @@
 					</li>
 				</ul>
 
-				<!--Trident-->
+				<!--Scimitar-->
 				<div class="weapon">
-					<h2>Trident <b>20x2</b> <b>P</b></h2>
+					<h2>Scimitar <b>18x2</b> <b>P, nonlethal</b></h2>
 					<div class="apartee float align"><b>PA</b> -2/+6</div>
 					<div class="summation"><strong>+12</strong> vs AC <small>4 bab, <u title="Bravo's Finesse">6 dex</u>, 1 mwk, 1 w.focus</small></div>
 					<div class="circumstancialBonus smite"><u title="2 cha">+2</u> vs target</div>
-					<div class="summation"><strong>1d8+9</strong> <small>3 str&frac12;, <u title="Weapon Grace, 2 paladin&frac12;">2</u>, <u title="Precise Strike" class="panache">4 precision</u></small></div>
+					<div class="circumstancialBonus" title="Reward of Grace"><u>+1 sacred</u> for 1 round after using Lay on Hands.</div>
+					<div class="summation"><strong>1d6+10</strong> <small>3 str&frac12;, <u title="Blade of Mercy">1 trait</u>, <u title="Weapon Grace, 2 paladin&frac12;">2</u>, <u title="Precise Strike" class="panache">4 precision</u></small></div>
+					<div class="circumstancialBonus"><a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-nonlethal">Nonlethal</a></div>
 					<div class="circumstancialBonus smite">
 						<u title="4 paladin">+4</u> vs target<br>
 						<u title="4 paladin">+4</u> if target is Outsider, Dragon, Undead, or has Aura: Evil<br/>
@@ -244,24 +245,20 @@
 					<dt class="panache">Menacing Swordplay</dt>
 					<dd class="panache">As a <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, demoralize when you hit</dd>
 				</dl>
-				<p>
-					Gain 1 panache when you confirm a crit, or kill.<br>
-					(Except unaware, helpless, or low-level creatures)
-				</p>
+				<p>Gain 1 panache when you confirm a crit, or kill.
+					<small>Except unaware, helpless, or low-level creatures.</small></p>
 
 				<h2>Lay on Hands (Su) <u title="2 paladin&frac12;, 2 cha">4/day</u></h2>
-				<p>
-					As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>
 					(<a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a> on yourself),<br>
-					heal <b>2d6</b>, or touch attack to harm undead.
-				</p>
+					heal <b>2d6</b>, or touch attack to harm undead.</p>
 
-				<h2>Channel Energy (Su) <b>costs 2 LoH</b></h2>
-				<p>
-					As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
-					you choose undead or living.<br>
-					<b title="2 cha">2d6+2</b> positive energy, 30ft radius, Will <u title="10, 2 paladin&frac12;, 2 cha">DC 14</u> halves.
-				</p>
+				<h2>Channel Energy (Su) <b title="Houserules: add casting stat to damage healed/inflicted.">2d6+2, costs 2 LoH</b></h2>
+
+				<h2>Aura of Courage (Su)</h2>
+				<p>Allies within 10ft gain <u>+4 morale</u> vs fear.</p>
+
+				<h2 class="reaction">Following Step</h2>
 			</div>
 		</section>
 
@@ -276,8 +273,12 @@
 		<ul id="inventory">
 			<!--Weapons-->
 			<li><!--330-->
-				<a href="https://d20pfsrd.com/equipment/weapons">Trident</a>, cold-iron masterwork
-				<small>martial one-handed, 1d8, 20x2, P, brace thrown 10ft.</small>
+				<a href="https://d20pfsrd.com/equipment/weapons">Scimitar</a>, cold-iron masterwork
+				<small>martial one-handed, 1d6, 18x2, S.</small>
+			</li>
+			<li><!--30-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Trident</a>, cold-iron
+				<small>martial one-handed, 1d8, 20x2, P, brace, thrown 10ft.</small>
 			</li>
 			<li class="br"><!--375 (ammo: 2 gp for 20)-->
 				<a href="https://d20pfsrd.com/equipment/weapons">Longbow</a>, masterwork
@@ -298,13 +299,47 @@
 			<li><!--50-->
 				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
 			</li>
-			<li>43 <b>GP</b><!--/6000--></li>
+			<li>13 <b>GP</b><!--/6000--></li>
 		</ul>
 
 		<!-- title NOTES -->
 		<section class="noprint">
 			<hr>
-			<p>Patricia is the niece of <b>Gabriel</b> and <b>Louise Levasseur</b>, and she trained under their tutelage towards the faith of Sarenrae.</p>
+			<p>Patricia is the niece of <b>Gabriel and Louise Levasseur</b>, and she trained under their tutelage towards the faith of Sarenrae.
+				She's quite new in town and doesn't know that many people.
+				She bonded quickly with <b>William</b> over far-away adventuring stories, and joined the <b>Lance Étincellante 👑</b> guild.</p>
+			<p>She used to be great friends with <b>Hera</b> but they had a falling-off lately, and Hera joined an opposing guild out of spite.
+				Patricia is deeply sadened by this, in the end, and keeps a trident Hera offered her as a memento.</p>
+
+			<details>
+				<summary class="subtitle">What Patricia looks like</summary>
+				<a href="https://www.artstation.com/artwork/water-enchantress">
+				<img src="https://i.pinimg.com/originals/73/9a/e5/739ae59feda1daebd10aef4c5416d920.jpg" alt="Water Enchantress &copy;Karine K"></a>
+				Art by <a href="https://www.artstation.com/karine">Karine K</a>.
+			</details>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Cheerful and social</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/anxious">Sentimental</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Blue</dd>
+
+				<dt>Hair</dt>
+				<dd>Black</dd>
+
+				<dt>Age</dt>
+				<dd>21</dd>
+
+				<dt>Weight</dt>
+				<dd>136 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 5''</dd>
+			</dl>
 		</section>
 	</div>
 </body>
