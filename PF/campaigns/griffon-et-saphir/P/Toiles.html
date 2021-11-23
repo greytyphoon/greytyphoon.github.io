@@ -159,7 +159,6 @@
 			let sound = element.attributes["data-note"]?.value;
 			if (!sound) return;
 			melody = melody + sound.slice(1);
-			console.log(sound);
 			let audioFile = document.getElementById(sound);
 			if (audioFile.currentTime != 0 && !audioFile.ended) audioFile.currentTime = 0;
 			else audioFile.play();
