@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Riddle</title>
+	<link rel="stylesheet" href="../../../system/pfGeneric.css">
+	<style>
+		p { text-align: center; }
+		.hidden { display: none; }
+		#solution > b { color: var(--necromancy-purple); }
+
+		svg { display: block; margin-left: auto; margin-right: auto; }
+		svg path, svg line { stroke: var(--illusion-grey); stroke-width: 5; fill: none; }
+		svg path.selected, svg line.selected { stroke: var(--abjuration-gold); }
+		svg ellipse { transition: all .5s ease; }
+	</style>
+</head>
+<body onload="init()">
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>La toile</h1>
+		</header>
+		<p>Une étrange toile s'étend dans un cadre de pierre, à hauteur d'yeux, sur la porte.<br>
+			Tenant le centre de la toile, un anneau de fer noir brillant accueille une araignée mécanique, qui ne réagit pas à votre approche.</p>
+		<p><span class="apartee">Sound on! 🔊</span></p>
+		<svg width="420" height="360" class="br">
+			<path id="L1P1"	data-note="n1" data-spider="210,037" data-previous="L1,L2"	d="M105,13 A210,180 1 0,0 315,13" />	<!--n-->
+			<path id="L1P2"	data-note="n2" data-spider="210,054" data-previous="L1,L2"	d="M120,37 A210,180 1 0,0 300,37" />	<!--o-->
+			<path id="L1P3"	data-note="n3" data-spider="210,072" data-previous="L1,L2"	d="M134,60 A210,180 1 0,0 286,60" />	<!--e-->
+			<path id="L1P4"	data-note="n4" data-spider="210,090" data-previous="L1,L2"	d="M147,81 A210,180 1 0,0 273,81" />	<!--l-->
+			<path id="L1P5"	data-note="n5" data-spider="210,105" data-previous="L1,L2"	d="M159,100 A210,180 1 0,0 261,100" />	<!--m-->
+			<path id="L1P6"	data-note="n6" data-spider="210,122" data-previous="L1,L2"	d="M171,118 A210,180 1 0,0 249,118" />	<!--p-->
+			<path id="L1P7"	data-note="n7" data-spider="210,137" data-previous="L1,L2"	d="M182,135 A210,180 1 0,0 238,135" />	<!--d-->
+
+			<path id="L2P1"	data-note="n1" data-spider="337,110" data-previous="L3,L2"	d="M315,13 A210,180 1 0,0 410,180" />	<!--b-->
+			<path id="L2P2"	data-note="n2" data-spider="324,118" data-previous="L3,L2"	d="M300,37 A210,180 1 0,0 385,180" />	<!--i-->
+			<path id="L2P3"	data-note="n3" data-spider="310,125" data-previous="L3,L2"	d="M286,60 A210,180 1 0,0 360,180" />	<!--w-->
+			<path id="L2P4"	data-note="n4" data-spider="295,132" data-previous="L3,L2"	d="M273,81 A210,180 1 0,0 335,180" />	<!--'-->
+			<path id="L2P5"	data-note="n5" data-spider="279,143" data-previous="L3,L2"	d="M261,100 A210,180 1 0,0 310,180" />	<!--u-->
+			<path id="L2P6"	data-note="n6" data-spider="265,152" data-previous="L3,L2"	d="M249,118 A210,180 1 0,0 285,180" />	<!--s-->
+			<path id="L2P7"	data-note="n7" data-spider="250,160" data-previous="L3,L2"	d="M238,135 A210,180 1 0,0 260,180" />	<!--k-->
+
+			<path id="L3P1"	data-note="n1" data-spider="337,250" data-previous="L3,L4"	d="M410,180 A210,180 1 0,0 315,347" />	<!--f-->
+			<path id="L3P2"	data-note="n2" data-spider="324,242" data-previous="L3,L4"	d="M385,180 A210,180 1 0,0 300,323" />	<!--g-->
+			<path id="L3P3"	data-note="n3" data-spider="310,235" data-previous="L3,L4"	d="M360,180 A210,180 1 0,0 286,300" />	<!--r-->
+			<path id="L3P4"	data-note="n4" data-spider="295,228" data-previous="L3,L4"	d="M335,180 A210,180 1 0,0 273,279" />	<!--a-->
+			<path id="L3P5"	data-note="n5" data-spider="279,217" data-previous="L3,L4"	d="M310,180 A210,180 1 0,0 261,260" />	<!--t-->
+			<path id="L3P6"	data-note="n6" data-spider="265,208" data-previous="L3,L4"	d="M285,180 A210,180 1 0,0 249,242" />	<!--z-->
+			<path id="L3P7"	data-note="n7" data-spider="250,200" data-previous="L3,L4"	d="M260,180 A210,180 1 0,0 238,225" />	<!--h-->
+
+			<path id="L4P1"	data-note="n1" data-spider="210,323" data-previous="L4,L5"	d="M105,347 A210,180 1 0,1 315,347" />
+			<path id="L4P2"	data-note="n2" data-spider="210,306" data-previous="L4,L5"	d="M120,323 A210,180 1 0,1 300,323" />
+			<path id="L4P3"	data-note="n3" data-spider="210,288" data-previous="L4,L5"	d="M134,300 A210,180 1 0,1 286,300" />
+			<path id="L4P4"	data-note="n4" data-spider="210,270" data-previous="L4,L5"	d="M147,279 A210,180 1 0,1 273,279" />
+			<path id="L4P5"	data-note="n5" data-spider="210,255" data-previous="L4,L5"	d="M159,260 A210,180 1 0,1 261,260" />
+			<path id="L4P6"	data-note="n6" data-spider="210,238" data-previous="L4,L5"	d="M171,242 A210,180 1 0,1 249,242" />
+			<path id="L4P7"	data-note="n7" data-spider="210,223" data-previous="L4,L5"	d="M182,225 A210,180 1 0,1 238,225" />
+
+			<path id="L5P1"	data-note="n1" data-spider="083,250" data-previous="L5,L6"	d="M105,347 A210,180 1 0,0 10,180" />
+			<path id="L5P2"	data-note="n2" data-spider="096,242" data-previous="L5,L6"	d="M120,323 A210,180 1 0,0 35,180" />
+			<path id="L5P3"	data-note="n3" data-spider="110,235" data-previous="L5,L6"	d="M134,300 A210,180 1 0,0 60,180" />
+			<path id="L5P4"	data-note="n4" data-spider="125,228" data-previous="L5,L6"	d="M147,279 A210,180 1 0,0 85,180" />
+			<path id="L5P5"	data-note="n5" data-spider="141,217" data-previous="L5,L6"	d="M159,260 A210,180 1 0,0 110,180" />
+			<path id="L5P6"	data-note="n6" data-spider="155,208" data-previous="L5,L6"	d="M171,242 A210,180 1 0,0 135,180" />
+			<path id="L5P7"	data-note="n7" data-spider="170,200" data-previous="L5,L6"	d="M182,225 A210,180 1 0,0 160,180" />
+
+			<path id="L6P1"	data-note="n1" data-spider="083,110" data-previous="L1,L6"	d="M105,13 A210,180 1 0,1 10,180" />
+			<path id="L6P2"	data-note="n2" data-spider="096,118" data-previous="L1,L6"	d="M120,37 A210,180 1 0,1 35,180" />
+			<path id="L6P3"	data-note="n3" data-spider="110,125" data-previous="L1,L6"	d="M134,60 A210,180 1 0,1 60,180" />
+			<path id="L6P4"	data-note="n4" data-spider="125,132" data-previous="L1,L6"	d="M147,81 A210,180 1 0,1 85,180" />
+			<path id="L6P5"	data-note="n5" data-spider="141,143" data-previous="L1,L6"	d="M159,100 A210,180 1 0,1 110,180" />
+			<path id="L6P6"	data-note="n6" data-spider="155,152" data-previous="L1,L6"	d="M171,118 A210,180 1 0,1 135,180" />
+			<path id="L6P7"	data-note="n7" data-spider="170,160" data-previous="L1,L6"	d="M182,135 A210,180 1 0,1 160,180" />
+
+			<line id="L1"	data-note="nA" data-spider="150,084" data-previous="circle,L1P1,L1P2,L1P3,L1P4,L1P5,L1P6,L1P7,L6P1,L6P2,L6P3,L6P4,L6P5,L6P6,L6P7"	x1="200" y1="163" x2="100" y2="5" />
+			<line id="L2"	data-note="nB" data-spider="270,084" data-previous="circle,L1P1,L1P2,L1P3,L1P4,L1P5,L1P6,L1P7,L2P1,L2P2,L2P3,L2P4,L2P5,L2P6,L2P7"	x1="220" y1="163" x2="320" y2="5" />
+			<line id="L3"	data-note="nC" data-spider="322,180" data-previous="circle,L2P1,L2P2,L2P3,L2P4,L2P5,L2P6,L2P7,L3P1,L3P2,L3P3,L3P4,L3P5,L3P6,L3P7"	x1="230" y1="180" x2="415" y2="180" />
+			<line id="L4"	data-note="nA" data-spider="270,276" data-previous="circle,L3P1,L3P2,L3P3,L3P4,L3P5,L3P6,L3P7,L4P1,L4P2,L4P3,L4P4,L4P5,L4P6,L4P7"	x1="220" y1="197" x2="320" y2="355" />
+			<line id="L5"	data-note="nB" data-spider="150,276" data-previous="circle,L4P1,L4P2,L4P3,L4P4,L4P5,L4P6,L4P7,L5P1,L5P2,L5P3,L5P4,L5P5,L5P6,L5P7"	x1="200" y1="197" x2="100" y2="355" />
+			<line id="L6"	data-note="nC" data-spider="098,180" data-previous="circle,L5P1,L5P2,L5P3,L5P4,L5P5,L5P6,L5P7,L6P1,L6P2,L6P3,L6P4,L6P5,L6P6,L6P7"	x1="190" y1="180" x2="5" y2="180" />
+
+			<polygon points="100,5 320,5 415,180 320,355 100,355 5,180" fill="none" stroke="var(--murder-black)" stroke-width="10" />
+			<circle id="circle" data-spider="210,180" cx="210" cy="180" r="20" stroke="var(--murder-black)" stroke-width="5" fill="var(--html-white)" />
+			<ellipse id="spider" cx="210" cy="180" rx="8" ry="5"  stroke="var(--necromancy-purple)" stroke-width="1" fill="var(--necromancy-purple)" />
+		</svg>
+		<p id="solution" class="hidden">Les mots "<b>Neb'sothar Kosnom</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
+			Dans le gémissement d'un mécanisme qui a dormi pendant des millénaires, la porte se met à s'ouvrir.</p>
+	</div>
+	<script>
+		var spiderStandsOn = "circle";
+		var melody = "";
+		var answer = "A1A3B1B4B6A2C5C7C4C3B7A2B6A1A2A5"; // Neb'sothar Kosnom
+		function init() {
+			document.querySelectorAll("audio").forEach(audio => { audio.volume = 0.5; });
+			document.querySelectorAll("path").forEach(path => { path.addEventListener("click", becomeSelectedPath); });
+			document.querySelectorAll("line").forEach(line => { line.addEventListener("click", becomeSelectedLine); });
+			document.querySelector("circle").addEventListener("click", reset);
+		}
+		function reset() {
+			// Move the spider to the center
+			moveSpiderTo(document.getElementById("circle"));
+			// Clears the melody
+			melody = "";
+			// Unselects all lines/paths
+			document.querySelectorAll(".selected").forEach(previouslySelectedElement => { previouslySelectedElement.classList.remove("selected"); });
+		}
+		function becomeSelectedLine(event) {
+			// Reject the event if the spider is not on an adjacent path OR on the circle
+			if (!checkAdjacent(event.target)) return;
+
+			// Move the spider
+			moveSpiderTo(event.target);
+			// Unselect all lines/paths
+			document.querySelectorAll(".selected").forEach(previouslySelectedElement => { previouslySelectedElement.classList.remove("selected"); });
+			// Select this line
+			event.target.classList.add("selected");
+			// Play a sound
+			playSound(event.target);
+		}
+		function becomeSelectedPath(event) {
+			// Reject the event if the spider is not on an adjacent line
+			if (!checkAdjacent(event.target)) return;
+
+			// Move the spider
+			moveSpiderTo(event.target);
+			// Select this path
+			event.target.classList.add("selected");
+			// Play a sound
+			playSound(event.target);
+
+			// Check victory condition: open door || splice beginning
+			if (melody == answer) {
+				document.getElementById("solution").classList.remove("hidden");
+				reset();
+			} else if (melody.length == answer.length) {
+				melody = melody.slice(2);
+			}
+		}
+
+		function checkAdjacent(element) {
+			let acceptablePrecedent = event.target.attributes["data-previous"]?.value.split(",");
+			return acceptablePrecedent && acceptablePrecedent.some(prec => prec == spiderStandsOn);
+		}
+		function moveSpiderTo(element) {
+			let coords = element.attributes["data-spider"]?.value.split(",");
+			if (!coords) return;
+			let spider = document.getElementById("spider");
+			spider.cx.baseVal.value = coords[0];
+			spider.cy.baseVal.value = coords[1];
+			spiderStandsOn = element.id;
+		}
+		function playSound(element) {
+			let sound = element.attributes["data-note"]?.value;
+			if (!sound) return;
+			melody = melody + sound.slice(1);
+			console.log(sound);
+			let audioFile = document.getElementById(sound);
+			if (audioFile.currentTime != 0 && !audioFile.ended) audioFile.currentTime = 0;
+			else audioFile.play();
+		}
+	</script>
+	<audio id="n1" src="Piano11.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n2" src="Piano12.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n3" src="Piano13.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n4" src="Piano14.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n5" src="Piano15.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n6" src="Piano16.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n7" src="Piano17.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="nA" src="Piano117.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="nB" src="Piano118.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="nC" src="Piano119.mp3" type="audio/mpeg" preload="auto" />
+</body>
+</html>
