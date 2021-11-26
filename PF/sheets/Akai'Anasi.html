@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Ghost Spiritualist</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		section.row > .wide6 { flex: 6; }
+		.spell.touch::after { content: " [touch]"; font-size: .8em; color: var(--transmutation-teal); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Akai'Anasi Daakhi, herald of death</h1>
+			CE Medium undead (incorporeal)
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd title="Undead">&ndash;</dd>
+
+				<dt>Dex</dt>
+				<dd>24 <small>17, <u title="Racial">4</u>, <u title="Advancement">1</u>, <u title="Belt of Incredible Dexterity">2</u></small></dd>
+
+				<dt>Con</dt>
+				<dd title="Undead">&ndash;</dd>
+
+				<dt>Int</dt>
+				<dd>12 <small>10, <u title="Racial">2</u></small></dd>
+
+				<dt>Wis</dt>
+				<dd>14 <small>12, <u title="Racial">2</u></small></dd>
+
+				<dt>Cha</dt>
+				<dd>24 <small>16, <u title="Racial">2</u>, <u title="Ghost Template">4</u>, <u title="Headband of Alluring Charisma">2</u></small></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-drow">Drow</a> Noble</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-drow#Alternate_Racial_Traits">Ambitious Schemer</a></dd>
+				<dd><a href="https://d20pfsrd.com/bestiary/monster-listings/templates/ghost">Ghost</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/bestiary/monster-listings/templates/ghost#Phantasmagoria_Su">Phantasmagoria</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/spiritualist">Spiritualist</a> 6</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/spiritualist/archetypes/paizo-llc-spiritualist-archetypes/ectoplasmatist-spiritualist-archetype">Ectoplasmatist</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/spiritualist/archetypes/paizo-llc-spiritualist-archetypes/fractured-mind-spiritualist-archetype">Fractured Mind</a></dd>
+
+				<dt>CR</dt>
+				<dd>7</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Calistria</dd>
+
+				<dt>Senses</dt>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">Darkvision</a> 120ft.</dd>
+				<dd><a href="https://d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Light-Blindness-Ex-">Light Blindness</a></dd>
+
+				<dt>Speed</dt>
+				<dd title="Ghost Template">Fly 30 ft. (<a href="https://d20pfsrd.com/skills/fly">perfect</a>)</dd>
+
+				<dt>Languages</dt>
+				<dd>Elven, Undercommon, Drow Sign Language</dd>
+
+				<dt>Special</dt>
+				<dd title="Undead">Does not eat, breathe, or sleep</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/campaign-traits/second-darkness/into-enemy-territory/">Into Enemy Territory</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/regional-traits/surface-stranger">Surface Stranger</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/magic-traits/two-world-magic">Two-World Magic</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/additional-traits">Additional Traits</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Perception)</dd>
+			<dt>drow</dt>
+			<dd><a href="https://d20pfsrd.com/feats/racial-feats/greater-drow-nobility-drow">Greater Drow Nobility</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/racial-feats/improved-umbral-scion-drow">Improved Umbral Scion</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/racial-feats/noble-spell-resistance-drow">Noble Spell Resistance</a></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/noble-scion">Noble Scion of War</a>
+				<small>min.1</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/monster-feats/flyby-attack/">Flyby Attack</a>
+				<small>min.1</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes">Combat Reflexes</a>
+				<small>min.1</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>22</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>2 wis, 6 ranks, <u title="Ghost Template">3 class</u>, 3 s.focus, <u title="Ghost Template">8 racial</u></small>
+			</li>
+
+			<!--Social Skills-->
+			<li>
+				<strong>18</strong>
+				<a href="https://d20pfsrd.com/skills/bluff">Bluff</a>
+				<small>7 cha, 6 ranks, 3 class, <u title="Ambitious Schemer">2 racial</u></small>
+			</li>
+			<li>
+				<strong>18</strong>
+				<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>
+				<small>7 cha, 6 ranks, <u title="Ambitious Schemer">3 class, 2 racial</u></small>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>
+				<small>7 cha, 1 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>
+				<small>2 wis, 6 ranks, 3 class</small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>19</strong>
+				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
+				<small>7 dex, 1 ranks, 3 class, <u title="Perfect Maneuverability">8</u></small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/heal">Heal</a>
+				<small>2 wis, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+				<small>1 int, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>19</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+				<small>7 dex, 1 ranks, <u title="Ghost Template">3 class</u>, <u title="Ghost Template">8 racial</u></small>
+				<div class="circumstancialBonus" title="Incorporeal">Cannot be heard</div>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
+				<small>7 cha, 1 ranks, 3 class</small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="6 spiritualist: 4 class, 1 int">30 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/knowledge">Knowledge</a> (all),
+			<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>,
+			and more skills granted by the <a href="https://d20pfsrd.com/bestiary/rules-for-monsters/Creature-types/#Undead">Undead creature type</a>.
+		</p>
+
+		<!-- title Spells -->
+		<hr>
+		<div id="spellHeader" class="apartee">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Charisma modifier.<br/>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Charisma modifier.<br/>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.<br/>
+
+			<h3><a href="https://d20pfsrd.com/occult-adventures/psychic-magic">Occult Magic Rules</a></h3>
+			Somatic --> Emotion (cannot be cast while under [emotion|fear] effect)<br>
+			Verbal --> Thought (concentration -10, safe move action negates)<br>
+			Undercasting (If I know Summon Monster IV, I also automatically know Summon Monster III, II, I)
+		</div>
+		<section class="row">
+			<div>
+				<h2>Drow Magic (Sp)</h2>
+				<ul>
+					<li>Constant <a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/dancing-lights">dancing lights</a> at-will,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/deeper-darkness">deeper darkness</a> at-will,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/faerie-fire">faerie fire</a> at-will,</li>
+					<li><a class="spell reaction" href="https://d20pfsrd.com/magic/all-spells/f/feather-fall">feather fall</a> at-will,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/levitate">levitate</a> at-will,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a> 1/day,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/divine-favor">divine favor</a> 1/day,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/suggestion">suggestion</a> 1/day.</li>
+				</ul>
+			</div>
+
+			<div class="wide6">
+				<section class="row">
+					<div>
+						<h2 title="6 known">Level 0</h2>
+						<ul>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/grave-words">grave words</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/guidance">guidance</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mage-hand">mage hand</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mending">mending</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/message">message</a>,</li>
+							<li><a class="spell bonus off-class touch" href="https://d20pfsrd.com/magic/all-spells/t/touch-of-fatigue">touch of fatigue</a>.</li>
+						</ul>
+					</div>
+					<div>
+						<h2 title="4 known">Level 1 <u title="4 class, 2 cha">6/day</u></h2>
+						<ul>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cause-fear">cause fear</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/t/telempathic-projection">telempathic projection</a>,</li>
+							<li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/t/touch-of-gracelessness">touch of gracelessness</a>.</li>
+						</ul>
+					</div>
+					<div>
+						<h2 title="4 known">Level 2 <u title="3 class, 2 cha">5/day</u></h2>
+						<ul>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/boneshaker">boneshaker</a>,</li>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/emotive-block">emotive block</a>,</li>
+							<li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/g/ghoul-touch">ghoul touch</a>,</li>
+							<li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/i/inflict-moderate-wounds">inflict moderate wounds</a>.</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="row">
+					<div>
+						<h2>Emotional Power - Zeal (Sp)</h2>
+						<ul>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/bless">bless</a> <u title="Increases at 5th, 9th, 13th, 17th">1/day</u>.</li>
+						</ul>
+					</div>
+					<div>
+						<h2>Telekinesis (Su) <b>CL 12th</b></h2>
+						<ul>
+							<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/t/telekinesis">telekinesis</a> every 1d4 rounds.</li>
+						</ul>
+					</div>
+					<div>
+						<h2>Phantasmagoria (Su) <b>CL 7th</b></h2>
+						<ul>
+							<li>Improved <a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mirage-arcana">mirage arcana</a> <u title="7 cha">7/day</u>.</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>9</strong>
+						<b>Init</b>
+						<small><u title="Noble Scion of War">7 cha</u>, <u title="Reactionary">2 trait</u></small>
+					</li>
+					<li>
+						<strong>86</strong>
+						<b>HP</b>
+						<small>6 spiritualist: 8 class, <u title="Undead">7 cha</u>; 6 fc; -10 rolled</small>
+						<div class="circumstancialBonus"><u title="Incorporeal Subtype">Immune</u> to critical hits &amp; precision damage, except ghost touch,</div>
+						<div class="circumstancialBonus" title="Incorporeal Special Quality">
+							<u>Immune</u> to non-magical weapons,<br>
+							<u>Half Damage</u> from magical weapons or spells, except ghost touch &amp; force spells,<br>
+							<u>50% miss chance</u> for corporeal spells and effects that do not cause damage.
+						</div>
+						<div class="circumstancialBonus" title="Undead"><u>Immune</u> nonlethal</div>
+					</li>
+					<li class="br">
+						<strong>28</strong>
+						<b>AC</b> touch 24, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 21
+						<small>10, 7 dex, <u title="Ectoplasmic Armor">4 armor</u>, <u title="Ghost Template: 7 cha">7 deflection</u></small>
+					</li>
+					<li>
+						<strong>&infin;</strong>
+						<b>Fort</b>
+						<small><u title="Undead">7 cha</u>, 5 class</small>
+					</li>
+					<li>
+						<strong>10</strong>
+						<b>Ref</b>
+						<small>7 dex, 2 class, <u title="Into Enemy Territory">1 trait</u></small>
+					</li>
+					<li>
+						<strong>7</strong>
+						<b>Will</b>
+						<small>2 wis, 5 class</small>
+					</li>
+					<li class="circumstancialBonus"><a title="Ghost Template" href="https://d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Channel-Resistance-Ex-">Channel resistance</a> +4</li>
+					<li class="circumstancialBonus"><u title="Undead">Immune</u> mind-affecting, sleep, stunning, exhaustion, fatigue</li>
+					<li class="circumstancialBonus"><u title="Undead">Immune</u> bleed, death, disease, paralysis, poison</li>
+					<li class="circumstancialBonus"><u title="Undead">Immune</u> ability drain (all), ability damage (physical stats)</li>
+
+					<li class="br"><strong>17</strong> <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance" title="Noble Spell Resistance: 11, 6 spiritualist">SR</a></li>
+
+					<li>
+						<strong title="Incorporeal: use Dex">11</strong>
+						<b>CMB</b>;	28 <b>CMD</b>
+						<small>4 bab, &ndash; str, 7 dex, <u title="Ghost Template: 7 cha">7 deflection</u></small>
+						<div class="circumstancialBonus"><u title="Incorporeal">Immune</u> trip, grapple, etc.</div>
+					</li>
+				</ul>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<!--Corrupting Touch-->
+				<div class="weapon">
+					<h2>Corrupting Ectoplasmic Lashes (Su)</h2>
+					<div class="summation"><strong>+13</strong> vs TouchAC <small>4 bab, <u title="Incorporeal: use Dex">7 dex</u>, 2 enh</small></div>
+					<div class="summation"><strong>7d6+2</strong> <small>7 CR, 2 enh</small></div>
+					<div class="circumstancialBonus">Fort <u title="10, 3 spiritualist&frac12;, 7 cha">DC 20</u> halves. Bypasses DR. Resistance/immunity to aging applies.</div>
+					<div class="circumstancialBonus">10ft reach.</div>
+				</div>
+
+				<h2>Poison Use</h2>
+				
+				<h2>Surface Stranger</h2>
+				<p>Miss chances due to darkness increase by 10%.</p>
+
+				<h2>Spiritual Combat</h2>
+				<p>During full attack, take -2 penalty and cast a standard-action spell.<br>
+					Deliver <span class="spell touch">spells</span> with a free weapon attack. You can't hold the charge if you miss.</p>
+
+				<h2>Rejuvenation (Su)</h2>
+				<p>A destroyed ghost comes back to unlife in 2d4 days, unless the event creating it is resolved.</p>
+			</div>
+		</section>
+
+		<section class="noprint">
+			<hr>
+			<p>🏷️ "C'est ridicule."</p>
+			<p>A power-hungry drow who refused to let herself be corrupted, seeing those who relied on such bargains as "weak".
+				She remained loyal to her distant queen, and slaughtered countless of her kin who bore the corruption.
+				She is the one who slayed <b>Neb'sothar of Kosnom</b>; she made quite a spectacle of it, too.
+				She believes that gave her the lead of their expedition.</p>
+			<p>As a spiritualist, she knew a great deal about the Astral Plane, and as she died her soul had no difficulty finding the way back to the Material plane as one of the ghosts she once bound.
+				Still loyal to her queen, her mission is to destroy all who become corrupted.
+				Her queen will surely reward her with absolute power over this realm that she now left.
+				She must find the source of corruption and destroy it once and for all.</p>
+			<p>There is an exception to this plan, though, in the form of <b>Jiko-Bô</b>, the corrupted dryad.
+				She seems to not be completely overwhelmed by the black blood, able to balance its influence with her will.
+				Akai'Anasi is intrigued, and allies able to help solve the mystery are welcome.
+				She has helped her dryad friend ambush the <b>Griffon &amp; Saphir 💎</b> once, but now that she has seen their strength, Akai'Anasi is thinking of recruiting them as allies too.
+				From her perspective, infighting amongst her allies is good, because they won't be targeting her.</p>
+			<p>She is aware of <b>Acastetrios</b> and <b>Ichao</b>'s existence, and they are helpful in preventing the corruption from escaping, so she leaves them alone.
+				They are not aware of her, as far as she knows.</p>
+
+			<details>
+				<summary class="subtitle">What Akai'Anasi looks like</summary>
+				<a href="https://www.artstation.com/artwork/DA5OgE">
+				<img src="https://i.redd.it/a5edhqp45j181.jpg" alt="Akai Anasi &copy;Jack Meng Kirkman"></a>
+				Art by <a href="https://www.artstation.com/smartist">Jack Meng Kirkman</a>.
+			</details>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Decisive &amp; direct</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/foul-brand">Foul Brand</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>White</dd>
+
+				<dt>Hair</dt>
+				<dd>White</dd>
+
+				<dt>Age</dt>
+				<dd>2,659; died at 285</dd>
+
+				<dt>Weight</dt>
+				<dd>Weightless (was 170 lbs)</dd>
+
+				<dt>Height</dt>
+				<dd>6' 6''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
