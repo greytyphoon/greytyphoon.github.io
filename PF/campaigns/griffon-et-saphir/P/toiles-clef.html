@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Riddle</title>
+	<link rel="stylesheet" href="../../../system/pfGeneric.css">
+	<style>
+		p { text-align: center; }
+
+		svg { display: block; margin-left: auto; margin-right: auto; background-color: var(--murder-grey); }
+		svg text { stroke: var(--necromancy-purple); }
+		svg:not(.legible) text:not(.encrypted) { display: none; }
+		svg.legible text.encrypted { display: none; }
+		svg:not(.doubled) text.double { display: none; }
+	</style>
+</head>
+<body onkeypress="keyListener(event)">
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Une tablette de pierre</h1>
+		</header>
+		<p>Sur cette ancienne tablette de pierre, des symboles sont gravés.</p>
+
+		<svg id="tablet" width="420" height="360" class="br">
+			<text x="105" y="13">N</text>
+			<text x="120" y="37">O</text>
+			<text x="134" y="60">E</text>
+			<text x="147" y="81">L</text>
+			<text x="159" y="100">M</text>
+			<text x="171" y="118">P</text>
+			<text x="182" y="135">D</text>
+
+			<text x="410" y="180">F</text>
+			<text x="385" y="180">G</text>
+			<text x="360" y="180">R</text>
+			<text x="335" y="180">A</text>
+			<text x="310" y="180">T</text>
+			<text x="285" y="180">Z</text>
+			<text x="260" y="180">H</text>
+
+			<text x="105" y="347">B</text>
+			<text x="120" y="323">I</text>
+			<text x="134" y="300">W</text>
+			<text x="147" y="279">'</text>
+			<text x="159" y="260">U</text>
+			<text x="171" y="242">S</text>
+			<text x="182" y="225">K</text>
+
+			<text class="encrypted" x="105" y="13">༄</text>
+			<text class="encrypted" x="120" y="37">࿄</text>
+			<text class="encrypted" x="134" y="60">ῳ</text>
+			<text class="encrypted" x="147" y="81">☿</text>
+			<text class="encrypted" x="159" y="100">ಠ</text>
+			<text class="encrypted" x="171" y="118">♆</text>
+			<text class="encrypted" x="182" y="135">♃</text>
+
+			<text class="encrypted" x="410" y="180">♀</text>
+			<text class="encrypted" x="385" y="180">∰</text>
+			<text class="encrypted" x="360" y="180">ញ</text>
+			<text class="encrypted" x="335" y="180">࿔</text>
+			<text class="encrypted" x="310" y="180">♂</text>
+			<text class="encrypted" x="285" y="180">♄</text>
+			<text class="encrypted" x="260" y="180">ᔱ</text>
+
+			<text class="encrypted" x="105" y="347">ጃ</text>
+			<text class="encrypted" x="120" y="323">🜨</text>
+			<text class="encrypted" x="134" y="300">ൠ</text>
+			<text class="encrypted" x="147" y="279">࿓</text>
+			<text class="encrypted" x="159" y="260">⛢</text>
+			<text class="encrypted" x="171" y="242">༆</text>
+			<text class="encrypted" x="182" y="225">᧻</text>
+
+			<text class="double" x="315" y="347">N</text>
+			<text class="double" x="300" y="323">O</text>
+			<text class="double" x="286" y="300">E</text>
+			<text class="double" x="273" y="279">L</text>
+			<text class="double" x="261" y="260">M</text>
+			<text class="double" x="249" y="242">P</text>
+			<text class="double" x="238" y="225">D</text>
+
+			<text class="double" x="10" y="180">F</text>
+			<text class="double" x="35" y="180">G</text>
+			<text class="double" x="60" y="180">R</text>
+			<text class="double" x="85" y="180">A</text>
+			<text class="double" x="110" y="180">T</text>
+			<text class="double" x="135" y="180">Z</text>
+			<text class="double" x="160" y="180">H</text>
+
+			<text class="double" x="315" y="13">B</text>
+			<text class="double" x="300" y="37">I</text>
+			<text class="double" x="286" y="60">W</text>
+			<text class="double" x="273" y="81">'</text>
+			<text class="double" x="261" y="100">U</text>
+			<text class="double" x="249" y="118">S</text>
+			<text class="double" x="238" y="135">K</text>
+		</svg>
+
+		<p><a onclick="document.getElementById('tablet').classList.add('legible');">Cliquez ici si vous avez <span class="spell">comprehend languages</span>.</p>
+	</div>
+	<script>
+		// Press "2" for an extra hint
+		function keyListener(event){
+			event = event || window.event;
+			var key = event.key || event.which || event.keyCode;
+			console.log(key);
+			if (key==2)
+				document.getElementById('tablet').classList.add('doubled');
+		}
+	</script>
+</body>
+</html>
