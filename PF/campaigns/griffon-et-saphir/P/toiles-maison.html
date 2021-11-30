@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Riddle</title>
+	<link rel="stylesheet" href="../../../system/pfGeneric.css">
+	<style>
+		p { text-align: center; }
+		.hidden { display: none; }
+		#solution > b { color: var(--necromancy-purple); }
+
+		svg { display: block; margin-left: auto; margin-right: auto; }
+		svg path, svg line { stroke: var(--murder-grey); stroke-width: 5; fill: none; }
+		svg .selected { stroke: var(--abjuration-gold); }
+	</style>
+</head>
+<body onload="init()">
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>L'appartement riche</h1>
+		</header>
+		<p>À une époque, ce logement devait être plutôt luxueux, en tout cas plus que ce que vous avez vu dans le reste de la ville.
+			C'est peut-être simplement parce que les ravages du temps se font beaucoup moins sentir ici.
+			Les mites n'ont pas attaqué les tissus, ni les rats le bois des meubles.
+			L'atmosphère est terriblement poussiéreuse.
+			Des objets se trouvent toujours sur les étagères et dans les coffres: un calice, une bouteille de vin ornée.
+			Vous sentez une présence, et vous vous dites qu'il vaut peut-être mieux ne rien déranger.</p>
+
+		<svg width="560" height="430" class="br">
+			<line	x1="42" y1="60" x2="125" y2="102" />
+			<line	x1="145" y1="110" x2="240" y2="110" />
+			<line	x1="262" y1="60" x2="345" y2="102" />
+			<line	x1="428" y1="110" x2="455" y2="102" />
+			<line	x1="512" y1="110" x2="20" y2="320" />
+			<line	x1="42" y1="370" x2="125" y2="328" />
+			<line	x1="220" y1="320" x2="240" y2="320" />
+			<line	x1="262" y1="270" x2="345" y2="312" />
+
+			<line	x1="372" y1="320" x2="455" y2="312" />
+
+			<line class="selected"	data-note="nC"	x1="20" y1="110" x2="112" y2="110" />
+			<path class="selected"	data-note="n4"	d="M42,60 A57,110 1 0,0 72,110" />
+			<line class="selected"	data-note="nB"	x1="125" y1="102" x2="175" y2="22" />
+			<path class="selected"	data-note="n7"	d="M134,88 A120,110 1 0,0 145,110" />
+			<line class="selected"	data-note="nC"	x1="240" y1="110" x2="332" y2="110" />
+			<path class="selected"	data-note="n4"	d="M262,60 A230,110 1 0,0 292,110" />
+			<line class="selected"	data-note="nB"	x1="345" y1="102" x2="395" y2="22" />
+			<path class="selected"	data-note="n2"	d="M385,39 A340,110 1 0,0 428,110" />
+			<line class="selected"	data-note="nB"	x1="455" y1="102" x2="505" y2="22" />
+			<path class="selected"	data-note="n4"	d="M482,60 A450,110 1 0,0 512,110" />
+
+			<line class="selected"	data-note="nC"	x1="20" y1="320" x2="112" y2="320" />
+			<path class="selected"	data-note="n4"	d="M72,320 A57,320 1 0,0 42,370" />
+			<line class="selected"	data-note="nA"	x1="125" y1="328" x2="175" y2="408" />
+			<path class="selected"	data-note="n1"	d="M220,320 A120,320 1 0,0 172,403" />
+			<line class="selected"	data-note="nC"	x1="240" y1="320" x2="332" y2="320" />
+			<path class="selected"	data-note="n4"	d="M262,270 A230,320 1 0,0 292,320" />
+			<line class="selected"	data-note="nB"	x1="345" y1="312" x2="395" y2="232" />
+			<path class="selected"	data-note="n6"	d="M360,289 A340,320 1 0,0 372,320" />
+			<line class="selected"	data-note="nB"	x1="455" y1="312" x2="505" y2="232" />
+			<path class="selected"	data-note="n2"	d="M495,249 A450,320 1 0,0 538,320" />
+
+			<ellipse id="spider" cx="20" cy="110" rx="8" ry="5"  stroke="var(--necromancy-purple)" stroke-width="1" fill="var(--necromancy-purple)" />
+			<ellipse id="spider" cx="538" cy="320" rx="8" ry="5"  stroke="var(--necromancy-purple)" stroke-width="1" fill="var(--necromancy-purple)" />
+		</svg>
+	</div>
+			<line class="selected"	data-note="nC"	x1="230" y1="180" x2="415" y2="180" />
+			<path class="selected"	data-note="n4"	d="M273,81 A210,180 1 0,0 335,180" />	<!--a-->
+			<line class="selected"	data-note="nB"	x1="220" y1="163" x2="320" y2="5" />
+			<path class="selected"	data-note="n7"	d="M238,135 A210,180 1 0,0 260,180" />	<!--k-->
+			<line class="selected"	data-note="nC"	x1="230" y1="180" x2="415" y2="180" />
+			<path class="selected"	data-note="n4"	d="M273,81 A210,180 1 0,0 335,180" />	<!--a-->
+			<line class="selected"	data-note="nB"	x1="220" y1="163" x2="320" y2="5" />
+			<path class="selected"	data-note="n2"	d="M300,37 A210,180 1 0,0 385,180" />	<!--i-->
+			<line class="selected"	data-note="nB"	x1="220" y1="163" x2="320" y2="5" />
+			<path class="selected"	data-note="n4"	d="M273,81 A210,180 1 0,0 335,180" />	<!--'-->
+			<line class="selected"	data-note="nC"	x1="230" y1="180" x2="415" y2="180" />
+			<path class="selected"	data-note="n4"	d="M335,180 A210,180 1 0,0 273,279" />	<!--a-->
+			<line class="selected"	data-note="nA"	x1="220" y1="197" x2="320" y2="355" />
+			<path class="selected"	data-note="n1"	d="M410,180 A210,180 1 0,0 315,347" />	<!--n-->
+			<line class="selected"	data-note="nC"	x1="230" y1="180" x2="415" y2="180" />
+			<path class="selected"	data-note="n4"	d="M273,81 A210,180 1 0,0 335,180" />	<!--a-->
+			<line class="selected"	data-note="nB"	x1="220" y1="163" x2="320" y2="5" />
+			<path class="selected"	data-note="n6"	d="M249,118 A210,180 1 0,0 285,180" />	<!--s-->
+			<line class="selected"	data-note="nB"	x1="220" y1="163" x2="320" y2="5" />
+			<path class="selected"	data-note="n2"	d="M300,37 A210,180 1 0,0 385,180" />	<!--i-->
+	<script>
+		function init() {
+			document.querySelectorAll("audio").forEach(audio => { audio.volume = 0.5; });
+			document.querySelectorAll("[data-note]").forEach(path => { path.addEventListener("click", strum); });
+		}
+		function strum(event) {
+			playSound(event.target);
+		}
+		function playSound(element) {
+			let sound = element.attributes["data-note"]?.value;
+			if (!sound) return;
+			let audioFile = document.getElementById(sound);
+			if (audioFile.currentTime != 0 && !audioFile.ended) audioFile.currentTime = 0;
+			else audioFile.play();
+		}
+	</script>
+	<audio id="n1" src="Piano11.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n2" src="Piano12.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n3" src="Piano13.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n4" src="Piano14.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n5" src="Piano15.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n6" src="Piano16.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="n7" src="Piano17.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="nA" src="Piano117.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="nB" src="Piano118.mp3" type="audio/mpeg" preload="auto" />
+	<audio id="nC" src="Piano119.mp3" type="audio/mpeg" preload="auto" />
+</body>
+</html>
