@@ -91,11 +91,14 @@
 		</svg>
 		<p id="solution" class="hidden">Les mots "<b>Neb'sothar Kosnom</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
 			Dans le gémissement d'un mécanisme qui a dormi pendant des millénaires, la porte se met à s'ouvrir.</p>
+		<p id="wrong-solution" class="hidden">Les mots "<b>Akai'Anasi</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
+			En dessous s'incrivent les mots "<b>Tu n'es pas la bienvenue ici.</b>"</p>
 	</div>
 	<script>
 		var spiderStandsOn = "circle";
 		var melody = "";
 		var answer = "A1A3B1B4B6A2C5C7C4C3B7A2B6A1A2A5"; // Neb'sothar Kosnom
+		var wrong  = "C4B7C4B2B4C4A1C4B6B2"; // Akai'Anasi
 		function init() {
 			document.querySelectorAll("audio").forEach(audio => { audio.volume = 0.5; });
 			document.querySelectorAll("path").forEach(path => { path.addEventListener("click", becomeSelectedPath); });
@@ -137,6 +140,9 @@
 			// Check victory condition: open door || splice beginning
 			if (melody == answer) {
 				document.getElementById("solution").classList.remove("hidden");
+				reset();
+			} else if (melody.endsWith(wrong)) {
+				document.getElementById("wrong-solution").classList.remove("hidden");
 				reset();
 			} else if (melody.length == answer.length) {
 				melody = melody.slice(2);
