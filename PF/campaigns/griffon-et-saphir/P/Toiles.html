@@ -93,12 +93,21 @@
 			Dans le gémissement d'un mécanisme qui a dormi pendant des millénaires, la porte se met à s'ouvrir.</p>
 		<p id="wrong-solution" class="hidden">Les mots "<b>Akai'Anasi</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
 			En dessous s'incrivent les mots "<b>Tu n'es pas la bienvenue ici.</b>"</p>
+		<p id="drow-solution" class="hidden">Les mots "<b>Drow</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
+			En dessous s'incrivent les mots "<b>Nous perdurerons.</b>"</p>
+		<p id="calistria-solution" class="hidden">Les mots "<b>Calistria</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
+			En dessous s'incrivent les mots "<b>Nos prières vont à celle qui nous guide.</b>"</p>
+		<p id="lamashtu-solution" class="hidden">Les mots "<b>Lamashtu</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
+			En dessous s'incrivent les mots "<b>Nos prières vont à celle qui nous rend fortes.</b>"</p>
 	</div>
 	<script>
 		var spiderStandsOn = "circle";
 		var melody = "";
 		var answer = "A1A3B1B4B6A2C5C7C4C3B7A2B6A1A2A5"; // Neb'sothar Kosnom
 		var wrong  = "C4B7C4B2B4C4A1C4B6B2"; // Akai'Anasi
+		var drow = "A7C3A2B3"; // Drow
+		var calistria = "B7C4A4B2B6C5C3B2C4"; // Kalistria
+		var lamashtu = "A4C4A5C4B6C7C5B5"; // Lamashtu
 		function init() {
 			document.querySelectorAll("audio").forEach(audio => { audio.volume = 0.5; });
 			document.querySelectorAll("path").forEach(path => { path.addEventListener("click", becomeSelectedPath); });
@@ -143,6 +152,15 @@
 				reset();
 			} else if (melody.endsWith(wrong)) {
 				document.getElementById("wrong-solution").classList.remove("hidden");
+				reset();
+			} else if (melody.endsWith(drow)) {
+				document.getElementById("drow-solution").classList.remove("hidden");
+				reset();
+			} else if (melody.endsWith(calistria)) {
+				document.getElementById("calistria-solution").classList.remove("hidden");
+				reset();
+			} else if (melody.endsWith(lamashtu)) {
+				document.getElementById("lamashtu-solution").classList.remove("hidden");
 				reset();
 			} else if (melody.length == answer.length) {
 				melody = melody.slice(2);
