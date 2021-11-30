@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Riddle</title>
+	<link rel="stylesheet" href="../../../system/pfGeneric.css">
+	<style>
+		p { text-align: center; }
+		#assist { font-size: .75em; margin-top: 2rem; }
+		#encrypted.legible ~ #assist { display: none; }
+		#encrypted:not(.legible) { display: none; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Le cadavre</h1>
+		</header>
+
+		<p>Un corps gît dans un coin de cette pièce.
+			Il semble être là depuis longtemps, mais est plus desséché, voir momifié, que décomposé.
+			Il est de petite taille, et ses oreilles semblent rondes, il s'agit donc probablement d'un <i lang="en">halfling</i>.
+			Ses vêtements sont d'une mode que vous n'avez jamais vue, tachés et usés.
+			Un jambe manque, et on voit une blessure importante à sa cage thoracique.</p>
+
+		<div id="encrypted">
+			<p>Le cadavre s'anime brièvement, et martèle une phrase en langue commune:<br>
+				<q>L'araignée se déplace d'un fil à l'autre.</q></p>
+			<p>Il répète cette phrase plusieurs fois, puis hésite, et ajoute:<br>
+				<q>Les drows haïssent le sang noir.</q></p>
+			<p>Sur ces mots, le sort cesse de faire effet, donnant l'impression d'un pantin dont on vient de couper les fils.</p>
+		</div>
+
+		<p id="assist">Cliquez <a onclick="document.getElementById('encrypted').classList.add('legible');">ici</a> si vous utilisez
+			<a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/s/speak-with-dead">speak with dead</a>, ou
+			<a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/g/grave-words">grave words</a>, ou similaire.</p>
+	</div>
+</body>
+</html>
