@@ -13,7 +13,7 @@
 		svg { display: block; margin-left: auto; margin-right: auto; background-color: var(--murder-grey); }
 		svg text { stroke: var(--necromancy-purple); }
 		svg:not(.legible) text:not(.encrypted) { display: none; }
-		svg.legible text.encrypted { display: none; }
+		svg.legible text.encrypted, svg.legible + #assist { display: none; }
 		svg:not(.doubled) text.double { display: none; }
 	</style>
 </head>
