@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../../../system/pfGeneric.css">
 	<style>
 		p { text-align: center; }
+		#assist { font-size: .75em; margin-top: 2rem; }
 
 		svg { display: block; margin-left: auto; margin-right: auto; background-color: var(--murder-grey); }
 		svg text { stroke: var(--necromancy-purple); }
@@ -25,7 +26,6 @@
 		<header>
 			<h1>Une tablette de pierre</h1>
 		</header>
-		<p>Sur cette ancienne tablette de pierre, des symboles sont gravés.</p>
 
 		<svg id="tablet" width="420" height="360" class="br">
 			<text x="105" y="13">N</text>
@@ -101,7 +101,8 @@
 			<text class="double" x="238" y="135">K</text>
 		</svg>
 
-		<p><a onclick="document.getElementById('tablet').classList.add('legible');">Cliquez ici si vous avez <span class="spell">comprehend languages</span>.</p>
+		<p id="assist">Cliquez <a onclick="document.getElementById('tablet').classList.add('legible');">ici</a> si vous êtes sous l'effet de
+			<a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a> ou similaire.</p>
 	</div>
 	<script>
 		// Press "2" for an extra hint
