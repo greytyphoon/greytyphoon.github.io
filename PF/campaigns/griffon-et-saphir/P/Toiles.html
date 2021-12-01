@@ -15,6 +15,19 @@
 		svg path, svg line { stroke: var(--illusion-grey); stroke-width: 5; fill: none; }
 		svg path.selected, svg line.selected { stroke: var(--abjuration-gold); }
 		svg ellipse { transition: all .5s ease; }
+
+		@media screen and (min-width: 768px) {
+			#box { height: 450px; }
+			svg { transform: translateY(12.5%) scale(1.25); }
+		}
+		@media screen and (min-width: 992px) {
+			#box { height: 540px; }
+			svg { transform: translateY(25%)  scale(1.5); }
+		}
+		@media screen and (min-width: 1200px) {
+			#box { height: 630px; }
+			svg { transform: translateY(37.5%)  scale(1.75); }
+		}
 	</style>
 </head>
 <body onload="init()">
@@ -29,7 +42,9 @@
 		<p>Une étrange toile s'étend dans un cadre de pierre, à hauteur d'yeux, sur la porte.<br>
 			Tenant le centre de la toile, un anneau de fer noir brillant accueille une araignée mécanique, qui ne réagit pas à votre approche.</p>
 		<p><span class="apartee">Sound on! 🔊</span></p>
-		<svg width="420" height="360" class="br">
+
+		<div id="box" class="br">
+		<svg width="420" height="360">
 			<path id="L1P1"	data-note="n1" data-spider="210,037" data-previous="L1,L2"	d="M105,13 A210,180 1 0,0 315,13" />	<!--n-->
 			<path id="L1P2"	data-note="n2" data-spider="210,054" data-previous="L1,L2"	d="M120,37 A210,180 1 0,0 300,37" />	<!--o-->
 			<path id="L1P3"	data-note="n3" data-spider="210,072" data-previous="L1,L2"	d="M134,60 A210,180 1 0,0 286,60" />	<!--e-->
@@ -89,38 +104,27 @@
 			<circle id="circle" data-spider="210,180" cx="210" cy="180" r="20" stroke="var(--murder-black)" stroke-width="5" fill="var(--html-white)" />
 			<ellipse id="spider" cx="210" cy="180" rx="8" ry="5"  stroke="var(--necromancy-purple)" stroke-width="1" fill="var(--necromancy-purple)" />
 		</svg>
-		<p id="solution" class="hidden">Les mots "<b>Neb'sothar Kosnom</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
-			Dans le gémissement d'un mécanisme qui a dormi pendant des millénaires, la porte se met à s'ouvrir.</p>
-		<p id="wrong-solution" class="hidden">Les mots "<b>Akai'Anasi</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
-			En dessous s'incrivent les mots "<b>Tu n'es pas la bienvenue ici.</b>"</p>
-		<p id="drow-solution" class="hidden">Les mots "<b>Drow</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
-			En dessous s'incrivent les mots "<b>Nous perdurerons.</b>"</p>
-		<p id="calistria-solution" class="hidden">Les mots "<b>Calistria</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
-			En dessous s'incrivent les mots "<b>Nos prières vont à celle qui nous guide.</b>"</p>
-		<p id="lamashtu-solution" class="hidden">Les mots "<b>Lamashtu</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
-			En dessous s'incrivent les mots "<b>Nos prières vont à celle qui nous rend fortes.</b>"</p>
-
-		<div>
-			<br><br><br><br><br>
-			<h2>BETA-TESTEURS:</h2>
-			Les joueurs devront explorer une cité d'elfes noirs abondonnée aux alentours.
-			Ils rencontreront un fantôme nommé "Akai'Anasi" qui refuse de les aider (il veut que les joueurs "se prouvent"), et ils trouveront les indices suivants:
-			<ol>
-				<li><a href="..\P\toiles-poeme.html">Le poème</a>,</li>
-				<li><a href="..\P\toiles-cadavre.html">Le cadavre</a>,</li>
-				<li><a href="..\P\toiles-tablette.html">La tablette de pierre</a>,</li>
-				<li><a href="..\P\toiles-maison.html">La maison de Akai'Anasi</a>.</li>
-			</ol>
 		</div>
+
+		<p id="nebsothar-solution" class="solution hidden">Les mots "<b>Neb'sothar Kosnom</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
+			Dans le gémissement d'un mécanisme qui a dormi pendant des millénaires, la porte se met à s'ouvrir.</p>
+		<p id="akaianasi-solution" class="solution hidden">Les mots "<b>Akai'Anasi Daakhi</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
+			En dessous s'incrivent les mots "<b>Tu n'es pas la bienvenue ici.</b>"</p>
+		<p id="drow-solution" class="solution hidden">Les mots "<b>Drow</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
+			En dessous s'incrivent les mots "<b>Nous perdurerons.</b>"</p>
+		<p id="calistria-solution" class="solution hidden">Les mots "<b>Calistria</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
+			En dessous s'incrivent les mots "<b>Nos prières vont à celle qui nous guide.</b>"</p>
+		<p id="lamashtu-solution" class="solution hidden">Les mots "<b>Lamashtu</b>" s'inscrivent en lettres de feu dans la pierre, au-dessus de la toile.<br>
+			En dessous s'incrivent les mots "<b>Nos prières vont à celle qui nous rend fortes.</b>"</p>
 	</div>
 	<script>
 		var spiderStandsOn = "circle";
 		var melody = "";
-		var answer = "A1A3B1B4B6A2C5C7C4C3B7A2B6A1A2A5"; // Neb'sothar Kosnom
-		var wrong  = "C4B7C4B2B4C4A1C4B6B2"; // Akai'Anasi
-		var drow = "A7C3A2B3"; // Drow
-		var calistria = "B7C4A4B2B6C5C3B2C4"; // Kalistria
-		var lamashtu = "A4C4A5C4B6C7C5B5"; // Lamashtu
+		const nebsothar	= "A1A3B1B4B6A2C5C7C4C3";	// Neb'sothar
+		const akaianasi	= "C4B7C4B2B4C4A1C4B6B2";	// Akai'Anasi
+		const drow		= "A7C3A2B3";				// Drow
+		const calistria	= "B7C4A4B2B6C5C3B2C4";		// Kalistria
+		const lamashtu	= "A4C4A5C4B6C7C5B5";		// Lamashtu
 		function init() {
 			document.querySelectorAll("audio").forEach(audio => { audio.volume = 0.5; });
 			document.querySelectorAll("path").forEach(path => { path.addEventListener("click", becomeSelectedPath); });
@@ -134,6 +138,8 @@
 			melody = "";
 			// Unselects all lines/paths
 			document.querySelectorAll(".selected").forEach(previouslySelectedElement => { previouslySelectedElement.classList.remove("selected"); });
+			// Hide all solution texts
+			document.querySelectorAll(".solution").forEach(solutionElement => { solutionElement.classList.add("hidden"); });
 		}
 		function becomeSelectedLine(event) {
 			// Reject the event if the spider is not on an adjacent path OR on the circle
@@ -160,22 +166,22 @@
 			playSound(event.target);
 
 			// Check victory condition: open door || splice beginning
-			if (melody == answer) {
-				document.getElementById("solution").classList.remove("hidden");
+			if (melody == nebsothar) {
 				reset();
-			} else if (melody.endsWith(wrong)) {
-				document.getElementById("wrong-solution").classList.remove("hidden");
+				document.getElementById("nebsothar-solution").classList.remove("hidden");
+			} else if (melody == akaianasi) {
 				reset();
+				document.getElementById("akaianasi-solution").classList.remove("hidden");
 			} else if (melody.endsWith(drow)) {
+				reset();
 				document.getElementById("drow-solution").classList.remove("hidden");
-				reset();
 			} else if (melody.endsWith(calistria)) {
+				reset();
 				document.getElementById("calistria-solution").classList.remove("hidden");
-				reset();
 			} else if (melody.endsWith(lamashtu)) {
-				document.getElementById("lamashtu-solution").classList.remove("hidden");
 				reset();
-			} else if (melody.length == answer.length) {
+				document.getElementById("lamashtu-solution").classList.remove("hidden");
+			} else if (melody.length == nebsothar.length) {
 				melody = melody.slice(2);
 			}
 		}
