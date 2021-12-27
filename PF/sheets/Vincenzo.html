@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Shaman</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.wandering-spirit, .wandering-spirit > h2 > a { color: var(--divination-blue); }
+		.darkness, .light, .shadow, a.spell.darkness, a.spell.light, a.spell.shadow { color: var(--necromancy-purple); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="familiar mouse" href="Mlinzi.html">Familiar</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Vincenzo Bouffe-Tout, travelling healer</h1>
+			N Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>8 <small>10, <u title="Racial">-2</u></small></dd>
+
+				<dt>Dex</dt>
+				<dd>16 <small>14, <u title="Racial">2</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>12</dd>
+
+				<dt>Int</dt>
+				<dd>10</dd>
+
+				<dt>Wis</dt>
+				<dd>20 <small>17, <u title="Advancement">1</u>, <u title="Headband of Great Wisdom">2</u></small></dd>
+
+				<dt>Cha</dt>
+				<dd>16 <small>14, <u title="Racial">2</u></small></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/halfling">Halfling</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/halfling#Alternate_Racial_Traits">Fleet of Foot</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/halfling#Alternate_Racial_Traits">Halfling Jinx</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/halfling#Alternate_Racial_Traits">Shadowplay</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/shaman">Shaman</a> 5</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/hybrid-classes/shaman/spirits/tribe-shaman-spirit">Tribe</a> spirit</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/hybrid-classes/shaman/archetypes/paizo-shaman-archetypes/witch-doctor">Witch Doctor</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Desna</dd>
+
+				<dt>Senses</dt>
+				<dd>Normal</dd>
+
+				<dt>Speed</dt>
+				<dd><u title="Fleet of Foot +10, Medium Armor -10">20 ft.</u></dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Halfling</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/faith-traits/blessed-touch-faith">Blessed Touch</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/social-traits/seeker">Seeker</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/magic-traits/two-world-magic">Two-World Magic</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/additional-traits">Additional Traits</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Perception)</dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/sluggish-jinx">Sluggish Jinx</a>
+				<small>min.1</small></dd>
+			<dt>shaman 2</dt>
+			<dd><a href="https://d20pfsrd.com/classes/base-classes/witch/hexes/hexes/common-hexes/hex-evil-eye-su">Evil Eye</a>
+				<small>min.2</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/malicious-eye">Malicious Eye</a>
+				<small>min.2</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/worst-case-jinx">Worst Case Jinx</a>
+				<small>min.5</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>19</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>5 wis, 5 ranks, <u title="Seeker">3 class, 1 trait</u>, <u title="Keen Senses">2 racial</u>, 3 s.focus</small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>
+				<small>3 cha, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
+				<small>3 dex, 1 ranks, 3 class</small>
+				<div class="circumstancialBonus">
+					<u title="4 good maneuverability, 2 shaman&frac12; (from the spell)">+6</u> when using <a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/fly">fly</a>.
+				</div>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/heal">Heal</a>
+				<small>5 wis, 2 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/ride">Ride</a>
+				<small>3 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+				<small>0 int, 1 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/survival">Survival</a>
+				<small>5 wis, 1 ranks, 3 class</small>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (arcana)</a>
+				<small>0 int, 5 ranks, 0 class</small>
+			</li>
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (nature)</a>
+				<small>0 int, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (planes)</a>
+				<small>0 int, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (religion)</a>
+				<small>0 int, 1 ranks, 3 class</small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="5 shaman: 4 class, 0 int">20 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/handle-animal">Handle Animal</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+		</p>
+
+		<!-- title Spells -->
+		<hr>
+		<div id="spellHeader" class="apartee">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Wisdom modifier.<br>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Wisdom modifier .<br>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (d20 + caster level) at least equal to the creature's SR.
+		</div>
+		<section class="row">
+			<div class="wide">
+				<h2>Hex: Evil Eye (Su) [mind-affecting]</h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
+					target gets <b title="Increases by 2 at 1st, 8th">-2</b> to either: AC, ability checks, attacks, saves, or skills for <u title="3, 5 wis">8 rounds</u>.
+					<small>Will <u title="10, 2 shaman&frac12; 5 wis">DC 17</u> reduces to 1 round.</small>
+					Target is also affected by your jinx.</p>
+
+				<h2>Shadowplay</h2>
+				<p>CL +1 for <span class="darkness">darkness</span>, <span class="light">light</span>, <span class="shadow">shadow</span> spells.</p>
+			</div>
+			<div>
+				<h2>Level 0 <u title="4 class">4/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/guidance">guidance</a>,</li>
+					<li><a class="spell light" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
+					<li><a class="spell bonus off-class" title="Two-World Magic" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 1 <u title="3 class, 2 wis">5/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/bless">bless</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/entangle">entangle</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/hex-vulnerability">hex vulnerability</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/o/obscuring-mist">obscuring mist</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/protection-from-evil">protection from evil</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 2 <u title="2 class, 1 wis">3/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/barkskin">barkskin</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds">cure moderate wounds</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/hold-person">hold person</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/restoration">restoration <small>lesser</small></a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/spiritual-weapon">spiritual weapon</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 3 <u title="1 class, 1 wis">2/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/bestow-curse">bestow curse</a>,</li>
+					<li><a class="spell light" href="https://d20pfsrd.com/magic/all-spells/d/daylight">daylight</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/fly">fly</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/font-of-spirit-magic">font of spirit magic</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/sleet-storm">sleet storm</a>.</li>
+				</ul>
+			</div>
+		</section>
+
+		<h2>Spirit Magic <b>Spontaneous, 1/level/day</b></h2>
+		<section class="row">
+			<h2><a href="https://d20pfsrd.com/classes/hybrid-classes/shaman/spirits/tribe-shaman-spirit">Tribe spirit</a></h2>
+			<div><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/b/bless">bless</a>,</div>
+			<div><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/s/shield-other">shield other</a>,</div>
+			<div><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/c/create-food-and-water">create food and water</a>.</div>
+		</section>
+		<section class="row wandering-spirit">
+			<h2><a href="https://d20pfsrd.com/classes/hybrid-classes/shaman/spirits/ancestors">Ancestors wandering spirit</a></h2>
+			<div><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/u/unseen-servant">unseen servant</a>,</div>
+			<div><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/s/spiritual-weapon">spiritual weapon</a>,</div>
+			<div><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/h/heroism">heroism</a>.</div>
+		</section>
+		<section class="row wandering-spirit">
+			<h2><a href="https://d20pfsrd.com/classes/hybrid-classes/shaman/spirits/flame">Flame wandering spirit</a></h2>
+			<div><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/b/burning-hands">burning hands</a>,</div>
+			<div><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a>,</div>
+			<div><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/f/fireball">fireball</a>.</div>
+		</section>
+		<section class="row wandering-spirit">
+			<h2><a href="https://d20pfsrd.com/classes/hybrid-classes/shaman/spirits/heavens">Heavens wandering spirit</a></h2>
+			<div><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/c/color-spray">color spray</a>,</div>
+			<div><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/h/hypnotic-pattern">hypnotic pattern</a>,</div>
+			<div><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/d/daylight">daylight</a>.</div>
+		</section>
+		<section class="row wandering-spirit">
+			<h2><a href="https://d20pfsrd.com/classes/hybrid-classes/shaman/spirits/life">Life wandering spirit</a></h2>
+			<div><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/d/detect-undead">detect undead</a>,</div>
+			<div><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/r/restoration">restoration <small>lesser</small></a>,</div>
+			<div><u title="Normally level 4"><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/n/neutralize-poison">neutralize poison</a></u>.</div>
+		</section>
+		<p>Other <a href="https://d20pfsrd.com/classes/hybrid-classes/shaman/spirits">wandering spirits</a> are also available.</p>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<ul class="summations">
+				<li class="br">
+					<strong>5</strong>
+					<b>Init</b>
+					<small>3 dex, <u title="Reactionary">2 trait</u></small>
+				</li>
+				<li>
+					<strong>41</strong>
+					<b>HP</b>
+					<small>5 shaman: 8 class, 1 con; 5 FC; -9 rolled</small>
+				</li>
+				<li class="br">
+					<strong>22</strong>
+					<b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 19
+					<small>10, 3 dex, 7 armor, 2 shield</small>
+				</li>
+				<li>
+					<strong>3</strong>
+					<b>Fort</b>
+					<small>1 con, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+				</li>
+				<li>
+					<strong>5</strong>
+					<b>Ref</b>
+					<small>3 dex, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+				</li>
+				<li>
+					<strong>10</strong>
+					<b>Will</b>
+					<small>5 wis, 4 class, <u title="Cloak of Resistance">1 resistance</u></small>
+				</li>
+				<li class="circumstancialBonus br" title="Fearless"><u>+2</u> vs fear.</li>
+				<li>
+					<strong>1</strong>
+					<b>CMB</b>;	14 <b>CMD</b>
+					<small>3 bab, -1 str, 3 dex, -1 size</small>
+				</li>
+			</ul>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<h2>Halfling Jinx (Su)</h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
+					curse a creature within 30ft.
+					It gets –1 to attacks, saves, initiative. Also, beneficial variable effects always result in the minimum possible amount for the effect <small>Will <u title="10, 2 shaman&frac12;, 3 cha">DC 15</u> negates</small>.
+					Jinx one target at a time.</p>
+				<h2>Channel Energy (Su) <u title="3 class, 3 cha">6/day</u></h2>
+				<p>
+					As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
+					divide 1d6 between undead and living.<br>
+					<b title="Houserules: add casting stat to damage healed/inflicted.&#10;Blessed Touch: +1.">1d6+6</b> positive energy, 30ft radius
+					<small>Will <u title="10, 2 shaman&frac12;, 3 cha">DC 15</u> halves</small>.</p>
+
+				<h2 class="reaction">Headband of Unshakeable Resolve <b>3/day</b></h2>
+				<h2>Pearl of Power <b>1/day</b></h2>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--5600--><a href="https://www.d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-unshakeable-resolve">Headband of Unshakeable Resolve</a> +2</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a> L1</li>
+		</ul>
+		<ul id="inventory">
+			<!--Armors-->
+			<li><!--1350-->
+				<a href="https://d20pfsrd.com/equipment/armor">Breastplate</a> +1
+				<small>medium, 6 armor, 3 dex, 4 acp, 25% asf</small>
+			</li>
+			<li class="br"><!--1155-->
+				<a href="https://d20pfsrd.com/equipment/armor/buckler">Buckler</a> +1
+				<small>1 shield, - dex, 1 acp, 5% asf</small>
+			</li>
+
+			<li><!--5-->
+				Spell Component Pouch
+			</li>
+			<li><!--50-->
+				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</li>
+			<li>340 <b>GP</b><!--/10,500--></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p>Guide used: <a href="https://docs.google.com/document/d/1sqtK5PtP_XsU8z521XBhYl8gnS4c36zcetJlEVVHYCM/edit#">Spiritual Attunement &copy;JBurz</a>.</p>
+
+			<p>To be completed! Missing: familiar (inc. spirit animal bonus), spirit ability (inc. wandering spirit ability).</p>
+			<p>To be completed! The actually unlucky penchant of Pietro-Alvarez, friend with Hugo, he lives in Cape Yon and looks for a lost tribe.</p>
+
+			<details>
+				<summary class="subtitle">What Vincenzo looks like</summary>
+				<a href="https://www.deviantart.com/midnazora/art/Commission-Avery-Starseer-651277589">
+				<img src="https://i.pinimg.com/originals/59/ff/4b/59ff4bd9d4d73acc32b9004f410c1d10.jpg" alt="Avery Starseer &copy;Midnazora"></a>
+				Art by <a href="https://www.deviantart.com/midnazora">Midnazora / Christine McCauley</a>.
+			</details>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Generous and patient</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/doubt">Doubt</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Green</dd>
+
+				<dt>Hair</dt>
+				<dd>Brown</dd>
+
+				<dt>Age</dt>
+				<dd>31</dd>
+
+				<dt>Weight</dt>
+				<dd>32 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>3' 1''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
