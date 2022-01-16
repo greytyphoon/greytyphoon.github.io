@@ -94,6 +94,7 @@ ul.summations > li > .circumstancialBonus { padding-left: 0; }
 .cold:not(.spell), a.cold:not(.spell), a.cold:not(.spell):visited { color: var(--transmutation-teal); }
 .acid:not(.spell), a.acid:not(.spell), a.acid:not(.spell):visited { color: var(--conjuration-green); }
 .electricity:not(.spell), a.electricity:not(.spell), a.electricity:not(.spell):visited { color: var(--abjuration-gold); }
+.pantheon, a.pantheon, a.pantheon:visited { color: var(--divination-blue); }
 
 /********************
  * CharStudies and Tables (tblComparison / playerInfo)
@@ -122,6 +123,7 @@ table.playerInfo td {
 /* icons for campaigns */
 #fixref > ul > li > *.houserule::before { content: "+"; }
 #fixref > ul > li > *.experience::before { content: "XP"; }
+#fixref > ul > li > *.back::before { content:"\21a9"; content: "↩"; }
 #fixref > ul > li > *.names::before { content: "\1f3ad"; content: "🎭"; }
 #fixref > ul > li > *.injury::before { content: "\1f915"; content: "🤕"; }
 #fixref > ul > li > *.reward::before { content: "\1f4b0"; content: "💰"; }

@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Rémi Doutre">
 	<title>Grey's Riddle</title>
-	<link rel="stylesheet" href="../../system/pfGeneric.css">
+	<link rel="stylesheet" href="../../../system/pfGeneric.css">
 	<style>
 		#instructions { max-width: 540px; margin: 0 auto .75rem auto; }
 		#solved { text-align: center; text-shadow: 0 0 1px var(--conjuration-green); }
@@ -23,7 +23,7 @@
 		#d100 { top: 45px; margin-left: -20px; }
 	</style>
 </head>
-<body>
+<body onload="init()">
 	<nav id="fixref"><ul>
 		<li><a class="back" href="Q8-deck-of-cards.html">Back to Quest</a></li>
 		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
@@ -31,25 +31,21 @@
 
 	<div class="container">
 		<header>
-			<h1>La porte et les joyaux</h1>
+			<h1>La porte et les joyaux, deuxième partie</h1>
 		</header>
-		<p>Dans l'alcôve à même la falaise se trouve une porte de pierre finement taillée.
-			Aucune poignée n'est visible, mais sept joyaux rouges attirent votre attention.
-			Ils sont taillées dans des formes précises et variées, et sur chaque côté un nombre est écrit.</p>
-		<p>Ça doit être un code secret pour entrer: en mettant les joyaux sur le bon côté, la porte s'ouvrira.</p>
+		<p>Une autre série de gemmes? Cette fois-ci elles sont dorées.</p>
 		<form class="br">
 			<svg height="300" width="260">
-				<line x1="130" y1="80" x2="130" y2="180" style="stroke:var(--murder-black); stroke-width:2" />
 				<line x1="55" y1="180" x2="198" y2="270" style="stroke:var(--murder-black); stroke-width:2" />
 				<line x1="205" y1="180" x2="75" y2="255" style="stroke:var(--murder-black); stroke-width:2" />
-				<polygon title="d100" points=" 130,20 170,45 160,70 130,80 100,70 90,45" style="fill:var(--murder-red);stroke:var(--murder-black);stroke-width:1" />
-				<polygon title="d10" points=" 130,100 170,125 160,150 130,160 100,150 90,125" style="fill:var(--murder-red);stroke:var(--murder-black);stroke-width:1" />
-				<polygon title="d20" points=" 130,180 170,200 170,240 130,260 90,240 90,200" style="fill:var(--murder-red);stroke:var(--murder-black);stroke-width:1" />
-				<polygon title="d4" points=" 210,250 240,300 180,300" style="fill:var(--murder-red);stroke:var(--murder-black);stroke-width:1" />
-				<polygon title="d6" points=" 30,255 75,255 75,300 30,300" style="fill:var(--murder-red);stroke:var(--murder-black);stroke-width:1" />
-				<polygon title="d8" points=" 40,135 70,165 40,195 10,165" style="fill:var(--murder-red);stroke:var(--murder-black);stroke-width:1" />
-				<polygon title="d12" points=" 220,135 250,160 235,195 205,195 190,160" style="fill:var(--murder-red);stroke:var(--murder-black);stroke-width:1" />
-				<line x1="75" y1="280" x2="192" y2="280" style="stroke:var(--murder-black); stroke-width:2" />
+				<line x1="130" y1="80" x2="130" y2="180" style="stroke:var(--murder-black); stroke-width:2" />
+				<polygon title="d100" points=" 130,20 170,45 160,70 130,80 100,70 90,45" style="fill:var(--abjuration-gold);stroke:var(--murder-black);stroke-width:1" />
+				<polygon title="d10" points=" 130,100 170,125 160,150 130,160 100,150 90,125" style="fill:var(--abjuration-gold);stroke:var(--murder-black);stroke-width:1" />
+				<polygon title="d20" points=" 130,180 170,200 170,240 130,260 90,240 90,200" style="fill:var(--abjuration-gold);stroke:var(--murder-black);stroke-width:1" />
+				<polygon title="d4" points=" 210,250 240,300 180,300" style="fill:var(--abjuration-gold);stroke:var(--murder-black);stroke-width:1" />
+				<polygon title="d6" points=" 30,255 75,255 75,300 30,300" style="fill:var(--abjuration-gold);stroke:var(--murder-black);stroke-width:1" />
+				<polygon title="d8" points=" 40,135 70,165 40,195 10,165" style="fill:var(--abjuration-gold);stroke:var(--murder-black);stroke-width:1" />
+				<polygon title="d12" points=" 220,135 250,160 235,195 205,195 190,160" style="fill:var(--abjuration-gold);stroke:var(--murder-black);stroke-width:1" />
 				<line x1="220" y1="195" x2="210" y2="250" style="stroke:var(--murder-black); stroke-width:2" />
 				<line x1="160" y1="150" x2="190" y2="160" style="stroke:var(--murder-black); stroke-width:2" />
 				<line x1="100" y1="150" x2="70" y2="165" style="stroke:var(--murder-black); stroke-width:2" />
@@ -146,16 +142,37 @@
 		<div id="instructions" class="apartee hidden">
 			Des mots s'affichent alors sur la porte, au-dessus des gemmes...
 			<ul class="hints">
-				<li class="hidden" id="repeat">Deux dés ne peuvent pas avoir la même valeur.</li>
-				<li class="hidden" id="minimumd100">Le d100 doit avoir la plus petite valeur possible, mais rester plus grand que la somme de tous les autres.</li>
-				<li class="hidden" id="divide">Un dé ne peut pas être un diviseur d'un de ses voisins.</li>
-				<li class="hidden" id="even">Un seul dé peut afficher un nombre pair.</li>
-				<li class="hidden" id="greatd20">Le d20 doit avoir la plus grande valeur possible sans contredire les autres règles.</li>
+				<li class="hidden" id="column1">Le D6 et le D8 doivent avoir une somme de <b id="solutionColumn1"></b>.</li>
+				<li class="hidden" id="column2">Le D20, le D10 et le D100 doivent avoir une somme de <b id="solutionColumn2"></b>.</li>
+				<li class="hidden" id="column3">Le D4 et le D12 doivent avoir une somme de <b id="solutionColumn3"></b>.</li>
+				<li class="hidden" id="row1">Le D8 et le D10 doivent avoir une somme de <b id="solutionRow1"></b>.</li>
+				<li class="hidden" id="row2">Le D6, le D20 et le D12 doivent avoir une somme de <b id="solutionRow2"></b>.</li>
+				<li class="hidden" id="traverse1">Le D10 et le D12 doivent avoir une somme de <b id="solutionTraverse1"></b>.</li>
+				<li class="hidden" id="traverse2">Le D8, le D20 et le D4 doivent avoir une somme de <b id="solutionTraverse2"></b>.</li>
 			</ul>
 		</div>
-		<p id="solved" class="hidden"><a href="Q8-riddle4.html">Avec un glissement sec, un autre panneau s'ouvre dans la porte.</a></p>
+		<p id="solved" class="hidden">La porte s'ouvre avec un bruit sourd.</p>
+		<p id="extra-credits" class="hidden">Solution originale!</p>
 	</div>
 	<script>
+		var solutionD4 = myRandom(4);
+		var solutionD6 = myRandom(6);
+		var solutionD8 = myRandom(8);
+		var solutionD10 = myRandom(10);
+		var solutionD12 = myRandom(12);
+		var solutionD20 = myRandom(20);
+		var solutionD100 = myRandom(10)*10;
+		
+		function init() {
+			document.getElementById("solutionColumn1").innerHTML = solutionD6 + solutionD8;
+			document.getElementById("solutionColumn2").innerHTML = solutionD20 + solutionD10 + solutionD100;
+			document.getElementById("solutionColumn3").innerHTML = solutionD4 + solutionD12;
+			document.getElementById("solutionRow1").innerHTML = solutionD8 + solutionD10;
+			document.getElementById("solutionRow2").innerHTML = solutionD6 + solutionD20 + solutionD12;
+			document.getElementById("solutionTraverse1").innerHTML = solutionD10 + solutionD12;
+			document.getElementById("solutionTraverse2").innerHTML = solutionD8 + solutionD20 + solutionD4;
+		}
+		
 		function checkAnswer() {
 			let answerD4 = parseInt(document.getElementById("d4").value);
 			let answerD6 = parseInt(document.getElementById("d6").value);
@@ -166,68 +183,65 @@
 			let answerD20 = parseInt(document.getElementById("d20").value);
 
 			// RULE #1
-			if (answerD4 === answerD6 || answerD4 === answerD8 || answerD4 === answerD10 || answerD4 === answerD12 || answerD4 === answerD20
-			 || answerD6 === answerD8 || answerD6 === answerD10 || answerD4 === answerD12 || answerD4 === answerD20
-			 || answerD8 === answerD10 || answerD8 === answerD12 || answerD8 === answerD20
-			 || answerD10 === answerD12 || answerD10 === answerD20
-			 || answerD12 === answerD20
-			 || answerD100 === answerD10 || answerD100 === answerD12 || answerD100 === answerD20)
+			if (answerD6 + answerD8 !== solutionD6 + solutionD8)
 			{
-				revealHint("repeat");
+				revealHint("column1");
 				return;
 			}
 
 			// RULE #2
-			let sumOfAll = answerD4 + answerD6 + answerD8 + answerD10 + answerD12 + answerD20;
-			let ruleD100 = 10* (Math.floor(sumOfAll / 10) + 1);
-			if (answerD100 !== ruleD100)
+			if (answerD20 + answerD10 + answerD100 !== solutionD20 + solutionD10 + solutionD100)
 			{
-				revealHint("minimumd100");
+				revealHint("column2");
 				return;
 			}
 
 			// RULE #3
-			if (answerD4 % answerD6 === 0 || answerD6 % answerD4 === 0
-			 || answerD4 % answerD12 === 0 || answerD12 % answerD4 === 0
-			 || answerD4 % answerD20 === 0 || answerD20 % answerD4 === 0
-			 || answerD6 % answerD8 === 0 || answerD8 % answerD6 === 0
-			 || answerD6 % answerD20 === 0 || answerD20 % answerD6 === 0
-			 || answerD8 % answerD10 === 0 || answerD10 % answerD8 === 0
-			 || answerD8 % answerD20 === 0 || answerD20 % answerD8 === 0
-			 || answerD10 % answerD12 === 0 || answerD12 % answerD10 === 0
-			 || answerD10 % answerD100 === 0 || answerD100 % answerD10 === 0
-			 || answerD10 % answerD20 === 0 || answerD20 % answerD10 === 0
-			 || answerD12 % answerD20 === 0 || answerD20 % answerD12 === 0)
+			if (answerD4 + answerD12 !== solutionD4 + solutionD12)
 			{
-				revealHint("divide");
+				revealHint("column3");
 				return;
 			}
 
 			// RULE #4
-			let evenCount = 0;
-			if (answerD4 % 2 === 0) evenCount++;
-			if (answerD6 % 2 === 0) evenCount++;
-			if (answerD8 % 2 === 0) evenCount++;
-			if (answerD10 % 2 === 0) evenCount++;
-			if (answerD12 % 2 === 0) evenCount++;
-			if (answerD20 % 2 === 0) evenCount++;
-			if (answerD100 % 2 === 0) evenCount++;
-			if (evenCount > 1)
+			if (answerD8 + answerD10 !== solutionD8 + solutionD10)
 			{
-				revealHint("even");
+				revealHint("row1");
 				return;
 			}
 
 			// RULE #5
-			if (answerD20 !== 19)
+			if (answerD6 + answerD20 + answerD12 !== solutionD6 + solutionD20 + solutionD12)
 			{
-				revealHint("greatd20");
+				revealHint("row2");
+				return;
+			}
+
+			// RULE #6
+			if (answerD10 + answerD12 !== solutionD10 + solutionD12)
+			{
+				revealHint("traverse1");
+				return;
+			}
+
+			// RULE #7
+			if (answerD8 + answerD20 + answerD4 !== solutionD8 + solutionD20 + solutionD4)
+			{
+				revealHint("traverse1");
 				return;
 			}
 
 			// SOLVED
 			document.getElementById("instructions").classList.remove("visible");
 			document.getElementById("solved").classList.add("visible");
+			if (solutionD4 !== answerD4
+			 || solutionD6 !== answerD6
+			 || solutionD8 !== answerD8
+			 || solutionD10 !== answerD10
+			 || solutionD12 !== answerD12
+			 || solutionD100 !== answerD100
+			 || solutionD20 !== answerD20)
+				document.getElementById("extra-credits").classList.add("visible");
 		}
 		function revealHint(hintId) {
 			let oldLatest = document.querySelector(".latest")
@@ -239,6 +253,11 @@
 			let hint = document.getElementById(hintId);
 			hint.classList.add("visible");
 			hint.classList.add("latest");
+		}
+		// Returns an int between 1 and [max], including [max].
+		function myRandom(max)
+		{
+			return Math.floor((Math.random() * max)) + 1;
 		}
 	</script>
 </body>
