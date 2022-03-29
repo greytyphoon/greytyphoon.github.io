@@ -7,8 +7,8 @@
 	<title>Grey's Gladiators</title>
 	<link rel="stylesheet" href="../../system/pfGeneric.css">
 	<style>
-		.bonus::before { content: "✅ "; }
-		.malus::before { content: "❌ "; }
+		.bonus::marker { content: "✅"; color: var(--conjuration-green); }
+		.malus::marker { content: "❌"; color: var(--evocation-red); }
 	</style>
 </head>
 <body>
@@ -26,14 +26,24 @@
 			<div>
 				<h2>Test d'admission</h2>
 				<ul>
-					<li><a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/devil/bearded">Barbazu Devil</a> (CR5),
-						conjuré via <a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/infernal-challenger">infernal challenger</a>
+					<li><a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/devil/bearded">Barbazu Devil</a> <small>CR5</small>,
+						conjuré via <a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/infernal-challenger">infernal challenger</a>.
 						<ul>
 							<li>Le défi est de toucher le diable <b>3</b> fois, ou de survivre <b>5</b> rounds.</li>
 							<li>Même si le test est échoué, on peut devenir gladiateur en réussissant <b>Gladiator DC 18/20/25</b>.</li>
 						</ul></li>
 					<li><b>Stolzearoch le bref</b> se bat au glaive, autant qu'il peut</li>
 					<li><b>Bilmodoz le balafré</b> inflige une blessure infernale puis sort les griffes</li>
+				</ul>
+				<ul>
+					<li>Random large elemental <small>CR5</small> 
+						conjuré via <a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster V</a>.
+						(<a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-air/large-air-elemental">☁</a>,
+						<a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-earth/large-earth-elemental">🗻</a>,
+						<a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-fire/large-fire-elemental">🔥</a>,
+						<a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-ice/large-ice-elemental">❄</a>,
+						<a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-lightning/large-lightning-elemental">⚡</a>,
+						<a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-water/large-water-elemental">💧</a>.)</li>
 				</ul>
 			</div>
 
@@ -74,6 +84,21 @@
 					<li class="malus">forced movement,</li>
 					<li class="malus">get hit while being <i>flanked</i>,</li>
 					<li class="malus">get healed in combat.</li>
+				</ul>
+			</div>
+			<div>
+				<p>Bram Garnetspark regarde:</p>
+				<ul>
+					<li class="bonus">set up flanking,</li>
+					<li class="bonus">combat maneuvers,</li>
+					<li class="bonus">entering a stance,</li>
+					<li class="bonus">attacks blocked by a shield,</li>
+					<li class="bonus">nonlethal damage,</li>
+
+					<li class="malus">become poisoned,</li>
+					<li class="malus">change target before it's dead,</li>
+					<li class="malus">not bypassing DR,</li>
+					<li class="malus">become dying.</li>
 				</ul>
 			</div>
 			<div>
