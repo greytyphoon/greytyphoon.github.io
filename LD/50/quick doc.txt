@@ -28,4 +28,7 @@ OPTIONS
 
 
 TODO
+Mobile/touch/drag support
+SOUND
+better graphics
 Colorblind mode

@@ -22,6 +22,7 @@ function startGame()
 	allLasers = [];
 	gameOver = false;
 	score.lasersAbsorbed = 0;
+	document.getElementById("points").innerHTML = "0";
 	score.lasersSurvived = 0;
 	targetX = 228;
 	targetY = 228;
