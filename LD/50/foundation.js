@@ -9,7 +9,7 @@ var targetX = 228;
 var targetY = 228;
 var heroPositionX = 228; // arena/2 - robot/2
 var heroPositionY = 228;
-var heroColor = 3;
+var heroColor = 0;
 var options;
 var chrono;
 
@@ -27,10 +27,12 @@ function startGame()
 	targetY = 228;
 	heroPositionX = 228;
 	heroPositionY = 228;
+	heroColor = 0;
+
 	let heroDom = document.getElementById("hero");
 	heroDom.x.baseVal.newValueSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX, heroPositionX);
 	heroDom.y.baseVal.newValueSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX, heroPositionY);
-	heroColor = 3;
+
 	betterTimer.zero();
 
 	options = readOptions();

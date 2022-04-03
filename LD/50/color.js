@@ -10,7 +10,6 @@ const Color = {
 
 const colorController = {
 	changeHeroColor: function(newColor) {
-		if (newColor === heroColor) return;
 		heroColor = newColor;
 		document.getElementById("hero").firstElementChild.style.stroke = this.getColorText(newColor);
 	},
@@ -22,7 +21,7 @@ const colorController = {
 			case 4: return "var(--abjuration-gold)";
 			case 5: return "var(--transmutation-teal)";
 			case 6: return "var(--enchantment-lilac)";
-			default: return "var(--necromancy-purple)";
+			default: return "var(--murder-black)";
 		}
 	},
 };
