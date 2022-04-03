@@ -14,6 +14,7 @@
 		ul#score { display: grid; grid-template-columns: 1fr 1fr; text-align:center; padding: 0; list-style: none; }
 		#score > :first-child { text-align: left; }
 		#score > :last-child { text-align: right; }
+		#hero.dead .ok, #hero:not(.dead) .no { display: none; }
 	</style>
 	<script src="https://sfxr.me/riffwave.js"></script>
 	<script src="https://sfxr.me/sfxr.js"></script>
@@ -39,9 +40,14 @@
 			<svg id="hero" width="24" height="24" x="228" y="228">
 				<g fill="var(--murder-grey)" stroke-width="2">
 					<polygon points="1,1 1,23 23,23 23,1" />
-					<line	x1="6" y1="6" x2="6" y2="12" />
-					<line	x1="18" y1="6" x2="18" y2="12" />
+					<line class="ok"	x1="6" y1="6" x2="6" y2="12" />
+					<line class="ok"	x1="18" y1="6" x2="18" y2="12" />
 					<line	x1="6" y1="18" x2="18" y2="18" />
+
+					<line class="no"	x1="4" y1="6" x2="8" y2="12" />
+					<line class="no"	x1="8" y1="6" x2="4" y2="12" />
+					<line class="no"	x1="16" y1="6" x2="20" y2="12" />
+					<line class="no"	x1="20" y1="6" x2="16" y2="12" />
 				</g>
 			</svg>
 

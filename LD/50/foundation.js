@@ -31,6 +31,7 @@ function startGame()
 	heroColor = 0;
 
 	let heroDom = document.getElementById("hero");
+	heroDom.classList.remove("dead");
 	heroDom.x.baseVal.newValueSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX, heroPositionX);
 	heroDom.y.baseVal.newValueSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX, heroPositionY);
 
@@ -83,6 +84,7 @@ function moveHero()
 }
 function endGame()
 {
+	document.getElementById("hero").classList.add("dead");
 	sound.death();
 	document.getElementById("finalScoreSurvived").innerHTML = score.lasersSurvived;
 	document.getElementById("finalScoreAbsorbed").innerHTML = score.lasersAbsorbed;
