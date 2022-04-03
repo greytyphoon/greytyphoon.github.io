@@ -52,8 +52,9 @@ function oneFrame()
 	moveHero();
 	betterTimer.tick(millisecondsPerFrame);
 
-	// TODO Spawn fewer lasers (faster over time!)
-	laserController.createLaser();
+	// Spawn some lasers
+	if (options.difficulty <= 1 || 0 === myRandom(options.difficulty))
+		laserController.createLaser();
 
 	allLasers = allLasers.filter(laserController.incrementLaser);
 }
@@ -114,7 +115,7 @@ const eventHandlers = {
 function readOptions()
 {
 	return {
-		difficulty: document.querySelector('input[name="difficultyOption"]:checked').value,
+		difficulty: document.querySelector('input[name="difficultyOption"]:checked').value*1,
 	};
 }
 
