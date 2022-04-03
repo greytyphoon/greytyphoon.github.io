@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- ©2022 Rémi Doutre / Greytyphoon -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Rémi Doutre">
+	<meta name="description" content="Greytyphoon's entry for LudumDare 47.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Blocko and the Lasers</title>
+	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
+	<link rel="stylesheet" type="text/css" href="../game.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript" src="../game.js"></script>
+	<script type="text/javascript" src="color.js"></script>
+	<script type="text/javascript" src="timer.js"></script>
+	<script type="text/javascript" src="laser.js"></script>
+	<script type="text/javascript" src="foundation.js"></script>
+</head>
+<body onload="startGame(); modal.showOnce('how-to-play', 'LD50');">
+	<div class="container">
+		<header id="header">
+			<h1>Blocko and the Lasers</h1>
+			Greytyphoon's LD 50
+		</header>
+
+		<ul id="score">
+			<li><b id="points">0</b> lasers absorbed</li>
+			<li><span id="timer"></span></li>
+		</ul>
+		<svg id="gameBoard" width="480" height="480" xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<polygon id="arena" points="5,5 475,5 475,475 5,475" fill="none" stroke="var(--murder-black)" stroke-width="10" />
+
+			<svg id="hero" width="24" height="24" x="228" y="228">
+				<g fill="var(--murder-grey)" stroke="blue" stroke-width="2">
+					<polygon points="1,1 1,23 23,23 23,1" />
+					<line	x1="6" y1="6" x2="6" y2="12" />
+					<line	x1="18" y1="6" x2="18" y2="12" />
+					<line	x1="6" y1="18" x2="18" y2="18" />
+				</g>
+			</svg>
+
+			<g id="laserContainer" stroke-width="10" ></g>
+		</svg>
+	</div>
+
+	<nav id="fixref">
+		<ul>
+			<li><a class="how-to-play" onClick="modal.showModal('how-to-play');">How to play</a></li>
+			<li><a class="options" onclick="modal.showModal('options');">Options</a></li>
+			<li><a class="confirm" onclick="document.getElementById('confirm-restart').toggleAttribute('visible'); startGame();" id="confirm-restart">Confirm</a>
+				<a class="restart" onclick="document.getElementById('confirm-restart').toggleAttribute('visible');">Restart</a>
+			<li><a class="credits" onClick="modal.showModal('credits');">Credits</a></li>
+		</ul>
+	</nav>
+
+	<dialog id="how-to-play">
+		<h2>How to play
+			<b><a onClick="modal.closeModal('how-to-play');">&times;</a></b></h2>
+		<p>Blocko the robot needs to avoid the deadly, random lasers!</p>
+		<p>Click or press the screen in the arena to guide him to that point.</p>
+		<p>Keep Blocko safe as long as you can!<br>
+			Remember that as long as Blocko is not moving, time does not advance.</p>
+		<p>Blocko has an extra trick up his sleeve: he can absorb lasers,<br>
+			<em>as long as they are mostly composed of the primary color Blocko was painted of</em>.</p>
+		<p>Good luck!</p>
+		<p>⚠ <b>Epilepsy warning</b>, flashing colors!</p>
+		<center><a onClick="modal.closeModal('how-to-play');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="options">
+		<h2>Options
+			<b><a onClick="modal.closeModal('options');">&times;</a></b></h2>
+			<form>
+				<b>Laser Frequency</b>
+				<ul>
+					<li><input type="radio" id="difficultyOptionEasy" name="difficultyOption" value="Easy"><label for="difficultyOptionEasy">Fewer lasers</label></li>
+					<li><input type="radio" id="difficultyOptionMedium" name="difficultyOption" value="Medium" checked><label for="difficultyOptionMedium">Normal lasers</label></li>
+					<li><input type="radio" id="difficultyOptionHard" name="difficultyOption" value="Hard"><label for="difficultyOptionHard">More lasers</label></li>
+					<li><input type="radio" id="difficultyOptionInsane" name="difficultyOption" value="Insane"><label for="difficultyOptionInsane">Insane lasers</label></li>
+				</ul>
+			</form>
+		<center><a onClick="modal.closeModal('options'); startGame();">Apply</a> - <a onClick="modal.closeModal('options');">Cancel</a></center>
+	</dialog>
+
+	<dialog id="credits">
+		<h2>Blocko and the Lasers
+			<b><a onClick="modal.closeModal('credits');">&times;</a></b></h2>
+		<p>A game made for LudumDare 50</p>
+		<p>By Greytyphoon (Rémi Doutre)</p>
+		<p>©2022 Montréal, Québec, Canada</p>
+		<center><a onClick="modal.closeModal('credits');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="death">
+		<h2>It was inevitable.
+			<b><a onClick="modal.closeModal('death');">&times;</a></b></h2>
+		<p>You survived for <b id="finalScoreTime">0:00</b>, avoiding <b id="finalScoreSurvived">0</b> lasers and absorbing <b id="finalScoreAbsorbed">0</b> of them.</p>
+		<center><a onClick="modal.closeModal('death');">Close</a></center>
+	</dialog>
+</body>
+</html>

@@ -1,0 +1,31 @@
+COLOR
+-----
+Purple: 0,
+Blue: 1,
+Green: 2,
+Red: 3,
+Gold: 4,
+Teal: 5
+Lilac: 6,
+
+LASER
+-----
+.color (color)
+.startX (int, zero-based)
+.startY (int, zero-based)
+.endX (int, zero-based)
+.endY (int, zero-based)
+.lifeCycle (int, 0-19)
+.absorbed (bool)
+.distanceFromLaser (func)
+.dom (htmlElement)
+
+OPTIONS
+-------
+.difficulty
+
+
+
+
+TODO
+Colorblind mode
