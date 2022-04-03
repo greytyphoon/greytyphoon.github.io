@@ -25,7 +25,7 @@ const laserController = {
 
 	incrementLaser: function(laser) {
 		laser.lifeCycle += millisecondsPerFrame;
-		if (laser.lifeCycle >= 1000)
+		if (laser.lifeCycle >= 750)
 		{
 			score.lasersSurvived++;
 			laser.dom.remove();
@@ -33,13 +33,13 @@ const laserController = {
 		}
 
 		// Not fired? Exit early
-		if (laser.lifeCycle < 750) return true;
+		if (laser.lifeCycle < 500) return true;
 
 		// Already absorbed? Exit early
 		if (laser.absorbed) return true;
 
 		// Just fired? Create the beam
-		if (laser.lifeCycle < (750+millisecondsPerFrame)) laserHelper.createBeamDom(laser);
+		if (laser.lifeCycle < (500+millisecondsPerFrame)) laserHelper.createBeamDom(laser);
 
 		// Check collisions
 		var robotCorners = [
@@ -125,7 +125,7 @@ const laserHelper = {
 		laserTraceDom.setAttributeNS(null, 'y1', start.y);
 		laserTraceDom.setAttributeNS(null, 'y2', end.y);
 		laserTraceDom.setAttributeNS(null, 'stroke-width', 1);
-		laserTraceDom.setAttributeNS(null, 'stroke-dasharray', "8,2");
+		laserTraceDom.setAttributeNS(null, 'stroke-dasharray', "2,6");
 		laserDom.appendChild(laserTraceDom);
 
 		document.getElementById("laserContainer").appendChild(laserDom);

@@ -35,6 +35,8 @@ function startGame()
 	heroDom.x.baseVal.newValueSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX, heroPositionX);
 	heroDom.y.baseVal.newValueSpecifiedUnits(SVGLength.SVG_LENGTHTYPE_PX, heroPositionY);
 
+	if (chrono) clearTimeout(chrono);
+	chrono = undefined;
 	betterTimer.zero();
 
 	options = readOptions();
