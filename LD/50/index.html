@@ -71,11 +71,12 @@
 		<p>Blocko the robot needs to avoid the deadly, random lasers!</p>
 		<p>Click or press the screen in the arena to guide him to that point.</p>
 		<p>Keep Blocko safe as long as you can!<br>
-			Remember that as long as Blocko is not moving, time does not advance.</p>
+			Remember that as long as Blocko is not moving, time does not advance.<br>
+			You will see a pale, dotted trace where the lasers are about to shoot.</p>
 		<p>Blocko has an extra trick up his sleeve: he can absorb lasers,<br>
-			<em>as long as they are the same color he is</em>.</p>
-		<p>Over time, the difficulty will increase gradually. Good luck!</p>
-		<p>⚠ <b>Epilepsy warning</b>, flashing colors!</p>
+			<em>as long as they are the same color he is</em>. It'll make this sound: <span onclick="sound.absorb()">🔊</span></p>
+		<p>Over time, when you hear this sound <span onclick="sound.harder()">🔊</span>, the difficulty will increase gradually.</p>
+		<p>Good luck!</p>
 		<center><a onClick="modal.closeModal('how-to-play');">Ok!</a></center>
 	</dialog>
 
@@ -88,7 +89,7 @@
 					<li><input type="radio" id="difficultyOptionEasy" name="difficultyOption" value="0"><label for="difficultyOptionEasy">Fewer lasers</label></li>
 					<li><input type="radio" id="difficultyOptionMedium" name="difficultyOption" value="1" checked><label for="difficultyOptionMedium">Normal lasers</label></li>
 					<li><input type="radio" id="difficultyOptionHard" name="difficultyOption" value="2"><label for="difficultyOptionHard">More lasers</label></li>
-					<li><input type="radio" id="difficultyOptionInsane" name="difficultyOption" value="3"><label for="difficultyOptionInsane">Insane lasers</label></li>
+					<li><input type="radio" id="difficultyOptionInsane" name="difficultyOption" value="4"><label for="difficultyOptionInsane">Insane lasers</label></li>
 				</ul>
 				<b>Sound</b>
 				<ul>
