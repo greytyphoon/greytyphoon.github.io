@@ -6,8 +6,8 @@ const laserController = {
 		let firstWall = myRandom(4);
 		let secondWall = myRandom(3);
 		if (secondWall >= firstWall) secondWall++;
-		let start = laserHelpers.toPosition(firstWall, 20+myRandom(440));
-		let end = laserHelpers.toPosition(secondWall, 20+myRandom(440));
+		let start = laserHelper.toPosition(firstWall, 20+myRandom(440));
+		let end = laserHelper.toPosition(secondWall, 20+myRandom(440));
 
 		let laser = {
 			color: randomColor,
@@ -17,8 +17,8 @@ const laserController = {
 			endY: end.y,
 			lifeCycle: 0,
 			absorbed: false,
-			distanceFromLaser: laserHelpers.distanceFromLine(start.x, start.y, end.x, end.y),
-			dom: laserHelpers.createLaserDom(randomColor, start, end),
+			distanceFromLaser: laserHelper.distanceFromLine(start.x, start.y, end.x, end.y),
+			dom: laserHelper.createLaserDom(randomColor, start, end),
 		};
 		allLasers.push(laser);
 	},
@@ -39,7 +39,7 @@ const laserController = {
 		if (laser.absorbed) return true;
 
 		// Just fired? Create the beam
-		if (laser.lifeCycle < (750+millisecondsPerFrame)) laserHelpers.createBeamDom(laser);
+		if (laser.lifeCycle < (750+millisecondsPerFrame)) laserHelper.createBeamDom(laser);
 
 		// Check collisions
 		var robotCorners = [
@@ -51,7 +51,7 @@ const laserController = {
 		if (robotCorners.some(pt => laser.distanceFromLaser(pt.x, pt.y) < 2.6))
 		{
 			if (laser.color === heroColor)
-				laserHelpers.absorbLaser(laser);
+				laserHelper.absorbLaser(laser);
 			else
 				endGame();
 		}
@@ -60,7 +60,37 @@ const laserController = {
 	},
 };
 
-const laserHelpers = {
+const colorHelper = {
+	changeHeroColor: function(newColor) {
+		heroColor = newColor;
+		document.getElementById("hero").firstElementChild.style.stroke = this.getColorText(newColor);
+	},
+	getColorText: function(color) {
+		switch(color) {
+			case 1: return "var(--divination-blue)";
+			case 2: return "var(--conjuration-green)";
+			case 3: return "var(--evocation-red)";
+			case 4: return "var(--abjuration-gold)";
+			case 5: return "var(--transmutation-teal)";
+			case 6: return "var(--enchantment-lilac)";
+			default: return "var(--murder-black)";
+		}
+	},
+};
+
+const sound = {
+	_shoot: new SoundEffect("1K4Nomc9UcbwGhMKt57KeEeCEiRYjnNudVDTiGyeU6pdnmA3Dxjvqsyugmh1hDof6uksQ1wQqridqVMeKv4NvKahUtPZXSvSxQT6hD2nHtsTkZBcwT4FAcLgr").generate().getAudio(),
+	_absorb: new SoundEffect("111119EcQmFbYVzCosqhLFEjYBJcpR4R9rVx1rhXdjmnRPkX4q4hykdBhG8t6yX3gzoKzeDf56gicuXKr3zFT3euZoVtcmLTJHDnBPWTUcPw4B8byWY3JzMD").generate().getAudio(),
+	_death: new SoundEffect("8ah6kFJ9roqpiNN94SfivZjvMq3rCd6HM6oLBgA5RNuVSFtQ5btTJtUkuqvfnMZKVSNYkvCPbW9TwM4Gp41bRQRtoQZLYwbWkCtNoM9GWLzoxiLTxGw3tgEV9").generate().getAudio(),
+	_start: new SoundEffect("3xpe5dDk9W1bsgYjNY9Tna9A6ZxDT4ZDmAyWmTjXMqsSnDz5D4r8maWQg131LG32fqKpY78g4FDoC8aL5FMhouvQut3jGEGzw3XDLvVamGRCko9ZyoG895W8P").generate().getAudio(),
+
+	shoot: function() { if (options.sound === "On") this._shoot.play(); },
+	absorb: function() { if (options.sound === "On") this._absorb.play(); },
+	death: function() { if (options.sound === "On") this._death.play(); },
+	start: function() { if (options.sound === "On") this._start.play(); },
+};
+
+const laserHelper = {
 	svgns: "http://www.w3.org/2000/svg",
 	toPosition: function(wallNumber, positionOnWall) {
 		switch (wallNumber) {
@@ -75,19 +105,19 @@ const laserHelpers = {
 		}
 	},
 	createLaserDom: function(color, start, end) {
-		let laserDom = document.createElementNS(laserHelpers.svgns, "g");
-		laserDom.setAttributeNS(null, 'stroke', colorController.getColorText(color));
+		let laserDom = document.createElementNS(this.svgns, "g");
+		laserDom.setAttributeNS(null, 'stroke', colorHelper.getColorText(color));
 		laserDom.setAttributeNS(null, 'stroke-width', 5);
 		laserDom.setAttributeNS(null, 'stroke-linecap', "round");
-		laserDom.setAttributeNS(null, 'fill', colorController.getColorText(color));
+		laserDom.setAttributeNS(null, 'fill', colorHelper.getColorText(color));
 
-		let laserStartDom = document.createElementNS(laserHelpers.svgns, "circle");
+		let laserStartDom = document.createElementNS(this.svgns, "circle");
 		laserStartDom.setAttributeNS(null, 'cx', start.x);
 		laserStartDom.setAttributeNS(null, 'cy', start.y);
 		laserStartDom.setAttributeNS(null, 'r', 5);
 		laserDom.appendChild(laserStartDom);
 		
-		let laserTraceDom = document.createElementNS(laserHelpers.svgns, "line");
+		let laserTraceDom = document.createElementNS(this.svgns, "line");
 		laserTraceDom.setAttributeNS(null, 'x1', start.x);
 		laserTraceDom.setAttributeNS(null, 'x2', end.x);
 		laserTraceDom.setAttributeNS(null, 'y1', start.y);
@@ -100,16 +130,18 @@ const laserHelpers = {
 		return laserDom;
 	},
 	createBeamDom: function(laser) {
-		let laserBeamDom = document.createElementNS(laserHelpers.svgns, "line");
+		let laserBeamDom = document.createElementNS(this.svgns, "line");
 		laserBeamDom.classList.add("beam");
 		laserBeamDom.setAttributeNS(null, 'x1', laser.startX);
 		laserBeamDom.setAttributeNS(null, 'x2', laser.endX);
 		laserBeamDom.setAttributeNS(null, 'y1', laser.startY);
 		laserBeamDom.setAttributeNS(null, 'y2', laser.endY);
 		laser.dom.appendChild(laserBeamDom);
+		sound.shoot();
 	},
 	absorbLaser: function(laser) {
 		score.lasersAbsorbed++;
+		sound.absorb();
 		laser.absorbed = true;
 		document.getElementById("points").innerHTML = score.lasersAbsorbed;
 	},

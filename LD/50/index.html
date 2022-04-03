@@ -4,14 +4,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Rémi Doutre">
-	<meta name="description" content="Greytyphoon's entry for LudumDare 47.">
+	<meta name="description" content="Greytyphoon's entry for LudumDare 50.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Blocko and the Lasers</title>
 	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
 	<link rel="stylesheet" type="text/css" href="../game.css"/>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<style>
+		#gameBoard { display: block; margin: .5rem auto .75rem auto; }
+		ul#score { display: grid; grid-template-columns: 1fr 1fr; text-align:center; padding: 0; list-style: none; }
+		#score > :first-child { text-align: left; }
+		#score > :last-child { text-align: right; }
+	</style>
+	<script src="https://sfxr.me/riffwave.js"></script>
+	<script src="https://sfxr.me/sfxr.js"></script>
 	<script type="text/javascript" src="../game.js"></script>
-	<script type="text/javascript" src="color.js"></script>
 	<script type="text/javascript" src="timer.js"></script>
 	<script type="text/javascript" src="laser.js"></script>
 	<script type="text/javascript" src="foundation.js"></script>
@@ -77,6 +83,11 @@
 					<li><input type="radio" id="difficultyOptionMedium" name="difficultyOption" value="3" checked><label for="difficultyOptionMedium">Normal lasers</label></li>
 					<li><input type="radio" id="difficultyOptionHard" name="difficultyOption" value="2"><label for="difficultyOptionHard">More lasers</label></li>
 					<li><input type="radio" id="difficultyOptionInsane" name="difficultyOption" value="1"><label for="difficultyOptionInsane">Insane lasers</label></li>
+				</ul>
+				<b>Sound</b>
+				<ul>
+					<li><input type="radio" id="soundOptionOn" name="soundOption" value="On" checked><label for="soundOptionOn">On</label></li>
+					<li><input type="radio" id="soundOptionOff" name="soundOption" value="Off"><label for="soundOptionOff">Off</label></li>
 				</ul>
 			</form>
 		<center><a onClick="modal.closeModal('options'); startGame();">Apply</a> - <a onClick="modal.closeModal('options');">Cancel</a></center>

@@ -37,7 +37,7 @@ function startGame()
 	betterTimer.zero();
 
 	options = readOptions();
-	colorController.changeHeroColor(myRandom(7));
+	colorHelper.changeHeroColor(myRandom(7));
 
 	// Setup target tracker
 	gameBoard.addEventListener("click", eventHandlers.clickArena);
@@ -83,6 +83,7 @@ function moveHero()
 }
 function endGame()
 {
+	sound.death();
 	document.getElementById("finalScoreSurvived").innerHTML = score.lasersSurvived;
 	document.getElementById("finalScoreAbsorbed").innerHTML = score.lasersAbsorbed;
 	document.getElementById("finalScoreTime").innerHTML = betterTimer.getTimeString();
@@ -109,7 +110,11 @@ const eventHandlers = {
 		targetY = newTargetY;
 
 		// Setup ticker
-		if (!chrono) chrono = setTimeout(oneFrame, millisecondsPerFrame);
+		if (!chrono)
+		{
+			chrono = setTimeout(oneFrame, millisecondsPerFrame);
+			sound.start();
+		}
 	},
 };
 
@@ -117,6 +122,7 @@ function readOptions()
 {
 	return {
 		difficulty: document.querySelector('input[name="difficultyOption"]:checked').value*1,
+		sound: document.querySelector('input[name="soundOption"]:checked').value,
 	};
 }
 
