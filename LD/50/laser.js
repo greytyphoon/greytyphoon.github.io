@@ -48,7 +48,7 @@ const laserController = {
 			{ x: heroPositionX + 12, y: heroPositionY + 12 },
 			{ x: heroPositionX + 24, y: heroPositionY + 24 },
 			{ x: heroPositionX + 24, y: heroPositionY }];
-		if (robotCorners.some(pt => laser.distanceFromLaser(pt.x, pt.y) < 2.6))
+		if (robotCorners.some(pt => laser.distanceFromLaser(pt.x, pt.y) < 2.5))
 		{
 			if (laser.color === heroColor)
 				laserHelper.absorbLaser(laser);
