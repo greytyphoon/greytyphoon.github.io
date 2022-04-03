@@ -41,9 +41,6 @@ function startGame()
 
 	options = readOptions();
 	colorHelper.changeHeroColor(myRandom(7));
-
-	// Setup target tracker
-	gameBoard.addEventListener("click", eventHandlers.clickArena);
 }
 
 function oneFrame()
@@ -101,7 +98,7 @@ function endGame()
 }
 
 const eventHandlers = {
-	clickArena: function(evt) {
+	gameBoard_onClick: function(evt) {
 		if (gameOver) return;
 
 		let gameBoardBounds = document.getElementById("gameBoard").getBoundingClientRect();
