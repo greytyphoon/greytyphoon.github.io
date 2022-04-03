@@ -16,6 +16,11 @@ const betterTimer = {
 			this.ticks -= 1000;
 			this.seconds++;
 
+			if (this.seconds % 6 === 0) {
+				options.difficulty++;
+				sound.harder();
+			}
+
 			if (this.seconds === 60) {
 				this.seconds = 0;
 				this.minutes++;

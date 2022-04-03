@@ -83,11 +83,13 @@ const sound = {
 	_absorb: new SoundEffect("111119EcQmFbYVzCosqhLFEjYBJcpR4R9rVx1rhXdjmnRPkX4q4hykdBhG8t6yX3gzoKzeDf56gicuXKr3zFT3euZoVtcmLTJHDnBPWTUcPw4B8byWY3JzMD").generate().getAudio(),
 	_death: new SoundEffect("8ah6kFJ9roqpiNN94SfivZjvMq3rCd6HM6oLBgA5RNuVSFtQ5btTJtUkuqvfnMZKVSNYkvCPbW9TwM4Gp41bRQRtoQZLYwbWkCtNoM9GWLzoxiLTxGw3tgEV9").generate().getAudio(),
 	_start: new SoundEffect("3xpe5dDk9W1bsgYjNY9Tna9A6ZxDT4ZDmAyWmTjXMqsSnDz5D4r8maWQg131LG32fqKpY78g4FDoC8aL5FMhouvQut3jGEGzw3XDLvVamGRCko9ZyoG895W8P").generate().getAudio(),
+	_harder: new SoundEffect("111117pjZdUznYjNF5s9MjJLAedzVtyFrexBjWZK2GMFbhRzWzTYsStV4GQzSBixoYyMYD63EgPQu1ZpyzSxu4YHd7AUh5c14wDY87Dj6QGdP1P1qHjHsoBu").generate().getAudio(),
 
 	shoot: function() { if (options.sound === "On") this._shoot.play(); },
 	absorb: function() { if (options.sound === "On") this._absorb.play(); },
 	death: function() { if (options.sound === "On") this._death.play(); },
 	start: function() { if (options.sound === "On") this._start.play(); },
+	harder: function() { if (options.sound === "On") this._harder.play(); },
 };
 
 const laserHelper = {

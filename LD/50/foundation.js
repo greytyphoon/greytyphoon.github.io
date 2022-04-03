@@ -55,7 +55,10 @@ function oneFrame()
 	betterTimer.tick(millisecondsPerFrame);
 
 	// Spawn some lasers
-	if (options.difficulty <= 1 || 0 === myRandom(options.difficulty))
+	let diff = options.difficulty
+	for (; diff > 4; diff -=4)
+		laserController.createLaser();
+	if (diff === 4 || 0 === myRandom(5-diff))
 		laserController.createLaser();
 
 	allLasers = allLasers.filter(laserController.incrementLaser);
