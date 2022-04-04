@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Wizard</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="familiar" onclick="alert('TODO: Faerie Dragon familiar, with School Familiar archetype')">Bémol</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Fred, the pilgrim</h1>
+			NG Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>7</dd>
+
+				<dt>Dex</dt>
+				<dd>18 <small>14, <u title="Racial">2</u>, <u title="Belt of Incredible Dexterity">2</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>12</dd>
+
+				<dt>Int</dt>
+				<dd>24 <small>18, <u title="Racial">2</u>, <u title="Advancement">2</u>, <u title="Headband of Vast Intelligence">2</u></small></dd>
+
+				<dt>Wis</dt>
+				<dd>14</dd>
+
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/human#Alternate_Racial_Traits">Dual Talent</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/wizard">Wizard</a> 8</dd>
+				<dd class="archetype">School <a href="https://d20pfsrd.com/classes/core-classes/wizard/arcane-schools/paizo-arcane-schools/classic-arcane-schools/illusion/">Illusion</a></dd>
+				<dd class="archetype">Opposed Enchantment &amp; Necromancy</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Desna</dd>
+
+				<dt>Senses</dt>
+				<dd>Normal</dd>
+
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd title="1 racial, 7 int, 8 linguistics">
+					Common, Elven, Dwarven, Halfling, Gnome,
+					Sylvan, Aklo, Undercommon,
+					Aboleth, Cyclops, Draconic, Giant, Goblin, Orc, Sphinx, Treant</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/social-traits/adopted">Adopted</a> &gt;
+				<a href="https://d20pfsrd.com/traits/race-traits/illusion-obsession-gnome">Illusion Obsession</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/campaign-traits/council-of-thieves/conspiracy-hunter">Conspiracy Hunter</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/magic-traits/magical-flair">Magical Flair</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/regional-traits/valashmai-veteran-the-valashmai-jungle">Veteran Jungle Guide</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/additional-traits">Additional Traits</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Linguistics)</dd>
+			<dt>familiar 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/alertness">Alertness</a>
+				<small>bonus</small></dd>
+			<dt>wizard 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/spell-focus">Spell Focus</a> (Illusion)
+				<small>bonus</small></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/orator">Orator</a>
+				<small>min.1</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/effortless-trickery">Effortless Trickery</a>
+				<small>min.1</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/greater-spell-focus">Greater Spell Focus</a>
+				<small>min.1</small></dd>
+			<dt>wizard 5</dt>
+			<dd><a href="https://d20pfsrd.com/classes/core-classes/wizard/arcane-discoveries/arcane-discoveries-paizo/fast-study">Fast Study</a>
+				<small>min.5</small></dd>
+			<dt>level 7</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/improved-familiar">Improved Familiar</a>
+				<small>min.7</small></dd>
+			<dt>level 9</dt>
+			<dd><a href="https://d20pfsrd.com/classes/core-classes/wizard/arcane-discoveries/arcane-discoveries-paizo/observant-illusion-su">Observant Illusion</a>
+				<small>min.7</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>16</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>2 wis, 8 ranks, <u title="Veteran Jungle Guide">3 class, 1 trait</u>, <u title="Alertness">2 feat</u></small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>
+				<small>7 int, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
+				<small>4 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>21</strong>
+				<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>
+				<small>7 int, 8 ranks, 3 class, 3 s.focus</small>
+			</li>
+			<li>
+				<strong>18</strong>
+				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+				<small>7 int, 8 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>16</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+				<small>4 dex, 8 ranks, <u title="Conspiracy Hunter">3 class, 1 trait</u></small>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<strong>17</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (all)</a>
+				<small>7 int, 10&times;7 ranks, 3 class</small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="8 wizard: 4 class, 7 int, 2 background-skills">104 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+		</p>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>4</strong>
+						<b>Init</b>
+						<small>4 dex</small>
+					</li>
+					<li>
+						<strong>57</strong>
+						<b>HP</b>
+						<small>8 wizard: 6 class, 1 con; 8 FC; -7 rolled</small>
+					</li>
+					<li class="br">
+						<strong>23</strong>
+						<b>AC</b> touch 15, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 19
+						<small>10, 4 dex, <u title="Mage Armor">4 armor</u>, <u title="Shield">4 shield</u>, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+					<li>
+						<strong>6</strong>
+						<b>Fort</b>
+						<small>1 con, 3 class, <u title="Cloak of Resistance">2 resistance</u></small>
+					</li>
+					<li>
+						<strong>9</strong>
+						<b>Ref</b>
+						<small>4 dex, 3 class, <u title="Cloak of Resistance">2 resistance</u></small>
+					</li>
+					<li class="br">
+						<strong>10</strong>
+						<b>Will</b>
+						<small>2 wis, 6 class, <u title="Cloak of Resistance">2 resistance</u></small>
+					</li>
+					<li>
+						<strong>4</strong>
+						<b>CMB</b>;	19 <b>CMD</b>
+						<small>4 bab, 0 str, 4 dex, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<!--Light Crossbow-->
+				<div class="weapon">
+					<h2>Light Crossbow <b>19x2</b> <b>80ft.</b> <b>P</b></h2>
+					<div class="summation"><strong>+9</strong> vs AC <small>4 bab, 4 dex, 1 mwk</small></div>
+					<div class="summation" title="Marksman Weapons: 1d8&rarr;1d10"><strong>1d10</strong></div>
+					<div class="circumstancialBonus">
+						Loading a light crossbow is an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>.
+					</div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock-->
+
+			<div>
+				<h2>Fast Study</h2>
+				<p>Prepare all spells in 15 minutes, one spell in 1 minute.</p>
+				
+				<h2>Illusory Maestro (Su)</h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>, transfer concentration of an <span class="spell illusion">illusion spell</span> to <a href="bemol.html">Bémol</a>.
+					Increase that spell's DC by 1.</p>
+
+				<h2>Extended Illusions (Su)</h2>
+				<p>Your <span class="spell illusion">illusion spells</span> with a duration of “concentration” lasts <u title="4 wizard&frac12;">4 rounds</u> after you stop concentrating.</p>
+
+				<h2>Blinding Ray (Sp) <u title="3, 7 int">10/day</u></h2>
+				<p>As an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, make a ranged touch attack <small><u title="4 bab, 4 dex">+8</u>, 30ft strict</small>.
+					Target is <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Blinded">blinded</a> for 1 round,
+					or <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Dazzled">dazzled</a> if it had more than <u title="8 wizard">8 HD</u>.</p>
+
+				<h2>Invisibility Field (Sp) <u title="8 wizard">8 rounds/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, become invisible, as <a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/i/invisibility#Invisibility_Greater">greater invisibility</a>.
+			</div>
+		</section>
+
+		<!-- title Spells -->
+		<hr class="noprint">
+		<div id="spellHeader" class="apartee newPage">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Intelligence modifier.<br>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Intelligence modifier.<br>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.<br>
+		</div>
+		<section class="row">
+			<div>
+				<h2>Level 0 <u title="4 class">4/day</u></h2>
+				<ul>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/a/acid-splash">acid splash</a>,</li>
+					<li><a class="spell universal" href="https://d20pfsrd.com/magic/all-spells/a/arcane-mark">arcane mark</a>,</li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/m/message">message</a>,</li>
+					<li><a class="spell universal" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>,</li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/r/read-magic">read magic</a>,</li>
+					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/r/resistance">resistance</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 1 <u title="4 class, 2 int, 1 school">7/day</u></h2><!--10 free, 10gp × 2-->
+				<ul>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a>,</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/g/grease">grease</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/i/infernal-healing">infernal healing</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/m/mage-armor">mage armor</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/o/obscuring-mist">obscuring mist</a>,</li>
+					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/p/protection-from-evil">protection from evil</a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/s/shadow-trap">shadow trap</a>,</li>
+					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/s/silent-image">silent image</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster I</a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 2 <u title="3 class, 2 int, 1 school">6/day</u></h2><!--4 free, 40gp × 10-->
+				<ul>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/a/aboleth-s-lung">aboleth's lung</a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/b/blur">blur</a>,</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/c/cat-s-grace">cat's grace</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/c/create-pit">create pit</a>,</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/d/darkvision">darkvision</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/i/invisibility">invisibility</a>,</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/k/knock">knock</a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/m/minor-image">minor image</a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/m/mirror-image">mirror image</a>,</li>
+					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a>,</li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/s/see-invisibility">see invisibility</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster II</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/w/web">web</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 3 <u title="3 class, 2 int, 1 school">6/day</u></h2><!--4 free, 90gp × 6-->
+				<ul>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/d/displacement">displacement</a>,</li>
+					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a>,</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/f/fly">fly</a>,</li>
+					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/f/fireball">fireball</a>,</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/h/haste">haste</a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/m/major-image">major image</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/sleet-storm">sleet storm</a>,</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/s/slow">slow</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/stinking-cloud">stinking cloud</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster III</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 4 <u title="2 class, 1 int, 1 school">4/day</u></h2><!--4 free, 160gp × 2-->
+				<ul>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/b/black-tentacles">black tentacles</a>,</li>
+					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/g/globe-of-invulnerability">globe of invuln. <small>lesser</small></a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/i/invisibility">invisibility <small>greater</small></a>,</li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/p/phantasmal-killer">phantasmal killer</a>,</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/s/stone-shape">stone shape</a>,</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster IV</a>.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-vast-intelligence">Headband of Vast Intelligence</a> +2</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +2</li>
+			<li class="br"><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+
+			<li><!--1000--> <a href="https://d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a> L1</li>
+			<li><!--3000--><a href="https://d20pfsrd.com/magic-items/rods/metamagic-rods/metamagic-extend">Extend Metamagic Rod</a>, Lesser</li>
+			<li><!--6000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/tattoo-caster-s">Caster's Tattoo</a></li>
+		</ul>
+
+		<ul id="inventory">
+			<!--Weapons-->
+			<li class="br"><!--335 (ammo: 2 gp for 10)-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Light Crossbow</a>, masterwork
+				<small>simple ranged, 1d8, 19x2, P, 80ft.</small>
+				<div class="circumstancialBonus">20 bolts, cold-iron</div>
+			</li>
+
+			<!--Misc-->
+			<li><!--2*50-->
+				2&times; Potion of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/infernal-healing">infernal healing</a>
+			</li>
+			<li><!--15, 5, extra spells: 2890-->Spellbook &amp; Spell Component Pouch</li>
+			<li class="br"><!--50-->
+				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
