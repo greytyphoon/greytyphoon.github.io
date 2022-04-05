@@ -182,6 +182,7 @@ body > .container { padding: 10px 25px .5px 25px; }
 	section.row > .slim { flex: 1; }
 	section.row > .wide { flex: 4; }
 	section.row > .wider { flex: 6; }
+	section.row > .widest { flex: 8; }
 }
 
 /********************

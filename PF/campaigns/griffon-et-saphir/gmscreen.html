@@ -7,9 +7,10 @@
 	<link rel="stylesheet" href="../../system/pfGeneric.css">
 	<style>
 		a.pantheon { color: var(--divination-blue); }
-		#history { padding-left: 12rem; }
-		#history summary { margin-left: -12rem; }
-		#history h3, #history h4 { margin-top: .15em; margin-left: -11rem; float: left; }
+		#history { padding-left: 5rem; padding-right: 5rem; }
+		#history summary { margin-left: -5rem; margin-right: -5rem; }
+		#history h3, #history h4 { text-align: center; }
+		#history h4 { margin-bottom: .25em; }
 		ul.list-unstyled, ul.apartee { list-style-type: none; }
 		li.😈::marker { content: "😈" }
 		li.🦇::marker { content: "🦇" }
@@ -256,6 +257,7 @@
 						<ul class="apartee">
 							<li>🏷️ a very large hat</li>
 							<li><q>Vous pensez aider les "gentils", mais il n'y a pas de gentils dans cette histoire. Faites attention à vos alliés.</q></li>
+							<li>Elle contrôle les gargouilles, et se sert d'<b>agathes</b> comme supports magiques.</li>
 						</ul>
 					</details></li>
 
@@ -275,7 +277,7 @@
 					<li class="circumstancialBonus">et ses <a href="https://d20pfsrd.com/bestiary/monster-listings/undead/human-juju-zombie">zombies Ju-Ju</a> de garde</li>
 				</ul>
 
-				<h2>La forêt</h2>
+				<h2>La forêt de Liléanne</h2>
 				<ul>
 					<li><details>
 						<summary><a href="https://d20pfsrd.com/gamemastering/haunts/cr-4-6/mad-monk-cr-5">Revere</a>, le moine fantôme</summary>
@@ -394,25 +396,42 @@
 
 		<hr>
 		<details class="br">
-			<summary class="subtitle">Map of the Forest</summary>
-			<img src="forest-map.jpg" alt="Map of the forest">
+			<summary class="subtitle">Map of the region</summary>
+			<section class="row">
+			<div>
+				<b>Villes</b>
+				<ul>
+					<li>Le Fort de Caxton</li>
+					<li>La ville de St-Élie</li>
+					<li>La tribu de Nada</li>
+				</ul>
+				<b>Géographie</b>
+				<ul>
+					<li>La forêt de Liléanne</li>
+					<li>Le Grand Lac Long</li>
+					<li>Le volcan Go-ri</li>
+				</ul>
+			</div>
+			<div class="widest">
+				<img src="forest-map.jpg" alt="Map of the forest">
+			</div>
 		</details>
 
-		<section id="history" class="br" lang="en">
-		<details>
+		<section id="history">
+		<details class="br" lang="en">
 			<summary class="subtitle">A long time ago...</summary>
-			<h3 title="100,000 years ago">The Era of Aboleths</h3>
+			<h3>100,000 years ago: The Era of Aboleths</h3>
 			<p>An aboleth named <b>Pd'crizsm</b> failed to achieve godhood.
 				He was chained at the heart of this world, cursed to remain there eternally.
 				He decayed into a mass of his pure magic, corrupted and necromantic.
 				(<a href="https://pathfinderwiki.com/wiki/Moldering_Emperor">Moldering Emperor</a>, <a href="https://d20pfsrd.com/bestiary/monster-listings/aberrations/neothelid">neothelid</a>)</p>
-			<h4>Spheres: Pain</h4>
+			<h4>Conjunction of Spheres: Pain</h4>
 			<p>Outsiders discovered this plane.
 				<a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/kyton">Kytons</a>
 				felt the magic of the captive, tried to harness it, but were turned into eternal <a href="https://d20pfsrd.com/bestiary/monster-listings/templates/runeslave-cr1">runeslaves</a>.
 				They are currently mostly dormant, but still seek ways to free their master, though none seems to exist.</p>
 
-			<h3 title="2,500 years ago">The Era of Drows</h3>
+			<h3>5,000 years ago: The Era of Drows</h3>
 			<p>Drows arrived under the continent to expand the kingdom of <b>Queen Nephilim the Golden</b>.
 				They were lead by <b>archmage Neb'sothar of Kosnom</b>, who had sensed a lot of power in the region and had advised his queen to expand in this region.
 				Their expeditions were not very successful: many were corrupted with the black blood.
@@ -423,12 +442,12 @@
 				those who seeked the "blessing" of the black blood,
 				those who betrayed their queen under a new advantageous leadership,
 				and those who kept serving their distant queen.</p>
-			<h4>Spheres: Antagonists</h4>
+			<h4>Conjunction of Spheres: Antagonists</h4>
 			<p>Other races discovered this places.
 				More elves arrived, and competing drows appeared.
 				The Drow kingdom shattered, and abandonned this colony.</p>
 
-			<h3 title="700 years ago">The Era of Outlaws</h3>
+			<h3>1700 years ago: The Era of Outlaws</h3>
 			<p>The forest had long been abandonned, thought to be "cursed".
 				Bandits used it as a safe hiding spot, as the curse was safer for them than the law.
 				A rebelious bandit leader emerged, and seceded from the established country: he became <b>King Eloïm the Faithful</b> under the patronage of <a class="pantheon" href="https://pathfinderwiki.com/wiki/Gorum">Gorum</a>.
@@ -440,7 +459,7 @@
 				They were quickly sent to the circus.</p>
 			<p>His son, <b>King Coramund the Beast</b>, was very similar, and just as lavish.
 				He did not hold religion to the same standard, and his already not-very-erudite-or-religious kingdom became just a little more brutal.</p>
-			<h4>Spheres: Bureaucrat</h4>
+			<h4>Conjunction of Spheres: Bureaucrat</h4>
 			<p>When travel was possible, <b>King Sigfried the Fair</b> tried explanding on other planes &mdash; and succeeded.
 				Many of his warriors were moved to other planes were magic was more plentiful, the land was less hostile, and armies of vicious warriors ready to be magically enhanced were an unstoppable force.
 				The king himself eventually moved to the new world.</p>
@@ -451,21 +470,72 @@
 				Agents of dissent saw their chance, and soon the old queen too died "in her sleep", leaving the leadership to <b>King Sergeï the Young</b>, her grandchild, at only 13 years old.
 				Internal clans gained a lot of power, and the kingdom soon fractured, leaving alone the cursed forest.</p>
 
-			<h3 title="500 years ago">The False Prophets</h3>
+			<h3>1500 years ago: The False Prophets</h3>
 			<p>After a few generations of clan feud, a sect emerged.
 				Lead by <b>Zola the Creator</b>(actually a powerful enchanter wizard), they emerged to unify clans peacefully while gaining power to themselves.
 				They claimed to understand the mythical power at the heart of the forest.
 				The other great leaders were <b>Ichao the defeated</b>, a half-elf oracle, <b>Vancian the lonely</b>, a female human golden dragon disciple, and <b>Bruxia the Wise</b>, a female damphir oracle.
 				They were all magically bound to Zola and couldn't betray him, as a good cult needs solid unified leadership.
 				The cult spoke of <b>Eldzale</b>, a mystic entity that was once an <a href="https://pathfinderwiki.com/wiki/Eldest">Eldest</a>, whose body gave birth to the forest.</p>
-			<p>Eventually, Zola got too greedy.
-				Wanting to further prove that his cult was right, he dabbled in summoning outsiders that would agree and put on a show.
-				He brought the Curse of Wendigo on himself somehow.
+			<p>Eventually, the Wendigo that was granting powers to Zola got greedier.
 				His transformation was swift and devastating: cult members offered themselves to be devoured, convinced they would be reborn in him, but this only increased the monster's power.
 				The other leaders trapped him, forming the totems, each giving their life in the process.
 				No one believed this barrier would hold, and no god, angel, or even devil would approach the forest, sensing the darkest secrets underneath.
 				This menace led to the whole plane being abandonned in the next conjunction of spheres.
 				No great kingdom remained, decay and black magic were rampant, and civilization was tired.</p>
+
+			<h3>250 years ago: Renewal from the Dwarves</h3>
+			<p>In a conjunction of spheres, new life was brought to this plane.
+				Adventurers founded new cities, and riches were sent back to the Old World.
+				Caxton was founded and led by <b>Harsk of Emerald</b>, from a noble dwarven family.
+				St-Élie was founded soon after, as a trading outpost with the dwarves.
+				Undeath was rampant in the New World, but valiant effort created safe cities and passable routes between them.
+				Some areas remained innaccessible, like the Liléanne forest just north, where a Wendigo was rampaging.
+				(The forest was named after a half-elven druid, who sacrificed herself to seal the Wendigo in.)
+				These limits to exploration didn't really matter at the time, because for most, the New World was a treasure cache to be ransacked and brought back home to the Old World.</p>
+			<h4>Conjunction of Spheres: Extinction</h4>
+			<p>After 100 years, the conjunction ended, as calculated.
+				Many moved back to the Old World, with as much wealth as they could.
+				Still, some remained, mostly those born and raised in the New World.
+				An economic downturn was inevitable in the circumstances.
+				With fewer resources and fewer people to defend them, cities had to consolidate.
+				Some cities died.
+				Caxton and St-Élie became more isolated, but remained strong:
+				Caxton's mines meant new riches were created, particularly the now-extra-valuable teleportation crystals,
+				St-Élie's positioning on the coast of the Great Long Lake</p>
+		</details>
+
+		<details class="br">
+			<summary class="subtitle">Storyline: les vampires de Caxton</summary>
+			<p>Peu de temps après la fondation de la ville, <b>Salomon Archibald Thrausvult</b> s'y est installé.
+				Il se disait que le fort nain serait à la fois une source de richesse d'où il pourrait tirer des conforts matériels et assez coupé du monde pour ne pas être trop remarqué.
+				Il se lie d'amitié avec <b>Harsk d'Émeraude</b>, le premier Lieutenant-Général du fort, et finance les chasses aux monstres des premiers temps.</p>
+			<p>Harsk est bientôt remplacé par <b>Valériane de Ruby</b>, beaucoup plus exclusive aux nains et intransigeante.
+				(Harsk, vraiment, était là pour l'exploitation des richesses, et est retourné dans le Vieux Monde avec une petite fortune.)
+				Ce changement pousse Salomon franchement dans le marché noir, où il avait déjà un pied.
+				Il y a beaucoup à faire avec les aventuriers non-nains qui veulent quand même une part dans la défense de Caxton,
+				les marchandises illégales obtenues de certaines expéditions,
+				les potions douteuses et poisons fulgurants fabriqués de cesdites marchandises,
+				et pourquoi pas quelques assassinats.
+				Salomon, toutefois, tente de rester un allié de la loi.
+				Certains chefs de la garde de Caxton, au fil des ans, se sont lancés sur sa trace, et généralement il les précède, les contactant directement et expliquant que son influence empêche des guerres de gangs.
+				À date, tous se sont rendus à sa raison.</p>
+		</details>
+
+		<details class="br">
+			<summary class="subtitle">Storyline: le Wendigo</summary>
+			<p>L'un des avatars de <b>Pd'crizsm</b> a été oublié lors de sa défaite.
+				Il a pris la forme d'un Wendigo et s'est caché pendant des millénaires dans un plan mauvais, caché parmis les démons.</p>
+			<p>Un des membres de l'expédition de <b>Neb'sothar Kosnom</b> s'est rendu aux abysses par hasard, et le Wendigo l'a trouvé.
+				Il a suivi sa trace vers le plan matériel, mais n'a pas pu y entrer, car le plan est généralement scellé aux êtres extraplanaires.
+				Il fallait quelqu'un qui voudrait le laisser entrer, et les drows auraient vu à travers son jeu.
+				Pire, il aurait pu attirer l'attention d'un dieu, et risquer les chances de survie de son patron.
+				Il fallut aussi défendre son territoire dans les abysses, et faire disparaître sans soupçon celui qui lui avait montré le bon plan.</p>
+			<p>Il trouve enfin la perle rare des siècles plus tard, <b>Zola le Créateur</b>.
+				Il sent son potentiel dès sa jeunesse et lui apparaît, décuplant ses pouvoirs en échange d'une entrée dans ce plan.
+				Zola utilise la force du Wendigo pour fonder une secte: ils révèrent <b>Eldzale</b>, un supposé ancien eldest, basé sur ce que Zola comprend des motifs de son bénéfacteur.
+				Le Wendigo apprécie ce culte, mais à la longue, il se frustre de ne pas trouver de vraie trace de son origine divine, à part quelques individus qui porte son odeur à plein nez.
+				Quand le wendigo se met à explorer la forêt / diriger le culte plus directement, le culte vacille et chute, avec les conséquences qu'on connaît.</p>
 		</details>
 		</section>
 	</div>
