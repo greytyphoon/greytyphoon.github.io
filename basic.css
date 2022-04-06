@@ -1,4 +1,4 @@
-/** Created by Rémi Doutre, 2015-2021. Public domain. **/
+/** Created by Rémi Doutre, 2015-2022. Public domain. **/
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap");
 /**
@@ -56,6 +56,7 @@ code {
 	padding: 0 .15em;
 }
 ul, ol, dl, p { margin: 0 0 .75em 0; }
+dt { font-weight: bold; }
 summary { cursor: pointer; }
 img {
 	max-width: 100%;

@@ -15,7 +15,6 @@ ul, ol, dl {
 dl.charInfo > dt {
 	float: left;
 	text-align: right;
-	font-weight: bold;
 	min-width: 39%;
 	vertical-align: top; }
 dl.charInfo > dd {
@@ -38,7 +37,6 @@ dl#featsWrapper > dt{
 	float:left;
 	text-align: right;
 	font-variant: small-caps;
-	font-weight: bold;
 	width: 95px; /*longer names should be shortened*/
 	vertical-align: top; }
 dl#featsWrapper > dd{
