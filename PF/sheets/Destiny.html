@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Bard</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		#listPerformances { font-size: 0.8rem; }
+		dl#listPerformances > dd + dt { margin-top: .75em; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Destiny, the magpie of St-Élie</h1>
+			CG Medium outsider [native]
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>10</dd>
+
+				<dt>Dex</dt>
+				<dd>22 <small>17, <u title="Racial">2</u>, <u title="Belt of Incredible Dexterity">2</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>10</dd>
+
+				<dt>Int</dt>
+				<dd>14</dd>
+
+				<dt>Wis</dt>
+				<dd>10 <small>12, <u title="Racial">-2</u></small></dd>
+
+				<dt>Cha</dt>
+				<dd>16 <small>14, <u title="Racial">2</u></small></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling">Tiefling</a>,
+					<a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Variant_Tiefling_Heritages">Rakshasa-Spawn</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Alternate_Racial_Traits">Prehensile Tail</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/bard">Bard</a> 5</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/bard/archetypes/paizo-bard-archetypes/archaeologist">Archaeologist</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Sarenrae</dd>
+
+				<dt>Senses</dt>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">Darkvision</a> 60ft.</dd>
+
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Infernal</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/race-traits/chain-master-tiefling-shackleborn">Chain Master</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/faith-traits/fate-s-favored">Fate's Favored</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/religion-traits/nimble-fingers-keen-mind">Nimble Fingers, Keen Mind</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/additional-traits">Additional Traits</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat">Weapon Finesse</a></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/lingering-performance">Lingering Performance</a>
+				<small>min.1</small></dd>
+			<dt>bard 2</dt>
+			<dd><u title="Versatile Performance">String</u>: Bluff, Diplomacy</dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-feint-combat">Deft Maneuvers</a> (Tr, Fe, Di)
+				<small>min.1</small></dd>
+			<dt>bard 4</dt>
+			<dd><a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/shadow-duplicate-sp">Shadow Duplicate</a>
+				<small>min.4</small></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a>
+				<small>min.1</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/racial-feats/armor-of-the-pit-tiefling">Armor of the Pit</a>
+				<small>min.1</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>0 wis, 5 ranks, 3 class</small>
+				<div class="circumstancialBonus" title="Clever Explorer, bard&frac12;"><u>+2</u> to locate traps</div>
+				<div class="circumstancialBonus" title="Danger Sense, bard&frac13;"><u>+1</u> vs 'being surprised'</div>
+			</li>
+			<li class="br">
+				<strong>17</strong>
+				<a href="https://d20pfsrd.com/skills/disable-device">Disable Device</a>
+				<small>6 dex, 5 ranks, <u title="Nimble Fingers, Keen Mind">3 class, 1 trait</u>, <u title="Clever Explorer, bard&frac12;">2</u></small>
+				<div class="circumstancialBonus" title="Clever Explorer">Disable in half the time, open locks as a <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>.</div>
+			</li>
+
+			<!--Social Skills-->
+			<li>
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/bluff">Bluff</a>
+				<small>Versatile Performance: String</small>
+				<div class="circumstancialBonus" title="Improved Feint">
+					<a href="https://d20pfsrd.com/Gamemastering/Combat/#TOC-Feint">Feint</a> as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-move-Actions">move action</a>.
+				</div>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>
+				<small>Versatile Performance: String</small>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>
+				<small>3 cha, 5 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>
+				<small>0 wis, 5 ranks, 3 class, <u title="Skilled, Rakshasa-Spawn">2 racial</u></small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>
+				<small>6 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/disguise">Disguise</a>
+				<small>3 cha, 1 ranks, 3 class, <u title="Skilled, Rakshasa-Spawn">2 racial</u></small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/escape-artist">Escape Artist</a>
+				<small>6 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/sleight-of-hand">Sleight of Hand</a>
+				<small>6 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Spellcraft</a>
+				<small>2 int, 5 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+				<small>6 dex, 1 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
+				<small>3 cha, 5 ranks, 3 class</small>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<strong>8</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (all)</a>
+				<small>2 int, 10&times;1 ranks, 3 class, <u title="Bardic Knowledge, 2 bard&frac12;">2</u></small>
+				<div class="circumstancialBonus" title="Lore Master">You can always <u>take 10</u>.</div>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/performance">Performance (string)</a>
+				<small>3 cha, 5 ranks, 3 class</small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="5 bard: 6 class, 2 int, 2 background-skills">50 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>,
+			<a href="https://d20pfsrd.com/skills/climb">Climb</a>,
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>,
+			<a href="https://d20pfsrd.com/skills/swim">Swim</a>.
+		</p>
+
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>8</strong>
+						<b>Init</b>
+						<small>6 dex, <u title="Reactionary">2 trait</u></small>
+					</li>
+					<li>
+						<strong>36</strong>
+						<b>HP</b>
+						<small>5 bard: 8 class, 0 con; 5 fc; -9 rolled</small>
+						<div class="circumstancialBonus" title="Tiefling"><u>Resist 5</u> cold, electricity, fire</div>
+					</li>
+					<li class="br">
+						<strong>26</strong>
+						<b>AC</b> touch 17, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
+						<small>10, 6 dex, 5 armor, 2 shield, <u title="Armor of the Pit">2 natural</u>, <u title="Ring of Protection">1 deflection</u></small>
+						<div class="circumstancialBonus"><u title="Danger Sense">+1 dodge</u> vs traps</div>
+					</li>
+					<li>
+						<strong>2</strong>
+						<b>Fort</b>
+						<small>0 con, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>11</strong>
+						<b>Ref</b>
+						<small>6 dex, 4 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>5</strong>
+						<b>Will</b>
+						<small>0 wis, 4 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li class="circumstancialBonus br"><u title="Danger Sense">+1</u> vs traps</li>
+					<li>
+						<strong title="Weapon Finesse**">9</strong>
+						<b>CMB</b>;	20 <b>CMD</b>
+						<small>3 bab, 0 str, 6 dex, <u title="Ring of Protection">1 deflection</u></small>
+						<div class="circumstancialBonus" title="Powerful Maneuver"><u>+2</u> to/vs Disarm, Trip. These maneuvers don't provoke.</div>
+					</li>
+				</ul>
+
+				<!--Whip-->
+				<div class="weapon">
+					<h2>Trip with Whip</h2>
+					<div class="summation"><strong>+17</strong> vs CMD <small>3 bab, <u title="Weapon Finesse">6 dex</u>, 1 mwk, <u title="Chain Master">2 trait</u>, <u title="Improved Trip">2</u>, <u title="Archaeologist's Luck">3 luck</u></small></div>
+					<div class="circumstancialBonus">15ft reach.</div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<h2>Archaeologist's Luck (Ex) <u title="3, 3 cha">6/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, gain <u title="Increases at 1st, 5th, 11th, 17th level. +1 Fate's Favored">+3 luck</u>
+					to attack/damage/skills/saves <u title="Lingering Performance">for 3 rounds</u>.</p>
+
+				<h2>Prehensile Tail</h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, retrieve a small stowed object.</p>
+
+				<h2>Shadow Duplicates (Sp) <u title="Increases at 1st, 5th, 10th, 15th, 20th.">2/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> when hit,
+					create a <a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mirror-image">mirror image</a>.
+					<small>It lasts <u title="5 bard">5 rounds</u> if it's not spent.</small></p>
+
+				<h2>Lore Master (Ex) <u title="Increases at 5th, 11th, 17th.">1/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, take 20 on a knowledge check.</p>
+			</div>
+		</section>
+
+		<!-- title Spells -->
+		<hr class="noprint">
+		<div id="spellHeader" class="apartee newPage">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Charisma modifier.<br>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Charisma modifier.<br/>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.
+		</div>
+		<section class="row">
+			<div title="Tiefling, Rakshasa-Spawn">
+				<h2>Racial spells (Sp) <b>CL 5th</b></h2>
+				<p><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-thoughts">detect thoughts</a> 1/day.</p>
+			</div>
+			<div>
+				<h2 title="6 spells known: 6 class">Level 0</h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/message">message</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/sift">sift</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="4 spells known: 4 class">Level 1 <u title="4 class, 1 cha">5/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/heightened-awareness">heightened awareness</a>,</li>
+					<li><a class="spell reaction" href="https://d20pfsrd.com/magic/all-spells/l/liberating-command">liberating command</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="3 spells known: 3 class">Level 2 <u title="2 class, 1 cha">3/day</u></h2>
+				<ul>
+					<li><a class="spell reaction" href="https://d20pfsrd.com/magic/all-spells/g/gallant-inspiration">gallant inspiration</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/heroism">heroism</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mirror-image">mirror image</a>.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+			<li><!--200--><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/sleeves-of-many-garments">Sleeves of Many Garment</a></li>
+		</ul>
+		<ul id="inventory">
+			<!--Weapons-->
+			<li class="br"><!--301-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Whip</a>, masterwork
+				<small>exotic one-handed, 1d3, 20x2, S, disarm nonlethal reach trip.</small>
+			</li>
+
+			<!--Armors-->
+			<li><!--2100-->
+				<a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a> +1
+				<small>light, 4 armor, 6 dex, 0 acp, 10% asf</small>
+			</li>
+			<li class="br"><!--1155-->
+				<a href="https://d20pfsrd.com/equipment/armor">Buckler</a> +1
+				<small>1 shield, - dex, 1 acp, 5% asf</small>
+			</li>
+
+			<!--Misc-->
+			<li><!--50--><a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a></li>
+			<li><!--5-->Spell Component Pouch</li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p>Wife of Renaud de Chambord, mother of Khyr.</p>
+
+			<details>
+				<summary class="subtitle">What Destiny looks like</summary>
+				<a href="https://forgingmeanings.tumblr.com/post/156085793715/fortune-the-tiefling-sorcerer-commissioned-by-my">
+				<img src="https://i.pinimg.com/originals/07/db/76/07db762510cda4808c23e351e2b0b4ae.jpg" alt="Fortune, the tiefling sorcerer &copy;Joma Cuerto"></a>
+				Art by <a href="https://forgingmeanings.tumblr.com">Joma Cuerto</a>.
+			</details>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Fearless and compassionate</dd>
+
+				<dt>Fault</dt>
+				<dd>Impulsive</dd>
+
+				<dt>Eyes</dt>
+				<dd>Silver</dd>
+
+				<dt>Hair</dt>
+				<dd>Purple</dd>
+
+				<dt>Age</dt>
+				<dd>104</dd>
+
+				<dt>Weight</dt>
+				<dd>124 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 2''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
