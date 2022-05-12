@@ -277,7 +277,7 @@
 			<table id="tblCharacters" class="br">
 			<thead>
 				<tr>
-					<th data-sort-default>Name</th>
+					<th data-sort-default data-sort-method="intl">Name</th>
 					<th>Race</th>
 					<th><u title="Multiclass indicators: → VMC, &amp; Gestalt, + Dip">Class</u></th>
 					<th data-sort-method="number">Level</th>
@@ -1267,6 +1267,8 @@
 		document.getElementById("charactersCount").innerHTML = document.getElementById("tblCharacters").tBodies[0].rows.length + " total";
 		document.getElementById("companionsCount").innerHTML = document.getElementById("tblCompanions").tBodies[0].rows.length + " total";
 		document.getElementById("monstersCount").innerHTML = document.getElementById("tblMonsters").tBodies[0].rows.length + " total";
+		const c = Intl.Collator();
+		Tablesort.extend('intl', _ => false, (a,b) => c.compare(b,a));
 		new Tablesort(document.getElementById('tblCharacters'));
 		new Tablesort(document.getElementById('tblCompanions'));
 		new Tablesort(document.getElementById('tblMonsters'));
