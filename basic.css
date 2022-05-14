@@ -239,7 +239,7 @@ table.table-cornered td {
 	width:25%;
 }
 
-/* MIT License http://tristen.ca/tablesort/demo/ */
+/* MIT License https://github.com/tristen/tablesort */
 th[role=columnheader]:not(.no-sort) {
 	cursor: pointer;
 }
@@ -257,7 +257,7 @@ th[role=columnheader]:not(.no-sort):after {
 	-moz-user-select: none;
 	user-select: none;
 }
-th[aria-sort=ascending]:not(.no-sort):after {
+th[aria-sort=descending]:not(.no-sort):after {
 	border-bottom: none;
 	border-width: .25em .25em 0;
 }
