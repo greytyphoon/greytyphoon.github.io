@@ -6,6 +6,9 @@
 	<meta name="author" content="Rémi Doutre">
 	<title>Grey's Wizard</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.spell.figment::after { content: " [figment]"; font-size: .8em; color: var(--illusion-grey); }
+	</style>
 </head>
 <body>
 	<nav id="fixref"><ul>
@@ -103,7 +106,7 @@
 				<small>min.7</small></dd>
 			<dt>level 9</dt>
 			<dd><a href="https://d20pfsrd.com/classes/core-classes/wizard/arcane-discoveries/arcane-discoveries-paizo/observant-illusion-su">Observant Illusion</a>
-				<small>min.7</small></dd>
+				<small>min.9</small></dd>
 		</dl>
 
 		<!-- SKILLS -->
@@ -220,7 +223,7 @@
 					Increase that spell's DC by 1.</p>
 
 				<h2>Extended Illusions (Su)</h2>
-				<p>Your <span class="spell illusion">illusion spells</span> with a duration of “concentration” lasts <u title="4 wizard&frac12;">4 rounds</u> after you stop concentrating.</p>
+				<p>After you stop concentrating, your <span class="spell illusion">illusion spells</span> last an extra <u title="4 wizard&frac12;">4 rounds</u> .</p>
 
 				<h2>Blinding Ray (Sp) <u title="3, 7 int">10/day</u></h2>
 				<p>As an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, make a ranged touch attack <small><u title="4 bab, 4 dex">+8</u>, 30ft strict</small>.
@@ -246,7 +249,7 @@
 					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/a/acid-splash">acid splash</a>,</li>
 					<li><a class="spell universal" href="https://d20pfsrd.com/magic/all-spells/a/arcane-mark">arcane mark</a>,</li>
 					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
-					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
+					<li><a class="spell illusion figment" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/m/message">message</a>,</li>
 					<li><a class="spell universal" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>,</li>
 					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/r/read-magic">read magic</a>,</li>
@@ -265,7 +268,7 @@
 					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/p/protection-from-evil">protection from evil</a>,</li>
 					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/s/shadow-trap">shadow trap</a>,</li>
 					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a>,</li>
-					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/s/silent-image">silent image</a>,</li>
+					<li><a class="spell illusion figment" href="https://d20pfsrd.com/magic/all-spells/s/silent-image">silent image</a>,</li>
 					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster I</a>,</li>
 					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>.</li>
 				</ul>
@@ -273,7 +276,7 @@
 			<div>
 				<h2>Level 2 <u title="3 class, 2 int, 1 school">6/day</u></h2><!--4 free, 40gp × 10-->
 				<ul>
-					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/a/aboleth-s-lung">aboleth's lung</a>,</li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/a/aboleth-s-lung">aboleth's lung</a>,</li>
 					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/b/blur">blur</a>,</li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/c/cat-s-grace">cat's grace</a>,</li>
 					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/c/create-pit">create pit</a>,</li>
@@ -281,8 +284,8 @@
 					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a>,</li>
 					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/i/invisibility">invisibility</a>,</li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/k/knock">knock</a>,</li>
-					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/m/minor-image">minor image</a>,</li>
-					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/m/mirror-image">mirror image</a>,</li>
+					<li><a class="spell illusion figment" href="https://d20pfsrd.com/magic/all-spells/m/minor-image">minor image</a>,</li>
+					<li><a class="spell illusion figment" href="https://d20pfsrd.com/magic/all-spells/m/mirror-image">mirror image</a>,</li>
 					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a>,</li>
 					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/s/see-invisibility">see invisibility</a>,</li>
 					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster II</a>,</li>
@@ -297,7 +300,7 @@
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/f/fly">fly</a>,</li>
 					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/f/fireball">fireball</a>,</li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/h/haste">haste</a>,</li>
-					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/m/major-image">major image</a>,</li>
+					<li><a class="spell illusion figment" href="https://d20pfsrd.com/magic/all-spells/m/major-image">major image</a>,</li>
 					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/sleet-storm">sleet storm</a>,</li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/s/slow">slow</a>,</li>
 					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/stinking-cloud">stinking cloud</a>,</li>
@@ -347,6 +350,12 @@
 				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
 			</li>
 		</ul>
+		
+		<!--Notes-->
+		<section class="noprint">
+			<hr>
+			<p>If <a href="https://www.d20pfsrd.com/feats/general-feats/shadow-gambit">Shadow Gambit</a> was "as part of concentrating" instead of "this ends the figment", I'd use it instead of Effortless Trickery.</p>
+		</section>
 	</div>
 </body>
 </html>
