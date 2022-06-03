@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<meta property="og:title" content="Bohi, the messenger" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://greytyphoon.space/PF/sheets/Bohi.html" />
+	<meta property="og:image" content="https://i.pinimg.com/originals/03/a2/23/03a22320a48ea0e29fc6052ea560c75f.jpg" />
+	<meta property="og:description" content="The Avatar Legends character sheet for Bohi, an Adamant Airbender." name="description">
+	<title>Grey's Airbender</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		#balance { position: relative; }
+		#balance > table { margin: 0 1em; width: calc(100% - 2em); height: 3.6rem; text-align: center; }
+		#balance > table tr:first-child { color: var(--divination-blue); }
+		#balance > table tr:last-child { color: var(--evocation-red); }
+		#balance > .principle {
+			display: block;
+			width: 3.6rem;
+			font-weight: bold;
+			text-align: center;
+		}
+		#balance > .principle:first-child {
+			position: absolute;
+			bottom: 0;
+			left: 1.2em;
+			transform-origin: 0 100%;
+			transform: rotate(270deg);
+			color: var(--divination-blue);
+		}
+		#balance > .principle:last-child {
+			position: absolute;
+			top: 0;
+			left: 100%;
+			transform-origin: 0 0;
+			transform: rotate(90deg);
+			color: var(--evocation-red);
+		}
+		#connections { display: inline-block; margin-left: auto; margin-right: auto; text-align: center; }
+		dt > small { font-weight: normal; }
+		.summations ul, ul#lodestar-advice { list-style: circle; padding-left: 1.5em; }
+		.summations ul > li.combat { list-style: disc; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Bohi, the messenger</h1>
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Fatigue</dt>
+				<dd>○ ○ ○ ○ ○</dd>
+
+				<dt title="Afraid&#10;-2 to Intimidate, Call someone out&#10;Run from danger or difficulty">Afraid</dt>
+				<dd>○</dd>
+
+				<dt title="Angry&#10;-2 to Guide and comfort, Assess a situation&#10;Break something important or lash out at a friend">Angry</dt>
+				<dd>○</dd>
+
+				<dt title="Guilty&#10;-2 to Push your luck, Deny a callout&#10;Make a personnal sacrifice">Guilty</dt>
+				<dd>○</dd>
+
+				<dt title="Insecure&#10;-2 to Trick, Resist shifting your balance&#10;Take a foolhardy action spontaneously">Insecure</dt>
+				<dd>○</dd>
+
+				<dt title="Troubled&#10;-2 to Plead, Rely on your skills or training&#10;Seek guidance from a mentor">Troubled</dt>
+				<dd>○</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Background</dt>
+				<dd>Monastic</dd>
+
+				<dt>Training</dt>
+				<dd>Airbending</dd>
+
+				<dt>Playbook</dt>
+				<dd>Adamant</dd>
+			</dl>
+			<div id="balance">
+				<span class="principle">Restraint</span>
+				<table>
+					<tr><td>+3</td>	<td>+2</td>	<td>+1</td>	<td>0</td>	<td>-1</td>	<td>-2</td>	<td>-3</td></tr>
+					<tr><td>○</td>	<td>○</td>	<td>○</td>	<td>○</td>	<td>&#9673;</td>	<td>○</td>	<td>○</td></tr>
+					<tr><td>-3</td>	<td>-2</td>	<td>-1</td>	<td>0</td>	<td>+1</td>	<td>+2</td>	<td>+3</td></tr>
+				</table>
+				<span class="principle">Results</span>
+			</dl>
+		</section>
+
+		<hr>
+		<section class="row">
+			<div>
+				<ul class="summations">
+					<li>
+						<strong>0</strong>
+						<b>Creativity</b>
+						<ul>
+							<li>Assess a situation</li>
+							<li>Trick</li>
+							<li class="combat">Evade &amp; observe</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>1</strong>
+						<b>Focus</b>
+						<ul>
+							<li>Rely on your skills or training</li>
+							<li class="combat">Defend &amp; maneuver</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>-1</strong>
+						<b>Harmony</b>
+						<ul>
+							<li>Guide and comfort</li>
+							<li>Plead</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong title="1 Playbook, 1 Bonus, 1 Driven by Justice">3</strong>
+						<b>Passion</b>
+						<ul>
+							<li>Push your luck</li>
+							<li>Intimidate</li>
+							<li class="combat">Advance &amp; attack</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>&ndash;</strong>
+						<b>Balance</b>
+						<small>Restraint vs Results</small>
+						<ul>
+							<li>Live up to your principle</li>
+							<li>Call someone out</li>
+							<li>Deny a callout</li>
+							<li>Resist shifting your balance</li>
+						</ul>
+					</li>
+				</ul>
+				<h2>I don't hate you</h2>
+				<p>When you <i>Guide and comfort</i>, roll with Passion if you mark Insecure <small>or if it's already marked</small>.</p>
+			</div>
+
+			<div>
+				<h2>Techniques</h2>
+				<dl>
+					<dt><b>Ready</b> <small>D&amp;M</small></dt>
+					<dd>Mark 1-fatigue to assign/clear a status from an ally.</dd>
+
+					<dt><b>Retaliate</b> <small>D&amp;M</small></dt>
+					<dd>Each time a foe inflicts fatigue, a condition, or shifts your balance, they mark 1-fatigue.</dd>
+
+					<dt><b>Seize a Position</b> <small>D&amp;M</small></dt>
+					<dd>Engage/disengage a foe, get an advantageous position, or flee. Foes can mark 1-fatigue to prevent this.</dd>
+				</dl>
+				<dl>
+					<dt><b>Strike</b> <small>A&amp;A</small></dt>
+					<dd>A foe marks 2-fatigue, a condition, or shifts their balance <small>their choice</small>. If you mark 1-fatigue, you choose <small>but can't choose to shift their balance</small>.</dd>
+
+					<dt><b>Pressure</b> <small>A&amp;A</small></dt>
+					<dd>A foe cannot choose an approach in the next round <small>your choice</small>.</dd>
+
+					<dt><b>Smash</b> <small>A&amp;A</small></dt>
+					<dd>Mark 1-fatigue and destroy something.</dd>
+
+					<dt><b>Breath of Wind 🎐</b> <small>A&amp;A, <u title="Mastered">M</u></small></dt>
+					<dd>A foe marks 4-fatigue or becomes Stunned <small>their choice</small>.</dd>
+				</dl>
+				<dl>
+					<dt><b>Test Balance</b> <small>E&amp;O</small></dt>
+					<dd>Mark 1-fatigue and learn a foe's principle. If you knew, shift their balance.</dd>
+
+					<dt><b>Bolster or Hinder</b> <small>E&amp;O</small></dt>
+					<dd>Assign a status to someone else.</dd>
+
+					<dt><b>Commit</b> <small>E&amp;O</small></dt>
+					<dd>Shift your balance. Next time you <i>Live up to your principle</i>, don't mark fatigue.</dd>
+				</dl>
+			</div>
+		</section>
+
+		<section class="row">
+			<div>
+				<h2>Shut down someone vulnerable with harsh words or icy silence</h2>
+				<p>Shift your balance to Results, and roll with Results.<br>
+					On a hit, they mark a condition, you clear that condition.
+					On a 10+, they also can't shift your balance/call you out for a scene.
+					On a miss, mark a condition and they shift your balance.</p>
+			</div>
+
+			<div>
+				<h2>Consult your lodestar for advice</h2>
+				<p>Roll with Restraint. On a miss, mark a condition or the GM shifts your balance twice.
+					On a hit, choose two, on a 10+, choose all:</p>
+				<ul id="lodestar-advice">
+					<li>They shift your balance; if you follow their advice, they shift it again,</li>
+					<li>Clear a condition or 2-fatigue,</li>
+					<li>They clear a condition or 2-fatigue.</li>
+				</ul>
+			</div>
+		</section>
+
+		<center>
+			<div id="connections" class="apartee br">
+				<h2>Connections</h2>
+				<p>[PC] takes issues with your methods. Perhaps they have a point, but you certainly can't admit that to them!</p>
+				<p>[PC] is your <u title="You cannot resist if they Shift your balance or Call you out.">lodestar</u>; something about them makes them the only person you let your guard down around.</p>
+			</div>
+		</center>
+
+		<section class="noprint">
+			<p>His full name would be "Initiate Bohi of the Northern Air Temple".</p>
+
+			<p>Bohi is a hot-headed airbending student.
+				He takes his study seriously enough, but he's not great at it, and he just likes flying around in general.
+				Eager to be helpful to the community, he's volunteered to deliver messages between temples.</p>
+
+			<p>He doesn't really understand why the <b>Elder Namthöse</b> insists so much on staying apart of the other nations.
+				Bohi doesn't talk about it, but during one of his early travels, his flying bison &mdash;<b>Yuno</b>&mdash; got a stomach bug, and Bohi had to stop in an Earth Kingdom farm for help.
+				The people were nice and helpful, eager to hear his stories from the world.
+				Every once in a while since, Bohi arranges his stops for feeding Yuno near people instead of away from them, and has had mostly positive results.
+				He's stopped doing this in the Earth Kingdom, however, where the Dao Fei are too violent for his taste.
+				Still, he wishes his people would help the innocent Earth Kingdom citizen rather than stay aloof in their innaccessible monasteries.</p>
+			
+			<p>He is on his way back from the Eastern Air Temple, where the <b>Nun Gyemtsen</b> was pleading this same point of view after the recent death of her sister.
+				Bohi knew better than to intervene directly, but her speech moved him.
+				As fate would have it, Yuno is again not feeling right, and Bohi has to make an emergency stop near Ba Sing Se...</p>
+
+			<details>
+				<summary class="subtitle">What Bohi looks like</summary>
+				<a href="https://www.pinterest.ca/pin/607986018454236259/">
+				<img src="https://i.pinimg.com/originals/03/a2/23/03a22320a48ea0e29fc6052ea560c75f.jpg" alt="The Last Avatar"></a>
+				<p>Could not find source.</p>
+			</details>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Social and passionate</dd>
+
+				<dt>Drawback</dt>
+				<dd>Rebellious</dd>
+
+				<dt>Eyes</dt>
+				<dd>Silver</dd>
+
+				<dt>Hair</dt>
+				<dd>Dark brown</dd>
+
+				<dt>Age</dt>
+				<dd>17</dd>
+
+				<dt>Weight</dt>
+				<dd>154 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 8''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
