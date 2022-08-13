@@ -43,5 +43,5 @@ span.credit::after { content: ")"; }
 /* I use this when I'm writing directions for a recipe */
 li.actionStep {
 	color: var(--html-darkgrey);
-	padding-left: 1rem;
+	margin-left: 1rem;
 	list-style-type: circle; }
