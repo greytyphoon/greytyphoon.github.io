@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Rogue</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		#listDeeds { font-size: 0.8rem; }
+		li.sneaktalent { list-style-type: square; }
+		li.debilitation { list-style-type: circle; }
+		#underfoot-benefits { margin-left: 40px; list-style-type: number; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Knarbog Palvat Zoolcuss Knicknost Fregnag Keenbag Zarost Guélik, du clan de la Vague Miroitante Envahissant la Baie</h1>
+			NG Small Humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>8 <small>10, <u title="Racial">-2</u></small></dd>
+
+				<dt>Dex</dt>
+				<dd>20 <small>17, <u title="Advancement">1</u>, <u title="Belt of Giant Strength">2</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>16 <small>14, <u title="Racial">2</u></small></dd>
+
+				<dt>Int</dt>
+				<dd>12</dd>
+
+				<dt>Wis</dt>
+				<dd>14</dd>
+
+				<dt>Cha</dt>
+				<dd>12 <small>10, <u title="Racial">2</u></small></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/gnome">Gnome</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/gnome#Alternate_Racial_Traits">Intrepid Settler</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/gnome#Alternate_Racial_Traits">Master Tinker</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/swashbuckler">Swashbuckler</a> 1</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/hybrid-classes/swashbuckler/archetypes/paizo-swashbuckler-archetypes/mouser">Mouser</a></dd>
+				<dd><a href="https://d20pfsrd.com/classes/unchained-classes/rogue-unchained">Rogue</a> 4</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/rogue/archetypes/paizo-rogue-archetypes/vexing-dodger">Vexing Dodger</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Brigh</dd>
+
+				<dt>Senses</dt>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+
+				<dt>Speed</dt>
+				<dd>20 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd title="3 racial, 1 int">Common, Gnome, Sylvan, Goblin</dd>
+			</dl>
+		</section>
+
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/campaign-traits/curse-of-the-crimson-throne/missing-child">Missing Child</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/excitable">Excitable</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/step-up-combat">Step Up</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/two-weapon-fighting">Two-Weapon Fighting</a></dd>
+			<dt>swashy 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat">Swashbuckler Finesse</a>
+				<small>bonus</small></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/panache-feats/extra-panache-panache">Extra Panache</a>
+				<small>min.1</small></dd>
+			<dt>rogue 2</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-feint-combat">Deft Manoeuvers</a> (DT, Fe, Tr)
+				<small>bonus</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/local-feats/big-game-hunter-local">Big Game Hunter</a>
+				<small>min.1</small></dd>
+			<dt>rogue 4</dt>
+			<dd><a href="https://d20pfsrd.com/classes/unchained-classes/rogue-unchained/rogue-talents/paizo-rogue-talents/slow-reactions">Slow Reactions</a>
+				<small>min.2</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/extra-rogue-talent">ERT</a> &rarr;
+				<a href="https://d20pfsrd.com/classes/core-classes/rogue/rogue-talents/paizo-rogue-talents/wall-scramble-ex">Wall Scramble</a>
+				<small>min.2</small></dd>
+		</dl>
+
+		<ul class="summations">
+			<!-- SKILLS -->
+			<li class="br">
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>2 wis, 5 ranks, 3 class</small>
+			</li>
+
+			<!--Social Skills-->
+			<li>
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/bluff">Bluff</a>
+				<small>1 cha, 5 ranks, 3 class</small>
+				<div class="circumstancialBonus" title="Improved Feint">Feint as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-move-Actions">move action</a>.</div>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>
+				<small>1 cha, 1 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>
+				<small>2 wis, 1 ranks, 3 class</small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>15</strong>
+				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a> <span title="Derring-Do">💡</span>
+				<small>5 dex, 5 ranks, 3 class, <u title="Intrepid Settler">2 racial</u></small>
+				<div class="circumstancialBonus" title="Underfoot Agility, 1 rogue&frac13;"><u>+1 morale</u> vs creatures &ge;M.</div>
+				<div class="circumstancialBonus" title="Underfoot Trickster"><u>No penalty</u> when tumbling through the space of a creature &ge;L.</div>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://d20pfsrd.com/skills/climb">Climb</a> <span title="Derring-Do">💡</span>
+				<small>-1 str, 5 ranks, 3 class, <u title="Intrepid Settler">2 racial</u>, <u title="Climber's Kit">2 circumstance</u></small>
+				<div class="circumstancialBonus" title="Underfoot Agility, 1 rogue&frac13;"><u>+1 morale</u> vs creatures &ge;M.</div>
+				<div class="circumstancialBonus" title="Wall Scramble"><u>Roll with advantage</u> always.</div>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/disable-device">Disable Device</a>
+				<small>5 dex, 1 ranks, 3 class, <u title="Master Tinker">1</u></small>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/disguise">Disguise</a>
+				<small>1 cha, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>13</strong>
+				<a href="https://d20pfsrd.com/skills/escape-artist">Escape Artist</a> <span title="Derring-Do">💡</span>
+				<small>5 dex, 5 ranks, 3 class</small>
+				<div class="circumstancialBonus" title="Underfoot Agility, 1 rogue&frac13;"><u>+1 morale</u> vs creatures &ge;M.</div>
+			</li>
+			<li>
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/ride">Ride</a> <span title="Derring-Do">💡</span>
+				<small>5 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>13</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+				<small>5 dex, 5 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/swim">Swim</a> <span title="Derring-Do">💡</span>
+				<small>-1 str, 1 ranks, 3 class, <u title="Intrepid Settler">2 racial</u></small>
+			</li>
+			<li class="br">
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
+				<small>1 cha, 5 ranks, 3 class</small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="1 swashbuckler: 4 class, 1 int; 4 rogue: 8 class, 1 int">41 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>,
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>,
+			<a href="https://d20pfsrd.com/skills/knowledge">Knowledge</a> (dungeoneering, local, nobility),
+			<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>,
+			<a href="https://d20pfsrd.com/skills/perform">Perform</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>,
+			<a href="https://d20pfsrd.com/skills/sleight-of-hand">Sleight of Hand</a>.
+		</p>
+
+		<hr>
+		<section class="row">
+			<div>
+				<!--Basics: Statblock and Weapons-->
+				<ul class="summations">
+					<li class="br">
+						<strong>7</strong>
+						<b>Init</b>
+						<small>5 dex, <u title="Excitable">2 trait</u></small>
+					</li>
+					<li>
+						<strong>58</strong>
+						<b>HP</b>
+						<small>1 swashbuckler: 10 class, 3 con; 4 rogue: 8 class, 3 con; 4 FC; -3 rolled</small>
+					</li>
+					<li class="br">
+						<strong>22</strong>
+						<b>AC</b> touch 17, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 17
+						<small>10, 5 dex, 5 armor, 1 size, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+					<li>
+						<strong>5</strong>
+						<b>Fort</b>
+						<small>3 con, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>12</strong>
+						<b>Ref</b>
+						<small>5 dex, <u title="2 swashbuckler, 4 rogue">6 class</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+						Evasion
+					</li>
+					<li>
+						<strong>5</strong>
+						<b>Will</b>
+						<small>2 wis, 1 class, <u title="Missing Child">1 trait</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li class="circumstancialBonus br" title="Intrepid Settler"><u>+2 racial</u> vs fear.</li>
+					<li>
+						<strong title="Weapon Finesse**">8</strong>
+						<b>CMB</b>; 18 <b>CMD</b>
+						<small><u title="1 swashbuckler, 3 rogue">4 bab</u>, -1 str, 5 dex, -1 size, <u title="Ring of Protection">1 deflection</u></small>
+						<div class="circumstancialBonus" title="Deft Maneuver"><u>+2</u> to/vs Dirty Trick, Trip. These maneuvers don't provoke.</div>
+					</li>
+				</ul>
+
+				<!--Waveblade-->
+				<div class="weapon">
+					<h2>Waveblade <b>18x2</b> <b>PS</b></h2>
+					<div class="apartee float align">TWF <b>+9</b>: 1d4+5<br><b>+9</b>: 1d4+2</div>
+					<div class="summation"><strong>+11</strong> vs AC <small>4 bab, <u title="Weapon Finesse">5 dex</u>, 1 size, 1 mwk</small></div>
+					<div class="summation"><strong>1d4+5</strong> <small><u title="Finesse Training">5 dex</u></small></div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<h2>Panache <u title="1 cha, 2 feat">3 Panache</u></h2>
+				<dl id="listDeeds">
+					<dt>Derring-do</dt>
+					<dd>For 1 panache, add 1d6 (exploding) to <u>certain skills 💡</u>.</dd>
+					<dt>Dodging Panache</dt>
+					<dd>For 1 panache, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a>
+						when attacked in melee, move 5 ft and gain <u title="2 cha">2 dodge</u> AC.</dd>
+					<dt>Underfoot Asault</dt>
+					<dd>For 1 panache, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> when missed in melee by an adjacent foe &ge;M, move 5ft into their space.
+						<ul id="underfoot-benefits">
+							<li>The foe gets <u>-4</u> to hit <small>including CMB</small> vs anyone but you,</li>
+							<li>Adjacent allies flank the foe with you,</li>
+							<li>You can safely move in the foe's space,</li>
+							<li>The foe provokes if they leave your space.</li>
+						</ul></dd>
+				</dl>
+				<p>
+					Gain 1 panache when you confirm a crit, or kill.<br>
+					(Except unaware, helpless, or low-level creatures)
+				</p>
+			</div>
+		</section>
+
+		<section class="row">
+			<div>
+				<h2>Step Up</h2>
+				<h2>Limb-Climber (Ex)</h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>, latch onto a creature &ge;M.
+					Attempt a <a href="https://d20pfsrd.com/skills/climb">climb</a> check vs CMD.
+					On a hit, they get <u title="Equal to your number of sneak attack dice">-2</u> to hit you.</p>
+			</div>
+			<div>
+				<h2>Sneak Attack <u title="2 class">2d6</u></h2>
+				<ul>
+					<li class="sneaktalent" title="Slow Reactions">can't make AoOs</li>
+					<li class="debilitation">-2 to AC, &amp; extra -2 vs you</li>
+					<li class="debilitation">-2 to hit, &amp; extra -2 vs you</li>
+					<li class="debilitation">half speed, no 5ft-step</li>
+				</ul>
+				<p title="Underfoot Trickster">As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a> when you sneak attack,
+					instead, attempt a <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Dirty-Trick">dirty trick</a>.</p>
+			</div>
+			<div>
+				<h2>Gnome Magic (<a href="https://d20pfsrd.com/Magic#Spell-Like_Abilities_Sp">Sp</a>)</h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/dancing-lights">dancing lights</a> 1/day,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost soung</a> 1/day,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a> 1/day,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/speak-with-animals">speak with animals</a> 1/day.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+			<li><s><!--4800--><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/slippers-of-spider-climbing">Slippers of Spider Climbing</a></s></li>
+		</ul>
+		<ul id="inventory">
+			<!--Weapons-->
+			<li class="br"><!--2x310-->
+				2&times; <a href="https://d20pfsrd.com/equipment/weapons">Waveblade</a>, cold-iron masterwork, crafted himself
+				<small>exotic light, 1d4, 18x2, PS, monk, +2 vs Disarm.</small>
+			</li>
+
+			<!--Armors-->
+			<li class="br"><!--2100-->
+				<a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a> +1
+				<small>light, 4 armor, 6 dex, 0 acp, 10% asf</small>
+			</li>
+
+			<!--Misc-->
+			<li><!--2x50-->2&times; Potion of <a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a></li>
+			<li><!--2x25-->2&times; Scroll of <a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/m/monkey-fish">monkey fish</a> <u title="20 scroll, 1 caster level">[DC 21 UMD]</u></li>
+			<li><!--80--><a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits/#Kit_Climber8217s">Climber's Kit</a></li>
+			<li><!--50-->
+				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</li>
+			<li>500 <b>gp</b><!--/10,500--></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p lang="fr">Accepte d'être appellé simplement <i>Knarbog du clan des Marées</i>.</p>
+			<p>Very, very inspired by <a href="https://fr.wikipedia.org/wiki/Steve_Irwin">Steve Irwin</a>. Should drop a <q>Crickey!</q> every so often.</p>
+
+			<details>
+				<summary class="subtitle">What Knarbog looks like</summary>
+				<a href="https://www.artstation.com/artwork/xJrO8Y">
+				<img src="https://i.pinimg.com/originals/92/48/7f/92487f8e28a6b94b916cc6dc56b71e65.png" alt="Elf Engineer &copy;Samuel Youn"></a>
+				Art by <a href="https://www.artstation.com/samuelyoun9">Samuel Youn</a>.
+			</details>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Fresh and respectful</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/nervous">Nervous</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Olive Green</dd>
+
+				<dt>Hair</dt>
+				<dd>Cerulean Blue</dd>
+
+				<dt>Age</dt>
+				<dd>59</dd>
+
+				<dt>Weight</dt>
+				<dd>34 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>3' 2''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
