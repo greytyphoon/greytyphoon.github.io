@@ -1,7 +1,7 @@
 /** Created by Rémi Doutre, 2015-2021. Public domain. **/
 @import url("pfGeneric.css");
 
-ul, ol, dl {
+ul:not(.list), ol:not(.list), dl:not(.list) {
 	padding: 0;
 	list-style: none; }
 
