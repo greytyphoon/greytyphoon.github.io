@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Magus</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		#listArcanas, #listDeeds { font-size: 0.8rem; }
+		.spell.touch::after { content: " [touch]"; font-size: .8em; color: var(--transmutation-teal); }
+		.bloodline { color: var(--divination-blue); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="familiar" href="https://d20pfsrd.com/bestiary/monster-listings/aberrations/smokeshade">Familiar</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Erya Diann, acrobat of Rakdos</h1>
+			NE Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>14</dd>
+
+				<dt>Dex</dt>
+				<dd>22 <small>16, <u title="Racial">2</u>, <u title="Advancement">2</u>, <u title="Belt of Incredible Dexterity">2</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>14</dd>
+
+				<dt>Int</dt>
+				<dd>10</dd>
+
+				<dt>Wis</dt>
+				<dd>10</dd>
+
+				<dt>Cha</dt>
+				<dd>16 <small>14, <u title="Headband of Alluring Charisma">2</u></small></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/swashbuckler">Swashbuckler</a> 1</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/hybrid-classes/swashbuckler/archetypes/paizo-swashbuckler-archetypes/mystic-corsair-swashbuckler-archetype">Mystic Corsair</a></dd>
+				<dd><a href="https://d20pfsrd.com/classes/base-classes/magus">Magus</a> 8</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/base-classes/magus/archetypes/paizo-magus-archetypes/eldritch-scion">Eldritch Scion</a>
+					(<a href="https://d20pfsrd.com/classes/hybrid-classes/bloodrager/bloodrager-bloodlines/paizo-bloodrager-bloodlines/destined">Destined</a> bloodline)</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/base-classes/magus/archetypes/paizo-magus-archetypes/staff-magus">Staff Magus</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Rakdos</dd>
+
+				<dt>Senses</dt>
+				<dd>Normal</dd>
+
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/magic-traits/magical-knack">Magical Knack</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/reckless">Fate's Favored</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/two-weapon-fighting-combat">Two Weapon Fighting</a></dd>
+			<dt>human</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-feint-combat">Weapon Focus</a>
+				<small>min.1</small></dd>
+			<dt>swash. 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat">Mystic Finesse</a>
+				<small>bonus</small></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/enforcer-combat">Enforcer</a>
+				<small>min.1</small></dd>
+			<dt>magus 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/quarterstaff-master-combat">Quarterstaff Master</a>
+				<small>bonus</small></dd>
+			<dt>level 3</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-specialization-style">Weapon Specialization</a>
+				<small><u title="Qualities through Quarterstaff Master">special</u></small></dd>
+			<dt>magus 3</dt>
+			<dd><a href="https://d20pfsrd.com/classes/base-classes/magus/magus-arcana/paizo-magus-arcana/concentrate-ex">Concentrate</a>
+				<small>min.3</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/arcane-strike-combat">Arcane Strike</a>
+				<small>min.1</small></dd>
+			<dt>magus 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/blooded-arcane-strike-combat">Blooded Arcane Strike</a>
+				<small>min.1</small></dd>
+			<dt>magus 6</dt>
+			<dd><a href="https://d20pfsrd.com/classes/base-classes/magus/magus-arcana/paizo-magus-arcana/familiar-ex">Familiar</a>
+				<small>min.3</small></dd>
+			<dt>level 7</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/improved-familiar">Improved Familiar</a>
+				<small>min.7</small></dd>
+			<dt>level 9</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-two-weapon-fighting-combat">Improved Two-Weapon Fighting</a>
+				<small>min.8</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>12</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>0 wis, 9 ranks, 3 class</small>
+			</li>
+
+			<!--Social Skills-->
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/bluff">Bluff</a>
+				<small>3 cha, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>
+				<small>3 cha, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>15</strong>
+				<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>
+				<small>3 cha, 9 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>
+				<small>0 wis, 1 ranks, 3 class</small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>18</strong>
+				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a> <span title="Derring-Do">💡</span>
+				<small>6 dex, 9 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/climb">Climb</a> <span title="Derring-Do">💡</span>
+				<small>2 str, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/escape-artist">Escape Artist</a> <span title="Derring-Do">💡</span>
+				<small>6 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>12</strong>
+				<a href="https://d20pfsrd.com/skills/fly">Fly</a> <span title="Derring-Do">💡</span>
+				<small>6 dex, 3 ranks, 3 class</small>
+				<div class="circumstancialBonus">
+					<u title="4 good maneuverability, 4 magus&frac12; (from the spell)">+8</u> when using <a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/fly">fly</a>.
+				</div>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/ride">Ride</a> <span title="Derring-Do">💡</span>
+				<small>6 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>18</strong>
+				<a href="https://d20pfsrd.com/skills/sleight-of-hand">Sleight of Hand</a>
+				<small>6 dex, 9 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+				<small>0 int, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/swim">Swim</a> <span title="Derring-Do">💡</span>
+				<small>2 str, 1 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>13</strong>
+				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
+				<small>3 cha, 7 ranks, 3 class</small>
+			</li>
+
+			<!--Perform Skills-->
+			<li>
+				<strong>15</strong>
+				<a href="https://d20pfsrd.com/skills/perform">Perform (dance)</a>
+				<small>3 cha, 9 ranks, 3 class</small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="9 magus/swashbuckler: 4 class, 0 int, 1 human, 2 background-skills">63 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/knowledge">Knowledge</a> (arcana, dungeoneering, local, nobility, planes),
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+		</p>
+
+		<!-- title Spells -->
+		<hr>
+		<div id="spellHeader" class="apartee">
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Charisma modifier.<br/>
+			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Charisma modifier.
+			<div class="circumstancialBonus" title="Spell Combat"><u title="3 cha">+1/2/3 circumstance</u> when using Spell Combat, by taking the same as penalty on attack rolls.</div>
+			<div class="circumstancialBonus" title="Concentrate (Ex)"><u>Reroll with +4</u> after rolling, before outcome, 1/day.</div>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.<br/>
+		</div>
+		<section class="row">
+			<div>
+				<h2>Spell Combat</h2>
+				<p>During full attack, take -2 penalty and cast a standard-action spell.</p>
+
+				<h2>Spellstrike</h2>
+				<p>Deliver <span class="spell touch">spells</span> with a free weapon attack.</p>
+			</div>
+			<div>
+				<h2 title="6 known">Level 0</h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/arcane-mark">arcane mark</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
+					<li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mage-hand">mage hand</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="5 known">Level 1 <u title="4 class, 1 cha">5/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/blade-tutor-s-spirit/">blade tutor's spirit</a>,</li>
+					<li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/f/frostbite">frostbite</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/long-arm">long arm</a>,</li>
+					<li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/s/shocking-grasp">shocking grasp</a>,</li>
+					<li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="5 known: 4 class, 1 bloodline">Level 2 <u title="4 class, 1 cha">5/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/bladed-dash">bladed dash</a>,</li>
+					<li><a class="spell touch bonus" href="https://d20pfsrd.com/magic/all-spells/b/blur" title="I can't believe this hasn't been fixed in errata.">blur</a>,</li>
+					<li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/f/frigid-touch">frigid touch</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/mirror-image">mirror image</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/w/web">web</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="3 known">Level 3 <u title="2 class, 1 cha">3/day</u></h2>
+				<ul>
+					<li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/f/fly">fly</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/haste">haste</a>,</li>
+					<li><a class="spell touch" href="https://d20pfsrd.com/magic/all-spells/v/vampiric-touch">vampiric touch</a>.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>6</strong>
+						<b>Init</b>
+						<small>6 dex</small>
+					</li>
+					<li>
+						<strong>97</strong>
+						<b>HP</b>
+						<small>1 swashbuckler: 10 class, 2 con; 8 magus: 8 class, 2 con; 8 fc; -3 rolled</small>
+					</li>
+					<li class="br">
+						<strong>30</strong>
+						<b>AC</b> touch 20, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 24
+						<small>10, 6 dex, 7 armor, <u title="Quarterstaff Defense">3 shield</u>, <u title="Ring of Protection">1 deflection</u>, <u title="Fated Bloodrager + Fate's Favored" class="bloodline">3 luck</u></small>
+						<div class="circumstancialBonus" title="Quarterstaff Defense">Shield bonus increases if your quarterstaff's bonus increases.</div>
+					</li>
+					<li>
+						<strong>13</strong>
+						<b>Fort</b>
+						<small>2 con, 6 class, <u title="Cloak of Resistance">2 resistance</u>, <u title="Fated Bloodrager + Fate's Favored" class="bloodline">3 luck</u></small>
+					</li>
+					<li>
+						<strong>15</strong>
+						<b>Ref</b>
+						<small>6 dex, <u title="2 swashbuckler, 2 magus">4 class</u>, <u title="Cloak of Resistance">2 resistance</u>, <u title="Fated Bloodrager + Fate's Favored" class="bloodline">3 luck</u></small>
+					</li>
+					<li class="br">
+						<strong>11</strong>
+						<b>Will</b>
+						<small>0 wis, 6 class, <u title="Cloak of Resistance">2 resistance</u>, <u title="Fated Bloodrager + Fate's Favored" class="bloodline">3 luck</u></small>
+					</li>
+					<li>
+						<strong title="Weapon Finesse**">13</strong>
+						<b>CMB</b>;	26 <b>CMD</b>
+						<small><u title="1 swashbuckler, 6 magus">7 bab</u>, 2 str, 6 dex, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<!--Quarterstaff-->
+				<div class="weapon">
+					<h2>Quarterstaff (2-handed) <b>20x2</b> <b>B</b></h2>
+					<div class="apartee float align"><b>PA</b> -2/+6</div>
+					<div class="summation"><strong>+17</strong>/<strong>12</strong> vs AC <small>7 bab, <u title="Mystic Finesse">6 dex</u>, 3 enh, 1 w.focus</small></div>
+					<div class="summation"><strong>1d6+10</strong> <small>3 str&frac12;, 3 enh, 2 w.spec, <u class="bloodline" title="Arcane Strike">2</u></small></div>
+					<div class="circumstancialBonus cold" title="frostbite, 9 CL">+1d6+9 dmg ❄ nonlethal
+						+ <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Fatigued">fatigued</a>
+						+ <u title="Enforcer"><a href="https://d20pfsrd.com/skills/Intimidate#Demoralize_Opponent">demoralize</a>
+							as a <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a>:
+							<a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Shaken">shaken</a> for 1 round/dmg</u>.</div>
+				</div>
+
+				<h2 class="bloodline">Destined Strike (Ex) <b>3/day</b></h2>
+				<p class="bloodline">As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a>,
+					gain <u title="4 magus&frac12;">+4 insight</u> on your next attack.</p>
+
+				<h2 class="bloodline">Certain Strike (Su) <b>1/mystic focus</b></h2>
+				<p class="bloodline"><u>Reroll</u> an attack roll <small>after rolling, before outcome</small>.</p>
+			</div>
+			<div>
+				<h2>Eldritch Pool <u title="3 cha, 4 magus&frac12;">7/day</u></h2>
+				<dl id="listArcanas">
+					<dt class="bloodline">Mystic Focus</dt>
+					<dd class="bloodline">For 1 arcane, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+						enter mystic focus for <b>2</b> rounds.</dd>
+					<dt>Arcane Pool Weapon</dt>
+					<dd>For 1 arcane, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
+						grant your weapon a <u title="Increases at 1st, 5th, 9th, 13th, 17th level.">+2 enhancement</u> for 1 minute. Can be used to add
+						any <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/flaming">element</a> (+1).</dd>
+				</dl>
+
+				<h2>Panache <u title="3 cha">3 Panache</u></h2>
+				<dl id="listDeeds">
+					<dt>Opportune Parry and Riposte</dt>
+					<dd>For 1 panache, as an <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity">attack of opportunity</a>
+						when attacked in melee, make an attack roll.<br>
+						If your roll is higher, negate the attack, <span class="panache">and use an <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> to attack back.</span> <br/>
+						-2 penalty for Large/Huge/Gargantuan/Colossal</dd>
+					<dt>Derring-do</dt>
+					<dd>For 1 panache, add 1d6 (exploding) to <u>certain skills 💡</u>.</dd>
+					<dt>Dodging Panache</dt>
+					<dd>For 1 panache, as a <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a>
+						when attacked in melee, move 5 ft and gain <u title="3 cha">3 dodge</u> AC.</dd>
+				</dl>
+				<p>
+					Gain 1 panache when you confirm a crit, or kill.<br>
+					(Except unaware, helpless, or low-level creatures)
+				</p>
+
+				<h2>Arcane Strike</h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, add <u title="Increases at 1st, 5th, 10th, 15th, 20th level">2 damage</u> to your weapons.
+					<span class="bloodline">Always on during Mystic Focus.</span></p>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-alluring-charisma">Headband of Alluring Charisma</a> +2</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +2</li>
+		</ul>
+		<ul id="inventory">
+			<!--Weapons-->
+			<li><!--18300-->
+				<a href="https://d20pfsrd.com/equipment/weapons/weapon-descriptions/quarterstaff">Quarterstaff</a> +3
+				<small>simple two-handed, 1d6/1d6, 20x2, B, double monk.</small>
+			</li>
+
+			<!--Armors-->
+			<li class="br"><!--10100-->
+				<a href="https://d20pfsrd.com/magic-items/magic-armor/specific-magic-armor/mithral-shirt">Mithral Shirt</a> +3
+				<small>light, 4 armor, 6 dex, 0 acp, 10% asf</small>
+			</li>
+
+			<!--Misc-->
+			<li><!--2x50-->
+				2&times; Potion of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>
+			</li>
+			<li><!--50-->
+				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</li>
+			<li>3,450 <b>gp</b><!--46,000--></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p>Guide used: <a href="https://www.reddit.com/r/Pathfinder_RPG/comments/oe8ymy/max_the_min_monday_quarterstaves/">this reddit thread</a>.</p>
+
+			<p>TBD: Backstory and personality (talk with Éli),
+				add <a href="https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/cruel/">cruel</a> to weapon maybe,
+				figure out double weapon enchantments,
+				make a <a href="https://d20pfsrd.com/bestiary/monster-listings/aberrations/smokeshade">Smokeshade</a> familiar with the <a href="https://d20pfsrd.com/classes/core-classes/wizard/familiar/familiar-archetypes/infiltrator-familiar-archetype">Infiltrator</a> archetype,
+				spend leftover money on scrolls and wands.</p>
+
+			<details>
+				<summary class="subtitle">What Erya looks like</summary>
+				<a href="https://www.deviantart.com/robs0n/art/Diana-the-Acrobat-734492473">
+				<img src="https://i.pinimg.com/originals/f0/42/13/f0421350ffc01f739883b4fc0ff4dd44.jpg" alt="Diana, the Acrobat &copy;RoBs0n"></a>
+				Art by <a href="https://www.deviantart.com/robs0n">RoBs0n</a>.
+			</details>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Bold and galant</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/foul-brand">Foul Brand</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Brown</dd>
+
+				<dt>Hair</dt>
+				<dd>Brown</dd>
+
+				<dt>Age</dt>
+				<dd>27</dd>
+
+				<dt>Weight</dt>
+				<dd>148 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 8''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
