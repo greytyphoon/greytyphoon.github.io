@@ -72,7 +72,7 @@
 		<hr>
 		<dl id="featsWrapper">
 			<dt>traits</dt>
-			<dd><a href="https://d20pfsrd.com/traits/faith-traits/fate-s-favored">Fate's Favored</a></dd>
+			<dd><u title="Houseruled as a trait"><a href="https://d20pfsrd.com/feats/combat-feats/exotic-weapon-proficiency-combat">Exotic Weapon Proficiency</a></u></dd>
 			<dd><a href="https://d20pfsrd.com/traits/social-traits/seeker">Seeker</a></dd>
 			<dt>human</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a>
@@ -102,16 +102,10 @@
 
 		<!-- SKILLS -->
 		<ul class="summations">
-			<li>
+			<li class="br">
 				<strong>12</strong>
 				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
-				<small>3 wis, 5 ranks, 3 class, <u title="Seeker">1 trait</u></small>
-			</li>
-			<li class="br">
-				<strong>10</strong>
-				<a href="https://d20pfsrd.com/skills/heal">Heal</a>
-				<small>3 wis, 4 ranks, 3 class</small>
-				<div class="circumstancialBonus"><u title="Healer's Kit">+2 circumstance</u> when using Healer's Kit</div>
+				<small>3 wis, 5 ranks, <u title="Seeker">3 class, 1 trait</u></small>
 			</li>
 
 			<!--Misc Skills-->
@@ -119,6 +113,12 @@
 				<strong>4</strong>
 				<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>
 				<small>0 cha, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/heal">Heal</a>
+				<small>3 wis, 1 ranks, 3 class</small>
+				<div class="circumstancialBonus"><u title="Healer's Kit">+2 circumstance</u> when using Healer's Kit</div>
 			</li>
 			<li>
 				<strong>4</strong>
@@ -139,13 +139,8 @@
 			<!--Knowledge Skills-->
 			<li>
 				<strong>4</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (religion)</a>
-				<small>0 int, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>4</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (planes)</a>
-				<small>0 int, 1 ranks, 3 class</small>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (arcana, history, nobility, planes, religion)</a>
+				<small>0 int, 5&times;1 ranks, 3 class</small>
 			</li>
 		</ul>
 
@@ -154,7 +149,6 @@
 			Other class skills:
 			<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>,
 			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
-			<a href="https://d20pfsrd.com/skills/knowledge">Knowledge</a> (arcana, history, nobility),
 			<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
 		</p>
 
@@ -168,7 +162,6 @@
 						<strong>6</strong>
 						<b>Init</b>
 						<small>2 dex, <u title="Improved Initiative">4 feat</u></small>
-						<div class="circumstancialBonus"><u title="Seize the Initiaztive">Reroll</u> when using Seize the Initiative</div>
 					</li>
 					<li>
 						<strong>50</strong>
@@ -202,14 +195,14 @@
 					</li>
 				</ul>
 
-				<!--Longspear-->
+				<!--Fauchard-->
 				<div class="weapon">
-					<h2>Longspear <b>20x3</b> <b>P</b></h2>
+					<h2>Fauchard <b>18x2</b> <b>S</b></h2>
 					<div class="summation"><strong>+9</strong> vs AC <small>3 bab, 5 str, 1 mwk</small></div>
-					<div class="summation"><strong>1d8+7</strong> <small>7 str&frac12;</small></div>
+					<div class="summation"><strong>1d10+7</strong> <small>7 str&frac12;</small></div>
 					<div class="circumstancialBonus">
-						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-brace">Brace</a>,
-						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-reach">reach</a>.
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-reach">Reach</a>,
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-trip">trip</a>.
 					</div>
 				</div>
 			</div>
@@ -217,7 +210,6 @@
 
 			<div>
 				<h2>Aura (Ex) <b>Strong LG</b></h2>
-				<h2>Pearl of Power <u title="1 item">1/day</u></h2>
 
 				<h2>Seize the Initiative (Su) <u title="3 class, 3 wis">6/day</u></h2>
 				<p>An ally can roll initiative twice and take the best result.</p>
@@ -296,25 +288,18 @@
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="magicItemsWrapper">
-			<li class="emptyitemslot">Head</li>
-			<li class="emptyitemslot">Headband</li>
-			<li class="emptyitemslot">Eyes</li>
-			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
-			<li class="emptyitemslot">Neck</li>
-			<li class="emptyitemslot">Chest</li>
-			<li class="emptyitemslot">Body</li>
-			<li><!--200--><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/sleeves-of-many-garments">Sleeves of Many Garment</a></li>
-			<li class="emptyitemslot">Hands</li>
-			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
-			<li class="emptyitemslot">Ring</li>
+			<li><s><!--6000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/tattoo-caster-s">Caster's Tattoo</a></s></li>
 			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a> +2</li>
-			<li class="emptyitemslot">Feet</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a> L1</li>
+			<li><!--200--><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/sleeves-of-many-garments">Sleeves of Many Garment</a></li>
 		</ul>
 		<ul id="inventory">
 			<!--Weapons-->
-			<li><!--310-->
-				<a href="https://d20pfsrd.com/equipment/weapons">Longspear</a>, cold-iron masterwork
-				<small>simple two-handed, 1d8, 20x3, P.</small>
+			<li><!--328-->
+				<a href="https://d20pfsrd.com/equipment/weapons">Fauchard</a>, cold-iron masterwork
+				<small>exotic two-handed, 1d10, 18x2, S, reach, trip.</small>
 			</li>
 			<li class="br"><!--335 (ammo: 1 gp for 10)-->
 				<a href="https://d20pfsrd.com/equipment/weapons">Light Crossbow</a>, masterwork
@@ -329,9 +314,6 @@
 			</li>
 
 			<!--Misc-->
-			<li class="br"><!--1000-->
-				<a href="https://d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a>, lvl1
-			</li>
 			<li><!--50-->
 				Healer's kit, remains 10
 			</li>
@@ -341,67 +323,12 @@
 			<li><!--50-->
 				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
 			</li>
-			<li>97 <b>GP</b><!--/10500--></li>
+			<li>79 <b>GP</b><!--/10500--></li>
 		</ul>
 
 		<!-- title NOTES -->
 		<section class="noprint">
 			<hr>
-			<ul id="sources">
-				<li>
-					Core Rulebook (2009)
-					<ul>
-						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a></li>
-						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a></li>
-						<li><a href="https://d20pfsrd.com/classes/core-classes/cleric">Cleric</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/furious-focus-combat">Furious Focus</a></li>
-						<li><a href="https://d20pfsrd.com/races/core-races/human">Human</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/improved-initiative-combat">Improved Initiative</a></li>
-						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a></li>
-						<li><a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/plant-domain">Plant</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a></li>
-						<li><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a></li>
-						<li><a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/war-domain">War</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat">Weapon Focus</a></li>
-						<li>Core spells will not be listed.</li>
-					</ul>
-				</li>
-				<li>
-					Advanced Player's Guide (2010)
-					<ul>
-						<li><a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/plant-domain/growth">Growth</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/pushing-assault-combat">Pushing Assault</a></li>
-						<li><a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/war-domain/tactics">Tactics</a></li>
-					</ul>
-				</li>
-				<li>
-					Ultimate Magic (2011)
-					<ul>
-						<li><a href="https://d20pfsrd.com/feats/general-feats/divine-interference">Divine Interference</a></li>
-					</ul>
-				</li>
-				<li>
-					Ultimate Equipment (2012)
-					<ul>
-						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/sleeves-of-many-garments">Sleeves of Many Garment</a></li>
-					</ul>
-				</li>
-				<li>
-					Ultimate Campaign (2013)
-					<ul>
-						<li><a href="https://d20pfsrd.com/traits/faith-traits/fate-s-favored">Fate's favored</a></li>
-						<li><a href="https://d20pfsrd.com/traits/social-traits/seeker">Seeker</a></li>
-					</ul>
-				</li>
-				<li>
-					PCS: Chronicles of the Righteous (2013)
-					<ul>
-						<li><a href="https://d20pfsrd.com/feats/general-feats/celestial-obedience">Celestial Obedience</a></li>
-					</ul>
-				</li>
-			</ul>
-
 			<p>Guide used: <a href="https://drive.google.com/file/d/0B5kvBvq2DEHjRWctNG05X0JINm8/view">Guide to Reach Clerics &copy;Brewer</a>.</p>
 
 			<dl class="charInfo">
@@ -426,9 +353,6 @@
 				<dt>Height</dt>
 				<dd>6' 0''</dd>
 			</dl>
-
-			<p><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/tattoo-caster-s">Caster's Tattoo</a> 6000</p>
-			<p>If Exotic Weapon Proficiency was a trait, a Keen Fauchard <small>2hand, 1d10, 18x2, S, reach trip</small> would be an even better weapon.</p>
 		</section>
 	</div>
 </body>
