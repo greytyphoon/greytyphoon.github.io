@@ -44,6 +44,7 @@
 
 				<dt>Class</dt>
 				<dd><a href="https://d20pfsrd.com/classes/core-classes/fighter">Fighter</a> 5</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/fighter/archetypes/paizo-fighter-archetypes/drill-sergeant-fighter-archetype">Drill Sergeant</a></dd>
 			</dl>
 			<dl class="charInfo">
 				<dt>Deity</dt>
@@ -73,12 +74,13 @@
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a>
 				<small>min.1</small></dd>
 			<dt>fighter 1</dt>
-			<dd><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/cleave-combat">Cleave</a>
 				<small>min.1</small></dd>
 			<dt>fighter 2</dt>
-			<dd><a href="https://d20pfsrd.com/feats/combat-feats/cleave-combat">Cleave</a>
-				<small>min.1</small>
-				<small>see notes about swapping out</small></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/cleaving-finish-combat">Cleaving Finish</a>
+				<small>min.1</small></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/precise-strike-combat-teamwork">Precise Strike</a>
+				<small>min.1</small></dd>
 			<dt>level 3</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/dazzling-display-combat">Dazzling Display</a>
 				<small>min.1</small></dd>
@@ -88,8 +90,6 @@
 			<dt>level 5</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/intimidating-prowess-combat">Intimidating Prowess</a>
 				<small>min.1</small></dd>
-			<dt>fighter 5</dt>
-			<dd><b>Weapon Training</b> Heavy Blades</dd>
 			<dt>fighter 6</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/cornugon-smash-combat">Cornugon Smash</a>
 				<small>min.6</small></dd>
@@ -106,7 +106,8 @@
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/greater-weapon-focus-combat">Greater Weapon Focus</a>
 				<small>min.8</small></dd>
 			<dt>fighter 9</dt>
-			<dd><b>Weapon Training</b> Bows</dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/outflank-combat-teamwork">Outflank</a>
+				<small>min.4</small></dd>
 			<dt>fighter 10</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/critical-focus-combat">Critical Focus</a>
 				<small>min.9</small></dd>
@@ -119,8 +120,6 @@
 			<dt>level 13</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/staggering-critical-combat-critical">Staggering Critical</a>
 				<small>min.13</small></dd>
-			<dt>fighter 13</dt>
-			<dd><b>Weapon Training</b> Pole Arms</dd>
 			<dt>fighter 14</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/critical-mastery-combat">Critical Mastery</a>
 				<small>min.14</small></dd>
@@ -131,7 +130,7 @@
 			<li class="br">
 				<strong>8</strong>
 				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
-				<small>1 wis, 3 ranks, 3 class, <u title="Seeker">1 trait</u></small>
+				<small>1 wis, 3 ranks, <u title="Seeker">3 class, 1 trait</u></small>
 			</li>
 
 			<!--Social Skills-->
@@ -222,13 +221,12 @@
 					<strong>3</strong>
 					<b>Will</b>
 					<small>1 wis, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
-					<div class="circumstancialBonus"><u title="Bravery">+1</u> vs fear</div>
 				</li>
 				<li>
 					<strong>11</strong>
 					<b>CMB</b>;	24 <b>CMD</b>
 					<small>5 bab, 6 str, 2 dex, <u title="Ring of Protection">1 deflection</u></small>
-					<div class="circumstancialBonus"><u title="Weapon Training">+1</u> vs disarm/sunder when wielding Heavy Blades</div>
+					<div class="circumstancialBonus"><u title="Weapon Training">+1</u> vs Disarm, Sunder.</div>
 				</li>
 			</ul>
 			<!--end of Basics: Statblock-->
@@ -237,47 +235,24 @@
 				<!--Greatsword-->
 				<div class="weapon">
 					<h2>Greatsword <b>19x2</b> <b>S</b></h2>
+					<div class="apartee float align"><b>PA</b> -2/+6</div>
 					<div class="summation"><strong>+14</strong> vs AC <small>5 bab, 6 str, 1 mwk, 1 w.focus, 1 w.training</small></div>
 					<div class="summation"><strong>2d6+12</strong> <small>9 str&frac12;, 2 w.spec, 1 w.training</small></div>
 				</div>
 
-				<!--Bec de Corbin-->
-				<div class="weapon">
-					<h2>Bec de Corbin <b>20x3</b> <b>BP</b></h2>
-					<div class="summation"><strong>+12</strong> vs AC <small>5 bab, 6 str, 1 mwk</small></div>
-					<div class="summation"><strong>1d10+9</strong> <small>9 str&frac12;</small></div>
-					<div class="circumstancialBonus">
-						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-brace">Brace</a>,
-						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-reach">reach</a>,
-						+2 to sunder medium or heavy armor.
-					</div>
-				</div>
-
-				<!--Longbow-->
-				<div class="weapon">
-					<h2>Longbow <b>20x3</b> <b>110ft.</b> <b>P</b></h2>
-					<div class="summation"><strong>+8</strong> vs AC <small>5 bab, 2 dex, 1 mwk</small></div>
-					<div class="summation"><strong>1d8+6</strong> <small>6 str</small></div>
-				</div>
+				<h2>Tactician (Ex) <u title="Increases at 1st, 5th, 10th, 15th, 20th">2/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
+					grant <a href="https://d20pfsrd.com/feats/combat-feats/precise-strike-combat-teamwork">Precise Strike</a>
+					to allies within 30ft for <u title="3 class, 2 fighter&frac12;">5</u> rounds.</p>
 			</div>
 		</section>
 
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="magicItemsWrapper">
-			<li class="emptyitemslot">Head</li>
-			<li class="emptyitemslot">Headband</li>
-			<li class="emptyitemslot">Eyes</li>
-			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
-			<li class="emptyitemslot">Neck</li>
-			<li class="emptyitemslot">Chest</li>
-			<li class="emptyitemslot">Body</li>
-			<li class="emptyitemslot">Wrists</li>
-			<li class="emptyitemslot">Hands</li>
-			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
-			<li class="emptyitemslot">Ring</li>
 			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a> +2</li>
-			<li class="emptyitemslot">Feet</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
 		</ul>
 		<ul id="inventory">
 			<!--Weapons-->
@@ -287,12 +262,12 @@
 			</li>
 			<li><!--330-->
 				<a href="https://d20pfsrd.com/equipment/weapons">Bec de corbin</a>, cold-iron masterwork
-				<small>martial two-handed, 1d10, 20x3, BP.</small>
+				<small>martial two-handed, 1d10, 20x3, BP, brace, reach, +2 to sunder medium/heavy armor.</small>
 			</li>
-			<li class="br"><!--1000 (ammo: 1 gp for 20)-->
+			<li class="br"><!--1000 (ammo: 1 gp for 10)-->
 				<a href="https://d20pfsrd.com/equipment/weapons">Longbow</a>, composite[6] masterwork
 				<small>martial ranged, 1d8, 20x3, P, 110ft.</small>
-				<div class="circumstancialBonus">60 arrows</div>
+				<div class="circumstancialBonus">30 arrows, cold-iron</div>
 			</li>
 
 			<!--Armors-->
@@ -303,89 +278,36 @@
 			</li>
 
 			<!--Misc-->
+			<li><!--2x50-->
+				2× Potion of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>
+			</li>
+			<li><!--2x50-->
+				2× Potion of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a>
+			</li>
 			<li><!--50-->
 				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
 			</li>
-			<li>367 <b>GP</b><!--/10500--></li>
+			<li>167 <b>GP</b><!--/10500--></li>
 		</ul>
 
 		<!-- title NOTES -->
 		<section class="noprint">
 			<hr>
-			<ul id="sources">
-				<li>
-					Core Rulebook (2009)
-					<ul>
-						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/cleave-combat">Cleave</a></li>
-						<li><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/combat-reflexes-combat">Combat Reflexes</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/critical-focus-combat">Critical Focus</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/critical-mastery-combat">Critical Mastery</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/dazzling-display-combat">Dazzling Display</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/deadly-stroke-combat">Deadly Stroke</a></li>
-						<li><a href="https://d20pfsrd.com/classes/core-classes/fighter">Fighter</a></li>
-						<li><a href="https://d20pfsrd.com/races/core-races/human">Human</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/improved-critical-combat-">Improved Critical</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/intimidating-prowess-combat">Intimidating Prowess</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a></li>
-						<li><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/shatter-defenses-combat">Shatter Defenses</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/staggering-critical-combat-critical">Staggering Critical</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/vital-strike-combat">Vital Strike</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat">Weapon Focus</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/greater-weapon-focus-combat">Weapon Focus, Greater</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/weapon-specialization-combat">Weapon Specialization</a></li>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/greater-weapon-specialization-combat">Weapon Specialization, Greater</a></li>
-					</ul>
-				</li>
-				<li>
-					PC: Cheliax Empires of Devils (2009)
-					<ul>
-						<li><a href="https://d20pfsrd.com/feats/combat-feats/cornugon-smash-combat">Cornugon Smash</a></li>
-					</ul>
-				</li>
-				<li>
-					PC: Faction Guide (2010)
-					<ul>
-						<li><a href="https://d20pfsrd.com/traits/combat-traits/defender-of-the-society-fighter-pathfinder-society">Defender of the Society</a></li>
-					</ul>
-				</li>
-				<li>
-					Advanced Race Guide (2012)
-					<ul>
-						<li><a href="https://d20pfsrd.com/feats/racial-feats/critical-versatility-combat-human">Critical Versatility</a></li>
-					</ul>
-				</li>
-				<li>
-					Ultimate Campaign (2013)
-					<ul>
-						<li><a href="https://d20pfsrd.com/traits/social-traits/seeker">Seeker</a></li>
-					</ul>
-				</li>
-				<li>
-					PPC: Armor Master's Handbook (2016)
-					<ul>
-						<li><a href="https://d20pfsrd.com/classes/core-classes/fighter#TOC-Advanced-Armor-Training">Armored Confidence</a></li>
-					</ul>
-				</li>
-			</ul>
-
 			<p>Guide used: <a href="https://img.4plebs.org/boards/tg/image/1403/13/1403131630746.pdf">Guide to Fighters &copy;Rogue Eidolon</a>.</p>
 
-			<p>
-				Fighter lets you retrain any bonus combat feats, at level 4, 8, 12, 16 and 20.<br/>
-				Let's use this to always have something nice to do as a Standard!<br/>
-				4 <a href="https://d20pfsrd.com/feats/combat-feats/cleave-combat">Cleave</a> lvl 1, good but not great.<br/>
-				8 <a href="https://d20pfsrd.com/feats/combat-feats/vital-strike-combat">Vital Strike</a> lvl 6, very nice but requires lots of feats to chain.<br/>
-				12 <a href="https://d20pfsrd.com/feats/combat-feats/deadly-stroke-combat">Deadly Stroke</a> lvl 11, awesome by itself, and deals CON bleed.
-			</p>
 			<p>
 				<a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/jingasa-of-the-fortunate-soldier">Jingasa of the Fortunate Soldier</a> 5 000<br/>
 				<a href="https://d20pfsrd.com/equipment/special-materials#TOC-Mithral">Mithral</a> Full Plate 9000+<br/>
 				<a href="https://d20pfsrd.com/magic-items/wondrous-items/e-g/gloves-of-dueling">Gloves of Dueling</a> 15 000<br/>
 				<a href="https://d20pfsrd.com/magic-items/rings/ring-of-blinking">Ring of blinking</a> 27 000
 			</p>
+
+			<details>
+				<summary class="subtitle">What Jeffrey looks like</summary>
+				<a href="https://www.artstation.com/artwork/28Oo8K">
+				<img src="https://i.pinimg.com/originals/4c/1b/25/4c1b25625825477defd1a331e1b2abb9.png" alt="Trafalgar Duskdown &copy;Anna Moshak"></a>
+				Art by <a href="https://www.artstation.com/aizelkonart">Anna Moshak</a>.
+			</details>
 
 			<dl class="charInfo">
 				<dt>Qualities</dt>
