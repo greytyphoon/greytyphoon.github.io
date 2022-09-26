@@ -3,16 +3,16 @@
 
 /**
  * Custom Palette:
- * 'Minuet' by Greytyphoon
+ * 'Zen Garden' by Greytyphoon
  * #0b0608 murder-black
  * #eaebef murder-grey
- * #74C625 minuet-green (derived of murder-red)
+ * #5a9b1d serene-green (derived of murder-red)
  * #ffffff html-white
  * #a9a9a9 html-darkgrey
  **/
 :root {
-	--minuet-green: #74C625;
-	--murder-red: var(--minuet-green); }
+	--serene-green: #5a9b1d;
+	--murder-red: var(--serene-green); }
 
 /********************
  * Custom Components   (.credit)

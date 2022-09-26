@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Shifter</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.wild-shape { --special: #5a9b1d; color: var(--special); }
+		.wild-shape.rage { --special: #2573c6; }
+		.wild-shape > .weapon { color: var(--murder-black); border-color: var(--special); }
+		.wild-shape > .weapon > h2 { background-color: var(--special); border-color: var(--special); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Rovru le Rouge, chef de la tribu</h1>
+			NE Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>22 <small>16, <u title="Racial">2</u>, <u title="Advancement">2</u>, <u title="Belt of Giant Strength">2</u></small></dd>
+
+				<dt>Dex</dt>
+				<dd>14</dd>
+
+				<dt>Con</dt>
+				<dd>14</dd>
+
+				<dt>Int</dt>
+				<dd>10</dd>
+
+				<dt>Wis</dt>
+				<dd>16 <small>14, <u title="Headband of Inspired Wisdom">2</u></small></dd>
+
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/Human/#Alternate_Racial_Traits">Heart of the Fey</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/base-classes/shifter">Shifter</a> 9</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/base-classes/shifter/archetypes/dragonblood-shifter-shifter-archetype">Dragonblood Shifter</a></dd>
+
+				<dt>VMC</dt>
+				<dd><a href="https://d20pfsrd.com/classes/character-advancement#TOC-Barbarian">Barbarian</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Gozreh</dd>
+
+				<dt>Senses</dt>
+				<dd title="Heart of the Fey"><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+				<dd title="Draconic Aspect"><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Scent">Scent</a></dd>
+
+				<dt>Speed</dt>
+				<dd>30 ft.</dd>
+				<dd><a href="https://d20pfsrd.com/classes/Core-classes/Druid#Woodland_Stride_Ex">Woodland Stride</a></dd>
+				<dd><a href="https://d20pfsrd.com/classes/Core-classes/Druid#Trackless_Step_Ex">Trackless Step</a></dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Druidic</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<dl id="featsWrapper">
+			<dt>traits</dt>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/berserker-of-the-society-barbarian-pathfinder-society/">Berserker of the Society</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/religion-traits/mother-s-teeth">Mother's Teeth</a></dd>
+			<dt>bonus</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a></dd>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/step-up-combat">Step Up</a></dd>
+			<dt>human</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/feral-combat-training-combat">Weapon Focus</a> (Natural)
+				<small>min.1</small></dd>
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/monster-feats/multiattack-combat">Multiattack</a>
+				<small>min.1</small></dd>
+			<dt>shifter 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/feral-combat-training-combat">Feral Combat Training</a> (Claws)
+				<small>bonus</small></dd>
+			<dt>level 5</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/shifters-rush">Shifter's Rush</a>
+				<small>min.4</small></dd>
+			<dt>level 9</dt>
+			<dd><a href="https://d20pfsrd.com/feats/general-feats/raking-claws">Raking Claws</a>
+				<small>min.8</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>15</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>3 wis, 9 ranks, 3 class</small>
+			</li>
+
+			<!--Animal Skills-->
+			<li>
+				<strong>12</strong>
+				<a href="https://d20pfsrd.com/skills/handle-animal">Handle Animal</a>
+				<small>0 cha, 9 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/ride">Ride</a>
+				<small>2 dex, 1 ranks, 3 class</small>
+			</li>
+			<li class="br">
+				<strong>12</strong>
+				<a href="https://d20pfsrd.com/classes/core-classes/druid#TOC-Wild-Empathy-Ex-">Wild Empathy</a>
+				<small>0 cha, 9 shifter, 3 familiar</small>
+			</li>
+
+			<!--Misc Skills-->
+			<li>
+				<strong>14</strong>
+				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>
+				<small>2 dex, 9 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/climb">Climb</a>
+				<small>6 str, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>14</strong>
+				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
+				<small>2 dex, 9 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+				<small>2 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/survival">Survival</a>
+				<small>3 wis, 4 ranks, 3 class</small>
+				<div class="circumstancialBonus" title="Track, shifter&frac12;"><u>+4</u> when tracking</div>
+			</li>
+			<li class="br">
+				<strong>10</strong>
+				<a href="https://d20pfsrd.com/skills/swim">Swim</a>
+				<small>6 str, 1 ranks, 3 class</small>
+			</li>
+
+			<!--Knowledge Skills-->
+			<li>
+				<strong>4</strong>
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (nature)</a>
+				<small>0 int, 1 ranks, 3 class</small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="9 shifter: 4 class, 0 int, 2 background-skills">54 ranks</u>.
+			Other class skills:
+			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+			<a href="https://d20pfsrd.com/skills/profession">Profession</a>.
+		</p>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<div>
+				<!--Basics: Statblock and Weapons-->
+				<ul class="summations">
+					<li class="br">
+						<strong>2</strong>
+						<b>Init</b>
+						<small>2 dex</small>
+					</li>
+					<li>
+						<strong>113</strong>
+						<b>HP</b>
+						<small>9 shifter: 10 class, 2 con; 9 FC; -4 rolled</small>
+						<div class="circumstancialBonus" title="Draconic Aspect, increases by 5 at 1st, 5th, 10th, 15th."><u class="fire">Resist 10 fire</u></div>
+					</li>
+					<li class="br">
+						<strong>19</strong>
+						<b>AC</b> touch 16, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
+						<small>10, 2 dex, <u title="Bracers of Armor">3 armor</u>, <u title="Defensive Instinct, wis&frac12; + shifter&frac14;">3</u>, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+					<li>
+						<strong>11</strong>
+						<b>Fort</b>
+						<small>2 con, 6 class, <u title="Cloak of Resistance">3 resistance</u></small>
+					</li>
+					<li>
+						<strong>12</strong>
+						<b>Ref</b>
+						<small>2 dex, 6 class, <u title="Heart of the Fey">1 racial</u>, <u title="Cloak of Resistance">3 resistance</u></small>
+					</li>
+					<li>
+						<strong>10</strong>
+						<b>Will</b>
+						<small>3 wis, 3 class, <u title="Heart of the Fey">1 racial</u>, <u title="Cloak of Resistance">3 resistance</u></small>
+					</li>
+					<li class="circumstancialBonus br" title="Wyrmshifter"><u>+2</u> vs sleep, paralysis</li>
+					<li>
+						<strong>15</strong>
+						<b>CMB</b>;	31 <b>CMD</b>
+						<small>9 bab, 6 str, 2 dex, <u title="Defensive Instinct, wis&frac12; + shifter&frac14;">3</u>, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<!--Shifter Claws-->
+				<div class="weapon">
+					<h2>Shifter Claws <b>20x2</b> <b>BS</b></h2>
+					<div class="apartee float align"><b>PA</b> -3/+6</div>
+					<div class="summation"><strong>+17</strong>/<strong>17</strong> vs AC <small>9 bab, 6 str, 1 enh, 1 w.focus</small></div>
+					<div class="summation"><strong>1d6+7 <span class="fire" title="Flaming">+1d6🔥</span></strong> <small>6 str, 1 enh</small></div>
+					<div class="circumstancialBonus" title="Shifter Claws">Counts as magic, cold-iron, and silver.</div>
+					<div class="circumstancialBonus" title="Rending Claws">+1d6 bleed.</div>
+				</div>
+
+				<!--Mother's Teeth-->
+				<div class="weapon" title="Mother's Teeth">
+					<h2>Mother's Teeth <b>20x2</b> <b>BPS</b></h2>
+					<div class="apartee float align"><b>PA</b> -3/+3</div>
+					<div class="summation"><strong>+15</strong> vs AC <small>9 bab, 6 str, 1 enh, 1 w.focus, <u title="Multiattack">-2 secondary</u></small></div>
+					<div class="summation"><strong>1d2+4 <span class="fire" title="Flaming">+1d6🔥</span></strong> <small>3 str&frac12;, 1 enh</small></div>
+				</div>
+
+				<p class="apartee"><b>Full Attack:</b> 1 Bite, 2 Claws</p>
+
+				<h2>Draconic Aspect (Su) <u title="Because I'm the GM and I said so">Always On</u></h2>
+			</div>
+
+			<!--Wild Shape-->
+			<div class="wild-shape">
+				<ul class="summations">
+					<li class="br">
+						<strong>2</strong>
+						<b>Init</b>
+						<small>2 dex</small>
+					</li>
+					<li>
+						<strong>122</strong>
+						<b>HP</b>
+						<small>9 shifter: 10 class, 3 con; 9 FC; -4 rolled</small>
+						<div class="circumstancialBonus" title="Form of the Dragon I">
+							<span class="fire"><u>Resist 30</u> fire</span>,
+							<span class="cold"><u><a class="cold" href="https://d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Vulnerabilities-Ex-or-Su-">Vulnerability</a></u> cold</span> <small>+50% dmg</small>
+						</div>
+					</li>
+					<li class="br">
+						<strong>25</strong>
+						<b>AC</b> touch 18, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
+						<small>10, 2 dex, <u title="Bracers of Armor">3 armor</u>, <u title="Form of the Dragon I">4 natural</u>, <u title="Defensive Instinct, wis + shifter&frac14;">5</u>, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+					<li>
+						<strong>12</strong>
+						<b>Fort</b>
+						<small>3 con, 6 class, <u title="Cloak of Resistance">3 resistance</u></small>
+					</li>
+					<li>
+						<strong>12</strong>
+						<b>Ref</b>
+						<small>2 dex, 6 class, <u title="Heart of the Fey">1 racial</u>, <u title="Cloak of Resistance">3 resistance</u></small>
+					</li>
+					<li>
+						<strong>10</strong>
+						<b>Will</b>
+						<small>3 wis, 3 class, <u title="Heart of the Fey">1 racial</u>, <u title="Cloak of Resistance">3 resistance</u></small>
+					</li>
+					<li class="circumstancialBonus br" title="Wyrmshifter"><u>+2</u> vs sleep, paralysis</li>
+					<li>
+						<strong>17</strong>
+						<b>CMB</b>;	35 <b>CMD</b>
+						<small>9 bab, 8 str, 2 dex, <u title="Defensive Instinct, wis + shifter&frac14;">5</u>, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<!--Bite-->
+				<div class="weapon">
+					<h2>Bite <b>20x2</b> <b>BPS</b></h2>
+					<div class="apartee float align"><b>PA</b> -3/+6</div>
+					<div class="summation"><strong>+19</strong> vs AC <small>9 bab, 8 str, 1 enh, 1 w.focus</small></div>
+					<div class="summation"><strong>1d8+9 <span class="fire" title="Flaming">+1d6🔥</span></strong> <small>8 str, 1 enh</small></div>
+				</div>
+
+				<!--Claws-->
+				<div class="weapon">
+					<h2>Claws <b>20x2</b> <b>BS</b></h2>
+					<div class="apartee float align"><b>PA</b> -3/+6</div>
+					<div class="summation"><strong>+19</strong> vs AC <small>9 bab, 8 str, 1 enh, 1 w.focus</small></div>
+					<div class="summation"><strong>1d6+9 <span class="fire" title="Flaming">+1d6🔥</span></strong> <small>8 str, 1 enh</small></div>
+				</div>
+
+				<!--Wings-->
+				<div class="weapon">
+					<h2>Wings <b>20x2</b> <b>B</b></h2>
+					<div class="apartee float align"><b>PA</b> -3/+3</div>
+					<div class="summation"><strong>+17</strong> vs AC <small>9 bab, 8 str, 1 enh, 1 w.focus, <u title="Multiattack">-2 secondary</u></small></div>
+					<div class="summation"><strong>1d4+5 <span class="fire" title="Flaming">+1d6🔥</span></strong> <small>4 str&frac12;, 1 enh</small></div>
+				</div>
+
+				<p class="apartee"><b>Full Attack:</b> 1 Bite, 2 Claws, 2 Wings</p>
+
+				<!--Breath Weapon-->
+				<h2>Breath Weapon (Su) <b>1/hour</b></h2>
+				<div class="weapon">
+					<h2>Breath Weapon <b>🔥</b></h2>
+					<div class="summation"><strong>Reflex DC 17 halves</strong> <small>10, 4 shifter&frac12;, 3 con</small></div>
+					<div class="summation"><strong class="fire">6d8</strong></div>
+					<div class="circumstancialBonus">30ft cone.</div>
+				</div>
+
+				<h2>Wild Shape (Su) <u title="9 shifter, 3 wis. In hours, because I'm the GM and I said so.">12h/day</u></h2>
+				<p>Start as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a> (<u title="Shifter's Rush">or a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a> when moving</u>).</p>
+				<p>As <a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/form-of-the-dragon-i">form of the dragon I</a>, you gain:
+					fly 60 ft. (<a href="https://d20pfsrd.com/skills/fly">poor</a>),
+					<a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">darkvision</a> 60ft.</p>
+			</div>
+			<!--end of Wild Shape-->
+
+			<!--Wild Shape + Rage-->
+			<div class="wild-shape rage">
+				<ul class="summations">
+					<li class="br">
+						<strong>2</strong>
+						<b>Init</b>
+						<small>2 dex</small>
+					</li>
+					<li>
+						<strong>140</strong>
+						<b>HP</b>
+						<small>9 shifter: 10 class, 5 con; 9 FC; -4 rolled</small>
+						<div class="circumstancialBonus" title="Form of the Dragon I">
+							<span class="fire"><u>Resist 30</u> fire</span>,
+							<span class="cold"><u><a class="cold" href="https://d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Vulnerabilities-Ex-or-Su-">Vulnerability</a></u> cold</span> <small>+50% dmg</small>
+						</div>
+					</li>
+					<li class="br">
+						<strong>23</strong>
+						<b>AC</b> touch 16, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
+						<small>10, 2 dex, <u title="Bracers of Armor">3 armor</u>, <u title="Form of the Dragon I">4 natural</u>, <u title="Defensive Instinct, wis + shifter&frac14;">5</u>, <u title="Ring of Protection">1 deflection</u>, -2 rage</small>
+					</li>
+					<li>
+						<strong>14</strong>
+						<b>Fort</b>
+						<small>5 con, 6 class, <u title="Cloak of Resistance">3 resistance</u></small>
+					</li>
+					<li>
+						<strong>12</strong>
+						<b>Ref</b>
+						<small>2 dex, 6 class, <u title="Heart of the Fey">1 racial</u>, <u title="Cloak of Resistance">3 resistance</u></small>
+					</li>
+					<li>
+						<strong>12</strong>
+						<b>Will</b>
+						<small>3 wis, 3 class, <u title="Heart of the Fey">1 racial</u>, <u title="Cloak of Resistance">3 resistance</u>, 2 morale</small>
+					</li>
+					<li class="circumstancialBonus br" title="Wyrmshifter"><u>+2</u> vs sleep, paralysis</li>
+					<li>
+						<strong>19</strong>
+						<b>CMB</b>;	37 <b>CMD</b>
+						<small>9 bab, 10 str, 2 dex, <u title="Defensive Instinct, wis + shifter&frac14;">5</u>, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<!--Bite-->
+				<div class="weapon">
+					<h2>Bite <b>20x2</b> <b>BPS</b></h2>
+					<div class="apartee float align"><b>PA</b> -3/+6</div>
+					<div class="summation"><strong>+21</strong> vs AC <small>9 bab, 10 str, 1 enh, 1 w.focus</small></div>
+					<div class="summation"><strong>1d8+11 <span class="fire" title="Flaming">+1d6🔥</span></strong> <small>10 str, 1 enh</small></div>
+				</div>
+
+				<!--Claws-->
+				<div class="weapon">
+					<h2>Claws <b>20x2</b> <b>BS</b></h2>
+					<div class="apartee float align"><b>PA</b> -3/+6</div>
+					<div class="summation"><strong>+21</strong> vs AC <small>9 bab, 10 str, 1 enh, 1 w.focus</small></div>
+					<div class="summation"><strong>1d6+11 <span class="fire" title="Flaming">+1d6🔥</span></strong> <small>10 str, 1 enh</small></div>
+				</div>
+
+				<!--Wings-->
+				<div class="weapon">
+					<h2>Wings <b>20x2</b> <b>B</b></h2>
+					<div class="apartee float align"><b>PA</b> -3/+3</div>
+					<div class="summation"><strong>+19</strong> vs AC <small>9 bab, 10 str, 1 enh, 1 w.focus, <u title="Multiattack">-2 secondary</u></small></div>
+					<div class="summation"><strong>1d4+6 <span class="fire" title="Flaming">+1d6🔥</span></strong> <small>5 str&frac12;, 1 enh</small></div>
+				</div>
+
+				<p class="apartee"><b>Full Attack:</b> 1 Bite, 2 Claws, 2 Wings</p>
+
+				<!--Breath Weapon-->
+				<h2>Breath Weapon (Su) <b>1/hour</b></h2>
+				<div class="weapon">
+					<h2>Breath Weapon <b>🔥</b></h2>
+					<div class="summation"><strong>Reflex DC 19 halves</strong> <small>10, 4 shifter&frac12;, 5 con</small></div>
+					<div class="summation"><strong class="fire">6d8</strong></div>
+					<div class="circumstancialBonus">30ft cone.</div>
+				</div>
+
+				<h2>Rage (Ex) <u title="9 shifter, 2 con, 3 trait">14 rounds/day</u></h2>
+				<p>Start/end as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a>, fatigued when it ends.</p>
+			</div>
+			<!--end of Wild Shape + Rage-->
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="magicItemsWrapper">
+			<li><!--16k--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/amulet-of-mighty-fists">Amulet of Mighty Fist</a> +1
+				<a class="fire" href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/flaming">Flaming</a></li>
+			<li><!--9000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/bracers-of-armor">Bracers of Armor</a> +3</li>
+			<li><!--9000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +3</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a> +2</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-inspired-wisdom">Headband of Inspired Wisdom</a> +2</li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+		</ul>
+
+		<ul id="inventory">
+			<!--Misc-->
+			<li><!--3x300-->
+				3&times; Potion of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/barkskin">barkskin</a>
+			</li>
+			<li><!--3x300-->
+				3&times; Potion of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/blur">blur</a>
+			</li>
+			<li><!--2x50-->
+				2&times; Potion of <a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>
+			</li>
+			<li><!--1x50-->
+				1&times; Potion of <a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a>
+			</li>
+			<li><!--50-->
+				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
+			</li>
+			<li>0 <b>GP</b><!--/46,000--></li>
+		</ul>
+
+		<!--title NOTES-->
+		<section class="noprint">
+			<hr>
+			<p>Guide used: <a href="https://docs.google.com/document/d/1uhp5v8_tu_rLMX4T266g4rh-ceu_u-8kCZHjFFNHJcY/edit#">Becoming the Chimera &copy;Archmage Variel</a>.</p>
+
+			<p>Rovru is the current leader of the hidden tribe of Nada, a place where everyone has some form of lycanthropy.
+				Immune amongst themselves, they isolate from the rest of civilization to avoid spreading their curse, supporting each other in their new community.
+				Rovru's own form of lycanthropy is somewhat unique, making him a were-dragon.
+				The curse was brought on him by his secret most prized possession: a <em>dragon stone</em>, found in the heart of a Red Dragon.</p>
+			<p>Rovru studies his half-form's powers like a monk.
+				His discipline produced very encouraging results, and his raw power is unmatched in Nada.
+				That made him the chief of the tribe, more or less directly.</p>
+			<p>He dwells very little on his past life.
+				Most in the tribe have heard nothing about it.
+				As a starting adventurer, he was recruited for a mass attack against a dragon, survived through sheer luck, and tracked the bleeding, dying dragon through the deep forest.
+				Arriving first, he knew to take the stone (else the dragon would recover) but he wasn't prepared for the effect the stone would have on his mind.
+				The power!
+				He took revenge on a long-time rival by burning down his house (and neighbors for good measure), slaughtering and pillaging, framing it as an attack the previous red dragon would have made before dying.
+				After the initial rush, his human conscience prevailed, and he started his exile.</p>
+			<p>As the chief, he is responisble for keeping the tribe secret, and he knows well the few outsiders who are connected (closest being Hugo and Vincenzo).</p>
+			<p>Rovru has heard of other dragons, living on the coast, not too far from his village.
+				He is very tempted to try to get ahold of a second dragon stone, to see how much power it could procure.</p>
+
+			<details>
+				<summary class="subtitle">What Rovru looks like</summary>
+				<a href="https://www.pinterest.ca/pin/782007922809669745">
+				<img src="https://i.pinimg.com/originals/93/28/a7/9328a778f7ff76fd43db38b4a820b0b4.png" alt="Argonian &copy;Idia Erharuyi"></a>
+				Art by <a href="https://www.pinterest.ca/pin/782007922809669745">Idia Erharuyi</a>.
+			</details>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Brave and disciplined</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/insatiable">Insatiable</a></dd>
+
+				<dt>Eyes</dt>
+				<dd>Gold</dd>
+
+				<dt>Scales</dt>
+				<dd>Red</dd>
+
+				<dt>Age</dt>
+				<dd>54</dd>
+
+				<dt>Weight</dt>
+				<dd>254 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>6' 6''</dd>
+			</dl>
+		</section>
+	</div>
+</body>
+</html>
