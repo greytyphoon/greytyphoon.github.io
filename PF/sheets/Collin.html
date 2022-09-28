@@ -7,20 +7,22 @@
 	<title>Grey's Hunter</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
 	<style>
+		.change-shape, .change-shape a { color: #2573c6; }
+		.change-shape > .weapon { color: var(--murder-black); border-color: #2573c6; }
+		.change-shape > .weapon > h2 { background-color: #2573c6; border-color: #2573c6; }
 		ul#listFocii { font-size: 0.8rem; list-style-type: circle; margin-left: 1.5rem; }
 	</style>
 </head>
 <body>
 	<nav id="fixref"><ul>
 		<li><a class="houserule" href="https://greytyphoon.space/PF/campaigns/griffon-et-saphir">Campaign Rules</a></li>
-		<li><a class="companion bull" href="Tornado.html">Animal Companion</a></li>
 		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
 	</ul></nav>
 
 	<div class="container">
 		<header>
-			<h1>Ghaveri "Freckles" Brown, expert distractor</h1>
-			NE Medium humanoid (human, orc)
+			<h1>Collin Poitras, the child who insulted a fae</h1>
+			NE Medium humanoid (shapechanger)
 		</header>
 
 		<section id="headerInfo" class="row">
@@ -29,36 +31,35 @@
 				<dd>14</dd>
 
 				<dt>Dex</dt>
-				<dd>22 <small>17, <u title="Racial">2</u>, <u title="Advancement">1</u>, <u title="Belt of Incredible Dexterity">2</u></small></dd>
+				<dd>21 <small>17, <u class="change-shape" title="Racial">2</u>, <u title="Feral Focus">2</u></small></dd>
 
 				<dt>Con</dt>
-				<dd>12</dd>
+				<dd>13</dd>
 
 				<dt>Int</dt>
-				<dd>10</dd>
+				<dd>10 <small>12, <u title="Racial">-2</u></small></dd>
 
 				<dt>Wis</dt>
-				<dd>14</dd>
+				<dd>14 <small>12, <u title="Racial">2</u></small></dd>
 
 				<dt>Cha</dt>
 				<dd>10</dd>
 			</dl>
 			<dl id="subheader" class="charInfo">
 				<dt>Race</dt>
-				<dd><a href="https://d20pfsrd.com/races/core-races/half-orc">Half-orc</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/half-orc/#Alternate_Racial_Traits">Sacred Tattoo</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/half-orc/#Alternate_Racial_Traits">Shaman Enhancement</a></dd>
+				<dd><a href="https://d20pfsrd.com/races/other-races/more-races/standard-races-1-10-rp/skinwalkers-10-rp">Skinwalker</a></dd>
 
 				<dt>Class</dt>
-				<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/hunter">Hunter</a> 4</dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/classes/hybrid-classes/hunter/archetypes/paizo-hunter-archetypes/roof-runner-hunter-archetype">Roof Runner</a></dd>
+				<dd><a href="https://d20pfsrd.com/classes/hybrid-classes/hunter">Hunter</a> 3</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/hybrid-classes/hunter/archetypes/paizo-hunter-archetypes/feral-hunter">Feral Hunter</a></dd>
 			</dl>
 			<dl class="charInfo">
 				<dt>Deity</dt>
-				<dd>Asmodeus</dd>
+				<dd>Erastil</dd>
 
 				<dt>Senses</dt>
-				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">Darkvision</a> 60ft.</dd>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+				<dd class="change-shape"><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">Darkvision</a> 60ft.</dd>
 
 				<dt>Speed</dt>
 				<dd>30 ft.</dd>
@@ -72,8 +73,8 @@
 		<hr>
 		<dl id="featsWrapper">
 			<dt>traits</dt>
-			<dd><a href="https://d20pfsrd.com/traits/race-traits/finish-the-fight-racial-trait-half-orc-raised-by-orcs">Finish the Fight</a></dd>
-			<dd><a href="https://d20pfsrd.com/traits/regional-traits/storm-hunter-hongal">Storm Hunter</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/race-traits/animalistic-affliction">Animalistic Affliction</a></dd>
+			<dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
 			<dt>bonus</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/point-blank-shot-combat">Point-Blank Shot</a></dd>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-finesse-combat">Weapon Finesse</a></dd>
@@ -96,35 +97,28 @@
 
 		<ul class="summations">
 			<li class="br">
-				<strong>9</strong>
+				<strong>8</strong>
 				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
-				<small>2 wis, 4 ranks, 3 class</small>
+				<small>2 wis, 3 ranks, 3 class</small>
 			</li>
 
 			<!--Skills - animal-->
 			<li>
-				<strong>7</strong>
+				<strong>9</strong>
 				<a href="https://d20pfsrd.com/skills/handle-animal">Handle Animal</a>
-				<small>0 cha, 4 ranks, 3 class</small>
-				<div class="circumstancialBonus" title="Link"><u>+4</u> for companion</div>
-			</li>
-			<li>
-				<strong>10</strong>
-				<a href="https://d20pfsrd.com/skills/ride">Ride</a>
-				<small>6 dex, 1 ranks, 3 class</small>
+				<small>0 cha, 3 ranks, 3 class, <u title="Animal-Minded">2 racial</u>, <u title="Animalistic Affliction">1 trait</u></small>
 			</li>
 			<li class="br">
-				<strong>4</strong>
+				<strong>6</strong>
 				<a href="https://d20pfsrd.com/classes/hybrid-classes/Hunter#Wild_Empathy_Ex">Wild Empathy</a>
-				<small>0 cha, 4 hunter</small>
+				<small>0 cha, 3 hunter, <u title="Animal-Minded">2 racial</u>, <u title="Animalistic Affliction">1 trait</u></small>
 			</li>
 
 			<!--Skills - others-->
 			<li>
-				<strong>13</strong>
+				<strong>11</strong>
 				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>
-				<small>6 dex, 4 ranks, 3 class</small>
-				<div class="circumstancialBonus"><u title="Natural Leaper, hunter&frac12;">+2</u> when jumping</div>
+				<small>5 dex, 3 ranks, 3 class</small>
 			</li>
 			<li>
 				<strong>6</strong>
@@ -132,9 +126,9 @@
 				<small>2 str, 1 ranks, 3 class</small>
 			</li>
 			<li>
-				<strong>10</strong>
+				<strong>9</strong>
 				<a href="https://d20pfsrd.com/skills/escape-artist">Escape Artist</a>
-				<small>6 dex, 1 ranks, 3 class</small>
+				<small>5 dex, 1 ranks, 3 class</small>
 			</li>
 			<li>
 				<strong>6</strong>
@@ -142,9 +136,14 @@
 				<small>2 wis, 1 ranks, 3 class</small>
 			</li>
 			<li>
-				<strong>10</strong>
+				<strong>9</strong>
+				<a href="https://d20pfsrd.com/skills/ride">Ride</a>
+				<small>5 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>11</strong>
 				<a href="https://d20pfsrd.com/skills/sleight-of-hand">Sleight of Hand</a>
-				<small>6 dex, 1 ranks, 3 class</small>
+				<small>5 dex, 3 ranks, 3 class</small>
 			</li>
 			<li>
 				<strong>4</strong>
@@ -152,14 +151,14 @@
 				<small>0 int, 1 ranks, 3 class</small>
 			</li>
 			<li>
-				<strong>13</strong>
+				<strong>11</strong>
 				<a href="https://d20pfsrd.com/skills/spellcraft">Stealth</a>
-				<small>6 dex, 4 ranks, 3 class</small>
+				<small>5 dex, 3 ranks, 3 class</small>
 			</li>
 			<li>
-				<strong>6</strong>
+				<strong>8</strong>
 				<a href="https://d20pfsrd.com/skills/survival">Survival</a>
-				<small>2 wis, 1 ranks, 3 class</small>
+				<small>2 wis, 3 ranks, 3 class</small>
 			</li>
 			<li>
 				<strong>6</strong>
@@ -169,7 +168,7 @@
 		</ul>
 
 		<p class="circumstancialBonus noprint">
-			<u title="4 hunter: 6 class, 0 int">24 ranks</u>.
+			<u title="3 hunter: 6 class, 0 int, 2 background-skills">24 ranks</u>.
 			Other class skills:
 			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
 			<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>,
@@ -185,6 +184,15 @@
 			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR.
 		</div>
 		<section class="row">
+			<div>
+				<h2>Skinwalker Magic (<a href="https://d20pfsrd.com/Magic#Spell-Like_Abilities_Sp">Sp</a>) <b>CL 3rd</b></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/speak-with-animals">speak with animals</a> 1/day.</li>
+				</ul>
+&nbsp;
+				<h2>Precise Summoned Animal (Ex)</h2>
+				<p>Animals you summon with <a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/summon-natures-ally">summon nature's ally</a> gain all your teamwork feats.</p>
+			</div>
 			<div>
 				<h2 title="6 known">Level 0</h2>
 				<ul>
@@ -202,21 +210,7 @@
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/f/feather-step">feather step</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/gravity-bow">gravity bow</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a>.</li>
-				</ul>
-			</div>
-			<div>
-				<h2 title="2 known">Level 2 <u title="1 class, 1 wis">2/day</u></h2>
-				<ul>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/stone-call">stone call</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/w/web">web</a>.</li>
-				</ul>
-			</div>
-			<div>
-				<h2>Scrolls</h2>
-				<ul>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/longstrider">longstrider</a>,</li>
-					<li><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/m/mage-armor">mage armor</a>.</li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/s/summon-natures-ally">summon nature's ally I</a>.</li>
 				</ul>
 			</div>
 		</section>
@@ -228,58 +222,58 @@
 			<div>
 				<ul class="summations">
 					<li class="br">
-						<strong>6</strong>
+						<strong>7</strong>
 						<b>Init</b>
-						<small>6 dex</small>
+						<small>5 dex, <u title="Reactionary">2 trait</u></small>
 					</li>
 					<li>
-						<strong>37</strong>
+						<strong>27</strong>
 						<b>HP</b>
-						<small>4 hunter: 8 class, 1 con; 4 fc; -3 rolled</small>
+						<small>3 hunter: 8 class, 1 con; 3 fc; -3 rolled</small>
 					</li>
 					<li class="br">
 						<strong>21</strong>
-						<b>AC</b> touch 16, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 15
-						<small>10, 6 dex, 4 armor, 1 shield</small>
+						<b>AC</b> touch 15, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 15
+						<small>10, 5 dex, 4 armor, 1 shield, <u class="change-shape" title="Change Shape, 1 racial">1 natural</u></small>
 					</li>
 					<li>
-						<strong>6</strong>
+						<strong>5</strong>
 						<b>Fort</b>
-						<small>1 con, 4 class, <u title="Sacred Tattoo">1 luck</u></small>
+						<small>1 con, 3 class, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li>
-						<strong>11</strong>
+						<strong>9</strong>
 						<b>Ref</b>
-						<small>6 dex, 4 class, <u title="Sacred Tattoo">1 luck</u></small>
+						<small>5 dex, 3 class, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
-					<li class="br">
+					<li>
 						<strong>4</strong>
 						<b>Will</b>
-						<small>2 wis, 1 class, <u title="Sacred Tattoo">1 luck</u></small>
+						<small>2 wis, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
+					<li class="circumstancialBonus br" title="Feral Focus; 'minor bestial characteristics' count as a polymorph effect."><u>Immune</u> polymorph.<a href="https://d20pfsrd.com/magic#Transmutation">¹</a></li>
 					<li>
-						<strong title="Weapon Finesse**">10</strong>
-						<b>CMB</b>;	22 <b>CMD</b>
-						<small>4 bab, 2 str, 6 dex</small>
+						<strong title="Weapon Finesse**">7</strong>
+						<b>CMB</b>;	19 <b>CMD</b>
+						<small>2 bab, 2 str, 5 dex</small>
 					</li>
 				</ul>
 
 				<!--Longbow-->
 				<div class="weapon">
 					<h2>Longbow <b>20x3</b> <b>110ft.</b> <b>P</b></h2>
-					<div class="summation"><strong>+10</strong> vs AC <small>3 bab, 6 dex, 1 mwk</small></div>
+					<div class="summation"><strong>+8</strong> vs AC <small>2 bab, 5 dex, 1 mwk</small></div>
 					<div class="summation"><strong>1d8+2</strong> <small>2 str</small></div>
 				</div>
 
-				<p class="apartee">+<b>14</b> with Flanking (4), Point-Blank (1), Damaged (1), Rapid Shot (-2).<br>
+				<p class="apartee">+<b>11</b> with Flanking Summons (4), Point-Blank (1), Rapid Shot (-2).<br>
 					<b>1d8+3</b> with Point-Blank (1).</p>
 			</div>
 			<!--end of Basics: Statblock and Weapons-->
 
 			<div>
-				<h2>Storm Hunter</h2>
-				<h2>Animal Focus <u title="4 hunter">4 min/day</u></h2>
-				<div>Start as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>.</div>
+				<h2>Feral Focus <b>Always On</b></h2>
+				<p>Change as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>.</p>
 				<ul id="listFocii">
 					<li><em>Bat</em>: gain <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">darkvision</a> 60ft.</li>
 					<li><em>Mouse</em>: gain evasion.</li>
@@ -289,7 +283,7 @@
 
 					<li><em>Bear</em>: <u>+2 enhancement</u> to CON</li>
 					<li><em>Bull</em>: <u>+2 enhancement</u> to STR</li>
-					<li class="br"><em>Tiger</em>: <u>+2 enhancement</u> to DEX</li>
+					<li class="br"><b><em>Tiger</em>: <u>+2 enhancement</u> to DEX</b></li>
 
 					<li><em>Falcon</em>: <u>+4 competence</u> to Perception</li>
 					<li><em>Frog</em>: <u>+4 competence</u> to Swim / Acrobatics to jump</li>
@@ -298,13 +292,26 @@
 				</ul>
 			</div>
 		</section>
+		<section class="row change-shape">
+			<div>
+				<h2>Change Shape (Su)</h2>
+				<p>Start as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
+					end as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>.<br>
+					Choose <b>one</b> ability to boost: Str, <b>Dex</b>, or Con.<br>
+					Choose <b>one</b> of the three benefits: darkvision, claws, or <b>natural armor</b>.</p>
+			</div>
+			<!--Claws-->
+			<div class="weapon">
+				<h2>Claws <b>20x2</b> <b>BS</b></h2>
+				<div class="summation"><strong>+7</strong>/<strong>+7</strong> vs AC <small>2 bab, <u title="Weapon Finesse">5 dex</u></small></div>
+				<div class="summation"><strong>1d4+2</strong> <small>2 str</small></div>
+			</div>
+		</section>
 
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="magicItemsWrapper">
-			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-incredible-dexterity">Belt of Incredible Dexterity</a> +2</li>
-			<li><!--2000--><s><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</s></li>
-			<li><!--1000--><s><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</s></li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
 		</ul>
 
 		<ul id="inventory">
@@ -312,13 +319,6 @@
 			<li><!--600 (ammo: 36 total)-->
 				<a href="https://d20pfsrd.com/equipment/weapons">Longbow</a>, composite[2] masterwork
 				<small>martial ranged, 1d8, 20x3, P, 110ft.</small>
-				<ul class="circumstancialBonus">
-					<li>60 cold-iron arrows</li><!--6-->
-					<li>20 silver arrows <small>-1 dmg</small></li><!--3-->
-					<li>20 blunt arrows</li><!--2-->
-					<li>10 whistling arrows</li><!--1-->
-					<li>1 pheromone arrow</li><!--15-->
-				</ul>
 				<div class="circumstancialBonus"><ul>
 					<li><!--4-->40 cold-iron arrows</li>
 					<li><!--3-->20 silver arrows <small>-1 dmg</small></li>
@@ -342,8 +342,31 @@
 			<!--Misc-->
 			<li><!--50--><a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a></li>
 			<li><!--5-->Spell Component Pouch</li>
-			<li>4 <b>GP</b><!--/6000--></li>
+			<li>54 <b>GP</b><!--/3000--></li>
 		</ul>
+
+		<!--title NOTES-->
+		<section class="noprint">
+			<hr>
+
+			<details>
+				<summary class="subtitle">What Collin looks like</summary>
+				<a href="https://twitter.com/MingjueChen/status/431923045167407104">
+				<img src="https://i.pinimg.com/originals/a4/7b/30/a47b30d3f5027817d77182520bade3e3.jpg" alt="Argonian &copy;Mingjue Helen Chen"></a>
+				Art by <a href="https://www.instagram.com/mingjuechen/">Mingjue Helen Chen</a>.
+			</details>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Cheerful and funny</dd>
+
+				<dt>Fault</dt>
+				<dd><a href="https://d20pfsrd.com/traits/drawbacks/naive">Naive</a></dd>
+
+				<dt>Age</dt>
+				<dd>13</dd>
+			</dl>
+		</section>
 	</div>
 </body>
 </html>
