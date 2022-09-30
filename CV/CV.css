@@ -229,11 +229,15 @@ ul.general { list-style: circle; }
 dl.competences > dt {
 	color: var(--html-darkgrey);
 	font-style: italic;
-	float: left;
-	text-align: right;
-	min-width: 145px;
 }
-dl.competences > dd { margin-left: 150px; } /* the floating <dt> will go above this margin */
+@media screen and (min-width: 576px) {
+	dl.competences > dt {
+		float: left;
+		text-align: right;
+		min-width: 145px;
+	}
+	dl.competences > dd { margin-left: 150px; } /* the floating <dt> will go above this margin */
+}
 dl.projects > dt {
 	text-decoration: underline;
 }
