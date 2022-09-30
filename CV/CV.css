@@ -230,7 +230,7 @@ dl.competences > dt {
 	color: var(--html-darkgrey);
 	font-style: italic;
 }
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
 	dl.competences > dt {
 		float: left;
 		text-align: right;
