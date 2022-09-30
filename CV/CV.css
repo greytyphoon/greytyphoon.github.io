@@ -1,4 +1,4 @@
-/** Created by Rémi Doutre, 2015-2019. Public domain. **/
+/** Created by Rémi Doutre, 2015-2022. Public domain. **/
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap");
 /**
@@ -15,7 +15,7 @@
 :root {
 	--murder-black: #0b0608;
 	--murder-grey: #eaebef;
-	--murder-red: #c62825;
+	--murder-red: #2573c6;
 	--html-white: #ffffff;
 	--html-darkgrey: #a9a9a9;
 
@@ -33,21 +33,11 @@ a, a:link, a:visited, a:active {
 a:hover {
 	text-decoration: underline;
 	text-shadow: 0px 0px 1px; }
-hr {
-	border: none;
-	border-bottom: 1px solid var(--html-darkgrey);
-	clear: both; }
-code {
-	display: inline-block;
-	background-color: var(--murder-grey);
-	border-radius: .25em;
-	padding: 0 .15em; }
 ul, ol, dl, p { margin: 0 0 .75em 0; }
-summary { cursor: pointer; }
 .hidden { display: none !important; }
 
 /********************
- * Basic page layout	(.container, #fixref, #header)
+ * Basic page layout	(.container, #fixref, header)
  */
 
 body > .container { padding: 10px 25px .5px 25px; }
@@ -106,13 +96,14 @@ header h1 {
 	font-size: inherit;
 	font-weight: bold;
 	margin: 0; }
+header, header * { color: var(--html-white) !important; }
 
 /********************
  * Grid
  */
 @media screen and (min-width: 768px), print{
 	section.row { display: flex; flex-wrap: wrap; }
-	section.row > * { flex: 1; }
+	section.row > * { flex: 1; margin-bottom: auto; }
 	section.row > * + * { margin-left: 1rem; }
 }
 
@@ -144,25 +135,21 @@ h2 {
 	.noprint { display: none !important; }
 
 	/* make stuff smaller, so more can fit on a page. */
-	:root { font-size: 12px !important; }
+	:root { font-size: 11px !important; }
 
 	/* less padding. Removes negative margin on header, rounded corners were cut off. */
 	body { padding: 0; }
 	header { margin-left: 0; margin-right: 0; }
+	dl.competences > dt { min-width: 95px !important; }
+	dl.competences > dd { margin-left: 100px !important; }
 }
-
-dl.competences > dt {
-	color: var(--html-darkgrey);
-	font-style: italic;
-	float: left;
-	text-align: right;
-	min-width: 145px; }
-dl.competences > dd { margin-left: 150px; } /* the floating <dt> will go above this margin */
 
 ul.general { list-style: circle; }
 
+/********************
+ * .timeline, to be filled with .experience
+ */
 .timeline {
-	transition: all .4s ease;
 	position: relative;
 	margin-left: 4em;
 }
@@ -176,22 +163,8 @@ ul.general { list-style: circle; }
 	background: var(--murder-grey);
 	border-radius: .25rem;
 }
-
-.experience {
-	position: relative;
-	border: 3px solid var(--murder-red);
-	border-radius: 0 1rem;
-	margin-bottom: 1rem;
-}
-.experience > h3 {
-	color: var(--html-white);
-	background-color: var(--murder-red);
-	border-top-right-radius: 10px;
-	font-size: 1rem;
-	margin: -1px -1px .75rem -1px;
-	padding: .5rem 1rem;
-}
-.experience > time { /* The circle on the timeline with the number */
+.timeline > .experience { position: relative; }
+.timeline > .experience > time { /* The circle on the timeline with the number */
 	position: absolute;
 	top: 0;
 	left: -3.75rem;
@@ -207,7 +180,7 @@ ul.general { list-style: circle; }
 	text-shadow: 0 1px 0 var(--murder-black);
 	z-index: 1;
 }
-.experience > time:before { /* The pointy thing that connects to the timeline */
+.timeline > .experience > time:before { /* The pointy thing that connects to the timeline */
 	content: "";
 	position: absolute;
 	left: 100%;
@@ -218,6 +191,26 @@ ul.general { list-style: circle; }
 	border-bottom: .75rem solid transparent;
 	border-left: .75rem solid var(--murder-red);
 	z-index: 1;
+}
+:not(.timeline) > .experience > time { display: none; }
+
+/********************
+ * .experience, and what's inside
+ */
+.experience {
+	border: 3px solid var(--murder-red);
+	border-radius: 0 1rem;
+	margin-bottom: 1rem;
+	padding: 0 .75rem;
+	page-break-inside: avoid;
+}
+.experience > h3 {
+	color: var(--html-white);
+	background-color: var(--murder-red);
+	border-top-right-radius: 10px;
+	font-size: 1rem;
+	margin: -1px calc(-.75rem - 1px) .75rem calc(-.75rem - 1px);
+	padding: .5rem;
 }
 .experience > em {
 	display: block;
@@ -233,43 +226,18 @@ ul.general { list-style: circle; }
 }
 .experience > a { display: none; }
 
-@supports (display: grid) {
-@media print, screen and (min-width: 768px) {
-	.timeline {
-		grid-gap: 1rem 4rem;
-		grid-template-columns: 1fr 1fr;
-		margin: 0;
-		display: grid;
-	}
-
-	/* block the top-right spot. Disaligns the left and right columns. */
-	.timeline::after {
-		content: "";
-		display: block;
-		height: 6rem;
-		grid-row: 1 / 2;
-		grid-column: 2 / 3;
-	}
-
-	.experience {
-		grid-row: span 3;
-		margin-bottom: auto;
-	}
-	.experience:last-child { grid-row: span 2; }
-
-	.timeline::before {
-		left: calc(50% - .25rem);
-	}
-	.experience:nth-of-type(odd) > time {
-		left: calc(100% + .75rem);
-	}
-
-	/* Move the arrow on the other side/the bottom */
-	.experience:nth-of-type(odd) > time:before {
-		left: unset;
-		right: 100%;
-		border-left: 0;
-		border-right: .75rem solid var(--murder-red);
-	}
+dl.competences > dt {
+	color: var(--html-darkgrey);
+	font-style: italic;
+	float: left;
+	text-align: right;
+	min-width: 145px;
 }
+dl.competences > dd { margin-left: 150px; } /* the floating <dt> will go above this margin */
+dl.projects > dt {
+	text-decoration: underline;
+}
+dl.projects > dd {
+	margin-bottom: .75rem;
+	text-align: justify;
 }
