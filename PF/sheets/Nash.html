@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Artificier</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.guardian { color: var(--divination-blue); }
+		.guardian.weapon { color: var(--murder-black); border-color: var(--divination-blue); }
+		.guardian.weapon > h2 { background-color: var(--divination-blue); border-color: var(--divination-blue); }
+		.infiltrator { color: var(--abjuration-gold); }
+		.infiltrator.weapon { color: var(--murder-black); border-color: var(--abjuration-gold); }
+		.infiltrator.weapon > h2 { background-color: var(--abjuration-gold); border-color: var(--abjuration-gold); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Nash McCoy, resourceful conscript</h1>
+			LG Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>10</dd>
+
+				<dt>Dex</dt>
+				<dd>14 <small>13, <u title="Racial">1</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>12</dd>
+
+				<dt>Int</dt>
+				<dd>16 <small>14, <u title="Racial">2</u></small></dd>
+
+				<dt>Wis</dt>
+				<dd>13</dd>
+
+				<dt>Cha</dt>
+				<dd>12</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><s><a href="http://dnd5e.wikidot.com/owlin">Owlin</a></s> Human</dd>
+
+				<dt>Background</dt>
+				<dd><a href="http://dnd5e.wikidot.com/background:faction-agent">Faction Agent</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="http://dnd5e.wikidot.com/artificer">Artificier</a> 3</dd>
+				<dd class="archetype">Specialist <a href="http://dnd5e.wikidot.com/artificer:armorer">Armorer</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Corellon</dd>
+
+				<dt>Senses</dt>
+				<dd title="Owlin">Darkvision 120ft</dd>
+
+				<dt>Speed</dt>
+				<dd class="guardian">30 ft.</dd>
+				<dd class="infiltrator">35 ft.</dd>
+				<dd class="infiltrator">Fly 35 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Elven, Giant, Goblin</dd>
+			</dl>
+		</section>
+
+		<hr>
+		<section class="row">
+			<ul class="summations">
+				<li>
+					<strong>0</strong>
+					<b>STR saving throw</b>
+					<small>0 str</small>
+				</li>
+				<li class="br">
+					<strong>0</strong>
+					Athletics
+					<small>0 str</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					<b>DEX saving throw</b>
+					<small>2 dex</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					Acrobatics
+					<small>2 dex</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					Sleight of Hand
+					<small>2 dex</small>
+				</li>
+				<li class="br">
+					<strong>4</strong>
+					Stealth
+					<small>2 dex, <u title="Race (Fixed)">2 prf</u></small> <u title="Dampening Field" class="infiltrator">Advantage</u>, <u title="Heavy Armor" class="guardian">Disadvantage</u>
+				</li>
+				<li class="br">
+					<strong>3</strong>
+					<b>CON saving throw</b>
+					<small>1 con, <u title="Class (Fixed)">2 prf</u></small>
+				</li>
+				<li>
+					<strong>5</strong>
+					<b>INT saving throw</b>
+					<small>3 int, <u title="Class (Fixed)">2 prf</u></small>
+				</li>
+				<li>
+					<strong>5</strong>
+					Arcana
+					<small>3 int, <u title="Class (Flexible)">2 prf</u></small>
+				</li>
+				<li>
+					<strong>3</strong>
+					History
+					<small>3 int</small>
+				</li>
+				<li>
+					<strong>5</strong>
+					Investigation
+					<small>3 int, <u title="Background (Free)">2 prf</u></small>
+				</li>
+				<li>
+					<strong>5</strong>
+					Nature
+					<small>3 int, <u title="Class (Flexible)">2 prf</u></small>
+				</li>
+				<li class="br">
+					<strong>3</strong>
+					Religion
+					<small>3 int</small>
+				</li>
+				<li>
+					<strong>1</strong>
+					<b>WIS saving throw</b>
+					<small>1 wis</small>
+				</li>
+				<li>
+					<strong>1</strong>
+					Animal Handling
+					<small>1 wis</small>
+				</li>
+				<li>
+					<strong>1</strong>
+					Insight
+					<small>1 wis</small>
+				</li>
+				<li>
+					<strong>1</strong>
+					Medecine
+					<small>1 wis</small>
+				</li>
+				<li>
+					<strong>3</strong>
+					Perception
+					<small>1 wis, <u title="Background (Free)">2 prf</u></small>
+				</li>
+				<li class="br">
+					<strong>1</strong>
+					Survival
+					<small>1 wis</small>
+				</li>
+				<li>
+					<strong>1</strong>
+					<b>CHA saving throw</b>
+					<small>1 cha</small>
+				</li>
+				<li>
+					<strong>1</strong>
+					Deception
+					<small>1 cha</small>
+				</li>
+				<li>
+					<strong>1</strong>
+					Intimidate
+					<small>1 cha</small>
+				</li>
+				<li>
+					<strong>1</strong>
+					Performance
+					<small>1 cha</small>
+				</li>
+				<li>
+					<strong>1</strong>
+					Persuasion
+					<small>1 cha</small>
+				</li>
+			</ul>
+			<div style="flex:3">
+				<ul class="summations">
+					<li class="br">
+						<strong>2</strong>
+						<b>Init</b>
+						<small>2 dex</small>
+					</li>
+					<li>
+						<strong>21</strong>
+						<b>HP</b>
+						<small>3 artificier: 5 class, 1 con; 3 first-level bonus</small>
+					</li>
+					<li class="guardian">
+						<strong>21</strong>
+						<b>AC</b>
+						<small>18 armor, &ndash; dex, <u title="Enhanced Defense Infusion">3 shield</u></small>
+					</li>
+					<li class="infiltrator">
+						<strong>17</strong>
+						<b>AC</b>
+						<small>12 armor, 2 dex, <u title="Enhanced Defense Infusion">3 shield</u></small>
+					</li>
+				</ul>
+
+				<!--Thunder Gaunlets-->
+				<div class="weapon guardian">
+					<h2>Thunder Gauntlets <b>Thunder</b></h2>
+					<div class="summation"><strong>+6</strong> vs AC <small>3 int, 2 prf, <u title="Enhanced Weapon Infusion">1</u></small></div>
+					<div class="summation"><strong>1d8+6</strong> <small>3 int, <u title="Enhanced Weapon Infusion">1</u></small></div>
+					<div class="circumstancialBonus">A foe you hit has disadvantage on attacks on everyone but you for 1 round.</div>
+				</div>
+
+				<h2 class="guardian">Defensive Field <u title="2 prf">2/day</u></h2>
+				<p class="guardian">As a bonus action, gain <u title="3 artificier">3</u> temp hp.</p>
+
+				<!--Lightning Launcher-->
+				<div class="weapon infiltrator">
+					<h2>Lightning Launcher <b>90/300ft</b> <b class="electricity">⚡</b></h2>
+					<div class="summation"><strong>+6</strong> vs AC <small>3 int, 2 prf, <u title="Enhanced Weapon Infusion">1</u></small></div>
+					<div class="summation"><strong>1d6+4</strong> <small>3 int, <u title="Enhanced Weapon Infusion">1</u></small></div>
+					<div class="circumstancialBonus">1/round, when you hit, add an extra 1d6 dmg.</div> 
+				</div>
+
+				<h2>Ritual Casting</h2>
+				<h2>The Right Tool for the Job</h2>
+
+				<h2>Magical Tinkering</h2>
+				<p>As an action, tinker with an object. Affect <u title="3 int">3</u> at a time.
+					These objects can: shed bright light, record a message, emit an odor or nonverbal sound, have a static visual effect.</p>
+
+				<h2>Arcane Armor</h2>
+				<p>As an action, you can designate an armor as your arcane armor.<br>
+					It has no STR requirement, counts as spell focus, cannot be removed by foes.
+					You can put it on/off as an action.
+					You can change from <span class="infiltrator">infiltrator</span> to <span class="guardian">guardian</span> every rest.</p>
+
+
+			</div>
+		</section>
+
+		<hr>
+		<section class="row">
+			<div>
+				<h2>Arcane Spells</h2>
+				<p class="summation">
+					<strong>5</strong>
+					<b>Spell Attack</b>; 13 <b>DC</b>
+					<small>8, 3 int, 2 prf</small>
+				</p>
+				<p>Prepare <u title="1 artificier&frac12;, 3 int">4</u> spells every day, plus cantrips and bonus.</p>
+			</div>
+			<div>
+				<h2>Level 0</h2>
+				<ul>
+					<li><a class="spell concentration" href="http://dnd5e.wikidot.com/spell:guidance">guidance</a>,</li>
+					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:mending">mending</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 1 <u title="3 class">3/day</u></h2>
+				<ul>
+					<li><a class="spell bonus" href="http://dnd5e.wikidot.com/spell:magic-missile">magic missile</a>,</li>
+					<li><a class="spell bonus" href="http://dnd5e.wikidot.com/spell:thunderwave">thunderwave</a>,</li>
+					<li><a class="spell concentration" href="http://dnd5e.wikidot.com/spell:arcane-weapon">arcane weapon</a>,</li>
+					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:cure-wounds">cure wounds</a>,</li>
+					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:detect-magic">detect magic</a>,</li>
+					<li><a class="spell concentration" href="http://dnd5e.wikidot.com/spell:expeditious-retreat">expeditious retreat</a>.</li>
+				</ul>
+			</div>
+			<div class="wide">
+				<h2><a href="http://dnd5e.wikidot.com/artificer:infusions">Infusions</a></h2>
+				<ul>
+					<li>Armor of Magical Strength,</li>
+					<li>Enhanced Defense,</li>
+					<li>Enhanced Weapon,</li>
+					<li>Replicate Magic Item.</li>
+				</ul>
+				<p>Apply an infusion every day, maintain <u title="Increases at 2nd, 6th, 10th, 14th, 18th">2</u> at a time.</p>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
