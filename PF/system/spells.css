@@ -1,0 +1,64 @@
+/* Spells */
+.spell, a.spell { font-style:italic; }
+.pantheon, a.pantheon, a.pantheon:visited { color: var(--divination-blue); }
+
+/* Actions */
+.reaction::before { content: "↻ "; }
+.no-action::before,
+.bonus-action::before { content: "◇ "; }
+.one-action::before { content: "◆ "; }
+.two-actions::before { content: "◈ "; }
+.three-actions::before { content: "❖ "; }
+
+/* Schools */
+.spell.bonus, a.spell.bonus, a.spell.bonus:visited,
+.spell.bonus::after, a.spell.bonus::after, a.spell.bonus:visited::after,
+.spell.domain, a.spell.domain, a.spell.domain:visited,
+.spell.divination, a.spell.divination, a.spell.divination:visited { color: var(--divination-blue); }
+.spell.conjuration, a.spell.conjuration, a.spell.conjuration:visited { color: var(--conjuration-green); }
+.spell.illusion, a.spell.illusion, a.spell.illusion:visited { color: var(--illusion-grey); }
+.spell.evocation, a.spell.evocation, a.spell.evocation:visited { color: var(--evocation-red); }
+.spell.abjuration, a.spell.abjuration , a.spell.abjuration:visited{ color: var(--abjuration-gold); }
+.spell.transmutation, a.spell.transmutation, a.spell.transmutation:visited { color: var(--transmutation-teal); }
+.spell.enchantment, a.spell.enchantment, a.spell.enchantment:visited { color: var(--enchantment-lilac); }
+.spell.necromancy, a.spell.necromancy, a.spell.necromancy:visited { color: var(--necromancy-purple);}
+
+/* Damage Types */
+.fire:not(.spell), a.fire:not(.spell), a.fire:not(.spell):visited { color: var(--evocation-red); }
+.cold:not(.spell), a.cold:not(.spell), a.cold:not(.spell):visited { color: var(--transmutation-teal); }
+.acid:not(.spell), a.acid:not(.spell), a.acid:not(.spell):visited { color: var(--conjuration-green); }
+.electricity:not(.spell), a.electricity:not(.spell), a.electricity:not(.spell):visited { color: var(--abjuration-gold); }
+
+/* Spell Reminders */
+.spell::after,
+.concentration::after {
+	vertical-align: text-top;
+	font-size: .65em;
+	font-style: normal;
+	font-weight: normal;
+	color: var(--murder-black);
+}
+.spell.bonus::after¸ { content: " δ"; } /* the .domain class is deprecated, use .bonus */
+.spell.bonus.off-class::after { content: " Δ"; }
+.concentration::after { content: " C"; }
+.spell.ritual::after { content: " R"; }
+.spell.upcast::after { content: " U"; }
+
+.spell.ritual.upcast::after { content: " RU"; }
+.spell.concentration.ritual::after { content: " CR"; }
+.spell.concentration.upcast::after { content: " CU"; }
+.spell.concentration.ritual.upcast::after { content: " CRU"; }
+.spell.bonus.upcast::after { content: " δU"; }
+.spell.bonus.ritual::after { content: " δR"; }
+.spell.bonus.concentration::after { content: " δC"; }
+.spell.bonus.ritual.upcast::after { content: " δRU"; }
+.spell.bonus.concentration.ritual::after { content: " δCR"; }
+.spell.bonus.concentration.upcast::after { content: " δCU"; }
+.spell.bonus.concentration.ritual.upcast::after { content: " δCRU"; }
+.spell.bonus.off-class.upcast::after { content: " ΔU"; }
+.spell.bonus.off-class.ritual::after { content: " ΔR"; }
+.spell.bonus.off-class.concentration::after { content: " ΔC"; }
+.spell.bonus.off-class.ritual.upcast::after { content: " ΔRU"; }
+.spell.bonus.off-class.concentration.ritual::after { content: " ΔCR"; }
+.spell.bonus.off-class.concentration.upcast::after { content: " ΔCU"; }
+.spell.bonus.off-class.concentration.ritual.upcast::after { content: " ΔCRU"; }

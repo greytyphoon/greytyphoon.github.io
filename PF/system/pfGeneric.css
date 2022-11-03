@@ -1,5 +1,6 @@
 /** Created by Rémi Doutre, 2015-2021. Public domain. **/
 @import url("../../basic.css");
+@import url("spells.css");
 
 /********************
  * Custom Components (.summation(s), strong, small, .circumstancialBonus)
@@ -48,53 +49,6 @@ ul.summations > li > .circumstancialBonus { padding-left: 0; }
 /* Right now it's mostly TWF, NaturalAttacks, and CompanionTricks. */
 .apartee.float { float: right; }
 .apartee.align { text-align: right; }
-
-/********************
- * Spells, Schools, damage types
- */
-.spell, a.spell { font-style:italic;}
-
-.spell.bonus, a.spell.bonus, a.spell.bonus:visited,
-.spell.domain, a.spell.domain, a.spell.domain:visited,
-.spell.patron, a.spell.patron, a.spell.patron:visited,
-.spell.bloodline, a.spell.bloodline, a.spell.bloodline:visited,
-.spell.divination, a.spell.divination, a.spell.divination:visited{
-	color: var(--divination-blue);}
-.spell.conjuration, a.spell.conjuration, a.spell.conjuration:visited {
-	color: var(--conjuration-green);}
-.spell.illusion, a.spell.illusion, a.spell.illusion:visited{
-	color: var(--illusion-grey);}
-.spell.evocation, a.spell.evocation, a.spell.evocation:visited{
-	color: var(--evocation-red);}
-.spell.abjuration, a.spell.abjuration , a.spell.abjuration:visited{
-	color: var(--abjuration-gold);}
-.spell.transmutation, a.spell.transmutation, a.spell.transmutation:visited{
-	color: var(--transmutation-teal);}
-.spell.enchantment, a.spell.enchantment, a.spell.enchantment:visited{
-	color: var(--enchantment-lilac);}
-.spell.necromancy, a.spell.necromancy, a.spell.necromancy:visited{
-	color: var(--necromancy-purple);}
-
-.spell.bonus::before,
-.spell.domain::before,
-.spell.patron::before,
-.spell.bloodline::before {
-	content: "\03b4\00a0";
-	display: inline-block;
-	width: .8em;
-	margin-left: -.8em;
-	text-align: right;
-	font-style: normal;	}
-.spell.bonus.off-class::before,
-.spell.domain.off-class::before,
-.spell.patron.off-class::before,
-.spell.bloodline.off-class::before { content: "\0394\00a0"; }
-
-.fire:not(.spell), a.fire:not(.spell), a.fire:not(.spell):visited { color: var(--evocation-red); }
-.cold:not(.spell), a.cold:not(.spell), a.cold:not(.spell):visited { color: var(--transmutation-teal); }
-.acid:not(.spell), a.acid:not(.spell), a.acid:not(.spell):visited { color: var(--conjuration-green); }
-.electricity:not(.spell), a.electricity:not(.spell), a.electricity:not(.spell):visited { color: var(--abjuration-gold); }
-.pantheon, a.pantheon, a.pantheon:visited { color: var(--divination-blue); }
 
 /********************
  * CharStudies and Tables (tblComparison / playerInfo)

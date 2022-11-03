@@ -73,13 +73,6 @@ dl#featsWrapper > dd{
 	margin-left: -1rem;
 	font-weight: bold; }
 
-/*actions*/
-.reaction::before { content: "\21bb "; content: "↻ "; }
-.no-action::before { content: "\25c7 "; content: "◇ "; }
-.one-action::before { content: "\25c6 "; content: "◆ "; }
-.two-actions::before { content: "\25c8 "; content: "◈ "; }
-.three-actions::before { content: "\2756 "; content: "❖ "; }
-
 /*equipments*/
 #mundaneItemsWrapper{
 	float: right;
