@@ -1,18 +1,7 @@
-/** Created by Rémi Doutre, 2015-2018. Public domain. **/
+/** Created by Rémi Doutre, 2015-2022. Public domain. **/
 @import url("../basic.css");
 
-/**
- * Custom Palette:
- * 'Zen Garden' by Greytyphoon
- * #0b0608 murder-black
- * #eaebef murder-grey
- * #5a9b1d serene-green (derived of murder-red)
- * #ffffff html-white
- * #a9a9a9 html-darkgrey
- **/
-:root {
-	--serene-green: #5a9b1d;
-	--murder-red: var(--serene-green); }
+:root { --murder-red: var(--serene-green); }
 
 /********************
  * Custom Components   (.credit)

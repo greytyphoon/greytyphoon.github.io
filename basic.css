@@ -9,6 +9,9 @@
  * #fcf7f9 murder-white
  * #eaebef murder-grey
  * #c62825 murder-red
+ *
+ * #2573c6 virtue-blue (derived of murder-red)
+ * #5a9b1d serene-green (derived of murder-red)
  **/
 :root {
 	--murder-black: #0b0608;
@@ -16,6 +19,8 @@
 	--murder-red: #c62825;
 	--html-white: #ffffff;
 	--html-darkgrey: #a9a9a9;
+	--virtue-blue: #2573c6;
+	--serene-green: #5a9b1d;
 
 	--divination-blue: #2613f2;
 	--conjuration-green: #13aa26;

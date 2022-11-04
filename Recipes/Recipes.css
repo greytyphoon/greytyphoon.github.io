@@ -1,18 +1,7 @@
-/** Created by Rémi Doutre, 2015-2018. Public domain. **/
+/** Created by Rémi Doutre, 2015-2022. Public domain. **/
 @import url("../basic.css");
 
-/**
- * Custom Palette:
- * 'Virtue's Reward' by Greytyphoon
- * #0b0608 murder-black
- * #eaebef murder-grey
- * #2573c6 virtue-blue (derived of murder-red)
- * #ffffff html-white
- * #a9a9a9 html-darkgrey
- **/
-:root {
-	--virtue-blue: #2573c6;
-	--murder-red: var(--virtue-blue); }
+:root { --murder-red: var(--virtue-blue); }
 
 /********************
  * Custom Components   (#fixref, #header, .credit, .actionStep)
