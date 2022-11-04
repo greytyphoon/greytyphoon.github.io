@@ -15,7 +15,6 @@
 /* Schools */
 .spell.bonus, a.spell.bonus, a.spell.bonus:visited,
 .spell.bonus::after, a.spell.bonus::after, a.spell.bonus:visited::after,
-.spell.domain, a.spell.domain, a.spell.domain:visited,
 .spell.divination, a.spell.divination, a.spell.divination:visited { color: var(--divination-blue); }
 .spell.conjuration, a.spell.conjuration, a.spell.conjuration:visited { color: var(--conjuration-green); }
 .spell.illusion, a.spell.illusion, a.spell.illusion:visited { color: var(--illusion-grey); }
@@ -44,7 +43,7 @@
 	font-weight: normal;
 	color: var(--murder-black);
 }
-.spell.bonus::after { content: "\a0δ"; } /* the .domain class is deprecated, use .bonus */
+.spell.bonus::after { content: "\a0δ"; }
 .spell.bonus.off-class::after { content: "\a0Δ"; }
 .concentration::after { content: "\a0\43"; } /* \43 just means C, but having C would be interpreted as \a0c */
 .spell.ritual::after { content: "\a0R"; }
