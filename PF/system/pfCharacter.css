@@ -4,6 +4,8 @@
 ul:not(.list), ol:not(.list), dl:not(.list) {
 	padding: 0;
 	list-style: none; }
+dl.bardic > dd + dt { margin-top: .75em; }
+dl.bardic > dt > small { color: var(--enchantment-lilac); }
 
 /********************
  * Specific Styling
