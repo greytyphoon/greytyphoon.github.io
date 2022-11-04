@@ -8,6 +8,8 @@
 .bonus-action::before { content: "◇ "; }
 .one-action::before { content: "◆ "; }
 .two-actions::before { content: "◈ "; }
+.one-round::before,
+.full-round::before,
 .three-actions::before { content: "❖ "; }
 
 /* Schools */
@@ -24,6 +26,10 @@
 .spell.necromancy, a.spell.necromancy, a.spell.necromancy:visited { color: var(--necromancy-purple);}
 
 /* Damage Types */
+.spell.fire::after { content: "\a0🔥"; }
+.spell.cold::after { content: "\a0❄"; color: var(--transmutation-teal); }
+.spell.acid::after { content: "\a0🧪"; }
+.spell.electricity::after { content: "\a0⚡"; }
 .fire:not(.spell), a.fire:not(.spell), a.fire:not(.spell):visited { color: var(--evocation-red); }
 .cold:not(.spell), a.cold:not(.spell), a.cold:not(.spell):visited { color: var(--transmutation-teal); }
 .acid:not(.spell), a.acid:not(.spell), a.acid:not(.spell):visited { color: var(--conjuration-green); }
@@ -38,11 +44,11 @@
 	font-weight: normal;
 	color: var(--murder-black);
 }
-.spell.bonus::after¸ { content: " δ"; } /* the .domain class is deprecated, use .bonus */
-.spell.bonus.off-class::after { content: " Δ"; }
-.concentration::after { content: " C"; }
-.spell.ritual::after { content: " R"; }
-.spell.upcast::after { content: " U"; }
+.spell.bonus::after { content: "\a0δ"; } /* the .domain class is deprecated, use .bonus */
+.spell.bonus.off-class::after { content: "\a0Δ"; }
+.concentration::after { content: "\a0\43"; } /* \43 just means C, but having C would be interpreted as \a0c */
+.spell.ritual::after { content: "\a0R"; }
+.spell.upcast::after { content: "\a0U"; }
 
 .spell.ritual.upcast::after { content: " RU"; }
 .spell.concentration.ritual::after { content: " CR"; }
@@ -62,3 +68,8 @@
 .spell.bonus.off-class.concentration.ritual::after { content: " ΔCR"; }
 .spell.bonus.off-class.concentration.upcast::after { content: " ΔCU"; }
 .spell.bonus.off-class.concentration.ritual.upcast::after { content: " ΔCRU"; }
+
+.spell.touch::after { content: " [touch]"; color: var(--transmutation-teal); }
+.spell.touch.bonus::after { content: " δ[touch]"; }
+.spell.touch.bonus.off-class::after { content: " Δ[touch]"; }
+.spell.touch.cold::after { content: " ❄[touch]"; }

@@ -7,7 +7,9 @@
 	<title>Grey's Psychic</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
 	<style>
-		.mind-affecting::after { content: " [mind]"; font-size: .8em; color: var(--enchantment-lilac); }
+		.mind-affecting::after { content: " [mind]"; color: var(--enchantment-lilac); }
+		.mind-affecting.bonus::after { content: " δ[mind]"; }
+
 		.coming-soon { display: none !important; }
 		#starseeker-spells > ul:first-child { display: none; }
 		#starseeker-spells > ul { padding-left: .75rem; cursor: pointer; }
@@ -186,9 +188,9 @@
 		<!-- title Spells -->
 		<hr>
 		<div id="spellHeader" class="apartee">
-			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Intelligence modifier + <b class="spell divination">+1 for divination</b>.<br>
+			The Difficulty Class for a saving throw against your spells is 10 + the spell level + your Intelligence modifier <b class="spell divination">+1 for divination</b>.<br>
 			When you make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, you roll a d20 and add your caster level and your Intelligence modifier.<br>
-			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR + <b class="spell divination" title="Diviner's Delving">+2 for divination</b>.<br>
+			To affect a creature that has <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, you make a caster level check (1d20 + caster level) at least equal to the creature's SR <b class="spell divination" title="Diviner's Delving">+2 for divination</b>.<br>
 
 			<h3><a href="https://d20pfsrd.com/occult-adventures/psychic-magic">Occult Magic Rules</a></h3>
 			Somatic --> Emotion (cannot be cast while under [emotion|fear] effect)<br>
