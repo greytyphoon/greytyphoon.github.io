@@ -59,15 +59,16 @@ dl#featsWrapper > dd{
 
 /*weapons*/
 .weapon {
-	border: 1px solid var(--murder-red);
+	--weapon-color: var(--murder-red);
+	border: 1px solid var(--weapon-color);
 	border-radius: 4px;
 	padding: 4px 10px;
 	margin-bottom: 0.75rem; }
 .weapon > h2 {
-	background-color: var(--murder-red);
+	background-color: var(--weapon-color);
 	color: var(--html-white);
 	text-shadow: 1px 1px 1px var(--murder-black);
-	border-bottom: 1px solid var(--murder-red);
+	border-bottom: 1px solid var(--weapon-color);
 	margin: -4px -10px 4px -10px;
 	padding: .15em .5em; }
 .weapon > .summation > strong:first-child {
