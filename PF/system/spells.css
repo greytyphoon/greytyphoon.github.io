@@ -5,6 +5,7 @@
 /* Actions */
 .reaction::before { content: "↻ "; }
 .no-action::before,
+.swift-action::before,
 .bonus-action::before { content: "◇ "; }
 .one-action::before { content: "◆ "; }
 .two-actions::before { content: "◈ "; }
