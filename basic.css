@@ -220,6 +220,7 @@ h2 > *:not(a), .subtitle > *:not(a) {
 	margin-left: .75em;
 }
 
+.condensed { font-size: .8rem; }
 .br { margin-bottom: 0.75em; } /*for 'breathing room' after a paragraph. Does not simply replace random <br>s in my code, no sir. Obviously not. */
 
 /********************
