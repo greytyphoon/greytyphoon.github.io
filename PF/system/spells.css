@@ -1,17 +1,20 @@
 /* Spells */
-.spell, a.spell { font-style:italic; }
+.spell, a.spell { font-style: italic; }
 .pantheon, a.pantheon, a.pantheon:visited { color: var(--divination-blue); }
 
+/* Resets */
+h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spell::after { font-style: normal; font-weight: normal; }
+
 /* Actions */
-.reaction::before { content: "↻ "; }
+.reaction::before { content: "↻\a0"; }
 .no-action::before,
 .swift-action::before,
-.bonus-action::before { content: "◇ "; }
-.one-action::before { content: "◆ "; }
-.two-actions::before { content: "◈ "; }
+.bonus-action::before { content: "◇\a0"; }
+.one-action::before { content: "◆\a0"; }
+.two-actions::before { content: "◈\a0"; }
 .one-round::before,
 .full-round::before,
-.three-actions::before { content: "❖ "; }
+.three-actions::before { content: "❖\a0"; }
 
 /* Schools */
 .spell.bonus, a.spell.bonus, a.spell.bonus:visited,
@@ -40,9 +43,6 @@
 .concentration::after {
 	vertical-align: text-top;
 	font-size: .65em;
-	font-style: normal;
-	font-weight: normal;
-	color: var(--murder-black);
 }
 .spell.bonus::after { content: "\a0δ"; }
 .spell.bonus.off-class::after { content: "\a0Δ"; }
