@@ -1,4 +1,4 @@
-/** Created by Rémi Doutre, 2015-2021. Public domain. **/
+/** Created by Rémi Doutre, 2015-2022. Public domain. **/
 @import url("pfGeneric.css");
 
 ul:not(.list), ol:not(.list), dl:not(.list) {
@@ -17,19 +17,19 @@ dl.bardic > dt > small { color: var(--enchantment-lilac); }
 dl.charInfo > dt {
 	float: left;
 	text-align: right;
-	min-width: 39%;
-	vertical-align: top; }
+	min-width: 39%; }
 dl.charInfo > dd {
 	margin-left: 40%; } /* the floating <dt> will go above this margin */
-#subheader  {
-	background-color: var(--murder-grey);
-	border: 1px dashed var(--html-darkgrey);
-	border-radius: 4px;
-	padding: 2px;
+#subheader {
+	border: 1px dotted var(--html-darkgrey);
+	border-radius: .5em;
+	padding: .1em;
 	font-size: 1rem; }
-#subheader > dd.archetype  {
+#subheader > dd.archetype {
 	font-size: .75rem; }
-/* Removes redundant margin at top of page, and makes the subheader's BG not take all the height */
+dl#subheader > dd.archetype::before {
+	content: "‣\a0"; }
+/* Removes redundant margin at top of page, and makes the subheader's border-box not take all the height */
 @media print, screen and (min-width: 768px) {
 	section.row > .charInfo { margin-bottom: auto; }
 }
@@ -63,7 +63,8 @@ dl#featsWrapper > dd{
 	border: 1px solid var(--weapon-color);
 	border-radius: 4px;
 	padding: 4px 10px;
-	margin-bottom: 0.75rem; }
+	margin-bottom: 0.75rem;
+	box-shadow: 1px 1px var(--weapon-color); }
 .weapon > h2 {
 	background-color: var(--weapon-color);
 	color: var(--html-white);
