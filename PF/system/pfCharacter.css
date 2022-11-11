@@ -28,7 +28,7 @@ dl.charInfo > dd {
 #subheader > dd.archetype {
 	font-size: .75rem; }
 dl#subheader > dd.archetype::before {
-	content: "‣\a0"; }
+	content: "·\a0"; }
 /* Removes redundant margin at top of page, and makes the subheader's border-box not take all the height */
 @media print, screen and (min-width: 768px) {
 	section.row > .charInfo { margin-bottom: auto; }
