@@ -34,6 +34,29 @@ dl#subheader > dd.archetype::before {
 	section.row > .charInfo { margin-bottom: auto; }
 }
 
+/*main-picture*/
+#main-picture {
+	display: block;
+	margin: 0 auto; }
+img#main-picture,
+#main-picture img {
+	margin-bottom: .75em;
+	border: 2px solid var(--html-darkgrey);
+	border-radius: 1em;
+	box-shadow: 2px 2px 2px var(--html-darkgrey); }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	img#main-picture, #main-picture img { max-height: 300px; }
+}
+@media print, screen and (min-width: 992px) {
+	#main-picture {
+		float: right;
+		max-width: 200px;
+		margin-left: .25em; }
+}
+@media screen and (min-width: 1200px) {
+	#main-picture { max-width: 285px; }
+}
+
 /*feats*/
 dl#featsWrapper > dt{
 	float:left;
