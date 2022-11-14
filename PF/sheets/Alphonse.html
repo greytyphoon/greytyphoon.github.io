@@ -71,7 +71,7 @@
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
-		<a id="main-picture" href="https://www.artstation.com/artwork/48PBzk"><img src="https://i.pinimg.com/originals/32/5d/6e/325d6e4ad6de0f32e26ca0cc4f23f4ab.jpg" alt="Musketeer &copy;H.k"></a>
+		<img id="main-picture" src="https://i.pinimg.com/originals/32/5d/6e/325d6e4ad6de0f32e26ca0cc4f23f4ab.jpg" alt="Musketeer &copy;H.k"  onClick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>free</dt>
 			<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=129">Bright Lion Dedication</a></dd>
@@ -441,5 +441,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onClick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onClick="parentNode.close();">✖</b>
+		<h2>Alphonse – Art by <a href="https://www.artstation.com/user-4541">H.k</a></h2>
+		<a href="https://www.artstation.com/artwork/48PBzk">
+		<img src="https://i.pinimg.com/originals/32/5d/6e/325d6e4ad6de0f32e26ca0cc4f23f4ab.jpg" alt="Musketeer &copy;H.k"></a>
+	</dialog>
 </body>
 </html>

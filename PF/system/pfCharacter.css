@@ -56,13 +56,33 @@ img#main-picture,
 @media screen and (min-width: 1200px) {
 	#main-picture { max-width: 285px; }
 }
-dialog[open] {
+dialog.gallery[open] {
 	border: .15rem solid var(--murder-black);
+	padding: 0;
 	border-radius: .5rem;
-	overflow-y: hidden; }
-dialog::backdrop {
+	color: var(--html-white);
+	text-shadow: 0 0 2px var(--murder-black); }
+dialog.gallery::backdrop {
 	background-color: rgba(100,100,100,0.8);
 	cursor: pointer; }
+dialog.gallery > h2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	border: none;
+	padding: 1em;
+	background: linear-gradient(rgba(11,6,8,0), rgba(11,6,8,0.66)); } /* 11,6,8 is --murder-black */
+dialog.gallery a, dialog.gallery a:link, dialog.gallery a:visited, dialog.gallery a:active { color: var(--html-white); }
+dialog.gallery > b {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	cursor: pointer;
+	background: radial-gradient(circle, rgba(11,6,8,0.33), rgba(11,6,8,0) 50%); }
+dialog.gallery img { max-height: calc(100vh - 3em); }
 
 /*feats*/
 dl#featsWrapper > dt{
