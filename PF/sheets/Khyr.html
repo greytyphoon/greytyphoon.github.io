@@ -66,6 +66,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="https://cdnb.artstation.com/p/assets/images/images/045/501/479/large/kaithzer-morejon-lyric03.jpg" alt="Lyric Cordelius, Aasimar Bard &copy;Kaithzer Morejón" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/combat-traits/reactionary">Reactionary</a></dd>
@@ -483,13 +484,6 @@
 				This reawakened bad memories for Khyr, but he was too involved to stop, too many people were counting on him.
 				He pushed the feelings down, deciding he'll address it all once the revolution is complete, but this might push him to act hastily.</p>
 
-			<details>
-				<summary class="subtitle">What Khyr looks like</summary>
-				<a href="https://kaithzer.artstation.com/projects/GXJo43">
-				<img src="https://cdnb.artstation.com/p/assets/images/images/045/501/479/large/kaithzer-morejon-lyric03.jpg" alt="Lyric Cordelius, Aasimar Bard &copy;Kaithzer Morejón"></a>
-				Art by <a href="https://kaithzer.artstation.com">Kaithzer Morejón</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Courageous and supportive</dd>
@@ -514,5 +508,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Khyr – Art by <a href="https://kaithzer.artstation.com">Kaithzer Morejón</a></h2>
+		<a href="https://kaithzer.artstation.com/projects/GXJo43">
+		<img src="https://cdnb.artstation.com/p/assets/images/images/045/501/479/large/kaithzer-morejon-lyric03.jpg" alt="Lyric Cordelius, Aasimar Bard &copy;Kaithzer Morejón"></a>
+	</dialog>
 </body>
 </html>

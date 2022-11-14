@@ -89,6 +89,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="https://64.media.tumblr.com/d1db29d8a1a70020ba022ce8ca4c7272/tumblr_pe1iodInMh1v65aajo1_r1_1280.png" alt="Ethereal: an Alterian Lance zine &copy;33-ko" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/faith-traits/canon-of-coin-faith">Canon of Coin</a></dd>
@@ -483,13 +484,6 @@
 				He is clearly a ritualist, and makes a living (other than skymaps) by doing readings of auras and astrology,
 				but nothing about him reveals more "immediate" spellcasting.</p>
 
-			<details>
-				<summary class="subtitle">What Folwyn looks like</summary>
-				<a href="https://azure-mirror.tumblr.com/post/185833483864/my-piece-for-ethereal-an-altean-lance-zine-3">
-				<img src="https://64.media.tumblr.com/d1db29d8a1a70020ba022ce8ca4c7272/tumblr_pe1iodInMh1v65aajo1_r1_1280.png" alt="Ethereal: an Alterian Lance zine &copy;33-ko"></a>
-				Art by <a href="https://33-ko.tumblr.com/post/177391256229">33-ko</a>🔒.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Calm &amp; free-spirited</dd>
@@ -516,6 +510,14 @@
 			<p>I would have loved to give him <a href="https://d20pfsrd.com/feats/general-feats/arithmancy">Arithmancy</a> but it's just not useful.</p>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Folwyn – Art by <a href="https://33-ko.tumblr.com/post/177391256229">33-ko</a>🔒</h2>
+		<a href="https://azure-mirror.tumblr.com/post/185833483864/my-piece-for-ethereal-an-altean-lance-zine-3">
+		<img src="https://64.media.tumblr.com/d1db29d8a1a70020ba022ce8ca4c7272/tumblr_pe1iodInMh1v65aajo1_r1_1280.png" alt="Ethereal: an Alterian Lance zine &copy;33-ko"></a>
+	</dialog>
+
 	<script>
 		function rememberClick(target) {
 			return () => {
