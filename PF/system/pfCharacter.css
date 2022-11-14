@@ -60,6 +60,7 @@ dialog.gallery[open] {
 	border: .15rem solid var(--murder-black);
 	padding: 0;
 	border-radius: .5rem;
+	background-color: var(--murder-black); /* patches a weird 1px gap left of the image in Chrome */
 	color: var(--html-white);
 	text-shadow: 0 0 2px var(--murder-black); }
 dialog.gallery::backdrop {
