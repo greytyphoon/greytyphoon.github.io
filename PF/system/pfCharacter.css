@@ -56,6 +56,13 @@ img#main-picture,
 @media screen and (min-width: 1200px) {
 	#main-picture { max-width: 285px; }
 }
+dialog[open] {
+	border: .15rem solid var(--murder-black);
+	border-radius: .5rem;
+	overflow-y: hidden; }
+dialog::backdrop {
+	background-color: rgba(100,100,100,0.8);
+	cursor: pointer; }
 
 /*feats*/
 dl#featsWrapper > dt{

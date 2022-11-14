@@ -72,7 +72,7 @@
 		</section>
 
 		<hr>
-		<a id="main-picture" href="https://www.deviantart.com/kimsokol/art/Sword-Daughter-Gavin-507296943"><img src="https://i.pinimg.com/originals/88/cc/55/88cc55071c0520f44456e21e75e9e4ed.jpg" alt="Sword Daughter: Gavin &copy;Kim Sokol"></a>
+		<img id="main-picture" src="https://i.pinimg.com/originals/88/cc/55/88cc55071c0520f44456e21e75e9e4ed.jpg" alt="Sword Daughter: Gavin &copy;Kim Sokol" onClick="document.getElementById('large-picture').showModal()">
 		<section class="row">
 			<ul class="summations">
 				<li>
@@ -268,13 +268,7 @@
 
 		<!--Notes-->
 		<section class="noprint">
-			<details>
-				<summary class="subtitle">What Tobias looks like</summary>
-				<a href="https://www.deviantart.com/kimsokol/art/Sword-Daughter-Gavin-507296943">
-				<img src="https://i.pinimg.com/originals/88/cc/55/88cc55071c0520f44456e21e75e9e4ed.jpg" alt="Sword Daughter: Gavin &copy;Kim Sokol"></a>
-				Art by <a href="https://www.deviantart.com/kimsokol">Kim Sokol</a>.
-			</details>
-
+			<hr>
 			<p>Thorncaeleb est né de <b>Erevan Miral'kalyn</b> et sa femme <b>Sariel</b> dans la ville d'<b>Aelshara</b>.
 				Il est leur deuxième enfant, cadet de son frère <b>Delsaran</b>, et aîné de ses deux soeurs <b>Silaqui</b> et <b>Minuva</b>.
 				Ses parents sont reliés à la cour royale, ayant le devoir de faire préserver les exploits de la noblesse par les arts, surtout la poésie épique et la tapisserie, leurs sagas et leurs motifs augmentant le prestige de la noblesse.
@@ -335,5 +329,10 @@
 			<p>Named from <i>thorn</i> and <i>caeleb</i> (steadfast, sick) in <a href="https://www.jrrvf.com/hisweloke/sindar/online/sindar/dict-sd-en.html">this Sindarin dictionary</a>.</p>
 		</section>
 	</div>
+
+	<dialog id="large-picture" onClick="if (event.target.nodeName === 'DIALOG') event.target.close();">
+		<h2>Tobias (Art by <a href="https://www.deviantart.com/kimsokol">Kim Sokol</a>) <b><a onClick="document.getElementById('large-picture').close();">×</a></b></h2>
+		<img src="https://i.pinimg.com/originals/88/cc/55/88cc55071c0520f44456e21e75e9e4ed.jpg" alt="Sword Daughter: Gavin &copy;Kim Sokol">
+	</dialog>
 </body>
 </html>
