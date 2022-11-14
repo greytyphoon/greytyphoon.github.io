@@ -74,8 +74,8 @@
 		<!-- title SKILLS & FEATS -->
 		<hr>
 		<div id="main-picture">
-			<img src="https://i.pinimg.com/originals/eb/bb/63/ebbb6358fa8946ec6d241ad466082460.png" alt="Female Magician with Blue Flame">
-			<img src="https://i.pinimg.com/originals/78/1d/4d/781d4da9df5c8d1dce5bacca144248c5.jpg" alt="Imaizumi Kagerou">
+			<img src="https://i.pinimg.com/originals/eb/bb/63/ebbb6358fa8946ec6d241ad466082460.png" alt="Female Magician with Blue Flame" onclick="document.getElementById('large-picture-human').showModal()">
+			<img src="https://i.pinimg.com/originals/78/1d/4d/781d4da9df5c8d1dce5bacca144248c5.jpg" alt="Imaizumi Kagerou" onclick="document.getElementById('large-picture-fox').showModal()">
 		</div>
 		<dl id="featsWrapper">
 			<dt>traits</dt>
@@ -490,22 +490,6 @@
 				She still has influence though, should she need it.</p>
 			<p>Konda used to be seen as a vigilante around Caxton. She once saved <b>Cole DiamondOre</b>'s life from a rampaging Otyugh!</p>
 
-			<details>
-				<summary class="subtitle">What Vanessa &amp; Konda look like</summary>
-				<section class="row">
-					<div>
-						<a href="https://i.pinimg.com/originals/eb/bb/63/ebbb6358fa8946ec6d241ad466082460.png">
-						<img src="https://i.pinimg.com/originals/eb/bb/63/ebbb6358fa8946ec6d241ad466082460.png" alt="Female Magician with Blue Flame"></a>
-						Could not find source.
-					</div>
-					<div>
-						<a href="https://no.pinterest.com/pin/501940320948271460/">
-						<img src="https://i.pinimg.com/originals/78/1d/4d/781d4da9df5c8d1dce5bacca144248c5.jpg" alt="Imaizumi Kagerou"></a>
-						Could not find source.
-					</div>
-				</section>
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Patient &amp; organized</dd>
@@ -530,5 +514,17 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture-human" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Vanessa – Could not find source</h2>
+		<img src="https://i.pinimg.com/originals/eb/bb/63/ebbb6358fa8946ec6d241ad466082460.png" alt="Female Magician with Blue Flame">
+	</dialog>
+
+	<dialog id="large-picture-fox" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Konda – Could not find source</h2>
+		<img src="https://i.pinimg.com/originals/78/1d/4d/781d4da9df5c8d1dce5bacca144248c5.jpg" alt="Imaizumi Kagerou">
+	</dialog>
 </body>
 </html>

@@ -74,7 +74,7 @@
 		</section>
 
 		<hr>
-		<a id="main-picture" href="https://www.artstation.com/artwork/r3PQO"><img src="https://i.pinimg.com/originals/56/93/f6/5693f68f11be4d90554b53e02477b3b2.jpg" alt="human concept &copy;kim sehoon"></a>
+		<img id="main-picture" src="https://i.pinimg.com/originals/56/93/f6/5693f68f11be4d90554b53e02477b3b2.jpg" alt="human concept &copy;kim sehoon" onclick="document.getElementById('large-picture').showModal()">
 		<section class="row">
 			<ul class="summations">
 				<li>
@@ -253,15 +253,13 @@
 					and <a class="spell ritual" href="https://www.dndbeyond.com/spells/speak-with-animals">speak with animals</a> as rituals.</p>
 			</div>
 		</section>
-
-		<section class="noprint">
-			<details>
-				<summary class="subtitle">What Nuvuk looks like</summary>
-				<a href="https://www.artstation.com/artwork/r3PQO">
-				<img src="https://i.pinimg.com/originals/56/93/f6/5693f68f11be4d90554b53e02477b3b2.jpg" alt="human concept &copy;kim sehoon"></a>
-				<p>Art by <a href="https://www.artstation.com/rltiger9">kim sehoon</a>.</p>
-			</details>
-		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Nuvuk – Art by <a href="https://www.artstation.com/rltiger9">kim sehoon</a></h2>
+		<a href="https://www.artstation.com/artwork/r3PQO">
+		<img src="https://i.pinimg.com/originals/56/93/f6/5693f68f11be4d90554b53e02477b3b2.jpg" alt="human concept &copy;kim sehoon"></a>
+	</dialog>
 </body>
 </html>

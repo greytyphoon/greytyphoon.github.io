@@ -71,7 +71,10 @@
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
-		<img id="main-picture" src="https://i.pinimg.com/originals/32/5d/6e/325d6e4ad6de0f32e26ca0cc4f23f4ab.jpg" alt="Musketeer &copy;H.k"  onClick="document.getElementById('large-picture').showModal()">
+		<div id="main-picture">
+			<img src="https://i.pinimg.com/originals/32/5d/6e/325d6e4ad6de0f32e26ca0cc4f23f4ab.jpg" alt="Musketeer &copy;H.k" onclick="document.getElementById('large-picture').showModal()">
+			<center><a onclick="document.getElementById('large-picture-old').showModal()">Old art</a></center>
+		</div>
 		<dl id="featsWrapper">
 			<dt>free</dt>
 			<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=129">Bright Lion Dedication</a></dd>
@@ -407,16 +410,6 @@
 				</ul></dd>
 			</dl>
 
-			<details>
-				<summary class="subtitle">What Alphonse looks like</summary>
-				<a href="https://www.artstation.com/artwork/48PBzk">
-				<img src="https://i.pinimg.com/originals/32/5d/6e/325d6e4ad6de0f32e26ca0cc4f23f4ab.jpg" alt="Musketeer &copy;H.k"></a>
-				Art by <a href="https://www.artstation.com/user-4541">H.k</a>.
-				<a href="https://www.pinterest.ca/pin/746753181934741690">
-				<img src="https://i.pinimg.com/originals/36/70/d1/3670d156566a68a443f1f2d6b44b3ab2.png" alt="Male Knight with Polearm"></a>
-				Art by someone named Tamago no Kimi Ranou? On Pixiv?
-			</details>
-
 			<dl class="charInfo">
 				<dt>Quality</dt>
 				<dd>Noble &amp; compassionate</dd>
@@ -442,11 +435,17 @@
 		</section>
 	</div>
 
-	<dialog id="large-picture" class="gallery" onClick="if (event.target.nodeName === 'DIALOG') close();">
-		<b onClick="parentNode.close();">✖</b>
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
 		<h2>Alphonse – Art by <a href="https://www.artstation.com/user-4541">H.k</a></h2>
 		<a href="https://www.artstation.com/artwork/48PBzk">
 		<img src="https://i.pinimg.com/originals/32/5d/6e/325d6e4ad6de0f32e26ca0cc4f23f4ab.jpg" alt="Musketeer &copy;H.k"></a>
+	</dialog>
+
+	<dialog id="large-picture-old" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Alphonse – Art by someone named Tamago no Kimi Ranou? On Pixiv?</h2>
+		<img src="https://i.pinimg.com/originals/36/70/d1/3670d156566a68a443f1f2d6b44b3ab2.png" alt="Male Knight with Polearm">
 	</dialog>
 </body>
 </html>

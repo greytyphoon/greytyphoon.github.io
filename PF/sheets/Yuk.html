@@ -71,7 +71,7 @@
 		</section>
 
 		<hr>
-		<a id="main-picture" href="https://www.artstation.com/artwork/LgOLl"><img src="https://i.pinimg.com/originals/a5/f7/25/a5f725ec269ca424f8166bfab6549276.jpg" alt="Goblins &copy;Alexander Trufanov"></a>
+		<img id="main-picture" src="https://i.pinimg.com/originals/a5/f7/25/a5f725ec269ca424f8166bfab6549276.jpg" alt="Goblins &copy;Alexander Trufanov" onclick="document.getElementById('large-picture').showModal()">
 		<section class="row">
 			<ul class="summations">
 				<li>
@@ -282,16 +282,12 @@
 				</ul>
 			</div>
 		</section>
-
-		<section class="noprint">
-			<hr>
-			<details>
-				<summary class="subtitle">What Yuk looks like</summary>
-				<a href="https://www.artstation.com/artwork/LgOLl">
-				<img src="https://i.pinimg.com/originals/a5/f7/25/a5f725ec269ca424f8166bfab6549276.jpg" alt="Goblins &copy;Alexander Trufanov"></a>
-				<p>Art by <a href="https://www.artstation.com/trufanov">Alexander Trufanov</a> <small>I think? Looks like they deleted it</small>.</p>
-			</details>
-		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Yuk – Art by <a href="https://www.artstation.com/trufanov">Alexander Trufanov</a></h2>
+		<img src="https://i.pinimg.com/originals/a5/f7/25/a5f725ec269ca424f8166bfab6549276.jpg" alt="Goblins &copy;Alexander Trufanov">
+	</dialog>
 </body>
 </html>

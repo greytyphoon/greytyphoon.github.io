@@ -71,7 +71,7 @@
 		</section>
 
 		<hr>
-		<a id="main-picture" href="https://www.deviantart.com/anathematixs/art/Allijay-Creed-435161373"><img src="https://i.pinimg.com/originals/08/82/a1/0882a10981043b2ae8ad6e21dc7fd9b8.jpg" alt="Allijay Creed &copy;Anathematixs"></a>
+		<img id="main-picture" src="https://i.pinimg.com/originals/08/82/a1/0882a10981043b2ae8ad6e21dc7fd9b8.jpg" alt="Allijay Creed &copy;Anathematixs" onclick="document.getElementById('large-picture').showModal()">
 		<section class="row">
 			<ul class="summations">
 				<li>
@@ -297,14 +297,6 @@
 				Her father's a half-elf, but she's the only one of her siblings where the elf blood manifests.
 				Monika's family is mostly composed of tradesmen and merchants, with the father involved in politics and public debates.</p>
 
-			<details>
-				<summary class="subtitle">What Monika looks like</summary>
-				<a href="https://www.deviantart.com/anathematixs/art/Allijay-Creed-435161373">
-				<img src="https://i.pinimg.com/originals/08/82/a1/0882a10981043b2ae8ad6e21dc7fd9b8.jpg" alt="Allijay Creed &copy;Anathematixs"></a>
-				<p>Art by <a href="https://www.deviantart.com/anathematixs">Anathematixs</a>.</p>
-				<p>Inspired by <a href="https://doki-doki-literature-club.fandom.com/wiki/Monika_(DDLC)">Monika</a>.</p>
-			</details>
-
 			<dl class="charInfo">
 				<dt>Age</dt>
 				<dd>18 (born September 22nd)</dd>
@@ -329,7 +321,16 @@
 				<dt>Bond</dt>
 				<dd>4:	Deals are sacrosanct. I never go back on my word.</dd>
 			</dl>
+
+			<p>Inspired by <a href="https://doki-doki-literature-club.fandom.com/wiki/Monika_(DDLC)">Monika</a>.</p>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Monika – Art by <a href="https://www.deviantart.com/anathematixs">Anathematixs</a></h2>
+		<a href="https://www.deviantart.com/anathematixs/art/Allijay-Creed-435161373">
+		<img src="https://i.pinimg.com/originals/08/82/a1/0882a10981043b2ae8ad6e21dc7fd9b8.jpg" alt="Allijay Creed &copy;Anathematixs"></a>
+	</dialog>
 </body>
 </html>

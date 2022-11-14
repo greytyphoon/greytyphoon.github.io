@@ -76,7 +76,7 @@
 		</section>
 
 		<hr>
-		<a id="main-picture" href="https://www.artstation.com/artwork/1o8eo"><img src="https://i.pinimg.com/originals/9d/c5/20/9dc52064f821988822e21d3aa2f0f441.jpg" alt="Tyrion &copy;MochiMalha"></a>
+		<img id="main-picture" src="https://i.pinimg.com/originals/9d/c5/20/9dc52064f821988822e21d3aa2f0f441.jpg" alt="Tyrion &copy;MochiMalha" onclick="document.getElementById('large-picture').showModal()">
 		<section class="row">
 			<ul class="summations">
 				<li>
@@ -270,16 +270,13 @@
 				</ul>
 			</div>
 		</section>
-
-		<section class="noprint">
-			<hr>
-			<details>
-				<summary class="subtitle">What Lou looks like</summary>
-				<a href="https://www.artstation.com/artwork/1o8eo">
-				<img src="https://i.pinimg.com/originals/9d/c5/20/9dc52064f821988822e21d3aa2f0f441.jpg" alt="Tyrion &copy;MochiMalha"></a>
-				<p>Art by <a href="https://www.artstation.com/mochimalha">MochiMalha</a>.</p>
-			</details>
-		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Lou – Art by <a href="https://www.artstation.com/mochimalha">MochiMalha</a></h2>
+		<a href="https://www.artstation.com/artwork/1o8eo">
+		<img src="https://i.pinimg.com/originals/9d/c5/20/9dc52064f821988822e21d3aa2f0f441.jpg" alt="Tyrion &copy;MochiMalha"></a>
+	</dialog>
 </body>
 </html>

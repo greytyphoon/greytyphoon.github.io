@@ -72,7 +72,7 @@
 		</section>
 
 		<hr>
-		<a id="main-picture" href="https://www.artstation.com/artwork/BmoyN4"><img src="https://i.pinimg.com/originals/2e/5c/ef/2e5cefb97be8e452270c72d0c4749565.jpg" alt="knight &copy;Juyoung Shin"></a>
+		<img id="main-picture" src="https://i.pinimg.com/originals/2e/5c/ef/2e5cefb97be8e452270c72d0c4749565.jpg" alt="knight &copy;Juyoung Shin" onclick="document.getElementById('large-picture').showModal()">
 		<section class="row">
 			<ul class="summations">
 				<li>
@@ -309,15 +309,13 @@
 			</div>
 			<div></div>
 		</section>
-
-		<section class="noprint">
-			<details>
-				<summary class="subtitle">What Weston looks like</summary>
-				<a href="https://www.artstation.com/artwork/BmoyN4">
-				<img src="https://i.pinimg.com/originals/2e/5c/ef/2e5cefb97be8e452270c72d0c4749565.jpg" alt="knight &copy;Juyoung Shin"></a>
-				<p>Art by <a href="https://www.artstation.com/lvxxl">Juyoung Shin</a>.</p>
-			</details>
-		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Weston – Art by <a href="https://www.artstation.com/lvxxl">Juyoung Shin</a></h2>
+		<a href="https://www.artstation.com/artwork/BmoyN4">
+		<img src="https://i.pinimg.com/originals/2e/5c/ef/2e5cefb97be8e452270c72d0c4749565.jpg" alt="knight &copy;Juyoung Shin"></a>
+	</dialog>
 </body>
 </html>

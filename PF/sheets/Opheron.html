@@ -75,7 +75,7 @@
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
-		<a id="main-picture" href="https://zuzartii.tumblr.com/post/188136011765/ive-been-trying-out-a-new-painting-workflow-and"><img src="https://i.pinimg.com/originals/1b/e4/b8/1be4b8a43e1b8c3569566277b293b95a.png" alt="DnD NPC &copy;Zuzartii"></a>
+		<img id="main-picture" src="https://i.pinimg.com/originals/1b/e4/b8/1be4b8a43e1b8c3569566277b293b95a.png" alt="DnD NPC &copy;Zuzartii" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>human 1</dt>
 			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=79">EA</a> &gt;
@@ -465,13 +465,6 @@
 			<p>Oph&eacute;ron often uses <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=90">dream message</a> in downtime, to mobilize or help allies.</p>
 			<p>Due to a miscommunication about the setting, this character was originally named N'Bia Papau.</p>
 
-			<details>
-				<summary class="subtitle">What Ophéron looks like</summary>
-				<a href="https://zuzartii.tumblr.com/post/188136011765/ive-been-trying-out-a-new-painting-workflow-and">
-				<img src="https://i.pinimg.com/originals/1b/e4/b8/1be4b8a43e1b8c3569566277b293b95a.png" alt="DnD NPC &copy;Zuzartii"></a>
-				Art by <a href="https://zuzartii.tumblr.com/">Zuzartii</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Quality</dt>
 				<dd>Poised and Restrained</dd>
@@ -602,5 +595,12 @@
 			</table>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Ophéron – Art by <a href="https://zuzartii.tumblr.com/">Zuzartii</a></h2>
+		<a href="https://zuzartii.tumblr.com/post/188136011765/ive-been-trying-out-a-new-painting-workflow-and">
+		<img src="https://i.pinimg.com/originals/1b/e4/b8/1be4b8a43e1b8c3569566277b293b95a.png" alt="DnD NPC &copy;Zuzartii"></a>
+	</dialog>
 </body>
 </html>

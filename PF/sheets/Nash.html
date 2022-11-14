@@ -78,7 +78,7 @@
 		</section>
 
 		<hr>
-		<a id="main-picture" href="https://www.deviantart.com/yiian56/art/Paladin-Scourge-Aasimar-DnD-872306122"><img src="https://i.pinimg.com/originals/92/fa/7b/92fa7b18dd9a0179c6e54aee61513318.jpg" alt="Paladin (Scourge Aasimar) &copy;Yiian56"></a>
+		<img id="main-picture" src="https://i.pinimg.com/originals/92/fa/7b/92fa7b18dd9a0179c6e54aee61513318.jpg" alt="Paladin (Scourge Aasimar) &copy;Yiian56"  onclick="document.getElementById('large-picture').showModal()">
 		<section class="row">
 			<ul class="summations">
 				<li>
@@ -298,16 +298,13 @@
 				<p>Apply an infusion every day, maintain <u title="Increases at 2nd, 6th, 10th, 14th, 18th">2</u> at a time.</p>
 			</div>
 		</section>
-
-		<!--Notes-->
-		<section class="noprint">
-			<details>
-				<summary class="subtitle">What Nash looks like</summary>
-				<a href="https://www.deviantart.com/yiian56/art/Paladin-Scourge-Aasimar-DnD-872306122">
-				<img src="https://i.pinimg.com/originals/92/fa/7b/92fa7b18dd9a0179c6e54aee61513318.jpg" alt="Paladin (Scourge Aasimar) &copy;Yiian56"></a>
-				Art by <a href="https://www.deviantart.com/yiian56">Yiian56</a>.
-			</details>
-		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Nash – Art by <a href="https://www.deviantart.com/yiian56">Yiian56</a></h2>
+		<a href="https://www.deviantart.com/yiian56/art/Paladin-Scourge-Aasimar-DnD-872306122">
+		<img src="https://i.pinimg.com/originals/92/fa/7b/92fa7b18dd9a0179c6e54aee61513318.jpg" alt="Paladin (Scourge Aasimar) &copy;Yiian56"></a>
+	</dialog>
 </body>
 </html>
