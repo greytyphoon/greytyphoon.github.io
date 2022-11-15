@@ -256,8 +256,7 @@
 				<h2>Written in the stars</h2>
 				<p>Choose a constellation each day and gain its spells as spells known.</p>
 				<p><span class="spell necromancy" title="Can be changed every day.">Necromancy spells</span> have increased casting time.</p>
-				<a class="noprint" href="https://pathfinderwiki.com/w/images/4/44/Cosmic_Caravan.jpg">
-				<img id="constellations-chart" alt="Star Chart of the Cosmic Carvan &copy;Paizo" src="https://pathfinderwiki.com/w/images/thumb/4/44/Cosmic_Caravan.jpg/250px-Cosmic_Caravan.jpg"></a>
+				<img id="constellations-chart" class="noprint" alt="Star Chart of the Cosmic Carvan &copy;Paizo" src="https://pathfinderwiki.com/w/images/thumb/4/44/Cosmic_Caravan.jpg/250px-Cosmic_Caravan.jpg" onclick="document.getElementById('large-picture-constellation').showModal()">
 			</div>
 			<div id="starseeker-spells">
 				<ul>
@@ -348,7 +347,7 @@
 		</section>
 
 		<!-- title COMBAT -->
-		<hr>
+		<hr class="newPage">
 		<section class="row">
 			<!--Basics: Statblock and Weapons-->
 			<div>
@@ -516,6 +515,13 @@
 		<h2>Folwyn – Art by <a href="https://33-ko.tumblr.com/post/177391256229">33-ko</a>🔒</h2>
 		<a href="https://azure-mirror.tumblr.com/post/185833483864/my-piece-for-ethereal-an-altean-lance-zine-3">
 		<img src="https://64.media.tumblr.com/d1db29d8a1a70020ba022ce8ca4c7272/tumblr_pe1iodInMh1v65aajo1_r1_1280.png" alt="Ethereal: an Alterian Lance zine &copy;33-ko"></a>
+	</dialog>
+
+	<dialog id="large-picture-constellation" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Cosmic Caravan – Art by Paizo</h2>
+		<a href="https://pathfinderwiki.com/wiki/Cosmic_Caravan">
+		<img src="https://pathfinderwiki.com/w/images/4/44/Cosmic_Caravan.jpg" alt="Cosmic Caravan &copy;Paizo"></a>
 	</dialog>
 
 	<script>
