@@ -66,6 +66,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/5a/59/05/5a5905905afd453e97dc0d961b644cde.png" alt="Demonic Lancer, Durandal &copy;Dungeon Fighter Online" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/magic-traits/dangerously-curious">Dangerously Curious</a></dd>
@@ -399,13 +400,6 @@
 			<p>He's currently in St-Trimothée on a quest to fight some ghoul-like drakes that harvest automatic convoys.
 				He's heard that someone in town might have a spirit similar to Mini, and would like to learn more.</p>
 
-			<details>
-				<summary class="subtitle">What Ulysses looks like</summary>
-				<a href="https://www.dfoneople.com/gameinfo/character/Demonic-Lancer#Skirmisher">
-				<img src="https://i.pinimg.com/originals/5a/59/05/5a5905905afd453e97dc0d961b644cde.png" alt="Demonic Lancer, Durandal &copy;Dungeon Fighter Online"></a>
-				Art by Dungeon Fighter Online.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Awestruck and confident</dd>
@@ -430,5 +424,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Ulysses – Art by Dungeon Fighter Online</h2>
+		<a href="https://www.dfoneople.com/gameinfo/character/Demonic-Lancer#Skirmisher">
+		<img src="https://i.pinimg.com/originals/5a/59/05/5a5905905afd453e97dc0d961b644cde.png" alt="Demonic Lancer, Durandal &copy;Dungeon Fighter Online"></a>
+	</dialog>
 </body>
 </html>
