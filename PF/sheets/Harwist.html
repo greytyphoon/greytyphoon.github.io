@@ -87,6 +87,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/5b/0e/c9/5b0ec9f253f94a20c94b436365cc8d83.jpg" alt="Concept art from 2014 &copy;Terry Wei" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/combat-traits/excitable">Excitable</a></dd>
@@ -386,13 +387,6 @@
 				L'efficacité est la chose la plus importante pour lui.
 				Il a souvent été confronté à des nains qui refusaient de reconnaître ses succès et son génie; depuis, il méprise les nains en général.</p>
 
-			<details>
-				<summary class="subtitle">What Harwist looks like</summary>
-				<a href="https://www.artstation.com/artwork/lX5lY">
-				<img src="https://i.pinimg.com/originals/5b/0e/c9/5b0ec9f253f94a20c94b436365cc8d83.jpg" alt="Concept art from 2014 &copy;Terry Wei"></a>
-				Art by <a href="https://www.artstation.com/weilai">Terry Wei</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Optimistic &amp; efficient</dd>
@@ -417,5 +411,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Harwist – Art by <a href="https://www.artstation.com/weilai">Terry Wei</a></h2>
+		<a href="https://www.artstation.com/artwork/lX5lY">
+		<img  src="https://i.pinimg.com/originals/5b/0e/c9/5b0ec9f253f94a20c94b436365cc8d83.jpg" alt="Concept art from 2014 &copy;Terry Wei"></a>
+	</dialog>
 </body>
 </html>

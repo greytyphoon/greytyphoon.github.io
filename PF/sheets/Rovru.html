@@ -76,6 +76,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/93/28/a7/9328a778f7ff76fd43db38b4a820b0b4.png" alt="Argonian &copy;Idia Erharuyi" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/combat-traits/berserker-of-the-society-barbarian-pathfinder-society/">Berserker of the Society</a></dd>
@@ -470,13 +471,6 @@
 			<p>Rovru has heard of other dragons, living on the coast, not too far from his village.
 				He is very tempted to try to get ahold of a second dragon stone, to see how much power it could procure.</p>
 
-			<details>
-				<summary class="subtitle">What Rovru looks like</summary>
-				<a href="https://www.pinterest.ca/pin/782007922809669745">
-				<img src="https://i.pinimg.com/originals/93/28/a7/9328a778f7ff76fd43db38b4a820b0b4.png" alt="Argonian &copy;Idia Erharuyi"></a>
-				Art by <a href="https://www.pinterest.ca/pin/782007922809669745">Idia Erharuyi</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Brave and disciplined</dd>
@@ -501,5 +495,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Rovru – Art by <a href="https://www.pinterest.ca/pin/782007922809669745">Idia Erharuyi</a></h2>
+		<a href="https://www.pinterest.ca/pin/782007922809669745">
+		<img  src="https://i.pinimg.com/originals/93/28/a7/9328a778f7ff76fd43db38b4a820b0b4.png" alt="Argonian &copy;Idia Erharuyi"></a>
+	</dialog>
 </body>
 </html>

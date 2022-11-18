@@ -65,6 +65,7 @@
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/8a/fb/89/8afb89599820b88c48d73ee4c5a90903.jpg" alt="Monk &copy;Heri Irawan" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/magic-traits/dangerously-curious">Dangerously Curious</a></dd>
@@ -280,14 +281,14 @@
 		<section class="noprint">
 			<hr>
 			<p>Pronounced "Sin".</p>
-
-			<details>
-				<summary class="subtitle">What Xin looks like</summary>
-				<a href="https://www.artstation.com/artwork/ba8ZPa">
-				<img src="https://i.pinimg.com/originals/8a/fb/89/8afb89599820b88c48d73ee4c5a90903.jpg" alt="Monk &copy;Heri Irawan"></a>
-				Art by <a href="https://www.artstation.com/irawan">Heri Irawan</a>.
-			</details>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Xin – Art by <a href="https://www.artstation.com/irawan">Heri Irawan</a></h2>
+		<a href="https://www.artstation.com/artwork/ba8ZPa">
+		<img  src="https://i.pinimg.com/originals/8a/fb/89/8afb89599820b88c48d73ee4c5a90903.jpg" alt="Monk &copy;Heri Irawan"></a>
+	</dialog>
 </body>
 </html>

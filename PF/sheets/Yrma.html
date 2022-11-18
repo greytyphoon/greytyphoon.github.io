@@ -76,6 +76,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.redd.it/nha7m1oduah01.jpg" alt="Halfling Ranger w/ Crocodile &copy;u/Cherubiel" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/race-traits/helpful">Helpful</a></dd>
@@ -437,16 +438,13 @@
 
 			<li>5 <b>GP</b><!--/16000--></li>
 		</ul>
-
-		<section class="noprint">
-			<hr>
-			<details>
-				<summary class="subtitle">What Yrma looks like</summary>
-				<a href="https://www.reddit.com/r/characterdrawing/comments/7ytcr4/oc_halfling_ranger_w_crocodile_commission/">
-				<img src="https://i.redd.it/nha7m1oduah01.jpg" alt="Halfling Ranger w/ Crocodile &copy;u/Cherubiel"></a>
-				Art by <a href="https://www.reddit.com/user/Cherubiel/">u/Cherubiel</a>.
-			</details>
-		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Yrma – Art by <a href="https://www.reddit.com/user/Cherubiel/">u/Cherubiel</a></h2>
+		<a href="https://www.reddit.com/r/characterdrawing/comments/7ytcr4/oc_halfling_ranger_w_crocodile_commission/">
+		<img  src="https://i.redd.it/nha7m1oduah01.jpg" alt="Halfling Ranger w/ Crocodile &copy;u/Cherubiel"></a>
+	</dialog>
 </body>
 </html>

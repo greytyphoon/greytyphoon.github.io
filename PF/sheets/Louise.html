@@ -67,6 +67,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="http://4.bp.blogspot.com/-_baKKiPeuKI/UHl1zf1r0TI/AAAAAAAABZM/RftQc7WNvqY/s640/Aasimar+Oracle+final.jpg" alt="Aasimar Oracle &copy;MiguelRegodon" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/faith-traits/blessed-touch-faith">Blessed Touch</a></dd>
@@ -315,14 +316,6 @@
 				<a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a>,
 				because her husband has them ready.</p>
 
-			<details>
-				<summary class="subtitle">What Louise looks like</summary>
-				<a href="https://www.deviantart.com/miguelregodon/art/Aasimar-Oracle-443860817">
-				<img src="http://4.bp.blogspot.com/-_baKKiPeuKI/UHl1zf1r0TI/AAAAAAAABZM/RftQc7WNvqY/s640/Aasimar+Oracle+final.jpg" alt="Aasimar Oracle &copy;MiguelRegodon"></a>
-				Art by <a href="https://www.deviantart.com/miguelregodon">MiguelRegodon</a>.
-			</details>
-
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Devoted and kind</dd>
@@ -347,5 +340,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Louise – Art by <a href="https://www.deviantart.com/miguelregodon">MiguelRegodon</a></h2>
+		<a href="https://www.deviantart.com/miguelregodon/art/Aasimar-Oracle-443860817">
+		<img  src="http://4.bp.blogspot.com/-_baKKiPeuKI/UHl1zf1r0TI/AAAAAAAABZM/RftQc7WNvqY/s640/Aasimar+Oracle+final.jpg" alt="Aasimar Oracle &copy;MiguelRegodon"></a>
+	</dialog>
 </body>
 </html>

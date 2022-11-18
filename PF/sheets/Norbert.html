@@ -70,6 +70,7 @@
 		</section>
 
 		<hr>
+		<img id="main-picture"  src="https://i.imgur.com/Qt1GznV.jpeg" alt="Prince &copy;Du Hugh. Y" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/combat-traits/threatening-defender">Threatening Defender</a></dd>
@@ -281,13 +282,6 @@
 		<!-- title NOTES -->
 		<section class="noprint">
 			<hr>
-			<details>
-				<summary class="subtitle">What Norbert looks like</summary>
-				<a href="https://www.artstation.com/artwork/prince-f7a59cbd-da45-4390-a222-2ce200762da4">
-				<img src="https://i.imgur.com/Qt1GznV.jpeg" alt="Prince &copy;Du Hugh. Y"></a>
-				Art by <a href="https://www.artstation.com/limpcn">Du Hugh. Y</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Warm and devoted</dd>
@@ -312,5 +306,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Norbert – Art by <a href="https://www.artstation.com/limpcn">Du Hugh. Y</a></h2>
+		<a href="https://www.artstation.com/artwork/prince-f7a59cbd-da45-4390-a222-2ce200762da4">
+		<img  src="https://i.imgur.com/Qt1GznV.jpeg" alt="Prince &copy;Du Hugh. Y"></a>
+	</dialog>
 </body>
 </html>

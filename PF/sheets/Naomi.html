@@ -67,6 +67,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/a7/7c/c1/a77cc1ecd00b8bbbb7d60fab3afe9ee7.jpg" alt="Kseniya McWunbee &copy;dashinvaine" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/social-traits/adopted">Adopted</a>:
@@ -311,13 +312,6 @@
 
 			<p>Elle a un intérêt romantique pour le beau <b>Hyacinthe Pomerleau</b>. Pour lui, elle partirait à l'aventure.</p>
 
-			<details>
-				<summary class="subtitle">What Naomi looks like</summary>
-				<a href="https://www.deviantart.com/dashinvaine/art/Kseniya-McWunbee-719246830">
-				<img src="https://i.pinimg.com/originals/a7/7c/c1/a77cc1ecd00b8bbbb7d60fab3afe9ee7.jpg" alt="Kseniya McWunbee &copy;dashinvaine"></a>
-				Art by <a href="https://www.deviantart.com/dashinvaine">dashinvaine</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Empathic and reliable</dd>
@@ -344,5 +338,12 @@
 			<p lang="fr"><q>Puis-je vous offrir du thé?</q></p>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Naomi – Art by <a href="https://www.deviantart.com/dashinvaine">dashinvaine</a></h2>
+		<a href="https://www.deviantart.com/dashinvaine/art/Kseniya-McWunbee-719246830">
+		<img  src="https://i.pinimg.com/originals/a7/7c/c1/a77cc1ecd00b8bbbb7d60fab3afe9ee7.jpg" alt="Kseniya McWunbee &copy;dashinvaine"></a>
+	</dialog>
 </body>
 </html>

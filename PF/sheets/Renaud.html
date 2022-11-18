@@ -70,6 +70,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/49/65/48/4965485488ac80cc1af7c6655e07b685.jpg" alt="Alchemist &copy;Sentimenthol" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/combat-traits/firebug">Firebug</a></dd>
@@ -396,13 +397,6 @@
 			<p>Renaud is the husband of Destiny and father of Khyr.</p>
 			<p>Studied with Desmund, before he left on his adventures. Desmund wasn't the same when he came back, and Renaud didn't insist, despite missing the old camaraderie.</p>
 
-			<details>
-				<summary class="subtitle">What Renaud looks like</summary>
-				<a href="https://www.deviantart.com/sentimenthol">
-				<img src="https://i.pinimg.com/originals/49/65/48/4965485488ac80cc1af7c6655e07b685.jpg" alt="Alchemist &copy;Sentimenthol"></a>
-				Art by <a href="https://www.deviantart.com/sentimenthol">Sentimenthol</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Optimistic and generous</dd>
@@ -427,5 +421,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Renaud – Art by <a href="https://www.deviantart.com/sentimenthol">Sentimenthol</a></h2>
+		<a href="https://www.deviantart.com/sentimenthol">
+		<img  src="https://i.pinimg.com/originals/49/65/48/4965485488ac80cc1af7c6655e07b685.jpg" alt="Alchemist &copy;Sentimenthol"></a>
+	</dialog>
 </body>
 </html>

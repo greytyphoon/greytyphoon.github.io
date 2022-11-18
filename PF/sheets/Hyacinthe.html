@@ -70,6 +70,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/78/01/a5/7801a50e14afe605dfbebed22f4e3f2b.jpg" alt="Bassil Commission &copy;TamikaProud" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/campaign-traits/skull-shackles/natural-born-sailor">Natural Born Sailor</a></dd>
@@ -324,13 +325,6 @@
 				Le sentiment semble partagé, et il parle d'elle sans fin, amoureux.</p>
 			<p lang="fr">Pour l'impressionner, il s'est joint à la guilde de la <b>Lance Étincellante 👑</b>, même s'il a passé le test d'admission plutôt juste et ne pense pas trop s'impliquer.</p>
 
-			<details>
-				<summary class="subtitle">What Hyacinthe looks like</summary>
-				<a href="https://www.deviantart.com/tamikaproud/art/Bassil-Commission-740846681">
-				<img src="https://i.pinimg.com/originals/78/01/a5/7801a50e14afe605dfbebed22f4e3f2b.jpg" alt="Bassil Commission &copy;TamikaProud"></a>
-				Art by <a href="https://www.deviantart.com/tamikaproud">TamikaProud</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Resourceful and sharp</dd>
@@ -355,5 +349,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Hyacinthe – Art by <a href="https://www.deviantart.com/tamikaproud">TamikaProud</a></h2>
+		<a href="https://www.deviantart.com/tamikaproud/art/Bassil-Commission-740846681">
+		<img  src="https://i.pinimg.com/originals/78/01/a5/7801a50e14afe605dfbebed22f4e3f2b.jpg" alt="Bassil Commission &copy;TamikaProud"></a>
+	</dialog>
 </body>
 </html>

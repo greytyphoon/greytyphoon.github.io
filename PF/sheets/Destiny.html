@@ -66,6 +66,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/07/db/76/07db762510cda4808c23e351e2b0b4ae.jpg" alt="Fortune, the tiefling sorcerer &copy;Joma Cuerto" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/race-traits/chain-master-tiefling-shackleborn">Chain Master</a></dd>
@@ -348,13 +349,6 @@
 			<hr>
 			<p>Wife of Renaud de Chambord, mother of Khyr.</p>
 
-			<details>
-				<summary class="subtitle">What Destiny looks like</summary>
-				<a href="https://forgingmeanings.tumblr.com/post/156085793715/fortune-the-tiefling-sorcerer-commissioned-by-my">
-				<img src="https://i.pinimg.com/originals/07/db/76/07db762510cda4808c23e351e2b0b4ae.jpg" alt="Fortune, the tiefling sorcerer &copy;Joma Cuerto"></a>
-				Art by <a href="https://forgingmeanings.tumblr.com">Joma Cuerto</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Fearless and compassionate</dd>
@@ -379,5 +373,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Destiny – Art by <a href="https://forgingmeanings.tumblr.com">Joma Cuerto</a></h2>
+		<a href="https://forgingmeanings.tumblr.com/post/156085793715/fortune-the-tiefling-sorcerer-commissioned-by-my">
+		<img  src="https://i.pinimg.com/originals/07/db/76/07db762510cda4808c23e351e2b0b4ae.jpg" alt="Fortune, the tiefling sorcerer &copy;Joma Cuerto"></a>
+	</dialog>
 </body>
 </html>

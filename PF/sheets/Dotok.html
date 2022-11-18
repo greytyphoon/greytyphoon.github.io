@@ -70,6 +70,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/ed/f0/6e/edf06e989751032347de867778355f42.jpg" alt="Dwarf General &copy;Bugeon Choi" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/regional-traits/glory-of-old-dwarf-regional-trait">Glory of Old</a></dd>
@@ -325,13 +326,6 @@
 				Il n'est pas enchanté de cette défaite, mais il est bon perdant.
 				Il reste très influent en politique et a pu reprendre des activités plus axées sur le culte de Torag.</p>
 
-			<details>
-				<summary class="subtitle">What Dotok looks like</summary>
-				<a href="https://www.artstation.com/artwork/q3QwR">
-				<img src="https://i.pinimg.com/originals/ed/f0/6e/edf06e989751032347de867778355f42.jpg" alt="Dwarf General &copy;Bugeon Choi"></a>
-				Art by <a href="https://www.artstation.com/cjymon">Bugeon Choi</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Encouraging and brave</dd>
@@ -356,5 +350,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Dotok – Art by <a href="https://www.artstation.com/cjymon">Bugeon Choi</a></h2>
+		<a href="https://www.artstation.com/artwork/q3QwR">
+		<img  src="https://i.pinimg.com/originals/ed/f0/6e/edf06e989751032347de867778355f42.jpg" alt="Dwarf General &copy;Bugeon Choi"></a>
+	</dialog>
 </body>
 </html>

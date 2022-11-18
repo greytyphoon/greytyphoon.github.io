@@ -65,6 +65,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/b9/eb/0c/b9eb0cf0f6dc0da6f8c552d05fdfc718.jpg" alt="Farmer Origin &copy;Rebecca Oborn" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/combat-traits/dirty-fighter">Dirty Fighter</a></dd>
@@ -254,13 +255,6 @@
 		<!-- title NOTES -->
 		<section class="noprint">
 			<hr>
-			<details>
-				<summary class="subtitle">What Rose looks like</summary>
-				<a href="https://www.artstation.com/artwork/ox3RO">
-				<img src="https://i.pinimg.com/originals/b9/eb/0c/b9eb0cf0f6dc0da6f8c552d05fdfc718.jpg" alt="Farmer Origin &copy;Rebecca Oborn"></a>
-				Art by <a href="https://www.artstation.com/rebeccaoborn">Rebecca Oborn</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Confident and easygoing</dd>
@@ -285,5 +279,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Rose – Art by <a href="https://www.artstation.com/rebeccaoborn">Rebecca Oborn</a></h2>
+		<a href="https://www.artstation.com/artwork/ox3RO">
+		<img  src="https://i.pinimg.com/originals/b9/eb/0c/b9eb0cf0f6dc0da6f8c552d05fdfc718.jpg" alt="Farmer Origin &copy;Rebecca Oborn"></a>
+	</dialog>
 </body>
 </html>

@@ -67,6 +67,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/49/5b/bd/495bbd8d2e275ce1a938dd6f9e472e27.jpg" alt="Archer &copy;Goshun" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/religion-traits/deadeye-bowman">Deadeye Bowman</a></dd>
@@ -346,14 +347,6 @@
 			<p>His relationship with <b>Sargaro</b>, <b>Tarken</b> and <b>Destiny</b> are a little bit less good: he has a harder time trusting people not born in the village.</p>
 			<p><b>Ghaveri</b> somehow is the exception to this rule: he has been his prized pupil, basically his adopted son. Hugo presided the ceremony where Ghaveri got his primal powers and his animal companion.</p>
 
-			<details>
-				<summary class="subtitle">What Hugo looks like</summary>
-				<a href="https://www.deviantart.com/goshun/art/Archer-324286081">
-				<img src="https://i.pinimg.com/originals/49/5b/bd/495bbd8d2e275ce1a938dd6f9e472e27.jpg" alt="Archer &copy;Goshun"></a>
-				Art by <a href="https://www.deviantart.com/goshun">Goshun</a>.
-			</details>
-
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Reliable and patient</dd>
@@ -378,5 +371,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Hugo – Art by <a href="https://www.deviantart.com/goshun">Goshun</a></h2>
+		<a href="https://www.deviantart.com/goshun/art/Archer-324286081">
+		<img  src="https://i.pinimg.com/originals/49/5b/bd/495bbd8d2e275ce1a938dd6f9e472e27.jpg" alt="Archer &copy;Goshun"></a>
+	</dialog>
 </body>
 </html>

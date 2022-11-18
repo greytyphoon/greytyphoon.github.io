@@ -66,6 +66,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/33/d2/5c/33d25c5e50699bb7e090e0e753c9f57f.jpg" alt="Endorphin &copy;Klaufir" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>smokeshade</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/improved-initiative-combat">Improved Initivative</a></dd>
@@ -240,16 +241,13 @@
 					and <a href="https://d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Incorporeal-Ex-">incorporeal</a> but cannot enter water.</p>
 			</div>
 		</section>
-
-		<!-- title NOTES -->
-		<section class="noprint">
-			<hr>
-			<details>
-				<summary class="subtitle">What Clepte looks like</summary>
-				<a href="https://www.deviantart.com/klaufir/art/Endorphin-354801431">
-				<img src="https://i.pinimg.com/originals/33/d2/5c/33d25c5e50699bb7e090e0e753c9f57f.jpg" alt="Endorphin &copy;Klaufir"></a>
-				Art by <a href="https://www.deviantart.com/klaufir">Klaufir</a>.
-			</details>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Clepte – Art by <a href="https://www.deviantart.com/klaufir">Klaufir</a></h2>
+		<a href="https://www.deviantart.com/klaufir/art/Endorphin-354801431">
+		<img  src="https://i.pinimg.com/originals/33/d2/5c/33d25c5e50699bb7e090e0e753c9f57f.jpg" alt="Endorphin &copy;Klaufir"></a>
+	</dialog>
 </body>
 </html>
