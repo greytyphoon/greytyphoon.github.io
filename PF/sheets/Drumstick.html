@@ -70,6 +70,7 @@
 		</section>
 
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/2a/ed/c3/2aedc331c9fab9adf82b41a7eaff4877.jpg" alt="Lotleth Troll MTG Fanart &copy;MorkarDFC a.k.a. David Franco" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>zombie</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/toughness-combat">Toughness</a>
@@ -151,17 +152,13 @@
 				<p class="apartee"><b>Full Attack:</b> 1 Bite, 2 Claws, 2 Slams</p>
 			</div>
 		</section>
-
-		<!-- title NOTES -->
-		<section class="noprint">
-			<hr>
-			<details>
-				<summary class="subtitle">What Drumstick looks like</summary>
-				<a href="https://www.deviantart.com/morkardfc/art/Lotleth-Troll-MTG-fanart-702694597">
-				<img src="https://i.pinimg.com/originals/2a/ed/c3/2aedc331c9fab9adf82b41a7eaff4877.jpg" alt="Lotleth Troll MTG Fanart &copy;MorkarDFC a.k.a. David Franco"></a>
-				Art by <a href="https://www.deviantart.com/morkardfc">MorkarDFC</a>.
-			</details>
-		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Drumstick – Art by <a href="https://www.deviantart.com/morkardfc">MorkarDFC</a></h2>
+		<a href="https://www.deviantart.com/morkardfc/art/Lotleth-Troll-MTG-fanart-702694597">
+		<img src="https://i.pinimg.com/originals/2a/ed/c3/2aedc331c9fab9adf82b41a7eaff4877.jpg" alt="Lotleth Troll MTG Fanart &copy;MorkarDFC a.k.a. David Franco"></a>
+	</dialog>
 </body>
 </html>

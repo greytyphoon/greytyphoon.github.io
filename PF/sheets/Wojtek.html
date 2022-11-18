@@ -70,6 +70,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/06/9c/94/069c94f86058fa5fe8285a03939c93fb.png" alt="Wizard &copy;AleksandraTrezvina" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/combat-traits/excitable">Excitable</a></dd>
@@ -377,13 +378,6 @@
 				Il peut avec aisance prendre contrôle de la moitié d'un amas de zombies, et les faire attaquer l'autre moitié, jusqu'à ce qu'il n'en reste plus.
 				On lui demande de temps en temps son aide, à la garde de St-Trimothée, quand la mission serait trop dangereuse en utilisant des moyens plus vertueux.</p>
 
-			<details>
-				<summary class="subtitle">What Wojtek looks like</summary>
-				<a href="https://www.pinterest.co.uk/pin/633600241297276810/">
-				<img src="https://i.pinimg.com/originals/06/9c/94/069c94f86058fa5fe8285a03939c93fb.png" alt="Wizard &copy;AleksandraTrezvina"></a>
-				Art by <a href="https://www.deviantart.com/aleksandratrezvina">MissSwarm</a>. (Probably? Looks like she deleted it.)
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Dependable and independant</dd>
@@ -408,5 +402,11 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Wojtek – Art by <a href="https://www.deviantart.com/aleksandratrezvina">MissSwarm</a></h2>
+		<img src="https://i.pinimg.com/originals/06/9c/94/069c94f86058fa5fe8285a03939c93fb.png" alt="Wizard &copy;AleksandraTrezvina">
+	</dialog>
 </body>
 </html>
