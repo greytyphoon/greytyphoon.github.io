@@ -75,6 +75,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/30/0b/32/300b32b6774e1924bf08058748802ef0.png" alt="Barbarian Girl &copy;The K40" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/combat-traits/dirty-fighter">Dirty Fighter</a></dd>
@@ -246,7 +247,7 @@
 		</section>
 &nbsp;
 		<!--Wild Shape-->
-		<h2>Wild Shape (Su) <u title="5 shifter, 3 wis">8h/day</u></h2>
+		<h2 class="newPage">Wild Shape (Su) <u title="5 shifter, 3 wis">8h/day</u></h2>
 		<section class="row">
 			<div class="slim">
 				<p class="apartee">Start as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a><br>
@@ -450,13 +451,6 @@
 				She's only a short distance away from <b>Hugo</b>'s house, and he is one of her main contacts with civilization, alongside her guildmates, especially <b>Ghaveri</b> and <b>Zenaida</b>.</p>
 			<p>She has met <b>Arroyo &amp; Boreas</b> and feels at ease with them, though she knows not to get too close and personal with feykind. Arroyo has good taste in wine.</p>
 
-			<details>
-				<summary class="subtitle">What Hera looks like</summary>
-				<a href="https://www.deviantart.com/thek40/art/Barbarian-Girl-307217656">
-				<img src="https://i.pinimg.com/originals/30/0b/32/300b32b6774e1924bf08058748802ef0.png" alt="Barbarian Girl &copy;The K40"></a>
-				Art by <a href="https://www.deviantart.com/thek40">The K40</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Honest and hard-working</dd>
@@ -487,5 +481,12 @@
 				<a href="https://d20pfsrd.com/gamemastering/combat/space-reach-threatened-area-templates#Creature_Sizes">Sizes Bonuses</a>.</p>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Héra – Art by <a href="https://www.deviantart.com/thek40">The K40</a></h2>
+		<a href="https://www.deviantart.com/thek40/art/Barbarian-Girl-307217656">
+		<img src="https://i.pinimg.com/originals/30/0b/32/300b32b6774e1924bf08058748802ef0.png" alt="Barbarian Girl &copy;The K40"></a>
+	</dialog>
 </body>
 </html>

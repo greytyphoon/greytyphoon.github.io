@@ -72,6 +72,7 @@
 		</section>
 
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/92/48/7f/92487f8e28a6b94b916cc6dc56b71e65.png" alt="Elf Engineer &copy;Samuel Youn" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/campaign-traits/curse-of-the-crimson-throne/missing-child">Missing Child</a></dd>
@@ -315,7 +316,7 @@
 		<ul id="inventory">
 			<!--Weapons-->
 			<li class="br"><!--2x310-->
-				2× <a href="https://d20pfsrd.com/equipment/weapons">Waveblade</a>, cold-iron masterwork, crafted himself
+				2× <a href="https://d20pfsrd.com/equipment/weapons">Waveblade</a>, cold-iron masterwork, crafted herself
 				<small>exotic light, 1d4, 18x2, PS, monk, +2 vs Disarm.</small>
 			</li>
 
@@ -341,13 +342,6 @@
 			<p lang="fr">Accepte d'être appellé simplement <i>Knarbog du clan des Marées</i>.</p>
 			<p>Very, very inspired by <a href="https://fr.wikipedia.org/wiki/Steve_Irwin">Steve Irwin</a>. Should drop a <q>Crickey!</q> every so often.</p>
 
-			<details>
-				<summary class="subtitle">What Knarbog looks like</summary>
-				<a href="https://www.artstation.com/artwork/xJrO8Y">
-				<img src="https://i.pinimg.com/originals/92/48/7f/92487f8e28a6b94b916cc6dc56b71e65.png" alt="Elf Engineer &copy;Samuel Youn"></a>
-				Art by <a href="https://www.artstation.com/samuelyoun9">Samuel Youn</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Fresh and respectful</dd>
@@ -372,5 +366,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Knarbog – Art by <a href="https://www.artstation.com/samuelyoun9">Samuel Youn</a></h2>
+		<a href="https://www.artstation.com/artwork/xJrO8Y">
+		<img src="https://i.pinimg.com/originals/92/48/7f/92487f8e28a6b94b916cc6dc56b71e65.png" alt="Elf Engineer &copy;Samuel Youn"></a>
+	</dialog>
 </body>
 </html>

@@ -70,6 +70,7 @@
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/0b/84/a8/0b84a8fd00f25e9ad1fa1469a374e9f4.jpg" alt="Yuzen - Brianna the winter fist &copy;b-cesar" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/combat-traits/cautious-warrior-combat">Cautious Warrior</a></dd>
@@ -240,7 +241,7 @@
 					<h2>Unarmed Strike <b>20×2</b> <b>B</b></h2>
 					<div class="apartee float align"><b>Defensively</b> <u title="Crane Style">-2</u>/<u title="2, 1 acrobatics, 1 Crane Style, 1 Cautious Warrior">+5</u></div>
 					<div class="summation"><strong>+11</strong>/<strong>11</strong> vs AC <small>5 bab, <u title="Weapon Finesse">5 dex</u>, 1 size</small></div>
-					<div class="circumstancialBonus" title="Style Strike: Spin Kick">When you flurry, make one attack against flat-footed AC.</div>
+					<div class="circumstancialBonus" title="Style Strike: Spin Kick">When you flurry, make one attack vs flat-footed AC.</div>
 					<div class="circumstancialBonus" title="Hatred"><u>+1</u> vs reptilian, goblinoid.</div>
 					<div class="summation"><strong>1d6 <span class="cold" title="Frost">+1d6❄</span></strong> <small>0 str</small></div>
 					<div class="circumstancialBonus"><a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-nonlethal">Nonlethal</a></div>
@@ -254,8 +255,8 @@
 						you may use <a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/barkskin">barkskin</a> on yourself.</li>
 					<li title="Elusive Target">For 2 ki, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> when hit by an attack roll,
 						attempt a Reflex save against that attack roll.
-						On a success, halve damage from that attack, and if the foe hitting you was flanking, their flanking partner becomes a target of the same attack
-						<small>he also takes half damage, and any secondary effects apply fully to both targets</small>.</li>
+						On a success, halve damage from that attack, and if the foe hitting you was flanking, their flanking partner becomes a target of the same attack.
+						<small>He also takes half damage, and any secondary effects apply fully to both targets.</small></li>
 				</ul>
 
 				<h2>Redirection (Ex) <u title="5 monk">5/day</u> <b>1/round</b></h2>
@@ -317,13 +318,6 @@
 				He has a bit more energy when someone mentions his passions,
 				and becomes agitated when someone mentions his debts.</p>
 
-			<details>
-				<summary class="subtitle">What Labrag looks like</summary>
-				<a href="https://www.pinterest.ca/pin/548876273327903854">
-				<img src="https://i.pinimg.com/originals/0b/84/a8/0b84a8fd00f25e9ad1fa1469a374e9f4.jpg" alt="Yuzen - Brianna the winter fist &copy;b-cesar"></a>
-				Art by <a href="https://www.deviantart.com/b-cesar">b-cesar</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Understanding and supportive</dd>
@@ -348,5 +342,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Labrag – Art by <a href="https://www.deviantart.com/b-cesar">b-cesar</a></h2>
+		<a href="https://www.pinterest.ca/pin/548876273327903854">
+		<img src="https://i.pinimg.com/originals/0b/84/a8/0b84a8fd00f25e9ad1fa1469a374e9f4.jpg" alt="Yuzen - Brianna the winter fist &copy;b-cesar"></a>
+	</dialog>
 </body>
 </html>

@@ -70,6 +70,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/59/71/49/597149f9f3cce7a72b3dc999793bea11.jpg" alt="Lady bard &copy;Unknown" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/regional-traits/altruistic-diplomat">Altruistic Diplomat</a></dd>
@@ -234,7 +235,7 @@
 		</section>
 
 		<!-- title Spells -->
-		<hr>
+		<hr class="newPage">
 		<div id="spellHeader" class="apartee">
 			Your Spell DC is 10 + the spell level + your Charisma modifier.<br>
 			To make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, add your caster level + your Charisma modifier.<br>
@@ -322,13 +323,6 @@
 
 			<p>Elle est la mère de <b>Zoe</b>.</p>
 
-			<details>
-				<summary class="subtitle">What Coralie looks like</summary>
-				<a href="https://www.pinterest.de/pin/65794844546479008/">
-				<img src="https://i.pinimg.com/originals/59/71/49/597149f9f3cce7a72b3dc999793bea11.jpg" alt="Lady bard &copy;Unknown"></a>
-				Could not find source.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Ambitious &amp; strong-willed</dd>
@@ -353,5 +347,11 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Coralie – Could not find source</h2>
+		<img src="https://i.pinimg.com/originals/59/71/49/597149f9f3cce7a72b3dc999793bea11.jpg" alt="Lady bard &copy;Unknown">
+	</dialog>
 </body>
 </html>

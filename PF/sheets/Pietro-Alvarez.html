@@ -68,6 +68,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/4f/b3/7a/4fb37ad9a244ae7903ba6116e351e7cc.jpg" alt="Arno the Halfling Ranger &copy;Hector Rodriguez" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/regional-traits/alkenstar-defender-regional-mana-wastes">City Defender</a></dd>
@@ -294,13 +295,6 @@
 				Pietro-Alvarez continue de supporter <b>Peter Faeqen</b>, dernier membre encore vivant de la famille, qui malgré tout ne l'a pas abandonné.</p>
 			<p lang="fr">Un autre ami cher est <b>Sargaro Malek</b>, qui lui a offert quelques tâches pour la sécurité de la ville. Pietro-Alvarez lui en est très reconnaissant.</p>
 
-			<details>
-				<summary class="subtitle">What Pietro-Alvarez looks like</summary>
-				<a href="https://www.artstation.com/artwork/X5qdY">
-				<img src="https://i.pinimg.com/originals/4f/b3/7a/4fb37ad9a244ae7903ba6116e351e7cc.jpg" alt="Arno the Halfling Ranger &copy;Hector Rodriguez"></a>
-				Art by <a href="https://www.artstation.com/haclif">Hector Rodriguez</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Acceptant and resilient</dd>
@@ -325,5 +319,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Pietro-Alvarez – Art by <a href="https://www.artstation.com/haclif">Hector Rodriguez</a></h2>
+		<a href="https://www.artstation.com/artwork/X5qdY">
+		<img src="https://i.pinimg.com/originals/4f/b3/7a/4fb37ad9a244ae7903ba6116e351e7cc.jpg" alt="Arno the Halfling Ranger &copy;Hector Rodriguez"></a>
+	</dialog>
 </body>
 </html>

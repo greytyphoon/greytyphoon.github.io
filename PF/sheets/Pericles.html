@@ -68,6 +68,7 @@
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/1d/12/ba/1d12ba117ac07ef2281ad4a9e14957eb.jpg" alt="Furuziwa Okanobu &copy;gothic2mess" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/regional-traits/quain-martial-artist-quain">Heavy Hitter</a></dd>
@@ -221,7 +222,7 @@
 					<h2>Unarmed Strike <b>20×2</b> <b>B</b></h2>
 					<div class="apartee float align"><b>PA</b> -2/+4</div>
 					<div class="summation"><strong>+12</strong>/<strong>12</strong> vs AC <small>5 bab, 6 str, 1 mwk</small></div>
-					<div class="circumstancialBonus" title="Style Strike: Leg Sweep">When you flurry, call one attack: if if hits, you get a free trip attempt.</div>
+					<div class="circumstancialBonus" title="Style Strike: Leg Sweep">When you flurry, call one attack: if it hits, get a free trip attempt.</div>
 					<div class="summation"><strong>1d8+7 <span class="fire" title="Flaming">+1d6🔥</span></strong> <small>6 str, <u title="Heavy Hitter">1 trait</u></small></div>
 					<div class="circumstancialBonus"><a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-nonlethal">Nonlethal</a></div>
 				</div>
@@ -237,8 +238,8 @@
 						you may use <a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/barkskin">barkskin</a> on yourself.</li>
 					<li title="Elusive Target">For 2 ki, as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> when hit by an attack roll,
 						attempt a Reflex save against that attack roll.
-						On a success, halve damage from that attack, and if the foe hitting you was flanking, their flanking partner becomes a target of the same attack
-						<small>he also takes half damage, and any secondary effects apply fully to both targets</small>.</li>
+						On a success, halve damage from that attack, and if the foe hitting you was flanking, their flanking partner becomes a target of the same attack.
+						<small>He also takes half damage, and any secondary effects apply fully to both targets.</small></li>
 				</ul>
 
 				<h2>Redirection (Ex) <u title="5 monk">5/day</u> <b>1/round</b></h2>
@@ -286,13 +287,6 @@
 			<p>Périclès is a student and came from far away to study Labrag's martial arts.
 				He is growing restless, he can't seem to reach the defensive levels of his master: his previous training focussed on offense above all, and it clouds his path.</p>
 
-			<details>
-				<summary class="subtitle">What Périclès looks like</summary>
-				<a href="https://www.deviantart.com/gothic2mess/art/Naruto-Shippuden-OC-Furuziwa-Okanobu-911522462">
-				<img src="https://i.pinimg.com/originals/1d/12/ba/1d12ba117ac07ef2281ad4a9e14957eb.jpg" alt="Furuziwa Okanobu &copy;gothic2mess"></a>
-				Art by <a href="https://www.deviantart.com/gothic2mess">gothic2mess</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Enthusiastic and clever</dd>
@@ -317,5 +311,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Périclès – Art by <a href="https://www.deviantart.com/gothic2mess">gothic2mess</a></h2>
+		<a href="https://www.deviantart.com/gothic2mess/art/Naruto-Shippuden-OC-Furuziwa-Okanobu-911522462">
+		<img src="https://i.pinimg.com/originals/1d/12/ba/1d12ba117ac07ef2281ad4a9e14957eb.jpg" alt="Furuziwa Okanobu &copy;gothic2mess"></a>
+	</dialog>
 </body>
 </html>
