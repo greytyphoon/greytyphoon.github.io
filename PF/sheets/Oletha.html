@@ -66,6 +66,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/e3/78/cc/e378cc4f3870e22bda1652002814b365.jpg" alt="Lambholt Elder &copy;Wizards of the Coast" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/race-traits/carefully-hidden-human">Carefully Hidden</a></dd>
@@ -303,13 +304,6 @@
 			<hr>
 			<p>Guide used: <a href="https://docs.google.com/document/d/1BkI5ph1ZDPRt8YrkCl9hG1VF8vHYbkC1nMRT9RcQGGE/edit">Bell, Book, &amp; Candle &copy;Allerseelen</a>.</p>
 
-			<details>
-				<summary class="subtitle">What Oletha looks like</summary>
-				<a href="https://gatherer.wizards.com/pages/Card/Details.aspx?multiverseid=242537">
-				<img src="https://i.pinimg.com/originals/e3/78/cc/e378cc4f3870e22bda1652002814b365.jpg" alt="Lambholt Elder &copy;Wizards of the Coast"></a>
-				Art by Wizards of the Coast <small>Matt Stewart</small>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Nurturing &amp; respectful</dd>
@@ -334,5 +328,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Oletha – Art by Wizards of the Coast (Matt Stewart)</h2>
+		<a href="https://gatherer.wizards.com/pages/Card/Details.aspx?multiverseid=242537">
+		<img  src="https://i.pinimg.com/originals/e3/78/cc/e378cc4f3870e22bda1652002814b365.jpg" alt="Lambholt Elder &copy;Wizards of the Coast"></a>
+	</dialog>
 </body>
 </html>

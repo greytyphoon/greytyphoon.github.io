@@ -69,6 +69,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/90/e3/17/90e3179f565c1d3136e1b01fca43b528.png" alt="Kesten Garess &copy;Paizo" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/regional-traits/blood-steed">Blood Steed</a></dd>
@@ -274,13 +275,6 @@
 			<p>Sargaro wasn't born in St-Élie, and often doesn't have the same behaviors or beliefs as natives.
 				He's unphased by <b>Pietro-Alvarez</b>'s "unlucky halfling" reputation, which he judges wasn't deserved, and will hire the poor target of such slander for any odd tasks to help the town's guards.</p>
 
-			<details>
-				<summary class="subtitle">What Sargaro looks like</summary>
-				<a href="https://pathfinderkingmaker.fandom.com/wiki/Kesten_Garess">
-				<img src="https://i.pinimg.com/originals/90/e3/17/90e3179f565c1d3136e1b01fca43b528.png" alt="Kesten Garess &copy;Paizo"></a>
-				Art by Paizo.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Devoted and willing to admit when he's wrong</dd>
@@ -307,5 +301,12 @@
 			<p>A lance is a two-handed weapon, and as such it gets str&frac12; and better PA. However, "While mounted, you can wield a lance with one hand", so I get a shield.</p>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Sargaro – Art by Paizo (Kingmaker)</h2>
+		<a href="https://pathfinderkingmaker.fandom.com/wiki/Kesten_Garess">
+		<img  src="https://i.pinimg.com/originals/90/e3/17/90e3179f565c1d3136e1b01fca43b528.png" alt="Kesten Garess &copy;Paizo"></a>
+	</dialog>
 </body>
 </html>
