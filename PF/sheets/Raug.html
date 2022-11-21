@@ -69,6 +69,7 @@
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/6c/7c/73/6c7c73940874273e1b2849ff80f57fea.jpg" alt="Zig, Male Goblin Rogue &copy;Paizo" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>free</dt>
 			<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=73">Scout Dedication</a></dd>
@@ -307,12 +308,6 @@
 				Raug accepte donc, pour payer "Fancy Knife", de ramener le journal de Dalibar Boddynock.
 				Pour aider à le retrouver, ils ont un détecteur lié à la boîte noire de l'engin volant de Dalibar.</p>
 
-			<details>
-				<summary class="subtitle">What Raug looks like</summary>
-				<img src="https://i.pinimg.com/originals/6c/7c/73/6c7c73940874273e1b2849ff80f57fea.jpg" alt="Zig, Male Goblin Rogue &copy;Paizo">
-				Art by Paizo.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Quality</dt>
 				<dd>Driven and honourable</dd>
@@ -337,5 +332,11 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Raug – Art by Paizo</h2>
+		<img src="https://i.pinimg.com/originals/6c/7c/73/6c7c73940874273e1b2849ff80f57fea.jpg" alt="Zig, Male Goblin Rogue &copy;Paizo">
+	</dialog>
 </body>
 </html>

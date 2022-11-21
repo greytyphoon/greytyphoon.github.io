@@ -68,6 +68,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture"  src="https://i.pinimg.com/originals/b0/92/93/b09293bbd44cead4426b76ece2ce87e0.jpg" alt="Leshen &copy;The Witcher 3" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/faith-traits/indomitable-faith">Indomitable Faith</a></dd>
@@ -281,13 +282,6 @@
 				He is no longer strong enough to wipe a kingdom and must lay low.
 				But he knows, there are some on this plane who would know the answer he seeks, and he must learn it.</p>
 
-			<details>
-				<summary class="subtitle">What Venogueron looks like</summary>
-				<a href="https://witcher.fandom.com/wiki/Leshy">
-				<img src="https://i.pinimg.com/originals/b0/92/93/b09293bbd44cead4426b76ece2ce87e0.jpg" alt="Leshen &copy;The Witcher 3"></a>
-				Art from The Witcher 3, modified by an unknown artist.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Patient &amp; determined</dd>
@@ -303,5 +297,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Venogueron – Art from The Witcher 3, modified by an unknown artist</h2>
+		<a href="https://witcher.fandom.com/wiki/Leshy">
+		<img  src="https://i.pinimg.com/originals/b0/92/93/b09293bbd44cead4426b76ece2ce87e0.jpg" alt="Leshen &copy;The Witcher 3"></a>
+	</dialog>
 </body>
 </html>

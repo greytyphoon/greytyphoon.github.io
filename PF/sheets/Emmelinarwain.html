@@ -70,6 +70,7 @@
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/19/e7/5f/19e75f355de947e0a2f59c530f57f43e.jpg" alt="Elf Ranger with Bow" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>free</dt>
 			<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=50">Beastmaster Dedication</a></dd>
@@ -270,13 +271,6 @@
 			<p>Started bounty-hunting when a prize was placed on clear enemies of his goddess, Yueral.
 				Found that it was well-suited to his talents and desire for justice, so he's been doing that when money ran short.</p>
 
-			<details>
-				<summary class="subtitle">What Emmelinarwain looks like</summary>
-				<a href="https://www.pinterest.ca/pin/766034217848926631">
-				<img src="https://i.pinimg.com/originals/19/e7/5f/19e75f355de947e0a2f59c530f57f43e.jpg" alt="Elf Ranger with Bow"></a>
-				Could not find source.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Quality</dt>
 				<dd>Patient and Meticulous</dd>
@@ -306,5 +300,11 @@
 				→ <a href="https://2e.aonprd.com/Archetypes.aspx?ID=59">Eldritch Archer</a>, but it sucked.</p>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Emmelinarwain – Couldn't find source</h2>
+		<img src="https://i.pinimg.com/originals/19/e7/5f/19e75f355de947e0a2f59c530f57f43e.jpg" alt="Elf Ranger with Bow">
+	</dialog>
 </body>
 </html>

@@ -74,6 +74,10 @@
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
+		<div id="main-picture">
+			<img src="https://i.pinimg.com/originals/b0/08/40/b00840065d757b6abf3abb8105a03933.jpg" alt="Draw this again - mermaid &copy;leamatte" onclick="document.getElementById('large-picture').showModal()">
+			<p><center><a onclick="document.getElementById('large-picture-old').showModal()">Old art</a></center></p>
+		</div>
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/religion-traits/affinity-for-the-elements">Affinity for the elements</a></dd>
@@ -259,19 +263,6 @@
 		<!-- title NOTES -->
 		<section class="noprint">
 			<hr>
-			<details>
-				<summary class="subtitle">What Cascada looks like</summary>
-				<a href="https://www.deviantart.com/leamatte/art/Draw-this-again-Mermaid-360804387">
-				<img src="https://i.pinimg.com/originals/b0/08/40/b00840065d757b6abf3abb8105a03933.jpg" alt="Draw this again - mermaid &copy;leamatte"></a>
-				Art by <a href="https://www.deviantart.com/leamatte">leamatte</a>.
-			</details>
-			<details>
-				<summary class="subtitle">Old art</summary>
-				<a href="http://afterdarkarts.blogspot.com/2011/03/mermaid.html">
-				<img src="https://i.pinimg.com/originals/36/0b/2e/360b2ef41c0ebc780005092dfb63d453.jpg" alt="Ariel &copy;Paul Massison"></a>
-				Art by <a href="http://afterdarkarts.blogspot.com/">Paul Massison</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Just and soft-spoken</dd>
@@ -296,5 +287,19 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Cascada – Art by <a href="https://www.deviantart.com/leamatte">leamatte</a></h2>
+		<a href="https://www.deviantart.com/leamatte/art/Draw-this-again-Mermaid-360804387">
+		<img src="https://i.pinimg.com/originals/b0/08/40/b00840065d757b6abf3abb8105a03933.jpg" alt="Draw this again - mermaid &copy;leamatte"></a>
+	</dialog>
+
+	<dialog id="large-picture-old" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Cascada – Art by <a href="http://afterdarkarts.blogspot.com/">Paul Massison</a></h2>
+		<a href="http://afterdarkarts.blogspot.com/2011/03/mermaid.html">
+		<img src="https://i.pinimg.com/originals/36/0b/2e/360b2ef41c0ebc780005092dfb63d453.jpg" alt="Ariel &copy;Paul Massison"></a>
+	</dialog>
 </body>
 </html>

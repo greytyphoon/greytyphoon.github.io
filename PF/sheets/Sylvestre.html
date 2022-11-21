@@ -72,6 +72,10 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<div id="main-picture">
+			<img src="https://i.pinimg.com/originals/da/bd/29/dabd29e420769ad953cfaf231b40682b.jpg" alt="MTG card: Falkenrath Gorger" onclick="document.getElementById('large-picture').showModal()">
+			<p><center><a onclick="document.getElementById('large-picture-alternative').showModal()">Alternative art</a></center></p>
+		</div>
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/race-traits/carefully-hidden-human">Carefully Hidden</a></dd>
@@ -440,15 +444,6 @@
 				Salomon's interested in her potential, and Vanessa sees her as a threat that might take her place.
 				Sylvestre will protect her at all costs, but would prefer if she proved that she doesn't need protection.</p>
 
-			<details>
-				<summary class="subtitle">What Sylvestre looks like</summary>
-				<a href="https://media.magic.wizards.com/images/hero/HB20160404_icon.jpg">
-				<img src="https://i.pinimg.com/originals/da/bd/29/dabd29e420769ad953cfaf231b40682b.jpg" alt="MTG card: Falkenrath Gorger"></a>
-				<a href="https://media.magic.wizards.com/images/hero/HB20160404_icon.jpg">
-				<img src="https://i.pinimg.com/originals/d2/ca/b9/d2cab9de57581e5a3dcb02fa88a302fa.png" alt="Bloodborne: Cainhurst concept art"></a>
-				Art by <a href="https://www.annasteinbauer.com/">Anna Steinbauer</a>, Bloodborne.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Courageous &amp; pragmatic</dd>
@@ -473,5 +468,18 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Sylvestre – Art by Wizards of the Coast (<a href="https://www.annasteinbauer.com/">Anna Steinbauer</a>)</h2>
+		<a href="https://media.magic.wizards.com/images/hero/HB20160404_icon.jpg">
+		<img src="https://i.pinimg.com/originals/da/bd/29/dabd29e420769ad953cfaf231b40682b.jpg" alt="MTG card: Falkenrath Gorger"></a>
+	</dialog>
+
+	<dialog id="large-picture-alternative" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Sylvestre – Art from Bloodborne</h2>
+		<img src="https://i.pinimg.com/originals/d2/ca/b9/d2cab9de57581e5a3dcb02fa88a302fa.png" alt="Bloodborne: Cainhurst concept art">
+	</dialog>
 </body>
 </html>

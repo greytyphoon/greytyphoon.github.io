@@ -77,6 +77,7 @@
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
+		<img id="main-picture" src="../notes/terres-sacrees/Jebif.jpg" alt="Jebif the Gnome and his rat Remy &copy;Cosmixian" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>free</dt>
 			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=665">Alchemist Dedication</a></dd>
@@ -465,12 +466,6 @@
 				Depuis qu'il est déconnecté des dieux, influencé par Alberich, il rapporte parfois sa rancoeur au <a class="pantheon" href="https://2e.aonprd.com/Deities.aspx?ID=92">Compte Ranalc</a>, qui n'est pas un dieu à proprement parler.
 				Il est plutôt non-croyant en général, et depuis qu'il a entendu parler des <a class="pantheon" href="https://2e.aonprd.com/Deities.aspx?ID=201">Lois des Mortels</a>, ne jure que par ça.</p>
 
-			<details>
-				<summary class="subtitle">What Jebif looks like</summary>
-				<img src="../notes/terres-sacrees/Jebif.jpg" alt="Jebif the Gnome and his rat Remy &copy;Cosmixian">
-				<p>Thanks <a href="https://www.reddit.com/u/cosmixian">u/Cosmixian</a>!</p>
-			</details>
-
 			<dl class="charInfo">
 				<dt>Quality</dt>
 				<dd>Tolerant and quick-witted</dd>
@@ -721,5 +716,11 @@
 			</table>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Jebif – Art made with love by <a href="https://www.reddit.com/u/cosmixian">u/Cosmixian</a></h2>
+		<img src="../notes/terres-sacrees/Jebif.jpg" alt="Jebif the Gnome and his rat Remy &copy;Cosmixian">
+	</dialog>
 </body>
 </html>

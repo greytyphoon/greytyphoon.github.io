@@ -70,6 +70,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/20/d5/94/20d5941bf604d708c6a24095c25b6101.jpg" alt="Ninja &copy;Yuan" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/race-traits/blood-of-dragons">Blood of Dragons</a></dd>
@@ -430,12 +431,6 @@
 				<li>Gain <i>Combat Trick</i>: <a href="https://d20pfsrd.com/feats/combat-feats/step-up-combat">Step Up</a></li>
 			</ul>
 
-			<details>
-				<summary class="subtitle">What Iwamori looks like</summary>
-				<img src="https://i.pinimg.com/originals/20/d5/94/20d5941bf604d708c6a24095c25b6101.jpg" alt="Ninja &copy;Yuan">
-				Art by Yuan.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Patient and adaptable</dd>
@@ -460,5 +455,11 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Iwamori – Art by Yuan</h2>
+		<img src="https://i.pinimg.com/originals/20/d5/94/20d5941bf604d708c6a24095c25b6101.jpg" alt="Ninja &copy;Yuan">
+	</dialog>
 </body>
 </html>
