@@ -65,6 +65,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/79/47/2a/79472a5798a9e3c260642a4190dd9e8b.jpg" alt="Huge... &copy;Raphael Macek" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>cavalier 1</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/armor-proficiency-light">Light Armor Proficiency</a>
@@ -216,12 +217,6 @@
 		<!-- title NOTES -->
 		<section class="noprint">
 			<hr>
-			<details>
-				<summary class="subtitle">What Rupert looks like</summary>
-				<a href="https://www.flickr.com/photos/raphaelmacek/4911592992/in/photostream">
-				<img src="https://i.pinimg.com/originals/79/47/2a/79472a5798a9e3c260642a4190dd9e8b.jpg" alt="Huge... &copy;Raphael Macek"></a>
-				Photo by <a href="https://raphaelmacek.com/">Raphael Macek</a>.
-			</details>
 			<dl class="charInfo">
 				<dt>Eyes</dt>
 				<dd>Black</dd>
@@ -240,5 +235,12 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Rupert – Photo by <a href="https://raphaelmacek.com/">Raphael Macek</a></h2>
+		<a href="https://www.flickr.com/photos/raphaelmacek/4911592992/in/photostream">
+		<img src="https://i.pinimg.com/originals/79/47/2a/79472a5798a9e3c260642a4190dd9e8b.jpg" alt="Huge... &copy;Raphael Macek"></a>
+	</dialog>
 </body>
 </html>

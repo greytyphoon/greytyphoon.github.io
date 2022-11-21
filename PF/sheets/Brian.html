@@ -61,6 +61,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="../notes/bear-skeleton-sketch.jpg" alt="Bear Skeleton Sketch" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>level 1</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/dodge-combat">Dodge</a>
@@ -195,13 +196,6 @@
 
 		<section class="noprint">
 			<hr>
-			<details>
-				<summary class="subtitle">What Brian Perro looks like</summary>
-				<a href="../notes/bear-skeleton-sketch.jpg">
-				<img src="../notes/bear-skeleton-sketch.jpg" alt="Bear Skeleton Sketch"></a>
-				Art found on <a href="https://sites.google.com/site/germanywasps/skeletons-muscles">this site about bears???</a>.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Eyes</dt>
 				<dd>Blue</dd>
@@ -220,5 +214,11 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Brian – Art found on <a href="https://sites.google.com/site/germanywasps/skeletons-muscles">this site about bears???</a></h2>
+		<img src="../notes/bear-skeleton-sketch.jpg" alt="Bear Skeleton Sketch">
+	</dialog>
 </body>
 </html>

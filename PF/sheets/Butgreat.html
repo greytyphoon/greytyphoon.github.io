@@ -66,6 +66,7 @@
 		</section>
 
 		<hr>
+		<img id="main-picture" src="https://i.imgur.com/3W0cdVZ.jpg" alt="Beerbert &copy;u/SeaLurker" onclick="document.getElementById('large-picture').showModal()">
 		<section class="row">
 			<ul class="summations">
 				<li>
@@ -189,7 +190,7 @@
 					<small>0 cha</small>
 				</li>
 			</ul>
-			<div>
+			<div class="ample">
 				<ul class="summations">
 					<li class="br">
 						<strong>1</strong>
@@ -200,6 +201,7 @@
 						<strong>21</strong>
 						<b>HP</b>
 						<small>2 druid: 8 class, 3 con, <u title="Hill Dwarf">1 racial</u>; -3 rolled</small>
+						<div class="circumstancialBonus" title="Dwarven Resilience"><u>Resistance</u> poison damage.</div>
 					</li>
 					<li>
 						<strong>17</strong>
@@ -216,7 +218,7 @@
 				</div>
 
 				<h2>Dwarven Resilience</h2>
-				<p>Gain advantage on saving throws vs poison, and resistance to poison damage.</p>
+				<p>Gain advantage on saves vs poison.</p>
 
 				<h2>Halo of Spores</h2>
 				<h2>Symbiotic Entity</h2>
@@ -256,13 +258,6 @@
 
 		<section class="noprint">
 			<hr>
-			<details>
-				<summary class="subtitle">What Butgreat looks like</summary>
-				<a href="https://www.reddit.com/r/characterdrawing/comments/qk4rne/rf_beerbert_for_udownstreamsag/">
-				<img src="https://i.imgur.com/3W0cdVZ.jpg" alt="Beerbert &copy;u/SeaLurker"></a>
-				<p>Art by <a href="https://www.reddit.com/user/SeaLurker/">/u/SeaLurker</a>.</p>
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Accepting and fun</dd>
@@ -299,6 +294,14 @@
 				<dt>Bond</dt>
 				<dd>3:	I owe my guild a great debt for forging me into the person I am today.</dd>
 			</dl>
+		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Butgreat – Art by <a href="https://www.reddit.com/user/SeaLurker/">/u/SeaLurker</a></h2>
+		<a href="https://www.reddit.com/r/characterdrawing/comments/qk4rne/rf_beerbert_for_udownstreamsag/">
+		<img src="https://i.imgur.com/3W0cdVZ.jpg" alt="Beerbert &copy;u/SeaLurker"></a>
+	</dialog>
 </body>
 </html>

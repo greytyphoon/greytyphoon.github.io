@@ -63,6 +63,10 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<div id="main-picture">
+			<img src="https://static.wikia.nocookie.net/mononokehime/images/5/5f/Demon_Worm.png" alt="Nago's Boar form, from Princess Mononoke &copy;Studio Ghibli 1997" onclick="document.getElementById('large-picture').showModal()">
+			<p><center><a onclick="document.getElementById('large-picture-alternative').showModal()">Demon art</a></center></p>
+		</div>
 		<dl id="featsWrapper">
 			<dt>feats</dt>
 			<dd><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Perception)</dd>
@@ -170,18 +174,18 @@
 			While the daeodon is primarily a scavenger, it isn’t averse to attacking smaller creatures it encounters while searching for easier meals, or those who stumble unwittingly into its territory.</p>
 		<p>Particularly brave or skilled orcs are fond of using daeodons as mounts, and orc cavalry mounted on dire boars make for a fearsome force indeed.</p>
 		<p>A typical adult daeodon is 10 feet long and 7 feet tall at the shoulder. It weighs approximately 2,000 pounds.</p>
-
-		<h2>What Nago looks like</h2>
-		<details>
-			<summary>Boar form</summary>
-			<a href="https://static.wikia.nocookie.net/mononokehime/images/5/5f/Demon_Worm.png">
-				<img src="https://static.wikia.nocookie.net/mononokehime/images/5/5f/Demon_Worm.png" width="720" height="400" alt="Nago's Boar form, from Princess Mononoke &copy;Studio Ghibli 1997"></a>
-		</details>
-		<details>
-			<summary>Demon form</summary>
-			<a href="https://static.wikia.nocookie.net/mononokehime/images/c/c9/Ksiezniczka-mononoke-1997_6518_800_600.jpg">
-				<img src="https://static.wikia.nocookie.net/mononokehime/images/c/c9/Ksiezniczka-mononoke-1997_6518_800_600.jpg" width="800" height="600" alt="Nago's Demon form, from Princess Mononoke &copy;Studio Ghibli 1997"></a>
-		</details>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Nago, Boar form – Art by Paizo</h2>
+		<img src="https://static.wikia.nocookie.net/mononokehime/images/5/5f/Demon_Worm.png" width="720" height="400" alt="Nago's Boar form, from Princess Mononoke &copy;Studio Ghibli 1997">
+	</dialog>
+
+	<dialog id="large-picture-alternative" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Nago, Demon form – Art by Paizo</h2>
+		<img src="https://static.wikia.nocookie.net/mononokehime/images/c/c9/Ksiezniczka-mononoke-1997_6518_800_600.jpg" width="800" height="600" alt="Nago's Demon form, from Princess Mononoke &copy;Studio Ghibli 1997">
+	</dialog>
 </body>
 </html>

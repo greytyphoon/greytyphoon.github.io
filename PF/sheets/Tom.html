@@ -69,6 +69,7 @@
 		</section>
 
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/45/37/6f/45376f0ce072a483b097f2de950325ac.jpg" alt="man and a sear &copy;jina lee" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/race-traits/elven-reflexes-half-elf">Elven Reflexes</a></dd>
@@ -251,5 +252,12 @@
 			<li>533 <b>GP</b><!--/10,500--></li>
 		</ul>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Tom – Art by <a href="https://www.artstation.com/jinblack">jina lee</a></h2>
+		<a href="https://www.artstation.com/artwork/GaomW">
+		<img src="https://i.pinimg.com/originals/45/37/6f/45376f0ce072a483b097f2de950325ac.jpg" alt="man and a sear &copy;jina lee"></a>
+	</dialog>
 </body>
 </html>

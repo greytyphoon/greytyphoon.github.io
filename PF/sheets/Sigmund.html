@@ -78,6 +78,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/2c/b7/26/2cb726275f7a896651379079f9ad1878.png" alt="Human Mage with Staff" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/campaign-traits/rise-of-the-runelords/outlander#Lore_Seeker">Lore Seeker</a>¹</dd>
@@ -396,13 +397,6 @@
 			<p>Luna is Sigmund's flighty, carefree, feminine side, that he found a way to extract from his head to better concentrate.
 				They are otherwise great friends, but Luna will most likely be too busy chasing a piece of feather to help with research.</p>
 
-			<details>
-				<summary class="subtitle">What Sigmund looks like</summary>
-				<a href="https://www.pinterest.ca/pin/710513278684042498">
-				<img src="https://i.pinimg.com/originals/2c/b7/26/2cb726275f7a896651379079f9ad1878.png" alt="Human Mage with Staff"></a>
-				Could not find source.
-			</details>
-
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Ambitious and generous</dd>
@@ -427,5 +421,11 @@
 			</dl>
 		</section>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Sigmund – Couldn't find source</h2>
+		<img src="https://i.pinimg.com/originals/2c/b7/26/2cb726275f7a896651379079f9ad1878.png" alt="Human Mage with Staff">
+	</dialog>
 </body>
 </html>
