@@ -69,6 +69,10 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<div id="main-picture">
+			<img id="main-picture" src="https://i.pinimg.com/originals/79/d0/e9/79d0e9b8cfb08e2b923da9417f79aa82.jpg" alt="&copy;Zhang Xu" onclick="document.getElementById('large-picture-vigilante').showModal()">
+			<p><center><a onclick="document.getElementById('large-picture-social').showModal()">Art, as Franco</a></center></p>
+		</div>
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/combat-traits/honored-fist-of-the-society-monk-pathfinder-society">Honored Fist of the Society</a></dd>
@@ -307,22 +311,6 @@
 				However, this changed recently, as funding became scarce and bigger coups less frequent.
 				Franco saw his chance to grab some power for himself and now acts as the irreproachable fence for <b>Les Trois Traîtres 🎭</b>, a nefarious guild of thieves, that he founded.</p>
 
-			<details>
-				<summary class="subtitle">What Franco &amp; Lazav look like</summary>
-				<section class="row">
-					<div>
-						<a href="https://www.artstation.com/artwork/1XzOo">
-						<img src="https://i.pinimg.com/originals/27/c1/d7/27c1d70956f0eed8c65b270a7c699288.jpg" alt="Shady Character &copy;Piotr Krezelewski"></a>
-						Art by <a href="https://www.artstation.com/piotrkrezelewski">Piotr Krezelewski</a>.
-					</div>
-
-					<div>
-						<img src="https://i.pinimg.com/originals/79/d0/e9/79d0e9b8cfb08e2b923da9417f79aa82.jpg" alt="&copy;Zhang Xu">
-						Art by Zhang Xu.
-					</div>
-				</section>
-			</details>
-			
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>Practical &amp; plainspoken</dd>
@@ -346,7 +334,19 @@
 				<dd>5' 9''</dd>
 			</dl>
 		</section>
-
 	</div>
+
+	<dialog id="large-picture-social" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Franco – Art by <a href="https://www.artstation.com/piotrkrezelewski">Piotr Krezelewski</a></h2>
+		<a href="https://www.artstation.com/artwork/1XzOo">
+		<img src="https://i.pinimg.com/originals/27/c1/d7/27c1d70956f0eed8c65b270a7c699288.jpg" alt="Shady Character &copy;Piotr Krezelewski"></a>
+	</dialog>
+
+	<dialog id="large-picture-vigilante" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Lazav – Art by Zhang Xu</h2>
+		<img src="https://i.pinimg.com/originals/79/d0/e9/79d0e9b8cfb08e2b923da9417f79aa82.jpg" alt="&copy;Zhang Xu">
+	</dialog>
 </body>
 </html>

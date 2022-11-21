@@ -70,6 +70,10 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<div id="main-picture">
+			<img src="https://i.pinimg.com/originals/16/4b/18/164b18e8f966c004d164784a6c2a6be4.jpg" alt="&copy;jiangsanjin" onclick="document.getElementById('large-picture-angel').showModal()">
+			<p><center><a onclick="document.getElementById('large-picture-human').showModal()">Art, as Zoe</a></center></p>
+		</div>
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/race-traits/innocent-aasimar">Innocent</a></dd>
@@ -365,22 +369,6 @@
 			<p><span class="vigilante identity">Akroma</span> is a crowd favorite at the coliseum. No one has made the connection yet.
 				Only Akroma is part of the <b>Fire Drake 🐲</b> guild, not Zoe, the guild is not aware of her other identity.</p>
 
-			<details>
-				<summary class="subtitle">What Zoe &amp; Akroma look like</summary>
-				<section class="row">
-					<div>
-						<a href="https://www.artstation.com/artwork/arZ4R">
-						<img src="https://i.pinimg.com/originals/da/ba/e2/dabae2bca468fe6f9351bba4ed1dd988.jpg" alt="Lucrezia Borgia &copy;Guan Yu chen"></a>
-						Art from <a href="https://www.artstation.com/guan-yu">Guan Yu chen</a>.
-					</div>
-					<div>
-						<a href="https://blog.sina.com.cn/s/blog_5131ff3e0102e3ge.html">
-						<img src="https://i.pinimg.com/originals/16/4b/18/164b18e8f966c004d164784a6c2a6be4.jpg" alt="&copy;jiangsanjin"></a>
-						Art by <a href="https://blog.sina.com.cn/jiangsanjin">jiangsanjin</a>.
-					</div>
-				</section>
-			</details>
-
 			<section class="row">
 				<dl class="charInfo">
 					<dt>Qualities</dt>
@@ -430,5 +418,19 @@
 			</section>
 		</section>
 	</div>
+
+	<dialog id="large-picture-human" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Zoe – Art by <a href="https://www.artstation.com/guan-yu">Guan Yu chen</a></h2>
+		<a href="https://www.artstation.com/artwork/arZ4R">
+		<img src="https://i.pinimg.com/originals/da/ba/e2/dabae2bca468fe6f9351bba4ed1dd988.jpg" alt="Lucrezia Borgia &copy;Guan Yu chen"></a>
+	</dialog>
+
+	<dialog id="large-picture-angel" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Akroma – Art by <a href="https://blog.sina.com.cn/jiangsanjin">jiangsanjin</a></h2>
+		<a href="https://blog.sina.com.cn/s/blog_5131ff3e0102e3ge.html">
+		<img src="https://i.pinimg.com/originals/16/4b/18/164b18e8f966c004d164784a6c2a6be4.jpg" alt="&copy;jiangsanjin"></a>
+	</dialog>
 </body>
 </html>

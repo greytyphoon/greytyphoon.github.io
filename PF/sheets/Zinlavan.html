@@ -70,6 +70,7 @@
 
 		<!-- title SKILLS & FEATS -->
 		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/db/1c/89/db1c896e946e22dbdfeaecbf6b31cf78.jpg" alt="Mirrin &copy;Rakugaki" onclick="document.getElementById('large-picture-social').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
 			<dd><a href="https://d20pfsrd.com/traits/race-traits/elven-reflexes-half-elf">Elven Reflexes</a></dd>
@@ -298,22 +299,6 @@
 
 			<p>Zinlavan est une des <b>Trois Traîtres 🎭</b>.</p>
 
-			<details>
-				<summary class="subtitle">What Zinlavan &amp; Jolrael look like</summary>
-				<section class="row">
-					<div>
-						<a href="https://kiikiibee.tumblr.com/post/151377910822/commission-for-frabjuosity-of-her-lovely">
-						<img src="https://i.pinimg.com/originals/db/1c/89/db1c896e946e22dbdfeaecbf6b31cf78.jpg" alt="Mirrin &copy;Rakugaki"></a>
-						Art by <a href="https://kiikiibee.tumblr.com/">Rakugaki</a>.
-					</div>
-
-					<div>
-						<img src="https://i.pinimg.com/originals/79/d0/e9/79d0e9b8cfb08e2b923da9417f79aa82.jpg" alt="&copy;Zhang Xu">
-						Art by TBD.
-					</div>
-				</section>
-			</details>
-			
 			<dl class="charInfo">
 				<dt>Qualities</dt>
 				<dd>TBD &amp; TBD</dd>
@@ -337,7 +322,13 @@
 				<dd>5' 5''</dd>
 			</dl>
 		</section>
-
 	</div>
+
+	<dialog id="large-picture-social" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Zinvalan – Art by <a href="https://kiikiibee.tumblr.com/">Rakugaki</a></h2>
+		<a href="https://kiikiibee.tumblr.com/post/151377910822/commission-for-frabjuosity-of-her-lovely">
+		<img src="https://i.pinimg.com/originals/db/1c/89/db1c896e946e22dbdfeaecbf6b31cf78.jpg" alt="Mirrin &copy;Rakugaki"></a>
+	</dialog>
 </body>
 </html>
