@@ -37,7 +37,8 @@ dl#subheader > dd.archetype::before {
 /*main-picture*/
 #main-picture {
 	display: block;
-	margin: 0 auto; }
+	margin: 0 auto;
+	text-align: center; }
 img#main-picture,
 #main-picture img {
 	margin-bottom: .75em;
