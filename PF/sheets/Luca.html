@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Psychic</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.psyche { color: var(--virtue-blue); }
+		.psyche.weapon { color: var(--murder-black); --weapon-color: var(--virtue-blue); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="notes" href="../notes/terres-sacrees/index.html">Notes</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF/index.html">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Luca Cane, the stowaway mage</h1>
+			N Medium Humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>10</dd>
+
+				<dt>Dex</dt>
+				<dd>16 <small>A, B, L1</small></dd>
+
+				<dt>Con</dt>
+				<dd>12 <small>L1</small></dd>
+
+				<dt>Int</dt>
+				<dd>18 <small>A, B, C, L1</small></dd>
+
+				<dt>Wis</dt>
+				<dd>12 <small>L1</small></dd>
+
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Ancestry</dt>
+				<dd><a href="https://2e.aonprd.com/Ancestries.aspx?ID=6">Human</a></dd>
+				<dd class="archetype">Versatile Heritage</dd>
+
+				<dt>Background</dt>
+				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=227">Unsponsored</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=21">Psychic</a> 3</dd>
+				<dd class="archetype">Subconscious Mind: <a href="https://2e.aonprd.com/SubconsciousMinds.aspx?ID=2">Gathered Lore</a></dd>
+				<dd class="archetype">Conscious Mind: <a href="https://2e.aonprd.com/ConsciousMinds.aspx?ID=4">The Silent Whisper</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Desna, Pharasma</dd>
+
+				<dt>Senses</dt>
+				<dd>Normal</dd>
+
+				<dt>Speed</dt>
+				<dd>25 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd title="2 racial, 4 int">Mwangi, Varisian, Taldane, Elven, Draconic, Sylvan</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/e8/5e/34/e85e34f2062cbf0ed63a31ce36e3f154.jpg" alt="Young transmutation wizard &copy;???" onclick="document.getElementById('large-picture').showModal()">
+		<dl id="featsWrapper">
+			<dt>heritage</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=764">Canny Acumen</a> (Perception)</dd>
+			<dt>human 1</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=66">Adapted Cantrip</a></dd>
+			<dt>psychic 2</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=3661">Psi Burst</a></dd>
+			<dt>archetype 2</dt>
+			<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=12">Wizard Dedication</a> (Abjuration)</dd>
+			<dt>general 3</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=855">Toughness</a></dd>
+			<dt>academia 3</dt>
+			<dd class="br"><a href="https://2e.aonprd.com/Archetypes.aspx?ID=29">Magaambyan Attendant Dedication</a> (Arcane)</dd>
+
+			<dt>background</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=796">Intimidating Glare</a></dd>
+			<dt>skill 2</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=834">Recognize Spell</a></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=1" title="Trained by Class (Free)">Acrobatics</a>
+				<small>3 dex, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=4" title="Trained by Class (Free)">Crafting</a>
+				<small>4 int, 2 prf, 3 lvl, <u title="Repair Kit">1 item</u></small>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=5" title="Trained by Class (Free)">Deception</a>
+				<small>0 cha, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>5</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=6" title="Trained by Class (Free)">Diplomacy</a>
+				<small>0 cha, 2 prf, 3 lvl</small>
+			</li>
+			<li class="br">
+				<strong>5</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=7" title="Trained by Background (Flexible)">Intimidate</a>
+				<small>0 cha, 2 prf, 3 lvl</small>
+				<div class="circumstancialBonus" title="Intimidating Glare"><u>Demoralize</u> without penalty if you don't share a language.</div>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=2" title="Trained by Wizard Dedication (Fixed), Expert by Magaambyan Attendant Dedication (Flexible)">Arcana</a>
+				<small>4 int, 4 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=10" title="Trained by Class (Free)">Nature</a>
+				<small>1 wis, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>12</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=11" title="Trained by Class (Fixed), Expert by Increase (lvl3)">Occultism</a>
+				<small>4 int, 4 prf, 3 lvl, <u title="Pendant of the Occult">1 item</u></small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=13" title="Trained by Class (Free)">Religion</a>
+				<small>1 wis, 2 prf, 3 lvl</small>
+			</li>
+			<li class="br">
+				<strong>9</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=13" title="Trained by Class (Free)">Society</a>
+				<small>4 int, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>9</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Background (Fixed)">Lore</a> (Academia)
+				<small>4 int, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>9</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Academia (Fixed)">Lore</a> (Sailing)
+				<small>4 int, 2 prf, 3 lvl</small>
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<ul class="summations">
+				<li class="br">
+					<strong>8</strong>
+					<b>Perception</b>
+					<small>1 wis, <u title="Canny Acumen">4 prf</u>, 3 lvl</small>
+				</li>
+				<li>
+					<strong>32</strong>
+					<b>HP</b>
+					<small>8 human, 3 lvl: 6 psychic, 1 con, <u title="Toughness">1 feat</u></small>
+					<div class="circumstancialBonus" title="Toughness"><u>+1</u> to stabilize.</div>
+				</li>
+				<li class="br">
+					<strong>18</strong>
+					<b>AC</b>
+					<small>10, 3 dex, 2 prf, 3 lvl</small>
+					<div class="circumstancialBonus"><u>+2 circ</u> when raising a shield.</div>
+				</li>
+				<li>
+					<strong>6</strong>
+					<b>Fort</b>
+					<small>1 con, 2 prf, 3 lvl</small>
+				</li>
+				<li>
+					<strong>8</strong>
+					<b>Ref</b>
+					<small>3 dex, 2 prf, 3 lvl</small>
+				</li>
+				<li>
+					<strong>8</strong>
+					<b>Will</b>
+					<small>1 wis, 4 prf, 3 lvl</small>
+				</li>
+			</ul>
+
+			<div>
+				<!--Electric Arc-->
+				<div class="weapon">
+					<h2 class="two-actions">Electric Arc <b>⚡</b> <b>30ft. strict</b></h2>
+					<div class="summation"><strong>DC 19</strong> Basic Reflex save <small>occult spell dc</small></div>
+					<div class="circumstancialBonus">Targets up to 2 foes.</div>
+					<div class="summation"><strong class="electricity">2d4+8</strong> <small>4 int, <u title="Unleash Psyche: 2× 2 spell level" class="psyche">4 status</u></small></div>
+				</div>
+
+				<!--Psi Burst-->
+				<div class="weapon psyche">
+					<h2 class="one-action">Psi Burst [Mindshift] <b>B||Mental</b> <b>30ft. strict</b></h2>
+					<div class="summation"><strong>DC 19</strong> Basic Reflex||Will save <small>occult spell dc</small></div>
+					<div class="summation"><strong>2d4</strong></div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+		</section>
+
+		<section class="row">
+			<div class="slim">
+				<h2 class="reaction"><a href="https://2e.aonprd.com/Feats.aspx?ID=834">Recognize Spell</a></h2>
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Actions.aspx?ID=26">Recall Knowledge</a></h2>
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Actions.aspx?ID=98">Raise Shield</a></h2>
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Skills.aspx?ID=7">Demoralize</a></h2>
+				<h2 class="two-actions"><a class="spell bonus" title="Pendant of the Occult" href="https://2e.aonprd.com/Spells.aspx?ID=142">guidance</a></h2>
+				<h2 class="two-actions br"><a class="spell bonus" title="Magaambyan Attendant Dedication" href="https://2e.aonprd.com/Spells.aspx?ID=66">detect magic</a></h2>
+			</div>
+
+			<div class="ample">
+				<h2 class="no-action psyche">Unleash Psyche</h2>
+				<p class="psyche">Starts as your turn begins, if you Cast a Spell on your last turn and aren't stupefied.<br>
+					Your instantaneous psychic spells deal more damage <small>2× spell level, as a status bonus</small>.<br>
+					This lasts <b>2</b> rounds; you're then <a href="https://2e.aonprd.com/Conditions.aspx?ID=37">stupefied 1</a> for 2 rounds.</p>
+
+				<h2 class="one-action psyche">Recall the Teachings</h2>
+				<p class="psyche">Prepare to <a href="https://2e.aonprd.com/Actions.aspx?ID=75" class="reaction">Aid</a> any action by any ally within 30ft, using Occultism to aid.</p>
+			</div>
+		</section>
+
+		<!-- title Spells -->
+		<div>
+			<h2>Focus Pool <b title="Psi Cantrips">2 FP</b></h2>
+			<p>When you refocus, regain 2 FP if they were spent only on Psychic abilities. Use FP to AMP cantrips:</p>
+		</div>
+
+		<section class="row br">
+			<!--Daze-->
+			<div class="weapon">
+				<h2 class="two-actions">Daze <b>Mental</b> <u title="The Silent Whisper">120ft. strict</u></h2>
+				<div class="summation"><strong>DC 19</strong> Basic Will save <small>occult spell dc</small></div>
+				<div class="summation"><strong>8</strong> <small>4 int, <u title="Unleash Psyche: 2× 2 spell level" class="psyche">4 status</u></small></div>
+				<div class="circumstancialBonus">On fumble, the foe is <a href="https://2e.aonprd.com/Conditions.aspx?ID=36">stunned 1</a> for 1 round.</div>
+				<div class="circumstancialBonus"><b>AMP</b>: damage becomes <b>1d10+<u title="Unleash Psyche: 2× 2 spell level" class="psyche">4</u></b>.</div>
+				<div class="circumstancialBonus"><b>AMP</b>: on fail, the foe has <u>Weakness 1</u> mental <small>triggered by this spell</small> and <u>-1 status</u> to Will.</div>
+				<div class="circumstancialBonus"><b>AMP</b>: on fumble, the foe has <u>Weakness 3</u> mental.</div>
+			</div>
+
+			<!--Message-->
+			<div class="weapon">
+				<h2 class="one-action">Message <b>120ft. strict, <u title="The Silent Whisper">around obstacles</u></b></h2>
+				<div class="summation">You whisper a message in your ally's ear. They can reply.</div>
+				<div class="circumstancialBonus"><b>AMP</b>: they can spend a reaction to Step or Stride.</div>
+			</div>
+
+			<!--Forbidden Thought-->
+			<div class="weapon">
+				<h2 class="two-actions">Forbidden Thought <b>Mental</b> <b>30ft. strict</b></h2>
+				<div class="circumstancialBonus">Choose an action. If the foe does that next turn:</div>
+				<div class="summation"><strong>DC 19</strong> Basic Will save <small>occult spell dc</small></div>
+				<div class="summation"><strong>2d6+8</strong> <small>4 int, <u title="Unleash Psyche: 2× 2 spell level" class="psyche">4 status</u></small></div>
+				<div class="circumstancialBonus">The foe becomes immune to this for 1 minute.</div>
+				<div class="circumstancialBonus"><b>AMP</b>: on fail, the foe is <a href="https://2e.aonprd.com/Conditions.aspx?ID=36">stunned 1</a>.</div>
+			</div>
+		</section>
+
+		<section class="row">
+			<div>
+				<h2><a href="https://2e.aonprd.com/Spells.aspx?Tradition=3">Occult Spells</a> (Spontaneous)</h2>
+				<p class="summation">
+					<strong>9</strong>
+					<b>Attack</b>; 19 <b>DC</b>
+					<small>10, 4 int, 2 prf, 3 lvl</small>
+				</p>
+			</div>
+			<div>
+				<h2 title="6 known: 3 psychic, 3 conscious mind">Level 0</h2>
+				<ul>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=61">daze</a>,</li>
+					<li><a class="spell bonus off-class" title="Adapted Cantrip" href="https://2e.aonprd.com/Spells.aspx?ID=97">electric arc</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1139">forbidden thought</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=177">mage hand</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=190">message</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1166">warp step</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="3 known: 2 psychic, 1 conscious mind">Level 1 <b>2/day</b></h2>
+				<ul>
+					<li><a class="spell bonus" href="https://2e.aonprd.com/Spells.aspx?ID=195">mindlink</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=182">magic weapon</a> <small>retrain to <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=696">ill omen</a> soon</small>,</li>
+					<li><a class="spell upcast" href="https://2e.aonprd.com/Spells.aspx?ID=291">soothe</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2 title="2 known: 1 psychic, 1 conscious mind">Level 2 <b>1/day</b></h2>
+				<ul>
+					<li><a class="spell bonus" href="https://2e.aonprd.com/Spells.aspx?ID=341">touch of idiocy</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=150">hideous laughter</a>.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="row">
+			<div>
+				<h2><a href="https://2e.aonprd.com/Spells.aspx?Tradition=1">Arcane Spells</a> (Prepared)</h2>
+				<p class="summation">
+					<strong>9</strong>
+					<b>Attack</b>; 19 <b>DC</b>
+					<small>10, 4 int, 2 prf, 3 lvl</small>
+				</p>
+			</div>
+			<div class="wider">
+				<h2>Level 0 <u title="2 Wizard Dedication">2/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=132">ghost sound</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=171">light</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=229">prestidigitation</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=246">read aura</a>.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="mundaneItemsWrapper">
+			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=43">Repair Kit (superb)</a></li>
+			<li title="1 Bulk">Spellbook</li>
+			<li title="L Bulk">Spell Components Pouch</li>
+		</ul>
+		<ul id="magicItemsWrapper">
+			<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=450">Pendant of the Occult</a></li>
+			<li>15 <b>GP</b></li>
+		</ul>
+
+		<ul id="inventory">
+			<!--Weapons-->
+			<li title="L Bulk">
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=3">Dagger</a>
+				<small>simple, 1d4PS, 1Hand, Knife Group, Agile Finesse Thrown-10ft.</small>
+			</li>
+			<li title="1 Bulk" class="br">
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=67">Crossbow</a>
+				<small>simple, 1d8P, 2Hand, Bow Group.</small>
+				<div class="circumstancialBonus">20 bolts</div>
+			</li>
+
+			<!--Armors-->
+			<li title="1 Bulk" class="br">
+				<a href="https://2e.aonprd.com/Shields.aspx?ID=3">Steel Shield</a>
+				<small>2 shield, -0ft, 5 Hard, 20 HP.</small>
+			</li>
+
+			<!--Consumables-->
+			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=186">Healing Potion</a>, minor
+				<small>heals 1d8</small></li>
+			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a>, lesser
+				<small><u title="Lesser">+2 item</u> vs poison, lasts 6h</small></li>
+			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a>, lesser
+				<small><u title="Lesser">+2 item</u> vs disease, lasts 24h</small></li>
+			<li>1× <a href="https://2e.aonprd.com/Equipment.aspx?ID=187">Invisibility Potion</a>
+				<small>undetected, lasts 10 min</small></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p>Guide used: <a href="https://docs.google.com/document/d/1bM79znsVHOmv0RhsOGul2SHe53m-MS9f3WT_cDB8hbU/edit">Free Your Mind &copy;Blammit</a>.</p>
+
+			<p>Academic branch affiliation: Uzunjati <b>3</b> (knowledge) &amp; Tempest-Sun Mages <b>1</b> (valor).</p>
+
+			<p>Desperate to contribute to the knowledge of magic, Luca ventured far from his homeland, Varisia, looking for the Academy.
+				Luca thinks he's discovered a way for all to Amp cantrips, by manipulating spellcasting.</p>
+
+			<dl class="charInfo">
+				<dt>Quality</dt>
+				<dd>Idealistic and goal-oriented</dd>
+
+				<dt>Drawback</dt>
+				<dd>Corruptible</dd>
+
+				<dt>Age</dt>
+				<dd>19</dd>
+
+				<dt>Weight</dt>
+				<dd>138 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 10''</dd>
+			</dl>
+		</section>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Luca – Couldn't find source</h2>
+		<img src="https://i.pinimg.com/originals/e8/5e/34/e85e34f2062cbf0ed63a31ce36e3f154.jpg" alt="Young transmutation wizard &copy;???"></a>
+	</dialog>
+</body>
+</html>
