@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Magus</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.cascade { color: var(--virtue-blue); }
+		.cascade.weapon { color: var(--murder-black); --weapon-color: var(--virtue-blue); }
+		.spellstrike::after { content: " [spellstrike]"; color: var(--transmutation-teal); }
+		.spell.spellstrike.acid::after { content: " 🧪[spellstrike]"; }
+		.spell.spellstrike.cold::after { content: " ❄[spellstrike]"; }
+		.spell.spellstrike.fire::after { content: " 🔥[spellstrike]"; }
+		.spell.spellstrike.electricity::after { content: " ⚡[spellstrike]"; }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="notes" href="../notes/strength-of-thousands/index.html">Notes</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF/index.html">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Xolani Nqumela, the escapist</h1>
+			CG Medium Humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>10</dd>
+
+				<dt>Dex</dt>
+				<dd>18 <small>A, B, C, L1</small></dd>
+
+				<dt>Con</dt>
+				<dd>12 <small>L1</small></dd>
+
+				<dt>Int</dt>
+				<dd>16 <small>A, B, L1</small></dd>
+
+				<dt>Wis</dt>
+				<dd>12 <small>L1</small></dd>
+
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Ancestry</dt>
+				<dd><a href="https://2e.aonprd.com/Ancestries.aspx?ID=6">Human</a></dd>
+				<dd class="archetype">Versatile Heritage</dd>
+
+				<dt>Background</dt>
+				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=223">Sponsored by Family</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=17">Magus</a> 3</dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/HybridStudies.aspx?ID=2">Laughing Shadow</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Gozreh, ancestors</dd>
+
+				<dt>Senses</dt>
+				<dd>Normal</dd>
+
+				<dt>Speed</dt>
+				<dd title="25 racial, 5 Fleet">30 ft. <u title="Laughing Shadow" class="cascade">+5ft status</u></dd>
+
+				<dt>Languages</dt>
+				<dd title="2 racial, 3 int">Mwangi, Xanmba, Elven, Draconic, Sylvan</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/f9/90/60/f99060a4bc1a6b2a862c1ec50a8d2872.jpg" alt="Lunars: Fangs at the Gate - cover &copy;YihyoungLi" onclick="document.getElementById('large-picture').showModal()">
+		<dl id="featsWrapper">
+			<dt>heritage</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=855">Toughness</a></dd>
+			<dt>human 1</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=70">NA</a> &gt;
+				<a href="https://2e.aonprd.com/Feats.aspx?ID=2847">Magus's Analysis</a></dd>
+			<dt>psychic 2</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2850">Force Fang</a></dd>
+			<dt>archetype 2</dt>
+			<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=12">Wizard Dedication</a> (Evocation)</dd>
+			<dt>general 3</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=784">Fleet</a></dd>
+			<dt>academia 3</dt>
+			<dd class="br"><a href="https://2e.aonprd.com/Archetypes.aspx?ID=29">Magaambyan Attendant Dedication</a> (Arcane)</dd>
+
+			<dt>background</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2127">Eye for Number</a></dd>
+			<dt>skill 2</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=834">Recognize Spell</a></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>12</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=1" title="Trained by Class (Free), Expert by Increase (lvl3)">Acrobatics</a>
+				<small>4 dex, 4 prf, 3 lvl, <u title="Bracelet of Dashing">1 item</u></small>
+			</li>
+			<li>
+				<strong>9</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=4" title="Trained by Class (Free)">Crafting</a>
+				<small>3 int, 2 prf, 3 lvl, <u title="Repair Kit">1 item</u></small>
+			</li>
+			<li class="br">
+				<strong>9</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=3" title="Trained by Class (Free)">Stealth</a>
+				<small>4 dex, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=2" title="Trained by Wizard Dedication (Fixed), Expert by Magaambyan Attendant Dedication (Flexible)">Arcana</a>
+				<small>3 int, 4 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=10" title="Trained by Class (Free)">Nature</a>
+				<small>1 wis, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=11" title="Trained by Class (Free)">Occultism</a>
+				<small>3 int, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=13" title="Trained by Class (Free)">Religion</a>
+				<small>1 wis, 2 prf, 3 lvl</small>
+			</li>
+			<li class="br">
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=13" title="Trained by Background (Flexible)">Society</a>
+				<small>3 int, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Background (Fixed)">Lore</a> (Academia)
+				<small>3 int, 2 prf, 3 lvl</small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Academia (Fixed)">Lore</a> (Magaambya)
+				<small>3 int, 2 prf, 3 lvl</small>
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<ul class="summations">
+				<li class="br">
+					<strong>6</strong>
+					<b>Perception</b>
+					<small>1 wis, 2 prf, 3 lvl</small>
+				</li>
+				<li>
+					<strong>38</strong>
+					<b>HP</b>
+					<small>8 human, 3 lvl: 8 magus, 1 con, <u title="Toughness">1 feat</u></small>
+					<div class="circumstancialBonus" title="Toughness"><u>+1</u> to stabilize.</div>
+				</li>
+				<li class="br">
+					<strong>20</strong>
+					<b>AC</b>
+					<small>10, 4 dex, 2 prf, 3 lvl, <u title="Leather Armor">1 item</u></small>
+				</li>
+				<li>
+					<strong>8</strong>
+					<b>Fort</b>
+					<small>1 con, 4 prf, 3 lvl</small>
+				</li>
+				<li>
+					<strong>9</strong>
+					<b>Ref</b>
+					<small>4 dex, 2 prf, 3 lvl</small>
+				</li>
+				<li>
+					<strong>8</strong>
+					<b>Will</b>
+					<small>1 wis, 4 prf, 3 lvl</small>
+				</li>
+			</ul>
+
+			<div class="ample">
+				<!--Rapier-->
+				<div class="weapon">
+					<h2 class="one-actions">Shortsword <b>PS</b></h2>
+					<div class="summation"><strong>+10</strong>/<strong>6</strong>/<strong>2</strong> vs AC <small>4 dex, 2 prf, 3 lvl, 1 item</small></div>
+					<div class="summation"><strong>1d6 <u title="Damage type varies" class="cascade">+3 varying</u></strong> <small>0 str, <u class="cascade" title="Increases at 1st³, 7th⁵, 15th⁷. Augmented by Laughing Shadow.">3</u></small></div>
+					<div class="circumstancialBonus"><em>Spellstrike + Gouging Claw:</em> add <u>2d6+3 dmg PS</u>; on crit, add <u>2d4 bleed</u>.</div>
+				</div>
+
+				<!--Electric Arc-->
+				<div class="weapon">
+					<h2 class="two-actions">Electric Arc <b>⚡</b> <b>30ft. strict</b></h2>
+					<div class="summation"><strong>DC 18</strong> Basic Reflex save <small>occult spell dc</small></div>
+					<div class="circumstancialBonus">Targets up to 2 foes.</div>
+					<div class="summation"><strong class="electricity">2d4+4</strong> <small>4 int</small></div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+		</section>
+
+		<section class="row">
+			<div>
+				<h2 class="reaction"><a href="https://2e.aonprd.com/Feats.aspx?ID=834">Recognize Spell</a></h2>
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=2847">Magus's Analysis</a> (<a href="https://2e.aonprd.com/Actions.aspx?ID=26">Recall Knowledge</a>)</h2>
+				<h2 class="one-action br"><a href="https://2e.aonprd.com/Equipment.aspx?ID=415">Bracelet of Dashing</a> <b>1/day</b></h2>
+
+				<h2>Focus Pool <b title="Conflux Spells, Force Fang">2 FP</b></h2>
+				<dl class="condensed">
+					<dt class="one-action"><a href="https://2e.aonprd.com/Spells.aspx?ID=1037">Dimensional Assault</a> [Conflux]</dt>
+					<dd>Teleport half your speed, then Strike.</dd>
+					<dt class="one-action"><a href="https://2e.aonprd.com/Spells.aspx?ID=1038">Force Fang</a> [Conflux]</dt>
+					<dd>A foe within reach takes <b>1d4+1 dmg Force</b>.</dd>
+				</dl>
+			</div>
+
+			<div class="ample">
+				<h2 class="one-action cascade"><a href="https://2e.aonprd.com/Actions.aspx?ID=756">Arcane Cascade</a> [Stance]</h2>
+				<p class="cascade">Starts if you just Cast a Spell or used Spellstrike.<br>
+					Gain extra damage, of the same type as the trigger spell.</p>
+
+				<h2 class="two-actions">Spellstrike</h2>
+				<p>Cast a <span class="spellstrike">Spell</span> and Strike. <small>The spell uses the Strike's result. Increase your MAP by 2.</small><br>
+					Spellstrike must recharge: as 1 action, by casting a [Conflux] spell, etc.</p>
+			</div>
+		</section>
+
+		<!-- title Spells -->
+		<hr>
+		<section class="row">
+			<div>
+				<h2><a href="https://2e.aonprd.com/Spells.aspx?Tradition=1">Arcane Spells</a> (Prepared)</h2>
+				<p class="summation">
+					<strong>8</strong>
+					<b>Attack</b>; 18 <b>DC</b>
+					<small>10, 3 int, 2 prf, 3 lvl</small>
+				</p>
+			</div>
+			<div>
+				<h2>Level 0 <b title="5 Magus, 2 Wizard Dedication, 1 Magaambyan Attendant Dedication">8/day</b></h2>
+				<ul>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=66">detect magic</a>,</h2>
+					<li><a class="spell electricity" href="https://2e.aonprd.com/Spells.aspx?ID=97">electric arc</a>,</li>
+					<li><a class="spell spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=920">gouging claw</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=171">light</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=177">mage hand</a>,</li>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=190">message</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=229">prestidigitation</a>,</li>
+					<li><a class="spell fire spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=236">produce flame</a>,</li>
+					<li><a class="spell cold spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=245">ray of frost</a>.</li>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=280">shield</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 1 <b>2/day</b></h2>
+				<ul>
+					<li><a class="spell spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=154">hydraulic push</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=182">magic weapon</a>,</li>
+					<li><a class="spell electricity spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=283">shocking grasp</a>,</li>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=345">true strike</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 2 <b>1/day</b></h2>
+				<ul>
+					<li><a class="spell acid spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=2">acid arrow</a>.</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=164">invisibility</a>.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="mundaneItemsWrapper">
+			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=43">Repair Kit (superb)</a></li>
+			<li title="L Bulk">Spellbook</li>
+			<li title="L Bulk">Spell Components Pouch</li>
+		</ul>
+		<ul id="magicItemsWrapper">
+			<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=415">Bracelet of Dashing</a></li>
+			<li>15 <b>GP</b></li>
+		</ul>
+
+		<ul id="inventory">
+			<!--Weapons-->
+			<li title="1 Bulk" class="br">
+				<a href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold-iron</a>
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=43">Shortsword</a> +1
+				<small>martial, 1d6PS, 1Hand, Sword Group, Agile, Finesse.</small>
+				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=230">Owlbear's Claw</a></div>
+			</li>
+
+			<!--Armors-->
+			<li title="1 Bulk" class="br">
+				<a href="https://2e.aonprd.com/Armor.aspx?ID=4">Leather Armor</a>
+				<small>light, 1 armor, 4 dex, -1 acp, &ndash;ft, 10 str, Leather Group.</small>
+			</li>
+
+			<!--Consumables-->
+			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=186">Healing Potion</a>, minor
+				<small>heals 1d8</small></li>
+			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a>, lesser
+				<small><u title="Lesser">+2 item</u> vs poison, lasts 6h</small></li>
+			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a>, lesser
+				<small><u title="Lesser">+2 item</u> vs disease, lasts 24h</small></li>
+			<li>1× <a href="https://2e.aonprd.com/Equipment.aspx?ID=187">Invisibility Potion</a>
+				<small>undetected, lasts 10 min</small></li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p>Guide used: <a href="https://docs.google.com/document/d/1hY1pR6Nik3e9aIgBwSA70DvPjWLjJ6G7rWpi3Tu563o/edit">Spell and Steel &copy;Hallo</a>.</p>
+
+			<p>Academic branch affiliation: Cascade-Bearers <b>3</b> (imagination) &amp; Uzunjati <b>1</b> (knowledge).</p>
+
+			<p>Likes the study of magic, but not the pressure his academic familiy puts unto him. Finds inner peace in practicing fencing, too.</p>
+
+			<dl class="charInfo">
+				<dt>Quality</dt>
+				<dd>Resourceful and respectful</dd>
+
+				<dt>Drawback</dt>
+				<dd>Pushover</dd>
+
+				<dt>Age</dt>
+				<dd>19</dd>
+
+				<dt>Weight</dt>
+				<dd>138 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 10''</dd>
+			</dl>
+		</section>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Xolani – Art by <a href="https://www.deviantart.com/yihyoungli">YihyoungLi</a></h2>
+		<a href="https://www.deviantart.com/yihyoungli/art/Lunars-Fangs-at-the-Gate-cover-857831234">
+		<img src="https://i.pinimg.com/originals/f9/90/60/f99060a4bc1a6b2a862c1ec50a8d2872.jpg" alt="Lunars: Fangs at the Gate - cover &copy;YihyoungLi"></a>
+	</dialog>
+</body>
+</html>
