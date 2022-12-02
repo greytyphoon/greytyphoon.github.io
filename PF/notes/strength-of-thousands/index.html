@@ -6,13 +6,13 @@
 	<title>B_light's Campaign</title>
 	<link rel="stylesheet" href="../../system/pfGeneric.css">
 	<style>
-		.gallery > div {
+		.gallery a {
 			position: relative;
+			display: block;
+			margin-bottom: .75em;
 			border: .15rem solid var(--murder-black);
-			padding: 0;
 			border-radius: .5rem;
 			background-color: var(--murder-black); /* patches a weird 1px gap left of the image in Chrome */
-			color: var(--html-white);
 			text-shadow: 0 0 2px var(--murder-black); }
 		.gallery h2 {
 			position: absolute;
@@ -23,6 +23,7 @@
 			border: none;
 			padding: 1em;
 			background: linear-gradient(rgba(11,6,8,0), rgba(11,6,8,0.66)); } /* 11,6,8 is --murder-black */
+		.gallery img { border-radius: .3rem; }
 		.gallery a, .gallery a:link, .gallery a:visited, .gallery a:active { color: var(--html-white); }
 	</style>
 </head>
@@ -39,7 +40,7 @@
 
 		<p>Nothing here yet, so here's a cool gallery of my PF2 characters.</p>
 
-		<section class="row gallery br">
+		<section class="row gallery">
 			<div>
 				<a href="../../sheets/Opheron.html">
 				<img src="https://i.pinimg.com/originals/1b/e4/b8/1be4b8a43e1b8c3569566277b293b95a.png">
