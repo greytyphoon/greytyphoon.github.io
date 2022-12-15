@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Hall of Fame</title>
+	<link rel="stylesheet" href="system/pfGeneric.css">
+	<style>
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1rem; }
+		@media print, screen and (min-width: 768px) {
+			.gallery { grid-template-columns: repeat(3, 1fr); }
+		}
+		@media print, screen and (min-width: 992px) {
+			.gallery { grid-template-columns: repeat(5, 1fr); }
+		}
+		.gallery a {
+			position: relative;
+			display: block;
+			margin-bottom: .75em;
+			border: .15rem solid var(--murder-black);
+			border-radius: .5rem;
+			background-color: var(--murder-black); /* patches a weird 1px gap left of the image in Chrome */
+			text-shadow: 0 0 2px var(--murder-black); }
+		.gallery h2 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0;
+			border: none;
+			padding: 1em;
+			background: linear-gradient(rgba(11,6,8,0), rgba(11,6,8,0.66)); } /* 11,6,8 is --murder-black */
+		.gallery img { border-radius: .3rem; }
+		.gallery a, .gallery a:link, .gallery a:visited, .gallery a:active { color: var(--html-white); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Accueil</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>PF2 Hall of Fame</h1>
+		</header>
+
+		<section class="gallery">
+			<div>
+				<a href="sheets/Opheron.html">
+				<img src="https://i.pinimg.com/originals/1b/e4/b8/1be4b8a43e1b8c3569566277b293b95a.png">
+				<h2>Ophéron du clan Silki, dit le sauvage</h2>
+			</a></div>
+
+			<div>
+				<a href="sheets/Jebif.html">
+				<img src="https://greytyphoon.space/PF/notes/terres-sacrees/Jebif.jpg">
+				<h2>Jebif du clan des Échos, faeries' primal flair</h2>
+			</a></div>
+
+			<div>
+				<a href="sheets/Emmelinarwain.html">
+				<img src="https://i.pinimg.com/originals/19/e7/5f/19e75f355de947e0a2f59c530f57f43e.jpg">
+				<h2>Emmelinarwain, wind of january</h2>
+			</a></div>
+
+			<div>
+				<a href="sheets/Raug.html">
+				<img src="https://i.pinimg.com/originals/6c/7c/73/6c7c73940874273e1b2849ff80f57fea.jpg">
+				<h2>Raug Mok'Pog, despicable idealist</h2>
+			</a></div>
+
+			<div>
+				<a href="sheets/Alphonse.html">
+				<img src="https://i.pinimg.com/originals/32/5d/6e/325d6e4ad6de0f32e26ca0cc4f23f4ab.jpg">
+				<h2>Alphonse Shelley, the battle-scarred</h2>
+			</a></div>
+
+			<div>
+				<a href="sheets/Luca.html">
+				<img src="https://i.pinimg.com/originals/e8/5e/34/e85e34f2062cbf0ed63a31ce36e3f154.jpg">
+				<h2>Luca Cane, the stowaway mage</h2>
+			</a></div>
+
+			<div>
+				<a href="sheets/Xolani.html">
+				<img src="https://i.pinimg.com/originals/f9/90/60/f99060a4bc1a6b2a862c1ec50a8d2872.jpg">
+				<h2>Xolani Nqumela, the escapist</h2>
+			</a></div>
+
+			<div>
+				<a href="sheets/Nephelcheres.html">
+				<img src="https://i.pinimg.com/originals/10/95/5e/10955e8a6c945da5d213ec214eaefdbf.png">
+				<h2>Nephelcheres Ra-en-khet, oasis gardener</h2>
+			</a></div>
+
+			<div>
+				<a href="sheets/Bou.html">
+				<img src="https://i.pinimg.com/originals/ca/73/99/ca7399d7013bd330d48cdbb4e21b32e9.jpg">
+				<h2>Bou, trinket master</h2>
+			</a></div>
+
+			<div>
+				<a href="sheets/Vodan.html">
+				<img src="https://i.pinimg.com/originals/78/47/04/7847043a36a5faf7f9a9ac35e0a7e120.jpg">
+				<h2>Vodan of Ironfort, reinforced strongman</h2>
+			</a></div>
+		</section>
+	</div>
+</body>
+</html>
