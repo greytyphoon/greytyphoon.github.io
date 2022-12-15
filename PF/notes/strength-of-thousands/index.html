@@ -6,29 +6,16 @@
 	<title>B_light's Campaign</title>
 	<link rel="stylesheet" href="../../system/pfGeneric.css">
 	<style>
-		.gallery a {
-			position: relative;
-			display: block;
-			margin-bottom: .75em;
-			border: .15rem solid var(--murder-black);
-			border-radius: .5rem;
-			background-color: var(--murder-black); /* patches a weird 1px gap left of the image in Chrome */
-			text-shadow: 0 0 2px var(--murder-black); }
-		.gallery h2 {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			margin: 0;
-			border: none;
-			padding: 1em;
-			background: linear-gradient(rgba(11,6,8,0), rgba(11,6,8,0.66)); } /* 11,6,8 is --murder-black */
-		.gallery img { border-radius: .3rem; }
-		.gallery a, .gallery a:link, .gallery a:visited, .gallery a:active { color: var(--html-white); }
+		#fixref > ul > li > *.nephelcheres::before { content: "🌵"; }
+		dl#legend > dt { float: left; }
+		summary::marker { content: "+"; }
+		details[open] > summary::marker { content: ""; }
+		h3 { display: inline-block; margin: 0 0 .3em 1em; font-size: inherit; color: var(--virtue-blue); }
 	</style>
 </head>
 <body>
 	<nav id="fixref"><ul>
+		<li><a class="nephelcheres" href="../../sheets/Nephelcheres.html">Nephelcheres</a></li>
 		<li><a class="home" href="https://greytyphoon.space/PF">Accueil</a></li>
 	</ul></nav>
 
@@ -38,71 +25,53 @@
 			Notes de campagne
 		</header>
 
-		<p>Nothing here yet, so here's a cool gallery of my PF2 characters.</p>
+		<div class="apartee float">
+			Légende:
+			<table lang="en">
+				<tr><td>☀️</td><td>Tempest-Sun Mages</td>	<td>Valor</td></td>
+				<tr><td>🌧️</td><td>Rain-Scribes</td>	<td>Adaptability</td></td>
+				<tr><td>🪣</td><td>Cascade-Bearers</td>	<td>Imagination</td></td>
+				<tr><td>🌳</td><td>Emerald Boughts</td>	<td>Camaraderie</td></td>
+				<tr><td>📕</td><td>Uzunjati</td>	<td>Knowledge</td></td>
+			</table>
+		</div>
 
-		<section class="row gallery">
-			<div>
-				<a href="../../sheets/Opheron.html">
-				<img src="https://i.pinimg.com/originals/1b/e4/b8/1be4b8a43e1b8c3569566277b293b95a.png">
-				<h2>Ophéron du clan Silki, dit le sauvage</h2>
-			</a></div>
-
-			<div>
-				<a href="../../sheets/Jebif.html">
-				<img src="https://greytyphoon.space/PF/notes/terres-sacrees/Jebif.jpg">
-				<h2>Jebif du clan des Échos, faeries' primal flair</h2>
-			</a></div>
-
-			<div>
-				<a href="../../sheets/Emmelinarwain.html">
-				<img src="https://i.pinimg.com/originals/19/e7/5f/19e75f355de947e0a2f59c530f57f43e.jpg">
-				<h2>Emmelinarwain, wind of january</h2>
-			</a></div>
-
-			<div>
-				<a href="../../sheets/Raug.html">
-				<img src="https://i.pinimg.com/originals/6c/7c/73/6c7c73940874273e1b2849ff80f57fea.jpg">
-				<h2>Raug Mok'Pog, despicable idealist</h2>
-			</a></div>
-
-			<div>
-				<a href="../../sheets/Alphonse.html">
-				<img src="https://i.pinimg.com/originals/32/5d/6e/325d6e4ad6de0f32e26ca0cc4f23f4ab.jpg">
-				<h2>Alphonse Shelley, the battle-scarred</h2>
-			</a></div>
+		<h2>NPCs</h2>
+		<section class="row">
+			<ul>
+				<li>Esi Djana <small>☀️ très motivée</small></li>
+				<li>Chizire <small>gnoll?, laid-back, fait de l'alcool</small></li>
+				<li>Ignaci <small>emo</small></li>
+				<li>Anchor-Root <small>gnoll, timide, promène son poulet</small></li>
+			</ul>
+			<ul>
+				<li>Lumusi Yao <small>cook, accueillante</small></li>
+				<li>Xhokan <small>kobold, responsable d'entrepôt, collectionneur</small></li>
+				<li>Ebrams <small>🌧️ dwarf, professeur</small></li>
+				<li>Takulu Ot <small>professeur</small></li>
+			</ul>
 		</section>
 
-		<section class="row gallery">
-			<div>
-				<a href="../../sheets/Luca.html">
-				<img src="https://i.pinimg.com/originals/e8/5e/34/e85e34f2062cbf0ed63a31ce36e3f154.jpg">
-				<h2>Luca Cane, the stowaway mage</h2>
-			</a></div>
+		<h2>Recap</h2>
+		<details open>
+			<summary><h3><time datetime="2022-12-05">5 décembre</time></h3></summary>
+			<p><b>Takulu Ot</b> nous accueille à l'Académie. On se présente.
+				Professeur Ot nous teste: allumer des chandelles, récolter des plumes, découvrir les secrets d'un serpent, apaiser des ossements, faire danser une pierre.
+				On va boire une bière ensemble, on se raconte nos vies.
+				On rentre au dortoir, on rencontre <b>Esi Djana</b> et <b>Chizire</b>, deux autres étudiants. On croise <b>Ignaci</b> en coup de vent, et <b>Anchor-Root</b> qui promène son poulet.
+				On choisit nos chambres.
+				Dans la buanderie, on est attaqués par 2 Spellskeins de serviettes pliées.</p>
+		</details>
 
-			<div>
-				<a href="../../sheets/Xolani.html">
-				<img src="https://i.pinimg.com/originals/f9/90/60/f99060a4bc1a6b2a862c1ec50a8d2872.jpg">
-				<h2>Xolani Nqumela, the escapist</h2>
-			</a></div>
-
-			<div>
-				<a href="../../sheets/Nephelcheres.html">
-				<img src="https://i.pinimg.com/originals/10/95/5e/10955e8a6c945da5d213ec214eaefdbf.png">
-				<h2>Nephelcheres Ra-en-khet, oasis gardener</h2>
-			</a></div>
-
-			<div>
-				<a href="../../sheets/Bou.html">
-				<img src="https://i.pinimg.com/originals/ca/73/99/ca7399d7013bd330d48cdbb4e21b32e9.jpg">
-				<h2>Bou, trinket master</h2>
-			</a></div>
-
-			<div>
-				<a href="../../sheets/Vodan.html">
-				<img src="https://i.pinimg.com/originals/78/47/04/7847043a36a5faf7f9a9ac35e0a7e120.jpg">
-				<h2>Vodan of Ironfort, reinforced strongman</h2>
-			</a></div>
-		</section>
+		<details open>
+			<summary><h3><time datetime="2022-12-12">12 décembre</time></h3></summary>
+			<p>Esi continue notre visite du campus.
+				<b>Lumusi Yao</b> nous accueille à la cafétéria.
+				<b>Xhokan le kobold</b> nous accueille au Powderpile, le dépôt d'items scolaires.</p>
+			<p>On fera des tâches pour chacune des cinq écoles, pour commencer.
+				(1:🌧️) <b>Ebrams</b> veut qu'on aille chercher des poules <i>Ojofiri</i> (bleues) au marché Kafesi, pour un fermier nommé Bisola. On en ramène 5: 4 tel que demandé, plus un qu'on adopte.
+				(2:☀️) Esi veut qu'on déloge des Pugwampis dans le storage, sans les tuer. Après beaucoup, beaucoup d'efforts, on y arrive: on les enferme dans un baril.</p>
+		</details>
 	</div>
 </body>
 </html>
