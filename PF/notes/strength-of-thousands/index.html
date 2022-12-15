@@ -7,10 +7,12 @@
 	<link rel="stylesheet" href="../../system/pfGeneric.css">
 	<style>
 		#fixref > ul > li > *.nephelcheres::before { content: "🌵"; }
-		dl#legend > dt { float: left; }
 		summary::marker { content: "+"; }
 		details[open] > summary::marker { content: ""; }
 		h3 { display: inline-block; margin: 0 0 .3em 1em; font-size: inherit; color: var(--virtue-blue); }
+		@media print, screen and (min-width: 768px) {
+			#legend { float: right; }
+		}
 	</style>
 </head>
 <body>
@@ -25,7 +27,7 @@
 			Notes de campagne
 		</header>
 
-		<div class="apartee float">
+		<div id="legend" class="apartee br">
 			Légende:
 			<table lang="en">
 				<tr><td>☀️</td><td>Tempest-Sun Mages</td>	<td>Valor</td></td>
@@ -40,7 +42,7 @@
 		<section class="row">
 			<ul>
 				<li>Esi Djana <small>☀️ très motivée</small></li>
-				<li>Chizire <small>gnoll?, laid-back, fait de l'alcool</small></li>
+				<li>Chizire <small>🪣 catfolk, laid-back, fait de l'alcool</small></li>
 				<li>Ignaci <small>emo</small></li>
 				<li>Anchor-Root <small>gnoll, timide, promène son poulet</small></li>
 			</ul>
