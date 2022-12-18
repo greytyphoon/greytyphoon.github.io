@@ -3,7 +3,7 @@
 .pantheon, a.pantheon, a.pantheon:visited { color: var(--divination-blue); }
 
 /* Resets */
-h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spell::after { font-style: normal; font-weight: normal; }
+h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spell::after, dt::before, dt::after { font-style: normal; font-weight: normal; }
 
 /* Actions */
 .reaction::before { content: "↻\a0"; }
