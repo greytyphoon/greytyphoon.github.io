@@ -213,6 +213,7 @@
 						<b>AC</b>
 						<small>14 armor, 2' dex, 2 shield</small>
 					</li>
+					<li class="circumstancialBonus" title="Divine Health"><u>Immune</u> disease.</li>
 				</ul>
 
 				<!--Rapier-->
@@ -232,21 +233,14 @@
 				<p>As an action, detect celestials, fiends, undeads, and consecrated/desecrated places within 60ft <small>blocked by total cover</small>.</p>
 
 				<h2>Lay on Hands <u title="15 paladin*5">15 HP/day</u></h2>
-				<p>As an action, heal an ally. You can use 5 HP to cure a disease or poison.</p>
-
-				<h2>Divine Smite</h2>
-				<p>When you hit foe in melee, deal an extra <b>2d8</b> radiant damage by spending a spell slot.
-					Increases by 1d8 for each spell level higher than 1st, and by 1d8 if the foe is an undead / fiend.</p>
-
-				<h2>Divine Health</h2>
-				<p>You are immune to disease.</p>
+				<p>As an action, heal an ally. Spend 5 HP to cure a disease / poison.</p>
 
 				<h2>Channel Divinity <b>1/rest</b></h2>
-				<dl>
+				<dl class="condensed">
 					<dt>Abjure Enemy</dt>
-					<dd>As an action, a foe you see within 60ft must make a <u title="Divine Spell DC"><b>DC 12</b></u> Wisdom save. <small>Fiends / undead have disadvantage. Immunity to fright applies.</small>
-						<b>Success</b>: the foe's speed is halved.
-						<b>Fail</b>: the foe is frightened and its speed is 0. <small>It can't have any bonus to its speed.</small>
+					<dd>As an action, a foe you see within 60ft must make a <u title="Paladin Spell DC"><b>DC 12</b></u> Wisdom save. <small>Fiend / undead have disadvantage. Immunity to fright applies.</small><br>
+						<b>Success</b>: its speed is halved.<br>
+						<b>Fail</b>: it is frightened and its speed is 0. <small>Cancels any bonus to speed.</small><br>
 						Both effects last 1 minute, or until the foe takes damage.</dd>
 					<dt class="bonus-action">Vow of Enmity</dt>
 					<dd>As a bonus action, target a foe you see within 10ft.
@@ -255,10 +249,13 @@
 			</div>
 		</section>
 
-		<hr>
+		<h2>Divine Smite</h2>
+		<p>When you hit a foe in melee, deal an extra <b>Nd8 dmg radiant</b> by spending a spell slot,
+			where N is that slot's level + 1. <small>+1 if the foe is fiend / undead</small></p>
+
 		<section class="row">
 			<div class="wide">
-				<h2>Divine Spells</h2>
+				<h2><a href="http://dnd5e.wikidot.com/spells:paladin">Paladin</a> Spells</h2>
 				<ul class="summations">
 					<li><strong>4</strong> Spell Attack; DC <strong>12</strong> <small>8, 2 cha, 2 prf</small></li>
 					<li><strong>3</strong> Spells prepared <small>1 paladin&frac12;, 2 cha, plus cantrips/bonus</small></li>
