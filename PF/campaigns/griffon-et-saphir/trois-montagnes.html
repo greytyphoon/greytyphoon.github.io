@@ -4,15 +4,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>G&S Trois-Montagnes</title>
-	<link rel="stylesheet" href="../../system/pfGeneric.css">
+	<link rel="stylesheet" href="../../system/pfCharacter.css">
 	<style>
 		#fixref > ul > li > *.khyr::before { content: "🎻"; }
+		#fixref > ul > li > *.usire::before { content: "🐻"; }
 		#fixref > ul > li > *.folwyn::before { content: "⭐"; }
 	</style>
 </head>
 <body>
 	<nav id="fixref"><ul>
 		<li><a class="khyr" href="../../sheets/Khyr.html">Khyr</a></li>
+		<li><a class="usire" href="../../sheets/Usire.html">Usire</a></li>
 		<li><a class="folwyn" href="../../sheets/Folwyn.html">Folwyn</a></li>
 		<li><a class="home" href="https://greytyphoon.space/PF">Accueil</a></li>
 	</ul></nav>
@@ -26,44 +28,59 @@
 		<section class="row">
 			<div>
 				<h2>NPC Elves</h2>
-				<ul>
+				<ul class="list">
 					<li>Zinxidor Azuremight, président</li>
 					<li>Ianran Gogspark, vice-président</li>
-					<li>Rexphine Mossgrove, vice-président, révolutionnaire</li>
+					<li>Rexphine Mossgrove, 🕊️ vice-président</li>
 					<li><s>Fencan Aenissent, commissaire militaire central</s></li>
-					<li>Kiris Hedrestanosh, responsable de l'environnement, révolutionnaire</li>
+					<li>Kiris Hedrestanosh, 🕊️ responsable de l'environnement</li>
 					<li>Exral, soldat de la garde rapprochée de Rexphine</li>
-					<li>Elros Brightmorn, soldat envoyé à Sherbouc pour chercher Fencan, révolutionnaire</li>
+					<li>Elros Brightmorn, 🕊️ soldat envoyé à Sherbouc pour chercher Fencan</li>
 				</ul>
-				<p><em>Les gardes dont l'écusson est penché sont révolutionnaires.</em></p>
+				<p><em>Les gardes dont l'écusson est penché sont <span style="color: var(--evocation-red);">révolutionnaires 🕊️</span>.</em></p>
 
 				<h2>NPC Commoners</h2>
-				<ul>
+				<ul class="list">
 					<li>Don le putride, soldat orc</li>
-					<li>Wildon Byratol, le gnome vénérable<sup>†</sup></li>
-					<li>Sarmura Byratol, la naine connaissant les portails<sup>†</sup></li>
-					<li>Éric Lamort, l'homme qui ne me croyait pas, a une jambe de bois<sup>†</sup></li>
+					<li>Wildon Byratol, 🗡️ le gnome vénérable</li>
+					<li>Sarmura Byratol, 🗡️ la naine connaissant les portails</li>
+					<li>Éric Lamort, 🗡️ l'homme qui ne me croyait pas, a une jambe de bois</li>
 					<li>Pierre Lamort, son fils, aux énigmes impossibles</li>
-					<li>Duav Noseslicer, la demi-orc qui m'a empêché de sortir, possède une armure elfique<sup>†</sup></li>
+					<li>Duav Noseslicer, 🗡️ la demi-orc qui m'a empêché de sortir, possède une armure elfique</li>
 				</ul>
-				<p><sup>†</sup>Ce personnage a une dague comme celles de Khyr, et sait que 4 dagues ont été distribuées, c'est notre mot de passe.</p>
+				<p><em>Les <span style="color: var(--evocation-red);">membres de la résistance 🗡️</span> ont une dague de Khyr, et savent que 4 dagues ont été distribuées: c'est notre mot de passe.</em></p>
+
+				<h2>NPC Forest Tribe</h2>
+				<ul class="list">
+					<li>Kalamdryn, elfe vénérable</li>
+					<li>Nerivaris, elfe druide-gorille</li>
+					<li>Heiris, jeune elfe druide-singe</li>
+				</ul>
+
+				<h2>NPC Historical</h2>
+				<ul class="list">
+					<li>Clint Queen, humain inventeur?</li>
+					<li>Orinala Fardew, elfe arcaniste et bibliothécaire</li>
+				</ul>
 			</div>
 
-			<div class="wide">
+			<div>
 				<h2>Carte de Trois-Montagnes</h2>
-				<a href="https://i.redd.it/4f9j1p31mvl71.jpg"><img src="https://i.redd.it/4f9j1p31mvl71.jpg" class="br" alt="Carte de Trois-Montagnes"></a>
+				<img id="main-picture" src="https://i.redd.it/4f9j1p31mvl71.jpg" alt="Grizzli Bear" onclick="document.getElementById('large-picture').showModal()" style="max-width: 100%">
 
 				<h2>Points d'intérêt</h2>
-				<ul>
-					<li>Kaeldra <small>selon les elfes; Rumenor selon la populace</small>, la haute montagne à l'Est</li>
-					<li>Kalamdryn, la petite montagne à l'Ouest, où se trouverait la tribu légendaire de Kaladryn</li>
-					<li>La nuit, aux sommets des montagnes, on voit quelque chose qui illumine</li>
+				<ul class="list">
+					<li>Kaeldra <small>selon les elfes; Rumenor selon la populace</small>, la haute montagne à l'Ouest</li>
+					<li>Kalamdryn, la petite montagne à l'Est</li>
+					<li>Rumenor, la montagne effondrée au Sud-Ouest</li>
+					<li>Le Trou: caverne caché au pied de Kalamdryn, près de la rivière. 💎</li>
 				</ul>
+				<p><em>La nuit, aux sommets des montagnes, on voit quelque chose qui illumine.</em></p>
 			</div>
 		</section>
 
 		<h2>Portails</h2>
-		<ul>
+		<ul class="list">
 			<li>Les portails officiels: A, B, C, etc.</li>
 			<li>D3, portail de Kiris</li>
 			<li>"Le portail de St-Élie", à l'étage J dans une maison résidentielle normale du quartier Sud</li>
@@ -72,10 +89,17 @@
 		</ul>
 
 		<h2>History</h2>
-		<ul>
+		<ul class="list">
 			<li>Orinala Fardew, arcaniste et bibliothécaire, a acheté des cartes à Folwyn il y a ~180 ans.</li>
-			<li>Une triade d'elfes, chassée par les elfes du vieux monde pour leur style de vie, venus établir une cité meilleure de ce côté.</li>
+			<li>Clint Queen a été pourchassé par les elfes jusqu'au village de la cascade.</li>
+			<li>Une triade d'elfes &mdash;Rumenor, Kaeldra, Kalamdryn&mdash; chassée par les elfes du vieux monde pour leur style de vie, venus établir une cité meilleure de ce côté. Maintenant, leurs essences lèvent les 3 montagnes.</li>
 		</ul>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Carte de Trois-Montagnes</h2>
+		<img src="https://i.redd.it/4f9j1p31mvl71.jpg" alt="Grizzly Bear">
+	</dialog>
 </body>
 </html>
