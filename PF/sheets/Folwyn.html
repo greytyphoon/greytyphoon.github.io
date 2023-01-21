@@ -10,7 +10,6 @@
 		.mind-affecting::after { content: " [mind]"; color: var(--enchantment-lilac); }
 		.mind-affecting.bonus::after { content: " δ[mind]"; }
 
-		.coming-soon { display: none !important; }
 		#starseeker-spells > ul:first-child { display: none; }
 		#starseeker-spells > ul { padding-left: .75rem; cursor: pointer; }
 		#starseeker-spells > ul > li:first-child { margin-left: -.75rem; }
@@ -18,7 +17,7 @@
 		img#constellations-chart { max-width: 100%; }
 
 		@media print, screen and (min-width: 768px) {
-			#starseeker-spells { flex: 6; order: -1; }
+			#starseeker-spells { flex: 8; order: -1; }
 			#starseeker-spells > ul { display: flex; margin: 0 0 .25rem 0; }
 			#starseeker-spells > ul > li { flex: 1; }
 			#starseeker-spells > ul:first-child { display: flex; border-bottom: 1px solid var(--murder-grey); font-weight: bold; }
@@ -65,7 +64,7 @@
 				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/elf/#Alternate_Racial_Traits">Fey Thoughts</a></dd>
 
 				<dt>Class</dt>
-				<dd><a href="https://d20pfsrd.com/occult-adventures/occult-classes/psychic">Psychic</a> 5</dd>
+				<dd><a href="https://d20pfsrd.com/occult-adventures/occult-classes/psychic">Psychic</a> 6</dd>
 				<dd class="archetype"><a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/psychic/archetypes/paizo-llc-psychic-archetypes/esoteric-starseeker-psychic-archetype">Esoteric Starseeker</a></dd>
 				<dd class="archetype"><a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/psychic/psychic-disciplines/psychic-disciplines-paizo-inc/tranquility">Tranquility</a> discipline</dd>
 			</dl>
@@ -80,10 +79,10 @@
 				<dd>30 ft.</dd>
 
 				<dt>Languages</dt>
-				<dd title="2 racial, 6 int, 5 linguistics">
+				<dd title="2 racial, 6 int, 6 linguistics">
 					Common, Elven, Dwarven, Halfling, Gnome,
 					Sylvan, Draconic, Goblin, Orc, Giant,
-					Aklo, Undercommon, Infernal</dd>
+					Aklo, Undercommon, Infernal, Celestial</dd>
 			</dl>
 		</section>
 
@@ -114,42 +113,42 @@
 		<!-- SKILLS -->
 		<ul class="summations">
 			<li class="br">
-				<strong>12</strong>
+				<strong>13</strong>
 				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
-				<small>2 wis, 5 ranks, 3 class, <u title="Keen Senses">2 racial</u></small>
+				<small>2 wis, 6 ranks, 3 class, <u title="Keen Senses">2 racial</u></small>
 				<div class="circumstancialBonus">&#x2ba9; <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Read_Aura_Perception">Read Aura</a> 1/day</div>
 			</li>
 
 			<!--Social Skills-->
 			<li>
-				<strong>18</strong>
+				<strong>19</strong>
 				<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>
-				<small>6 int, 5 ranks, 3 class, 3 s.focus, <u title="Gold Nodule Ioun Stone">1 competence</u></small>
+				<small>6 int, 6 ranks, 3 class, 3 s.focus, <u title="Gold Nodule Ioun Stone">1 competence</u></small>
 				<div class="circumstancialBonus">&#x2ba9; <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Automatic_Writing_Linguistics">Automatic Writing</a> 1/week</div>
 			</li>
 			<li class="br">
-				<strong>10</strong>
+				<strong>11</strong>
 				<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>
-				<small>2 wis, 5 ranks, 3 class</small>
+				<small>2 wis, 6 ranks, 3 class</small>
 				<div class="circumstancialBonus">&#x2ba9; <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Prognostication_Sense_Motive">Astrology</a> 1/day</div>
 			</li>
 
 			<!--Misc Skills-->
 			<li>
-				<strong>14</strong>
+				<strong>15</strong>
 				<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>
-				<small>6 int, 5 ranks, <u title="Canon of Coin">3 class</u></small>
+				<small>6 int, 6 ranks, <u title="Canon of Coin">3 class</u></small>
 				<div class="circumstancialBonus">&#x2ba9; <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Psychometry_Appraise">Psychometry</a> 1/day</div>
 			</li>
 			<li>
-				<strong>9</strong>
+				<strong>12</strong>
 				<a href="https://d20pfsrd.com/skills/fly">Fly</a>
-				<small>3 dex, 3 ranks, 3 class</small>
+				<small>3 dex, 6 ranks, 3 class</small>
 			</li>
 			<li>
-				<strong>14</strong>
+				<strong>15</strong>
 				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
-				<small>6 int, 5 ranks, 3 class</small>
+				<small>6 int, 6 ranks, 3 class</small>
 			</li>
 			<li>
 				<strong>9</strong>
@@ -157,16 +156,16 @@
 				<small>3 dex, 3 ranks, <u title="Fey Thoughts">3 class</u></small>
 			</li>
 			<li class="br">
-				<strong>14</strong>
+				<strong>15</strong>
 				<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>
-				<small><u title="Pragmatic Activator">6 int</u>, 5 ranks, <u title="Fey Thoughts">3 class</u></small>
+				<small><u title="Pragmatic Activator">6 int</u>, 6 ranks, <u title="Fey Thoughts">3 class</u></small>
 			</li>
 
 			<!--Knowledge Skills-->
 			<li>
-				<strong>16</strong>
+				<strong>17</strong>
 				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (arcana)</a>
-				<small>6 int, 5 ranks, 3 class, <u title="Breadth of Experience">2 feat</u></small>
+				<small>6 int, 6 ranks, 3 class, <u title="Breadth of Experience">2 feat</u></small>
 				<div class="circumstancialBonus">&#x2ba9; <a href="https://d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-rules/occult-skill-unlocks/#Phrenology_Knowledge_arcana">Phrenology</a> 1/day</div>
 			</li>
 			<li>
@@ -177,7 +176,7 @@
 		</ul>
 
 		<p class="circumstancialBonus noprint">
-			<u title="5 psychic: 2 class, 6 int, 2 background-skills">50 ranks</u>.
+			<u title="6 psychic: 2 class, 6 int, 2 background-skills">60 ranks</u>.
 			Other class skills:
 			<a href="https://d20pfsrd.com/skills/bluff">Bluff</a>,
 			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
@@ -199,45 +198,66 @@
 			Undercasting (If I know Summon Monster IV, I also automatically know Summon Monster III, II, I)
 		</div>
 		<section class="row">
-			<div>
-				<h2 title="Fey-Sighted">Constant <a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a></h2>
-				<h2 title="6 known: 6 psychic">Level 0</h2>
-				<ul>
-					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
-					<li><a class="spell necromancy" href="https://d20pfsrd.com/magic/all-spells/g/grave-words">grave words</a>,</li>
-					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
-					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/m/mage-hand">mage hand</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a></li>
-					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/s/sift">sift</a>.</li>
-				</ul>
-			</div>
-			<div>
-				<h2><a class="spell divination bonus mind-affecting" href="https://d20pfsrd.com/magic/all-spells/d/detect-thoughts">detect thoughts</a> <u title="Detect Thoughts">+1/day</u></h2>
+			<div class="widest">
+				<section class="row">
+					<div>
+						<h2>Elf Magic</h2>
+						<p title="Fey-Sighted">Constant <a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a>.</p>
+					</div>
 
-				<h2 title="7 known: 4 psychic, 1 detect thoughts, 2 item">Level 1 <u title="5 class, 2 int">7/day</u></h2>
-				<ul>
-					<li><a class="spell divination bonus mind-affecting" href="https://d20pfsrd.com/magic/all-spells/d/detect-thoughts">detect thoughts</a>,</li>
-					<li><a class="spell transmutation reaction" href="https://d20pfsrd.com/magic/all-spells/b/burst-of-adrenaline">burst of adrenaline</a>,</li>
-					<li><a class="spell transmutation reaction" href="https://d20pfsrd.com/magic/all-spells/b/burst-of-insight">burst of insight</a>,</li>
-					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/s/silent-image">silent image</a>,</li>
-					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/s/sleep">sleep</a>,</li>
-					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/t/telempathic-projection">telempathic projection</a>,</li>
-					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>.</li>
-				</ul>
+					<div>
+						<h2>Psychic Magic (<a href="https://d20pfsrd.com/Magic#Spell-Like_Abilities_Sp">Sp</a>)</h2>
+						<ul>
+							<li title="Detect Thoughts"><a class="spell divination bonus mind-affecting" href="https://d20pfsrd.com/magic/all-spells/d/detect-thoughts">detect thoughts</a>
+								1+/day
+								<small title="10, 1 spell, 6 int, 1 divination">Will <u>DC 18</u> negates</small>,</li>
+							<li title="Calming Presence"><a class="spell enchantment bonus mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/calm-emotions">calm emotions</a> <u title="Calming Presence, 2 wis">2/day</u>.</li>
+						</ul>
+					</div>
+				</section>
+				<section class="row">
+<div>
+	<h2 title="7 known: 7 psychic">Level 0</h2>
+	<ul>
+		<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/d/detect-psychic-significance">detect psychic significance</a>,</li>
+		<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/g/ghost-sound">ghost sound</a>,</li>
+		<li><a class="spell necromancy" href="https://d20pfsrd.com/magic/all-spells/g/grave-words">grave words</a>,</li>
+		<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a>,</li>
+		<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/m/mage-hand">mage hand</a>,</li>
+		<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prestidigitation">prestidigitation</a></li>
+		<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/s/sift">sift</a>.</li>
+	</ul>
+</div>
+<div>
+	<h2 title="6 known: 4 psychic, 2 item">Level 1 <u title="6 class, 2 int">8/day</u></h2>
+	<ul>
+		<li><a class="spell transmutation reaction" href="https://d20pfsrd.com/magic/all-spells/b/burst-of-adrenaline">burst of adrenaline</a>,</li>
+		<li><a class="spell transmutation reaction" href="https://d20pfsrd.com/magic/all-spells/b/burst-of-insight">burst of insight</a>,</li>
+		<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/s/silent-image">silent image</a>,</li>
+		<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/s/sleep">sleep</a>,</li>
+		<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/t/telempathic-projection">telempathic projection</a>,</li>
+		<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/v/vanish">vanish</a>.</li>
+	</ul>
+</div>
+<div>
+	<h2 title="3 known: 2 psychic, 1 item">Level 2 <u title="5 class, 2 int">7/day</u></h2>
+	<ul>
+		<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/a/aversion">aversion</a>,</li>
+		<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/h/hold-person">hold person</a>.</li>
+		<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/s/silence">silence</a>.</li>
+	</ul>
+</div>
+<div>
+	<h2 title="1 known: 1 psychic">Level 3 <u title="3 class, 1 int">4/day</u></h2>
+	<ul>
+		<li><s><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/m/major-image">major image</a>,</s></li>
+		<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/w/witness">witness</a>.</li>
+	</ul>
+</div>
+				</section>
 			</div>
 			<div>
-				<h2><a class="spell bonus mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/calm-emotions">calm emotions</a> <u title="Calming Presence, 2 wis">2/day</u></h2>
-
-				<h2 title="2 known: 2 psychic">Level 2 <u title="4 class, 2 int">6/day</u></h2>
-				<ul>
-					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/a/aversion">aversion</a>,</li>
-					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/h/hold-person">hold person</a>.</li>
-					<li class="coming-soon"><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/m/minor-image">minor image</a>,</li>
-					<li class="coming-soon"><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/s/silence">silence</a>.</li>
-				</ul>
-			</div>
-			<div>
-				<h2>Scrolls</h2><!--6x25-->
+				<h2>Scrolls</h2><!--8x25-->
 				<ul>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/decompose-corpse">decompose corpse</a>,</li>
@@ -246,7 +266,9 @@
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/h/hermean-potential">hermean potential</a>,</li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/i/identify">identify</a>,</li>
 					<li><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/m/mount">mount</a> <u title="20 scroll, 1 caster level">[DC 21 UMD]</u>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/sow-thought">sow thought</a>.</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/peacebond">peacebond</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/sow-thought">sow thought</a>,</li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/t/thought-echo">thought echo</a>.</li>
 				</ul>
 			</div>
 		</section>
@@ -263,85 +285,85 @@
 					<li>Constellation</li>
 					<li>Level 1</li>
 					<li>Level 2</li>
-					<li class="coming-soon">Level 3</li>
+					<li>Level 3</li>
 				</ul>
 				<ul>
 					<li>The Thrush</li>
 					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/c/comprehend-languages">comprehend languages</a></li>
 					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/m/magic-mouth">magic mouth</a></li>
-					<li class="coming-soon"><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/t/tiny-hut">tiny hut</a></li>
+					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/t/tiny-hut">tiny hut</a></li>
 				</ul>
 				<ul>
 					<li>The Lantern Bearer</li>
 					<li><a class="spell transmutation reaction" href="https://d20pfsrd.com/magic/all-spells/l/liberating-command">liberating command</a></li>
 					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/g/glitterdust">glitterdust</a></li>
-					<li class="coming-soon"><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/g/guiding-star">guiding star</a></li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/g/guiding-star">guiding star</a></li>
 				</ul>
 				<ul>
 					<li>The Newlyweds</li>
 					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/charm-person">charm person</a></li>
 					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/e/enthrall">enthrall</a></li>
-					<li class="coming-soon"><a class="spell illusion mind-affecting" href="https://d20pfsrd.com/magic/all-spells/s/synesthesia">synesthesia</a></li>
+					<li><a class="spell illusion mind-affecting" href="https://d20pfsrd.com/magic/all-spells/s/synesthesia">synesthesia</a></li>
 				</ul>
 				<ul>
 					<li>The Bridge</li>
 					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/e/endure-elements">endure elements</a></li>
 					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a></li>
-					<li class="coming-soon"><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/d/daylight">daylight</a></li>
+					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/d/daylight">daylight</a></li>
 				</ul>
 				<ul>
 					<li>The Daughter</li>
 					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/b/bless">bless</a></li>
 					<li><a class="spell illusion mind-affecting" href="https://d20pfsrd.com/magic/all-spells/h/hypnotic-pattern">hypnotic pattern</a></li>
-					<li class="coming-soon"><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/h/heroism">heroism</a></li>
+					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/h/heroism">heroism</a></li>
 				</ul>
 				<ul>
 					<li>The Rider</li>
 					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/a/anticipate-peril">anticipate peril</a></li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/a/acute-senses">acute senses</a></li>
-					<li class="coming-soon"><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/a/ablative-barrier">ablative barrier</a></li>
+					<li><a class="spell conjuration" href="https://d20pfsrd.com/magic/all-spells/a/ablative-barrier">ablative barrier</a></li>
 				</ul>
 				<ul>
 					<li>The Patriarch</li>
 					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/command">command</a></li>
 					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/s/spiritual-weapon">spiritual weapon</a></li>
-					<li class="coming-soon"><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a></li>
+					<li><a class="spell abjuration" href="https://d20pfsrd.com/magic/all-spells/d/dispel-magic">dispel magic</a></li>
 				</ul>
 				<ul>
 					<li>The Wagon</li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/e/expeditious-retreat">expeditious retreat</a></li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/t/twisted-space">twisted space</a></li>
-					<li class="coming-soon"><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/h/haste">haste</a></li>
+					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/h/haste">haste</a></li>
 				</ul>
 				<ul>
 					<li>The Pack</li>
 					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/c/calm-animals">calm animals</a></li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/a/animal-aspect">animal aspect</a></li>
-					<li class="coming-soon"><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/r/rage">rage</a></li>
+					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/r/rage">rage</a></li>
 				</ul>
 				<ul>
 					<li>The Mother</li>
 					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/i/identify">identify</a></li>
 					<li><a class="spell enchantment mind-affecting" href="https://d20pfsrd.com/magic/all-spells/a/aid">aid</a></li>
-					<li class="coming-soon"><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/i/invisibility-purge">invisibility purge</a></li>
+					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/i/invisibility-purge">invisibility purge</a></li>
 				</ul>
-				<ul>
+				<ul class="selected">
 					<li>The Stargazer</li>
 					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/k/know-the-enemy">know the enemy</a></li>
 					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/a/augury">augury</a></li>
-					<li class="coming-soon"><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/a/arcane-sight">arcane sight</a></li>
+					<li><a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/a/arcane-sight">arcane sight</a></li>
 				</ul>
 				<ul>
 					<li>The Stranger</li>
 					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/d/disguise-self">disguise self</a></li>
 					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/i/invisibility">invisibility</a></li>
-					<li class="coming-soon"><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/d/displacement">displacement</a></li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/d/displacement">displacement</a></li>
 				</ul>
 				<ul>
 					<li>The Follower</li>
 					<li><a class="spell transmutation" href="https://d20pfsrd.com/magic/all-spells/f/forced-quiet">forced quiet</a></li>
 					<li><a class="spell evocation" href="https://d20pfsrd.com/magic/all-spells/d/darkness">darkness</a></li>
-					<li class="coming-soon"><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/v/vision-of-hell">vision of hell</a></li>
+					<li><a class="spell illusion" href="https://d20pfsrd.com/magic/all-spells/v/vision-of-hell">vision of hell</a></li>
 				</ul>
 			</div>
 		</section>
@@ -358,43 +380,43 @@
 						<small>3 dex</small>
 					</li>
 					<li>
-						<strong>30</strong>
+						<strong>37</strong>
 						<b>HP</b>
-						<small>5 psychic: 6 class, 0 con; 5 fc; -5 rolled</small>
+						<small>6 psychic: 6 class, 0 con; 6 fc; -5 rolled</small>
 					</li>
 					<li class="br">
-						<strong>19</strong>
-						<b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 16
-						<small>10, 3 dex, 5 armor, 1 shield</small>
+						<strong>20</strong>
+						<b>AC</b> touch 14, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 17
+						<small>10, 3 dex, 5 armor, 1 shield, <u title="Ring of Protection">1 deflection</u></small>
 					</li>
 					<li>
-						<strong>2</strong>
+						<strong>3</strong>
 						<b>Fort</b>
-						<small>0 con, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+						<small>0 con, 2 class, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li>
-						<strong>5</strong>
+						<strong>6</strong>
 						<b>Ref</b>
-						<small>3 dex, 1 class, <u title="Cloak of Resistance">1 resistance</u></small>
+						<small>3 dex, 2 class, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li>
-						<strong>8</strong>
+						<strong>9</strong>
 						<b>Will</b>
-						<small>2 wis, 4 class, <u title="Canon of Coin">1 trait</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+						<small>2 wis, 5 class, <u title="Canon of Coin">1 trait</u>, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li class="circumstancialBonus" title="Elven Immunities"><u>+2 racial</u> vs enchantment, <u>Immune</u> sleep</li>
 					<li class="circumstancialBonus br" title="Stoic Optimism"><u>+1 trait (stacking)</u> vs discarding valuables</li>
 					<li>
-						<strong>2</strong>
-						<b>CMB</b>;	15 <b>CMD</b>
-						<small>2 bab, 0 str, 3 dex</small>
+						<strong>3</strong>
+						<b>CMB</b>;	17 <b>CMD</b>
+						<small>3 bab, 0 str, 3 dex, <u title="Ring of Protection">1 deflection</u></small>
 					</li>
 				</ul>
 
 				<!--Light Crossbow-->
 				<div class="weapon">
 					<h2>Light Crossbow <b>19×2</b> <b>80ft.</b> <b>P</b></h2>
-					<div class="summation"><strong>+5</strong> vs AC <small>2 bab, 3 dex</small></div>
+					<div class="summation"><strong>+6</strong> vs AC <small>3 bab, 3 dex</small></div>
 					<div class="summation"><strong title="Marksman Weapon +1size">1d10</strong></div>
 					<div class="circumstancialBonus">
 						Loading a light crossbow is an unsafe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>.
@@ -404,13 +426,13 @@
 			<!--end of Basics: Statblock and Weapons-->
 
 			<div>
-				<h2>Mental Placidity <u title="2 wis">2/day</u></h2>
+				<h2 class="reaction">Mental Placidity <u title="2 wis">2/day</u></h2>
 				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> when rolling Will,
 					gain +2 (+4 vs <span class="spell enchantment">enchantment</span>).
 					Your allies get half this bonus.
 					If you succeed, regain 1 phrenic point.</p>
 
-				<h2>Phrenic Pool <u title="2 psychic&frac12;, 2 wis">4/day</u></h2>
+				<h2>Phrenic Pool <u title="3 psychic&frac12;, 2 wis">5/day</u></h2>
 				<ul>
 					<li title="Overpowering Mind">For 2|4, increase Will DC of a <span class="spell mind-affecting">spell</span> by 1|2.</li>
 				</ul>
@@ -418,7 +440,7 @@
 				<h2>Diviner's Delving</h2>
 				<p>Gain information from <a class="spell divination" href="https://d20pfsrd.com/magic/all-spells/d/detect-thoughts">divination spells</a> one round earlier.</p>
 				
-				<h2>Headband of Ponderous Recollection <b>3/day</b></h2>
+				<h2 class="swift-action">Headband of Ponderous Recollection <b>3/day</b></h2>
 				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
 					recall knowledge as if you rolled 10 now and 15 on the next round.</p>
 			</div>
@@ -428,7 +450,8 @@
 		<hr>
 		<ul id="magicItemsWrapper">
 			<li><!--5100--><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-ponderous-recollection">Headband of Ponderous Recollection</a> +2 (Know Arcana)</li>
-			<li><!--2000--><s><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</s></li>
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
+			<li><!--4000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/spell-lattice">Spell Lattice</a>, 2nd</li>
 			<li>2× <!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/spell-lattice">Spell Lattice</a>, 1st</li>
 			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
 			<li><!--200--><a href="https://d20pfsrd.com/magic-items/wondrous-items/r-z/sleeves-of-many-garments">Sleeves of Many Garment</a></li>
@@ -455,7 +478,7 @@
 			<li><!--50-->
 				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
 			</li>
-			<li>606 <b>GP</b><!--/11,550--> <small><u title="Canon of Coin, need to keep 100×HD on yourself at all times">min. 500</u></small></li>
+			<li>606 <b>GP</b><!--/17,600--> <small><u title="Canon of Coin, need to keep 100×HD on yourself at all times">min. 600</u></small></li>
 		</ul>
 
 		<!-- title NOTES -->
