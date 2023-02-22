@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Elasmosaurus Companion</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.rage { color: var(--virtue-blue); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="master" href="Flotsam.html">Master</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Jetsam, oceanic hunter</h1>
+			NE Large animal
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>20 <small>10, <u title="4th level Advancement">8</u>, <u title="Str/Dex Bonus">1</u>, <u title="Ability Score Increase">1</u></small></dd>
+
+				<dt>Dex</dt>
+				<dd>17 <small>18, <u title="4th level Advancement">-2</u>, <u title="Str/Dex Bonus">1</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>16 <small>12, <u title="4th level Advancement">4</u></small></dd>
+
+				<dt>Int</dt>
+				<dd>2</dd>
+
+				<dt>Wis</dt>
+				<dd>13</dd>
+
+				<dt>Cha</dt>
+				<dd>9</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/Druid/animal-companions#TOC-Elasmosaurus">Elasmosaurus</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/druid/animal-companions">Animal Companion</a> 4</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Senses</dt>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Scent">Scent</a></dd>
+
+				<dt>Speed</dt>
+				<dd>20 ft.</dd>
+				<dd>Swim 50 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>None</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS -->
+		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/3e/c4/b9/3ec4b9146915ac18ba3e932d819e7af9.jpg" alt="Prehistoric Wildlife &copy;???" onclick="document.getElementById('large-picture').showModal()">
+		<dl id="featsWrapper">
+			<dt>level 1</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a>
+				<small>min.1</small></dd>
+			<dt>level 2</dt>
+			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat">Weapon Focus</a>
+				<small>min.2</small></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li class="br">
+				<strong>5</strong>
+				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+				<small>1 wis, 1 ranks, 3 class</small>
+			</li>
+
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>
+				<small>3 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://d20pfsrd.com/skills/stealth">Stealth</a>
+				<small>3 dex, 1 ranks, 3 class</small>
+			</li>
+			<li>
+				<strong>17</strong>
+				<a href="https://d20pfsrd.com/skills/swim">Swim</a>
+				<small>5 str, 1 ranks, 3 class, <u title="Swim Speed">8 racial</u></small>
+			</li>
+		</ul>
+
+		<p class="circumstancialBonus noprint">
+			<u title="4 companion">4 ranks</u>.
+		</p>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>3</strong>
+						<b>Init</b>
+						<small>3 dex</small>
+					</li>
+					<li>
+						<strong>44</strong>
+						<b>HP</b>
+						<small>4 animal: 8 class, 3 con</small>
+						<div class="circumstancialBonus rage"><u>8 temp HP</u> when rage starts</div>
+					</li>
+					<li class="br">
+						<strong>20</strong>
+						<b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 17
+						<small>10, 3 dex, <u title="2 racial, 3 advancement, 2 class">7 natural</u></small>
+					</li>
+					<li>
+						<strong>7</strong>
+						<b>Fort</b>
+						<small>3 con, 4 class</small>
+					</li>
+					<li>
+						<strong>7</strong>
+						<b>Ref</b>
+						<small>3 dex, 4 class</small>
+						Evasion
+					</li>
+					<li class="br">
+						<strong>4</strong>
+						<b>Will</b>
+						<small>1 wis, 1 class, <u class="rage">2 rage</u></small>
+					</li>
+					<li>
+						<strong>8</strong>
+						<b>CMB</b>; 21 <b>CMD</b>
+						<small>3 bab, 5 str, 3 dex</small>
+						<div class="circumstancialBonus" title="Quadruped"><u>+4</u> vs trip, overrun</div>
+					</li>
+				</ul>
+
+				<!--Bite-->
+				<div class="weapon">
+					<h2>Bite <b>20×2</b> <b>BPS</b></h2>
+					<div class="apartee float align"><b>PA</b> -1/+3</div>
+					<div class="summation"><strong>+11</strong> vs AC <small>3 bab, 5 str, 1 w.focus, <u class="rage">2 rage</u></small></div>
+					<div class="summation"><strong>2d6+9</strong> <small>7 str&frac12;, <u class="rage">2 rage</u></small></div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<h2>Share Spells (Ex)</h2>
+				<p>Master may cast a spell with a target of "You" on her animal companion (as a touch range spell) instead of on herself.</p>
+
+				<h2 title="8 known: 6' int, 2 druid"><a href="https://d20pfsrd.com/skills/handle-animal">Tricks</a></h2>
+				<div class="apartee float">
+					Doing any of these is DC10 HA as free,<br/>
+					Doing anything else is DC25 HA as move,<br/>
+					DC increases by +2 when wounded.
+				</div>
+				<ul>
+					<li>Aid</li>
+					<li>Attack</li>
+					<li>Come</li>
+					<li>Defend</li>
+					<li>Down</li>
+					<li>Flank</li>
+					<li>Menace</li>
+					<li>Serve</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Jetsam – Art by ???</h2>
+		<img src="https://i.pinimg.com/originals/3e/c4/b9/3ec4b9146915ac18ba3e932d819e7af9.jpg" alt="Prehistoric Wildlife &copy;???">
+	</dialog>
+</body>
+</html>
