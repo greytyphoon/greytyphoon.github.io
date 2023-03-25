@@ -13,12 +13,18 @@
 	<style>
 		#fixref > ul > li > *.tobias::before { content: "⚔️"; }
 		summary::marker { content: "+"; }
-		details[open] > summary::marker { content: ""; }
+		details[open] > summary::marker { content: "–"; }
 		h3 { display: inline-block; margin: 0 0 .3em 1em; font-size: inherit; color: var(--virtue-blue); }
 		@media print, screen and (min-width: 768px) {
 			#main-picture { float: right; max-width: 285px; }
 		}
 		#main-picture > img { margin: 0 0 .25em .25em; border-radius: .75em; }
+		#letter {
+			max-width: 640px;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 1rem;
+		}
 	</style>
 </head>
 <body>
@@ -131,7 +137,7 @@
 				Immediate bar brawl: l'un mentionne qu'on "vaut cher", un autre révèle une dent en argent pendant le fight.</p>
 		</details>
 
-		<details open>
+		<details>
 			<summary><h3><time datetime="2023-03-03">3 mars</time></h3></summary>
 			<p>On se bat toujours! On n'a pas de problème à les vaincre et les désarmer.
 				On interroge le goblin, chef du groupe: il semblerait qu'ils ont un contrat de "la Dent Grise" pour chercher des portails. <small>D'ailleurs, Anya en sent un au Sud.</small>
@@ -143,6 +149,53 @@
 				On a un déjeuner morose à l'auberge, à côté de la pile d'armes, puis on se met en route vers l'abbaye.</p>
 		</details>
 
+		<details>
+			<summary><h3><time datetime="2023-03-10">10 mars</time></h3></summary>
+			<p>On infiltre maladroitement l'abbaye. Tout le monde est en toge blanche et dorée, on est trop visibles. Détail étrange, la statue de Corellon est voilée.
+				Paloma se fait recruter pour faire partie d'un rituel pour Corellon. Morgar et moi sommes invités à une bibliothéque calme non loin.
+				La procession arrive tranquillement, et les couloirs se vident.</p>
+			<p>Le rituel va commencer bientôt. On pense que les prêtres vont caster True Resurrection. Abort? Amélia refuse, veut voir plus loin.</p>
+			<p>Les prêtres arrivent, le Conseil est présent. Le rituel commence.
+				Durant le rituel, Corellon lui-même se montre (clairement un imposteur). Abort? Amélia refuse, selon elle, <q>un dieu ne respire pas</q>.</p>
+			<p>Je ne suis pas là, je fouille les bureaux des gens. Je trouve une lettre intéressante et un dessin au fusain dans le bureau du grand prêtre.</p>
+			<p>Le groupe ne croit pas à l'apparition d'un dieu, et Amélia est maintenant assez louche, puisqu'elle a fait rater la résurrection de son frère.</p>
+		</details>
+
+		<details>
+			<summary><h3>Lettre trouvée dans le bureau du grand prêtre du monastère</h3></summary>
+			<div id="letter" class="apartee br">
+			<p>Honoré <b>Aurélius de la Flamme</b>, très humble protecteur de notre sang,</p>
+			<p>Je, Fäerendelle Rivière-Vive, vous écrit en nom du très haut et ci-déféré conseil.
+				C’est nos larmes et nos chagrins que vous transmettons, en ce jour où la lumière s’est éteinte.
+				Nous espérons que le glorieux soleil, la lame d’or et d’espoir, tiendra promesse et apaisera nos peur d’un nouveau souffle de vie, ainsi qu’il l’a promit.
+				Nous, très déféré conseil, avons rancoeur quant à l’inaction exigée de notre part.
+				Si le nouveau souffle ne devait naître, il aura lieu d’enquête sur cette lumière incarnée, sans offenses souhaitée, honoré Grand-Prêtre, à votre fonction.</p>
+			<p>Quant aux blasphémateurs, nous en recherchons le nid et l’identité, sans fruits pour le jour présent.
+				Requête a bien sûr été fait à la guilde de l’<b>Étoile de Mystra</b>, ainsi qu’il se doit, de pourfendre les assassins.</p>
+			<p>Que Correllon, qu’il soit incarné ou lumière, veille à votre âme<br>
+				Et que toutes les divinités vous murmurent à l’oreille</p>
+			<p>Avec notre plus grand respect, père,</p>
+			<p><b>Fäerendelle Rivière-Vive</b><br>
+				[Sceau du conseil, illustrant plusieurs mains entrelacées soutenant une couronne]</p>
+			</div>
+			<p>Je trouve aussi une étrange esquisse: une silhouette humaine grossièrement dessinée au fusain, et là où se trouverait le cœur normalement, est dessinée la forme d’une clé.</p>
+		</details>
+
+		<details open>
+			<summary><h3><time datetime="2023-03-24s">24 mars</time></h3></summary>
+			<p>Le conseil exige une audience avec Amélia. Finnegan, Ovan, et Anya servent de gardes du corps.
+				Amélia tente de leur extraire de l'information, mais ils ne disent rien de nouveau.
+				Elle tente de nous obtenir un laboratoire, mais il n'y en a pas de disponible à proximité.</p>
+			<p>Amélia retournera à Haut-Rivier, pour veiller sur le corps de son frère.
+				Nous resterons ici pour investiguer: le portail au Sud, et l'apparition du faux Corellon.
+				On commence par investiguer la statue.
+				Finnegan trouve les restants d'un diamant, clairement consommé par le rituel.
+				Ovan sent une odeur de parfum, très floral...</p>
+			<p>On passe la soirée à l'abbaye.
+				On mange, on converse avec les gens, mais personne ne semble se douter que l'apparition de Corellon est une imposture.
+				La piste refroidit, ici.
+				On pense aller chasser la Dent Grise, au sud.
+				On ne peut pas innocenter Amélia: on l'a vue concerter le grand prêtre et <b>Dame Elgyrianne</b>, du conseil.</p>
 		</details>
 	</div>
 </body>
