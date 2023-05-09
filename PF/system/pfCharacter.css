@@ -164,10 +164,9 @@ ul#sources ul { margin-left: 1rem; }
 	width: 44px; }
 
 /*xp*/
-#xp {
-	display: block;
-	margin-top: -1.2em;
-	text-align: left; }
+@media (min-width: 768px) {
+	#xp { margin-top: -1.2em; text-align: right; }
+}
 
 #fixref > ul > li > *.notes::before { content: "\1f4dd"; content: "📝"; }
 #fixref > ul > li > *.companion::before,
