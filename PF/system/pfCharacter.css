@@ -41,6 +41,7 @@ dl#subheader > dd.archetype::before {
 	text-align: center; }
 img#main-picture,
 #main-picture img {
+	cursor: pointer;
 	margin-bottom: .75em;
 	border: 2px solid var(--html-darkgrey);
 	border-radius: 1em;
