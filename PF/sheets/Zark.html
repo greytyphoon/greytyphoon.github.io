@@ -14,7 +14,7 @@
 	<style>
 		img#main-picture,
 		dialog.gallery[open] { background-color: var(--html-white); }
-		#xp { cursor: pointer; }
+		#xp > a { color: var(--html-white); }
 		.container:not(.future) .coming-soon { display: none; }
 	</style>
 </head>
@@ -27,7 +27,7 @@
 		<header>
 			<h1>Zark, the boastful</h1>
 			CN Small Humanoid
-			<div id="xp" onclick="document.getElementsByClassName('container')[0].classList.toggle('future')">80 / 1,000</div>
+			<div id="xp"><a onclick="document.getElementsByClassName('container')[0].classList.toggle('future')">80 / 1,000</a></div>
 		</header>
 
 		<section id="headerInfo" class="row">
@@ -60,7 +60,7 @@
 				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=275">Saloon Entertainer</a></dd>
 
 				<dt>Class</dt>
-				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=3">Bard</a> 3</dd>
+				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=3">Bard</a> 4</dd>
 				<dd class="archetype"><a href="https://2e.aonprd.com/Muses.aspx?ID=2">Maestro</a> Muse </dd>
 			</dl>
 			<dl class="charInfo">
@@ -252,7 +252,7 @@
 					<small>1 wis, 4 prf, 4 lvl</small>
 				</li>
 			</ul>
-				<h2 class="reaction"><a href="https://2e.aonprd.com/Actions.aspx?ID=75">Aid</a></h2>
+				<h2 class="reaction"><a href="https://2e.aonprd.com/Actions.aspx?ID=75">Aid</a> (<a href="https://2e.aonprd.com/Feats.aspx?ID=873">Deft Cooperation</a>)</h2>
 				<h2 class="reaction"><a href="https://2e.aonprd.com/Feats.aspx?ID=834">Recognize Spell</a></h2>
 				<h2 class="one-action"><a href="https://2e.aonprd.com/Actions.aspx?ID=53">Demoralize</a> (<a href="https://2e.aonprd.com/Feats.aspx?ID=796">Intimidating Glare</a>)</h2>
 				<h2 class="one-action"><a href="https://2e.aonprd.com/Actions.aspx?ID=98">Raise Shield</a></h2>
