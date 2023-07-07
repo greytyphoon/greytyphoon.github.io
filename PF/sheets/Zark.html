@@ -14,7 +14,8 @@
 	<style>
 		img#main-picture,
 		dialog.gallery[open] { background-color: var(--html-white); }
-		.coming-soon { display: none; }
+		#xp { cursor: pointer; }
+		.container:not(.future) .coming-soon { display: none; }
 	</style>
 </head>
 <body>
@@ -26,7 +27,7 @@
 		<header>
 			<h1>Zark, the boastful</h1>
 			CN Small Humanoid
-			<div id="xp">1080 / 1,000</div>
+			<div id="xp" onclick="document.getElementsByClassName('container')[0].classList.toggle('future')">80 / 1,000</div>
 		</header>
 
 		<section id="headerInfo" class="row">
@@ -95,14 +96,16 @@
 			<dt>bard 4</dt>
 			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=185">Inspire Competence</a></dd>
 			<dt>archetype 4</dt>
-			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=873">Deft Cooperation</a></dd>
-			<dt>kobold 5</dt>
-			<dd class="br"><a href="https://2e.aonprd.com/Feats.aspx?ID=1273">Kobold Lore</a></dd>
+			<dd class="br"><a href="https://2e.aonprd.com/Feats.aspx?ID=873">Deft Cooperation</a></dd>
 
+			<dt class="coming-soon">kobold 5</dt>
+			<dd class="coming-soon"><a href="https://2e.aonprd.com/Feats.aspx?ID=1273">Kobold Lore</a></dd>
 			<dt class="coming-soon">bard 6</dt>
 			<dd class="coming-soon"><a href="https://2e.aonprd.com/Feats.aspx?ID=193">Harmonize</a></dd>
 			<dt class="coming-soon">archetype 6</dt>
 			<dd class="coming-soon"><a href="https://2e.aonprd.com/Feats.aspx?ID=2225">Archeologist's Warning</a></dd>
+			<dt class="coming-soon">general 7</dt>
+			<dd class="coming-soon"><a href="https://2e.aonprd.com/Feats.aspx?ID=855">Toughness</a></dd>
 			<dt class="coming-soon">kobold 9</dt>
 			<dd class="coming-soon br"><a href="https://2e.aonprd.com/Feats.aspx?ID=1281">Dragon's Breath</a></dd>
 
