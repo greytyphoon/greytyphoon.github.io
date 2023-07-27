@@ -73,3 +73,5 @@ h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spe
 .spell.touch.bonus::after { content: " δ[touch]"; }
 .spell.touch.bonus.off-class::after { content: " Δ[touch]"; }
 .spell.touch.cold::after { content: " ❄[touch]"; }
+
+.composition::after { content: "🎵"; }

@@ -207,6 +207,7 @@ header {
 	color: var(--html-white);
 	text-shadow: 1px 1px 2px var(--murder-black);
 }
+header a { color: var(--html-white); }
 header h1 {
 	font-size: inherit;
 	font-weight: bold;
