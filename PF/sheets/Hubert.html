@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Monk</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.stance { color: var(--divination-blue); }
+		.stance.weapon { color: var(--murder-black); --weapon-color: var(--divination-blue); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF/index.html">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Hubert Freemane, professor of applied philosophy</h1>
+			LG Medium Humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>14 <small>A, L1</small></dd>
+
+				<dt>Dex</dt>
+				<dd>18 <small>A, B, C, L1</small></dd>
+
+				<dt>Con</dt>
+				<dd>12 <small>L1</small></dd>
+
+				<dt>Int</dt>
+				<dd>10</dd>
+
+				<dt>Wis</dt>
+				<dd>14 <small>B, L1</small></dd>
+
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Ancestry</dt>
+				<dd><a href="https://2e.aonprd.com/Ancestries.aspx?ID=6">Human</a></dd>
+				<dd class="archetype">Versatile Heritage</dd>
+
+				<dt>Background</dt>
+				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=79">Secular Medic</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=8">Monk</a> 4</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd><a href="https://2e.aonprd.com/Deities.aspx?ID=10">Irori</a></dd>
+
+				<dt>Senses</dt>
+				<dd>Normal</dd>
+
+				<dt>Speed</dt>
+				<dd>35 ft. <small>25, <u title="Incredible Movement">10 status</u></small></dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Atlantean</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/55/fc/c6/55fcc6e6a28ef7f01866a952b8c4d8d6.png" alt="Charles Freemane II &copy;Cookie" onclick="document.getElementById('large-picture').showModal()">
+		<dl id="featsWrapper">
+			<dt>heritage</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=855">Toughness</a></dd>
+			<dt>human 1</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=70">NA</a>
+				&gt; <a href="https://2e.aonprd.com/Feats.aspx?ID=433">Ki Strike</a></dd>
+			<dt>monk 1</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2269">Rain of Embers Stance</a></dd>
+			<dt>monk 2</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=441">Elemental Fist</a></dd>
+			<dt>archetype 2</dt>
+			<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=4">Cleric Dedication</a></dd>
+			<dt>general 3</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2143">Prescient Planner</a></dd>
+			<dt>monk 4</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=448">Wholeness of Body</a></dd>
+			<dt>archetype 4</dt>
+			<dd class="br"><a href="https://2e.aonprd.com/Feats.aspx?ID=264">Deadly Simplicity</a></dd>
+
+			<dt>background</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=760">Battle Medicine</a></dd>
+			<dt>skill 2</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=756">Assurance</a> (Medicine)</dd>
+			<dt>skill 4</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=766">Continual Recovery</a></dd>
+		</dl>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>10</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=1" title="Trained by Class (Free)">Acrobatics</a>
+				<small>4 dex, 2 prf, 4 lvl</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=3" title="Trained by Cleric Dedication, Expert by Houserule (lvl3)">Athletics</a>
+				<small>2 str, 4 prf, 4 lvl</small>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=9" title="Trained by Background (Fixed), Expert by Increase (lvl3)">Medicine</a>
+				<small>2 wis, 4 prf, 4 lvl, <u title="Healer's Tools (expanded)">1 item</u></small>
+				<div class="circumstancialBonus" title="Assurance: 10, 4 prf, 4 lvl">You can choose to roll <u>18</u> total.</div>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=10" title="Trained by Class (Free)">Nature</a>
+				<small>2 wis, 2 prf, 4 lvl</small>
+			</li>
+			<li>
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=13" title="Trained by Cleric Dedication">Religion</a>
+				<small>2 wis, 2 prf, 4 lvl</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=15" title="Trained by Class (Free)">Stealth</a>
+				<small>4 dex, 2 prf, 4 lvl</small>
+			</li>
+			<li class="br">
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=16" title="Trained by Class (Free)">Survival</a>
+				<small>2 wis, 2 prf, 4 lvl</small>
+			</li>
+
+			<li>
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Background (Fixed), Expert by Houserule (lvl3)">Anatomy Lore</a>
+				<small>0 int, 4 prf, 4 lvl</small>
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<ul class="summations">
+				<li class="br">
+					<strong>8</strong>
+					<b>Perception</b>
+					<small>2 wis, 2 prf, 4 lvl</small>
+				</li>
+				<li>
+					<strong>56</strong>
+					<b>HP</b>
+					<small>8 human, 4 lvl: 10 monk, 1 con, <u title="Toughness">1 feat</u></small>
+					<div class="circumstancialBonus stance" title="Rain of Embers Stance; 2 monk&frac12;"><u>Resist 2</u> 🔥</div>
+					<div class="circumstancialBonus" title="Toughness"><u>+1</u> to stabilize.</div>
+				</li>
+				<li class="br">
+					<strong>23</strong>
+					<b>AC</b>
+					<small>10, 4 dex, 4 prf, 4 lvl, <u class="stance" title="Rain of Embers Stance">1 status</u></small>
+					<div class="circumstancialBonus"><u>+1 circ</u> when casting <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=280">shield</a> (↻ 5 Hardness)</div>
+				</li>
+				<li>
+					<strong>9</strong>
+					<b>Fort</b>
+					<small>1 con, 4 prf, 4 lvl</small>
+				</li>
+				<li>
+					<strong>12</strong>
+					<b>Ref</b>
+					<small>4 dex, 4 prf, 4 lvl</small>
+				</li>
+				<li>
+					<strong>9</strong>
+					<b>Will</b>
+					<small>1 wis, 4 prf, 4 lvl</small>
+				</li>
+			</ul>
+			<div>
+				<!--Fist-->
+				<div class="weapon">
+					<h2>Fist <b>B</b></h2>
+					<div class="summation"><strong>+11</strong>/<strong>7</strong>/<strong>3</strong> vs AC <small>4 dex, 2 prf, 4 lvl, <u title="Potency Rune">1 item</u></small></div>
+					<div class="summation"><strong>2d8+2</strong> <small>2 str</small></div>
+					<div class="circumstancialBonus" title="Powerful Fist">Nonlethal or Lethal.</div>
+				</div>
+
+				<h2 class="one-action stance">Rain of Embers Stance</h2>
+				<!--Fire Talon-->
+				<div class="weapon stance">
+					<h2>Fire Talon <b>🔥</b></h2>
+					<div class="summation"><strong>+11</strong>/<strong>7</strong>/<strong>3</strong> vs AC <small>4 dex, 2 prf, 4 lvl, <u title="Potency Rune">1 item</u></small></div>
+					<div class="summation"><strong>2d4+2</strong> <small>2 str</small></div>
+					<div class="circumstancialBonus">Nonlethal.</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="row">
+			<div>
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Actions.aspx?ID=9">Flurry of Blows</a> [Flourish]</h2>
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=760">Battle Medicine</a></h2>
+			</div>
+
+			<div>
+				<h2>Focus Pool <b title="Ki Strike, Wholeness of Body">2 FP</b></h2>
+				<dl class="condensed">
+					<dt class="one-action"><a href="https://2e.aonprd.com/Spells.aspx?ID=486">Ki Strike</a></dt>
+					<dd>Make an unarmed Strike or Flurry of Blows with <u>+1 status</u> to hit and <u>+1d6 dmg</u>.<br>
+						Choose force, lawful, positive, negative, B[earth], ❄️[water], 🔥[fire], ⚡[air].</dd>
+
+					<dt class="one-action"><a href="https://2e.aonprd.com/Spells.aspx?ID=488">Wholeness of Body</a></dt>
+					<dd>You regain <b>8 HP</b>, or attempt to counteract a poison/disease afflicting you.</dd>
+				</dl>
+			</div>
+		</section>
+
+		<!-- title Spells -->
+		<hr>
+		<section class="row">
+			<div>
+				<h2>Prepared <a href="https://2e.aonprd.com/SpellLists.aspx?Tradition=2">Divine</a> Spells</h2>
+				<p class="summation">
+					<strong>8</strong>
+					<b>Attack</b>; 18 <b>DC</b>
+					<small>10, 2 wis, 2 prf, 4 lvl</small>
+				</p>
+			</div>
+
+			<div class="slim">
+				<h2>Level 0</h2>
+				<ul>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=66">detect magic</a>,</li>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=280">shield</a>.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="mundaneItemsWrapper">
+			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=1">Adventurer's Pack</a></li>
+			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools, Expanded</a></li>
+			<li>+Prescient Planner</li>
+		</ul>
+		<ul id="magicItemsWrapper">
+			<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=441">Handwraps of Mighty Blows</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a></li>
+		</ul>
+
+		<ul id="inventory">
+			<!--Weapons-->
+			<li title="L Bulk" class="br">
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=3">Dagger</a>
+				<small>simple one-handed, 1d4PS, Agile Finesse Thrown-10ft.</small>
+			</li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p>A physician by trade, a prestigious position in his homeland: medicine was seen as the right of the monarchy, and all physicians were approved by the king (sometimes indirectly).
+				Hubert was specialised in physical therapy, rather than ingredients and concoctions, and drew inspiration from martial arts in his treatment.
+				In the university-hospital where he did most of his work, a new controversial nomination was announced, and Hubert resigned as protest.
+				Now he is looking for a good place to found his own school-hospital to pass on his knowledge.
+				And let's be honest, he's in great shape of body and mind, might as well make some money while he's looking!</p>
+
+			<dl class="charInfo">
+				<dt>Quality</dt>
+				<dd>Encouraging &amp; assured</dd>
+
+				<dt>Drawback</dt>
+				<dd>Overprotective</dd>
+
+				<dt>Age</dt>
+				<dd>41</dd>
+
+				<dt>Weight</dt>
+				<dd>214 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>6' 3''</dd>
+			</dl>
+		</section>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Prof – Art by <a href="https://www.artstation.com/third_cookie">Cookie</a></h2>
+		<a href="https://www.artstation.com/artwork/X1gQll">
+		<img src="https://i.pinimg.com/originals/55/fc/c6/55fcc6e6a28ef7f01866a952b8c4d8d6.png" alt="Charles Freemane II &copy;Cookie"></a>
+	</dialog>
+</body>
+</html>
