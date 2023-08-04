@@ -75,4 +75,5 @@ h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spe
 .spell.touch.cold::after { content: " ❄[touch]"; }
 .spell.fire.upcast::after { content: " 🔥U"; }
 
+.spell.psi::after { content: "\a0Ψ"; }
 .composition::after { content: "🎵"; }
