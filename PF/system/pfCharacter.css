@@ -130,6 +130,7 @@ dl#featsWrapper > dd{
 	min-width: unset;
 	margin-left: -1rem;
 	font-weight: bold; }
+.range.strict::before { content: '≤';  font-weight: normal; }
 
 /*equipments*/
 #mundaneItemsWrapper{
