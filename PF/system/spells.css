@@ -30,9 +30,11 @@ h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spe
 
 /* Damage Types */
 .spell.fire::after { content: "\a0🔥"; }
-.spell.cold::after { content: "\a0❄"; color: var(--transmutation-teal); }
+.spell.cold::after { content: "\a0❄️"; }
 .spell.acid::after { content: "\a0🧪"; }
 .spell.electricity::after { content: "\a0⚡"; }
+.spell.mental::after { content: "\a0💭"; }
+.spell.poison::after { content: "\a0🐍"; }
 .fire:not(.spell), a.fire:not(.spell), a.fire:not(.spell):visited { color: var(--evocation-red); }
 .cold:not(.spell), a.cold:not(.spell), a.cold:not(.spell):visited { color: var(--transmutation-teal); }
 .acid:not(.spell), a.acid:not(.spell), a.acid:not(.spell):visited { color: var(--conjuration-green); }
@@ -72,7 +74,7 @@ h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spe
 .spell.touch::after { content: " [touch]"; color: var(--transmutation-teal); }
 .spell.touch.bonus::after { content: " δ[touch]"; }
 .spell.touch.bonus.off-class::after { content: " Δ[touch]"; }
-.spell.touch.cold::after { content: " ❄[touch]"; }
+.spell.touch.cold::after { content: " ❄️[touch]"; }
 .spell.fire.upcast::after { content: " 🔥U"; }
 
 .spell.psi::after { content: "\a0Ψ"; }
