@@ -33,8 +33,12 @@ h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spe
 .spell.cold::after { content: "\a0❄️"; }
 .spell.acid::after { content: "\a0🧪"; }
 .spell.electricity::after { content: "\a0⚡"; }
+.spell.force::after { content: "\a0💫"; }
 .spell.mental::after { content: "\a0💭"; }
 .spell.poison::after { content: "\a0🐍"; }
+.spell.sonic::after { content: "\a0📣"; }
+.spell.vitality::after { content: "\a0🌱"; }
+.spell.void::after { content: "\a0💀"; }
 .fire:not(.spell), a.fire:not(.spell), a.fire:not(.spell):visited { color: var(--evocation-red); }
 .cold:not(.spell), a.cold:not(.spell), a.cold:not(.spell):visited { color: var(--transmutation-teal); }
 .acid:not(.spell), a.acid:not(.spell), a.acid:not(.spell):visited { color: var(--conjuration-green); }
