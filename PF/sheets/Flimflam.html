@@ -76,7 +76,10 @@
 
 		<!-- title SKILLS & FEATS-->
 		<hr>
-		<img id="main-picture" src="https://i.pinimg.com/originals/ff/d6/f8/ffd6f88de4e9cb91395826397b1764bf.jpg" alt="Flame Sprite &copy;tarorae" onclick="document.getElementById('large-picture').showModal()">
+		<div id="main-picture">
+			<img src="https://i.pinimg.com/originals/ff/d6/f8/ffd6f88de4e9cb91395826397b1764bf.jpg" alt="Flame Sprite &copy;tarorae" onclick="document.getElementById('large-picture').showModal()">
+			<p><a onclick="document.getElementById('large-picture-familiar').showModal()">Marshmallow</a></p>
+		</div>
 		<dl id="featsWrapper">
 			<dt>sprite 1</dt>
 			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2631">Corgi Mount</a></dd>
@@ -301,7 +304,7 @@
 				It's not really clear if the fire was started with weird magic reagents, if a passing spirit saw a chance to incarnate, or if the child unwittingly traded some magic for his wish.
 				All the same, Flimflam aspires to be greater than any forest fire has ever been and to light a lot of things on fire.</p>
 
-			<p>Vexed by the needs to move around and eat, Flimflam bought a mount (a cute corgi named <b>Ember</b>) to order around like royalty, and eats the part too.
+			<p>Vexed by the needs to move around and eat, Flimflam bought a mount (a cute corgi named <b>Marshmallow</b>) to order around like royalty, and eats the part too.
 				These don't come cheap, so to pay for those extravagant habits (well, relative to size), Flimflam starting lighting bad guys on fire. Two for one!</p> 
 
 			<dl class="charInfo">
@@ -330,7 +333,13 @@
 		<b onclick="parentNode.close();">✖</b>
 		<h2>Flimflam – Art by <a href="https://www.deviantart.com/tarorae/gallery">tarorae</a></h2>
 		<a href="https://www.deviantart.com/tarorae/art/Flame-Sprite-354774523">
-		<img src="https://i.pinimg.com/originals/ff/d6/f8/ffd6f88de4e9cb91395826397b1764bf.jpg" alt="Alger Wilson &copy;Lord of the Mysteries"></a>
+		<img src="https://i.pinimg.com/originals/ff/d6/f8/ffd6f88de4e9cb91395826397b1764bf.jpg" alt="Flame Sprite &copy;tarorae"></a>
+	</dialog>
+
+	<dialog id="large-picture-familiar" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Marshmallow – Art by Olga Wilson?</h2>
+		<img src="https://i.pinimg.com/originals/eb/d9/da/ebd9daf77946436f5c20a065e5b02c84.jpg" alt="Male Knight with Polearm">
 	</dialog>
 </body>
 </html>
