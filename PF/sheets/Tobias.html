@@ -11,6 +11,10 @@
 	<meta property="og:description" content="The D&D character sheet for Tobias &mdash; Thorncaeleb Miral'kalyn, a 3rd-level elf blood hunter." name="description">
 	<title>Grey's Blood Hunter</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.container:not(.future) .coming-soon { display: none; }
+		.bladesong { color: var(--serene-green); }
+	</style>
 </head>
 <body>
 	<nav id="fixref"><ul>
@@ -22,6 +26,7 @@
 		<header>
 			<h1>Tobias &mdash; Thorncaeleb Miral'kalyn, sentinel of Rosewood</h1>
 			NG Medium humanoid
+			<div id="xp"><a onclick="document.getElementsByClassName('container')[0].classList.toggle('future')">🔮</a></div>
 		</header>
 
 		<section id="headerInfo" class="row">
@@ -56,6 +61,8 @@
 				<dd><a href="http://dnd5e.wikidot.com/blood-hunter">Blood Hunter</a> 5</dd>
 				<dd class="archetype">Order of the <a href="http://dnd5e.wikidot.com/blood-hunter:mutant">Mutant</a></dd>
 				<dd class="archetype"><a href="#">Two-Weapon</a> fighting style</dd>
+				<dd class="coming-soon"><a href="http://dnd5e.wikidot.com/wizard">Wizard</a> 2</dd>
+				<dd class="coming-soon archetype"><a href="http://dnd5e.wikidot.com/wizard:bladesinging">Bladesinging</a> school</dd>
 			</dl>
 			<dl class="charInfo">
 				<dt>Deity</dt>
@@ -66,6 +73,7 @@
 
 				<dt>Speed</dt>
 				<dd>30 ft.</dd>
+				<dd class="coming-soon bladesong">40 ft. during Bladesong</dd>
 
 				<dt>Languages</dt>
 				<dd title="2 racial, 1 background">Common, Elven, Dwarven</dd>
@@ -95,6 +103,7 @@
 					<strong>6</strong>
 					Acrobatics
 					<small>6 dex</small>
+					<div class="circumstancialBonus bladesong coming-soon" title="Bladesong"><u>Advantage</u></div>
 				</li>
 				<li>
 					<strong>6</strong>
@@ -110,6 +119,7 @@
 					<strong>1</strong>
 					<b>CON saving throw</b>
 					<small>1 con</small>
+					<div class="circumstancialBonus bladesong coming-soon" title="Bladesong"><u>+2 int</u> to maintain concentration.</div>
 				</li>
 				<li>
 					<strong>5</strong>
@@ -192,7 +202,7 @@
 				<li>
 					<strong>0</strong>
 					Performance
-					<small>0 cha</small>
+					<small>0 cha<span class="coming-soon">, <u title="Training in War and Song">3 prf</u></span></small>
 				</li>
 				<li>
 					<strong>3</strong>
@@ -216,6 +226,11 @@
 						<strong>19</strong>
 						<b>AC</b>
 						<small>17 armor, 2' dex</small>
+					</li>
+					<li class="coming-soon bladesong">
+						<strong>21</strong>
+						<b>AC</b>
+						<small><u title="Mage Armor">13 armor</u>, 6 dex, 2 int</small>
 					</li>
 					<li class="circumstancialBonus" title="Fey Ancestry"><u>Advantage</u> vs being charmed. <u>Immune</u> to magical sleep.</li>
 				</ul>
@@ -250,6 +265,49 @@
 					<b><a href="http://dnd5e.wikidot.com/blood-hunter:mutagens#toc2">Celerity</a></b>,
 					<a href="http://dnd5e.wikidot.com/blood-hunter:mutagens#toc3">Conversant</a>,
 					<a href="http://dnd5e.wikidot.com/blood-hunter:mutagens#toc11">Percipient</a>.</p>
+			</div>
+		</section>
+
+		<section class="row coming-soon">
+			<div class="wide">
+				<h2><a href="http://dnd5e.wikidot.com/spells:wizard">Wizard</a> Spells</h2>
+				<ul class="summations">
+					<li><strong>5</strong> Spell Attack; DC <strong>13</strong> <small>8, 2 int, 3 prf</small></li>
+					<li><strong>4</strong> Spells prepared <small>2 wizard, 2 int, plus cantrips</small></li>
+					<li><em>Ritual casting</em> <small>You can cast rituals unprepared from your spellbook.</small></li>
+				</ul>
+
+				<h2>Arcane Recovery <b>1/day</b></h2>
+				<p>When you rest, recover spell slots worth a total of <u title="1 wizard&frac12; rounded up">1</u> levels. <small>You can't recover slots &ge;6th level.</small></p>
+
+				<h2 class="bladesong bonus-action">Bladesong <u title="3 prf">3/day</u></h2>
+				<p class="bladesong">Use as a bonus action. Lasts 1 minute, or until incapacitated.</p>
+			</div>
+			<div>
+				<h2>Cantrips</h2>
+				<ul>
+					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:mage-hand">mage hand</a>,</li>
+					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:message">message</a>,</li>
+					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:minor-illusion">minor illusion</a> <small>silent!</small>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 1 <b>3/day</b></h2>
+				<ul>
+					<li><a class="spell ritual concentration" href="http://dnd5e.wikidot.com/spell:detect-magic">detect magic</a>,</li>
+					<li><a class="spell concentration bonus-action" href="http://dnd5e.wikidot.com/spell:expeditious-retreat">expeditious retreat</a>,</li>
+					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:mage-armor">mage armor</a>,</li>
+					<li><a class="spell concentration" href="http://dnd5e.wikidot.com/spell:protection-from-evil-and-good">protection from evil</a>.</li>
+				</ul>
+				<ul>
+					<li><a class="spell ritual" href="http://dnd5e.wikidot.com/spell:comprehend-languages">comprehend languages</a>,</li>
+					<li><a class="spell ritual" href="http://dnd5e.wikidot.com/spell:tensers-floating-disk">floating disk</a>.</li>
+				</ul>
+				<small>When you get <a href="http://dnd5e.wikidot.com/feat:war-caster">War Caster</a>:</small>
+				<ul>
+					<li><a class="spell reaction upcast" href="http://dnd5e.wikidot.com/spell:absorb-elements">absorb elements</a>,</li>
+					<li><a class="spell reaction" href="http://dnd5e.wikidot.com/spell:shield">shield</a>.</li>
+				</ul>
 			</div>
 		</section>
 
