@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<title>Grey's Familiar</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="master" href="Tobias.html">Master</a></li>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Octave, herald of reason</h1>
+			N Tiny celestial
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>3</dd>
+
+				<dt>Dex</dt>
+				<dd>13</dd>
+
+				<dt>Con</dt>
+				<dd>8</dd>
+
+				<dt>Int</dt>
+				<dd>2</dd>
+
+				<dt>Wis</dt>
+				<dd>12</dd>
+
+				<dt>Cha</dt>
+				<dd>7</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://www.dndbeyond.com/monsters/16974-owl">Owl</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://www.dndbeyond.com/spells/find-familiar">Familiar</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Senses</dt>
+				<dd title="Owl">Darkvision 120ft</dd>
+
+				<dt>Speed</dt>
+				<dd>5 ft.</dd>
+				<dd>Fly 60 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Telepathy with master, 100ft</dd>
+			</dl>
+		</section>
+
+		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/fb/ce/35/fbce3561d0d02c4cdb956dbe889d14c3.jpg" alt="Saw-whet Owl_DSC1966 &copy;Cycroft Photo" onclick="document.getElementById('large-picture').showModal()">
+		<section class="row">
+			<ul class="summations">
+				<li class="br">
+					<strong>1</strong>
+					<b>Init</b>
+					<small>1 dex</small>
+				</li>
+				<li>
+					<strong>1</strong>
+					<b>HP</b>
+					<small>1 owl: 2 class, -1 con</small>
+				</li>
+				<li class="br">
+					<strong>11</strong>
+					<b>AC</b>
+					<small>10, 1 dex</small>
+				</li>
+				<li>
+					<strong>3</strong>
+					Perception
+					<small>1 wis, <u title="Race (Fixed)">2 prf</u></small>
+					<div class="circumstancialBonus" title="Keen Hearing and Sight"><u>Advantage</u> when using Sight or Hearing.</div>
+				</li>
+				<li>
+					<strong>3</strong>
+					Stealth
+					<small>1 dex, <u title="Race (Fixed)">2 prf</u></small>
+				</li>
+			</ul>
+			<div>
+				<h2>Flyby</h2>
+				<p>Don't provoke when flying out of reach.</p>
+
+				<h2 class="reaction">Deliver Touch Spell</h2>
+				<h2 class="one-action">Dismiss</h2>
+				<h2 class="one-action">Share Senses</h2>
+			</div>
+		</section>
+
+		<!--Notes-->
+		<section class="noprint">
+			<hr>
+			<p><b>Tips for playing:</b> Use the Help action to grant your master Advantage on an attack.</p>
+		</section>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Octave – Picture by <a href="https://www.flickr.com/photos/cycroft/">Cycroft Photo</a></h2>
+		<a href="https://www.flickr.com/photos/cycroft/4177255294">
+		<img src="https://i.pinimg.com/originals/fb/ce/35/fbce3561d0d02c4cdb956dbe889d14c3.jpg" alt="Saw-whet Owl_DSC1966 &copy;Cycroft Photo"></a>
+	</dialog>
+</body>
+</html>
