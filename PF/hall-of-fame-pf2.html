@@ -8,18 +8,8 @@
 	<style>
 		.gallery {
 			display: grid;
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 			gap: 1rem; }
-		@media print, screen and (min-width: 768px) {
-			.gallery { grid-template-columns: repeat(3, 1fr); }
-		}
-		@media print, screen and (min-width: 992px) {
-			.gallery { grid-template-columns: repeat(4, 1fr); }
-		}
-		@media screen and (min-width: 1500px) {
-			body > .container { max-width: 1450px; }
-			.gallery { grid-template-columns: repeat(5, 1fr); }
-		}
 		.gallery a {
 			position: relative;
 			display: block;
