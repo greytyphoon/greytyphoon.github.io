@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- ©2023 Rémi Doutre / Greytyphoon -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Rémi Doutre">
+	<meta name="description" content="Greytyphoon's entry for LudumDare 54.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Kefnac, the Word Grid Game</title>
+	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
+	<link rel="stylesheet" type="text/css" href="../game.css"/>
+	<style>
+		#timer { float: right; }
+		#gameBoard {
+			font-size: 2em;
+			display: grid;
+			gap: .2em;
+			margin: 1rem auto;
+			user-select: none;
+		}
+		.box {
+			width: 1.2em;
+			height: 1.2em;
+			position: relative;
+			box-shadow: 0 0 .25em var(--murder-black);
+			text-align: center;
+		}
+		.box.seen { background-color: #C2DFFF; }
+		.box[data-preview]::after {
+			content: attr(data-preview);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1.2em;
+			height: 1.2em;
+			color: var(--serene-green);
+			font-weight: bold;
+		}
+		.box.invalid[data-preview]::after { color: var(--murder-red); }
+		.box.block { box-shadow: none; }
+		.box.block::before { content: "×"; }
+		.box.prize::before { content: "$"; display: block; position: relative; color: var(--abjuration-gold); animation: tilt-shaking 1s linear infinite; z-index: 1; }
+		@keyframes tilt-shaking {
+			0% { transform: rotate(0deg); }
+			8% { transform: rotate(10deg); }
+			16% { transform: rotate(0eg); }
+			24% { transform: rotate(-10deg); }
+			32% { transform: rotate(0deg); }
+			40% { transform: rotate(10deg); }
+			48% { transform: rotate(0eg); }
+			56% { transform: rotate(-10deg); }
+			64% { transform: rotate(0deg); }
+		}
+		#wordbox {
+			width: 100%;
+			min-height: 12rem;
+			border: 1px dashed var(--html-darkgrey);
+			user-select: none;
+		}
+		.word { position: fixed; user-select: none; font-size: 2em; }
+		#options > dl > dt { margin-top: .75em; }
+	</style>
+	<script type="text/javascript" src="../game.js"></script>
+	<script type="text/javascript" src="vocabulary.js"></script>
+	<script type="text/javascript" src="foundation.js"></script>
+</head>
+<body onload="startGame(); modal.showOnce('how-to-play', 'LD54');">
+	<div class="container">
+		<header id="header">
+			<h1>Kefnac, the Word Grid Game</h1>
+			Greytyphoon's LD 54
+		</header>
+
+		<section>
+			<div id="timer">00:00</div>
+			<div><b id="score">0</b> words placed</div>
+		</section>
+
+		<div id="gameBoard"></div>
+
+		<div id="wordbox"></div>
+	</div>
+
+	<nav id="fixref">
+		<ul>
+			<li><a class="how-to-play" onClick="modal.showModal('how-to-play');">How to play</a></li>
+			<li><a class="options" onclick="modal.showModal('options');">Options</a></li>
+			<li><a class="confirm" onclick="document.getElementById('confirm-restart').toggleAttribute('visible'); startGame();" id="confirm-restart">Confirm</a>
+				<a class="restart" onclick="document.getElementById('confirm-restart').toggleAttribute('visible');">Restart</a>
+			<li><a class="credits" onClick="modal.showModal('credits');">Credits</a></li>
+		</ul>
+	</nav>
+
+	<dialog id="how-to-play">
+		<h2>How to play <b><a onClick="modal.closeModal('how-to-play');">&times;</a></b></h2>
+		<p>Drag the floating words at the bottom unto the grid. To place them, they must:</p>
+		<ol><li>Not contradict existing words,</li>
+			<li>Share at least one letter with an existing word.</li></ol>
+		<p>Words are always placed top-down or left-right, following recent pointer movement.<br>
+			(Shake your pointer in the desired direction if the word doesn't drop how you want.)</p>
+		<p>After a while, older words start to disappear, freeing space for more words.<br>
+			The spaces will remain blue.</p>
+		<p>🏆 To win, you must color the whole grid. Good luck!</p>
+		<center><a onClick="modal.closeModal('how-to-play');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="options">
+		<h2>Options <b><a onClick="modal.closeModal('options');">&times;</a></b></h2>
+		<dl>
+			<dt><label for="opt-gridsize">Grid Size</label></dt>
+			<dd><input type="number" min="5" max="13" value="7" maxlength="2" id="opt-gridsize" style="width:5em"></dd>
+
+			<dt>Floating Words</dt>
+			<dd><input type="radio" name="floats" id="opt-floats-8"><label for="opt-floats-8">Fewer</label>,
+				<input type="radio" name="floats" id="opt-floats-10" checked><label for="opt-floats-10">Normal</label>,
+				<input type="radio" name="floats" id="opt-floats-12"><label for="opt-floats-12">Plenty</label>.</dd>
+			<dd><input type="radio" name="length" id="opt-length-0"><label for="opt-length-0">Shorter</label>,
+				<input type="radio" name="length" id="opt-length-1" checked><label for="opt-length-1">Normal</label>,
+				<input type="radio" name="length" id="opt-length-2"><label for="opt-length-2">Longer</label>.</dd>
+
+			<dt>Words disappear...</dt>
+			<dd><input type="radio" name="clears" id="opt-clears-0"><label for="opt-clears-0">Quickly</label>,
+				<input type="radio" name="clears" id="opt-clears-1" checked><label for="opt-clears-1">Normal</label>,
+				<input type="radio" name="clears" id="opt-clears-2"><label for="opt-clears-2">Slowly</label>.</dd>
+
+			<dt>Blocks</dt>
+			<dd><input type="radio" name="blocks" id="opt-blocks-0" checked><label for="opt-blocks-0">None</label>,
+				<input type="radio" name="blocks" id="opt-blocks-1"><label for="opt-blocks-1">Few</label>,
+				<input type="radio" name="blocks" id="opt-blocks-2"><label for="opt-blocks-2">Many</label>.</dd>
+
+			<dt style="display:none">Prizes</dt>
+			<dd style="display:none"><input type="radio" name="prizes" id="opt-prizes-0" checked><label for="opt-prizes-0">None</label>,
+				<input type="radio" name="prizes" id="opt-prizes-1"><label for="opt-prizes-1">Few</label>,
+				<input type="radio" name="prizes" id="opt-prizes-2"><label for="opt-prizes-2">Many</label>.</dd>
+
+			<dt>Languages</dt>
+			<dd><input type="radio" value="en" name="lang" id="opt-lang-en" checked><label for="opt-lang-en">English 🇺🇸 🇬🇧</label>. <small>(Coming soon!)</small></dd>
+		</dl>
+		<center><a onClick="modal.closeModal('options'); startGame();">Apply</a> - <a onClick="modal.closeModal('options');">Cancel</a></center>
+	</dialog>
+
+	<dialog id="credits">
+		<h2>Kefnac, the Word Grid Game <b><a onClick="modal.closeModal('credits');">&times;</a></b></h2>
+		<p>A game made for Ludum Dare 54</p>
+		<p>By Greytyphoon (Rémi Doutre)</p>
+		<p>©2023 Montréal, Québec, Canada</p>
+		<center><a onClick="modal.closeModal('credits');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="victory">
+		<h2>Victory! <b><a onClick="modal.closeModal('victory');">&times;</a></b></h2>
+		<p>You managed to color the entire grid!</p>
+		<p>Congratulations!</p>
+		<center><a onClick="modal.closeModal('victory');">Yay!</a></center>
+	</dialog>
+</body>
+</html>

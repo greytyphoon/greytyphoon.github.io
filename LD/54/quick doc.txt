@@ -1,0 +1,27 @@
+word
+	x: int
+	y: int
+	xSpeed: int
+	ySpeed: int
+	value: string
+	is_held: boolean
+	dom: domElement
+
+box
+	x: int
+	y: int
+	text: char
+	from: word[]
+	dom: domElement
+	is_block: boolean
+	is_prize: boolean
+	seen: boolean
+
+options
+	gridsize: int
+	floats: 8,10,12
+	length: 0,1,2
+	clears: 0,1,2
+	blocks: 0,1,2
+	prizes: 0,1,2
+	lang: string
