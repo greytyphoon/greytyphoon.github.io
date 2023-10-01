@@ -23,7 +23,7 @@ const options = {
 	clears: 3,
 	blocks: 0,
 	prizes: 0,
-	lang: "en",
+	lang: englishVocabulary,
 	readOptions: function() {
 		this.gridsize = document.getElementById("opt-gridsize").valueAsNumber || 7;
 		const few = Math.floor(this.gridsize/4);
@@ -34,12 +34,11 @@ const options = {
 		this.clears += document.getElementById("opt-clears-0").checked ? -few : document.getElementById("opt-clears-2").checked ? few : 0;
 		this.blocks = document.getElementById("opt-blocks-1").checked ? few : document.getElementById("opt-blocks-2").checked ? many : 0;
 		this.prizes = document.getElementById("opt-prizes-1").checked ? few : document.getElementById("opt-prizes-2").checked ? many : 0;
-		this.lang = "en";
+		this.lang = document.getElementById("opt-lang-fr").checked ? frenchVocabulary : englishVocabulary;
 	},
 };
 
 const wordFactory = {
-	vocabulary: englishVocabulary,
 	createWord: function(wordbox) {
 		const rect = wordbox.getBoundingClientRect();
 		const wordDom = document.createElement("div");
@@ -93,8 +92,8 @@ const wordFactory = {
 		const i = options.length == 0 ? Math.min(length1, length2)
 				: options.length == 2 ? Math.max(length1, length2)
 				: length1;
-		const j = myRandom(wordFactory.vocabulary[i].length);
-		return wordFactory.vocabulary[i][j];
+		const j = myRandom(options.lang[i].length);
+		return options.lang[i][j];
 	},
 };
 
