@@ -163,11 +163,13 @@ const boxFactory = {
 
 const previewHelper = {
 	prevPreviewTarget: null,
+	prevPreviewHorizontal: null,
 	showPreview: function(e) {
-		if (previewHelper.prevPreviewTarget != e.target)
+		if (previewHelper.prevPreviewTarget != e.target || previewHelper.prevPreviewHorizontal != orientationHelper.horizontal)
 		{
 			previewHelper.hidePreview();
 			previewHelper.prevPreviewTarget = e.target;
+			previewHelper.prevPreviewHorizontal = orientationHelper.horizontal;
 			return;
 		}
 
