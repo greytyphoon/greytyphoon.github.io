@@ -14,7 +14,8 @@
 #fixref #minimize { float: right; }
 #fixref iframe {
 	transition: height .8s ease;
-	height: 50vh;
+	height: 75vh;
+	width: 450px;
 	border: none; }
 @media screen and (max-width: 767px){
 	#fixref iframe { width: 100%; margin-left: 0; }
