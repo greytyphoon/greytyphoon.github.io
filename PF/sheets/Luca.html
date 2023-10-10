@@ -14,10 +14,12 @@
 	<style>
 		.psyche { color: var(--virtue-blue); }
 		.psyche.weapon { color: var(--murder-black); --weapon-color: var(--virtue-blue); }
+		.container:not(.future) .coming-soon { display: none; }
 	</style>
 </head>
 <body>
 	<nav id="fixref"><ul>
+		<li><a class="notes" href="https://docs.google.com/spreadsheets/d/1Z47FwQbLDCMkvJpCbP-WoJZf5SZSBK8LYzRwbd4q2ZA/edit#gid=0">Notes</a></li>
 		<li><a class="home" href="https://greytyphoon.space/PF/index.html">Home</a></li>
 	</ul></nav>
 
@@ -25,7 +27,7 @@
 		<header>
 			<h1>Luca Cane, the stowaway mage</h1>
 			N Medium Humanoid
-			<div id="xp"><a onclick="document.getElementsByClassName('container')[0].classList.toggle('future')">280 / 1,000</a></div>
+			<div id="xp"><a onclick="document.getElementsByClassName('container')[0].classList.toggle('future')">360 / 1,000</a></div>
 		</header>
 
 		<section id="headerInfo" class="row">
@@ -54,12 +56,12 @@
 				<dd class="archetype">Versatile Heritage</dd>
 
 				<dt>Background</dt>
-				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=233">Magical Misfit</a></dd>
+				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=210">Bibliophile</a></dd>
 
 				<dt>Class</dt>
 				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=21">Psychic</a> 4</dd>
-				<dd class="archetype">Subconscious Mind: <a href="https://2e.aonprd.com/SubconsciousMinds.aspx?ID=2">Gathered Lore</a></dd>
-				<dd class="archetype">Conscious Mind: <a href="https://2e.aonprd.com/ConsciousMinds.aspx?ID=4">The Silent Whisper</a></dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/SubconsciousMinds.aspx?ID=2">Gathered Lore</a></dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/ConsciousMinds.aspx?ID=4">The Silent Whisper</a></dd>
 			</dl>
 			<dl class="charInfo">
 				<dt>Deity</dt>
@@ -72,7 +74,7 @@
 				<dd>25 ft.</dd>
 
 				<dt>Languages</dt>
-				<dd title="2 ancestry, 4 int">Common, Atlantean, Elven, Halfling, Draconic, Sylvan</dd>
+				<dd title="2 ancestry, 4 int">Common, Atlantean, Western Kingdom, Elven, Draconic, Sylvan</dd>
 			</dl>
 		</section>
 
@@ -93,10 +95,17 @@
 			<dt>psychic 4</dt>
 			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=3660">Mental Balm</a></dd>
 			<dt>archetype 4</dt>
-			<dd class="br"><a href="https://2e.aonprd.com/Feats.aspx?ID=745">Basic Wizard Spellcasting</a></dd>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=745">Basic Wizard Spellcasting</a></dd>
+			<dt>human 5</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=74">Clever Improviser</a> </dd>
+			<dt>psychic 6</dt>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=3669">Parallel Breakthrough</a> (<a class="spell" href="https://2e.aonprd.com/ConsciousMinds.aspx?ID=6">warp step</a>)</dd>
+			<dt>archetype 6</dt>
+			<dd class="br"><a href="https://2e.aonprd.com/Feats.aspx?ID=744">BA</a> &gt;
+				<a href="https://2e.aonprd.com/Feats.aspx?ID=183">Cantrip Expansion</a></dd>
 
 			<dt>background</dt>
-			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=857">Trick Magic Item</a></dd>
+			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=754">Arcane Sense</a></dd>
 			<dt>skill 2</dt>
 			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=834">Recognize Spell</a></dd>
 			<dt>skill 4</dt>
@@ -155,19 +164,19 @@
 			</li>
 			<li class="br">
 				<strong>9</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=15" title="Trained by Background (Replaces Arcana)">Stealth</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=15" title="Trained by Background (Replaces Arcana), Expert by Increase (lvl5)">Stealth</a>
 				<small>3 dex, 2 prf, 4 lvl</small>
 			</li>
 
 			<li>
 				<strong>12</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Background (Fixed), Expert by Houserule (lvl3)">Underworld Lore</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Background (Fixed), Expert by Houserule (lvl3)">Library Lore</a>
 				<small>4 int, 4 prf, 4 lvl</small>
 			</li>
 		</ul>
 
 		<!-- title COMBAT -->
-		<hr>
+		<hr class="newPage">
 		<section class="row">
 			<!--Basics: Statblock and Weapons-->
 			<ul class="summations">
@@ -291,15 +300,15 @@
 				</p>
 			</div>
 			<div>
-				<h2 title="6 known: 3 psychic, 3 conscious mind">Level 0</h2>
+				<h2 title="7 known: 3 psychic, 3 conscious mind, 1 pendant of the occult">Level 0</h2>
 				<ul>
 					<li><a class="spell psi" href="https://2e.aonprd.com/Spells.aspx?ID=61">daze</a>,</li>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=66">detect magic</a>,</li>
 					<li><a class="spell bonus off-class" title="Adapted Cantrip" href="https://2e.aonprd.com/Spells.aspx?ID=97">electric arc</a>,</li>
 					<li><a class="spell psi" href="https://2e.aonprd.com/Spells.aspx?ID=1139">forbidden thought</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=132">ghost sound</a>,</li>
 					<li><a class="spell bonus one-action" title="Pendant of the Occult" href="https://2e.aonprd.com/Spells.aspx?ID=142">guidance</a>,</li>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=177">mage hand</a>,</li>
-					<li><a class="spell one-action psi" href="https://2e.aonprd.com/Spells.aspx?ID=190">message</a>.</li>
+					<li><a class="spell one-action psi" href="https://2e.aonprd.com/Spells.aspx?ID=190">message</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1166">warp step</a>.</li>
 				</ul>
 			</div>
 			<div>
@@ -318,6 +327,7 @@
 					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=150">hideous laughter</a>.</li>
 				</ul>
 			</div>
+			<!-- heroism, shadow projectile, impending doom -- for sailing: wanderer's guide -->
 		</section>
 
 		<section class="row">
@@ -328,21 +338,29 @@
 					<b>Attack</b>; 20 <b>DC</b>
 					<small>10, 4 int, 2 prf, 4 lvl</small>
 				</p>
+				<p class="condensed noprint">See the rules to <a href="https://2e.aonprd.com/Actions.aspx?ID=25">Learn a spell</a>.</p>
 			</div>
 			<div>
-				<h2>Level 0 <b>2/day</b></h2>
+				<h2>Level 0 <b title="3 per day: 2 wizard dedication, 1 arcane sense">3/day</b></h2>
 				<ul>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=132">ghost sound</a>,</li>
+					<li><a class="spell bonus" title="Arcane Sense" href="https://2e.aonprd.com/Spells.aspx?ID=66">detect magic</a>,</li>
 					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=171">light</a>,</li>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=229">prestidigitation</a>,</li>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=246">read aura</a>,</li>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1166">warp step</a>.</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=177">mage hand</a>.</li>
+				</ul>
+				<ul>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1315">deep breath</a>,</li>
+					<li><a class="spell reaction" href="https://2e.aonprd.com/Spells.aspx?ID=1352">eat fire</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=229">prestidigitation</a>.</li>
 				</ul>
 			</div>
 			<div>
 				<h2>Level 1 <b>1/day</b></h2>
 				<ul>
 					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=176">mage armor</a>.</li>
+				</ul>
+				<ul>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1285">flashy disappearance</a>,</li>
+					<li><a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=970">pocket library</a>.</li>
 				</ul>
 			</div>
 			<div></div>
@@ -358,7 +376,7 @@
 		</ul>
 		<ul id="magicItemsWrapper">
 			<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=450">Pendant of the Occult</a></li>
-			<li>63 <b>GP</b></li>
+			<li>141 <b>GP</b></li>
 		</ul>
 
 		<ul id="inventory">
@@ -395,25 +413,34 @@
 			<hr>
 			<p>Guide used: <a href="https://docs.google.com/document/d/1bM79znsVHOmv0RhsOGul2SHe53m-MS9f3WT_cDB8hbU/edit">Free Your Mind &copy;Blammit</a>.</p>
 
-			<p>Desperate to contribute to the knowledge of magic, Luca ventured far from his homeland, Varisia, looking for the Academy.
+			<p>Desperate to contribute to the knowledge of magic, Luca ventured far from his homeland looking for an eminent school of magic.
 				Luca thinks he's discovered a way for all to Amp cantrips, by manipulating spellcasting.</p>
 
-			<p>Luca is from a family of Roms, wandering people going from town to town, spreading music and joy, following their own less-than-strict moral code, always free, often destitute.
+			<p>Luca is from a family of Romani, or <i>Roms</i>: wandering people going from town to town, spreading music and joy, following their own less-than-strict moral code, always free, often destitute.
 				His parents, <b>Orchillo</b> and <b>Lilla</b>, as well as his sister <b>Vai</b>, his aunt <b>Kizzy</b> and his uncle <b>Stiggur</b> (all Cane, as surnames are by clan among Roms), took well to that lifestyle.
 				They were versatile, multi-talented people, very adaptable.
 				Luca didn't care much for such versatility and loved magic instead.
 				At first he copied his uncle, drawing unknowable magic out of thin air without a word, helping the whole clan survive tough breaks.
-				Over time he gathered a handful of books (not always legally; in his clan, it's fair game to take stuff from <i>Gadjo</i> that aren't needed them) and learned more theory.
+				Over time he gathered a handful of books (not always legally; to his clan, it's fair game to take stuff from <i>Gadjo</i> that don't need it) and learned more theory.
 				Fascinated to learn that his magic was so different, he dove much deeper, learning how to Amp cantrips.</p>
-			<p>Luca's prized possession is a treatise on magic by Archmage <b>Tinuviel</b>, in which a footnote mentions that the author is an eminent teacher in an Academy in a distant land.
-				Lucao sometimes daydreamed about studying there, but it was so far...
-				Then after another harsh winter, when the villages around refused them help or even entrance, Luca had enough his that lifestyle.
+			<p>Luca's prized possession is a treatise on magic by Archmage <b>Tinuviel</b>, in which a footnote mentions that the author is an eminent teacher in the <b>Collège de Nagajor</b> in a distant land.
+				Luca sometimes daydreamed about studying there, but it was so far...
+				Then after another harsh winter, when the villages around refused them help or even entrance, Luca had enough of that lifestyle.
 				Gathering his stuff, he left for distant lands, travelling by boat, hiding for short trips and gathering what he could to pay his fare on longer ones.</p>
-			<p>Eventually, Luca reached the Academy. However, there, nobody had heard of Professor Tinuviel, and his mastery of magic was quickly deemed to be too little to be admited as a student.
-				The test felt weighted, to Luca: it was strictly theoretical, and one of the evaluators (Professor <b>Tavon</b>) had had a dismissive comment about gipsies upon seeing Luca.
-				Still, Luca is left stranded with few options, but he is resourceful.
-				He's befriended a travelling bard who goes by <b>Maestro</b> after she found him sleeping in her horse's stable at an inn, and she's been supportive, so that's a start.</p>
+			<p>Eventually, Luca reached the College. However, there, nobody had heard of Professor Tinuviel, and his mastery of magic was quickly deemed to be too little to be admited as a student.
+				The test felt weighted, to Luca: it was strictly theoretical, and one of the evaluators (Professor <b>Tavon</b>) had had a dismissive comment about gipsies upon seeing Luca.</p>
+			<p>Left stranded with few options, Luca tried to be resourceful.
+				There were rumors of companies about to leave port to explore the sea, including the College which he desperately wanted to be part of / get revenge on.
+				Luca had no qualifications for such a journey, so he snuck on a ship, the least guarded of them &mdash;belonging to the <b>Joyeux Naufragés</b>.
+				When he was eventually found, there was confusion on both sides.
+				The crew would have happily taken him in (they're not fussy), but dropped him on the first island they crossed, knowing that the College was heading that way too.</p>
+			<p>Luca found himself in <b>Protras</b>, waiting and hoping.
+				The island had its own problems under the tyranny of a cyclop, and Luca was promptly and forcefully added to the ranks of his mining crew, at least until mercenaries bent on protecting the College overthrew the tyrant.
+				At the first occasion, Luca made for the College's boat, trying to find a way to join.
+				The mercenaries arrived about at the same time; bringing new recruits: Luca was hired as a mercenary alongside them.
+				While not exactly what he'd hoped, it meant he could learn from scholars along the road and flex his talents, so why not?</p>
 
+			<hr>
 			<p><b>Goals:</b> Find out who Tinuviel is. Get accepted at the Academy after all, or gain an even more prestigious title. Live a comfortable life, researching magic. Study Amps and make impactful discoveries for all spellcasters.</p>
 			<p><b>Conflict:</b> Luca believes that there is a life that is "perfect" for him, and that if he works harder just a bit longer he'll get there and be perfectly happy.</p>
 
@@ -425,7 +452,7 @@
 				<dd>Corruptible</dd>
 
 				<dt>Age</dt>
-				<dd>19</dd>
+				<dd>24</dd>
 
 				<dt>Weight</dt>
 				<dd>138 lbs</dd>
@@ -433,6 +460,26 @@
 				<dt>Height</dt>
 				<dd>5' 10''</dd>
 			</dl>
+		</section>
+
+		<section class="row noprint">
+			<div>
+				<h2>Scrolls wishlist <small>R1, 4$</small></h2>
+				<ul>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=7">alarm</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=549">exchange image</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=124">floating disk</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1286">helpful steps</a>,</li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=159">illusory disguise</a>,</li>
+					<li><a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1362">signal skyrocket</a>.</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Item Wishlist</h2>
+				<ul><li><a href="https://2e.aonprd.com/Equipment.aspx?ID=443">Hat of the Magi</a> <small>L3, 50$</small></li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=462">Ring of Wizardry</a> <small>L7+, 360$</small></li>
+					<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=416">Bracers of Armor</a> <small>L8+, 450$</small></li></ul>
+			</div>
 		</section>
 	</div>
 
