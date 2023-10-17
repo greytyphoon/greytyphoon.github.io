@@ -185,6 +185,7 @@ ul#sources ul { margin-left: 1rem; }
 @media (min-width: 768px) {
 	#xp { margin-top: -1.2em; text-align: right; }
 }
+.container:not(.future) .coming-soon { display: none; }
 
 #fixref > ul > li > *.notes::before { content: "\1f4dd"; content: "📝"; }
 #fixref > ul > li > *.companion::before,
