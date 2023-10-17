@@ -155,6 +155,22 @@ dl#featsWrapper > dd{
 	#inventory small { display: none !important; }
 }
 
+/*wishlist*/
+#wishlist {
+	display: block;
+	float: right; 
+	width: unset;
+	margin-bottom: .75em;
+	border: 1px dashed var(--html-darkgrey);
+	border-radius: 6px;
+	padding: .25em .5em;
+	font-size: .75rem;
+}
+table#wishlist td + td {
+	padding-left: .75em;
+	text-align: right;
+}
+
 /*source*/
 #sources { font-size: .6rem; float: right; }
 ul#sources ul { margin-left: 1rem; }
