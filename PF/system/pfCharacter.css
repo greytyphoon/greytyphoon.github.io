@@ -157,14 +157,16 @@ dl#featsWrapper > dd{
 
 /*wishlist*/
 #wishlist {
-	display: block;
-	float: right; 
+	display: inline-block;
 	width: unset;
 	margin-bottom: .75em;
 	border: 1px dashed var(--html-darkgrey);
 	border-radius: 6px;
 	padding: .25em .5em;
 	font-size: .75rem;
+}
+@media print, screen and (min-width: 768px) {
+	#wishlist { float: right; }
 }
 table#wishlist td + td {
 	padding-left: .75em;
