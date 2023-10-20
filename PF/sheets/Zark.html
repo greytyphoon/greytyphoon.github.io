@@ -24,9 +24,9 @@
 
 	<div class="container">
 		<header>
-			<h1>Zark, the boastful</h1>
+			<h1>Zark, the ardent</h1>
 			CN Small Humanoid
-			<div id="xp"><a onclick="document.getElementsByClassName('container')[0].classList.toggle('future')">700 / 1,000</a></div>
+			<div id="xp"><a onclick="document.getElementsByClassName('container')[0].classList.toggle('future')">830 / 1,000</a></div>
 		</header>
 
 		<section id="headerInfo" class="row">
@@ -70,8 +70,8 @@
 				<dd title="Kobold Ancestry"><a href="https://2e.aonprd.com/Rules.aspx?ID=415">Darkvision</a></dd>
 
 				<dt>Speed</dt>
-				<dd>25 ft</dd>
-				<dd title="Tunnelflood Heritage">Swim 15 ft</dd>
+				<dd>25 ft.</dd>
+				<dd title="Tunnelflood Heritage">Swim 15 ft.</dd>
 
 				<dt>Languages</dt>
 				<dd title="2 ancestry, 1 because of DM shenanigans with a magic book">Common, Draconic, Atlantean</dd>
@@ -227,7 +227,7 @@
 
 		<!-- title COMBAT -->
 		<hr>
-		<section class="row">
+		<section class="row br">
 			<div>
 			<ul class="summations">
 				<li class="br">
@@ -240,6 +240,7 @@
 					<strong>56</strong>
 					<b>HP</b>
 					<small>6 kobold, 5 lvl: 8 bard, 2 con</small>
+					<div class="circumstancialBonus" title="Fire Starstone"><span class="fire"><u>Resist 3</u> fire</span>, <span class="cold"><u>Weakness 3</u> cold</span>.</div>
 				</li>
 				<li class="br">
 					<strong>22</strong>
@@ -289,7 +290,7 @@
 					<dd>An ally within 30ft gains <u>Fast Healing 6</u> and <u>6 temp HP</u> that last 1 round. Sustain up to 4 rounds.</dd>
 
 					<dt class="one-action composition"><a href="https://2e.aonprd.com/Spells.aspx?ID=385">Inspire Competence</a> [Cantrip]</dt>
-					<dd>Prepare to Aid, using Performance, with Failure → Success.</dd>
+					<dd>Prepare to Aid, using Performance, any action within 60ft, with <u>Failure → Success</u>.</dd>
 
 					<dt class="one-action composition"><a href="https://2e.aonprd.com/Spells.aspx?ID=386">Inspire Courage</a> [Cantrip]</dt>
 					<dd>For 1 round, allies within 60ft gain <u>+1 status</u> to attacks, damage, and saves vs [fear].</dd>
@@ -299,7 +300,8 @@
 			</div>
 		</section>
 
-
+		<!-- title Spells -->
+		<hr>
 		<section class="row">
 			<div class="ample">
 				<h2>Spontaneous <a href="https://2e.aonprd.com/SpellLists.aspx?Tradition=3">Occult</a> Spells</h2>
@@ -333,6 +335,7 @@
 				<ul>
 					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=566">agitate</a>,</li>
 					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=580">liberating command</a>,</li>
+					<li class="coming-soon"><a class="spell reaction" href="https://2e.aonprd.com/Spells.aspx?ID=940">lose the path</a>,</li>
 					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=182">magic weapon</a>,</li>
 					<li><a class="spell bonus upcast" href="https://2e.aonprd.com/Spells.aspx?ID=291">soothe</a>.</li>
 				</ul>
@@ -353,6 +356,12 @@
 					<li><a class="spell upcast" href="https://2e.aonprd.com/Spells.aspx?ID=289">slow</a>,</li>
 					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1019">time jump</a>.</li>
 				</ul>
+
+				<h2><a href="https://2e.aonprd.com/Equipment.aspx?ID=356">Fire Starstone</a> <b>3 SC</b></h2>
+				<ul>
+					<li>0. <a class="spell fire" href="https://2e.aonprd.com/Spells.aspx?ID=236">produce flame</a>,</li>
+					<li>1. <a class="spell fire" href="https://2e.aonprd.com/Spells.aspx?ID=30">burning hands</a>.</li>
+				</ul>
 			</div>
 		</section>
 
@@ -369,9 +378,11 @@
 			<li lang="fr" class="br">3 fioles de poison</li>
 		</ul>
 		<ul id="magicItemsWrapper">
+			<li><u title="Auto-scales to Greater at level 8, and Major at 12. Gives Fire Resistance and Cold Weakness. No hands. No bulk. Invested. Spells can be cast despite not being on your spell list.">
+				<a href="https://2e.aonprd.com/Equipment.aspx?ID=356">Fire Starstone</a></u></li>
 			<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=450">Pendant of the Occult</a></li>
-			<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=249">Bag of Holding</a>, type I</li>
-			<li>95.6 <b>GP</b></li>
+			<li class="br"><a href="https://2e.aonprd.com/Equipment.aspx?ID=249">Bag of Holding</a>, type I</li>
+			<li>172.6 <b>GP</b></li>
 		</ul>
 
 		<ul id="inventory">
@@ -381,7 +392,7 @@
 				<small>martial one-handed, 1d4S, Disarm Finesse Nonlethal Reach Trip.</small>
 			</li>
 			<li title="L Bulk" class="br">
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=3">Dagger</a>
+				3× <a href="https://2e.aonprd.com/Weapons.aspx?ID=3">Dagger</a>
 				<small>simple one-handed, 1d4PS, Agile Finesse Thrown-10ft.</small>
 			</li>
 
