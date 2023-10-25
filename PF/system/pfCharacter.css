@@ -133,23 +133,18 @@ dl#featsWrapper > dd{
 .range.strict::before { content: '≤';  font-weight: normal; }
 
 /*equipments*/
-#mundaneItemsWrapper{
-	float: right;
-	font-size: 0.75rem;
-	margin-left: 1rem; }
-#magicItemsWrapper{
-	float: right;
-	text-align: right; }
-.emptyitemslot {
-	color: var(--html-darkgrey); }
-@media screen and (max-width: 767px) {
+@media print, screen and (min-width: 768px) {
 	#mundaneItemsWrapper{
-		display: none; }
+		float: right;
+		font-size: 0.75rem;
+		margin-left: 1rem; }
 	#magicItemsWrapper{
-		float: none;
-		text-align: left;}
-	.emptyitemslot {
-		display: none; }
+		float: right;
+		text-align: right; }
+}
+.emptyitemslot { color: var(--html-darkgrey); }
+@media screen and (max-width: 767px) {
+	.emptyitemslot { display: none; }
 }
 @media print {
 	#inventory small { display: none !important; }
