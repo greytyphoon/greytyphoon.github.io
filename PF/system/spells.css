@@ -12,8 +12,6 @@ h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spe
 .bonus-action::before { content: "◇\a0"; }
 .one-action::before { content: "◆\a0"; }
 .two-actions::before { content: "◈\a0"; }
-.one-round::before,
-.full-round::before,
 .three-actions::before { content: "❖\a0"; }
 
 /* Schools */
