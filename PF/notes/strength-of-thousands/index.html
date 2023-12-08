@@ -9,6 +9,7 @@
 		#fixref > ul > li > *.nephelcheres::before { content: "🌵"; }
 		summary::marker { content: "+"; }
 		details[open] > summary::marker { content: "–"; }
+		details.rituals > summary::after { content: "📜"; font-weight: bold; float: right; }
 		h3 { display: inline-block; margin: 0 0 .3em 1em; font-size: inherit; color: var(--virtue-blue); }
 		@media print, screen and (min-width: 768px) {
 			#legend { float: right; }
@@ -288,7 +289,7 @@
 			<p>Oba sait clairement qui l'a sabotée. C'est un grippli. Elle s'entête à ne pas vouloir nous le dire.</p>
 		</details>
 
-		<details>
+		<details class="rituals">
 			<summary><h3><time datetime="2023-07-03">3 juillet</time></h3></summary>
 			<p>On débriefe <b>Janatimo</b>.</p>
 			<p>On continue d'étudier, progressant dans nos branches respectives.</p>
@@ -542,7 +543,7 @@
 				Il nous propose d'agir nous-mêmes, sans l'aval direct de l'école, et nous offre des parchemins pour aider.</p>
 		</details>
 
-		<details open>
+		<details>
 			<summary><h3><time datetime="2023-11-14">14 novembre</time></h3> <small>#30</small></summary>
 			<p>On s'infiltre dans le manoir du <b>maire-magistrat Asanda</b>, passant par le côté.
 				L'endroit est partiellement innondé, manifestement peu entretenu.
@@ -570,7 +571,7 @@
 				"Au moins je me suis battu jusqu'à la fin! Mon maître est perdu dans son déguisement, et pense être un sang-chaud comme vous. J'espère que vous allez tuer cet obsédé."</p>
 		</details>
 
-		<details open>
+		<details>
 			<summary><h3><time datetime="2023-11-20">20 novembre</time></h3></summary>
 			<p>On continue l'infiltration chez <b>Asanda</b>. Mais d'abord, on se soigne.</p>
 			<p>Deux <a href="https://2e.aonprd.com/Monsters.aspx?ID=1628">mages nagaji</a> font irruption dans la pièce centrale où on se soignait.
@@ -593,14 +594,13 @@
 				Il fonce dans une pièce avec un gros, gros <a href="https://2e.aonprd.com/Monsters.aspx?ID=1622">crocodile</a>. La bataille commence mal: Kuruka tombe presque immédiatement, Anya l'évacue par la fenêtre.</p>
 		</details>
 
-		<details open>
+		<details>
 			<summary><h3><time datetime="2023-11-27">27 novembre</time></h3></summary>
 			<p>On continue l'infiltration chez <b>Asanda</b>. Le combat contre le crocodile continue. Rafflesia se fait carrément avaler, mais ça nous donne le temps de fuir.</p>
 			<p>Sortis par la fenêtre, utilisant le couvert d'un <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=165">invisibility sphere</a>, on s'éloigne du manoir.
 				Asanda est plus coopératif, mais refuse de partir tant que le faux maire, <b>Salathiss</b>, est en liberté.
 				Un faux maire amènerait trop de chaos sur la ville!
 				Le groupe accepte (à contrecoeur, on est vidés) de repasser à l'offensive, après s'être soignés.</p>
-			<div class="apartee float">Battle Medicine on Kuruka</div>
 			<p>On tente de rentrer subtilement, mais les trois <a href="https://2e.aonprd.com/Monsters.aspx?ID=1627">gardes nagaji</a> qui veillaient à l'entrée nous voient.
 				Kuruka se fait cibler et passe à deux doigts de la mort, mais on s'en sort.</p>
 			<p>On s'infiltre par la fenêtre au nord-est, dans une pièce qu'on savait vide.
@@ -608,6 +608,25 @@
 				<a href="https://2e.aonprd.com/NPCs.aspx?ID=1640">Salathiss</a> et son <a href="https://2e.aonprd.com/Monsters.aspx?ID=1627">garde du corps</a> attaquent.
 				La foule, elle, était une illusion et disparaît.
 				Grièvement blessée par l'assaut initial du garde, Anya est visée par <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=219">phantasmal killer</a> et meurt sur le coup.</p>
+		</details>
+
+		<details open class="rituals">
+			<summary><h3><time datetime="2023-12-04">4 décembre</time></h3></summary>
+			<p>On continue l'infiltration chez <b>Asanda</b>. Le combat contre Salathiss continue.</p>
+			<p>Nous sommes encore perturbés par la mort soudaine d'Anya, mais nous avons notre stratégie: le garde du corps nous restreint trop, et est déjà affaibli.
+				Dès qu'il tombe, il ne reste que nous et Salathiss, qu'on a rendu <a href="https://2e.aonprd.com/Conditions.aspx?ID=35"><i lang="en">slowed</i></a> et qui doit <a href="https://2e.aonprd.com/Actions.aspx?ID=73"><i lang="en">sustain</i></a> un de ses sorts.
+				Il ne nous pose aucun problème sérieux.
+				Rafflesia l'assome; avec l'accord implicite du vrai maire, Bháite l'achève pour éviter tout ennui futur.
+				On prend à peine de temps de fouiller la pièce, et on rentre au campus avec le cadavre d'Anya.</p>
+			<p>On apprend les rituels: <a class="spell" href="https://2e.aonprd.com/Rituals.aspx?ID=35">reincarnate</a>, <a class="spell" href="https://2e.aonprd.com/Rituals.aspx?ID=20">resurrect</a>.</p>
+			<p>Malgré nos efforts, les conseils du professeur <b>Janatimo</b>, et l'aide du professeur <b>Zuma</b>, le rituel échoue: l'âme d'Anya refuse, elle a toujours détesté la nécromancie.
+				Les jours suivants sont lents: contacter sa famille, distribuer son héritage, etc., mais aussi constater l'amélioration de la vie en ville avec le retour du maire.
+				Nous confrontons également le professeur <b>Ulawa</b> au sujet du <b>Vesicant Egg</b>, et elle suggère de le déplacer hors du campus, où il sera plus en sécurité.</p>
+			<p>Nos études s'achèvent, nous graduerons dans quelques semaines.
+				Le professeur Janatimo nous demande de devenir, pour quelques temps au moins, des <i>Lore-Speakers</i>, professeurs à l'école.
+				Il nous dit aussi de préparer un discours pour notre graduation, abordant deux sujets importants:
+				Quel cours va-ton enseigner?
+				Qu'a-t-on le plus de besoin d'apprendre de la connexion entre la magie et le monde, pour accomplir nos objectifs?</p>
 		</details>
 
 		<footer><p><center>☀️ 🌧️ 🪣 🌳 📕</center></p></footer>
