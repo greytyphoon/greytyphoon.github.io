@@ -1,4 +1,4 @@
-/** Created by Rémi Doutre, 2015-2022. Public domain. **/
+/** Created by Rémi Doutre, 2015-2023. Public domain. **/
 @import url("../basic.css");
 
 :root { --murder-red: var(--serene-green); }
@@ -15,15 +15,12 @@
 .credit::before { content: "("; }
 .credit::after { content: ")"; }
 
+.lyrics { margin-left: 2em; }
+
 .refrain { font-style: italic; color: var(--html-darkgrey); }
 
 .reprise::before { content: "\21bb "; content: "↻ "; color: var(--html-darkgrey); }
 
-@media screen and (min-width: 576px) {
-	.lyrics { margin-left: 3em; }
-}
-
 @media print {
 	details { page-break-inside: avoid; }
-	.lyrics { margin-left: 3em; }
 }
