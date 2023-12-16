@@ -11,6 +11,12 @@
 	<meta property="og:description" content="The PF2 character sheet for Cassius, a 6th-level automaton exemplar." name="description">
 	<title>Grey's Exemplar</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.spirit { color: var(--transmutation-teal); }
+		.body-ikon { color: var(--evocation-red); }
+		.weapon-ikon { color: var(--divination-blue); }
+		.worn-ikon { color: var(--conjuration-green); }
+	</style>
 </head>
 <body>
 	<nav id="fixref"><ul>
@@ -181,9 +187,9 @@
 			<div>
 				<!--Temple Sword-->
 				<div class="weapon">
-					<h2>Temple Sword <b>S</b></h2>
+					<h2>Temple Sword <b>S + 🪬</b></h2>
 					<div class="summation"><strong>+15</strong> vs AC <small>4 str, 4 prf, 6 lvl, <u title="Potency Rune">1 item</u></small></div>
-					<div class="summation"><strong>2d8+6</strong> <small>4 str, 2 w.spec</small></div>
+					<div class="summation"><strong>2d8+6</strong> <small>4 str, <span class="spirit">2 w.spec</span></small></div>
 					<div class="circumstancialBonus">Trip.</div>
 				</div>
 
@@ -196,7 +202,7 @@
 			<!--end of Basics: Statblock and Weapons-->
 		</section>
 		<section class="row">
-			<div style="color: var(--evocation-red);">
+			<div class="body-ikon">
 				<h2>Skin Hard As Horn <b>Body Ikon</b></h2>
 				<p>Gain <u title="Exemplar&frac12;">Resist 3</u> piercing, except crits.</p>
 
@@ -206,14 +212,14 @@
 					that foe is <a href="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> &amp; has <u>-2 circ</u> to hit until their next turn starts.<br>
 					<span title="Epithet of the Radiant">Also, an ally within 30ft heals <u title="2 + 2&times;Exemplar">14 HP</u>. <small>[Emotion, Mental] Then, immune for 10 minutes.</small></span></p>
 			</div>
-			<div style="color: var(--divination-blue);">
+			<div class="weapon-ikon">
 				<h2>Barrow's Edge <b>Weapon Ikon</b></h2>
 				<p>Add <u title="1 per weapon damage dice">2 persistent dmg Spirit</u> to Strikes.<br>
 					<span title="Thorns of Mortality">Foes you damaged heal half or nothing <small title="10, 4 str, 2 prf, 6 lvl">Will DC 22</small></span>.</p>
 				<h2 class="one-action">Drink of my Foes</h2>
 				<p>After you hit, heal HP equal to half the damage dealt.</p>
 			</div>
-			<div style="color: var(--conjuration-green);">
+			<div class="worn-ikon">
 				<h2>Victor's Wreath <b>Worn Ikon</b></h2>
 				<p>You and allies within 15ft gain <u>+1 status</u> to hit.</p>
 				<h2 class="one-action">One Moment till Glory</h2>
