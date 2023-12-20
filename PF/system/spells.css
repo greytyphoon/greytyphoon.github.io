@@ -26,7 +26,7 @@ h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spe
 .spell.enchantment, a.spell.enchantment, a.spell.enchantment:visited { color: var(--enchantment-lilac); }
 .spell.necromancy, a.spell.necromancy, a.spell.necromancy:visited { color: var(--necromancy-purple);}
 
-/* Damage Types */								/*TBD: Holy, Unholy, Silver, Cold-Iron, Precision, Bleed, Persistent, Nonlethal?*/
+/* Damage Types */								/*TBD: Holy, Unholy, Silver, Cold-Iron, Precision 🎯, Bleed, Persistent, Nonlethal?*/
 .spell.fire::after { content: "\a0🔥"; }
 .spell.cold::after { content: "\a0❄️"; }
 .spell.acid::after { content: "\a0🧪"; }
