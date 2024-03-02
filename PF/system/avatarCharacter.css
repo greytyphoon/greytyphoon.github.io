@@ -1,0 +1,42 @@
+/** Created by Rémi Doutre, 2022-2024. Public domain. **/
+#balance { position: relative; }
+#balance > table { margin: 0 1em; width: calc(100% - 2em); height: 3.6rem; text-align: center; }
+#balance > table tr:first-child { color: var(--divination-blue); }
+#balance > table tr:last-child { color: var(--evocation-red); }
+#balance > .principle {
+	display: block;
+	width: 3.6rem;
+	font-weight: bold;
+	text-align: center;
+}
+#balance > .principle:first-child {
+	position: absolute;
+	bottom: 0;
+	left: 1.2em;
+	transform-origin: 0 100%;
+	transform: rotate(270deg);
+	color: var(--divination-blue);
+}
+#balance > .principle:last-child {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	transform-origin: 0 0;
+	transform: rotate(90deg);
+	color: var(--evocation-red);
+}
+
+dt > small { font-weight: normal; }
+
+.summations ul { list-style: circle; padding-left: 1.5em; }
+.summations ul > li.combat { list-style: disc; }
+
+.degrees-of-success > b {
+	display: inline-block;
+	width: 2.25em;
+	text-align: center;
+	border: 1px solid var(--serene-green);
+	border-radius: .25em;
+}
+.degrees-of-success > b ~ b { border-color: var(--virtue-blue); }
+.degrees-of-success > b ~ b ~ b { border-color: var(--murder-red); }

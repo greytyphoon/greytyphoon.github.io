@@ -11,38 +11,7 @@
 	<meta property="og:description" content="The Avatar Legends character sheet for Bohi, an Adamant Airbender." name="description">
 	<title>Grey's Airbender</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
-	<style>
-		#balance { position: relative; }
-		#balance > table { margin: 0 1em; width: calc(100% - 2em); height: 3.6rem; text-align: center; }
-		#balance > table tr:first-child { color: var(--divination-blue); }
-		#balance > table tr:last-child { color: var(--evocation-red); }
-		#balance > .principle {
-			display: block;
-			width: 3.6rem;
-			font-weight: bold;
-			text-align: center;
-		}
-		#balance > .principle:first-child {
-			position: absolute;
-			bottom: 0;
-			left: 1.2em;
-			transform-origin: 0 100%;
-			transform: rotate(270deg);
-			color: var(--divination-blue);
-		}
-		#balance > .principle:last-child {
-			position: absolute;
-			top: 0;
-			left: 100%;
-			transform-origin: 0 0;
-			transform: rotate(90deg);
-			color: var(--evocation-red);
-		}
-		#connections { display: inline-block; margin-left: auto; margin-right: auto; text-align: center; }
-		dt > small { font-weight: normal; }
-		.summations ul, ul#lodestar-advice { list-style: circle; padding-left: 1.5em; }
-		.summations ul > li.combat { list-style: disc; }
-	</style>
+	<link rel="stylesheet" href="../system/avatarCharacter.css">
 </head>
 <body>
 	<nav id="fixref"><ul>
@@ -149,11 +118,10 @@
 						</ul>
 					</li>
 				</ul>
-				<h2>I don't hate you</h2>
-				<p>When you <i>Guide and comfort</i>, roll with Passion if you mark Insecure <small>or if it's already marked</small>.</p>
 			</div>
 
-			<div class="ample">
+			<div class="wide">
+				<img id="main-picture" src="https://i.pinimg.com/originals/03/a2/23/03a22320a48ea0e29fc6052ea560c75f.jpg" alt="The Last Avatar" onclick="document.getElementById('large-picture').showModal()">
 				<h2>Techniques</h2>
 				<dl>
 					<dt>⚪ <b>Ready</b> <small>D&amp;M</small></dt>
@@ -164,6 +132,9 @@
 
 					<dt>⚪ <b>Seize a Position</b> <small>D&amp;M</small></dt>
 					<dd>Engage/disengage a foe, get an advantageous position, or flee.<br>Foes can mark 1-fatigue to prevent this.</dd>
+
+					<dt>🟡 <b>Pinpoint Aim</b> <small>D&amp;M, <u title="Mastered">M</u></small></dt>
+					<dd>Become Prepared. Next round, if you Strike, you don't have to mark fatigue to choose what you inflict.</dd>
 				</dl>
 				<dl>
 					<dt>⚪ <b>Strike</b> <small>A&amp;A</small></dt>
@@ -192,36 +163,40 @@
 		</section>
 
 		<section class="row">
-			<div>
+			<div class="wide">
 				<h2>Shut down someone vulnerable with harsh words or icy silence</h2>
-				<p>Shift your balance to Results, and roll with Results.<br>
-					On a hit, they mark a condition, you clear that condition.
-					On a 10+, they also can't shift your balance/call you out for a scene.
-					On a miss, mark a condition and they shift your balance.</p>
-			</div>
+				<p class="degrees-of-success">Shift your balance to Results, and roll with Results.<br>
+					<b>10+</b> They mark a condition, you clear that condition, they can't <i>shift your balance</i>/<i>call you out</i> for a scene.<br>
+					<b>7-9</b> They mark a condition, you clear that condition.<br>
+					<b>6-</b> Mark a condition, they shift your balance.</p>
 
-			<div>
 				<h2>Consult your lodestar for advice</h2>
-				<p>Roll with Restraint. On a miss, mark a condition or the GM shifts your balance twice.
-					On a hit, choose two, on a 10+, choose all:</p>
-				<ul id="lodestar-advice">
-					<li>They shift your balance; if you follow their advice, they shift it again,</li>
+				<p class="degrees-of-success">Roll with Restraint.<br>
+					<b>10+</b> Do all below.<br>
+					<b>7-9</b> Choose 2 below.<br>
+					<b>6-</b> Mark a condition, or the GM shifts your balance twice.</p>
+				<ul class="list condensed">
+					<li>Your lodestar shifts your balance; if you follow their advice, they shift it again,</li>
 					<li>Clear a condition or 2-fatigue,</li>
-					<li>They clear a condition or 2-fatigue.</li>
+					<li>Your lodestar clears a condition or 2-fatigue.</li>
 				</ul>
+
+				<h2>I don't hate you</h2>
+				<p>When you <i>Guide and Comfort</i>, roll with Passion if you mark Insecure <small>or if it's already marked</small>.</p>
+			</div>
+			<div>
+				<div class="apartee br">
+					<h2>Connections</h2>
+					<p><b>Mengyao</b> takes issues with your methods. Perhaps they have a point, but you certainly can't admit that to them!</p>
+					<p><b>Quartz</b> is your <u title="You cannot resist if they Shift your balance or Call you out.">lodestar</u>; something about them makes them the only person you let your guard down around.</p>
+					<p>You can shift your lodestar to someone new when they <i>Guide and Comfort</i> you and you open up to them, or when you <i>Guide and Comfort</i> them and they open up to you.
+						If you do choose to shift your lodestar, clear a condition.</p>
+				</div>
 			</div>
 		</section>
 
-		<center>
-			<div id="connections" class="apartee br">
-				<h2>Connections</h2>
-				<p><b>Mengyao</b> takes issues with your methods. Perhaps they have a point, but you certainly can't admit that to them!</p>
-				<p><b>Quartz</b> is your <u title="You cannot resist if they Shift your balance or Call you out.">lodestar</u>; something about them makes them the only person you let your guard down around.</p>
-			</div>
-		</center>
-
 		<section class="noprint">
-			<img id="main-picture" src="https://i.pinimg.com/originals/03/a2/23/03a22320a48ea0e29fc6052ea560c75f.jpg" alt="The Last Avatar" onclick="document.getElementById('large-picture').showModal()">
+			<hr>
 			<p>His full name would be "Initiate Bohi of the Northern Air Temple".</p>
 
 			<p>Bohi is a hot-headed airbending student.
@@ -245,12 +220,6 @@
 
 				<dt>Drawback</dt>
 				<dd>Rebellious</dd>
-
-				<dt>Eyes</dt>
-				<dd>Silver</dd>
-
-				<dt>Hair</dt>
-				<dd>Dark brown</dd>
 
 				<dt>Age</dt>
 				<dd>17</dd>

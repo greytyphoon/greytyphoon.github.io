@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<meta property="og:title" content="Zerak, the lab assistant" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://greytyphoon.space/PF/sheets/Zerak.html" />
+	<meta property="og:image" content="https://i.pinimg.com/originals/47/66/08/4766086492c658305be9ff28f782340c.jpg" />
+	<meta property="og:description" content="The Avatar Legends character sheet for Zerak, a Successor Waterbender." name="description">
+	<title>Grey's Waterbender</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<link rel="stylesheet" href="../system/avatarCharacter.css">
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Zerak, the lab assistant</h1>
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Fatigue</dt>
+				<dd><input type="checkbox" /> <input type="checkbox" /> <input type="checkbox" /> <input type="checkbox" /> <input type="checkbox" /></dd>
+
+				<dt title="Afraid&#10;-2 to Intimidate, Call someone out&#10;Cure: Run from danger or difficulty">Afraid</dt>
+				<dd><input type="checkbox" /></dd>
+
+				<dt title="Angry&#10;-2 to Guide and comfort, Assess a situation&#10;Cure: Break something important or lash out at a friend">Angry</dt>
+				<dd><input type="checkbox" /></dd>
+
+				<dt title="Guilty&#10;-2 to Push your luck, Deny a callout&#10;Cure: Make a personnal sacrifice">Guilty</dt>
+				<dd><input type="checkbox" /></dd>
+
+				<dt title="Insecure&#10;-2 to Trick, Resist shifting your balance&#10;Cure: Take a foolhardy action spontaneously">Insecure</dt>
+				<dd><input type="checkbox" /></dd>
+
+				<dt title="Troubled&#10;-2 to Plead, Rely on your skills or training&#10;Cure: Seek guidance from a mentor">Troubled</dt>
+				<dd><input type="checkbox" /></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Background</dt>
+				<dd>Privileged</dd>
+
+				<dt>Training</dt>
+				<dd>Waterbending</dd>
+
+				<dt>Playbook</dt>
+				<dd>Successor</dd>
+			</dl>
+			<div id="balance">
+				<span class="principle">Tradition</span>
+				<table>
+					<tr><td>+3</td>	<td>+2</td>	<td>+1</td>	<td>0</td>	<td>-1</td>	<td>-2</td>	<td>-3</td></tr>
+					<tr><td><input type="radio" name="balance" /></td>
+						<td><input type="radio" name="balance" /></td>
+						<td><input type="radio" name="balance" checked /></td>
+						<td><input type="radio" name="balance" /></td>
+						<td><input type="radio" name="balance" /></td>
+						<td><input type="radio" name="balance" /></td>
+						<td><input type="radio" name="balance" /></td></tr>
+					<tr><td>-3</td>	<td>-2</td>	<td>-1</td>	<td>0</td>	<td>+1</td>	<td>+2</td>	<td>+3</td></tr>
+				</table>
+				<span class="principle">Progress</span>
+			</dl>
+		</section>
+
+		<hr>
+		<section class="row">
+			<div>
+				<ul class="summations">
+					<li>
+						<strong title="1 Playbook, 1 Bonus, 1 Way of the Future">3</strong>
+						<b>Creativity</b>
+						<ul>
+							<li>Assess a situation</li>
+							<li>Trick</li>
+							<li class="combat">Evade &amp; observe</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>1</strong>
+						<b>Focus</b>
+						<ul>
+							<li>Rely on your skills or training</li>
+							<li class="combat">Defend &amp; maneuver</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>-1</strong>
+						<b>Harmony</b>
+						<ul>
+							<li>Guide and comfort</li>
+							<li>Plead</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>0</strong>
+						<b>Passion</b>
+						<ul>
+							<li>Push your luck</li>
+							<li>Intimidate</li>
+							<li class="combat">Advance &amp; attack</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>&ndash;</strong>
+						<b>Balance: Tradition / Progress</b>
+						<ul>
+							<li>Live up to your principle</li>
+							<li>Call someone out</li>
+							<li>Deny a callout</li>
+							<li>Resist shifting your balance</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="wide">
+				<img id="main-picture" src="https://i.pinimg.com/originals/47/66/08/4766086492c658305be9ff28f782340c.jpg" alt="Waterbender &copy;Lane Garrison" onclick="document.getElementById('large-picture').showModal()">
+				<h2>Techniques</h2>
+				<dl>
+					<dt>⚪ <b>Ready</b> <small>D&amp;M</small></dt>
+					<dd>Mark 1-fatigue to assign/clear a status from an ally.</dd>
+
+					<dt>⚪ <b>Retaliate</b> <small>D&amp;M</small></dt>
+					<dd>When foes inflict fatigue, a condition, or shift your balance, they mark 1-fatigue.</dd>
+
+					<dt>⚪ <b>Seize a Position</b> <small>D&amp;M</small></dt>
+					<dd>Engage/disengage a foe, get an advantageous position, or flee.<br>Foes can mark 1-fatigue to prevent this.</dd>
+				</dl>
+				<dl>
+					<dt>⚪ <b>Strike</b> <small>A&amp;A</small></dt>
+					<dd>A foe marks 2-fatigue, a condition, or shifts their balance <small>their choice</small>.<br>If you mark 1-fatigue, instead they mark 2-fatigue or a condition <small>your choice</small>.</dd>
+
+					<dt>⚪ <b>Pressure</b> <small>A&amp;A</small></dt>
+					<dd>A foe cannot choose an approach of your choice in the next round.</dd>
+
+					<dt>⚪ <b>Smash</b> <small>A&amp;A</small></dt>
+					<dd>Mark 1-fatigue and destroy something.</dd>
+				</dl>
+				<dl>
+					<dt>⚪ <b>Test Balance</b> <small>E&amp;O</small></dt>
+					<dd>Mark 1-fatigue and learn a foe's principle. If you knew, shift their balance.</dd>
+
+					<dt>⚪ <b>Bolster or Hinder</b> <small>E&amp;O</small></dt>
+					<dd>Assign a status to someone else.</dd>
+
+					<dt>⚪ <b>Commit</b> <small>E&amp;O</small></dt>
+					<dd>Shift your balance. Next time you <i>Live up to your principle</i>, don't mark fatigue.</dd>
+
+					<dt>🔵 <b>Break</b> <small>E&amp;O, <u title="Mastered">M</u></small></dt>
+					<dd>A foe’s vulnerable equipment becomes useless/broken <small>might assign/clear a status</small>.</dd>
+
+					<dt>🔵 <b>Creeping Ice</b> <small>E&amp;O, <u title="Mastered">M</u></small></dt>
+					<dd>Foes become Impaired, you become Prepared.</dd>
+				</dl>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="wide">
+				<h2>Humble Yourself</h2>
+				<p class="degrees-of-success">Roll with Tradition to ask someone in your lineage for help.<br>
+					<b>10+</b> Gain 3 resources with no drawbacks.<br>
+					<b>7-9</b> Gain 3 resources, but you are indebted to them, or they shift your balance.<br>
+					<b>6-</b> Gain nothing, and you can't retry until you fulfil an obligation for them.</p>
+
+				<h2>Raid your Lineage's Resources</h2>
+				<p class="degrees-of-success">Roll with Progress.<br>
+					<b>10+</b> Mark a condition, gain 1 resources, choose 2 below.<br>
+					<b>7-9</b> Mark a condition, gain 1 resources, choose 1 below.<br>
+					<b>6-</b> Mark a condition, gain nothing, you're caught red-handed.</p>
+				<ul class="list condensed">
+					<li>Gain an additional resource,</li>
+					<li>Nobody saw anything,</li>
+					<li>Don't mark a condition.</li>
+				</ul>
+
+				<h2>Walk This Way</h2>
+				<p class="degrees-of-success">Roll with Creativity to blend in <small>with your friends</small> in a Priviledged crowd.<br>
+					<b>10+</b> Gain access, attracting no suspiscion.<br>
+					<b>7-9</b> Gain access, attracting a single person's attention.<br>
+					<b>6-</b> Gain access only if one of your friends takes an uncomfortable, dangerous, or attention-grabbing role.</p>
+			</div>
+			<div>
+				<div class="apartee br">
+					<h2>Lineage</h2>
+					<p>Your lineage, the <b>Verruk Dye Company</b>, is very influencial in <b>elite academics</b>,
+						as it finances and contains a prominent research laboratory.</p>
+					<p>Resources available include <b>high technology</b> and <b>introductions and connections</b>.</p>
+				</div>
+
+				<div class="apartee br">
+					<h2>Connections</h2>
+					<p><b>Avatar Roku</b> has major concerns, fears, or grievances over my lineage—and with me, by proxy.</p>
+					<p><b>TBD</b> seems free of their past in a way I wish I could let go of mine; hearing them talk about the future feels amazing!</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="noprint">
+			<hr>
+			<p>Who is the current head of your lineage? How do you love and
+frustrate each other?
+• What close member of your lineage wants to revolutionize it?
+• What do you carry that reminds you of the place most associated
+with your lineage?
+• What part of your lineage’s identity is most important and
+valuable to you as a person?
+• Why are you committed to this group or purpose?</p>
+
+			<dl class="charInfo">
+				<dt>Qualities</dt>
+				<dd>Hardworking and polite</dd>
+
+				<dt>Drawback</dt>
+				<dd>Sheltered</dd>
+
+				<dt>Age</dt>
+				<dd>19</dd>
+
+				<dt>Weight</dt>
+				<dd>157 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 6''</dd>
+			</dl>
+		</section>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Zerak – Art by <a href="https://lane-garrison.tumblr.com/">Lane Garrison</a></h2>
+		<a href="https://lane-garrison.tumblr.com/post/68205985210/a-piece-to-commemorate-my-recent-move-to">
+		<img src="https://i.pinimg.com/originals/47/66/08/4766086492c658305be9ff28f782340c.jpg" alt="Waterbender &copy;Lane Garrison"></a>
+	</dialog>
+</body>
+</html>
