@@ -1,4 +1,4 @@
-/** Created by Rémi Doutre, 2015-2022. Public domain. **/
+/** Created by Rémi Doutre, 2015-2024. Public domain. **/
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap");
 /**
@@ -171,6 +171,7 @@ body > .container { padding: 10px 25px .5px 25px; }
 /********************
  * Grid
  */
+
 @media screen and (min-width: 768px), print{
 	section.row {
 		display: flex;
@@ -232,8 +233,66 @@ h2 + p,
 .br { margin-bottom: 0.75em; } /*for 'breathing room' after a paragraph. Does not simply replace random <br>s in my code, no sir. Obviously not. */
 
 /********************
+ * images (#main-picture, .gallery)
+ */
+
+#main-picture {
+	display: block;
+	margin: 0 auto;
+	text-align: center; }
+img#main-picture,
+#main-picture img {
+	cursor: pointer;
+	margin-bottom: .75em;
+	border: 2px solid var(--html-darkgrey);
+	border-radius: 1em;
+	background-color: var(--murder-black); /* same as the patch for Chrome in dialog.gallery below */
+	box-shadow: 2px 2px 2px var(--html-darkgrey); }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	img#main-picture, #main-picture img { max-height: 300px; }
+}
+@media print, screen and (min-width: 992px) {
+	#main-picture {
+		float: right;
+		max-width: 200px;
+		margin-left: .25em; }
+}
+@media screen and (min-width: 1200px) {
+	#main-picture { max-width: 285px; }
+}
+dialog.gallery[open] {
+	border: .15rem solid var(--murder-black);
+	padding: 0;
+	border-radius: .5rem;
+	background-color: var(--murder-black); /* patches a weird 1px gap left of the image in Chrome */
+	color: var(--html-white);
+	text-shadow: 0 0 2px var(--murder-black); }
+dialog.gallery::backdrop {
+	background-color: rgba(100,100,100,0.8);
+	cursor: pointer; }
+dialog.gallery > h2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	border: none;
+	padding: 1em;
+	background: linear-gradient(rgba(11,6,8,0), rgba(11,6,8,0.66)); } /* 11,6,8 is --murder-black */
+dialog.gallery a, dialog.gallery a:link, dialog.gallery a:visited, dialog.gallery a:active { color: var(--html-white); }
+dialog.gallery > b {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	cursor: pointer;
+	background: radial-gradient(circle, rgba(11,6,8,0.33), rgba(11,6,8,0) 50%); }
+dialog.gallery img { max-height: calc(100vh - 3em); }
+
+/********************
  * tables (table, .table-cornered, TableSort library)
  */
+
 table { width: 100%; border-collapse: collapse; }
 table > thead > tr > th { border-bottom: 1px solid var(--html-darkgrey); }
 table th, table td { padding: .15em; }

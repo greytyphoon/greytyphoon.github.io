@@ -2,10 +2,12 @@
 @import url("../basic.css");
 
 :root { --murder-red: var(--virtue-blue); }
+footer { text-align: center; }
 
 /********************
- * Custom Components   (#fixref, #header, .credit, .actionStep)
+ * Custom Viewer
  */
+
 #fixref {
 	bottom: -2px; /* In this page, fixref looks like a draggable tab from the bottom. Solves weird issues with iframes and bottom border. */ }
 #fixref > div {
@@ -21,17 +23,22 @@
 	#fixref iframe { width: 100%; margin-left: 0; }
 }
 
-/* I use this when I want to say who gave me this recipe. */
-span.credit { /* inspired from Pathfinder's .listBonuses */
-	display: inline-block;
-	color: var(--html-darkgrey);
-	font-size: .75rem;
-	font-weight: normal; }
-span.credit::before { content: "(\00e0  la "; }
-span.credit::after { content: ")"; }
+/********************
+ * Steps	(.steps, b, .action)
+ */
 
-/* I use this when I'm writing directions for a recipe */
-li.actionStep {
+ul.steps { padding-left: 20px; }
+
+ul.steps > li > b {
+	display: inline-block;
+	min-width: 4em;
+	text-align: right;
+}
+
+.actionStep, /* deprecated */
+ul.steps > li.action {
 	color: var(--html-darkgrey);
-	margin-left: 1rem;
-	list-style-type: circle; }
+	list-style-type: circle;
+}
+
+ul.steps > li.action + li:not(.action) { margin-top: .75em; }
