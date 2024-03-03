@@ -31,6 +31,11 @@ dt > small { font-weight: normal; }
 .summations ul { list-style: circle; padding-left: 1.5em; }
 .summations ul > li.combat { list-style: disc; }
 
+.sidenote {
+	float: right;
+	max-width: 33%;
+}
+
 .degrees-of-success > b {
 	display: inline-block;
 	width: 2.25em;
