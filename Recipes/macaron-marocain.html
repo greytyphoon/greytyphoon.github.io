@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Grey's Recipe</title>
+	<link rel="stylesheet" href="Recipes.css">
+</head>
+<body>
+	<div class="container">
+		<header id="header">
+			<h1>Macarons marocains</h1>
+		</header>
+		<main>
+			<img id="main-picture" src="https://i.pinimg.com/originals/45/f4/8e/45f48efe598652ec9741d489c44a3253.jpg" alt="Petits macarons marocains &copy;LeCoconutBlog" onclick="document.getElementById('large-picture').showModal()">
+
+			<ul class="steps">
+				<li><b>200&nbsp;g</b> de poudre d'amande</li>
+				<li><b>150&nbsp;g</b> de sucre en poudre</li>
+				<li><b>2</b> blancs d'oeufs</li>
+				<li><b>15&nbsp;ml</b> d'eau d'oranger ou de saveur artificielle d'orange</li>
+				<li class="action">Mélanger pour faire une pâte homogène.</li>
+				<li class="action">Faire de petites boules.</li>
+				<li class="action">Cuire 10 minutes à 350&deg;F, jusqu'à ce que ce soit à peine doré.</li>
+			</ul>
+		</main>
+		<footer>Source: <a target="_parent" href="https://www.lecoconutblog.com/2013/07/17/petits-macarons-marocains">LeCoconutBlog</a></footer>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Petits macarons marocains – Photo de <a href="https://www.lecoconutblog.com/2013/07/17/petits-macarons-marocains">LeCoconutBlog</a></h2>
+		<a href="https://www.lecoconutblog.com/2013/07/17/petits-macarons-marocains">
+		<img src="https://i.pinimg.com/originals/45/f4/8e/45f48efe598652ec9741d489c44a3253.jpg" alt="Petits macarons marocains &copy;LeCoconutBlog"></a>
+	</dialog>
+</body>
+</html>
+
