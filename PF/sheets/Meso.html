@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<meta property="og:title" content="Meso, nowhere to go" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://greytyphoon.space/PF/sheets/Meso.html" />
+	<meta property="og:image" content="https://i.pinimg.com/originals/7d/b3/b2/7db3b2622ad603c7b1a687d24a6e5e41.jpg" />
+	<meta property="og:description" content="The PF2 character sheet for Meso, a 1st-level fetchling thaumaturge." name="description">
+	<title>Grey's Thaumaturge</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		dl#exploit > dt {
+			float: left;
+			text-align: right;
+			min-width: 9.5em; }
+		dl#exploit > dd { margin-left: 10em }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Meso, nowhere to go</h1>
+			N Medium Humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>3 <small>A, B, L1</small></dd>
+
+				<dt>Dex</dt>
+				<dd>1 <small>L1</small></dd>
+
+				<dt>Con</dt>
+				<dd>2 <small>A, L1</small></dd>
+
+				<dt>Int</dt>
+				<dd>0</dd>
+
+				<dt>Wis</dt>
+				<dd>0</dd>
+
+				<dt>Cha</dt>
+				<dd>3 <small>B, C, L1</small></dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Ancestry</dt>
+				<dd><a href="https://2e.aonprd.com/Ancestries.aspx?ID=30">Fetchling</a> <small>Kayal</small></dd>
+				<dd class="archetype">Bright Heritage</dd>
+
+				<dt>Background</dt>
+				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=115">Winter's Child</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=22">Thaumaturge</a> 1</dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/Implements.aspx?ID=9">Weapon</a> Implement</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd>Pharasma</dd>
+
+				<dt>Senses</dt>
+				<dd title="Fetchling Ancestry"><a href="https://2e.aonprd.com/Rules.aspx?ID=415">Darkision</a></dd>
+
+				<dt>Speed</dt>
+				<dd>25 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Shadowtongue</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/7d/b3/b2/7db3b2622ad603c7b1a687d24a6e5e41.jpg" alt="Anna Pascal &copy;Square Enix" onclick="document.getElementById('large-picture').showModal()">
+		<button id="featsWrapper" class="br noprint" onclick="document.getElementById('build-info').showModal()">Open Feats</button>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>3</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=2">Arcana</a>
+				<small>0 int, 2 prf, 1 lvl</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=3">Athletics</a>
+				<small>3 str, 2 prf, 1 lvl</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=5">Deception</a>
+				<small>3 cha, 2 prf, 1 lvl</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=6">Diplomacy</a>
+				<small>3 cha, 2 prf, 1 lvl</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=7">Intimidation</a>
+				<small>3 cha, 2 prf, 1 lvl</small>
+			</li>
+			<li>
+				<strong>3</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=10">Nature</a>
+				<small>0 wis, 2 prf, 1 lvl</small>
+			</li>
+			<li>
+				<strong>3</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=11">Occultism</a>
+				<small>0 int, 2 prf, 1 lvl</small>
+			</li>
+			<li class="br">
+				<strong>3</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=13">Religion</a>
+				<small>0 wis, 2 prf, 1 lvl</small>
+			</li>
+			<li>
+				<strong>6</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">Esoteric Lore</a>
+				<small>3 cha, 2 prf, 1 lvl</small>
+				<div class="circumstancialBonus" title="Esoteric Lore">Can be used on haunts, curses, and any creatures.</div>
+				<div class="circumstancialBonus" title="Diverse Lore">Can be used on anything else with <u>-2 circ</u>.</div>
+				<div class="circumstancialBonus" title="Dubious Knowledge">When you <a href="https://2e.aonprd.com/Actions.aspx?ID=26">Recall Knowledge</a>,
+					on a Failure, gain one true and one false info.</div>
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<ul class="summations">
+				<li class="br">
+					<strong>5</strong>
+					<b>Perception</b>
+					<small>0 wis, 4 prf, 1 lvl</small>
+				</li>
+				<li>
+					<strong>18</strong>
+					<b>HP</b>
+					<small>8 fetchling, 1 lvl: 8 thaumaturge, 2 con</small>
+				</li>
+				<li class="br">
+					<strong>18</strong>
+					<b>AC</b>
+					<small>10, 1 dex, 2 prf, 1 lvl, 4 item</small>
+					<div class="circumstancialBonus"><u>+1 circ</u> when casting <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=280">shield</a> (↻ 5 Hardness)</div>
+				</li>
+				<li>
+					<strong>7</strong>
+					<b>Fort</b>
+					<small>2 con, 4 prf, 1 lvl</small>
+				</li>
+				<li>
+					<strong>4</strong>
+					<b>Ref</b>
+					<small>1 dex, 2 prf, 1 lvl</small>
+				</li>
+				<li>
+					<strong>5</strong>
+					<b>Will</b>
+					<small>0 wis, 4 prf, 1 lvl</small>
+				</li>
+			</ul>
+
+			<div class="ample">
+				<!--Longsword-->
+				<div class="weapon">
+					<h2>Longsword <b>PS</b></h2>
+					<div class="summation"><strong>+6</strong>/<strong>1</strong>/<strong>-4</strong> vs AC <small>3 str, 2 prf, 1 lvl</small></div>
+					<div class="summation"><strong>1d8+5</strong> <small>3 str, <u title="Implement's Empowerment: 2× number of dice.">2</u></small></div>
+				</div>
+
+				<h2 class="reaction"><a href="https://2e.aonprd.com/Actions.aspx?ID=1234">Implement's Interruption</a></h2>
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Skills.aspx?ID=7">Demoralize</a></h2>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+		</section>
+
+		<section class="row">
+			<div>
+				<h2>Innate Spells</h2>
+				<ul>
+					<li><a class="spell two-actions" title="Arcane Sense" href="https://2e.aonprd.com/Spells.aspx?ID=1485">detect magic</a>,</li>
+					<li><a class="spell two-actions" title="Bright Heritage" href="https://2e.aonprd.com/Spells.aspx?ID=1585">light</a>,</li>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1671">shield</a>.</li>
+				</ul>
+			</div>
+
+			<div class="ample">
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Actions.aspx?ID=1227">Exploit Vulnerability</a> <b>1/round</b></h2>
+				<p>Make an Esoteric Lore check vs a foe's <a href="https://2e.aonprd.com/Rules.aspx?ID=554">level's DC</a>.</p>
+				<dl id="exploit" class="condensed">
+					<dt>Crit</dt>
+					<dd>As success, but you learn <em>all</em> of the foe's resistances, weaknesses, and immunities.</dd>
+
+					<dt>Success</dt>
+					<dd>Learn the foe's highest weakness. Gain <b>Mortal Weakness</b> or <b>Personal Antithesis</b>.
+						Also, if your result would succeed on <a  title="Diverse Lore" href="https://2e.aonprd.com/Actions.aspx?ID=26">Recall Knowledge</a>, gain info.</dd>
+
+					<dt>Failure</dt>
+					<dd>Gain <b>Personal Antithesis</b>.</dd>
+
+					<dt>Fumble</dt>
+					<dd class="br">You're <a href="https://2e.aonprd.com/Conditions.aspx?ID=16">flat-footed</a> until your next turn.</dd>
+
+					<dt>Mortal Weakness</dt>
+					<dd>Against foes of that species, your strikes trigger the highest weakness.</dt>
+
+					<dt>Personal Antithesis<dt>
+					<dd>The foe gains <u title="2 base, 0 thaumaturge&frac12;">Weakness 2</u> to your strikes.</dd>
+				</dl>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="mundaneItemsWrapper">
+			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=1">Adventurer's Pack</a></li>
+		</ul>
+
+		<ul id="inventory">
+			<!--Weapons-->
+			<li title="1 Bulk" class="br">
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=31">Longsword</a>
+				<small>martial one-handed, 1d8PS.</small>
+				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=230">Owlbear's Claw</a></div>
+			</li>
+
+			<!--Armors-->
+			<li title="2 Bulk" class="br">
+				<a href="https://2e.aonprd.com/Armor.aspx?ID=10">Breastplate</a>
+				<small>medium, 4 armor, 3 str, 1 dex.</small>
+			</li>
+
+			<!--Consumables-->
+			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=186">Healing Potion</a>, minor
+				<small>heals 1d8</small></li>
+			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a>, lesser
+				<small><u title="Lesser">+2 item</u> vs poison, lasts 6h</small></li>
+			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a>, lesser
+				<small><u title="Lesser">+2 item</u> vs disease, lasts 24h</small></li>
+		</ul
+	</div>
+
+	<dialog id="build-info" class="info" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<section class="row">
+			<dl class="charInfo">
+				<dt>fetchling 1</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2503">Shrouded Magic</a></dd>
+				<dt>thaumaturge 1</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=3699">Diverse Lore</a></dd>
+				<dt>thaumaturge 2</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=3703">Scroll Thaumaturgy</a></dd>
+				<dt>general 3</dt>
+				<dd class="br"><a href="https://2e.aonprd.com/Feats.aspx?ID=855">Toughness</a></dd>
+			</dl>
+
+			<dl class="charInfo">
+				<dt>background</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=754">Arcane Sense</a></dd>
+				<dt>thaumaturge 1</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=776">Dubious Knowledge</a></dd>
+				<dt>skill 2</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=796">Intimidating Glare</a></dd>
+			</dl>
+
+			<dl class="charInfo">
+				<dt>background</dt>
+				<dd>Trained, Arcana*</dd>
+				<dt>thaumaturge 1</dt>
+				<dd>Trained, Nature*</dd>
+				<dd>Trained, Occultism*</dd>
+				<dd>Trained, Religion*</dd>
+				<dd>Trained, Athletics <small>Arcana*</small></dd>
+				<dd>Trained, Deception</dd>
+				<dd>Trained, Diplomacy</dd>
+				<dd>Trained, Intimidation</dd>
+				<dt>skill 3</dt>
+				<dd>Expert, Intimidation</dd>
+			</dl>
+		</section>
+	</dialog>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Meso – Art from Triangle Strategy</h2>
+		<img src="https://i.pinimg.com/originals/7d/b3/b2/7db3b2622ad603c7b1a687d24a6e5e41.jpg" alt="Anna Pascal &copy;Square Enix">
+	</dialog>
+</body>
+</html>
