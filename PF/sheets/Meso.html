@@ -67,7 +67,7 @@
 				<dd>Pharasma</dd>
 
 				<dt>Senses</dt>
-				<dd title="Fetchling Ancestry"><a href="https://2e.aonprd.com/Rules.aspx?ID=415">Darkision</a></dd>
+				<dd title="Fetchling Ancestry"><a href="https://2e.aonprd.com/Rules.aspx?ID=415">Darkvision</a></dd>
 
 				<dt>Speed</dt>
 				<dd>25 ft.</dd>
@@ -192,7 +192,7 @@
 				<ul>
 					<li><a class="spell two-actions" title="Arcane Sense" href="https://2e.aonprd.com/Spells.aspx?ID=1485">detect magic</a>,</li>
 					<li><a class="spell two-actions" title="Bright Heritage" href="https://2e.aonprd.com/Spells.aspx?ID=1585">light</a>,</li>
-					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1671">shield</a>.</li>
+					<li><a class="spell one-action" title="Shrouded Magic" href="https://2e.aonprd.com/Spells.aspx?ID=1671">shield</a>.</li>
 				</ul>
 			</div>
 
@@ -205,7 +205,7 @@
 
 					<dt>Success</dt>
 					<dd>Learn the foe's highest weakness. Gain <b>Mortal Weakness</b> or <b>Personal Antithesis</b>.
-						Also, if your result would succeed on <a  title="Diverse Lore" href="https://2e.aonprd.com/Actions.aspx?ID=26">Recall Knowledge</a>, gain info.</dd>
+						<span title="Diverse Lore">Also, if your result would succeed on <a href="https://2e.aonprd.com/Actions.aspx?ID=26">Recall Knowledge</a>, gain info.</span></dd>
 
 					<dt>Failure</dt>
 					<dd>Gain <b>Personal Antithesis</b>.</dd>
@@ -225,31 +225,62 @@
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="mundaneItemsWrapper">
-			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=1">Adventurer's Pack</a></li>
+			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=2700">Adventurer's Pack</a></li>
+		</ul>
+		<ul id="magicItemsWrapper">
+			<li>.5 <b>GP</b></li>
 		</ul>
 
 		<ul id="inventory">
 			<!--Weapons-->
 			<li title="1 Bulk" class="br">
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=31">Longsword</a>
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=386">Longsword</a>
 				<small>martial one-handed, 1d8PS.</small>
-				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=230">Owlbear's Claw</a></div>
 			</li>
 
 			<!--Armors-->
 			<li title="2 Bulk" class="br">
-				<a href="https://2e.aonprd.com/Armor.aspx?ID=10">Breastplate</a>
+				<a href="https://2e.aonprd.com/Armor.aspx?ID=47">Breastplate</a>
 				<small>medium, 4 armor, 3 str, 1 dex.</small>
 			</li>
 
 			<!--Consumables-->
-			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=186">Healing Potion</a>, minor
+			<li title="L Bulk">1× <a href="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing Potion</a>, minor
 				<small>heals 1d8</small></li>
-			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a>, lesser
-				<small><u title="Lesser">+2 item</u> vs poison, lasts 6h</small></li>
-			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a>, lesser
-				<small><u title="Lesser">+2 item</u> vs disease, lasts 24h</small></li>
-		</ul
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p lang="fr">Fils de marchands établis au <i lang="en">Beacon</i> <small><i lang="en">Shadow Absalom</i></small>.
+				Une partie de leur commerce consiste à importer des biens du plan matériel,
+				alors Meso connait quelques bons coins pour passer d'un plan à l'autre,
+				et une autre partie est de défendre leurs biens contre les menaces de l'ombre,
+				alors Meso sait se défendre.
+				Il a une technique de combat un peu particulière, utilisant les différents réagents magiques qu'il transporte constamment pour la boutique.
+				À force d'étudier l'effet de ces réagents et de discuter avec des clients, Meso a aussi beaucoup appris sur divers sujets,
+				portant une attention particulière aux applications de défense mais absorbant toute information, au cas où.
+				Bien qu'il ne soit plus si jeune, Meso n'a toujours pas de tracé clair pour sa vie, et continue de supporter l'entreprise familiale pour l'instant.
+				Il profite souvent des temps morts pour se rendre dans le plan matériel, où l'agitation est souvent moins lourde de conséquences.
+				Cherchant à élargir ses perspectives, il entend parler d'un boulot mélangeant exploration et risque, et ça lui semble un bon endroit où commencer.</p>
+
+			<dl class="charInfo">
+				<dt>Quality</dt>
+				<dd>Pragmatic and honorable</dd>
+
+				<dt>Drawback</dt>
+				<dd>Emotionless</dd>
+
+				<dt>Age</dt>
+				<dd>24</dd>
+
+				<dt>Weight</dt>
+				<dd>109 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 10''</dd>
+			</dl>
+		</section>
 	</div>
 
 	<dialog id="build-info" class="info" onclick="if (event.target.nodeName === 'DIALOG') close();">
@@ -263,16 +294,16 @@
 				<dt>thaumaturge 2</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=3703">Scroll Thaumaturgy</a></dd>
 				<dt>general 3</dt>
-				<dd class="br"><a href="https://2e.aonprd.com/Feats.aspx?ID=855">Toughness</a></dd>
+				<dd class="br"><a href="https://2e.aonprd.com/Feats.aspx?ID=5227">Toughness</a></dd>
 			</dl>
 
 			<dl class="charInfo">
 				<dt>background</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=754">Arcane Sense</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5119">Arcane Sense</a></dd>
 				<dt>thaumaturge 1</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=776">Dubious Knowledge</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5142">Dubious Knowledge</a></dd>
 				<dt>skill 2</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=796">Intimidating Glare</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5162">Intimidating Glare</a></dd>
 			</dl>
 
 			<dl class="charInfo">
