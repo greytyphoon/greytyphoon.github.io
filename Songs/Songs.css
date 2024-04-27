@@ -10,16 +10,16 @@
 /* I use this when I want to say who taught me this song. */
 .credit { /* inspired from Pathfinder's .listBonuses */
 	display: inline-block;
-	color: var(--html-darkgrey);
+	color: var(--tint-dark);
 	font-size: .75rem; }
 .credit::before { content: "("; }
 .credit::after { content: ")"; }
 
 .lyrics { margin-left: 2em; }
 
-.refrain { font-style: italic; color: var(--html-darkgrey); }
+.refrain { font-style: italic; color: var(--tint-dark); }
 
-.reprise::before { content: "\21bb "; content: "↻ "; color: var(--html-darkgrey); }
+.reprise::before { content: "\21bb "; content: "↻ "; color: var(--tint-dark); }
 
 @media print {
 	details { page-break-inside: avoid; }

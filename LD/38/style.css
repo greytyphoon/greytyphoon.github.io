@@ -44,8 +44,8 @@
 	margin: .5em 0 0 .5em;
 	border-radius: 0.15em;
 	text-align: center;
-	color: var(--murder-black); }
-.tile:hover::before, .tile:hover::after { background-color: var(--html-white); }
+	color: var(--tint-black); }
+.tile:hover::before, .tile:hover::after { background-color: var(--tint-white); }
 
 .tile.seen::before { content: "S";}
 

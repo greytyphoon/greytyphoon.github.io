@@ -7,10 +7,10 @@ dialog[open] {
 	right: 0px;
 	width: fit-content;
 	margin: auto;
-	border: .15rem solid var(--murder-black);
+	border: .15rem solid var(--tint-black);
 	border-radius: .5rem;
 	padding: 1em;
-	background: var(--html-white);
+	background: var(--tint-white);
 	z-index: 100;
 }
 #backdrop {
@@ -25,7 +25,7 @@ dialog[open] {
 
 /* NAV */
 #confirm-restart:not([visible]) { display: none !important; }
-#confirm-restart { color: var(--murder-black); }
+#confirm-restart { color: var(--tint-black); }
 #fixref > ul > li > a.how-to-play::before { content: "?"; }
 #fixref > ul > li > a.options::before { content: "\2699"; content: "⚙"; }
 #fixref > ul > li > a.restart::before { content: "\21ba"; content: "↺"; }

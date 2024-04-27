@@ -73,7 +73,7 @@ const colorHelper = {
 			case 4: return "var(--abjuration-gold)";
 			case 5: return "var(--transmutation-teal)";
 			case 6: return "var(--enchantment-lilac)";
-			default: return "var(--murder-black)";
+			default: return "var(--tint-black)";
 		}
 	},
 };

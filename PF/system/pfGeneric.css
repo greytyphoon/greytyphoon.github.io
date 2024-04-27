@@ -23,7 +23,7 @@ ul.summations > li > strong:first-child {
 /* Uniform style and auto-parenthesis for anywhere I list bonus types */
 small {
 	display: inline-block;
-	color: var(--html-darkgrey);
+	color: var(--tint-dark);
 	font-size: .75rem; }
 small::before { content: "("; }
 small::after { content: ")"; }
@@ -40,8 +40,8 @@ ul.summations > li > .circumstancialBonus { padding-left: 0; }
  */
 
 .apartee {
-	background-color: var(--murder-grey);
-	border: 1px dashed var(--html-darkgrey);
+	background-color: var(--tint-light);
+	border: 1px dashed var(--tint-grey);
 	border-radius: 6px;
 	padding: .25em .5em;
 	font-size: .75rem; }
@@ -63,15 +63,15 @@ ul.summations > li > .circumstancialBonus { padding-left: 0; }
 .bad { background-color:#ff4444; }
 
 table.playerInfo  {
-	border: 1px solid var(--murder-grey);
+	border: 1px solid var(--tint-light);
 	border-collapse: collapse;
 	margin-bottom: .5rem;
 	width: 100%; }
 table.playerInfo th {
-	background-color: var(--murder-grey);
+	background-color: var(--tint-light);
 	text-align: center; }
 table.playerInfo td {
-	border: 1px solid var(--murder-grey);
+	border: 1px solid var(--tint-light);
 	text-align: center; }
 
 /* icons for campaigns */

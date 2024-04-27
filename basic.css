@@ -14,11 +14,12 @@
  * #5a9b1d serene-green (derived of murder-red)
  **/
 :root {
-	--murder-black: #0b0608;
-	--murder-grey: #eaebef;
+	--tint-white: #ffffff;
+	--tint-light: #eaebef;
+	--tint-grey: #a9a9a9;
+	--tint-dark: #595959;
+	--tint-black: #0b0608;
 	--murder-red: #c62825;
-	--html-white: #ffffff;
-	--html-darkgrey: #a9a9a9;
 	--virtue-blue: #2573c6;
 	--serene-green: #5a9b1d;
 
@@ -33,7 +34,7 @@
 
 	font-size: 16px;
 	font-family: 'Roboto', 'Segoe UI', sans-serif;
-	color: var(--murder-black);
+	color: var(--tint-black);
 }
 * {
 	box-sizing: border-box;
@@ -51,12 +52,12 @@ a:hover {
 }
 hr {
 	border: none;
-	border-bottom: 1px solid var(--html-darkgrey);
+	border-bottom: 1px solid var(--tint-dark);
 	clear: both;
 }
 code {
 	display: inline-block;
-	background-color: var(--murder-grey);
+	background-color: var(--tint-light);
 	border-radius: .25em;
 	padding: 0 .15em;
 }
@@ -78,12 +79,12 @@ body > .container { padding: 10px 25px .5px 25px; }
 @media screen and (min-width: 576px) {
 	body {
 		overflow-y: scroll;
-		background-color: var(--murder-grey);
+		background-color: var(--tint-light);
 	}
 	body > .container {
-		background-color: var(--html-white);
-		border-left: 1px solid var(--html-darkgrey);
-		border-right: 1px solid var(--html-darkgrey);
+		background-color: var(--tint-white);
+		border-left: 1px solid var(--tint-grey);
+		border-right: 1px solid var(--tint-grey);
 		margin: 0 auto;
 		max-width: 540px;
 		min-height: 100vh;
@@ -107,9 +108,9 @@ body > .container { padding: 10px 25px .5px 25px; }
 #fixref {
 	border-width: 0;
 	border-style: solid;
-	border-color: var(--html-darkgrey);
+	border-color: var(--tint-grey);
 	border-bottom-width: 1px;
-	background-color: var(--html-white);
+	background-color: var(--tint-white);
 	text-align: center;
 }
 .container ~ #fixref {
@@ -204,11 +205,11 @@ header {
 	text-align: center;
 	background-color: var(--murder-red);
 	border: 1px solid var(--murder-red);
-	box-shadow: 2px 2px 2px var(--html-darkgrey);
-	color: var(--html-white);
-	text-shadow: 1px 1px 2px var(--murder-black);
+	box-shadow: 2px 2px 2px var(--tint-grey);
+	color: var(--tint-white);
+	text-shadow: 1px 1px 2px var(--tint-black);
 }
-header a { color: var(--html-white); }
+header a { color: var(--tint-white); }
 header h1 {
 	font-size: inherit;
 	font-weight: bold;
@@ -216,7 +217,7 @@ header h1 {
 }
 
 h2, .subtitle {
-	border-bottom: 1px solid var(--murder-grey);
+	border-bottom: 1px solid var(--tint-light);
 	display: block;
 	font-size: inherit;
 	font-weight: bold;
@@ -244,10 +245,10 @@ img#main-picture,
 #main-picture img {
 	cursor: pointer;
 	margin-bottom: .75em;
-	border: 2px solid var(--html-darkgrey);
+	border: 2px solid var(--tint-grey);
 	border-radius: 1em;
-	background-color: var(--murder-black); /* same as the patch for Chrome in dialog.gallery below */
-	box-shadow: 2px 2px 2px var(--html-darkgrey); }
+	background-color: var(--tint-black); /* same as the patch for Chrome in dialog.gallery below */
+	box-shadow: 2px 2px 2px var(--tint-grey); }
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	img#main-picture, #main-picture img { max-height: 300px; }
 }
@@ -262,13 +263,13 @@ img#main-picture,
 }
 dialog.info,
 dialog.gallery {
-	border: .15rem solid var(--murder-black);
+	border: .15rem solid var(--tint-black);
 	border-radius: .5rem;
 	@media print { display: none; }
 	animation: animateDown 0.2s linear forwards;
 }
 dialog.info {
-	background-color: var(--html-white);
+	background-color: var(--tint-white);
 	width: calc(100vw - 1rem);
 	@media screen and (min-width: 576px) { width: 540px; }
 	@media screen and (min-width: 768px) { width: 720px; }
@@ -277,9 +278,9 @@ dialog.info {
 }
 dialog.gallery {
 	padding: 0;
-	background-color: var(--murder-black); /* patches a weird 1px gap left of the image in Chrome */
-	color: var(--html-white);
-	text-shadow: 0 0 2px var(--murder-black);
+	background-color: var(--tint-black); /* patches a weird 1px gap left of the image in Chrome */
+	color: var(--tint-white);
+	text-shadow: 0 0 2px var(--tint-black);
 }
 dialog.info::backdrop,
 dialog.gallery::backdrop {
@@ -294,9 +295,9 @@ dialog.gallery > h2 {
 	margin: 0;
 	border: none;
 	padding: 1em;
-	background: linear-gradient(rgba(11,6,8,0), rgba(11,6,8,0.66)); /* 11,6,8 is --murder-black */
+	background: linear-gradient(rgba(11,6,8,0), rgba(11,6,8,0.66)); /* 11,6,8 is --tint-black */
 }
-dialog.gallery a, dialog.gallery a:link, dialog.gallery a:visited, dialog.gallery a:active { color: var(--html-white); }
+dialog.gallery a, dialog.gallery a:link, dialog.gallery a:visited, dialog.gallery a:active { color: var(--tint-white); }
 dialog.info > b,
 dialog.gallery > b {
 	position: absolute;
@@ -319,15 +320,15 @@ dialog.info dl > dt { font-variant: small-caps; }
  */
 
 table { width: 100%; border-collapse: collapse; }
-table > thead > tr > th { border-bottom: 1px solid var(--html-darkgrey); }
+table > thead > tr > th { border-bottom: 1px solid var(--tint-grey); }
 table th, table td { padding: .15em; }
-table > tbody > tr:hover { background-color: var(--murder-grey); }
+table > tbody > tr:hover { background-color: var(--tint-light); }
 
 table.table-cornered th,
 table.table-cornered td {
-	border-left: 1px solid var(--html-darkgrey);
-	border-bottom: 1px solid var(--html-darkgrey);
-	color: var(--murder-black);
+	border-left: 1px solid var(--tint-grey);
+	border-bottom: 1px solid var(--tint-grey);
+	color: var(--tint-black);
 	text-align:center;
 	width:25%;
 }
@@ -342,7 +343,7 @@ th[role=columnheader]:not(.no-sort):after {
 	margin-top: .5em;
 	border-width: 0 .25em .25em;
 	border-style: solid;
-	border-color: var(--murder-black) transparent;
+	border-color: var(--tint-black) transparent;
 	visibility: hidden;
 	opacity: 0;
 	-ms-user-select: none;

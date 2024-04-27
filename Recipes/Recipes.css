@@ -12,7 +12,7 @@ footer { text-align: center; }
 	bottom: -2px; /* In this page, fixref looks like a draggable tab from the bottom. Solves weird issues with iframes and bottom border. */ }
 #fixref > div {
 	padding: .35em;
-	border-bottom: 1px solid var(--html-darkgrey); }
+	border-bottom: 1px solid var(--tint-grey); }
 #fixref #minimize { float: right; }
 #fixref iframe {
 	transition: height .8s ease;
@@ -37,7 +37,7 @@ ul.steps > li > b {
 
 .actionStep, /* deprecated */
 ul.steps > li.action {
-	color: var(--html-darkgrey);
+	color: var(--tint-dark);
 	list-style-type: circle;
 }
 

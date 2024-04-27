@@ -21,7 +21,7 @@ dl.charInfo > dt {
 dl.charInfo > dd {
 	margin-left: 40%; } /* the floating <dt> will go above this margin */
 #subheader {
-	border: 1px dotted var(--html-darkgrey);
+	border: 1px dotted var(--tint-grey);
 	border-radius: .5em;
 	padding: .1em;
 	font-size: 1rem; }
@@ -67,8 +67,8 @@ dl#featsWrapper > dd{
 	box-shadow: 1px 1px var(--weapon-color); }
 .weapon > h2 {
 	background-color: var(--weapon-color);
-	color: var(--html-white);
-	text-shadow: 1px 1px 1px var(--murder-black);
+	color: var(--tint-white);
+	text-shadow: 1px 1px 1px var(--tint-black);
 	border-bottom: 1px solid var(--weapon-color);
 	margin: -4px -10px 4px -10px;
 	padding: .15em .5em; }
@@ -88,7 +88,7 @@ dl#featsWrapper > dd{
 		float: right;
 		text-align: right; }
 }
-.emptyitemslot { color: var(--html-darkgrey); }
+.emptyitemslot { color: var(--tint-dark); }
 @media screen and (max-width: 767px) {
 	.emptyitemslot { display: none; }
 }
@@ -101,7 +101,7 @@ dl#featsWrapper > dd{
 	display: inline-block;
 	width: unset;
 	margin-bottom: .75em;
-	border: 1px dashed var(--html-darkgrey);
+	border: 1px dashed var(--tint-grey);
 	border-radius: 6px;
 	padding: .25em .5em;
 	font-size: .75rem;
