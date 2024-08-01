@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<meta property="og:title" content="Roch Bruneau, journaliste d'investigation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://greytyphoon.space/PF/sheets/Roch.html" />
+	<meta property="og:image" content="https://i.pinimg.com/originals/69/16/d4/6916d4d0ae80150c325d55fad3d475a0.png" />
+	<meta property="og:description" content="The D&D character sheet for Roch Bruneau, a 5th-level human* rogue/artificer." name="description">
+	<title>Grey's Artificer</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.guardian { color: var(--virtue-blue); }
+		.guardian.weapon { color: var(--tint-black); --weapon-color: var(--virtue-blue); }
+		.infiltrator { color: var(--abjuration-gold); }
+		.infiltrator.weapon { color: var(--tint-black); --weapon-color: var(--abjuration-gold); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1 lang="fr">Roch Bruneau, journaliste d'investigation</h1>
+			LG Medium humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>11</dd>
+
+				<dt>Dex</dt>
+				<dd>16 <small>15, <u>1 racial</u></small></dd>
+
+				<dt>Con</dt>
+				<dd>14</dd>
+
+				<dt>Int</dt>
+				<dd>20 <small>16, <u>2 racial</u>, <u>2 increase</u></small></dd>
+
+				<dt>Wis</dt>
+				<dd>14</dd>
+
+				<dt>Cha</dt>
+				<dd>10</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><s title="Reflavoring"><a href="http://dnd5e.wikidot.com/owlin">Owlin</a></s> Human</dd>
+
+				<dt>Background</dt>
+				<dd><a href="http://dnd5e.wikidot.com/background:city-watch#toc1">Investigator</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="http://dnd5e.wikidot.com/rogue">Rogue</a> 1</dd>
+				<dd><a href="http://dnd5e.wikidot.com/artificer">Artificer</a> 4</dd>
+				<dd class="archetype">Specialist: <a href="http://dnd5e.wikidot.com/artificer:armorer">Armorer</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Senses</dt>
+				<dd title="Owlin">Darkvision 120ft</dd>
+
+				<dt>Speed</dt>
+				<dd class="guardian">30 ft.</dd>
+				<dd class="infiltrator">35 ft.</dd>
+				<dd class="infiltrator">Fly 35 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Elven, Fey, Gnomish</dd>
+				<dd><a href="http://dnd5e.wikidot.com/rogue">Thieves' Cant</a></dd>
+				
+				<dt>Tools</dt>
+				<dd><u title="Rogue">Thieve's</u>, <u title="Artificer Multiclass">Tinker's</u>, <u title="Armorer Specialist">Smith's</u>.</dd>
+			</dl>
+		</section>
+
+		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/69/16/d4/6916d4d0ae80150c325d55fad3d475a0.png" alt="Ettore &copy;Loles Romero"  onclick="document.getElementById('large-picture').showModal()">
+		<section class="row">
+			<ul class="summations">
+				<li>
+					<strong>0</strong>
+					<b>STR saving throw</b>
+					<small>0 str</small>
+				</li>
+				<li class="br">
+					<strong>0</strong>
+					Athletics
+					<small>0 str</small>
+				</li>
+				<li>
+					<strong>6</strong>
+					<b>DEX saving throw</b>
+					<small>3 dex, <u title="Class (Fixed)">3 prf</u></small>
+				</li>
+				<li>
+					<strong>3</strong>
+					Acrobatics
+					<small>3 dex</small>
+				</li>
+				<li>
+					<strong>3</strong>
+					Sleight of Hand
+					<small>3 dex</small>
+				</li>
+				<li class="br">
+					<strong>6</strong>
+					Stealth
+					<small>3 dex, <u title="Race (Fixed)">3 prf</u></small>
+					<div title="Heavy Armor" class="circumstancialBonus guardian"><u>Disadvantage</u></div>
+					<div title="Dampening Field" class="circumstancialBonus infiltrator"><u>Advantage</u></div>
+				</li>
+				<li class="br">
+					<strong>2</strong>
+					<b>CON saving throw</b>
+					<small>2 con</small>
+				</li>
+				<li>
+					<strong>8</strong>
+					<b>INT saving throw</b>
+					<small>5 int, <u title="Class (Fixed)">3 prf</u></small>
+				</li>
+				<li>
+					<strong>11</strong>
+					Arcana
+					<small>5 int, <u title="Class (Flexible), Rogue Expertise">6 expertise</u></small>
+				</li>
+				<li>
+					<strong>8</strong>
+					History
+					<small>5 int, <u title="Class (Flexible)">3 prf</u></small>
+				</li>
+				<li>
+					<strong>11</strong>
+					Investigation
+					<small>5 int, <u title="Background (Fixed), Rogue Expertise">6 expertise</u></small>
+				</li>
+				<li>
+					<strong>5</strong>
+					Nature
+					<small>5 int</small>
+				</li>
+				<li class="br">
+					<strong>5</strong>
+					Religion
+					<small>5 int</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					<b>WIS saving throw</b>
+					<small>2 wis</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					Animal Handling
+					<small>2 wis</small>
+				</li>
+				<li>
+					<strong>5</strong>
+					Insight
+					<small>2 wis, <u title="Background (Fixed)">3 prf</u></small>
+				</li>
+				<li>
+					<strong>2</strong>
+					Medicine
+					<small>2 wis</small>
+				</li>
+				<li>
+					<strong>5</strong>
+					Perception
+					<small>2 wis, <u title="Rogue Multiclass (Flexible)">3 prf</u></small>
+				</li>
+				<li class="br">
+					<strong>2</strong>
+					Survival
+					<small>2 wis</small>
+				</li>
+				<li>
+					<strong>0</strong>
+					<b>CHA saving throw</b>
+					<small>0 cha</small>
+				</li>
+				<li>
+					<strong>0</strong>
+					Deception
+					<small>0 cha</small>
+				</li>
+				<li>
+					<strong>0</strong>
+					Intimidate
+					<small>0 cha</small>
+				</li>
+				<li>
+					<strong>0</strong>
+					Performance
+					<small>0 cha</small>
+				</li>
+				<li>
+					<strong>0</strong>
+					Persuasion
+					<small>0 cha</small>
+				</li>
+			</ul>
+			<div class="ample">
+				<ul class="summations">
+					<li class="br">
+						<strong>2</strong>
+						<b>Init</b>
+						<small>2 dex</small>
+					</li>
+					<li>
+						<strong>38</strong>
+						<b>HP</b>
+						<small>5 artificer/rogue: 5 class, 2 con; 3 first-level bonus</small>
+					</li>
+					<li class="guardian">
+						<strong>21</strong>
+						<b>AC</b>
+						<small>18 armor, &ndash; dex, <u title="Enhanced Defense Infusion">3 shield</u></small>
+					</li>
+					<li class="infiltrator">
+						<strong>18</strong>
+						<b>AC</b>
+						<small>12 armor, 3 dex, <u title="Enhanced Defense Infusion">3 shield</u></small>
+					</li>
+				</ul>
+
+				<!--Thunder Gaunlets-->
+				<div class="weapon guardian">
+					<h2>Thunder Gauntlets <b>📣</b></h2>
+					<div class="summation"><strong>+9</strong> vs AC <small>5 int, 3 prf, <u title="Enhanced Weapon Infusion">1</u></small></div>
+					<div class="summation"><strong>1d8+6</strong> <small>5 int, <u title="Enhanced Weapon Infusion">1</u></small></div>
+					<div class="circumstancialBonus">A foe you hit has disadvantage on attacks on everyone but you for 1 round.</div>
+					<div class="circumstancialBonus"><a class="spell" href="http://dnd5e.wikidot.com/spell:booming-blade">booming blade</a>:
+						add <u title="Increases at 5th, 11th, 17th.">1d8 dmg 📣</u>.
+						If the foe moves this turn, add <u title="Increases at 1st, 5th, 11th, 17th.">2d8 dmg 📣</u>.</div>
+				</div>
+
+				<h2 class="guardian bonus-action">Defensive Field <u title="3 prf">3/day</u></h2>
+				<p class="guardian">As a bonus action, gain <u title="4 artificer">4</u> temp HP.</p>
+
+				<!--Lightning Launcher-->
+				<div class="weapon infiltrator">
+					<h2>Lightning Launcher <b class="electricity">⚡</b> <b>90/300ft</b></h2>
+					<div class="summation"><strong>+9</strong> vs AC <small>5 int, 3 prf, <u title="Enhanced Weapon Infusion">1</u></small></div>
+					<div class="summation"><strong>1d6+6</strong> <small>5 int, <u title="Enhanced Weapon Infusion">1</u></small></div>
+					<div class="circumstancialBonus">1/round, when you hit, add an extra 1d6 dmg.</div>
+				</div>
+
+				<h2>Sneak Attack <b title="Increases at every odd level.">1d6</b></h2>
+				<h2>The Right Tool for the Job</h2>
+
+				<h2>Magical Tinkering</h2>
+				<p class="condensed">As an action, tinker with an object. Affect <u title="5 int">5</u> at a time.
+					These objects can: shed bright light, record a message, emit an odor or nonverbal sound, have a static visual effect.</p>
+
+				<h2>Arcane Armor</h2>
+				<p>As an action, designate an armor as your arcane armor.<br>
+					It has no STR requirement, counts as spell focus, cannot be removed by foes.
+					Put it on/off as an action.
+					Change from <span class="infiltrator">infiltrator</span> to <span class="guardian">guardian</span> every rest.</p>
+			</div>
+		</section>
+&nbsp;
+		<section class="row">
+			<div class="wide">
+				<h2><a href="http://dnd5e.wikidot.com/spells:artificer">Artificer</a> Spells</h2>
+				<ul class="summations">
+					<li><strong>8</strong> <b>Attack</b>; 16 <b>DC</b> <small>8, 5 int, 3 prf</small></li>
+					<li><strong>7</strong> Spells prepared <small>2 artificer&frac12;, 5 int, plus cantrips/bonus</small></li>
+					<li><em>Ritual casting</em></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 0</h2>
+				<ul>
+					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:booming-blade">booming blade</a></li>
+					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:mending">mending</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 1 <b>3/day</b></h2>
+				<ul>
+					<li><a class="spell bonus off-class" href="http://dnd5e.wikidot.com/spell:magic-missile">magic missile</a></li>
+					<li><a class="spell bonus off-class" href="http://dnd5e.wikidot.com/spell:thunderwave">thunderwave</a></li>
+					<li><a class="spell reaction" href="http://dnd5e.wikidot.com/spell:arcane-weapon">absorb elements</a></li>
+					<li><a class="spell concentration bonus-action" href="http://dnd5e.wikidot.com/spell:arcane-weapon">arcane weapon</a></li>
+					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:cure-wounds">cure wounds</a></li>
+					<li><a class="spell concentration ritual" href="http://dnd5e.wikidot.com/spell:detect-magic">detect magic</a></li>
+					<li><a class="spell concentration bonus-action" href="http://dnd5e.wikidot.com/spell:expeditious-retreat">expeditious retreat</a></li>
+					<li><a class="spell concentration" href="http://dnd5e.wikidot.com/spell:faerie-fire">faerie fire</a></li>
+					<li><a class="spell reaction" href="http://dnd5e.wikidot.com/spell:feather-fall">feather fall</a></li>
+				</ul>
+			</div>
+			<div class="wide">
+				<h2><a href="http://dnd5e.wikidot.com/artificer:infusions">Infusions</a></h2>
+				<ul>
+					<li>Armor of Magical Strength</li>
+					<li>Enhanced Defense <small>active on shield</small></li>
+					<li>Enhanced Weapon <small>active on armor</small></li>
+					<li>Replicate Magic Item</li>
+				</ul>
+				<p>Apply an infusion every day, maintain <u title="Increases at 2nd, 6th, 10th, 14th, 18th">2</u> at a time.</p>
+			</div>
+		</section>
+
+		<hr>
+		<ul id="mundaneItemsWrapper">
+			<li><a href="http://dnd5e.wikidot.com/adventuring-gear">Explorer's pack</a></li>
+			<li title="8 lbs">Smith's tools</li>
+			<li title="1 lbs">Thieves' tools</li>
+			<li title="10 lbs" class="br">Tinker's tools</li>
+			<li>38 <b>GP</b></li>
+		</ul>
+		<ul id="inventory">
+			<!--Weapons-->
+			<li title="1 lbs" class="br">
+				<a href="https://2e.aonprd.com/Weapons.aspx?ID=3">Dagger</a>
+				<small>simple one-handed, 1d4P, Finesse Light Thrown-20/60.</small>
+			</li>
+
+			<!--Armors-->
+			<li title="65 lbs">
+				<a href="http://dnd5e.wikidot.com/armor">Plate Armor</a>
+				<small>heavy, 18 armor, 15 str, 0 dex, noisy.</small>
+			</li>
+			<li title="13 lbs">
+				<a href="http://dnd5e.wikidot.com/armor">Studded Leather Armor</a>
+				<small>light, 12 armor, - str, - dex.</small>
+			</li>
+			<li title="6 lbs" class="br">
+				<a href="http://dnd5e.wikidot.com/armor">Shield</a>
+				<small>shield, 2 armor, - str, - dex.</small>
+			</li>
+		</ul>
+
+		<!-- title NOTES -->
+		<section class="noprint">
+			<hr>
+			<p lang="fr">Roch Bruneau est un journaliste et investigateur passionné.
+				Équipé de la <i>Très Vive Armure</i>, il tente de résoudre les mystères.</p>
+			<p lang="fr">Le point tournant de sa carrière est arrivé alors qu'il menait une enquête sur des disparitions mystérieuses,
+				dont toutes les victimes étaient des employés une pâtisserie commerciale reconnue.
+				S'infiltrant chez un suspect, il a activé par erreur un prototype d'armure magique, qui a créé avec lui un lien mental.
+				Ce faisant, l'alerte a été levée, Roch a dû s'enfuir et gérer la situation plus tard.
+				Les seules notes concernant l'armure qu'il avait vues la décrivaient comme la "T.V.A.", alors Roch a trouvé un nom dont l'acronyme fonctionnait.
+				Il a pris plusieurs années à maîtriser, puis augmenter et perfectionner cette merveille technologique.
+				Sans négliger sa carrière de journaliste!</p>
+			<p>Il écrit encore des articles pour le journal "Bonjour, salut" et, s'il en a l'occasion, enverra par la poste des <i lang="en">scoops</i> à son éditeur, <b>Claude Pluton</b>.</p>
+
+			<dl class="charInfo">
+				<dt>Quality</dt>
+				<dd>Wise and observant</dd>
+
+				<dt>Drawback</dt>
+				<dd>Dangerously curious</dd>
+
+				<dt>Age</dt>
+				<dd>37</dd>
+
+				<dt>Weight</dt>
+				<dd>139 lbs</dd>
+
+				<dt>Height</dt>
+				<dd>5' 9''</dd>
+			</dl>
+		</section>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Roch – Art by <a href="https://www.artstation.com/lolesromero">Loles Romero</a></h2>
+		<a href="https://www.artstation.com/artwork/9NEX3Q">
+		<img src="https://i.pinimg.com/originals/69/16/d4/6916d4d0ae80150c325d55fad3d475a0.png" alt="Ettore &copy;Loles Romero"></a>
+	</dialog>
+</body>
+</html>
