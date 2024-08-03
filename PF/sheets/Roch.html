@@ -32,7 +32,7 @@
 		<section id="headerInfo" class="row">
 			<dl class="charInfo">
 				<dt>Str</dt>
-				<dd>11</dd>
+				<dd>8</dd>
 
 				<dt>Dex</dt>
 				<dd>16 <small>15, <u>1 racial</u></small></dd>
@@ -41,7 +41,7 @@
 				<dd>14</dd>
 
 				<dt>Int</dt>
-				<dd>20 <small>16, <u>2 racial</u>, <u>2 increase</u></small></dd>
+				<dd>20 <small>17, <u>2 racial</u>, <u>1 feat</u></small></dd>
 
 				<dt>Wis</dt>
 				<dd>14</dd>
@@ -60,6 +60,7 @@
 				<dd><a href="http://dnd5e.wikidot.com/rogue">Rogue</a> 1</dd>
 				<dd><a href="http://dnd5e.wikidot.com/artificer">Artificer</a> 4</dd>
 				<dd class="archetype">Specialist: <a href="http://dnd5e.wikidot.com/artificer:armorer">Armorer</a></dd>
+				<dd class="archetype">Feat: <a href="http://dnd5e.wikidot.com/feat:telekinetic">Telekinetic</a></dd>
 			</dl>
 			<dl class="charInfo">
 				<dt>Senses</dt>
@@ -84,14 +85,14 @@
 		<section class="row">
 			<ul class="summations">
 				<li>
-					<strong>0</strong>
+					<strong>-1</strong>
 					<b>STR saving throw</b>
-					<small>0 str</small>
+					<small>-1 str</small>
 				</li>
 				<li class="br">
-					<strong>0</strong>
+					<strong>-1</strong>
 					Athletics
-					<small>0 str</small>
+					<small>-1 str</small>
 				</li>
 				<li>
 					<strong>6</strong>
@@ -253,7 +254,13 @@
 				</div>
 
 				<h2>Sneak Attack <b title="Increases at every odd level.">1d6</b></h2>
+				<h2 class="bonus-action">Telekinetic</h2>
+				<p>As a bonus action, shove a foe you can see within 30ft.
+					Move it 5ft away / closer.
+					<small>Str <u title="8, 5 int, 3 prf">DC 16</u> negates, can choose to fail.</small></p>
+
 				<h2>The Right Tool for the Job</h2>
+				<p>During a short rest, create a temporary set of artisan's tools.</p>
 
 				<h2>Magical Tinkering</h2>
 				<p class="condensed">As an action, tinker with an object. Affect <u title="5 int">5</u> at a time.
@@ -279,6 +286,7 @@
 			<div>
 				<h2>Level 0</h2>
 				<ul>
+					<li><a class="spell bonus" title="Telekinetic" href="http://dnd5e.wikidot.com/spell:mage-hand">mage hand</a> <small>subtle!</small></li>
 					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:booming-blade">booming blade</a></li>
 					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:mending">mending</a></li>
 				</ul>
@@ -299,13 +307,14 @@
 			</div>
 			<div class="wide">
 				<h2><a href="http://dnd5e.wikidot.com/artificer:infusions">Infusions</a></h2>
-				<ul>
+				<ul class="list">
 					<li>Armor of Magical Strength</li>
 					<li>Enhanced Defense <small>active on shield</small></li>
 					<li>Enhanced Weapon <small>active on armor</small></li>
-					<li>Replicate Magic Item</li>
+					<li>Replicate Magic Item: Bag of Holding</li>
 				</ul>
-				<p>Apply an infusion every day, maintain <u title="Increases at 2nd, 6th, 10th, 14th, 18th">2</u> at a time.</p>
+				<p>Maintain <u title="Increases at 2nd, 6th, 10th, 14th, 18th">2</u> infusions at a time.<br>
+					During a long rest, apply an infusion.</p>
 			</div>
 		</section>
 
