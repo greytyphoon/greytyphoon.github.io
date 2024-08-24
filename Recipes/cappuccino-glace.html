@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Grey's Recipe</title>
+	<link rel="stylesheet" href="Recipes.css">
+</head>
+<body>
+	<div class="container">
+		<header id="header">
+			<h1>Cappuccino Glacé</h1>
+		</header>
+		<main>
+			<img id="main-picture" src="https://thecunningkitchen.com/wp-content/uploads/2024/07/Homemade-Iced-Cappuccino-Featured-1024x819.jpg" alt="Homemade Iced Cappuccinos &copy;The Cunning Kitchen" onclick="document.getElementById('large-picture').showModal()">
+
+			<ul class="steps">
+				<li><b>20&nbsp;ml</b> de café instantané</li>
+				<li><b>20&nbsp;ml</b> d'eau bouillante</li>
+				<li class="action">Mélanger pour faire du café.</li>
+				<li><b>10&nbsp;ml</b> de cacao</li>
+				<li><b>30&nbsp;ml</b> de sirop d'érable</li>
+				<li><b>80&nbsp;ml</b> de lait</li>
+				<li><b>375&nbsp;ml</b> de glaçons</li>
+				<li class="action">Malaxer tous les ingrédients. Ajuster la texture en rajoutant plus de lait ou de glace.</li>
+				<li class="action">Finir avec une touche de lait pour colorer.</li>
+			</ul>
+		</main>
+		<footer>Source: <a href="https://thecunningkitchen.com/iced-cappuccino">The Cunning Kitchen</a></footer>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Homemade Iced Cappuccinos – Photo de <a href="https://thecunningkitchen.com/iced-cappuccino">The Cunning Kitchen</a></h2>
+		<a href="https://thecunningkitchen.com/iced-cappuccino">
+		<img src="https://thecunningkitchen.com/wp-content/uploads/2024/07/Homemade-Iced-Cappuccino-Featured-1024x819.jpg" alt="Homemade Iced Cappuccinos &copy;The Cunning Kitchen"></a>
+	</dialog>
+</body>
+</html>

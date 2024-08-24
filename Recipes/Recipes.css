@@ -24,7 +24,7 @@ footer { text-align: center; }
 }
 
 /********************
- * Steps	(.steps, b, .action)
+ * Steps	(.steps, b, small, .action)
  */
 
 ul.steps { padding-left: 20px; }
@@ -34,6 +34,8 @@ ul.steps > li > b {
 	min-width: 4em;
 	text-align: right;
 }
+ul.steps > li > small  { color: var(--tint-dark); }
+ul.steps > li > small::before { content: "— "; }
 
 .actionStep, /* deprecated */
 ul.steps > li.action {

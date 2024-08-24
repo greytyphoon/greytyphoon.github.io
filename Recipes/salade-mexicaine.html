@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Grey's Recipe</title>
+	<link rel="stylesheet" href="Recipes.css">
+</head>
+<body>
+	<div class="container">
+		<header id="header">
+			<h1>Salade Mexicaine</h1>
+		</header>
+		<main>
+			<img id="main-picture" src="https://images.radio-canada.ca/q_auto,w_844/v1/alimentation/recette/16x9/salade-mexicaine-feves-noires-mais.jpg" alt="Salade Mexicaine &copy;Radio-Canada" onclick="document.getElementById('large-picture').showModal()">
+
+			<ul class="steps">
+				<li><b>1 canne</b> de fèves noires <small>égouttée, rincée</small></li>
+				<li><b>1 canne</b> de maïs en grains <small>égouttée</small></li>
+				<li><b>1</b> grosse tomate <small>coupée en cube</small></li>
+				<li><b>1</b> petit concombre du jardin <small>coupé en rondelles, puis en quartiers</small></li>
+				<li><b>1</b> bouquet de coriandre</li>
+				<li><b>30&nbsp;ml</b> de jus de citron</li>
+				<li><b>1 pincée</b> de sel et de poivre</li>
+				<li><b>1 pincée</b> de poudre de chili</li>
+				<li class="action">Mélanger.</li>
+				<li class="action">Servir avec de la crème sûre et des chips de tortillas.</li>
+			</ul>
+		</main>
+		<footer>Source: <a href="https://ici.radio-canada.ca/mordu/recettes/1161/salade-mexicaine">Bob le Chef sur Radio-Canada</a></footer>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Salade mexicaine – Photo de <a href="https://ici.radio-canada.ca/mordu/recettes/1161/salade-mexicaine">Radio-Canada</a></h2>
+		<a href="https://ici.radio-canada.ca/mordu/recettes/1161/salade-mexicaine">
+		<img src="https://images.radio-canada.ca/q_auto,w_844/v1/alimentation/recette/16x9/salade-mexicaine-feves-noires-mais.jpg" alt="Salade Mexicaine &copy;Radio-Canada"></a>
+	</dialog>
+</body>
+</html>
