@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Grey's Recipe</title>
+	<link rel="stylesheet" href="Recipes.css">
+</head>
+<body>
+	<div class="container">
+		<header id="header">
+			<h1>Biscuits de Pâques</h1>
+		</header>
+		<main>
+			<img id="main-picture" src="https://familycookierecipes.com/wp-content/uploads/2022/02/Cadbury-Mini-Egg-Cookies-12.jpg" alt="Cadbury Mini Egg Cookies &copy;Family Cookie Recipes" onclick="document.getElementById('large-picture').showModal()">
+
+			<ul class="steps">
+				<li><b>250&nbsp;ml</b> de beurre mou</li>
+				<li><b>350&nbsp;ml</b> de cassonade</li>
+				<li><b>125&nbsp;ml</b> de sucre</li>
+				<li class="action">Mélanger pendant 2-3 minutes.</li>
+
+				<li><b>10&nbsp;ml</b> de vanille</li>
+				<li><b>2</b> oeufs</li>
+				<li class="action">Mélanger avec la mixture de beurre pour 1-2 minutes.</li>
+
+				<li><b>750&nbsp;ml</b> de farine</li>
+				<li><b>10&nbsp;ml</b> d'amidon de maïs (<i lang="en">corn starch</i>)</li>
+				<li><b>10&nbsp;ml</b> de bicarbonate de soude</li>
+				<li class="action">Mélanger ces trois-là à part.</li>
+				<li class="action">Combiner à la mixture de beurre, sans trop brasser.</li>
+
+				<li><b>1 sac</b> de <i>Mini-Eggs</i> <small>concassés</small></li>
+				<li><b>250&nbsp;ml</b> de pépites de chocolat</li>
+				<li class="action">Mélanger.</li>
+				<li class="action">Cuire 10 min à 350&deg;F.</li>
+			</ul>
+		</main>
+		<footer>Source: <a target="_parent" href="https://familycookierecipes.com/cadbury-mini-egg-cookies">Family Cookie Recipes</a></footer>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Cadbury Mini Egg Cookies – Photo de <a target="_parent" href="https://familycookierecipes.com/cadbury-mini-egg-cookies">Family Cookie Recipes</a></h2>
+		<a target="_parent" href="https://familycookierecipes.com/cadbury-mini-egg-cookies">
+		<img src="https://familycookierecipes.com/wp-content/uploads/2022/02/Cadbury-Mini-Egg-Cookies-12.jpg" alt="Cadbury Mini Egg Cookies &copy;Family Cookie Recipes"></a>
+	</dialog>
+</body>
+</html>
