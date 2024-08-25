@@ -12,14 +12,23 @@
 			<h1>Daiquiri aux fraises</h1>
 		</header>
 		<main>
+			<img id="main-picture" src="https://images.ricardocuisine.com/services/recipes/496x670_4758-v2.jpg" alt="Daï-qui-rit aux fraises &copy;Ricardo" onclick="document.getElementById('large-picture').showModal()">
+
 			<ul class="steps">
 				<li><b>750&nbsp;ml</b> de fraises congelées</li>
 				<li><b>500&nbsp;ml</b> d'eau</li>
 				<li><b>60&nbsp;ml</b> de sucre blanc</li>
-				<li class="action">Malaxer</li>
+				<li class="action">Malaxer.</li>
 			</ul>
 		</main>
 		<footer>Source: <a target="_parent" href="https://www.ricardocuisine.com/recettes/4758-dai-qui-rit-aux-fraises-daiquiri-sans-alcool">Ricardo</a></footer>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Daï-qui-rit aux fraises – Photo de <a href="https://www.ricardocuisine.com/recettes/4758-dai-qui-rit-aux-fraises-daiquiri-sans-alcool">Ricardo</a></h2>
+		<a href="https://www.ricardocuisine.com/recettes/4758-dai-qui-rit-aux-fraises-daiquiri-sans-alcool">
+		<img src="https://images.ricardocuisine.com/services/recipes/496x670_4758-v2.jpg" alt="Daï-qui-rit aux fraises &copy;Ricardo"></a>
+	</dialog>
 </body>
 </html>
