@@ -12,24 +12,35 @@
 			<h1>Biscuits au Chocolat</h1>
 		</header>
 		<main>
-			Source: <a target="_parent" href="https://www.ricardocuisine.com/hiver/recette.php?c=douceurs-hiver&id=4874">Ricardo</a>
-			<ul>
-				<li>&frac34; tasse de beurre non-salé, fondu</li>
-				<li>1 tasse de cassonade</li>
-				<li>2 tbsp de sucre</li>
-				<li>1 oeuf</li>
-				<li>1 jaune d'oeuf</li>
-				<li class="actionStep">Mélanger</li>
-				<li>1&frac12; tasse de farine</li>
-				<li>&frac12; teaSp. de bicarbonate de soude</li>
-				<li>1 pincée de sel</li>
-				<li class="actionStep">Mélanger ces trois-là ensemble, puis combiner</li>
-				<li>195g de pépites de chocolat</li>
-				<li class="actionStep">Mélanger</li>
-				<li class="actionStep">Réfrigérer au moins une heure</li>
-				<li class="actionStep">Cuire 9 min à 375&deg;F sur une plaque</li>
+			<img id="main-picture" src="https://images.ricardocuisine.com/services/recipes/496x670_4874.jpg" alt="Biscuits moelleux aux brisures de chocolat &copy;Ricardo" onclick="document.getElementById('large-picture').showModal()">
+
+			<ul class="steps">
+				<li><b>200&nbsp;ml</b> de beurre non-salé <small>fondu</small></li>
+				<li><b>250&nbsp;ml</b> de cassonade</li>
+				<li><b>30&nbsp;ml</b> de sucre</li>
+				<li><b>1</b> oeuf</li>
+				<li><b>1</b> jaune d'oeuf</li>
+				<li class="action">Mélanger.</li>
+
+				<li><b>375&nbsp;ml</b> de farine</li>
+				<li><b>1 pincée</b> de bicarbonate de soude</li>
+				<li><b>1 pincée</b> de sel</li>
+				<li class="action">Mélanger ces trois-là ensemble, puis combiner.</li>
+
+				<li><b>200&nbsp;g</b> de pépites de chocolat</li>
+				<li class="action">Mélanger.</li>
+				<li class="action">Réfrigérer au moins une heure.</li>
+				<li class="action">Cuire 9 min à 375&deg;F.</li>
 			</ul>
 		</main>
+		<footer>Source: <a target="_parent" href="https://www.ricardocuisine.com/recettes/4874-biscuits-moelleux-aux-brisures-de-chocolat-les-meilleurs">Ricardo</a></footer>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Biscuits moelleux aux brisures de chocolat – Photo de <a href="https://www.ricardocuisine.com/recettes/4874-biscuits-moelleux-aux-brisures-de-chocolat-les-meilleurs">Ricardo</a></h2>
+		<a href="https://www.ricardocuisine.com/recettes/4874-biscuits-moelleux-aux-brisures-de-chocolat-les-meilleurs">
+		<img src="https://images.ricardocuisine.com/services/recipes/496x670_4874.jpg" alt="Biscuits moelleux aux brisures de chocolat &copy;Ricardo"></a>
+	</dialog>
 </body>
 </html>

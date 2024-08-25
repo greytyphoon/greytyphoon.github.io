@@ -12,26 +12,35 @@
 			<h1>Pain aux bananes</h1>
 		</header>
 		<main>
-			Source: <a target="_parent" href="https://www.simplyrecipes.com/recipes/banana_bread">Simply Recipes</a>
-			<ul>
-				<li>3 bananes trop mûres</li>
-				<li class="actionStep">Écraser dans un bol, en éliminant les grumeaux</li>
-				<li>&frac13; tasse de beurre (fondu au micro-onde)</li>
-				<li class="actionStep">Mélanger avec les bananes</li>
-				<li>1 teaSp. de bicarbonate de soude</li>
-				<li>1 pincée de sel</li>
-				<li class="actionStep">Mélanger avec les bananes</li>
-				<li>&frac34; tasse de sucre</li>
-				<li>1 oeufs</li>
-				<li>1 teaSp. de vanille</li>
-				<li class="actionStep">Mélanger avec les bananes</li>
-				<li>1&frac12; tasse de farine</li>
-				<li class="actionStep br">Mélanger avec les bananes</li>
-				<li class="actionStep">Verser dans un plat graissé</li>
-				<li class="actionStep">Cuire 50 minutes à 350&deg;F</li>
-				<li class="actionStep">Reposer quelques minutes minutes, puis sortir du moule, et laisser reposer complètement.</li>
+			<img id="main-picture" src="https://www.simplyrecipes.com/thmb/cRXr3NZOiwpcByEzuHYhqbymkJs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Easy-Banana-Bread-LEAD-4-44984294fe08469ba65bf5f76e0ca141.jpg" alt="Banana Bread &copy;Kelly Hamilton" onclick="document.getElementById('large-picture').showModal()">
+
+			<ul class="steps">
+				<li><b>3</b> bananes trop mûres</li>
+				<li class="action">Écraser dans un bol, en éliminant les grumeaux</li>
+
+				<li><b>80&nbsp;ml</b> de beurre <small>fondu</small></li>
+				<li><b>5&nbsp;ml</b> de bicarbonate de soude</li>
+				<li><b>1 pincée</b> de sel</li>
+				<li><b>200&nbsp;ml</b> de sucre</li>
+				<li><b>1</b> oeuf</li>
+				<li><b>5&nbsp;ml</b> de vanille</li>
+				<li><b>375&nbsp;ml</b> tasse de farine</li>
+				<li class="action">Mélanger, un à la fois, avec les bananes.</li>
+				<li class="action">Verser dans un plat graissé.</li>
+				<li class="action">Cuire 50 minutes à 350&deg;F.</li>
+				<li class="action">Laisser reposer quelques minutes.</li>
+				<li class="action">Démouler.</li>
+				<li class="action">Laisser reposer complètement.</li>
 			</ul>
 		</main>
+		<footer>Source: <a target="_parent" href="https://www.simplyrecipes.com/recipes/banana_bread">Simply Recipes</a></footer>
 	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Banana Bread – Photo de <a href="https://www.simplyrecipes.com/recipes/banana_bread">Kelly Hamilton</a></h2>
+		<a href="https://www.simplyrecipes.com/recipes/banana_bread">
+		<img src="https://www.simplyrecipes.com/thmb/npVAJjXL_NP1FR_uej10wJHELU0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Easy-Banana-Bread-LEAD-4-44984294fe08469ba65bf5f76e0ca141.jpg" alt="Banana Bread &copy;Kelly Hamilton"></a>
+	</dialog>
 </body>
 </html>
