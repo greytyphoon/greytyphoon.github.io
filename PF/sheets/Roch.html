@@ -14,8 +14,8 @@
 	<style>
 		.guardian { color: var(--virtue-blue); }
 		.guardian.weapon { color: var(--tint-black); --weapon-color: var(--virtue-blue); }
-		.infiltrator { color: var(--abjuration-gold); }
-		.infiltrator.weapon { color: var(--tint-black); --weapon-color: var(--abjuration-gold); }
+		.infiltrator { color: var(--serene-green); }
+		.infiltrator.weapon { color: var(--tint-black); --weapon-color: var(--serene-green); }
 	</style>
 </head>
 <body>
@@ -57,10 +57,10 @@
 				<dd><a href="http://dnd5e.wikidot.com/background:city-watch#toc1">Investigator</a></dd>
 
 				<dt>Class</dt>
-				<dd><a href="http://dnd5e.wikidot.com/rogue">Rogue</a> 1</dd>
-				<dd><a href="http://dnd5e.wikidot.com/artificer">Artificer</a> 4</dd>
+				<dd><a href="http://dnd5e.wikidot.com/artificer">Artificer</a> 5</dd>
 				<dd class="archetype">Specialist: <a href="http://dnd5e.wikidot.com/artificer:armorer">Armorer</a></dd>
-				<dd class="archetype">Feat: <a href="http://dnd5e.wikidot.com/feat:telekinetic">Telekinetic</a></dd>
+				<dd class="archetype">Feat @4: <a href="http://dnd5e.wikidot.com/feat:telekinetic">Telekinetic</a></dd>
+				<dd class="archetype">Feat @Bonus: <a href="http://dnd5e.wikidot.com/feat:prodigy">Prodigy</a></dd>
 			</dl>
 			<dl class="charInfo">
 				<dt>Senses</dt>
@@ -71,12 +71,15 @@
 				<dd class="infiltrator">35 ft.</dd>
 				<dd class="infiltrator">Fly 35 ft.</dd>
 
-				<dt>Languages</dt>
-				<dd>Common, Elven, Fey, Gnomish</dd>
-				<dd><a href="http://dnd5e.wikidot.com/rogue">Thieves' Cant</a></dd>
-				
+				<dt title="2 Racial, 2 Background, 1 Prodigy">Languages</dt>
+				<dd>Common, Dwarven, Elven, Fey, Gnomish</dd>
+
 				<dt>Tools</dt>
-				<dd><u title="Rogue">Thieve's</u>, <u title="Artificer Multiclass">Tinker's</u>, <u title="Armorer Specialist">Smith's</u>.</dd>
+				<dd><u title="Prodigy">Alchemist's</u>,
+					<u title="Artificer (Flexible)">Cartographer's</u>,
+					<u title="Armorer Specialist">Smith's</u>,
+					<u title="Artificer (Fixed)">Thieve's</u>,
+					<u title="Artificer (Fixed)">Tinker's</u>.</dd>
 			</dl>
 		</section>
 
@@ -95,9 +98,9 @@
 					<small>-1 str</small>
 				</li>
 				<li>
-					<strong>6</strong>
+					<strong>3</strong>
 					<b>DEX saving throw</b>
-					<small>3 dex, <u title="Class (Fixed)">3 prf</u></small>
+					<small>3 dex</small>
 				</li>
 				<li>
 					<strong>3</strong>
@@ -117,9 +120,9 @@
 					<div title="Dampening Field" class="circumstancialBonus infiltrator"><u>Advantage</u></div>
 				</li>
 				<li class="br">
-					<strong>2</strong>
+					<strong>5</strong>
 					<b>CON saving throw</b>
-					<small>2 con</small>
+					<small>2 con, <u title="Class (Fixed)">3 prf</u></small>
 				</li>
 				<li>
 					<strong>8</strong>
@@ -127,9 +130,9 @@
 					<small>5 int, <u title="Class (Fixed)">3 prf</u></small>
 				</li>
 				<li>
-					<strong>11</strong>
+					<strong>8</strong>
 					Arcana
-					<small>5 int, <u title="Class (Flexible), Rogue Expertise">6 expertise</u></small>
+					<small>5 int, <u title="Class (Flexible)">3 prf</u></small>
 				</li>
 				<li>
 					<strong>8</strong>
@@ -139,7 +142,8 @@
 				<li>
 					<strong>11</strong>
 					Investigation
-					<small>5 int, <u title="Background (Fixed), Rogue Expertise">6 expertise</u></small>
+					<small>5 int, <u title="Background (Fixed), Prodigy">6 expertise</u></small>
+					<div class="circumstancialBonus" title="Eyes of Minute Seeing"><u>Advantage</u> when using sight within 1ft.</div>
 				</li>
 				<li>
 					<strong>5</strong>
@@ -174,7 +178,7 @@
 				<li>
 					<strong>5</strong>
 					Perception
-					<small>2 wis, <u title="Rogue Multiclass (Flexible)">3 prf</u></small>
+					<small>2 wis, <u title="Prodigy">3 prf</u></small>
 				</li>
 				<li class="br">
 					<strong>2</strong>
@@ -210,31 +214,33 @@
 			<div class="ample">
 				<ul class="summations">
 					<li class="br">
-						<strong>2</strong>
+						<strong>3</strong>
 						<b>Init</b>
-						<small>2 dex</small>
+						<small>3 dex</small>
 					</li>
 					<li>
 						<strong>38</strong>
 						<b>HP</b>
-						<small>5 artificer/rogue: 5 class, 2 con; 3 first-level bonus</small>
+						<small>5 artificer: 5 class, 2 con; 3 first-level bonus</small>
 					</li>
 					<li class="guardian">
 						<strong>21</strong>
 						<b>AC</b>
 						<small>18 armor, &ndash; dex, <u title="Enhanced Defense Infusion">3 shield</u></small>
+						<div class="circumstancialBonus" title="Adamantine Armor"><u>Immune</u> critical hits.</div>
 					</li>
 					<li class="infiltrator">
 						<strong>18</strong>
 						<b>AC</b>
 						<small>12 armor, 3 dex, <u title="Enhanced Defense Infusion">3 shield</u></small>
+						<div class="circumstancialBonus" title="Adamantine Armor"><u>Immune</u> critical hits.</div>
 					</li>
 				</ul>
 
 				<!--Thunder Gaunlets-->
 				<div class="weapon guardian">
 					<h2>Thunder Gauntlets <b>📣</b></h2>
-					<div class="summation"><strong>+9</strong> vs AC <small>5 int, 3 prf, <u title="Enhanced Weapon Infusion">1</u></small></div>
+					<div class="summation"><strong>+9</strong>/<strong>+9</strong> vs AC <small>5 int, 3 prf, <u title="Enhanced Weapon Infusion">1</u></small></div>
 					<div class="summation"><strong>1d8+6</strong> <small>5 int, <u title="Enhanced Weapon Infusion">1</u></small></div>
 					<div class="circumstancialBonus">A foe you hit has disadvantage on attacks on everyone but you for 1 round.</div>
 					<div class="circumstancialBonus"><a class="spell" href="http://dnd5e.wikidot.com/spell:booming-blade">booming blade</a>:
@@ -243,24 +249,20 @@
 				</div>
 
 				<h2 class="guardian bonus-action">Defensive Field <u title="3 prf">3/day</u></h2>
-				<p class="guardian">As a bonus action, gain <u title="4 artificer">4</u> temp HP.</p>
+				<p class="guardian">As a bonus action, gain <u title="5 artificer">5</u> temp HP.</p>
 
 				<!--Lightning Launcher-->
 				<div class="weapon infiltrator">
 					<h2>Lightning Launcher <b class="electricity">⚡</b> <b>90/300ft</b></h2>
-					<div class="summation"><strong>+9</strong> vs AC <small>5 int, 3 prf, <u title="Enhanced Weapon Infusion">1</u></small></div>
+					<div class="summation"><strong>+9</strong>/<strong>+9</strong> vs AC <small>5 int, 3 prf, <u title="Enhanced Weapon Infusion">1</u></small></div>
 					<div class="summation"><strong>1d6+6</strong> <small>5 int, <u title="Enhanced Weapon Infusion">1</u></small></div>
-					<div class="circumstancialBonus">1/round, when you hit, add an extra <u>1d6 dmg</u>.</div>
-					<div class="circumstancialBonus"><a href="http://dnd5e.wikidot.com/rogue#toc5">Sneak Attack</a>: add an extra <u title="Increases every odd level.">1d6 dmg</u>.</div>
+					<div class="circumstancialBonus">1/round, when you hit, add an extra <u>1d6 dmg ⚡</u>.</div>
 				</div>
 
 				<h2 class="bonus-action">Telekinetic</h2>
-				<p>As a bonus action, shove a foe you can see within 30ft.
+				<p>As a bonus action, shove a creature you can see within 30ft.<br>
 					Move it 5ft away / closer.
-					<small>Str <u title="8, 5 int, 3 prf">DC 16</u> negates, can choose to fail.</small></p>
-
-				<h2>The Right Tool for the Job</h2>
-				<p>During a short rest, create a temporary set of artisan's tools.</p>
+					<small>Str <u title="8, 5 int, 3 prf">DC 16</u> negates, they can choose to fail.</small></p>
 
 				<h2>Magical Tinkering</h2>
 				<p class="condensed">As an action, tinker with an object. Affect <u title="5 int">5</u> at a time.
@@ -271,11 +273,14 @@
 					It has no STR requirement, counts as spell focus, cannot be removed by foes.
 					Put it on/off as an action.
 					Change from <span class="infiltrator">infiltrator</span> to <span class="guardian">guardian</span> every rest.</p>
+
+				<h2>The Right Tool for the Job</h2>
+				<p>During a short rest, create a temporary set of any artisan's tools.</p>
 			</div>
 		</section>
 &nbsp;
 		<section class="row">
-			<div class="wide">
+			<div class="ample">
 				<h2><a href="http://dnd5e.wikidot.com/spells:artificer">Artificer</a> Spells</h2>
 				<ul class="summations">
 					<li><strong>8</strong> <b>Attack</b>; 16 <b>DC</b> <small>8, 5 int, 3 prf</small></li>
@@ -292,7 +297,7 @@
 				</ul>
 			</div>
 			<div>
-				<h2>Level 1 <b>3/day</b></h2>
+				<h2>Level 1 <b>4/day</b></h2>
 				<ul>
 					<li><a class="spell bonus off-class" href="http://dnd5e.wikidot.com/spell:magic-missile">magic missile</a></li>
 					<li><a class="spell bonus off-class" href="http://dnd5e.wikidot.com/spell:thunderwave">thunderwave</a></li>
@@ -300,31 +305,41 @@
 					<li><a class="spell concentration bonus-action" href="http://dnd5e.wikidot.com/spell:arcane-weapon">arcane weapon</a></li>
 					<li><a class="spell" href="http://dnd5e.wikidot.com/spell:cure-wounds">cure wounds</a></li>
 					<li><a class="spell concentration ritual" href="http://dnd5e.wikidot.com/spell:detect-magic">detect magic</a></li>
-					<li><a class="spell concentration bonus-action" href="http://dnd5e.wikidot.com/spell:expeditious-retreat">expeditious retreat</a></li>
 					<li><a class="spell concentration" href="http://dnd5e.wikidot.com/spell:faerie-fire">faerie fire</a></li>
-					<li><a class="spell reaction" href="http://dnd5e.wikidot.com/spell:feather-fall">feather fall</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 2 <b>2/day</b></h2>
+				<ul>
+					<li><a class="spell bonus off-class" href="http://dnd5e.wikidot.com/spell:mirror-image">mirror image</a></li>
+					<li><a class="spell bonus off-class" href="http://dnd5e.wikidot.com/spell:shatter">shatter</a></li>
+					<li><a class="spell concentration" href="http://dnd5e.wikidot.com/spell:invisibility">invisibility</a></li>
+					<li><a class="spell concentration bonus-action" href="http://dnd5e.wikidot.com/spell:kinetic-jaunt">kinetic jaunt</a></li>
 				</ul>
 			</div>
 			<div class="wide">
 				<h2><a href="http://dnd5e.wikidot.com/artificer:infusions">Infusions</a></h2>
+				<p>Maintain <b><u title="Increases at 2nd, 6th, 10th, 14th, 18th">2</u></b> at once. During a long rest, apply <b>1</b>.</p>
 				<ul class="list">
 					<li>Armor of Magical Strength</li>
 					<li>Enhanced Defense <small>active on shield</small></li>
 					<li>Enhanced Weapon <small>active on armor</small></li>
 					<li>Replicate Magic Item: Bag of Holding</li>
 				</ul>
-				<p>Maintain <u title="Increases at 2nd, 6th, 10th, 14th, 18th">2</u> infusions at a time.<br>
-					During a long rest, apply an infusion.</p>
 			</div>
 		</section>
 
 		<hr>
 		<ul id="mundaneItemsWrapper">
 			<li><a href="http://dnd5e.wikidot.com/adventuring-gear">Explorer's pack</a></li>
+			<li title="6 lbs">Cartographer's tools</li>
 			<li title="8 lbs">Smith's tools</li>
 			<li title="1 lbs">Thieves' tools</li>
 			<li title="10 lbs" class="br">Tinker's tools</li>
-			<li>38 <b>GP</b></li>
+			<li>23 <b>GP</b></li>
+		</ul>
+		<ul id="magicItemsWrapper">
+			<li><a href="https://www.dndbeyond.com/magic-items/4634-eyes-of-minute-seeing">Eyes of Minute Seeing</a></li>
 		</ul>
 		<ul id="inventory">
 			<!--Weapons-->
@@ -335,11 +350,11 @@
 
 			<!--Armors-->
 			<li title="65 lbs">
-				<a href="http://dnd5e.wikidot.com/armor">Plate Armor</a>
+				Adamantine <a href="http://dnd5e.wikidot.com/armor">Plate Armor</a>
 				<small>heavy, 18 armor, 15 str, 0 dex, noisy.</small>
 			</li>
 			<li title="13 lbs">
-				<a href="http://dnd5e.wikidot.com/armor">Studded Leather Armor</a>
+				Adamantine <a href="http://dnd5e.wikidot.com/armor">Studded Leather Armor</a>
 				<small>light, 12 armor, - str, - dex.</small>
 			</li>
 			<li title="6 lbs" class="br">
