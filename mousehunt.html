@@ -9,6 +9,7 @@
 		img.powertype { width: 1em; height: 1em; }
 		li > ul { margin: 0; }
 		table.minlucks td + td { text-align: right; }
+		table#best-in-slot td:nth-child(2n) { text-align: right; }
 	</style>
 </head>
 <body>
@@ -20,26 +21,35 @@
 			Just noting stuff that I'm recalculating every so often, to save time.
 		</p>
 		<h2>My current traps and possible improvements</h2>
-		<table class="br">
+		<table id="best-in-slot" class="br">
 			<tbody>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/arcane.png"></th>	<td>🏆</td>	<td>C.Circlet of Pursuing &ndash; 40🍀</td>	<td>∅</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"></th>	<td>🥈</td>	<td>C.Dragon Slayer Cannon &ndash; 30🍀</td>	<td>MultiCannon &ndash; 38🍀</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png"></th><td>🏆</td>	<td>C.Thought Obliterator &ndash; 21🍀</td>	<td>∅</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"></th>	<td>🥉</td>	<td>C.Phantasmic Oasis &ndash; 28🍀</td>	<td>SoS &ndash; 30🍀, C.SoS &ndash; 32🍀</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/law.png"></th>		<td>🏆</td>	<td>STINGER &ndash; 20🍀</td>	<td>∅</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"></th>	<td>🥉</td>	<td>C.Monstrobot &ndash; 30🍀</td>	<td>Princebot &ndash; 36🍀, Kingbot &ndash; 42🍀</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"></th>		<td>🥉</td>	<td>Timesplit &ndash; 7🍀</td>	<td>Celestial &ndash; 10🍀, C.Celestial &ndash; 13🍀</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"></th>	<td>🥈</td>	<td>Dark Mirrors &ndash; 35🍀</td>	<td>Infinite Mirrors &ndash; 40🍀</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"></th>	<td>🥉</td>	<td>C.Sphynx Wrath &ndash; 28🍀</td>	<td>Sleeping Stone &ndash; 32🍀, Slumbering Boulder &ndash; 40🍀</td></tr>
-				<tr><th>Base</th>	<td>🥉</td>	<td>Sapphire &ndash; 30🍀</td>	<td>Opal &ndash; 35🍀, Prestige &ndash; &le;43🍀</td></tr>
+				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/arcane.png"></th>
+					<td>🏆</td>	<td>C.Circlet of Pursuing</td>	<td>40🍀</td>	<td colspan="4">&nbsp;</td></tr>
+				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"></th>
+					<td>🥈</td>	<td>C.Dragon Slayer Cannon</td>	<td>30🍀</td>	<td>MultiCannon</td>	<td>38🍀</td>	<td colspan="2">&nbsp;</td></tr>
+				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png"></th>
+					<td>🏆</td>	<td>C.Thought Obliterator</td>	<td>21🍀</td>	<td colspan="4">&nbsp;</td></tr>
+				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"></th>
+					<td>🥉</td>	<td>C.Phantasmic Oasis</td>	<td>28🍀</td>	<td>SoS</td>	<td>30🍀</td>	<td>C.SoS</td>	<td>32🍀</td></tr>
+				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/law.png"></th>
+					<td>🏆</td>	<td>STINGER</td>	<td>20🍀</td>	<td colspan="4">&nbsp;</td></tr>
+				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"></th>
+					<td>🥉</td>	<td>C.Monstrobot</td>	<td>30🍀</td>	<td>Princebot</td>	<td>36🍀</td>	<td>Kingbot</td>	<td>42🍀</td></tr>
+				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"></th>
+					<td>🥉</td>	<td>Timesplit</td>	<td>7🍀</td>	<td>Celestial</td>	<td>10🍀</td>	<td>C.Celestial</td>	<td>13🍀</td></tr>
+				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"></th>
+					<td>🥈</td>	<td>Dark Mirrors</td>	<td>35🍀</td>	<td>Infinite Mirrors</td>	<td>40🍀</td>	<td colspan="2">&nbsp;</td></tr>
+				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"></th>
+					<td>🥉</td>	<td>C.Sphynx Wrath</td>	<td>28🍀</td>	<td>Sleeping Stone</td>	<td>32🍀</td>	<td>Slumbering Boulder</td>	<td>40🍀</td></tr>
+				<tr><th>Base</th>
+					<td>🥉</td>	<td>Sapphire</td>	<td>30🍀</td>	<td>Opal</td>	<td>35🍀</td>	<td>Prestige</td>	<td>&le;43🍀</td></tr>
 			</tbody>
 		</table>
-&nbsp;
+
 		<section class="row">
 			<div>
 				<h2>LNY Strat</h2>
 				<ol>
-					<li>Before the event starts:	<ul><li>Reach a Paragon,</li>	<li>Reach an Eclipse or Shade,</li></ul>	</li>
 					<li>While gathering candles:	<ul><li>Farm Papyrus,</li></ul>	</li>
 					<li>While ramping up the +50 Luck:	<ul><li>Farm Sand Dollars,</li></ul>	</li>
 					<li>At full bonus:
@@ -58,7 +68,7 @@
 					<li>Valour Rift:
 						<ul>
 							<li>Unlock Ultimate Umbra,</li>
-							<li>Catch the Total Eclipse and other 6 mice,</li>
+							<li>Catch the Total Eclipse and other 4 mice,</li>
 							<li>Get the Prestige base,</li>
 							<li>Get the Celestial &amp; chrome it,</li>
 							<li>Maybe get a Codex of Thievery / Bard Luck.</li>
@@ -92,9 +102,9 @@
 				</ol>
 			</div>
 		</section>
-&nbsp;
+
 		<h2>Minlucks</h2>
-		<section class="row">
+		<section class="row br">
 			<div>
 				<h3>School of Sorcery</h3>
 				<table class="minlucks">
@@ -145,7 +155,7 @@
 
 		<details>
 		<summary class="subtitle">More minlucks...</summary>
-		<section class="row">
+		<section class="row br">
 			<div>
 				<h3>Queso Canyon</h3>
 				<table class="minlucks">
