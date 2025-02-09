@@ -6,11 +6,13 @@
 	<title>Mousehunt</title>
 	<link rel="stylesheet" href="basic.css">
 	<style>
-		img.powertype { width: 1em; height: 1em; }
-		li > ul { margin: 0; }
-		table.minlucks td + td { text-align: right; }
-		table#best-in-slot { white-space: nowrap; }
-		table#best-in-slot td:nth-child(2n+4) { text-align: right; }
+		img.powertype { display: inline-block; width: 1em; height: 1em; }
+		small { color: var(--tint-grey); }
+		small::before { content: "("; }
+		small::after { content: ")"; }
+		li > ul { margin: 0; padding-left: 1.5em }
+		table.minlucks td:nth-child(2),
+		table#best-in-slot td:nth-child(3) { text-align: right; }
 	</style>
 </head>
 <body>
@@ -18,63 +20,62 @@
 		<header id="header">
 			<h1>Mousehunt tips and notes</h1>
 		</header>
-		<p>
-			Just noting stuff that I'm recalculating every so often, to save time.
-		</p>
-		<h2>My current traps and possible improvements</h2>
-		<table id="best-in-slot" class="br">
-			<tbody>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/arcane.png"></th>
-					<td>🏆</td>	<td>C.Circlet of Pursuing</td>	<td>40🍀</td>	<td colspan="4">&nbsp;</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"></th>
-					<td>🥈</td>	<td>C.Dragon Slayer Cannon</td>	<td>30🍀</td>	<td>MultiCannon</td>	<td>38🍀</td>	<td colspan="2">&nbsp;</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png"></th>
-					<td>🏆</td>	<td>C.Thought Obliterator</td>	<td>21🍀</td>	<td colspan="4">&nbsp;</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"></th>
-					<td>🥉</td>	<td>C.Phantasmic Oasis</td>	<td>28🍀</td>	<td>SoS</td>	<td>30🍀</td>	<td>C.SoS</td>	<td>32🍀</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/law.png"></th>
-					<td>🏆</td>	<td>STINGER</td>	<td>20🍀</td>	<td colspan="4">&nbsp;</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"></th>
-					<td>🥉</td>	<td>C.Monstrobot</td>	<td>30🍀</td>	<td>Princebot</td>	<td>36🍀</td>	<td>Kingbot</td>	<td>42🍀</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"></th>
-					<td>🥉</td>	<td>Timesplit</td>	<td>7🍀</td>	<td>Celestial</td>	<td>10🍀</td>	<td>C.Celestial</td>	<td>13🍀</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"></th>
-					<td>🥈</td>	<td>Dark Mirrors</td>	<td>35🍀</td>	<td>Infinite Mirrors</td>	<td>40🍀</td>	<td colspan="2">&nbsp;</td></tr>
-				<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"></th>
-					<td>🥉</td>	<td>C.Sphynx Wrath</td>	<td>28🍀</td>	<td>Sleeping Stone</td>	<td>32🍀</td>	<td>Slumbering Boulder</td>	<td>40🍀</td></tr>
-				<tr><th>Base</th>
-					<td>🥉</td>	<td>Sapphire</td>	<td>30🍀</td>	<td>Opal</td>	<td>35🍀</td>	<td>Prestige</td>	<td>&le;43🍀</td></tr>
-			</tbody>
-		</table>
 
-		<h2>Objectives</h2>
-		<ol>
-			<li>Valour Rift:
-				<ul>
-					<li>Catch the Total Eclipse &amp; Bulwark of Ascent,</li>
-					<li>Get the Prestige base,</li>
-					<li>Get the Celestial &amp; chrome it.</li>
-				</ul>
-			</li>
-			<li>Table of Contents:	<ul><li>Get the Princebot.</li></ul>	</li>
-			<li>Draconic Depths:
-				<ul>
-					<li>Catch the Mythical Dragon Emperor and other 16 mice,</li>
-					<li>Get the Opal base,</li>
-					<li>Get the Multicannon.</li>
-				</ul>
-			</li>
-			<li>Sunken City:	<ul><li>Get the SoS &amp; chrome it.</li></ul>	</li>
-			<li>Floating Islands:	<ul><li>Get the Slumbering Boulder.</li></ul>	</li>
-			<li>Bountiful Beanstalk:	<ul><li>Get the KingBot,</li><li>Get the Infinite Mirrors.</li></ul>	</li>
-			<li>Wrapping up:
-				<ul>
-					<li>Codices, Bases, Weapons,</li>
-					<li>Themes, Rare collectibles, Airships, Skins,</li>
-					<li>Catch a Leppy.</li>
-				</ul>
-			</li>
-		</ol>
+		<section class="row">
+			<div>
+				<h2>Objectives</h2>
+				<ol>
+					<li>Draconic Depths:
+						<ul>
+							<li>Catch a Mythical Dragon Emperor,</li>
+							<li>Get the Opal base <small>35</small>,</li>
+							<li>Get the Multicannon <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"> <small>38</small>.</li>
+						</ul>
+					</li>
+					<li>Table of Contents:	<ul><li>Get the Princebot <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"> <small>36</small>.</li></ul>	</li>
+					<li>Sunken City:	<ul><li>Get the C.SoS <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"> <small>32</small>.</li></ul>	</li>
+					<li>Floating Islands:	<ul><li>Get the Slumbering Boulder <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"> <small>40</small>.</li></ul>	</li>
+					<li>Valour Rift:
+						<ul>
+							<li>Get the C.Celestial <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"> <small>13</small>.</li>
+							<li>Get the Prestige base <small>&le;43</small>,</li>
+						</ul>
+					</li>
+					<li>Bountiful Beanstalk:
+						<ul>
+							<li>Get the KingBot <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"> <small>42</small>,</li>
+							<li>Get the Infinite Mirrors <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"> <small>40</small>.</li>
+						</ul>
+					</li>
+					<li>Wrapping up:
+						<ul>
+							<li>Codices, Bases, Weapons,</li>
+							<li>Themes, Rare collectibles,</li>
+							<li>Airships, Skins,</li>
+							<li>Catch a Leppy.</li>
+						</ul>
+					</li>
+				</ol>
+			</div>
+
+			<div>
+				<h2>My current traps</h2>
+				<table id="best-in-slot" class="br">
+					<tbody>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/arcane.png"></th>		<td>C.Circlet of Pursuing</td>	<td>40</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"></th>		<td>C.Dragon Slayer Cannon</td>	<td>30</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png"></th>	<td>C.Thought Obliterator</td>	<td>21</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"></th>		<td>C.Phantasmic Oasis</td>	<td>28</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/law.png"></th>			<td>STINGER</td>	<td>20</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"></th>		<td>C.Monstrobot</td>	<td>30</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"></th>			<td>Timesplit</td>	<td>7</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"></th>		<td>Dark Mirrors</td>	<td>35</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"></th>		<td>C.Sphynx Wrath</td>	<td>28</td></tr>
+						<tr><th><img class="powertype" src="favicon.ico"></th>														<td>Sapphire</td>	<td>30</td></td></tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
 
 		<details>
 		<summary class="subtitle">Minlucks</summary>
@@ -189,6 +190,8 @@
 			</div>
 		</section>
 		</details>
+
+		<footer><center>🐭</center></footer>
 	</div>
 </body>
 </html>
