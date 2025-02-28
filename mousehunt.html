@@ -12,7 +12,9 @@
 		small::after { content: ")"; }
 		li > ul { margin: 0; padding-left: 1.5em }
 		table.minlucks td:nth-child(2),
-		table#best-in-slot td:nth-child(3) { text-align: right; }
+		table#best-in-slot td:nth-child(3),
+		table#best-in-slot td:nth-child(4) { text-align: right; }
+		em { color: var(--tint-grey); float: right; font-size: .8rem; }
 	</style>
 </head>
 <body>
@@ -25,26 +27,31 @@
 			<div>
 				<h2>Objectives</h2>
 				<ol>
-					<li>Sunken City:	<ul><li>C.SoS <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"> <small>32</small>.</li></ul>	</li>
-					<li>Floating Islands:	<ul><li>Slumbering Boulder <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"> <small>40</small>.</li></ul>	</li>
+					<li>Floating Islands:
+						<ul>
+							<li>Sleeping Stone <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"> <small>32</small><em>22.25m + 6hai</em></li>
+							<li>Slumbering Boulder <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"> <small>40</small><em>45.25m + 6hai + 115aej</em></li>
+						</ul>
+					</li>
 					<li>Valour Rift:
 						<ul>
-							<li>C.Celestial <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"> <small>13</small>.</li>
-							<li>Prestige base <small>&le;43</small>,</li>
+							<li>C.Celestial <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"> <small>13</small><em>13.6m + 20core</em></li>
+							<li>Prestige base <small>&le;43</small><em>12.17m + 2core</em></li>
 						</ul>
 					</li>
 					<li>Bountiful Beanstalk:
 						<ul>
-							<li>KingBot <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"> <small>42</small>,</li>
-							<li>Infinite Mirrors <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"> <small>40</small>.</li>
+							<li>KingBot <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"> <small>42</small><em>20m + 3gg</em></li>
+							<li>Infinite Mirrors <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"> <small>40</small><em>50m + 12gg</em></li>
 						</ul>
 					</li>
 					<li>Draconic Depths:
 						<ul>
-							<li>Opal base <small>35</small>,</li>
-							<li>Multicannon <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"> <small>38</small>.</li>
+							<li>Opal base <small>35</small><em>24m + 1mdh + 20kOpal</em></li>
+							<li>Multicannon <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"> <small>38</small><em>40m + 3mdh + 50kOpal</em></li>
 						</ul>
 					</li>
+					<li>Ronza's Travelling Shoppe:	<ul><li>C.School of Sharks <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"> <small>32</small><em>32m</em></li></ul>	</li>
 					<li>Wrapping up:
 						<ul>
 							<li>Codices, Area upgrades,</li>
@@ -61,16 +68,16 @@
 				<h2>My current traps</h2>
 				<table id="best-in-slot" class="br">
 					<tbody>
-						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/arcane.png"></th>		<td>C.Circlet of Pursuing</td>	<td>40</td></tr>
-						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"></th>		<td>C.Dragon Slayer Cannon</td>	<td>30</td></tr>
-						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png"></th>	<td>C.Thought Obliterator</td>	<td>21</td></tr>
-						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"></th>		<td>C.Phantasmic Oasis</td>	<td>28</td></tr>
-						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/law.png"></th>			<td>STINGER</td>	<td>20</td></tr>
-						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"></th>		<td>Princebot</td>	<td>36</td></tr>
-						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"></th>			<td>Timesplit</td>	<td>7</td></tr>
-						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"></th>		<td>Dark Mirrors</td>	<td>35</td></tr>
-						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"></th>		<td>C.Sphynx Wrath</td>	<td>28</td></tr>
-						<tr><th>&nbsp;</th>																							<td>Sapphire base</td>	<td>30</td></td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/arcane.png"></th>		<td>C.Circlet of Pursuing</td>	<td>40</td>	<td>+5</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"></th>		<td>C.Dragon Slayer Cannon</td>	<td>30</td>	<td>+5</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png"></th>	<td>C.Thought Obliterator</td>	<td>21</td>	<td>+5</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"></th>		<td>School of Sharks</td>	<td>30</td>	<td>&nbsp;</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/law.png"></th>			<td>STINGER</td>	<td>20</td>	<td>&nbsp;</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"></th>		<td>Princebot</td>	<td>36</td>	<td>+5</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"></th>			<td>Timesplit</td>	<td>7</td>	<td>&nbsp;</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"></th>		<td>Dark Mirrors</td>	<td>35</td>	<td>+5</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"></th>		<td>C.Sphynx Wrath</td>	<td>28</td>	<td>&nbsp;</td></tr>
+						<tr><th>&nbsp;</th>																							<td>Sapphire base</td>	<td>30</td></td>	<td>+1</td></tr>
 					</tbody>
 				</table>
 			</div>
