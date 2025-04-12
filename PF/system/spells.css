@@ -14,6 +14,18 @@ h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spe
 .two-actions::before { content: "◈\a0"; }
 .three-actions::before { content: "❖\a0"; }
 
+/* Durations */
+.until-turn-end::after { content: " this turn"; }
+.until-foe-start::after { content: " for 1 round¹"; }
+.until-foe-end::after { content: " for 1 round²"; }
+.until-self-start::after { content: " for 1 round³"; }
+.until-self-end::after { content: " for 1 round⁴"; }
+
+/* Items */
+.invested::after { content: "\a0ᶥ"; }
+.worn::after { content: "\a0ʷ"; }
+.gold { font-size: 1rem; margin: .5rem 0; }
+
 /* Schools */
 .spell.bonus, a.spell.bonus, a.spell.bonus:visited,
 .spell.bonus::after, a.spell.bonus::after, a.spell.bonus:visited::after,
