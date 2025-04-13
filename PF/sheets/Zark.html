@@ -385,12 +385,12 @@
 			<div>
 				<h2>Wands</h2>
 				<ul>
-					<li>1× <a class="spell bulk-light" href="https://2e.aonprd.com/Spells.aspx?ID=1453">blindness</a>³</li>
+					<li>1× <a class="spell" data-bulk=".1" href="https://2e.aonprd.com/Spells.aspx?ID=1453">blindness</a>³</li>
 				</ul>
 
 				<h2>Scrolls</h2>
 				<ul>
-					<li>2× <a class="spell bulk-light" href="https://2e.aonprd.com/Spells.aspx?ID=1451">bless</a>¹</li>
+					<li>2× <a class="spell" data-bulk=".2" href="https://2e.aonprd.com/Spells.aspx?ID=1451">bless</a>¹</li>
 				</ul>
 			</div>
 		</section>
@@ -398,12 +398,12 @@
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="mundaneItemsWrapper">
-			<li><a class="bulk-1" href="https://2e.aonprd.com/Equipment.aspx?ID=2700">Adventurer's Pack</a></li>
-			<li><a class="bulk-1" href="https://2e.aonprd.com/Equipment.aspx?ID=2737">Harmonica, Virtuoso</a></li>
-			<li><a class="bulk-1 worn" href="https://2e.aonprd.com/Equipment.aspx?ID=2727">Healer's Tools, Expanded</a></li>
-			<li><a class="bulk-light worn" href="https://2e.aonprd.com/Equipment.aspx?ID=2758">Thieves' Toolkit, Infiltrator</a></li>
+			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2700">Adventurer's Pack</a></li>
+			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2737">Harmonica, Virtuoso</a></li>
+			<li><a class="worn" data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2727">Healer's Tools, Expanded</a></li>
+			<li><a class="worn" data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=2758">Thieves' Toolkit, Infiltrator</a></li>
 
-			<li class="gold" onclick="alert(`Total carried: ${document.querySelectorAll('.bulk-light').length * 0.1 + document.querySelectorAll('.bulk-1').length} Bulk.`)">241.1 <b>GP</b></li>
+			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">241.1 <b>GP</b></li>
 
 			<li lang="fr">1 lézard séché</li>
 			<li lang="fr">1 fourchette rouillée</li>
@@ -416,13 +416,13 @@
 			<li>G.<a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=2206">Eye Slash</a></li>
 			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3064">Charlatan's Gloves</a></li>
 			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3065">Charm of Acid Resistance</a></li>
-			<li><a class="bulk-1" href="https://2e.aonprd.com/Equipment.aspx?ID=3032">Spacious Pouch</a>, type I</li>
+			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=3032">Spacious Pouch</a>, type I</li>
 		</ul>
 
 		<ul id="inventory">
 			<!--Weapons-->
 			<li class="br">
-				<a class="bulk-1" href="https://2e.aonprd.com/Equipment.aspx?ID=1881">Algollthu Lash</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking</a>
+				<a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=1881">Algollthu Lash</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking</a>
 				— <a href="https://2e.aonprd.com/Equipment.aspx?ID=1762">Deathdrinking</a>
 				<small>martial one-handed, 1d4S, Disarm Finesse Nonlethal Reach Trip.</small>
 				<div class="circumstancialBonus one-action" title="Algollthu Lash">Command, 1/day → the next foe you successfully Strike contracts
@@ -430,25 +430,25 @@
 			</li>
 
 			<li class="br">
-				3× <a class="bulk-light" href="https://2e.aonprd.com/Weapons.aspx?ID=358">Dagger</a>
+				3× <a data-bulk=".3" href="https://2e.aonprd.com/Weapons.aspx?ID=358">Dagger</a>
 				<small>simple one-handed, 1d4PS, Agile Finesse Thrown-10ft.</small>
 			</li>
 
 			<!--Armors-->
 			<li class="br">
-				<a class="invested bulk-1" href="https://2e.aonprd.com/Armor.aspx?ID=41">Leather Armor</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2786">Resilient</a>
+				<a class="invested" data-bulk="1" href="https://2e.aonprd.com/Armor.aspx?ID=41">Leather Armor</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2786">Resilient</a>
 				<small>light, 1 armor, 0 str, 4 dex.</small>
 			</li>
 
 			<li class="br">
-				<a class="bulk-1" href="https://2e.aonprd.com/Equipment.aspx?ID=2826">Spellguard Shield</a>
+				<a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2826">Spellguard Shield</a>
 				<small>2 shield, 6 Hard, 24 HP.</small>
 			</li>
 
-			<li>2× <a class="bulk-light" href="https://2e.aonprd.com/Equipment.aspx?ID=3308">Elixir of Life</a>, lesser <small>heals 3d6+6</small></li>
-			<li>1× <a class="bulk-light" href="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing Potion</a>, moderate <small>heals 3d8+10</small></li>
-			<li>2× <a class="bulk-light" href="https://2e.aonprd.com/Equipment.aspx?ID=3296">Antidote</a>, lesser <small>+2 vs poison for 6h</small></li>
-			<li>1× <a class="bulk-light" href="https://2e.aonprd.com/Equipment.aspx?ID=3403">Potion of Emergency Escape</a>
+			<li>2× <a data-bulk=".2" href="https://2e.aonprd.com/Equipment.aspx?ID=3308">Elixir of Life</a>, lesser <small>heals 3d6+6</small></li>
+			<li>1× <a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing Potion</a>, moderate <small>heals 3d8+10</small></li>
+			<li>2× <a data-bulk=".2" href="https://2e.aonprd.com/Equipment.aspx?ID=3296">Antidote</a>, lesser <small>+2 vs poison for 6h</small></li>
+			<li>1× <a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=3403">Potion of Emergency Escape</a>
 				<small><span class="one-action">Interact</span> → Become <a href="https://2e.aonprd.com/Conditions.aspx?ID=74">fleeing</a>, gain <u>+40ft status</u> to speeds for 1 minute, then Stride.</small></li>
 		</ul>
 

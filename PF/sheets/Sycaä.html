@@ -333,23 +333,24 @@
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="mundaneItemsWrapper">
-			<li><a class="bulk-1" href="https://2e.aonprd.com/Equipment.aspx?ID=2700">Adventurer's Pack</a></li>
-			<li><a class="bulk-light" href="https://2e.aonprd.com/Equipment.aspx?ID=2705">Basic Crafter's Book</a></li>
-			<li><a class="bulk-1 worn" href="https://2e.aonprd.com/Equipment.aspx?ID=2727">Healer's Tools, Expanded</a></li>
-			<li><a class="bulk-1 worn" href="https://2e.aonprd.com/Equipment.aspx?ID=2747">Repair Kit, Superb</a></li>
-			<li><a class="bulk-light" href="https://2e.aonprd.com/Equipment.aspx?ID=2753">Spellbook</a></li>
+			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2700">Adventurer's Pack</a></li>
+			<li><a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=2705">Basic Crafter's Book</a></li>
+			<li><a class="worn" data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2727">Healer's Tools, Expanded</a></li>
+			<li><a class="worn" data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2747">Repair Kit, Superb</a></li>
+			<li><a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=2753">Spellbook</a></li>
 
-			<li class="gold" onclick="alert(`Total carried: ${document.querySelectorAll('.bulk-light').length * 0.1 + document.querySelectorAll('.bulk-1').length} Bulk.`)">377 <b>GP</b></li>
+			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">377 <b>GP</b></li>
+
 		</ul>
 		<ul id="magicItemsWrapper">
 			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3086">Handwraps of Mighty Blows</a></li>
 			<li>G.<a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=2206">Eye Slash</a></li>
 			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3072">Crafter's Eyepiece</a></li>
 			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3059">Ring of Wizardry</a></li>
-			<li><a class="invested bulk-light" href="https://2e.aonprd.com/Equipment.aspx?ID=3091">Lifting Belt</a></li>
-			<li><a class="invested bulk-light" href="https://2e.aonprd.com/Equipment.aspx?ID=3059">Boots of Bounding</a></li>
-			<li><a class="bulk-1" href="https://2e.aonprd.com/Equipment.aspx?ID=3422">Staff of Providence</a></li>
-			<li><a class="bulk-light" href="https://2e.aonprd.com/Equipment.aspx?ID=2413">Stargazer's Spyglass</a></li>
+			<li><a class="invested" data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=3091">Lifting Belt</a></li>
+			<li><a class="invested" data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=3059">Boots of Bounding</a></li>
+			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=3422">Staff of Providence</a></li>
+			<li><a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=2413">Stargazer's Spyglass</a></li>
 		</ul>
 
 		<ul id="inventory">
@@ -374,14 +375,14 @@
 			</li>
 
 			<li class="br">
-				<a class="bulk-1" href="https://2e.aonprd.com/Equipment.aspx?ID=2826">Spellguard Shield</a> — <em><a href="https://2e.aonprd.com/Equipment.aspx?ID=2811">Lesser Reinforcing</a></em>
+				<a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2826">Spellguard Shield</a> — <em><a href="https://2e.aonprd.com/Equipment.aspx?ID=2811">Lesser Reinforcing</a></em>
 				[<i lang="qu-PE" title="'Scale' in Quechua.">Ñiqi</i>]
 				<small>2 shield, 6+<em>3</em> Hard, 24+<em>52</em> HP.</small>
 				<small><a href="https://2e.aonprd.com/Actions.aspx?ID=2384">Repair</a>: Crafting <a href="https://2e.aonprd.com/Rules.aspx?ID=2627">DC 23</a>.</small>
 				<div class="circumstancialBonus">2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=522">Fortifying Pebble</a> <small><span class="no-action">Envision</span> → Reduce dmg by 10.</small></div>
 			</li>
 
-			<li>1× <a class="bulk-light" href="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing potion</a>, moderate <small>heals 3d8+10</small></li>
+			<li>1× <a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing potion</a>, moderate <small>heals 3d8+10</small></li>
 			<li lang="fr">2× coeurs électriques trouvés dans des zombies</li>
 		</ul>
 
