@@ -67,7 +67,7 @@
 				<dd>Pharasma</dd>
 
 				<dt>Senses</dt>
-				<dd title="Fetchling Ancestry"><a href="https://2e.aonprd.com/Rules.aspx?ID=415">Darkvision</a></dd>
+				<dd title="Fetchling Ancestry"><a href="https://2e.aonprd.com/Rules.aspx?ID=2410">Darkvision</a></dd>
 
 				<dt>Speed</dt>
 				<dd>25 ft.</dd>
@@ -130,7 +130,7 @@
 				<small>3 cha, 2 prf, 1 lvl</small>
 				<div class="circumstancialBonus" title="Esoteric Lore">Can be used on haunts, curses, and any creatures.</div>
 				<div class="circumstancialBonus" title="Diverse Lore">Can be used on anything else with <u>-2 circ</u>.</div>
-				<div class="circumstancialBonus" title="Dubious Knowledge">When you <a href="https://2e.aonprd.com/Actions.aspx?ID=26">Recall Knowledge</a>,
+				<div class="circumstancialBonus" title="Dubious Knowledge">When you <a href="https://2e.aonprd.com/Actions.aspx?ID=2367">Recall Knowledge</a>,
 					on a Failure, gain one true and one false info.</div>
 			</li>
 		</ul>
@@ -153,7 +153,7 @@
 					<strong>18</strong>
 					<b>AC</b>
 					<small>10, 1 dex, 2 prf, 1 lvl, 4 item</small>
-					<div class="circumstancialBonus"><u>+1 circ</u> when casting <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=280">shield</a> (↻ 5 Hardness)</div>
+					<div class="circumstancialBonus"><u>+1 circ</u> when casting <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1671">shield</a> (↻ 5 Hardness)</div>
 				</li>
 				<li>
 					<strong>7</strong>
@@ -181,7 +181,7 @@
 				</div>
 
 				<h2 class="reaction"><a href="https://2e.aonprd.com/Actions.aspx?ID=1234">Implement's Interruption</a></h2>
-				<h2 class="one-action"><a href="https://2e.aonprd.com/Skills.aspx?ID=7">Demoralize</a></h2>
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Actions.aspx?ID=2395">Demoralize</a></h2>
 			</div>
 			<!--end of Basics: Statblock and Weapons-->
 		</section>
@@ -198,20 +198,20 @@
 
 			<div class="ample">
 				<h2 class="one-action"><a href="https://2e.aonprd.com/Actions.aspx?ID=1227">Exploit Vulnerability</a> <b>1/round</b></h2>
-				<p>Make an Esoteric Lore check vs a foe's <a href="https://2e.aonprd.com/Rules.aspx?ID=554">level's DC</a>.</p>
+				<p>Make an Esoteric Lore check vs a foe's <a href="https://2e.aonprd.com/Rules.aspx?ID=2627">level's DC</a>.</p>
 				<dl id="exploit" class="condensed">
 					<dt>Crit</dt>
 					<dd>As success, but you learn <em>all</em> of the foe's resistances, weaknesses, and immunities.</dd>
 
 					<dt>Success</dt>
-					<dd>Learn the foe's highest weakness. Gain <b>Mortal Weakness</b> or <b>Personal Antithesis</b>.
-						<span title="Diverse Lore">Also, if your result would succeed on <a href="https://2e.aonprd.com/Actions.aspx?ID=26">Recall Knowledge</a>, gain info.</span></dd>
+					<dd>Learn the foe's highest weakness. Gain <b>Mortal Weakness</b> or <b>Personal Antithesis</b>.</dd>
+					<dd title="Diverse Lore">Also, if your result would succeed on <a href="https://2e.aonprd.com/Actions.aspx?ID=2367">Recall Knowledge</a>, gain info.</dd>
 
 					<dt>Failure</dt>
 					<dd>Gain <b>Personal Antithesis</b>.</dd>
 
 					<dt>Fumble</dt>
-					<dd class="br">You're <a href="https://2e.aonprd.com/Conditions.aspx?ID=16">flat-footed</a> until your next turn.</dd>
+					<dd class="br">You're <a href="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> for 1 round³.</dd>
 
 					<dt>Mortal Weakness</dt>
 					<dd>Against foes of that species, your strikes trigger the highest weakness.</dt>
@@ -225,28 +225,26 @@
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="mundaneItemsWrapper">
-			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=2700">Adventurer's Pack</a></li>
-		</ul>
-		<ul id="magicItemsWrapper">
-			<li>.5 <b>GP</b></li>
+			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2700">Adventurer's Pack</a></li>
+
+			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">0.5 <b>GP</b></li>
 		</ul>
 
 		<ul id="inventory">
 			<!--Weapons-->
-			<li title="1 Bulk" class="br">
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=386">Longsword</a>
+			<li class="br">
+				<a data-bulk="1" href="https://2e.aonprd.com/Weapons.aspx?ID=386">Longsword</a>
 				<small>martial one-handed, 1d8PS.</small>
 			</li>
 
 			<!--Armors-->
-			<li title="2 Bulk" class="br">
-				<a href="https://2e.aonprd.com/Armor.aspx?ID=47">Breastplate</a>
+			<li class="br">
+				<a data-bulk="2" href="https://2e.aonprd.com/Armor.aspx?ID=47">Breastplate</a>
 				<small>medium, 4 armor, 3 str, 1 dex.</small>
 			</li>
 
 			<!--Consumables-->
-			<li title="L Bulk">1× <a href="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing Potion</a>, minor
-				<small>heals 1d8</small></li>
+			<li>1× <a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing Potion</a>, minor <small>heals 1d8</small></li>
 		</ul>
 
 		<!-- title NOTES -->
