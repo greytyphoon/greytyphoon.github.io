@@ -398,7 +398,7 @@
 			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2700">Adventurer's Pack</a></li>
 			<li><a class="worn" data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2727">Healer's Tools, Expanded</a></li>
 
-			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">386.1 <b>GP</b></li>
+			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">386.2 <b>GP</b></li>
 		</ul>
 		<ul id="magicItemsWrapper">
 			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3086">Handwraps of Mighty Blows</a></li>
@@ -410,19 +410,18 @@
 
 		<ul id="inventory">
 			<!--Weapons-->
-			<li class="br">
+			<li>
 				<a href="https://2e.aonprd.com/Weapons.aspx?ID=356">Fists</a> +2 G.<a href="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking</a>
 				— <a class="electricity" href="https://2e.aonprd.com/Equipment.aspx?ID=2847">Shock</a> &amp; <a href="https://2e.aonprd.com/Equipment.aspx?ID=2644">Rooting</a>
 				<small>unarmed, 1d4B, Agile Finesse Nonlethal.</small>
 			</li>
-
 			<li class="br">
-				2× <a data-bulk=".2" href="https://2e.aonprd.com/Weapons.aspx?ID=358">Dagger</a>
+				<a data-bulk=".1" href="https://2e.aonprd.com/Weapons.aspx?ID=358">Dagger</a>
 				<small>simple one-handed, 1d4PS, Agile Finesse Thrown-10ft.</small>
 			</li>
 
 			<!--Armors-->
-			<li class="br">
+			<li>
 				<a class="invested" data-bulk=".1" href="https://2e.aonprd.com/Armor.aspx?ID=39">Explorer's Clothing</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2786">Resilient</a>
 				<small>unarmored, 0 armor, - str, 5 dex.</small>
 				<div class="circumstancialBonus">2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=512">Snapleaf</a> <small><span class="reaction">Interact</span> →
