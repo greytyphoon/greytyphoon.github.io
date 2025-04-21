@@ -25,6 +25,7 @@ h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spe
 .invested::after { content: "\a0ᶥ"; }
 .worn::after { content: "\a0ʷ"; }
 .gold { font-size: 1rem; margin: .5rem 0; }
+.material, a.material, a.material:visited { color: var(--tint-dark); }
 
 /* Schools */
 .spell.bonus, a.spell.bonus, a.spell.bonus:visited,

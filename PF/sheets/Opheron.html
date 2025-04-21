@@ -378,8 +378,8 @@
 			<div>
 				<h2>Scrolls</h2>
 				<ul>
-					<li>2× <a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=148">heal</a>²</li>
-					<li>1× <a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=317">summon celestial</a>⁵</li>
+					<li>2× <a class="spell three-actions" data-bulk=".2" href="https://2e.aonprd.com/Spells.aspx?ID=148">heal</a>²</li>
+					<li>1× <a class="spell three-actions" data-bulk=".1" href="https://2e.aonprd.com/Spells.aspx?ID=317">summon celestial</a>⁵</li>
 				</ul>
 			</div>
 				<h2 title="Blessed Tattoo"><a class="spell reaction" href="https://2e.aonprd.com/Spells.aspx?ID=238">protection vs evil</a> <b>1/day</b></h2>
@@ -388,85 +388,81 @@
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="mundaneItemsWrapper">
-			<li title="L Bulk">Rations (7)</li>
-			<li>Holly &amp; Mistletoe</li>
-			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools, Expanded</a></li>
-			<li title="L Bulk">Religious Symbol, Wood</li>
-			<li title="1 Bulk" class="br">Repair Kit</li>
+			<li data-bulk=".1">Rations (7)</li>
+			<li><a class="worn" href="https://2e.aonprd.com/Equipment.aspx?ID=26">Holly &amp; Mistletoe</a></li>
+			<li>E.<a class="worn" data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools</a></li>
+			<li><a class="worn" data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=41">Religious Symbol — Wood</a></li>
+			<li class="br"><a class="worn" data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=43">Repair Kit</a></li>
 			<li>Backpack</li>
-			<li title="L Bulk">Bedroll</li>
+			<li data-bulk=".1">Bedroll</li>
 			<li>Bandolier × 2</li>
 			<li class="br">Sheath × 3</li>
 			<li>Chalk</li>
 			<li>Compass</li>
-			<li title="L Bulk">Crowbar</li>
-			<li title="1 Bulk">Fishing Tackle</li>
+			<li data-bulk=".1">Crowbar</li>
+			<li data-bulk="1">Fishing Tackle</li>
 			<li>Flint &amp; Steel</li>
-			<li title="L Bulk">Rope</li>
+			<li data-bulk=".1">Rope</li>
 			<li>Signal whistle</li>
 			<li>Soap</li>
-			<li title="L Bulk">Waterskin</li>
-			<li title="L Bulk">Winter coat, Silki</li>
+			<li data-bulk=".1">Waterskin</li>
+			<li data-bulk=".1">Winter Coat [Silki]</li>
 		</ul>
 		<ul id="magicItemsWrapper">
-			<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=441">Handwraps of Mighty Blows</a> +1</li>
-			<li title="L Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=413">Boots of Elvenkind</a></li>
-			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=357">Staff of Healing</a></li>
-			<li class="br"><a href="https://2e.aonprd.com/Equipment.aspx?ID=498">Blessed Tattoo</a> [Silki's Emblem]</li>
-			<li>383.87 <b>GP</b></li>
+			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=441">Handwraps of Mighty Blows</a> +1</li>
+			<li><a class="invested" data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=413">Boots of Elvenkind</a></li>
+			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=357">Staff of Healing</a></li>
+			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=498">Blessed Tattoo</a> [Silki's Emblem]</li>
+
+			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">383.87 <b>GP</b></li>
 		</ul>
 
 		<ul id="inventory">
 			<!--Weapons-->
-			<li title="1 Bulk">
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=45">Trident</a> +1
-				<a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
-				<a href="https://2e.aonprd.com/Equipment.aspx?ID=301">Returning</a>
+			<li>
+				<a data-bulk="1" href="https://2e.aonprd.com/Weapons.aspx?ID=45">Trident</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
+				— <a href="https://2e.aonprd.com/Equipment.aspx?ID=301">Returning</a>
 				<small>martial one-handed, 1d8P, Thrown-20ft.</small>
 				<div class="circumstancialBonus">2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=211">Fear Gem</a></div>
 			</li>
-			<li title="L Bulk">
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=9">Sickle</a>
+			<li>
+				<a data-bulk=".1" href="https://2e.aonprd.com/Weapons.aspx?ID=9">Sickle</a>
 				<small>simple one-handed, 1d4S, Agile Finesse Trip.</small>
 			</li>
-			<li title="5 x L Bulk" class="br">
-				5× <a href="https://2e.aonprd.com/Weapons.aspx?ID=71">Javelin</a>
+			<li class="br">
+				5× <a data-bulk=".5" href="https://2e.aonprd.com/Weapons.aspx?ID=71">Javelin</a>
 				<small>simple one-handed, 1d6P, Thrown-30ft.</small>
 			</li>
 
 			<!--Armors-->
-			<li title="2 Bulk">
-				<a href="https://2e.aonprd.com/Armor.aspx?ID=7">Hide Armor</a> +1
+			<li>
+				<a class="invested" data-bulk="2" href="https://2e.aonprd.com/Armor.aspx?ID=7">Hide Armor</a> +1
 				<small>medium, 3 armor, 2 str, 2 dex.</small>
 				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=217">Hunter's Bane</a></div>
 			</li>
-			<li title="L Bulk">
-				<a href="https://2e.aonprd.com/Armor.aspx?ID=3">Padded Armor</a>
+			<li>
+				<a data-bulk=".1" href="https://2e.aonprd.com/Armor.aspx?ID=3">Padded Armor</a>
 				<small>light, 1 armor, 0 str, 3 dex, Comfort.</small>
 			</li>
-			<li title="1 Bulk" class="br">
-				<a href="https://2e.aonprd.com/Equipment.aspx?ID=327">Sturdy Shield</a> [Belor's Emblem]
+			<li class="br">
+				Mi.<a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=327">Sturdy Shield</a> [Belor's Emblem]
 				<small>2 shield, -0ft, 8 Hard, 64 HP.</small>
 				<div class="circumstancialBonus">
-					with a <a href="https://2e.aonprd.com/Weapons.aspx?ID=41">Shield Boss</a> +1
-					<a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
+					with a <a href="https://2e.aonprd.com/Weapons.aspx?ID=41">Shield Boss</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
 					<small>martial one-handed, 1d6B.</small>
 				</div>
 				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=522">Fortifying Pebble</a></div>
 			</li>
 
 			<!--Consumables-->
-			<li>4× Minor <a href="https://2e.aonprd.com/Equipment.aspx?ID=186">Healing Potion</a>
-				<small>heals 1d8</small></li>
-			<li>2× Lesser <a href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a>
-				<small><u title="Lesser">+2 item</u> vs poison, lasts 6h</small></li>
-			<li>2× Lesser <a href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a>
-				<small><u title="Lesser">+2 item</u> vs disease, lasts 24h</small></li>
-			<li>2× Lesser <a href="https://2e.aonprd.com/Equipment.aspx?ID=89">Darkvision Elixir</a>
-				<small>darkvision, lasts 10m</small></li>
-			<li>1× <a href="https://2e.aonprd.com/Equipment.aspx?ID=187">Invisibility Potion</a>
-				<small>undetected, lasts 10 min</small></li>
-			<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=244">Feather Token</a> (20ft Ladder)</li>
+			<li>4× Mi.<a data-bulk=".4" href="https://2e.aonprd.com/Equipment.aspx?ID=186">Healing Potion</a> <small>heals 1d8</small></li>
+			<li>2× L.<a data-bulk=".2" href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a> <small>+2 vs poison for 6h</small></li>
+			<li>2× L.<a data-bulk=".2" href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a> <small>+2 vs disease for 24h</small></li>
+			<li>2× L.<a data-bulk=".2" href="https://2e.aonprd.com/Equipment.aspx?ID=89">Darkvision Elixir</a> <small>10m</small></li>
+			<li>1× <a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=187">Invisibility Potion</a>
+				<small><span class="one-action">Interact</span> → Become <a href="https://2e.aonprd.com/Conditions.aspx?ID=39">undetected</a> for 10 minutes,
+					like <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1577">invisibility</a>.</small></li>
+			<li>1× <a href="https://2e.aonprd.com/Equipment.aspx?ID=244">Feather Token</a> — 20ft Ladder</li>
 		</ul>
 
 		<!-- title NOTES -->
@@ -484,7 +480,7 @@
 			<table id="wishlist">
 				<thead><tr><th colspan="3">Wishlist</th></tr></thead>
 				<tbody>
-					<tr><td><a href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold Iron weapons</a></td>			<td>2</td>	<td>20$</td></tr>
+					<tr><td><a class="material" href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold Iron weapons</a></td>			<td>2</td>	<td>20$</td></tr>
 					<tr><td><a href="https://2e.aonprd.com/Equipment.aspx?ID=447">Lifting Belt</a></td>					<td>4</td>	<td>80$</td></tr>
 					<tr><td><a href="https://2e.aonprd.com/Equipment.aspx?ID=325">Spellguard Shield</a></td>			<td>6</td>	<td>250$</td></tr>
 					<tr><td><a href="https://2e.aonprd.com/Equipment.aspx?ID=424">Cloak of Elvenkind</a></td>			<td>7</td>	<td>360$</td></tr>

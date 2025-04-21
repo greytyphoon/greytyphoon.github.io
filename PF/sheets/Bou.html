@@ -269,37 +269,34 @@
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="mundaneItemsWrapper">
-			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=1">Adventurer's Pack</a></li>
-			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools, Expanded</a></li>
-		</ul>
-		<ul id="magicItemsWrapper">
-			<li>15 <b>GP</b></li>
+			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=1">Adventurer's Pack</a></li>
+			<li>E.<a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools</a></li>
+
+			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">15 <b>GP</b></li>
 		</ul>
 
 		<ul id="inventory">
 			<!--Weapons-->
-			<li title="1 Bulk" class="br">
-				<a href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold-iron</a>
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=31">Longsword</a> +1
+			<li class="br">
+				<a data-bulk="1" href="https://2e.aonprd.com/Weapons.aspx?ID=31">Longsword</a> +1
+				— <a class="material" href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold-iron</a>
 				<small>martial one-handed, 1d8PS.</small>
 				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=230">Owlbear's Claw</a></div>
 			</li>
 
 			<!--Armors-->
-			<li title="2 Bulk" class="br">
-				<a href="https://2e.aonprd.com/Armor.aspx?ID=10">Breastplate</a>
+			<li class="br">
+				<a data-bulk="2" href="https://2e.aonprd.com/Armor.aspx?ID=10">Breastplate</a>
 				<small>medium, 4 armor, 3 str, 1 dex.</small>
 			</li>
 
 			<!--Consumables-->
-			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=186">Healing Potion</a>, minor
-				<small>heals 1d8</small></li>
-			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a>, lesser
-				<small><u title="Lesser">+2 item</u> vs poison, lasts 6h</small></li>
-			<li>2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a>, lesser
-				<small><u title="Lesser">+2 item</u> vs disease, lasts 24h</small></li>
-			<li>1× <a href="https://2e.aonprd.com/Equipment.aspx?ID=187">Invisibility Potion</a>
-				<small>undetected, lasts 10 min</small></li>
+			<li>2× Mi.<a data-bulk=".2" href="https://2e.aonprd.com/Equipment.aspx?ID=186">Healing Potion</a> <small>heals 1d8</small></li>
+			<li>2× L.<a data-bulk=".2" href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a> <small>+2 vs poison for 6h</small></li>
+			<li>2× L.<a data-bulk=".2" href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a> <small>+2 vs disease for 24h</small></li>
+			<li>1× <a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=2944">Invisibility Potion</a>
+				<small><span class="one-action">Interact</span> → Become <a href="https://2e.aonprd.com/Conditions.aspx?ID=39">undetected</a> for 10 minutes,
+					like <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1577">invisibility</a>.</small></li>
 		</ul>
 
 		<!-- title NOTES -->
@@ -307,7 +304,7 @@
 			<hr>
 			<p>Guide used: <a href="https://docs.google.com/document/d/1FUqLoqqgyLsZUSUSrsb5mjJBrpmdyeg5Jy_M_6A-XdY/edit">Thaumaturge guide</a>.</p>
 
-			<p>Originally named <i>Doigts d'échardes</i>, but it was a mouthful.</p>
+			<p>Originally named <i lang="fr-CA" title="'Splinter-fingers' in French.">Doigts d'échardes</i>, but it was a mouthful.</p>
 
 			<dl class="charInfo">
 				<dt>Quality</dt>

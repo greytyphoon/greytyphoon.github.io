@@ -274,79 +274,73 @@
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="mundaneItemsWrapper">
-			<li title="L Bulk">Rations (10)</li>
-			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools, Expanded</a></li>
-			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=2">Alchemist's Tools</a></li>
-			<li title="L Bulk" class="br"><a href="https://2e.aonprd.com/Equipment.aspx?ID=6">Basic Crafter's Book</a></li>
+			<li data-bulk=".1">Rations (10)</li>
+			<li>E.<a class="worn" data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools</a></li>
+			<li><a class="worn" data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=2">Alchemist's Tools</a></li>
+			<li class="br"><a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=6">Basic Crafter's Book</a></li>
 			<li>Backpack</li>
-			<li title="L Bulk">Bedroll</li>
+			<li data-bulk=".1">Bedroll</li>
 			<li>Bandolier</li>
 			<li class="br">Sheath</li>
 			<li>Flint &amp; Steel</li>
-			<li title="L Bulk">Rope</li>
+			<li data-bulk=".1">Rope</li>
 			<li>Signal whistle</li>
 			<li>Soap</li>
-			<li title="L Bulk">Waterskin</li>
+			<li data-bulk=".1">Waterskin</li>
+			<li data-bulk=".1">Crowbar</li>
 		</ul>
 		<ul id="magicItemsWrapper">
-			<li title="L Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=413">Boots of Elvenkind</a></li>
-			<li title="L Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=410">Belt of the Five Kings</a></li>
-			<li title="L Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=424">Cloak of Elvenkind</a></li>
-			<li>Greater <a href="https://2e.aonprd.com/Equipment.aspx?ID=455">Ring of Fire Resistance</a></li>
-			<li title="1 Bulk" class="br"><a href="https://2e.aonprd.com/Equipment.aspx?ID=249">Bag of Holding</a>, Type I</li>
-			<li>440 <b>GP</b></li>
+			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=249">Bag of Holding</a>, Type I</li>
+			<li><a class="invested" data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=410">Belt of the Five Kings</a></li>
+			<li><a class="invested" data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=413">Boots of Elvenkind</a></li>
+			<li><a class="invested" data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=424">Cloak of Elvenkind</a></li>
+			<li>G.<a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=455">Ring of Fire Resistance</a></li>
+
+			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">440 <b>GP</b></li>
+
 			<li>Draconic crafting material, worth 500 <b>GP</b></li>
 			<li>Plant de Calathgar pour Framboise</li>
 			<li>Miroir élégant de Ranalc et Nyrissa</li>
 			<li>Échelle de corde</li>
-			<li>Crowbar</li>
 		</ul>
 
 		<ul id="inventory">
 			<!--Weapons-->
-			<li title="1 Bulk">
-				<a href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold-iron</a>
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=36">Rapier</a> +2
-				<a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
-				&mdash; <a class="cold" href="https://2e.aonprd.com/Equipment.aspx?ID=296">Frost</a>
+			<li>
+				<a data-bulk="1" href="https://2e.aonprd.com/Weapons.aspx?ID=36">Rapier</a> +2 <a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
+				— <a class="material" href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold-iron</a>
+				— <a class="cold" href="https://2e.aonprd.com/Equipment.aspx?ID=296">Frost</a>
 				&amp; <a href="https://2e.aonprd.com/Equipment.aspx?ID=309">Wounding</a>
 				<small>martial one-handed, 1d6P, Deadly-d8 Disarm Finesse.</small>
 				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=230">Owlbear's Claw</a></div>
-				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=227">Mummified Bat</a></div>
 			</li>
-			<li title="1 Bulk">
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=77">Shortbow</a> +1
-				<a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
+			<li>
+				<a data-bulk="1" href="https://2e.aonprd.com/Weapons.aspx?ID=77">Shortbow</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
 				<small>martial two-handed, 1d6P @ 60ft, Deadly-d10.</small>
 			</li>
-			<li title="L Bulk" class="br">
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=43">Shortsword</a> +1
-				<a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
-				&mdash; <a href="https://2e.aonprd.com/Equipment.aspx?ID=297">Ghost Touch</a> [Jogoule's]
+			<li class="br">
+				<a data-bulk=".1" href="https://2e.aonprd.com/Weapons.aspx?ID=43">Shortsword</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=280">Striking</a>
+				— <a href="https://2e.aonprd.com/Equipment.aspx?ID=297">Ghost Touch</a> [Jogoule's]
 				<small>martial one-handed, 1d6PS, Agile Finesse Versatile.</small>
+				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=227">Mummified Bat</a></div>
 			</li>
 
 			<!--Armors-->
-			<li title="1 Bulk">
-				<a href="https://2e.aonprd.com/Armor.aspx?ID=4">Leather Armor</a> +1
-				<a href="https://2e.aonprd.com/Equipment.aspx?ID=279">Resilient</a>
+			<li>
+				<a class="invested" data-bulk="1" href="https://2e.aonprd.com/Armor.aspx?ID=4">Leather Armor</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=279">Resilient</a>
 				<small>light, 1 armor, 0 str, 4 dex.</small>
 			</li>
-			<li title="1 Bulk" class="br">
-				<a href="https://2e.aonprd.com/Equipment.aspx?ID=325">Spellguard Shield</a> [Magical Parmesan Wheel]
+			<li class="br">
+				<a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=325">Spellguard Shield</a> [Magical Parmesan Wheel]
 				<small>2 shield, 6 Hard, 24 HP.</small>
 			</li>
 
 			<!--Consumables-->
-			<li>1× Calathgar Poison</li>
-			<li>1× Moderate <a href="https://2e.aonprd.com/Equipment.aspx?ID=91">Elixir of Life</a>
-				<small>heals <u title="Moderate">5d6+12</u></small></li>
-			<li>1× Lesser <a href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a>
-				<small><u title="Lesser">+2 item</u> vs poison, lasts 6h</small></li>
-			<li>2× Lesser <a href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a>
-				<small><u title="Lesser">+2 item</u> vs disease, lasts 24h</small></li>
-			<li>2× Lesser <a href="https://2e.aonprd.com/Equipment.aspx?ID=89">Darkvision Elixir</a>
-				<small>darkvision, lasts 10m</small></li>
+			<li data-bulk=".1">1× Calathgar Poison</li>
+			<li>1× Mo.<a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=91">Elixir of Life</a> <small>heals 5d6+12</small></li>
+			<li>1× L.<a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=80">Antidote</a> <small>+2 vs poison for 6h</small></li>
+			<li>2× L.<a data-bulk=".2" href="https://2e.aonprd.com/Equipment.aspx?ID=81">Antiplague</a> <small>+2 vs disease for 24h</small></li>
+			<li>2× L.<a data-bulk=".2" href="https://2e.aonprd.com/Equipment.aspx?ID=89">Darkvision Elixir</a> <small>10m</small></li>
 		</ul>
 
 		<!-- title NOTES -->
@@ -464,7 +458,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><a href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold-iron</a> rapier</td>
+						<td><a class="material" href="https://2e.aonprd.com/Equipment.aspx?ID=272">Cold-iron</a> rapier</td>
 						<td>2</td>
 						<td>20</td>
 						<td>&nbsp;</td>
