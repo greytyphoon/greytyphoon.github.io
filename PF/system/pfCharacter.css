@@ -1,4 +1,4 @@
-/** Created by Rémi Doutre, 2015-2024. Public domain. **/
+/** Created by Rémi Doutre, 2015-2025. Public domain. **/
 @import url("pfGeneric.css");
 
 ul:not(.list), ol:not(.list), dl:not(.list) {
@@ -35,13 +35,17 @@ dl#subheader > dd.archetype::before {
 }
 
 /*feats*/
-dl#featsWrapper > dt{
+#build-info dl > dt,
+dl#featsWrapper > dt {
 	float:left;
 	text-align: right;
 	font-variant: small-caps;
-	width: 95px; /*longer names should be shortened*/
+	width: 95px;
+	min-width: 95px;
+	max-width: 95px; /*longer names should be shortened*/
 	vertical-align: top; }
-dl#featsWrapper > dd{
+#build-info dl > dd,
+dl#featsWrapper > dd {
 	margin-left: 100px; } /* the floating <dt> will float above this margin */
 
 @media print, screen and (min-width: 768px) {

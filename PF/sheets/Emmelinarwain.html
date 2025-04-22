@@ -23,7 +23,6 @@
 		<header>
 			<h1>Emmelinarwain, wind of january</h1>
 			NG Medium Humanoid
-			<div id="xp">0 / 1,000</div>
 		</header>
 
 		<section id="headerInfo" class="row">
@@ -76,72 +75,53 @@
 		<!-- title SKILLS & FEATS-->
 		<hr>
 		<img id="main-picture" src="https://i.pinimg.com/originals/19/e7/5f/19e75f355de947e0a2f59c530f57f43e.jpg" alt="Elf Ranger with Bow" onclick="document.getElementById('large-picture').showModal()">
-		<dl id="featsWrapper">
-			<dt>free</dt>
-			<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=50">Beastmaster Dedication</a></dd>
-			<dt>human 1</dt>
-			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=70">NA</a> &gt;
-				<a href="https://2e.aonprd.com/Feats.aspx?ID=311">Animal Companion</a></dd>
-			<dt>ranger 1</dt>
-			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=1764">Heal Companion</a></dd>
-			<dt>ranger 2</dt>
-			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=492">Hunted Shot</a></dd>
-			<dt>general 3</dt>
-			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=784">Fleet</a></dd>
-			<dt>ranger 4</dt>
-			<dd class="br"><a href="https://2e.aonprd.com/Feats.aspx?ID=1903">Mature Beastmaster Companion</a></dd>
-
-			<dt>background</dt>
-			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=780">Experienced Tracker</a></dd>
-			<dt>skill 2</dt>
-			<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=760">Battle Medicine</a></dd>
-		</dl>
+		<button id="featsWrapper" class="br noprint" onclick="document.getElementById('build-info').showModal()">Open Feats</button>
 
 		<!-- SKILLS -->
 		<ul class="summations">
 			<li>
 				<strong>9</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=1" title="Trained by Class (Free)">Acrobatics</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=1">Acrobatics</a>
 				<small>4 dex, 2 prf, 3 lvl</small>
 			</li>
 			<li>
 				<strong>6</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=2" title="Trained by Class (Free)">Arcana</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=2">Arcana</a>
 				<small>1 int, 2 prf, 3 lvl</small>
 			</li>
 			<li>
 				<strong>7</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=3" title="Trained by Class (Free)">Athletics</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=3">Athletics</a>
 				<small>2 str, 2 prf, 3 lvl</small>
 			</li>
 			<li>
 				<strong>5</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=6" title="Trained by Class (Free)">Diplomacy</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=6">Diplomacy</a>
 				<small>0 cha, 2 prf, 3 lvl</small>
 			</li>
 			<li>
 				<strong>7</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=9" title="Trained by Skilled Human">Medicine</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=9">Medicine</a>
 				<small>1 wis, 2 prf, 3 lvl, <u title="Healer's Tools, Expanded">1 item</u></small>
 			</li>
 			<li>
 				<strong>8</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=10" title="Trained by Class (Fixed), Expert by Increase (lvl3)">Nature</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=10">Nature</a>
 				<small>1 wis, 4 prf, 3 lvl</small>
 			</li>
 			<li>
 				<strong>6</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=14" title="Trained by Class (Free)">Society</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=14">Society</a>
 				<small>1 int, 2 prf, 3 lvl</small>
 			</li>
 			<li>
 				<strong>9</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=15" title="Trained by Background (Survival was already trained)">Stealth</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=15">Stealth</a>
 				<small>4 dex, 2 prf, 3 lvl</small>
 			</li>
 			<li class="br">
 				<strong>9</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=16" title="Trained by Class (Fixed), Expert by Class (Fixed)">Survival</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=16">Survival</a>
 				<small>1 wis, 4 prf, 3 lvl, <u title="Coyote Cloak">1 item</u></small>
 				<div class="circumstancialBonus" title="Hunted Prey"><u>+2 circ</u> when tracking hunted prey.</div>
 				<div class="circumstancialBonus" title="Experienced Tracker">Track at full speed with -5 penalty.</div>
@@ -150,7 +130,7 @@
 
 			<li>
 				<strong>8</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=8" title="Trained by Background, Expert by Background">Legal Lore</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">Legal Lore</a>
 				<small>1 int, 4 prf, 3 lvl</small>
 			</li>
 		</ul>
@@ -215,51 +195,52 @@
 		<section class="row">
 			<div>
 				<h2 class="one-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=760">Battle Medicine</a></h2>
-				<h2 class="one-action"><a href="https://2e.aonprd.com/Actions.aspx?ID=10">Hunt Prey</a> (<a href="https://2e.aonprd.com/Feats.aspx?ID=492">Hunted Shot</a>)</h2>
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Actions.aspx?ID=10">Hunt Prey</a> (<a class="one-action" href="https://2e.aonprd.com/Feats.aspx?ID=492">Hunted Shot</a>)</h2>
 			</div>
 			<div>
 				<h2 class="two-actions"><a href="https://2e.aonprd.com/Spells.aspx?ID=771">Heal Companion</a> <b>1 FP</b></h2>
-				<p>For 2 actions, heal your companion by <u>2d10+16</u> within 30ft.</p>
+				<p>Heal your companion by <u>2d10+16</u> within 30ft.</p>
 			</div>
 		</section>
 
 		<!-- title EQUIPMENT -->
 		<hr>
 		<ul id="mundaneItemsWrapper">
-			<li title="L Bulk">Rations (10)</li>
-			<li title="1 Bulk"><a href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools, Expanded</a></li>
+			<li data-bulk=".1">Rations (10)</li>
+			<li>E.<a class="worn"  data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=25">Healer's Tools</a></li>
 			<li>Backpack</li>
-			<li title="L Bulk" class="br">Bedroll</li>
+			<li data-bulk=".1" class="br">Bedroll</li>
 			<li>Chalk</li>
 			<li>Compass</li>
-			<li title="L Bulk">Crowbar</li>
+			<li data-bulk=".1">Crowbar</li>
 			<li>Flint &amp; Steel</li>
-			<li title="L Bulk">Rope</li>
+			<li data-bulk=".1">Rope</li>
 			<li>Signal whistle</li>
 			<li>Soap</li>
-			<li title="L Bulk">Waterskin</li>
+			<li data-bulk=".1">Waterskin</li>
 		</ul>
 		<ul id="magicItemsWrapper">
-			<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=426">Coyote Cloak</a></li>
-			<li>5 <b>GP</b></li>
+			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=426">Coyote Cloak</a></li>
+
+			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">5 <b>GP</b></li>
 		</ul>
 
 		<ul id="inventory">
 			<!--Weapons-->
-			<li title="L Bulk">
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=75">Composite Shortbow</a> +1
+			<li>
+				<a data-bulk=".1" href="https://2e.aonprd.com/Weapons.aspx?ID=75">Composite Shortbow</a> +1
 				<small>martial two-handed, 1d6P @ 60ft, Deadly-d10 Propulsive.</small>
 				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=230">Owlbear's Claw</a></div>
 			</li>
-			<li title="L Bulk" class="br">
-				<a href="https://2e.aonprd.com/Weapons.aspx?ID=43">Shortsword</a> +1
+			<li class="br">
+				<a data-bulk=".1" href="https://2e.aonprd.com/Weapons.aspx?ID=43">Shortsword</a> +1
 				<small>martial one-handed, 1d6PS, Agile Finesse.</small>
 				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=230">Owlbear's Claw</a></div>
 			</li>
 
 			<!--Armors-->
-			<li title="1 Bulk">
-				<a href="https://2e.aonprd.com/Armor.aspx?ID=4">Leather Armor</a>
+			<li>
+				<a data-bulk="1" href="https://2e.aonprd.com/Armor.aspx?ID=4">Leather Armor</a>
 				<small>light, 1 armor, 0 str, 4 dex.</small>
 			</li>
 		</ul>
@@ -305,6 +286,54 @@
 				→ <a href="https://2e.aonprd.com/Archetypes.aspx?ID=59">Eldritch Archer</a>, but it sucked.</p>
 		</section>
 	</div>
+
+	<dialog id="build-info" class="info" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<section class="row">
+			<dl class="charInfo">
+				<dt>free</dt>
+				<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=50">Beastmaster Dedication</a></dd>
+				<dt>human 1</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=70">NA</a> &gt;
+					<a href="https://2e.aonprd.com/Feats.aspx?ID=311">Animal Companion</a></dd>
+				<dt>ranger 1</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=1764">Heal Companion</a></dd>
+				<dt>ranger 2</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=492">Hunted Shot</a></dd>
+				<dt>general 3</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=784">Fleet</a></dd>
+				<dt>ranger 4</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=1903">Mature Beastmaster Companion</a></dd>
+			</dl>
+
+			<dl class="charInfo">
+				<dt>background</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=780">Experienced Tracker</a></dd>
+				<dt>skill 2</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=760">Battle Medicine</a></dd>
+			</dl>
+
+			<dl class="charInfo">
+				<dt>human 1</dt>
+				<dd>Trained, Medicine</dd>
+				<dt>background</dt>
+				<dd>Trained, Survival*</dd>
+				<dt>ranger 1</dt>
+				<dd>Trained, Nature*</dd>
+				<dd>Trained, Acrobatics <small>Survival*</small></dd>
+				<dd>Trained, Arcana</dd>
+				<dd>Trained, Athletics</dd>
+				<dd>Trained, Diplomacy</dd>
+				<dd>Trained, Nature</dd>
+				<dd>Trained, Society</dd>
+				<dd>Trained, Stealth</dd>
+				<dt>houserule 3</dt>
+				<dd>Expert, Survival*</dd>
+				<dt>skill 3</dt>
+				<dd>Expert, Nature</dd>
+			</dl>
+		</section>
+	</dialog>
 
 	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
 		<b onclick="parentNode.close();">✖</b>
