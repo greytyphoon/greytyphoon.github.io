@@ -11,9 +11,16 @@
 		small::before { content: "("; }
 		small::after { content: ")"; }
 		li > ul { padding-left: 1.25em }
-		table.minlucks td:nth-child(2),
-		table#best-in-slot td:nth-child(3),
-		table#best-in-slot td:nth-child(4) { text-align: right; }
+		table#best-in-slot {
+			& td:nth-child(3),
+			& td:nth-child(4) { text-align: right; }
+		}
+		table.minlucks td:nth-child(2) {
+			text-align: right;
+			color: var(--tint-grey);
+			font-size: .75em;
+			b { color: var(--tint-black); font-size: 1rem; font-weight: unset; }
+		}
 		em { color: var(--tint-grey); float: right; font-size: .8rem; }
 	</style>
 </head>
@@ -27,21 +34,16 @@
 			<div>
 				<h2>Objectives</h2>
 				<ol>
-					<li>Draconic Depths:
-						<ul>
-							<li>Opal base <small>35</small><em>24m + 1mdh + 20kOpal</em></li>
-							<li>Multicannon <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"> <small>38</small><em>40m + 3mdh + 50kOpal</em></li>
-						</ul>
-					</li>
 					<li>Valour Rift:
 						<ul>
-							<li>C.Celestial <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"> <small>13</small><em>13.6m + 20core</em></li>
-							<li>Prestige base <small>&le;43</small><em>12.17m + 2core</em></li>
+							<li>C.Celestial <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"> <small>13</small><em>13.6m, 20core</em></li>
+							<li>Prestige base <small>&le;41</small><em>12.17m, 2core</em></li>
 						</ul>
 					</li>
 					<li>Ronza's Travelling Shoppe:	<ul><li>C.School of Sharks <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"> <small>32</small><em>32m</em></li></ul>	</li>
-					<li>Bountiful Beanstalk:	<ul><li>Infinite Mirrors <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"> <small>40</small><em>50m + 12gg</em></li></ul>	</li>
-					<li>Floating Islands:	<ul><li>Slumbering Boulder <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"> <small>40</small><em>45.25m + 6hal + 115aej</em></li></ul>	</li>
+					<li>Floating Islands:	<ul><li>Slumbering Boulder <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"> <small>40</small><em>45.25m, 6hal, 115aej</em></li></ul>	</li>
+					<li>Bountiful Beanstalk:	<ul><li>Infinite Mirrors <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"> <small>40</small><em>50m, 12gg</em></li></ul>	</li>
+					<li>Draconic Depths:	<ul><li>Multicannon <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"> <small>38</small><em>40m, 3mdh, 50kOpal</em></li></ul>	</li>
 					<li>Wrapping up:
 						<ul>
 							<li>Codices, Area upgrades,</li>
@@ -66,14 +68,14 @@
 						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"></th>			<td>Timesplit</td>	<td>7</td>	<td>&nbsp;</td></tr>
 						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"></th>		<td>Dark Mirrors</td>	<td>35</td>	<td>+5</td></tr>
 						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"></th>		<td>Sleeping Stone</td>	<td>32</td>	<td>&nbsp;</td></tr>
-						<tr><th>&nbsp;</th>																							<td>Sapphire base</td>	<td>30</td>	<td>+8</td></tr>
+						<tr><th>&nbsp;</th>																							<td>Opal base</td>	<td>35</td>	<td>+8</td></tr>
 					</tbody>
 				</table>
 
 <!--
 <h2>Area Upgrades</h2>
 <ul>
-	<li>Fort Rox (Wall &amp; Moat)</li>
+	<li>Fort Rox (Moat)</li>
 	<li>Queso River (Pump)</li>
 	<li>Furoma Rift (Batteries)</li>
 	<li>Valour Rift (Speed, Sync, &amp; Siphon)</li>
@@ -95,112 +97,167 @@
 
 		<details>
 		<summary class="subtitle">Minlucks</summary>
-		<section class="row br">
+		<section class="row">
 			<div>
-				<h3>Draconic Depths</h3>
+				<h3>Draconic Depths <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"></h3>
 				<table class="minlucks">
 					<tbody>
-						<tr><td>Outside</td>	<td>110</td></tr>
-						<tr><td>Inside</td>	<td>146</td></tr>
-						<tr><td>Inside 100+</td>	<td>163</td></tr>
-						<tr><td>Inside 750+</td>	<td>220</td></tr>
-						<tr><td>Tranquilia</td>	<td>80</td></tr>
-						<tr><td>Elemental</td>	<td>173</td></tr>
-						<tr><td>Elemental 100+</td>	<td>193</td></tr>
-						<tr><td>Elemental 750+</td>	<td>273</td></tr>
+						<tr><td>Outside 3</td>	<td>99, 105, <b>110</b></td></tr>
+						<tr><td>Minor 2</td>	<td>118, <b>146</b></td></tr>
+						<tr><td>Major 2</td>	<td>148, <b>163</b></td></tr>
+						<tr><td>Max</td>		<td><b>220</b></td></tr>
+						<tr><td>Tranquilia</td>	<td><b>80</b></td></tr>
+						<tr><td>Absolutia, Magnatius</td>	<td>136, <b>173</b></td></tr>
+						<tr><td>Supremia, Three'amat</td>	<td>179, <b>193</b></td></tr>
+						<tr><td>Emperor</td>				<td><b>273</b></td></tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
-				<h3>School of Sorcery</h3>
+				<h3>Bountiful Beanstalk <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"></h3>
 				<table class="minlucks">
 					<tbody>
-						<tr><td>Class, Standard</td>	<td>96</td></tr>
-						<tr><td>Class, Apprentices</td>	<td>118</td></tr>
-						<tr><td>Class, Masters</td>		<td>136</td></tr>
-						<tr><td>Class, Boss</td>		<td>142</td></tr>
-						<tr><td>Exam, Standard</td>		<td>107</td></tr>
-						<tr><td>Exam, Apprentices</td>	<td>132</td></tr>
-						<tr><td>Exam, Masters</td>		<td>160</td></tr>
-						<tr><td>Exam, Boss</td>			<td>183</td></tr>
+						<tr><td>Beanstalk</td>			<td>45, 78, <b>81</b></td></tr>
+						<tr><td>Vinneus</td>			<td><b>145</b></td></tr>
+						<tr><td>Dungeon Standard</td>	<td>87, 100, <b>123</b></td></tr>
+						<tr><td>Dungeon Beanster</td>	<td>90, 94, <b>98</b></td></tr>
+						<tr><td>Dungeon Lapis</td>		<td>108, <b>113</b></td></tr>
+						<tr><td>Dungeon Ruby</td>		<td><b>135</b></td></tr>
+						<tr><td>Dungeon Boss</td>		<td><b>164</b></td></tr>
+						<tr><td>Ballroom Standard</td>	<td>105, 110, <b>129</b></td></tr>
+						<tr><td>Ballroom Beanster</td>	<td>98, 103, <b>108</b></td></tr>
+						<tr><td>Ballroom Lapis</td>		<td>124, <b>129</b></td></tr>
+						<tr><td>Ballroom Ruby</td>		<td><b>142</b></td></tr>
+						<tr><td>Ballroom Boss</td>		<td><b>218</b></td></tr>
+						<tr><td>Noble Standard</td>		<td>119, 127, <b>138</b></td></tr>
+						<tr><td>Noble Beanster</td>		<td>112, 121, <b>125</b></td></tr>
+						<tr><td>Noble Lapis</td>		<td>132, <b>136</b></td></tr>
+						<tr><td>Noble Ruby</td>			<td><b>149</b></td></tr>
+						<tr><td>Noble Boss</td>			<td><b>239</b></td></tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
-				<h3>Table of Contents</h3>
+				<h3>School of Sorcery <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/arcane.png"> <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"></h3>
 				<table class="minlucks">
 					<tbody>
-						<tr><td>Not Writing</td>		<td>68</td></tr>
-						<tr><td>Standard Writing</td>	<td>71</td></tr>
-						<tr><td>First Draft</td>		<td>78</td></tr>
-						<tr><td>Second Draft</td>		<td>81</td></tr>
-						<tr><td>Final Draft</td>		<td>227</td></tr>
-						<tr><td>Thousandth Draft</td>	<td>246</td></tr>
+						<tr><td>Class, Standard</td>	<td>86, 91, <b>96</b></td></tr>
+						<tr><td>Class, Apprentices</td>	<td>105, 111, <b>118</b></td></tr>
+						<tr><td>Class, Masters</td>		<td>123, 130, <b>136</b></td></tr>
+						<tr><td>Class, Boss</td>		<td><b>142</b></td></tr>
+						<tr><td>Exam, Standard</td>		<td>above, <b>107</b></td></tr>
+						<tr><td>Exam, Apprentices</td>	<td>above, <b>132</b></td></tr>
+						<tr><td>Exam, Masters</td>		<td>above, <b>160</b></td></tr>
+						<tr><td>Master Sorcerer</td>			<td><b>183</b></td></tr>
+					</tbody>
+				</table>
+
+				<h3>Table of Contents <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png"></h3>
+				<table class="minlucks">
+					<tbody>
+						<tr><td>Not Writing</td>		<td>64, 66 <b>68</b></td></tr>
+						<tr><td>Standard Writing</td>	<td>60, 68, 69, <b>71</b></td></tr>
+						<tr><td>First Draft</td>		<td>70, 75, <b>78</b></td></tr>
+						<tr><td>Second Draft</td>		<td>76, 80 <b>81</b></td></tr>
+						<tr><td>Final Draft</td>		<td>153, <b>227</b></td></tr>
+						<tr><td>Thousandth Draft</td>	<td><b>246</b></td></tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
-				<h3>Foreword Farm</h3>
+				<h3>Prologue Pond <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"></h3>
 				<table class="minlucks">
 					<tbody>
-						<tr><td>Root Rummager</td>		<td>68</td></tr>
-						<tr><td>Grit Grifter</td>		<td>71</td></tr>
-						<tr><td>Angry Aphid</td>		<td>71</td></tr>
-						<tr><td>Wily Weevil</td>		<td>78</td></tr>
-						<tr><td>Mighty Mite</td>		<td>81</td></tr>
-						<tr><td>Loathsome Locust</td>	<td>72</td></tr>
-						<tr><td>Monstrous Midge</td>	<td>168</td></tr>
+						<tr><td>Standard</td>	<td>64, 68, <b>71</b></td></tr>
+						<tr><td>Grubbeen</td>	<td>68, 71, <b>75</b></td></tr>
+						<tr><td>Clamembert</td>	<td>81, 87, <b>90</b></td></tr>
+						<tr><td>Stormy</td>		<td><b>160</b></td></tr>
+					</tbody>
+				</table>
+
+				<h3>Foreword Farm <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"></h3>
+				<table class="minlucks">
+					<tbody>
+						<tr><td>Land Loafer</td>		<td><b>64</b></td></tr>
+						<tr><td>Root Rummager</td>		<td><b>68</b></td></tr>
+						<tr><td>Grit Grifter</td>		<td><b>71</b></td></tr>
+						<tr><td>Angry Aphid</td>		<td><b>71</b></td></tr>
+						<tr><td>Wily Weevil</td>		<td><b>78</b></td></tr>
+						<tr><td>Mighty Mite</td>		<td><b>81</b></td></tr>
+						<tr><td>Loathsome Locust</td>	<td><b>72</b></td></tr>
+						<tr><td>Monstrous Midge</td>	<td><b>168</b></td></tr>
 					</tbody>
 				</table>
 			</div>
 		</section>
 		<section class="row br">
 			<div>
-				<h3>Valour Rift</h3>
+				<h3>Valour Rift <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"></h3>
 				<table class="minlucks">
 					<tbody>
-						<tr><td>Elixir Maker</td>	<td>51</td></tr>
-						<tr><td>Lumi-Lancer</td>	<td>78</td></tr>
-						<tr><td>Withered Remains</td>	<td>87</td></tr>
-						<tr><td>[2+] All Floor Champions</td>	<td>136</td></tr>
-						<tr><td>[3+] Prestigious Adventurer</td>	<td>196</td></tr>
-						<tr><td>[4+] Soldier of the Shade</td>	<td>300</td></tr>
-						<tr><td>[UU] Bulwark of Ascent</td>	<td>458</td></tr>
-						<tr><td>Shade of the Eclipse</td>	<td>1337</td></tr>
-						<tr><td>Total Eclipse</td>	<td>1857</td></tr>
+						<tr><td>Outside</td>				<td>41, <b>51</b></td></tr>
+						<tr><td>Lumi-Lancer <small>& friends</small></td>	<td>6, 35, 47, <b>78</b></td></tr>
+						<tr><td>Floor Minions</td>			<td>55, 65, 75, <b>87</b></td></tr>
+						<tr><td>Floor Champions</td>		<td><b>136</b></td></tr>
+						<tr><td>Possessed Armaments</td>	<td><b>99</b></td></tr>
+						<tr><td>Prestigious Adventurer</td>	<td><b>196</b></td></tr>
+						<tr><td>Soldier of the Shade</td>	<td><b>300</b></td></tr>
+						<tr><td>Bulwark of Ascent</td>		<td><b>458</b></td></tr>
+						<tr><td>Eclipses</td>			<td>1337, <b>1857</b></td></tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
-				<h3>Queso Canyon</h3>
+				<h3>Queso Canyon <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/draconic.png"></h3>
 				<table class="minlucks">
 					<tbody>
-						<tr><td>Queen Quesada</td>					<td>104</td></tr>
-						<tr><td>Inferna the Engulfed</td>			<td>95</td></tr>
-						<tr><td>Nachous the Molten</td>				<td>83</td></tr>
-						<tr><td>Rambunctious Rain Rumbler</td>		<td>83</td></tr>
-						<tr><td>Vaporior</td>						<td>71</td></tr>
-						<tr><td>Pyrehyde</td>						<td>83</td></tr>
-						<tr><td>Ignatia</td>						<td>69</td></tr>
-						<tr><td>Cinderstorm</td>					<td>69</td></tr>
-						<tr><td>Bruticus the Blazing</td>			<td>113</td></tr>
-						<tr><td>Stormsurge the Vile Tempest</td>	<td>117</td></tr>
-						<tr><td>Kalor'ignis of the Geyser</td>		<td>124</td></tr>
+						<tr><td>Queen Quesada <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/law.png"></td>	<td><b>104</b></td></tr>
+						<tr><td>Inferna <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/arcane.png"></td>		<td><b>95</b></td></tr>
+						<tr><td>Nachous <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"></td>		<td><b>83</b></td></tr>
+						<tr><td>Rain Rumbler</td>	<td><b>83</b></td></tr>
+						<tr><td>Pyrehyde</td>		<td><b>83</b></td></tr>
+						<tr><td>Bruticus</td>		<td><b>113</b></td></tr>
+						<tr><td>Stormsurge</td>		<td><b>117</b></td></tr>
+						<tr><td>Kalor'ignis</td>	<td><b>124</b></td></tr>
 					</tbody>
 				</table>
 			</div>
 			<div>
-				<h3>Sunken City</h3>
+				<h3>Zokor <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png"></h3>
 				<table class="minlucks">
 					<tbody>
-						<tr><td>Turret Guard (et al.)</td>	<td>71</td></tr>
-						<tr><td>Coral Queen (et al.)</td>	<td>75</td></tr>
-						<tr><td>Spear Fisher</td>			<td>71</td></tr>
-						<tr><td>Derpshark</td>				<td>76</td></tr>
-						<tr><td>Carnivore</td>				<td>87</td></tr>
-						<tr><td>Serpent Monster</td>		<td>116</td></tr>
-						<tr><td>Ancient of the Deep</td>	<td>138</td></tr>
-						<tr><td>Tritus</td>					<td>186</td></tr>
+						<tr><td>Corridor</td>			<td>42, 46, 69, <b>75</b></td></tr>
+						<tr><td>Shadow Stalker</td>		<td><b>324</b></td></tr>
+						<tr><td>Clues, Plain</td>		<td>46, <b>60</b></td></tr>
+						<tr><td>Clues, Superior</td>	<td>73, <b>103</b></td></tr>
+						<tr><td>Clues, Epic</td>		<td><b>87</b></td></tr>
+						<tr><td>Zokor-only</td>			<td>53, <b>66</b></td></tr>
+						<tr><td>Zokor bosses</td>		<td><b>70</b></td></tr>
+						<tr><td>Treasure Brawler</td>	<td><b>86</b></td></tr>
+						<tr><td>Molten Midas</td>		<td><b>355</b></td></tr>
+						<tr><td>Tentacle Terror</td>	<td><u title="Same minluck against Shadow traps"><b>80</b></u></td></tr>
+						<tr><td>Minotaur</td>			<td><b>683</b></td></tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<h3>Sunken City <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"></h3>
+				<table class="minlucks">
+					<tbody>
+						<tr><td>Coral Queen (et al.)</td>	<td><b>75</b></td></tr>
+						<tr><td>Predators</td>		<td>66, 76, 87, <b>116</b></td></tr>
+						<tr><td>Ancient of the Deep</td>	<td><b>138</b></td></tr>
+						<tr><td>Tritus</td>					<td><b>186</b></td></tr>
+					</tbody>
+				</table>
+
+				<h3>Fort Rox <img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/arcane.png"></h3>
+				<table class="minlucks">
+					<tbody>
+						<tr><td>Battering Ram</td>			<td><b>696</b></td></tr>
+						<tr><td>Dawn Guardian</td>			<td><b>136</b></td></tr>
+						<tr><td>Monster of the Meteor</td>	<td><b>150</b></td></tr>
+						<tr><td>Heart of the Meteor</td>	<td><b>620</b></td></tr>
 					</tbody>
 				</table>
 			</div>
