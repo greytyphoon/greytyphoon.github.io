@@ -36,6 +36,17 @@
 	font-family: 'Roboto', 'Segoe UI', sans-serif;
 	color: var(--tint-black);
 }
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--tint-black: #f4f9f7;
+		--tint-dark: #a6a6a6;
+		--tint-grey: #565656;
+		--tint-light: #15141a;
+		--tint-white: #0b0618;
+	}
+}
+
 * {
 	box-sizing: border-box;
 	line-height: 1.2em;
