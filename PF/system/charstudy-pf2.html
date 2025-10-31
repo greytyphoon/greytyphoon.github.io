@@ -5,6 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Grey's Comparison of Classes</title>
 	<link rel="stylesheet" href="pfGeneric.css">
+	<style>
+		b { text-shadow: 0 0 2px #33b5e5; }
+		td:nth-child(3n + 5) { border-left: 1px solid var(--tint-grey); }
+		#tblComparisonStarfinder { text-align: center; font-size: .8rem; }
+	</style>
 </head>
 <body>
 	<nav id="fixref"><ul>
@@ -15,11 +20,9 @@
 		<header>
 			<h1>Pathfinder 2nd-edition Comparison of Classes</h1>
 		</header>
-		<p>This is a list of official Pathfinder 2nd-edition classes. Here's hoping it helps you too!</p>
-		<p>This chart assumes you are trained in everything mentionned at first level, then lists the levels at which your proficiency increases.
-			For example, Alchemists have Fortitude "1, 11" because (we assume they're Trained off the bat) they increase to Expert at 1st level, then Master at 11th level.</p>
-		<p>Legendary proficiencies will always be <b>bold</b>.</p>
-		<p>HP and skills are sorted from <span class="awesome">best</span> to <span class="bad">worst</span>. Having Con or Int as a Key Stat increases the ranking by one step.</p>
+		<p>This chart works by assuming you are trained in everything at 1st level, then lists the levels of the increases.<br>
+			For example, Alchemists have <code>Class DC 9, 17</code>: they are Trained at 1st, Expert at 9th, Master at 17th level.</p>
+		<p>Legendary proficiencies are <b>bold</b>. HP and skills are ranked from <span class="awesome">best</span> to <span class="bad">worst</span>. Having Con/Int as a Key Stat increases the ranking by a step.</p>
 
 		<table id="tblComparison" class="table">
 		<thead>
@@ -44,10 +47,10 @@
 				<td class="average">8</td>
 				<td class="good" title="Fixed: Crafting">4</td>
 				<td>Int</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=1">Alchemist</a></td>
-				<td><u title="Bombs">Simple+</u>, 7</td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=56">Alchemist</a></td>
+				<td><u title="Bombs">Simple+</u>, 7, 15</td>
 				<td>13</td>
-				<td title="Alchemists are trained in Medium armors since Core Rulebook Errata 2">Medium, 13, 19</td>
+				<td>Medium, 13, 19</td>
 				<td>1, 11</td>
 				<td>1, 15</td>
 				<td>7</td>
@@ -59,7 +62,7 @@
 				<td class="average">8</td>
 				<td class="average" title="Fixed: Religion; Flexible: Nature / Occultism">4</td>
 				<td>Wis</td>
-				<td>Animist</td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=64">Animist</a></td>
 				<td>Simple, 11</td>
 				<td>13</td>
 				<td>Medium, 11</td>
@@ -68,15 +71,15 @@
 				<td>1, 13</td>
 				<td>9</td>
 				<td>7, 15, <b>19</b></td>
-				<td>Prep/Spon Divine</td>
+				<td>Prep./Spon. Divine</td>
 			</tr>
 			<tr>
 				<td class="awesome">12</td>
 				<td class="average" title="Fixed: Athletics">4</td>
 				<td>Str</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=2">Barbarian</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=57">Barbarian</a></td>
 				<td>Martial, 5, 13</td>
-				<td>7, 15, <u title="while raging">Crit 5</u></td>
+				<td>7, 15, <u title="While raging">Crit 5</u></td>
 				<td>Medium, 13, 19</td>
 				<td>1, 7, <b>13</b></td>
 				<td>9</td>
@@ -89,24 +92,24 @@
 				<td class="average">8</td>
 				<td class="good" title="Fixed: Occultist, Performance">6</td>
 				<td>Cha</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=3">Bard</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=32">Bard</a></td>
 				<td>Martial, 11</td>
-				<td>13, <u title="while composition is active">Crit 11</u></td>
+				<td>13, <u title="While composition is active">Crit 11</u></td>
 				<td>Light, 13</td>
 				<td>9</td>
 				<td>3</td>
 				<td>1, 9, <b>17</b></td>
 				<td>1, 11</td>
 				<td>7, 15, <b>19</b></td>
-				<td>Spontaneous Occult</td>
+				<td>Spon. Occult</td>
 			</tr>
 			<tr>
 				<td class="good">10</td>
 				<td class="average" title="Fixed: Religion, Deity">4</td>
 				<td>Str/Dex</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=4">Champion</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=58">Champion</a></td>
 				<td>Martial, 5, 13</td>
-				<td>7, 15, <u title="if you chose a Blade Ally">Crit 3</u></td>
+				<td>7, 15, <u title="With Blade Ally">Crit 3</u></td>
 				<td>Heavy, 7, 13, <b>17</b></td>
 				<td>1, 9</td>
 				<td>9</td>
@@ -119,7 +122,7 @@
 				<td class="average">8</td>
 				<td class="average" title="Fixed: Religion, Deity">4</td>
 				<td>Wis</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=5">Cleric</a>, Cloistered</td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=33">Cleric</a>, Cloistered</td>
 				<td><u title="Deity's favored weapon">Simple+</u>, 11</td>
 				<td>13, <u title="Deity's favored weapon">Crit 11</u></td>
 				<td>None, 13</td>
@@ -128,13 +131,28 @@
 				<td>1, 9</td>
 				<td>5</td>
 				<td>7, 15, <b>19</b></td>
-				<td>Prepared Divine</td>
+				<td>Prep. Divine</td>
 			</tr>
 			<tr>
 				<td class="average">8</td>
 				<td class="average" title="Fixed: Religion, Deity">4</td>
 				<td>Wis</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=5">Cleric</a>, Warpriest</td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=33">Cleric</a>, Harbinger</td>
+				<td>Martial, 5, <u title="Deity's favored weapon">13</u></td>
+				<td>13, <u title="Deity's favored weapon">Crit 5</u></td>
+				<td>Medium, 13, 19</td>
+				<td>1, 13</td>
+				<td>11</td>
+				<td>1, 15</td>
+				<td>5</td>
+				<td><u title="This is your spell DC.&#13;Your class DC is 5, 15, 19.">11</u></td>
+				<td>Prep. Divine</td>
+			</tr>
+			<tr>
+				<td class="average">8</td>
+				<td class="average" title="Fixed: Religion, Deity">4</td>
+				<td>Wis</td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=33">Cleric</a>, Warpriest</td>
 				<td>Martial, 7, <u title="Deity's favored weapon">19</u></td>
 				<td>13, <u title="Deity's favored weapon">Crit 7</u></td>
 				<td>Medium, 13</td>
@@ -143,13 +161,13 @@
 				<td>1, 9</td>
 				<td>5</td>
 				<td>11, 19</td>
-				<td>Prepared Divine</td>
+				<td>Prep. Divine</td>
 			</tr>
 			<tr>
 				<td class="average">8</td>
 				<td class="good" title="Fixed: Society">3</td>
 				<td>Int</td>
-				<td>Commander</td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=66">Commander</a></td>
 				<td>Martial, 5, 13</td>
 				<td>7, 15, Crit 5</td>
 				<td>Heavy, 11, 17</td>
@@ -164,7 +182,7 @@
 				<td class="average">8</td>
 				<td class="average" title="Fixed: Nature, Order">4</td>
 				<td>Wis</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=6">Druid</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=34">Druid</a></td>
 				<td>Simple, 11</td>
 				<td>13</td>
 				<td>Medium, 13</td>
@@ -173,15 +191,15 @@
 				<td>1, 11</td>
 				<td>3</td>
 				<td>7, 15, <b>19</b></td>
-				<td>Prepared Primal</td>
+				<td>Prep. Primal</td>
 			</tr>
 			<tr>
 				<td class="good">10</td>
 				<td class="average" title="Fixed: Religion, Epithet">5</td>
 				<td>Str/Dex</td>
-				<td>Exemplar</td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=65">Exemplar</a></td>
 				<td>Martial, 5, 13</td>
-				<td>7, 15</td>
+				<td>7, 15, <u title="Effect chosen by Epithet">Crit 7</u></td>
 				<td>Medium, 13, 19</td>
 				<td>1, 15</td>
 				<td>9</td>
@@ -194,9 +212,9 @@
 				<td class="good">10</td>
 				<td class="average" title="Fixed: Acrobatics or Athletics">4</td>
 				<td>Str/Dex</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=7">Fighter</a></td>
-				<td>Martial, 1, <u title="one weapon group">5, <b>13</b></u><br>Advanced, <u title="one weapon group">5, 13</u></td>
-				<td>7, 15, <u title="one weapon group">Crit 5</u></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=35">Fighter</a></td>
+				<td>Martial, 1, <u title="One weapon group">5, <b>13</b></u><br>Advanced, <u title="One weapon group">5, 13</u></td>
+				<td>7, 15, <u title="One weapon group">Crit 5</u></td>
 				<td>Heavy, 11, 17</td>
 				<td>1, 9</td>
 				<td>1, 15</td>
@@ -206,16 +224,16 @@
 				<td>&mdash;</td>
 			</tr>
 			<tr>
-				<td class="good">10</td>
+				<td class="awesome">12</td>
 				<td class="average" title="Fixed: Athletics">4</td>
 				<td>Str</td>
-				<td>Guardian</td>
-				<td>Martial, 7, 17</td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=67">Guardian</a></td>
+				<td>Martial, 5, 13</td>
 				<td>11, 17</td>
 				<td>Heavy, 5, 11, <b>15</b></td>
 				<td>1, 9</td>
-				<td>5</td>
-				<td>1, 15</td>
+				<td>7</td>
+				<td>1, 17</td>
 				<td>7</td>
 				<td>9, 19</td>
 				<td>&mdash;</td>
@@ -225,8 +243,8 @@
 				<td class="average" title="Fixed: Gunslinger's Way">4</td>
 				<td>Dex</td>
 				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=20">Gunslinger</a></td>
-				<td>Martial Firearms, 1, 5, <b>13</b></u><br>Adv Firearms / Martial, 5, 13</td>
-				<td>7, 15, <u title="Firearms">Crit 5</u></td>
+				<td>Martial Guns, 1, 5, <b>13</b></u><br>Guns / Martial, 5, 13</td>
+				<td>7, 15, <u title="Guns only">Crit 5</u></td>
 				<td>Medium, 13, 19</td>
 				<td>1, 17</td>
 				<td>1, 11</td>
@@ -254,7 +272,7 @@
 				<td class="average">8</td>
 				<td class="awesome" title="Fixed: Society, Methodology">6</td>
 				<td>Int</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=13">Investigator</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=59">Investigator</a></td>
 				<td>Martial, 5, 13</td>
 				<td>7, 15</td>
 				<td>Light, 13, 19</td>
@@ -293,13 +311,13 @@
 				<td>1, 9</td>
 				<td>9</td>
 				<td>9, 17</td>
-				<td>Bounded Prepared Arcane</td>
+				<td>Bounded Prep. Arcane</td>
 			</tr>
 			<tr>
 				<td class="good">10</td>
 				<td class="average" title="Free">4</td>
 				<td>Str/Dex</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=8">Monk</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=60">Monk</a></td>
 				<td>Simple, 5, 13</td>
 				<td>7, 15</td>
 				<td>None, 1, 13, <b>17</b></td>
@@ -323,13 +341,13 @@
 				<td>3</td>
 				<td>7</td>
 				<td>7, 15, <b>19</b></td>
-				<td>Prepared Occult</td>
+				<td>Prep. Occult</td>
 			</tr>
 			<tr>
 				<td class="average">8</td>
 				<td class="average" title="Fixed: Religion, Mystery">5</td>
 				<td>Cha</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=14">Oracle</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=61">Oracle</a></td>
 				<td>Simple, 11</td>
 				<td>13</td>
 				<td>Light, 13</td>
@@ -338,7 +356,7 @@
 				<td>1, 7, <b>17</b></td>
 				<td>11</td>
 				<td>7, 15, <b>19</b></td>
-				<td>Spontaneous Divine</td>
+				<td>Spon. Divine</td>
 			</tr>
 			<tr>
 				<td class="bad">6</td>
@@ -353,15 +371,15 @@
 				<td>1, 11, <b>17</b></td>
 				<td>11</td>
 				<td>7, 15, <b>19</b></td>
-				<td>Spontaneous Occult</td>
+				<td>Spon. Occult</td>
 			</tr>
 			<tr>
 				<td class="good">10</td>
 				<td class="good" title="Fixed: Nature, Survival">6</td>
 				<td>Str/Dex</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=9">Ranger</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=36">Ranger</a></td>
 				<td>Martial, 5, 13</td>
-				<td>7, 15 <u title="on hunted prey">Crit 5</u></td>
+				<td>7, 15 <u title="Vs hunted prey">Crit 5</u></td>
 				<td>Medium, 11, 19</td>
 				<td>1, 11</td>
 				<td>1, 7, <b>15</b></td>
@@ -374,9 +392,9 @@
 				<td class="average">8</td>
 				<td class="awesome" title="Fixed: Stealth, Racket">9</td>
 				<td>Dex/Racket</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=10">Rogue</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=37">Rogue</a></td>
 				<td>Martial, 5, 13</td>
-				<td>7, 15 <u title="vs Flat-footed enemies">Crit 5</u></td>
+				<td>7, 15 <u title="Vs off-guard foes">Crit 5</u></td>
 				<td>Light, 13, 19</td>
 				<td>9</td>
 				<td>1, 7, <b>13</b></td>
@@ -404,7 +422,7 @@
 				<td class="bad">6</td>
 				<td class="average" title="Fixed: Bloodline, Bloodline">4</td>
 				<td>Cha</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=11">Sorcerer</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=62">Sorcerer</a></td>
 				<td>Simple, 11</td>
 				<td>13</td>
 				<td>None, 13</td>
@@ -413,7 +431,7 @@
 				<td>1, 17</td>
 				<td>11</td>
 				<td>7, 15, <b>19</b></td>
-				<td>Spontaneous A/D/O/P</td>
+				<td>Spon. Flexible</td>
 			</tr>
 			<tr>
 				<td class="good">10</td>
@@ -432,13 +450,13 @@
 				<td>1, 15</td>
 				<td>3</td>
 				<td>9, 17</td>
-				<td>Bounded Spontaneous A/D/O/P</td>
+				<td>Bounded Spon. Flexible</td>
 			</tr>
 			<tr>
 				<td class="good">10</td>
 				<td class="good" title="Fixed: Acrobatics, Style">6</td>
 				<td>Dex</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=15">Swashbuckler</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=63">Swashbuckler</a></td>
 				<td>Martial, 5, 13</td>
 				<td>7, 15, Crit 5</td>
 				<td>Light, 13, 19</td>
@@ -455,7 +473,7 @@
 				<td>Cha</td>
 				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=22">Thaumaturge</a></td>
 				<td>Martial, 5, 13</td>
-				<td>7, 15, Crit 5</td>
+				<td>7, 15</td>
 				<td>Medium, 11, 19</td>
 				<td>1, 15</td>
 				<td>3</td>
@@ -468,7 +486,7 @@
 				<td class="bad">6</td>
 				<td class="good" title="Fixed: Patron">4</td>
 				<td>Int</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=16">Witch</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=38">Witch</a></td>
 				<td>Simple, 11</td>
 				<td>13</td>
 				<td>None, 13</td>
@@ -477,13 +495,13 @@
 				<td>1, 17</td>
 				<td>11</td>
 				<td>7, 15, <b>19</b></td>
-				<td>Prepared A/D/O/P</td>
+				<td>Prep. Flexible</td>
 			</tr>
 			<tr>
 				<td class="bad">6</td>
 				<td class="good" title="Fixed: Arcana">3</td>
 				<td>Int</td>
-				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=12">Wizard</a></td>
+				<td><a href="https://2e.aonprd.com/Classes.aspx?ID=39">Wizard</a></td>
 				<td>Simple, 11</td>
 				<td>13</td>
 				<td>None, 13</td>
@@ -492,7 +510,127 @@
 				<td>1, 17</td>
 				<td>11</td>
 				<td>7, 15, <b>19</b></td>
-				<td>Prepared Arcane</td>
+				<td>Prep. Arcane</td>
+			</tr>
+			<tr>
+				<td class="average">8</td>
+				<td class="awesome" title="Flexible: Deception, Diplomacy, Intimidation; Flexible: Leadership">8</td>
+				<td>Cha</td>
+				<td>🛸 <a href="https://2e.aonsrd.com/classes/1-envoy">Envoy</a></td>
+				<td>Martial, 5, 13</td>
+				<td>7, 15</td>
+				<td>Light, 13, 19</td>
+				<td>7</td>
+				<td>1, 15</td>
+				<td>1, 11, <b>17</b></td>
+				<td>5, 11, <b>17</b></td>
+				<td>9</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<td class="average">8</td>
+				<td class="good" title="Fixed: Computers, Crafting">4</td>
+				<td>Int</td>
+				<td>🛸 Mechanic</td>
+				<td>Martial, 5, 13</td>
+				<td>7, 15</td>
+				<td>Medium, 11, 19</td>
+				<td>1, 13</td>
+				<td>1, 7</td>
+				<td>3</td>
+				<td>1, 11, <b>17</b></td>
+				<td>9, 17</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<td class="bad">6</td>
+				<td class="average" title="Fixed: Connection">4</td>
+				<td>Wis</td>
+				<td>🛸 <a href="https://2e.aonsrd.com/classes/2-mystic">Mystic</a></td>
+				<td>Simple, 11</td>
+				<td>13</td>
+				<td>Light, 13</td>
+				<td>5</td>
+				<td>3</td>
+				<td>1, 9</td>
+				<td>11</td>
+				<td>7, 15, <b>19</b></td>
+				<td>Spon. Flexible</td>
+			</tr>
+			<tr>
+				<td class="average">8</td>
+				<td class="average" title="Fixed: Specialization">4</td>
+				<td>Dex</td>
+				<td>🛸 <a href="https://2e.aonsrd.com/classes/3-operative">Operative</a></td>
+				<td>Martial Guns, 1, 5, <b>13</b></u><br>Guns / Martial, 5, 13</td>
+				<td>7, 15, <u title="Guns only">Crit 5</u></td>
+				<td>Light, 13, 19</td>
+				<td>9</td>
+				<td>1, 7</td>
+				<td>1, 17</td>
+				<td>1, 7, <b>19</b></td>
+				<td>11, 19</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<td class="good">10</td>
+				<td class="average" title="Fixed: Athletics">5</td>
+				<td>Str</td>
+				<td>🛸 <a href="https://2e.aonsrd.com/classes/4-solarian">Solarian</a></td>
+				<td>Martial, 5, 13, <u title="With Solar Flare or Solar Weapon only"><b>19</b></u></td>
+				<td>7, 15, <u title="With Solar Flare or Solar Weapon only">Crit 5</u></td>
+				<td>Medium, 11, 17</td>
+				<td>3</td>
+				<td>1, 15</td>
+				<td>1, 9</td>
+				<td>1, 7</td>
+				<td>9, 17</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<td class="awesome">10</td>
+				<td class="average" title="Fixed: Intimidation">4</td>
+				<td>Con</td>
+				<td>🛸 <a href="https://2e.aonsrd.com/classes/5-soldier">Soldier</a></td>
+				<td>Martial, 5, 15</td>
+				<td>7, <u title="With Area or Automatic weapons only">Crit 5</u></td>
+				<td>Heavy, 7, 13, <b>17</b></td>
+				<td>1, 7, <b>15</b></td>
+				<td>3</td>
+				<td>1, 11</td>
+				<td>5</td>
+				<td>7, 15, <b>19</b></td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<td class="bad">6</td>
+				<td class="good" title="Fixed: Arcana, Computers">3</td>
+				<td>Int</td>
+				<td>🛸 Technomancer</td>
+				<td>Simple, 11</td>
+				<td>13</td>
+				<td>Light, 13</td>
+				<td>9</td>
+				<td>5</td>
+				<td>1, 17</td>
+				<td>11</td>
+				<td>7, 15, <b>19</b></td>
+				<td>Prep. Arcane</td>
+			</tr>
+			<tr>
+				<td class="average">8</td>
+				<td class="good" title="Fixed: Paradox">4</td>
+				<td>Int/Cha</td>
+				<td>🛸 <a href="https://2e.aonsrd.com/classes/6-witchwarper">Witchwarper</a></td>
+				<td>Simple, 11</td>
+				<td>13</td>
+				<td>Light, 13</td>
+				<td>9</td>
+				<td>5</td>
+				<td>1, 17</td>
+				<td>11</td>
+				<td>7, 15, <b>19</b></td>
+				<td>Spon. Flexible</td>
 			</tr>
 		</tbody>
 		</table>
@@ -501,6 +639,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/sorts/tablesort.number.min.js"></script>
 	<script type="text/javascript">
 		new Tablesort(document.getElementById('tblComparison'));
+		new Tablesort(document.getElementById('tblComparisonStarfinder'));
 	</script>
 </body>
 </html>
