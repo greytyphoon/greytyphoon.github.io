@@ -278,6 +278,7 @@ img#main-picture,
 @media screen and (min-width: 1200px) {
 	#main-picture { max-width: 285px; }
 }
+dialog { color: var(--tint-black); } /* Fixes a bug where dialog doesn't inherit :root's text color */
 dialog.info,
 dialog.gallery {
 	border: .15rem solid var(--tint-black);
@@ -302,6 +303,7 @@ dialog.gallery {
 dialog.info::backdrop,
 dialog.gallery::backdrop {
 	background-color: rgba(100,100,100,0.8);
+	@media (prefers-color-scheme: dark) { background-color: rgba(50,50,50,0.8);}
 	cursor: pointer;
 }
 dialog.gallery > h2 {
