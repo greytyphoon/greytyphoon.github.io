@@ -6,8 +6,8 @@
 	<title>Games with just cards</title>
 	<link rel="stylesheet" href="../../basic.css">
 	<style>
-		#all-games { list-style: none; }
-		summary.subtitle { margin-left: -30px; }
+		ul.games { list-style: none; }
+		ul.games summary.subtitle { margin-left: -30px; }
 		.number-of-cards-at-start { font-weight: normal; text-shadow: 0px 0px 3px var(--murder-red); }
 	</style>
 </head>
@@ -24,10 +24,9 @@
 		</p>
 		<p>Games listed here will never require more than a regular deck of cards, paper, pencils, some sort of tokens (coins?) and regular six-sided dices.</p>
 
-		<ul id="all-games">
+		<ul class="games">
 			<li><details>
-				<summary class="subtitle">Magic Rabbit <b>2-4</b></summary>
-				<p>Originally from the board game <a href="https://boardgamegeek.com/boardgame/303669/magic-rabbit">BoardGameGeek: Magic Rabbit</a>.</p>
+				<summary class="subtitle"><a href="https://boardgamegeek.com/boardgame/303669/magic-rabbit">Magic Rabbit</a> <b>2-4</b></summary>
 				<p>Place the cards from the heart set, ace to nine, randomly in nine piles face down, representing the rabbits.
 					Place the cards from the spades set, ace to nine, randomly on the nine piles face up, representing the hats.
 					Place three tokens on piles 1, 5, and 9, representing the doves.
@@ -53,6 +52,36 @@
 			</details></li>
 
 			<li><details>
+				<summary class="subtitle"><a href="https://boardgamegeek.com/boardgame/284083/the-crew-the-quest-for-planet-nine">The Crew</a> <b>3-5</b></summary>
+				<p>Remove all JQKA♦♣♥ from a first deck, leaving JQKA♠. Remove all JQKA from a second deck.<br>
+					Distribute <b class="number-of-cards-at-start">all</b> cards from the first deck equally among players.
+					From the second deck, draw <b class="number-of-cards-at-start">N</b> objectives (start at 3), placing them at the center.<br>
+					The player with the A♠ is the captain.
+					After discussion, starting with the captain, going clockwise, players choose objectives for themselves.
+					Then the game proceed as a standard trick-taking game, starting with the captain.</p>
+				<p>The goal is to complete all objectives.
+					A player completes one of their objectives if they win a hand that contains the objective.</p>
+				<p>The figures are trump cards.
+					They count as a separate fifth suit.
+					(If the trick is in spades and you have 9♠ A♠, you must play 9♠.)</p>
+				<p>Players are allowed to talk about their strategy and their hand, but should not mention which specific cards they hold.</p>
+				<p><b>Easier</b>: Once per round, players can reveal one card from their hand.</p>
+				<p><b>Harder:</b> The objectives must be completed in the order they were drawn.</p>
+			</details></li>
+
+			<li><details>
+				<summary class="subtitle">Consensus <b>3-7</b></summary>
+				<p>The inspiration for this game can be found on <a href="https://www.pagat.com/exact/ohhell.html">Pagat.com: Oh Hell!</a>.</p>
+				<p>Distribute <b class="number-of-cards-at-start">N</b> cards to each player (start at 1).
+					From the remaining cards, reveal one: that's the trump suit this round.
+					Choose a player to start.
+					Players agree on exactly how many hands each one will win.
+					Then, the game proceed as a standard trick-taking game.</p>
+				<p>The goal is that everyone's bet was exact.</p>
+				<p>Players are allowed to talk about their strategy and their hand, but should not mention which specific cards they hold.</p>
+			</details></li>
+
+			<li><details>
 				<summary class="subtitle">Portraits <b>1-4</b></summary>
 				<p>The single-player version can be found on <a href="https://www.pagat.com/invented/portraits.html">Pagat.com: Portraits</a>.</p>
 				<p>For a coop game, simply give each player their own line of <b class="number-of-cards-at-start">5</b> assets.
@@ -60,6 +89,42 @@
 					Players are allowed to swap assets <b>of equal value</b> with each other at any time, without using their action.</p>
 				<p><b>Easier:</b> Players can buy assets (not portraits!) from the public market by paying with cards from any suits.</p>
 				<p><b>Harder:</b> Swapping cards between players uses your action.</p>
+			</details></li>
+
+			<li><details>
+				<summary class="subtitle">Splitting Stacks <b>2-4</b></summary>
+				<p>Originally found on <a href="https://boardgamegeek.com/filepage/172110/rule-pamphlet">BoardGameGeek: Multi-Stacks</a>.</p>
+				<p>Your goal is to work together to play all the cards in everyone’s hands before the deck runs out.
+					Get rid of cards by playing them on any of the stacks in the middle of the table.
+					Cards are played in consecutive order (ex. a 5 or a 3 can be played on a 4).
+					An ace is both the high and low card: you can play upward to a 2 or downward to a king.</p>
+				<p>Whenever the <b>4th</b> card is placed on a stack, it splits: both ends can be played on independently.
+					In practice, this creates a new stack to play on.
+					This repeats every four card: the stack will split again at the 8th or 12th card, and so on.</p>
+				<p>Each player is assigned a role, which limits the cards you can play on the stacks (always one step at a time):
+					Write the roles that you will use on small pieces of paper and hand one role to each player.
+					Whenever a <b>Jack</b> is played, roles are cycled to the next player in a clockwise motion, which is sure to disrupt your strategy.</p>
+				<ul>
+					<li><b>Monochrome:</b> You can only play a card that is the same color as the top card on a stack.</li>
+					<li><b>Alternating:</b> You can only play a card that is a different color from the stack.</li>
+					<li><b>Upward:</b> You can only play a card that is one number higher than the top number on that stack, regardless of color.</li>
+					<li><b>Downward:</b> You can only play a card that is one number lower than the top number on that stack, regardless of color.</li>
+				</ul>
+				<p>In a 2-players game, use only Monochrome and Alternating.
+					In a 3-players game, keep all four roles: one role is left unused on the side will be cycled back into play whenever a Jack is played.</p>
+				<p><b>Setup:</b> Assign roles. Deal <b class="number-of-cards-at-start">4</b> cards to each player. Use cards from the deck to start as many stacks as there are players, plus one.</p>
+				<p>Then, players take turns doing these three steps:</p>
+				<ol>
+					<li>Draw as many cards as you like.</li>
+					<li>Play as many cards as you like.</li>
+					<li>Pass up to one card to each other player. You must have played at least one card to do this.</li>
+				</ol>
+				<p>All card drawing and passing must stay within the hand limit of eight cards.</p>
+				<p>All players win if, at any moment, all players have successfully played all the cards in their hands.
+					All players lose if players can't draw (the deck is empty or all hands are full) and no one can play a card.</p>
+				<p><b>Harder:</b> Start with exactly two stacks, regardless of the number of players.</p>
+				<p><b>Harder:</b> Stacks will split every 5th card, instead of every 4th..</p>
+				<p><b>Harder:</b> Roles are cycled when Queens or Kings are played too, not just Jacks.</p>
 			</details></li>
 
 			<li><details>
@@ -112,41 +177,21 @@
 				<p><b>Easier:</b> Add an extra hospital.</p>
 				<p><b>Harder:</b> Remove the doctors.</p>
 			</details></li>
+		</ul>
 
+		<p>The following games are more vague and experimental, but could be interesting with the right group.</p>
+		<ul class="games">
 			<li><details>
-				<summary class="subtitle">Splitting Stacks <b>2-4</b></summary>
-				<p>Originally found on <a href="https://boardgamegeek.com/filepage/172110/rule-pamphlet">BoardGameGeek: Multi-Stacks</a>.</p>
-				<p>Your goal is to work together to play all the cards in everyone’s hands before the deck runs out.
-					Get rid of cards by playing them on any of the stacks in the middle of the table.
-					Cards are played in consecutive order (ex. a 5 or a 3 can be played on a 4).
-					An ace is both the high and low card: you can play upward to a 2 or downward to a king.</p>
-				<p>Whenever the <b>4th</b> card is placed on a stack, it splits: both ends can be played on independently.
-					In practice, this creates a new stack to play on.
-					This repeats every four card: the stack will split again at the 8th or 12th card, and so on.</p>
-				<p>Each player is assigned a role, which limits the cards you can play on the stacks (always one step at a time):
-					Write the roles that you will use on small pieces of paper and hand one role to each player.
-					Whenever a <b>Jack</b> is played, roles are cycled to the next player in a clockwise motion, which is sure to disrupt your strategy.</p>
-				<ul>
-					<li><b>Monochrome:</b> You can only play a card that is the same color as the top card on a stack.</li>
-					<li><b>Alternating:</b> You can only play a card that is a different color from the stack.</li>
-					<li><b>Upward:</b> You can only play a card that is one number higher than the top number on that stack, regardless of color.</li>
-					<li><b>Downward:</b> You can only play a card that is one number lower than the top number on that stack, regardless of color.</li>
-				</ul>
-				<p>In a 2-players game, use only Monochrome and Alternating.
-					In a 3-players game, keep all four roles: one role is left unused on the side will be cycled back into play whenever a Jack is played.</p>
-				<p><b>Setup:</b> Assign roles. Deal <b class="number-of-cards-at-start">4</b> cards to each player. Use cards from the deck to start as many stacks as there are players, plus one.</p>
-				<p>Then, players take turns doing these three steps:</p>
-				<ol>
-					<li>Draw as many cards as you like.</li>
-					<li>Play as many cards as you like.</li>
-					<li>Pass up to one card to each other player. You must have played at least one card to do this.</li>
-				</ol>
-				<p>All card drawing and passing must stay within the hand limit of eight cards.</p>
-				<p>All players win if, at any moment, all players have successfully played all the cards in their hands.
-					All players lose if players can't draw (the deck is empty or all hands are full) and no one can play a card.</p>
-				<p><b>Harder:</b> Start with exactly two stacks, regardless of the number of players.</p>
-				<p><b>Harder:</b> Stacks will split every 5th card, instead of every 4th..</p>
-				<p><b>Harder:</b> Roles are cycled when Queens or Kings are played too, not just Jacks.</p>
+				<summary class="subtitle">Eleusis <b>3-7</b></summary>
+				<p>Originally found on <a href="http://www.logicmazes.com/games/eleusis/express.html">LogicMazes.com: Eleusis</a>
+					and on <a href="https://www.pagat.com/eights/eleusis.html">Pagat.com: Eleusis</a>.</p>
+				<p>A leader secretly makes up a rule about which cards can be played, and the other players attempt to play cards and/or guess the rule.</p>
+				<p><b>Setup:</b> Choose a leader, deal <b class="number-of-cards-at-start">7</b> cards to each other player, and start the mainline with a single card.</p>
+				<p>Players take turns attempting to play a card: the leader tells them if it's right or not.
+					Each correctly played card continues the mainline horizontally, wrong guesses are added vertically.
+					If a players plays correctly, he is given a chance to guess the rule;
+					If he played incorrectly, he draws another card to replace the one he played.</p>
+				<p>The game is won when a player guesses the rule, or manages to play his last card.</p>
 			</details></li>
 
 			<li><details>
@@ -156,40 +201,17 @@
 			</details></li>
 
 			<li><details>
-				<summary class="subtitle">Concensus <b>3-7</b></summary>
-				<p>The inspiration for this game can be found on <a href="https://www.pagat.com/exact/ohhell.html">Pagat.com: Oh Hell!</a>.</p>
-				<p>Everyone knows how to play a this game, or a variant:
-					there's a trump suit,
-					you bet how many rounds you'll win,
-					a leading player plays a card and others must try to follow suit,
-					then the highest trump/highest leading suit wins,
-					and the winning player leads the next round.</p>
-				<p>In the coop version, players should still hide their hand and avoid discussing specifics,
-					but the number of bets MUST be equal to the number of cards in each player's hands,
-					and players only reduce the number of cards in their hands for the next draft if everyone's bet was exact.
-					The players win if they can collectively reach zero cards in hand.</p>
-				<p><b>Harder:</b> Track lives! Start with 5, lose one life if bets were incorrect, and gain one if bets were exact (in addition to moving down the number of cards). Don't reach 0!</p>
-			</details></li>
-
-			<li><details>
-				<summary class="subtitle">Eleusis <b>3-7</b></summary>
-				<p>Originally found on <a href="http://www.logicmazes.com/games/eleusis/express.html">LogicMazes.com: Eleusis</a>
-					and on <a href="https://www.pagat.com/eights/eleusis.html">Pagat.com: Eleusis</a>.</p>
-				<p>It's a classic game, where a leader secretly makes up a rule about which cards can be played, and the other players attempt to play cards or to guess the rule.</p>
-				<p><b>Setup:</b> Deal <b class="number-of-cards-at-start">7</b> cards to each player, and start the mainline with a single card.</p>
-				<p>Players take turns attempting to play a card: the leader tells them if it's right or not.
-					Each correctly played card continues the mainline horizontally, wrong guesses are added vertically.
-					If a players plays correctly, he is given a chance to guess the rule;
-					If he played incorrectly, he draws another card to replace the one he played.</p>
-				<p>The game is won when a player guesses the rule, or when a player managed to play all his cards. The game is lost when a player should draw a card but can't, because the deck is empty.</p>
-			</details></li>
-
-			<li><details>
 				<summary class="subtitle">The Quiet Year in the Deep Forest <b>2-4</b></summary>
 				<p>Full rules on <a href="https://buriedwithoutceremony.com/the-quiet-year/the-deep-forest">BuriedWithoutCeremony</a>.</p>
 				<q>The Quiet Year occupies an interesting space – part roleplaying game, part cartographic poetry.</q>
 				<p>Best played with people who are familiar with roleplaying.</p>
 			</details></li>
+		</ul>
+
+		<p>If you're feeling competitive, you can play
+		<ul>
+			<li><a href="https://boardgamegeek.com/boardgame/194626/happy-salmon">Happy Salmon (Board Game Geek)</a> by saying Spades are handshake, Clubs are fistbump, etc.</li>
+			<li><a href="https://boardgamegeek.com/boardgame/352515/trio">Trio (Board Game Geek)</a> by removing all Diamonds.</li>
 		</ul>
 	</div>
 </body>

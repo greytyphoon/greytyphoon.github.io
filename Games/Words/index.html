@@ -6,8 +6,8 @@
 	<title>Games with just words</title>
 	<link rel="stylesheet" href="../../basic.css">
 	<style>
-		#all-games { list-style: none; }
-		summary.subtitle { margin-left: -30px; }
+		ul.games { list-style: none; }
+		ul.games summary.subtitle { margin-left: -30px; }
 	</style>
 </head>
 <body>
@@ -19,12 +19,12 @@
 			So many games require just paper, pencils, and a word generator! Here's some inspiration for a game that's simple to play without much planning or material.
 		</p>
 
-		<ul id="all-games">
+		<ul class="games">
 			<li><details>
-				<summary class="subtitle">Aye, Dark Overlord!</summary>
+				<summary class="subtitle"><a href="https://boardgamegeek.com/boardgame/18723/aye-dark-overlord-the-red-box">Aye, Dark Overlord!</a></summary>
 				<p>
 					One player takes on the role of Rigor Mortis, the Dark Overlord, who finds that his diabolical schemes have once again been thwarted.
-					The other players portray his cowering goblin servants, concocting ridiculous excuses to avoid the Overlord’s wrath. 
+					The other players portray his cowering goblin servants, concocting ridiculous excuses to avoid the Overlord’s wrath.
 					Each goblin player begins the game with three (secret) random words.
 					When called upon to provide an explanation for their mistakes, the player must use one of those words and create a story.
 					And it had better be good, since the Dark Overlord has no patience for stalling or boring stories.
@@ -34,32 +34,52 @@
 			</details></li>
 
 			<li><details>
-				<summary class="subtitle">Just One</summary>
+				<summary class="subtitle"><a href="https://boardgamegeek.com/boardgame/254640/just-one">Just One</a></summary>
 				<p>
-					One player is the Leader, and looks away.
-					One word is drawn, revealed to all other players.
-					Each player writes down a related word, a "hint" to help the Leader guess the main word.
-					The players share their word with each other: if a word is chosen by two people, it is removed!
-					The Leader comes back and sees all remaining words, and has one guess to find the main word.
-					Then, change leaders and start again!
+					A leader is chosen and looks away.
+					One word is generated, revealed to all other players.
+					Each player writes down a related word, a "hint" to help the leader guess the main word.
+					The players share their word with each other: if a word is chosen by two players, it is removed!
+					The leader comes back and sees all remaining words, and has one guess to find the main word.
 				</p>
 			</details></li>
 
 			<li><details>
-				<summary class="subtitle">Pictionary</summary>
+				<summary class="subtitle"><a href="https://boardgamegeek.com/boardgame/306169/match-5">Match 5</a></summary>
 				<p>
-					One player is the Leader, and secretly draws a word.
-					He must draw, doodle, or sketch that word.
-					He can't use letters or numbers.
-					All other players try to guess what the Leader is drawing: just keep guessing, there is no penalty for being wrong.
-					When someone guesses correctly, or when time runs out, change leaders and start again!
+					Generate 5 words for the group.
+					Each player secretly writes 10 words, one for each possible combination of the five random words, without repeating.
+					When all are done, compare answers.
 				</p>
 			</details></li>
 
 			<li><details>
-				<summary class="subtitle">Cranium - Blind Pictionary</summary>
+				<summary class="subtitle"><a href="https://boardgamegeek.com/boardgame/300753/cross-clues">Cross Clues</a></summary>
 				<p>
-					Same as Pictionary, but the Leader is blinded after reading his word.
+					Generate 8 words for the group: four horizontally, four vertically.
+					A leader is randomly, secretly assigned a place on the grid.
+					They must say a single word associating the two ideas.
+					The other players agree on what place on the grid it must represent.
+					If they are right, mark off that place, it has been solved.
+					If they are wrong, tally the mistakes.
+					Try to fill the grid with as few mistakes as possible.
+				</p>
+			</details></li>
+
+			<li><details>
+				<summary class="subtitle"><a href="https://boardgamegeek.com/boardgame/2281/pictionary">Pictionary</a></summary>
+				<p>
+					A leader secretly generates a word.
+					They must draw, doodle, or sketch that word.
+					They can't use letters or numbers.
+					All other players try to guess what the leader is drawing.
+				</p>
+			</details></li>
+
+			<li><details>
+				<summary class="subtitle"><a href="https://boardgamegeek.com/boardgame/891/cranium">Cranium</a> - Blind Pictionary</summary>
+				<p>
+					Same as Pictionary, but the leader draws blindly.
 					Obviously, much easier words should be used.
 				</p>
 			</details></li>
@@ -67,50 +87,35 @@
 			<li><details>
 				<summary class="subtitle">Cranium - Mime game</summary>
 				<p>
-					One player is the Leader, and secretly draws a word.
-					He must mime, act out, or charade that word.
-					He cannot talk , make any noise, or use accessories.
-					All other players try to guess what the Leader is miming: just keep guessing, there is no penalty for being wrong.
-					When someone guesses correctly, or when time runs out, change leaders and start again!
+					Same as Pictionary, but the leader must mime.
 				</p>
 			</details></li>
 
 			<li><details>
 				<summary class="subtitle">Cranium - Puppet game</summary>
 				<p>
-					Like the mime game, but another player is the Puppet, and the Leader can't mime themselves, they must move the Puppet.
+					Like the mime game, but another player is the Puppet, and the leader can't mime by themselves, they must move the Puppet.
 					Obviously, easier words should be used.
-				</p>
-			</details></li>
-
-			<li><details>
-				<summary class="subtitle">Cranium - Impersonator game</summary>
-				<p>
-					Like the mime game, but draw a random famous person or character. Use a different generator!
-					In this version, the Leader can talk, but shouldn't say names of people or places.
 				</p>
 			</details></li>
 
 			<li><details>
 				<summary class="subtitle">Cranium - Humming game</summary>
 				<p>
-					One player is the Leader, and secretly draws a song title.
-					He must hum, whistle, or otherwise perform that song.
-					He can't use words or gestures (no singing or dancing).
-					All other players try to guess what the Leader is humming: just keep guessing, there is no penalty for being wrong.
-					When someone guesses correctly, or when time runs out, change leaders and start again!
+					A leader secretly generates a song title.
+					They must hum, whistle, or otherwise perform that song.
+					They can't use words or gestures (no singing or dancing).
+					All other players try to guess what the leader is humming.
 				</p>
 				<p>You'll need a song generator. That's harder to find, but try <a href="https://binb.co/">binb</a>.</p>
 			</details></li>
 
 			<li><details>
-				<summary class="subtitle">Catchphrases / Taboo</summary>
+				<summary class="subtitle"><a href="https://boardgamegeek.com/boardgame/1111/taboo">Taboo</a></summary>
 				<p>
-					One player is the Leader, and secretly draws a word.
-					He gives verbal clues to other players.
-					He can't use the drawn word.
-					All other players try to guess what the Leader is describing: just keep guessing, there is no penalty for being wrong.
-					When someone guesses correctly, draw another word. Repeat until time runs out, count the number of words successfully guessed, change leaders and start again!
+					A leader secretly generates a word.
+					They give verbal clues to other players, but can't use the generated word.
+					All other players try to guess what the leader is describing.
 				</p>
 				<p>
 					You can use <a href="http://playtaboogame.com/">this Taboo game</a> to also generate some added words to ban, for extra difficulty.
@@ -118,41 +123,21 @@
 			</details></li>
 
 			<li><details>
-				<summary class="subtitle">Exquisite Corpse / Mad Libs</summary>
+				<summary class="subtitle">Don't Get Me Started</summary>
 				<p>
-					You know how it works...
-					An easy idea to get started is to have someone make up the first verse of a poem, but it must contain this random word.
-					Next player does the next verse, etc.
-					Are we counting syllables for iambic pentameters, writing a haiku?
-					You can then develop, edit, perfect the poem. Analyse the themes or figure out a story, if the players are willing.
+					A leader generates a word. 
+					They must go on an angry rant about that subject.
 				</p>
 			</details></li>
-
-			<li><details>
-				<summary class="subtitle">Match 5</summary>
-				<p>Read <a href="https://jeuxsynapsesgames.com/game/match-5/">the rules</a> and make up your own five cards as a group when playing.</p>
-			</details></li>
-
-			<li><details>
-				<summary class="subtitle">Telestration</summary>
-				<p>
-					Basically, pick a word, draw it, pass the sketchbook;
-					the next player looks at the drawing, guesses the word, passes the sketchbook;
-					the next player looks at the word, draws it, passes the sketchbook;
-					repeat until the sketchbook ends back up at the original player.
-					Results are always either impressive or hilarious.
-				<p>
-				<p>Telestration takes pretty specific sketchbooks, but it's close enough that I'll list it here.</p>
-			</details></li>
 		</ul>
-		
+
+		<center>
 		<p>
 			You will also need a random word generator!<br>
 			Try <a href="https://randomwordgenerator.com/pictionary.php">Pictionary Generator</a> or <a href="https://www.thegamegal.com/word-generator/">TheGameGal's Word Generator</a>.<br>
-			Spice it up with Cards against Humanity cards? <a href="https://pyx-1.pretendyoure.xyz/zy/game.jsp">Pretend you're Xyzzy</a> or <a href="https://allbad.cards/">All Bad Cards</a>.
+			Spice it up with Cards against Humanity cards from <a href="https://pyx-1.pretendyoure.xyz/zy/game.jsp">Pretend you're Xyzzy</a>.
 		</p>
-		
-		<p>Check out <a href="https://googlefeud.com/">GoogleFeud</a> too, for more word fun.</p>
+		</center>
 	</div>
 </body>
 </html>

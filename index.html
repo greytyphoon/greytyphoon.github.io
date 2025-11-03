@@ -9,7 +9,14 @@
 	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" href="basic.css">
 	<style>
-		li.plus { list-style-type: circle; }
+		.widgets > * {
+			min-height: 3rem;
+			margin-bottom: .25rem;
+			border: 1px solid var(--tint-dark);
+			border-radius: 1rem;
+			padding: 1rem;
+			text-align: center;
+		}
 	</style>
 </head>
 <body>
@@ -52,23 +59,21 @@
 		</ul>
 
 		<h2>Other stuff</h2>
-		<ul>
-			<li class="plus">My <a href="CV">Résumé</a></li>
-			<li>Some <a href="Recipes">Recipes</a></li>
-			<li>Some <a href="Songs">Songs</a></li>
-			<li>Games with <a href="Games/Cards">Cards</a>, with <a href="Games/Words">Words</a>, or within <a href="Games/Cars">Cars</a>.</li>
-		</ul>
+		<section class="row widgets br">
+			<div>My <a href="CV">Résumé</a></div>
+			<div><a href="Recipes">Recipes</a></div>
+			<div><a href="Songs">Songs</a></div>
+			<div>Games with <a href="Games/Cards">Cards</a></div>
+			<div>Games with <a href="Games/Words">Words</a></div>
+			<div>Games for the <a href="Games/Cars">Car</a></div>
+		</section>
 
 		<h2>Other cool sites</h2>
 		<ul>
-			<li class="plus"><a href="https://psychose.ca/">Roujo</a></li>
-			<li class="plus"><a href="https://ldjam.com/">LudumDare</a> (thanks for keeping me creative!)</li>
+			<li><a href="https://ldjam.com/">Ludum Dare</a></li>
 			<li><a href="https://ncase.me/">NutCaseNightmare</a></li>
 			<li><a href="https://www.newrafael.com/">R.Rozendaal</a></li>
 			<li><a href="http://ludomancy.com/">DanielBen</a></li>
-			<li><a href="http://lucaspaakh.com/">Particlasm</a></li>
-			<li><a href="https://nifflas.ni2.se/">Nifflas</a></li>
-			<li><a href="http://slimedaughter.com/">Porpentine</a></li>
 			<li><a href="http://kupogames.com/">Kupo707</a></li>
 			<li><a href="https://www.necessarygames.com/">NecessaryGames</a></li>
 		</ul>
