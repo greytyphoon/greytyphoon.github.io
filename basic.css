@@ -15,7 +15,7 @@
  **/
 :root {
 	--tint-white: #ffffff;
-	--tint-light: #eaebef;
+	--tint-light: #ebebeb;
 	--tint-grey: #a9a9a9;
 	--tint-dark: #595959;
 	--tint-black: #0b0608;
@@ -39,11 +39,11 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--tint-black: #f4f9f7;
+		--tint-black: #dedede;
 		--tint-dark: #a6a6a6;
 		--tint-grey: #565656;
-		--tint-light: #15141a;
-		--tint-white: #0b0618;
+		--tint-light: #24233d;
+		--tint-white: #12111e;
 	}
 }
 
@@ -86,10 +86,13 @@ img {
  * Basic page layout	(.container, #fixref)
  */
 
+body {
+	overflow-y: scroll;
+	background-color: var(--tint-white);
+}
 body > .container { padding: 10px 25px .5px 25px; }
 @media screen and (min-width: 576px) {
 	body {
-		overflow-y: scroll;
 		background-color: var(--tint-light);
 	}
 	body > .container {
@@ -219,6 +222,9 @@ header {
 	box-shadow: 2px 2px 2px var(--tint-grey);
 	color: var(--tint-white);
 	text-shadow: 1px 1px 2px var(--tint-black);
+	@media (prefers-color-scheme: dark) {
+		color: var(--tint-black);
+		text-shadow: 1px 1px 1px var(--tint-white); }
 }
 header a { color: var(--tint-white); }
 header h1 {

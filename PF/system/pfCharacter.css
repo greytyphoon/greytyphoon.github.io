@@ -73,6 +73,9 @@ dl#featsWrapper > dd {
 	background-color: var(--weapon-color);
 	color: var(--tint-white);
 	text-shadow: 1px 1px 1px var(--tint-black);
+	@media (prefers-color-scheme: dark) {
+		color: var(--tint-black);
+		text-shadow: 1px 1px 1px var(--tint-white); }
 	border-bottom: 1px solid var(--weapon-color);
 	margin: -4px -10px 4px -10px;
 	padding: .15em .5em; }
