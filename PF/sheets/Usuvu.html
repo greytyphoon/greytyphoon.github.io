@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<meta property="og:title" content="Usuvu Knucklebrash, free wind of Bharnarol" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://greytyphoon.space/PF/sheets/Usuvu.html" />
+	<meta property="og:image" content="https://i.pinimg.com/originals/2e/75/29/2e7529998e608d2193b896b367424d12.png" />
+	<meta property="og:description" content="The PF2 character sheet for Usuvu, a 4th-level gnome cleric." name="description">
+	<title>Grey's Cleric</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF/index.html">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Usuvu Knucklebrash, free wind of Bharnarol</h1>
+			NG Small Humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>0</dd>
+
+				<dt>Dex</dt>
+				<dd>2 <small>B, L1</small></dd>
+
+				<dt>Con</dt>
+				<dd>2 <small>A, L1</small></dd>
+
+				<dt>Int</dt>
+				<dd>1 <small>L1</small></dd>
+
+				<dt>Wis</dt>
+				<dd>4 <small>A, B, C, L1</small></dd>
+
+				<dt>Cha</dt>
+				<dd>0</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Ancestry</dt>
+				<dd><a href="https://2e.aonprd.com/Ancestries.aspx?ID=61">Gnome</a></dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/Heritages.aspx?ID=249">Wellspring Gnome</a> Heritage</dd>
+
+				<dt>Background</dt>
+				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=310">Once Bitten</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=33">Cleric</a> 4</dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/Doctrines.aspx?ID=4">Cloistered</a> Doctrine</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd><a href="https://2e.aonprd.com/Deities.aspx?ID=467">Bharnarol</a></dd>
+
+				<dt>Senses</dt>
+				<dd title="Gnome Ancestry"><a href="https://2e.aonprd.com/Rules.aspx?ID=416">Low-light vision</a></dd>
+
+				<dt>Speed</dt>
+				<dd>25 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Fey, Gnomish, Dwarven</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<!--
+		<img id="main-picture" src="https://placecats.com/400/200" alt="Pathfinder - Mimzy Za &copy;yuikami-da" onclick="document.getElementById('large-picture').showModal()">
+		-->
+		<img id="main-picture" src="https://i.pinimg.com/originals/2e/75/29/2e7529998e608d2193b896b367424d12.png" alt="Pathfinder - Mimzy Za &copy;yuikami-da" onclick="document.getElementById('large-picture').showModal()">
+		<button id="featsWrapper" class="br noprint" onclick="document.getElementById('build-info').showModal()">Open Feats</button>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>8</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=1">Acrobatics</a>
+				<small>2 dex, 2 prf, 4 lvl</small>
+			</li>
+			<li>
+				<strong>7</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=4">Crafting</a>
+				<small>1 int, 2 prf, 4 lvl</small>
+				<div class="circumstancialBonus" title="Crafter's Appraisal">Use it to <a href="https://2e.aonprd.com/Actions.aspx?ID=2365">Identify Magic</a> on magic items.</div>
+			</li>
+			<li>
+				<strong>13</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=9">Medicine</a>
+				<small>4 wis, 4 prf, 4 lvl, <u title="Healer's Tools, Expanded">1 item</u></small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=10">Nature</a>
+				<small>4 wis, 2 prf, 4 lvl</small>
+			</li>
+			<li>
+				<strong>12</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=13">Religion</a>
+				<small>4 wis, 4 prf, 4 lvl</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=16">Survival</a>
+				<small>4 wis, 2 prf, 4 lvl</small>
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<div>
+				<!--Basics: Statblock and Weapons-->
+				<ul class="summations">
+					<li class="br">
+						<strong>10</strong>
+						<b>Perception</b>
+						<small>4 wis, 2 prf, 4 lvl</small>
+						<div class="circumstancialBonus" title="Wellspring Magic">When rolling initiative, roll a <u>DC 6</u> flat check. Either regain a spell slot, or cause a wellspring surge.</div>
+					</li>
+					<li>
+						<strong>48</strong>
+						<b>HP</b>
+						<small>8 gnome, 4 lvl: 8 cleric, 2 con</small>
+					</li>
+					<li class="br">
+						<strong>18</strong>
+						<b>AC</b>
+						<small>10, 2 dex, 2 prf, 4 lvl</small>
+						<div class="circumstancialBonus"><u>+2 circ</u> when raising a shield</div>
+					</li>
+					<li>
+						<strong>10</strong>
+						<b>Fort</b>
+						<small>2 con, 4 prf, 4 lvl</small>
+					</li>
+					<li>
+						<strong>10</strong>
+						<b>Ref</b>
+						<small>2 dex, <u title="Canny Acumen">4 prf</u>, 4 lvl</small>
+					</li>
+					<li>
+						<strong>12</strong>
+						<b>Will</b>
+						<small>4 wis, 4 prf, 4 lvl</small>
+					</li>
+				</ul>
+
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=5125">Battle Medicine</a></h2>
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Actions.aspx?ID=2316">Raise Shield</a></h2>
+				<h2 class="reaction"><a href="https://2e.aonprd.com/Feats.aspx?ID=4651">Rapid Response</a></h2>
+			</div>
+			<div>
+				<!--Sickle-->
+				<div class="weapon">
+					<h2>Sickle <b>S</b></h2>
+					<div class="summation"><strong>+9</strong>/<strong>5</strong>/<strong>1</strong> vs AC <small>2 dex, 2 prf, 4 lvl, <u title="Potency Rune">1 item</u></small></div>
+					<div class="summation"><strong>2d4</strong> <small>0 str</small></div>
+					<div class="circumstancialBonus">Trip.</div>
+				</div>
+
+				<h2>Focus Pool <b>2 FP</b></h2>
+				<dl>
+					<dt class="one-action"><a href="https://2e.aonprd.com/Spells.aspx?ID=2389">Swear Oath</a></dt>
+					<dd><a href="https://2e.aonprd.com/Actions.aspx?ID=2367">Ready</a> an action in line with your edicts.<br>
+						Gain <u>+1 status</u> on any attack/skill required.<br>
+						If the trigger doesn't occur, <a class="one-action" href="https://2e.aonprd.com/Actions.aspx?ID=2317">Sustain</a> to regain the FP.</dd>
+
+					<dt class="reaction"><a href="https://2e.aonprd.com/Spells.aspx?ID=1812">Scholarly Recollection</a></dt>
+					<dd>When you <a href="https://2e.aonprd.com/Actions.aspx?ID=2554">Seek</a> or <a href="https://2e.aonprd.com/Actions.aspx?ID=2367">Recall Knowledge</a>, gain advantage.</dd>
+				</dl>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+		</section>
+
+		<!-- title Spells -->
+		<section class="row">
+			<div class="wide">
+				<!--Electric Arc-->
+				<div class="weapon">
+					<h2 class="two-actions">Electric Arc <b>⚡</b> <b class="range strict">30ft</b></h2>
+					<div class="summation"><strong>DC 20</strong> Basic Reflex save <small>divine spell dc</small></div>
+					<div class="circumstancialBonus">Targets up to 2 foes.</div>
+					<div class="summation"><strong class="electricity">3d4</strong></div>
+				</div>
+
+				<!--Needle Darts-->
+				<div class="weapon">
+					<h2 class="two-actions">Needle Darts <b>P</b> <b class="range strict">30ft</b></h2>
+					<div class="summation"><strong>+10</strong> vs AC <small>divine spell attack</small></div>
+					<div class="summation"><strong>4d4</strong></div>
+					<div class="circumstancialBonus">Made of metal. On crit, add <u>2 dot 🩸</u>.</div>
+				</div>
+			</div>
+			<div class="ample">
+				<h2>Prepared <a href="https://2e.aonprd.com/SpellLists.aspx?Tradition=2">Divine</a> Spells</h2>
+				<p class="summation">
+					<strong>10</strong>
+					<b>Attack</b>; 20 <b>DC</b>
+					<small>10, 4 wis, 2 prf, 4 lvl</small>
+				</p>
+			</div>
+			<div>
+				<h2>Cantrips</h2>
+				<ul>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1971">bullhorn</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1485">detect magic</a></li>
+					<li><a class="spell electricity bonus off-class" title="First-World Magic" href="https://2e.aonprd.com/Spells.aspx?ID=97">electric arc</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=2353">glamorize</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1585">light</a></li>
+					<li><a class="spell bonus" title="Wellspring Gnome" href="https://2e.aonprd.com/Spells.aspx?ID=1375">needle darts</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 1</h2>
+				<ul>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=2345">benediction</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1451">bless</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 2</h2>
+				<ul>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1316">gentle breeze</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1185">loose time's arrow</a></li>
+					<li><a class="spell three-actions bonus" href="https://2e.aonprd.com/Spells.aspx?ID=148">heal</a></li>
+					<li><a class="spell three-actions bonus" href="https://2e.aonprd.com/Spells.aspx?ID=148">heal</a></li>
+					<li><a class="spell three-actions bonus" href="https://2e.aonprd.com/Spells.aspx?ID=148">heal</a></li>
+					<li><a class="spell three-actions bonus" href="https://2e.aonprd.com/Spells.aspx?ID=148">heal</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section>
+			<h2>Rules to play Usuvu</h2>
+			<ol class="list">
+				<li>Any player can spend an action to <a class="one-action" href="https://2e.aonprd.com/Traits.aspx?ID=653">Command</a> Usuvu.
+					She gains two actions.
+					The player chooses how to spend those actions.</li>
+				<li>At the top of each round, Usuvu becomes ready to act. She can act only once per round.</li>
+				<li>At the end of each round, if Usuvu hasn't acted, she will <a href="https://2e.aonprd.com/Actions.aspx?ID=2316">Raise Shield</a> and <a href="https://2e.aonprd.com/Actions.aspx?ID=2317">Sustain</a> any spell she had cast.</li>
+				<li>Usuvu can use a reaction each round.
+					The GM will decide how and when they are spent, but usually, the first trigger to come up will be used.</li>
+			</ol>
+		</section>
+	</div>
+
+	<dialog id="build-info" class="info" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<section class="row">
+			<dl class="charInfo">
+				<dt>gnome 1</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4425">First-World Magic</a></dd>
+				<dt>cleric 1</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4644">Domain Initiate</a> (<a href="https://2e.aonprd.com/Domains.aspx?ID=108">Duty</a>)</dd>
+				<dt>cleric 2</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4644">Domain Initiate</a> (<a href="https://2e.aonprd.com/Domains.aspx?ID=80">Knowledge</a>)</dd>
+				<dt>archetype 2</dt>
+				<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=104">Wellspring Mage Dedication</a></dd>
+				<dt>general 3</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5130">Canny Acumen</a> (Reflex)</dd>
+				<dt>cleric 4</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4651">Rapid Response</a></dd>
+				<dt>archetype 4</dt>
+				<dd class="br"><a href="https://2e.aonprd.com/Feats.aspx?ID=3030">Wellspring Control</a></dd>
+			</dl>
+
+			<dl class="charInfo">
+				<dt>background</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5125">Battle Medicine</a></dd>
+				<dt>skill 2</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=6470">Crafter's Appraisal</a></dd>
+				<dt>skill 4</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5137">Continual Recovery</a></dd>
+			</dl>
+
+			<dl class="charInfo">
+				<dt>background</dt>
+				<dd>Trained, Medicine*</dd>
+				<dt>cleric 1</dt>
+				<dd>Trained, Crafting*</dd>
+				<dd>Trained, Religion*</dd>
+				<dd>Trained, Acrobatics</dd>
+				<dd>Trained, Survival</dd>
+				<dd>Trained, Nature</dd>
+				<dt>skill 3</dt>
+				<dd>Expert, Medicine</dd>
+				<dd>Expert, Religion</dd>
+			</dl>
+		</section>
+	</dialog>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Usuvu – Art by <a href="https://www.deviantart.com/yuikami-da">yuikami-da</a></h2>
+		<a href="https://www.deviantart.com/yuikami-da/art/Pathfinder-Mimzy-Za-314877384">
+		<img src="https://i.pinimg.com/originals/2e/75/29/2e7529998e608d2193b896b367424d12.png" alt="Pathfinder - Mimzy Za &copy;yuikami-da"></a>
+	</dialog>
+</body>
+</html>
