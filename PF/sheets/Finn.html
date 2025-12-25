@@ -1358,12 +1358,14 @@
 				else n.classList.add('hidden');
 			});
 		}
-		showOnly(document.getElementById('level-picker').value);
 		document.addEventListener('keydown', e => {
-			if (e.key == '1') { showOnly('level-1'); document.getElementById('level-picker').selectedIndex = 0; } 
-			if (e.key == '2') { showOnly('level-2'); document.getElementById('level-picker').selectedIndex = 1; }
-			if (e.key == '3') { showOnly('level-3'); document.getElementById('level-picker').selectedIndex = 2; }
-			if (e.key == '4') { showOnly('level-4'); document.getElementById('level-picker').selectedIndex = 3; }
+			if (e.keyCode < 49 || e.keyCode > 52) return;
+			let className = 'level-' + e.key;
+			showOnly(className);
+			document.getElementById('level-picker').value = className; 
+		});
+		window.addEventListener('load', e => {
+			showOnly(document.getElementById('level-picker').value);
 		});
 	</script>
 </body>
