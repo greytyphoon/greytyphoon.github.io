@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- ©2025 Rémi Doutre / Greytyphoon -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Rémi Doutre">
+	<meta name="description" content="Greytyphoon's take on a classic game.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Dig-Up, a game about finding shapes</title>
+	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
+	<link rel="stylesheet" type="text/css" href="../game.css"/>
+	<style>
+		#timer { float: right; }
+		#gameBoard {
+			position: relative;
+			font-size: 2em;
+			display: grid;
+			margin: 1rem auto;
+			svg: { z-index: 1; } /* behind .box */
+		}
+		.box {
+			width: 40px;
+			height: 40px;
+			position: relative;
+			box-shadow: 0 0 8px var(--tint-black);
+			text-align: center;
+			background-color: deepskyblue;
+			z-index: 2;
+			&:hover:not(.seen) { animation: pulse 2s linear infinite; }
+		}
+		.box.seen.right { background-color: aquamarine; }
+		.box.seen.right.all { visibility: hidden; }
+		.box.seen.wrong { background-color: lightcoral; }
+		@keyframes pulse {
+			0% { background-color: deepskyblue; }
+			33% { background-color: dodgerblue; }
+			66% { background-color: dodgerblue; }
+			100% { background-color: deepskyblue; }
+		}
+		#area-hint-shapes {
+			font-size: 2em;
+			text-align: center;
+			width: 100%;
+		}
+		#options > dl > dt { margin-top: .75em; }
+	</style>
+	<script type="text/javascript" src="../game.js"></script>
+	<script type="text/javascript" src="foundation.js"></script>
+</head>
+<body onload="startGame(); modal.showOnce('how-to-play', 'DigUp');">
+	<div class="container">
+		<header id="header">
+			<h1>Dig-Up, a game about finding shapes</h1>
+			Greytyphoon's mini-game
+		</header>
+
+		<section>
+			<div id="timer">00:00</div>
+			<div><b id="score">0</b> squares dug</div>
+		</section>
+
+		<div id="gameBoard">
+		</div>
+
+		<div id="area-hint-shapes">
+		</div>
+
+		<template id="shape-wreath">
+			<svg width="120px" height="120px"><circle cx="60" cy="60" fill="none" r="44" stroke="green" stroke-width="24" /></svg>
+		</template>
+		<template id="shape-star">
+			<svg width="120px" height="120px"><polygon points="60,4	72,48	116,60	72,72	60,116	48,72	4,60	48,48" fill="yellow" stroke="grey" /></svg>
+		</template>
+		<template id="shape-gift-1">
+			<svg width="80px" height="80px"><polygon points="6,6	6,74	74,74	74,6" fill="blue" stroke="grey" /></svg>
+		</template>
+		<template id="shape-gift-2-v">
+			<svg width="80px" height="120px"><polygon points="6,6	6,114	74,116	74,6" fill="red" stroke="grey" /></svg>
+		</template>
+		<template id="shape-gift-2-h">
+			<svg width="120px" height="80px"><polygon points="6,6	114,6	114,74	6,74" fill="red" stroke="grey" /></svg>
+		</template>
+		<template id="shape-log-h">
+			<svg width="200px" height="40px"><line x1="8" y1="20" x2="192" y2="20" stroke="chocolate" stroke-width="24px" /></svg>
+		</template>
+		<template id="shape-log-v">
+			<svg width="40px" height="200px"><line x1="20" y1="8" x2="20" y2="192" stroke="chocolate" stroke-width="24px" /></svg>
+		</template>
+		<template id="shape-tree-n">
+			<svg width="120px" height="120px"><polygon points="60,16	96,64	114,114	6,114	24,64" fill="forestgreen" stroke="grey" /></svg>
+		</template>
+		<template id="shape-tree-w">
+			<svg width="120px" height="120px"><polygon points="104,60	56,96	6,114	6,6	56,24" fill="forestgreen" stroke="grey" /></svg>
+		</template>
+		<template id="shape-tree-s">
+			<svg width="120px" height="120px"><polygon points="60,104	24,56	6,6	114,6	96,56" fill="forestgreen" stroke="grey" /></svg>
+		</template>
+		<template id="shape-tree-e">
+			<svg width="120px" height="120px"><polygon points="16,60	64,24	114,6	114,114	64,96" fill="forestgreen" stroke="grey" /></svg>
+		</template>
+		<template id="shape-candle-n">
+			<svg width="120px" height="120px"><polygon points="60,16	76,96	114,114	6,114	44,96" fill="goldenrod" stroke="grey" /></svg>
+		</template>
+		<template id="shape-candle-w">
+			<svg width="120px" height="120px"><polygon points="104,60	24,76	6,114	6,6	24,76" fill="goldenrod" stroke="grey" /></svg>
+		</template>
+		<template id="shape-candle-s">
+			<svg width="120px" height="120px"><polygon points="60,104	44,24	6,6	114,6	76,24" fill="goldenrod" stroke="grey" /></svg>
+		</template>
+		<template id="shape-candle-e">
+			<svg width="120px" height="120px"><polygon points="16,60	96,44	114,6	114,114	96,76" fill="goldenrod" stroke="grey" /></svg>
+		</template>
+		<template id="shape-moon-n">
+			<svg width="120px" height="80px"><polygon points="8,8	8,72	112,72	112,8	88,8	88,48	32,48	32,8" fill="plum" stroke="grey" /></svg>
+		</template>
+		<template id="shape-moon-w">
+			<svg width="80px" height="120px"><polygon points="8,8	8,112	72,112	72,88	32,88	32,32	72,32	72,8" fill="plum" stroke="grey" /></svg>
+		</template>
+		<template id="shape-moon-s">
+			<svg width="120px" height="80px"><polygon points="8,8	8,72	32,72	32,32	88,32	88,72	112,72	112,8" fill="plum" stroke="grey" /></svg>
+		</template>
+		<template id="shape-moon-e">
+			<svg width="80px" height="120px"><polygon points="8,8	8,32	48,32	48,88	8,88	8,112	72,112	72,8" fill="plum" stroke="grey" /></svg>
+		</template>
+	</div>
+
+	<nav id="fixref">
+		<ul>
+			<li><a class="how-to-play" onClick="modal.showModal('how-to-play');">How to play</a></li>
+			<li><a class="options" onclick="modal.showModal('options');">Options</a></li>
+			<li><a class="confirm" onclick="document.getElementById('confirm-restart').toggleAttribute('visible'); startGame();" id="confirm-restart">Confirm</a>
+				<a class="restart" onclick="document.getElementById('confirm-restart').toggleAttribute('visible');">Restart</a>
+			<li><a class="credits" onClick="modal.showModal('credits');">Credits</a></li>
+		</ul>
+	</nav>
+
+	<dialog id="how-to-play">
+		<h2>How to play <b><a onClick="modal.closeModal('how-to-play');">&times;</a></b></h2>
+		<p>Click on squares to dig them up.</p>
+		<p>🏆 To win, you must find all the buried shapes.</p>
+		<p>Dig as few squares as possible. Good luck!</p>
+		<center><a onClick="modal.closeModal('how-to-play');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="options">
+		<h2>Options <b><a onClick="modal.closeModal('options');">&times;</a></b></h2>
+		<dl>
+			<dt><label for="opt-gridsize">Grid Size</label></dt>
+			<dd><input type="number" min="5" max="15" value="6" maxlength="2" id="opt-gridsize-x" style="width:5em">
+				by <input type="number" min="8" max="18" value="11" maxlength="2" id="opt-gridsize-y" style="width:5em"></dd>
+
+			<dt>Number of shapes</dt>
+			<dd><input type="radio" name="nbShapes" id="opt-nbShapes-few"><label for="opt-nbShapes-few">Few</label>,
+				<input type="radio" name="nbShapes" id="opt-nbShapes-normal" checked><label for="opt-nbShapes-normal">Normal</label>,
+				<input type="radio" name="nbShapes" id="opt-nbShapes-plenty"><label for="opt-nbShapes-plenty">Plenty</label>.</dd>
+		</dl>
+		<center><a onClick="modal.closeModal('options'); startGame();">Apply</a> - <a onClick="modal.closeModal('options');">Cancel</a></center>
+	</dialog>
+
+	<dialog id="credits">
+		<h2>Dig-Up, a game about finding shapes <b><a onClick="modal.closeModal('credits');">&times;</a></b></h2>
+		<p>A take on a classic game</p>
+		<p>By Greytyphoon (Rémi Doutre)</p>
+		<p>©2025 Montréal, Québec, Canada</p>
+		<center><a onClick="modal.closeModal('credits');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="victory">
+		<h2>Victory! <b><a onClick="modal.closeModal('victory');">&times;</a></b></h2>
+		<p>You managed to dig them all up!</p>
+		<p>Congratulations!</p>
+		<center><a onClick="modal.closeModal('victory');">Yay!</a></center>
+	</dialog>
+</body>
+</html>
