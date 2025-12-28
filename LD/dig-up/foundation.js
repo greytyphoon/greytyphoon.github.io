@@ -20,11 +20,16 @@ const options = {
 	nbShapes: 4,
 	readOptions: function() {
 		this.gridsizeX = document.getElementById("opt-gridsize-x").valueAsNumber || 6;
+		if (this.gridsizeX < 5) this.gridsizeX = 5;
+		if (this.gridsizeX > 15) this.gridsizeX = 15;
 		this.gridsizeY = document.getElementById("opt-gridsize-y").valueAsNumber || 11;
+		if (this.gridsizeY < 8) this.gridsizeY = 8;
+		if (this.gridsizeY > 18) this.gridsizeY = 18;
 		const divider = document.getElementById("opt-nbShapes-few").checked ? 20
 					: document.getElementById("opt-nbShapes-plenty").checked ? 12
 					: 15;
 		this.nbShapes = Math.floor(this.gridsizeX * this.gridsizeY / divider);
+		if (this.nbShapes > shapeList.length) this.nbShapes = shapeList.length;
 	},
 };
 

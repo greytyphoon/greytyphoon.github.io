@@ -6,7 +6,7 @@
 	<meta name="author" content="Rémi Doutre">
 	<meta name="description" content="Greytyphoon's take on a classic game.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Dig-Up, a game about finding shapes</title>
+	<title>Dig-Up!</title>
 	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
 	<link rel="stylesheet" type="text/css" href="../game.css"/>
 	<style>
@@ -50,7 +50,7 @@
 <body onload="startGame(); modal.showOnce('how-to-play', 'DigUp');">
 	<div class="container">
 		<header id="header">
-			<h1>Dig-Up, a game about finding shapes</h1>
+			<h1>Dig-Up!</h1>
 			Greytyphoon's mini-game
 		</header>
 
@@ -185,7 +185,7 @@
 	<dialog id="how-to-play">
 		<h2>How to play <b><a onClick="modal.closeModal('how-to-play');">&times;</a></b></h2>
 		<p>Click on squares to dig them up.</p>
-		<p>🏆 To win, you must find all the buried shapes.</p>
+		<p>🏆 To win, you must find all the buried treasures.</p>
 		<p>Dig as few squares as possible. Good luck!</p>
 		<center><a onClick="modal.closeModal('how-to-play');">Ok!</a></center>
 	</dialog>
@@ -197,7 +197,7 @@
 			<dd><input type="number" min="5" max="15" value="6" maxlength="2" id="opt-gridsize-x" style="width:5em">
 				by <input type="number" min="8" max="18" value="11" maxlength="2" id="opt-gridsize-y" style="width:5em"></dd>
 
-			<dt>Number of shapes</dt>
+			<dt>Number of treasures</dt>
 			<dd><input type="radio" name="nbShapes" id="opt-nbShapes-few"><label for="opt-nbShapes-few">Few</label>,
 				<input type="radio" name="nbShapes" id="opt-nbShapes-normal" checked><label for="opt-nbShapes-normal">Normal</label>,
 				<input type="radio" name="nbShapes" id="opt-nbShapes-plenty"><label for="opt-nbShapes-plenty">Plenty</label>.</dd>
@@ -206,8 +206,8 @@
 	</dialog>
 
 	<dialog id="credits">
-		<h2>Dig-Up, a game about finding shapes <b><a onClick="modal.closeModal('credits');">&times;</a></b></h2>
-		<p>A take on a classic game</p>
+		<h2>Dig-Up! <b><a onClick="modal.closeModal('credits');">&times;</a></b></h2>
+		<p>A take on a classic digging game</p>
 		<p>By Greytyphoon (Rémi Doutre)</p>
 		<p>©2025 Montréal, Québec, Canada</p>
 		<center><a onClick="modal.closeModal('credits');">Ok!</a></center>
