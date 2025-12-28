@@ -52,8 +52,8 @@ const shapeFactory = {
 			const randomShapeOriented = myRandomFromList(randomShape.directions);
 
 			// Generate random coordinates
-			const newShapeX = myRandom(options.gridsizeX - randomShapeOriented.shapeMatrix[0].length);
-			const newShapeY = myRandom(options.gridsizeY - randomShapeOriented.shapeMatrix.length);
+			const newShapeX = myRandom(1 + options.gridsizeX - randomShapeOriented.shapeMatrix[0].length);
+			const newShapeY = myRandom(1 + options.gridsizeY - randomShapeOriented.shapeMatrix.length);
 
 			// check fit in matrix
 			retries++;
@@ -107,7 +107,7 @@ const boxFactory = {
 			dom: boxDom,
 		};
 		boxDom.classList.add("box");
-		boxDom.addEventListener("pointerdown", (e) => boxFactory.boxClick(box));
+		boxDom.addEventListener("pointerup", (e) => boxFactory.boxClick(box));
 		gameBoard.appendChild(boxDom);
 		boxFactory.allBoxes.push(box);
 		return box;
@@ -125,7 +125,7 @@ const boxFactory = {
 		}
 	},
 	boxClick: function(box) {
-		if (paused) return;
+		if (paused || box.seen) return;
 		timer.start();
 
 		// Increase score
@@ -201,5 +201,22 @@ const shapeList = [
 									 { id: 'shape-moon-s',	shapeMatrix: [[1,1,1],[1,0,1]]	},
 									 { id: 'shape-moon-e',	shapeMatrix: [[1,1],[0,1],[1,1]]	},]},
 
-	// TODO Hat, cane, scarf
+	{ name: 'hat',		directions: [{ id: 'shape-hat-n',	shapeMatrix: [[0,1,1,0],[0,1,1,0],[1,1,1,1]]	},
+									 { id: 'shape-hat-w',	shapeMatrix: [[1,0,0],[1,1,1],[1,1,1],[1,0,0]]	},
+									 { id: 'shape-hat-s',	shapeMatrix: [[1,1,1,1],[0,1,1,0],[0,1,1,0]]	},
+									 { id: 'shape-hat-e',	shapeMatrix: [[0,0,1],[1,1,1],[1,1,1],[0,0,1]]	},]},
+
+	{ name: 'cane',		directions: [{ id: 'shape-cane-w1',	shapeMatrix: [[1,1,1,1],[0,0,1,1]]	},
+									 { id: 'shape-cane-w2',	shapeMatrix: [[0,0,1,1],[1,1,1,1]]	},
+									 { id: 'shape-cane-n1',	shapeMatrix: [[1,1],[1,1],[1,0],[1,0]]	},
+									 { id: 'shape-cane-n2',	shapeMatrix: [[1,1],[1,1],[0,1],[0,1]]	},
+									 { id: 'shape-cane-s1',	shapeMatrix: [[1,0],[1,0],[1,1],[1,1]]	},
+									 { id: 'shape-cane-s2',	shapeMatrix: [[0,1],[0,1],[1,1],[1,1]]	},
+									 { id: 'shape-cane-e1',	shapeMatrix: [[1,1,1,1],[1,1,0,0]]	},
+									 { id: 'shape-cane-e2',	shapeMatrix: [[1,1,0,0],[1,1,1,1]]	},]},
+
+	{ name: 'scarf',	directions: [{ id: 'shape-scarf-h1',	shapeMatrix: [[1,1,0],[0,1,1]]	},
+									 { id: 'shape-scarf-h2',	shapeMatrix: [[0,1,1],[1,1,0]]	},
+									 { id: 'shape-scarf-v1',	shapeMatrix: [[1,0],[1,1],[0,1]]	},
+									 { id: 'shape-scarf-v2',	shapeMatrix: [[0,1],[1,1],[1,0]]	},]},
 ];
