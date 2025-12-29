@@ -18,6 +18,7 @@ const options = {
 	gridsizeX: 6,
 	gridsizeY: 11,
 	nbShapes: 4,
+	hats: 0,
 	readOptions: function() {
 		this.gridsizeX = document.getElementById("opt-gridsize-x").valueAsNumber || 6;
 		if (this.gridsizeX < 5) this.gridsizeX = 5;
@@ -30,6 +31,10 @@ const options = {
 					: 15;
 		this.nbShapes = Math.floor(this.gridsizeX * this.gridsizeY / divider);
 		if (this.nbShapes > shapeList.length) this.nbShapes = shapeList.length;
+
+		this.hats = document.getElementById("opt-hats-none").checked ? -1
+					: document.getElementById("opt-hats-always").checked ? 1
+					: 0;
 	},
 };
 
@@ -51,7 +56,10 @@ const shapeFactory = {
 		const usedShapes = [];
 		let retries = 0;
 		while (usedShapes.length < options.nbShapes && retries < 50) {
-			const randomShape = myRandomFromList(shapeList);
+			const randomShape = options.hats == 1 && usedShapes.length == 0
+				? shapeList[hatIndex]
+				: myRandomFromList(shapeList);
+			if (randomShape.name == 'hat' && options.hats == -1) continue;
 			if (usedShapes.includes(randomShape.name)) continue;
 
 			const randomShapeOriented = myRandomFromList(randomShape.directions);
@@ -71,7 +79,7 @@ const shapeFactory = {
 					if (randomShapeOriented.shapeMatrix[sy][sx])
 						matrix[newShapeY + sy][newShapeX + sx] = randomShape.name;
 
-			// TODO Display share behind gameBoard
+			// Display share behind gameBoard
 			const template = document.getElementById(randomShapeOriented.id);
 			const clone = document.importNode(template.content, true);
 			gameBoard.appendChild(clone);
@@ -225,3 +233,4 @@ const shapeList = [
 									 { id: 'shape-scarf-v1',	shapeMatrix: [[1,0],[1,1],[0,1]]	},
 									 { id: 'shape-scarf-v2',	shapeMatrix: [[0,1],[1,1],[1,0]]	},]},
 ];
+const hatIndex = 8;
