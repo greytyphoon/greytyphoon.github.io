@@ -54,7 +54,9 @@
 
 				<dt>Class</dt>
 				<dd><a href="https://d20pfsrd.com/classes/core-classes/paladin">Paladin</a> 5</dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/paladin/archetypes/paizo-paladin-archetypes/holy-tactician">Holy Tactician</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/paladin/archetypes/paizo-paladin-archetypes/oathbound-paladin/oath-of-vengeance">Oath of Vengeance</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/paladin/archetypes/paizo-paladin-archetypes/sacred-servant">Sacred Servant</a>
+					&mdash; <a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/travel-domain">Travel</a> domain</dd>
 
 				<dt>VMC</dt>
 				<dd><a href="https://d20pfsrd.com/classes/character-advancement#TOC-Oracle">Oracle</a></dd>
@@ -63,13 +65,13 @@
 			</dl>
 			<dl class="charInfo">
 				<dt>Deity</dt>
-				<dd><a href="https://www.aonprd.com/DeityDisplay.aspx?ItemName=Sarenrae">Sarenrae</a></dd>
+				<dd><a href="https://www.aonprd.com/DeityDisplay.aspx?ItemName=Apsu">Apsu</a></dd>
 
 				<dt>Senses</dt>
 				<dd><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">Darkvision</a> 60ft.</dd>
 
 				<dt>Speed</dt>
-				<dd><u title="30 aasimar, -10 armor">20 ft.</u></dd>
+				<dd><u title="30 aasimar, -10 armor, 10 domain">30 ft.</u></dd>
 
 				<dt>Languages</dt>
 				<dd>Common, Celestial</dd>
@@ -91,9 +93,6 @@
 				<small>min.1</small></dd>
 			<dt>level 3</dt>
 			<dd>VMC &gt; <a href="https://d20pfsrd.com/classes/base-classes/oracle/mysteries/paizo-oracle-mysteries/lunar-mystery#TOC-Prophetic-Armor-Ex-">Prophetic Armor</a>
-				<small>min.1</small></dd>
-			<dt>paladin 3</dt>
-			<dd><a href="https://d20pfsrd.com/feats/combat-feats/escape-route-combat-teamwork">Escape Route</a>
 				<small>min.1</small></dd>
 			<dt>level 5</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a>
@@ -118,7 +117,6 @@
 				<strong>12</strong>
 				<a href="https://d20pfsrd.com/skills/handle-animal">Handle Animal</a>
 				<small>4 cha, 5 ranks, 3 class</small>
-				<div class="circumstancialBonus" title="Curse of Lycanthropy"><u>+4</u> with wolves</div>
 			</li>
 			<li>
 				<strong>6</strong>
@@ -151,78 +149,82 @@
 		<hr>
 		<section class="row">
 			<!--Basics: Statblock and Weapons-->
-			<ul class="summations">
-				<li class="br">
-					<strong>-2</strong>
-					<b>Init</b>
-					<small>-2 dex</small>
-				</li>
-				<li>
-					<strong>54</strong>
-					<b>HP</b>
-					<small>5 paladin: 6 class, 2 con, <u title="Finding your kin">1 trait</u>, 1 fc; 4 first-level bonus</small>
-					<div class="circumstancialBonus" title="Aasimar's Celestial Resistance"><u>Resist 5</u> acid, cold, electricity</div>
-				</li>
-				<li class="br">
-					<strong>23</strong>
-					<b>AC</b> touch 14, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 19
-					<small>10, <u title="Prophetic Armor">3' cha</u>, 8 armor, <u title="Ring of Protection">1 deflection</u></small>
-				</li>
-				<li>
-					<strong>11</strong>
-					<b>Fort</b>
-					<small>2 con, 4 class, <u title="Divine Grace">4 cha</u>, <u title="Cloak of Resistance">1 resistance</u></small>
-				</li>
-				<li>
-					<strong>11</strong>
-					<b>Ref</b>
-					<small><u title="Prophetic Armor">4 cha</u>, 1 class, <u title="Divine Grace">4 cha</u>, <u title="Cloak of Resistance">1 resistance</u>, <u title="Deft Dodger">1 trait</u></small>
-				</li>
-				<li class="br">
-					<strong>11</strong>
-					<b>Will</b>
-					<small>2 wis, 4 class, <u title="Divine Grace">4 cha</u>, <u title="Cloak of Resistance">1 resistance</u></small>
-				</li>
-				<li>
-					<strong>12</strong>
-					<b>CMB</b>;	21 <b>CMD</b>
-					<small>5 bab, 7 str, -2 dex, <u title="Ring of Protection">1 deflection</u></small>
-				</li>
-			</ul>
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>-2</strong>
+						<b>Init</b>
+						<small>-2 dex</small>
+					</li>
+					<li>
+						<strong>54</strong>
+						<b>HP</b>
+						<small>5 paladin: 6 class, 2 con, <u title="Finding your kin">1 trait</u>, 1 fc; 4 first-level bonus</small>
+						<div class="circumstancialBonus" title="Aasimar's Celestial Resistance"><u>Resist 5</u> acid, cold, electricity</div>
+					</li>
+					<li class="br">
+						<strong>23</strong>
+						<b>AC</b> touch 14, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 19
+						<small>10, <u title="Prophetic Armor">3' cha</u>, 8 armor, <u title="Ring of Protection">1 deflection</u></small>
+						<div class="circumstancialBonus smite"><u title="4 cha">+4 deflection</u> vs target</div>
+					</li>
+					<li>
+						<strong>11</strong>
+						<b>Fort</b>
+						<small>2 con, 4 class, <u title="Divine Grace">4 cha</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li>
+						<strong>11</strong>
+						<b>Ref</b>
+						<small><u title="Prophetic Armor">4 cha</u>, 1 class, <u title="Divine Grace">4 cha</u>, <u title="Cloak of Resistance">1 resistance</u>, <u title="Deft Dodger">1 trait</u></small>
+					</li>
+					<li>
+						<strong>11</strong>
+						<b>Will</b>
+						<small>2 wis, 4 class, <u title="Divine Grace">4 cha</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+					</li>
+					<li class="circumstancialBonus br" title="Divine Health, Aura of Courage"><u>Immune</u> disease, fear.</li>
+					<li>
+						<strong>12</strong>
+						<b>CMB</b>;	21 <b>CMD</b>
+						<small>5 bab, 7 str, -2 dex, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<!--Bite & Claws-->
+				<div class="weapon">
+					<h2>Bite, Claws <b>20×2</b> <b>BPS, PS</b></h2>
+					<div class="apartee float align"><b>PA</b> -2/+4</div>
+					<div class="summation"><strong>+12</strong>/<strong>+12</strong>/<strong>+12</strong> vs AC <small>5 bab, 7 str</small></div>
+					<div class="circumstancialBonus smite" title="Smite Evil: 4 cha"><u>+4</u> vs evil</div>
+					<div class="summation"><strong>1d4+7</strong> <small>7 str</small></div>
+					<div class="circumstancialBonus smite" title="Smite Evil: 5 paladin"><u>+5</u> vs evil, doubled vs Dragon / Outsider / Undead, ignores DR.</div>
+				</div>
+			</div>
 			<!--end of Basics: Statblock and Weapons-->
 
-			<!--Bite & Claws-->
-			<div class="weapon">
-				<h2>Bite, Claws <b>20×2</b> <b>BPS, PS</b></h2>
-				<div class="apartee float align"><b>PA</b> -2/+4</div>
-				<div class="summation"><strong>+12</strong>/<strong>+12</strong>/<strong>+12</strong> vs AC <small>5 bab, 7 str</small></div>
-				<div class="circumstancialBonus smite" title="Weal's Champion: 4 cha"><u>+4</u> vs evil</div>
-				<div class="summation"><strong>1d4+7</strong> <small>7 str</small></div>
-				<div class="circumstancialBonus smite" title="Weal's Champion: 2 paladin&frac12;"><u>+2</u> vs evil<br>
-					On hit, allies within 30ft gain <u title="2 cha&frac12;">+2</u>/<u title="Increases at 1st, 5th, 10th, 15th, 20th">+2 competence</u> vs that foe for 1 round.</div>
-			</div>
-		</section>
-
-		<section class="row">
 			<div>
-				<h2>Aura (Ex) <b>Strong Good</b></h2>
+				<h2 class="br">Aura (Ex) <b>Strong Good</b></h2>
+
+				<h2 class="smite">Smite Evil (Su) <u title="Increases at 1st, 7th, 13th, 19th.">1/day</u></h2>
+				<p class="smite">Start as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>.</p>
 
 				<h2>Lay on Hands (Su) <u title="2 paladin&frac12;, 4 cha">6/day</u></h2>
 				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>
 					(<a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a> on yourself),<br>
 					heal <b>3d6</b> and <u title="Mercy">cure <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Sickened">Sickened</a></u>,
 					or touch attack to harm undead,
-					or spend 2 to <a href="https://d20pfsrd.com/classes/Core-classes/paladin#channel_positive_energy_su">channel energy</a>.</p>
-			</div>
+					or spend 2 to <a href="https://d20pfsrd.com/classes/Core-classes/paladin#smite_evil_su">smite evil</a>.</p>
 
-			<div>
-				<h2 class="smite">Weal's Champion (Su) <u title="Increases at 1st, 4th, 7th, 10th, 13th, 16th, 19th.">2/day</u></h2>
-				<p class="smite">Start as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, lasts <u title="2 paladin&frac12;">2 rounds</u>, targets all evil foes.</p>
+				<h2>Divine Bond &mdash; Holy Symbol (Su) <u title="Increases at 5th, 9th, 13th, 17th.">1/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, choose <u title="Increases at 5th, 8th, 11th, 14t, 17th, 20th.">1</u>:
+					increase CL by 1, or gain another LoH.</p>
 
-				<h2>Battlefield Presence (Su)</h2>
-				<p>Allies within 30ft gain <a href="https://d20pfsrd.com/feats/combat-feats/escape-route-combat-teamwork">Escape Route</a>
-					<small>unless you are <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a>
-					or <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Unconscious">unconscious</a>.</small></p>
+				<h2>Aura of Courage (Su)</h2>
+				<p>Allies in 10ft get +4 morale vs fear.</p>
+
+				<h2>Agile Feet (Su) <u title="3 class, 2 wis.">5/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a>, ignore difficult terrain this round.</p>
 			</div>
 		</section>
 
@@ -241,8 +243,10 @@
 				<h2><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-evil">detect evil</a> (<a href="https://d20pfsrd.com/Magic#Spell-Like_Abilities_Sp">Sp</a>) <b>At-will</b></h2>
 			</div>
 			<div>
-				<h2>Level 1 <u title="1 class, 1 cha">2/day</u></h2>
+				<h2>Level 1 <u title="1 class, 1 cha, 1 domain, 1 oath">4/day</u></h2>
 				<ul>
+					<li><a class="spell bonus off-class" title="Travel Domain" href="https://d20pfsrd.com/magic/all-spells/l/longstrider">longstrider</a></li>
+					<li><a class="spell bonus off-class" title="Oath of Vengeance" href="https://d20pfsrd.com/magic/all-spells/w/wrath">wrath</a></li>
 					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/divine-favor">divine favor</a></li>
 					<li><a class="spell swift-action" href="https://d20pfsrd.com/magic/all-spells/g/grace">grace</a></li>
 					<li><a class="spell reaction" href="https://d20pfsrd.com/magic/all-spells/h/hero-s-defiance">hero's defiance</a></li>
@@ -277,13 +281,13 @@
 			<li><!--50-->
 				Healer's kit, remains 10
 			</li>
-			<li><!--1 + 5-->
-				Wooden Holy Symbol &amp; Spell Component Pouch
+			<li><!--5 + 5-->
+				Iron Holy Symbol &amp; Spell Component Pouch
 			</li>
 			<li><!--50-->
 				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
 			</li>
-			<li>1,144 <b>GP</b><!--/10,500--></li>
+			<li>1,140 <b>GP</b><!--/10,500--></li>
 		</ul>
 	</div>
 
