@@ -8,7 +8,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://greytyphoon.space/PF/sheets/Teodros.html" />
 	<meta property="og:image" content="https://i.pinimg.com/originals/89/e2/3f/89e23f2b3b2afc865deb2dffc80565e5.jpg" />
-	<meta property="og:description" content="The PF character sheet for Teodros, a 3rd-level tiefling barbarian-alchemist." name="description">
+	<meta property="og:description" content="The PF character sheet for Teodros, a 4th-level tiefling barbarian-alchemist." name="description">
 	<title>Grey's Mutagenic Barbarian</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
 	<style>
@@ -16,20 +16,14 @@
 		.rage > .weapon { color: var(--tint-black); --weapon-color: var(--virtue-blue); }
 		.mutagenic-rage { color: var(--serene-green); }
 		.mutagenic-rage > .weapon { color: var(--tint-black); --weapon-color: var(--serene-green); }
-		.hidden { display: none; }
 	</style>
 </head>
 <body>
 	<nav id="fixref"><ul>
-		<li><select id="level-picker" onchange="showOnly(this.value)">
-				<option value="level-1">Level 1</option>
-				<option value="level-2">Level 2</option>
-				<option value="level-3" selected>Level 3</option>
-			</select></li>
 		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
 	</ul></nav>
 
-	<div class="container level-1">
+	<div class="container">
 		<header>
 			<h1>Teodros of Mekonen-Shu, mutagenic rager</h1>
 			CN Medium outsider (native)
@@ -38,7 +32,7 @@
 		<section id="headerInfo" class="row">
 			<dl class="charInfo">
 				<dt>Str</dt>
-				<dd>19 <small>17, <u title="Racial">2</u></small></dd>
+				<dd>20 <small>17, <u title="Racial">2</u>, <u title="Advancement">1</u></small></dd>
 
 				<dt>Dex</dt>
 				<dd>14</dd>
@@ -61,261 +55,10 @@
 					<a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Variant_Tiefling_Heritages">Oni-Spawn</a></dd>
 				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Alternate_Racial_Traits">Fiendish Sprinter</a></dd>
 				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Alternate_Racial_Traits">Prehensile Tail</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Alternate_Racial_Traits">Scaled Skin</a></dd>
 				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#variant_abilities_and_physical_features">Variant Abilities</a> (#16)</dd>
 
 				<dt>Class</dt>
-				<dd><a href="https://d20pfsrd.com/classes/core-classes/barbarian">Barbarian</a> 1</dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/barbarian/archetypes/paizo-barbarian-archetypes/drunken-brute">Drunken Brute</a></dd>
-			</dl>
-			<dl class="charInfo">
-				<dt>Deity</dt>
-				<dd>Caiden Caylean</dd>
-
-				<dt>Senses</dt>
-				<dd title="Tiefling"><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">Darkvision</a> 60ft.</dd>
-
-				<dt>Speed</dt>
-				<dd><u title="30 racial, -10 armor">20 ft.</u></dd>
-				<dd title="Fiendish Sprinter"><u>+10ft</u> for charge, run, withdraw</dd>
-
-				<dt>Languages</dt>
-				<dd>Common, Infernal, Kellid, Abyssal</dd>
-			</dl>
-		</section>
-
-		<hr>
-		<img id="main-picture" src="https://i.pinimg.com/originals/89/e2/3f/89e23f2b3b2afc865deb2dffc80565e5.jpg" alt="Red Oni Muscular- 2k &copy;Mizakiiarte" onclick="document.getElementById('large-picture').showModal()">
-		<dl id="featsWrapper">
-			<dt>traits</dt>
-			<dd><a href="https://d20pfsrd.com/feats/combat-feats/exotic-weapon-proficiency-combat">EWP</a> (Butchering Axe)</dd>
-			<dd><a href="https://d20pfsrd.com/traits/regional-traits/freed-slave-regional">Freed Slave</a></dd>
-			<dt>level 1</dt>
-			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a>
-				<small>min.1</small></dd>
-		</dl>
-
-		<ul class="summations">
-			<!-- SKILLS -->
-			<li class="br">
-				<strong>5</strong>
-				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
-				<small>1 wis, 1 ranks, 3 class</small>
-			</li>
-
-			<!--Misc Skills-->
-			<li>
-				<strong>4</strong>
-				<a href="https://d20pfsrd.com/skills/climb">Climb</a>
-				<small>4 str, 1 ranks, 3 class, -4 armor</small>
-			</li>
-			<li>
-				<strong>5</strong>
-				<a href="https://d20pfsrd.com/skills/survival">Survival</a>
-				<small>1 wis, 1 ranks, 3 class</small>
-			</li>
-			<li class="br">
-				<strong>4</strong>
-				<a href="https://d20pfsrd.com/skills/swim">Swim</a>
-				<small>4 str, 1 ranks, 3 class, -4 armor</small>
-			</li>
-
-			<!--Knowledge Skills-->
-			<li>
-				<strong>6</strong>
-				<a href="https://d20pfsrd.com/skills/craft">Craft (alchemy)</a>
-				<small>2 int, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>6</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (nature)</a>
-				<small>2 int, 1 ranks, 3 class</small>
-			</li>
-		</ul>
-
-		<p class="circumstancialBonus noprint">
-			<u title="1 barbarian: 4 class, 2 int">6 ranks</u>.
-			Other class skills:
-			<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>,
-			<a href="https://d20pfsrd.com/skills/handle-animal">Handle Animal</a>,
-			<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>,
-			<a href="https://d20pfsrd.com/skills/ride">Ride</a>,
-			<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>.
-		</p>
-
-		<hr>
-		<section class="row">
-			<!--Basics: Statblock and Weapons-->
-			<div>
-				<ul class="summations">
-					<li class="br">
-						<strong>2</strong>
-						<b>Init</b>
-						<small>2 dex</small>
-					</li>
-					<li>
-						<strong>15</strong>
-						<b>HP</b>
-						<small>1 barb: 7 class, 2 con; 5 flb; 1 fc</small>
-						<div class="circumstancialBonus" title="Tiefling, Scaled Skin"><u>Resist 5</u> fire</div>
-					</li>
-					<li class="br">
-						<strong>18</strong>
-						<b>AC</b> touch 12, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 16
-						<small>10, 2 dex, 5 armor, <u title="Tielfing, Scaled Skin">1 natural</u></small>
-					</li>
-					<li>
-						<strong>4</strong>
-						<b>Fort</b>
-						<small>2 con, 2 class</small>
-					</li>
-					<li>
-						<strong>2</strong>
-						<b>Ref</b>
-						<small>2 dex, 0 class</small>
-					</li>
-					<li class="br">
-						<strong>2</strong>
-						<b>Will</b>
-						<small>1 wis, 0 class, <u title="Freed Slave">1 trait</u></small>
-					</li>
-					<li>
-						<strong>5</strong>
-						<b>CMB</b>; 17 <b>CMD</b>
-						<small>1 bab, 4 str, 2 dex</small>
-					</li>
-				</ul>
-
-				<!--Butchering Axe-->
-				<div class="weapon">
-					<h2>Butchering Axe <b>20×3</b> <b>S</b></h2>
-					<div class="apartee float align"><b>PA</b> -1+3</div>
-					<div class="summation"><strong>+5</strong> vs AC <small>1 bab, 4 str</small></div>
-					<div class="summation"><strong>3d6+6</strong> <small>6 str&frac12;</small></div>
-				</div>
-
-				<h2>Prehensile Tail</h2>
-				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
-					retrieve a small stowed object.</p>
-			</div>
-			<!--end of Basics: Statblock and Weapons-->
-
-			<!--Rage-->
-			<div class="rage">
-				<ul class="summations">
-					<li class="br">
-						<strong>2</strong>
-						<b>Init</b>
-						<small>2 dex</small>
-					</li>
-					<li>
-						<strong>17</strong>
-						<b>HP</b>
-						<small>1 barb: 7 class, 4 con; 5 flb; 1 fc</small>
-						<div class="circumstancialBonus" title="Tiefling, Scaled Skin"><u>Resist 5</u> fire</div>
-					</li>
-					<li class="br">
-						<strong>16</strong>
-						<b>AC</b> touch 10, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 14
-						<small>10, 2 dex, 5 armor, -2 rage, <u title="Tielfing, Scaled Skin">1 natural</u></small>
-					</li>
-					<li>
-						<strong>6</strong>
-						<b>Fort</b>
-						<small>4 con, 2 class</small>
-					</li>
-					<li>
-						<strong>2</strong>
-						<b>Ref</b>
-						<small>2 dex, 0 class</small>
-					</li>
-					<li class="br">
-						<strong>4</strong>
-						<b>Will</b>
-						<small>1 wis, 0 class, <u title="Freed Slave">1 trait</u>, <u title="Rage">2 morale</u></small>
-					</li>
-					<li>
-						<strong>7</strong>
-						<b>CMB</b>;	17 <b>CMD</b>
-						<small>1 bab, 6 str, 2 dex, -2 rage</small>
-					</li>
-				</ul>
-
-				<!--Butchering Axe-->
-				<div class="weapon">
-					<h2>Butchering Axe <b>20×3</b> <b>S</b></h2>
-					<div class="apartee float align"><b>PA</b> -1+3</div>
-					<div class="summation"><strong>+7</strong> vs AC <small>1 bab, 6 str</small></div>
-					<div class="summation"><strong>3d6+9</strong> <small>9 str&frac12;</small></div>
-				</div>
-
-				<h2>Rage <u title="2 class, 2 barbarian, 2 con">6 rounds/day</u></h2>
-				<p>Start/end as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a>, fatigued &amp; <u title="Raging Drunk">nauseated</u> when it ends.</p>
-
-				<h2>Raging Drunk</h2>
-				<p>While raging, drink potions/alcool as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>.
-					Alcool gives you an extra round of rage.</p>
-			</div>
-			<!--end of Rage-->
-		</section>
-
-		<hr>
-		<ul id="inventory">
-			<!--Weapons-->
-			<li><!--65 gp-->
-				<a href="https://d20pfsrd.com/equipment/weapons">Butchering Axe</a>
-				<small>exotic two-handed, 3d6, 20x3, S.</small>
-			</li>
-			<li><!--50 gp-->
-				<a href="https://d20pfsrd.com/equipment/armor">Scale mail</a>
-				<small>medium, 6 armor, 3 dex, 4 acp, 25% asf.</small>
-			</li>
-
-			<!--Misc-->
-			<li><!--50-->
-				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
-			</li>
-			<li>10 <b>GP</b><!--/175--></li>
-		</ul>
-	</div>
-
-	<div class="container level-2">
-		<header>
-			<h1>Teodros of Mekonen-Shu, mutagenic rager</h1>
-			CN Medium outsider (native)
-		</header>
-
-		<section id="headerInfo" class="row">
-			<dl class="charInfo">
-				<dt>Str</dt>
-				<dd>19 <small>17, <u title="Racial">2</u></small></dd>
-
-				<dt>Dex</dt>
-				<dd>14</dd>
-
-				<dt>Con</dt>
-				<dd>14</dd>
-
-				<dt>Int</dt>
-				<dd>14</dd>
-
-				<dt>Wis</dt>
-				<dd>13 <small>11, <u title="Racial">2</u></small></dd>
-
-				<dt>Cha</dt>
-				<dd>5 <small>7, <u title="Racial">-2</u></small></dd>
-			</dl>
-			<dl id="subheader" class="charInfo">
-				<dt>Race</dt>
-				<dd><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling">Tiefling</a>,
-					<a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Variant_Tiefling_Heritages">Oni-Spawn</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Alternate_Racial_Traits">Fiendish Sprinter</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Alternate_Racial_Traits">Prehensile Tail</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Alternate_Racial_Traits">Scaled Skin</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#variant_abilities_and_physical_features">Variant Abilities</a> (#16)</dd>
-
-				<dt>Class</dt>
-				<dd><a href="https://d20pfsrd.com/classes/core-classes/barbarian">Barbarian</a> 1</dd>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/barbarian">Barbarian</a> 3</dd>
 				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/barbarian/archetypes/paizo-barbarian-archetypes/drunken-brute">Drunken Brute</a></dd>
 				<dd><a href="https://d20pfsrd.com/classes/base-classes/alchemist">Alchemist</a> 1</dd>
 				<dd class="archetype"><a href="https://d20pfsrd.com/classes/base-classes/alchemist/archetypes/paizo-alchemist-archetypes/vivisectionist">Vivisectionist</a></dd>
@@ -340,394 +83,13 @@
 		<img id="main-picture" src="https://i.pinimg.com/originals/89/e2/3f/89e23f2b3b2afc865deb2dffc80565e5.jpg" alt="Red Oni Muscular- 2k &copy;Mizakiiarte" onclick="document.getElementById('large-picture').showModal()">
 		<dl id="featsWrapper">
 			<dt>traits</dt>
-			<dd><a href="https://d20pfsrd.com/feats/combat-feats/exotic-weapon-proficiency-combat">EWP</a> (Butchering Axe)</dd>
+			<dd><u title="Houserule: counts as a trait"><a href="https://d20pfsrd.com/feats/combat-feats/exotic-weapon-proficiency-combat">EWP</a></u> (Butchering Axe)</dd>
 			<dd><a href="https://d20pfsrd.com/traits/regional-traits/freed-slave-regional">Freed Slave</a></dd>
 			<dt>level 1</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a>
 				<small>min.1</small></dd>
 			<dt>alch. 1</dt>
-			<dd><u title="Houserule: replaces Brew Potions"><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Know.Nature)</u>
-				<small>bonus</small></dd>
-			<dd><a href="https://d20pfsrd.com/feats/combat-feats/throw-anything-combat">Throw Anything</a>
-				<small>bonus</small></dd>
-		</dl>
-
-		<ul class="summations">
-			<!-- SKILLS -->
-			<li>
-				<strong>5</strong>
-				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
-				<small>1 wis, 1 ranks, 3 class</small>
-			</li>
-			<li class="br">
-				<strong>6</strong>
-				<a href="https://d20pfsrd.com/skills/disable-device">Disable Device</a>
-				<small>2 dex, 1 ranks, 3 class</small>
-			</li>
-
-			<!--Misc Skills-->
-			<li>
-				<strong>3</strong>
-				<a href="https://d20pfsrd.com/skills/acrobatics">Acrobatics</a>
-				<small>2 dex, 1 ranks, 3 class, -3 armor</small>
-			</li>
-			<li>
-				<strong>6</strong>
-				<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>
-				<small>2 int, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>5</strong>
-				<a href="https://d20pfsrd.com/skills/climb">Climb</a>
-				<small>4 str, 1 ranks, 3 class, -3 armor</small>
-			</li>
-			<li>
-				<strong>5</strong>
-				<a href="https://d20pfsrd.com/skills/heal">Heal</a>
-				<small>1 wis, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>6</strong>
-				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
-				<small>2 int, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>5</strong>
-				<a href="https://d20pfsrd.com/skills/survival">Survival</a>
-				<small>1 wis, 1 ranks, 3 class</small>
-			</li>
-			<li class="br">
-				<strong>5</strong>
-				<a href="https://d20pfsrd.com/skills/swim">Swim</a>
-				<small>4 str, 1 ranks, 3 class, -3 armor</small>
-			</li>
-
-			<!--Knowledge Skills-->
-			<li>
-				<strong>6</strong>
-				<a href="https://d20pfsrd.com/skills/craft">Craft (alchemy)</a>
-				<small>2 int, 1 ranks, 3 class</small>
-				<div class="circumstancialBonus">Use as <a href="https://d20pfsrd.com/magic/all-spells/d/detect-magic" class="spell">detect magic</a> on potions</div>
-			</li>
-			<li>
-				<strong>6</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (arcane)</a>
-				<small>2 int, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>9</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (nature)</a>
-				<small>2 int, 1 ranks, 3 class, 3 s.focus</small>
-			</li>
-		</ul>
-
-		<p class="circumstancialBonus noprint">
-			<u title="2 (barbarian + alchemist): 4 class, 2 int">12 ranks</u>.
-			Other class skills:
-			<a href="https://d20pfsrd.com/skills/fly">Fly</a>,
-			<a href="https://d20pfsrd.com/skills/handle-animal">Handle Animal</a>,
-			<a href="https://d20pfsrd.com/skills/intimidate">Intimidate</a>,
-			<a href="https://d20pfsrd.com/skills/profession">Profession</a>,
-			<a href="https://d20pfsrd.com/skills/ride">Ride</a>,
-			<a href="https://d20pfsrd.com/skills/sleight-of-hand">Sleight of Hand</a>,
-			<a href="https://d20pfsrd.com/skills/use-magic-device">Use Magic Device</a>.
-		</p>
-
-		<hr>
-		<section class="row">
-			<!--Basics: Statblock and Weapons-->
-			<div>
-				<ul class="summations">
-					<li class="br">
-						<strong>2</strong>
-						<b>Init</b>
-						<small>2 dex</small>
-					</li>
-					<li>
-						<strong>22</strong>
-						<b>HP</b>
-						<small>1 barb: 7 class, 2 con; 1 alch: 5 class, 2 con; 5 flb; 1 fc</small>
-						<div class="circumstancialBonus" title="Tiefling, Scaled Skin"><u>Resist 5</u> fire</div>
-					</li>
-					<li class="br">
-						<strong>19</strong>
-						<b>AC</b> touch 12, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 17
-						<small>10, 2 dex, 6 armor, <u title="Tielfing, Scaled Skin">1 natural</u></small>
-					</li>
-					<li>
-						<strong>6</strong>
-						<b>Fort</b>
-						<small>2 con, <u title="2 barbarian, 2 alchemist">4 class</u></small>
-					</li>
-					<li>
-						<strong>4</strong>
-						<b>Ref</b>
-						<small>2 dex, <u title="0 barbarian, 2 alchemist">2 class</u></small>
-					</li>
-					<li class="br">
-						<strong>2</strong>
-						<b>Will</b>
-						<small>1 wis, <u title="0 barbarian, 0 alchemist">0 class</u>, <u title="Freed Slave">1 trait</u></small>
-					</li>
-					<li>
-						<strong>5</strong>
-						<b>CMB</b>; 17 <b>CMD</b>
-						<small>1 bab, 4 str, 2 dex</small>
-					</li>
-				</ul>
-
-				<!--Butchering Axe-->
-				<div class="weapon">
-					<h2>Butchering Axe <b>20×3</b> <b>S</b></h2>
-					<div class="apartee float align"><b>PA</b> -1+3</div>
-					<div class="summation"><strong>+6</strong> vs AC <small>1 bab, 4 str, 1 mwk</small></div>
-					<div class="summation"><strong>4d6+6</strong> <small>6 str&frac12;</small></div>
-				</div>
-
-				<h2>Sneak Attack <u title="1 class">1d6</u></h2>
-
-				<h2>Prehensile Tail</h2>
-				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>,
-					retrieve a small stowed object.</p>
-			</div>
-			<!--end of Basics: Statblock and Weapons-->
-
-			<!--Rage-->
-			<div class="rage">
-				<ul class="summations">
-					<li class="br">
-						<strong>2</strong>
-						<b>Init</b>
-						<small>2 dex</small>
-					</li>
-					<li>
-						<strong>26</strong>
-						<b>HP</b>
-						<small>1 barb: 7 class, 4 con; 1 alch: 5 class, 4 con; 5 flb; 1 fc</small>
-						<div class="circumstancialBonus" title="Tiefling, Scaled Skin"><u>Resist 5</u> fire</div>
-					</li>
-					<li class="br">
-						<strong>17</strong>
-						<b>AC</b> touch 10, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 15
-						<small>10, 2 dex, 6 armor, -2 rage, <u title="Tielfing, Scaled Skin">1 natural</u></small>
-					</li>
-					<li>
-						<strong>8</strong>
-						<b>Fort</b>
-						<small>4 con, <u title="2 barbarian, 2 alchemist">4 class</u></small>
-					</li>
-					<li>
-						<strong>4</strong>
-						<b>Ref</b>
-						<small>2 dex, <u title="0 barbarian, 2 alchemist">2 class</u></small>
-					</li>
-					<li class="br">
-						<strong>4</strong>
-						<b>Will</b>
-						<small>1 wis, <u title="0 barbarian, 0 alchemist">0 class</u>, <u title="Freed Slave">1 trait</u>, <u title="Rage">2 morale</u></small>
-					</li>
-					<li>
-						<strong>7</strong>
-						<b>CMB</b>;	17 <b>CMD</b>
-						<small>1 bab, 6 str, 2 dex, -2 rage</small>
-					</li>
-				</ul>
-
-				<!--Butchering Axe-->
-				<div class="weapon">
-					<h2>Butchering Axe <b>20×3</b> <b>S</b></h2>
-					<div class="apartee float align"><b>PA</b> -1+3</div>
-					<div class="summation"><strong>+8</strong> vs AC <small>1 bab, 6 str, 1 mwk</small></div>
-					<div class="summation"><strong>4d6+9</strong> <small>9 str&frac12;</small></div>
-				</div>
-
-				<h2>Rage <u title="2 class, 2 barbarian, 2 con">6 rounds/day</u></h2>
-				<p>Start/end as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a>, fatigued &amp; <u title="Raging Drunk">nauseated</u> when it ends.</p>
-
-				<h2>Raging Drunk</h2>
-				<p>While raging, drink potions/alcool as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>.
-					Alcool gives you an extra round of rage.</p>
-			</div>
-			<!--end of Rage-->
-
-			<!--Mutagenic Rage-->
-			<div class="mutagenic-rage">
-				<ul class="summations">
-					<li class="br">
-						<strong>2</strong>
-						<b>Init</b>
-						<small>2 dex</small>
-					</li>
-					<li>
-						<strong>26</strong>
-						<b>HP</b>
-						<small>2 barb: 7 class, 4 con; 1 alch: 5 class, 4 con; 5 flb; 1 fc</small>
-						<div class="circumstancialBonus" title="Tiefling, Scaled Skin"><u>Resist 5</u> fire</div>
-					</li>
-					<li class="br">
-						<strong>18</strong>
-						<b>AC</b> touch 10, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 16
-						<small>10, 2 dex, 6 armor, -2 rage, <u title="Mutagen (overrides Tiefling, Scaled Skin)">2 natural</u></small>
-					</li>
-					<li>
-						<strong>8</strong>
-						<b>Fort</b>
-						<small>4 con, <u title="2 barbarian, 2 alchemist">4 class</u></small>
-					</li>
-					<li>
-						<strong>4</strong>
-						<b>Ref</b>
-						<small>2 dex, <u title="0 barbarian, 2 alchemist">2 class</u></small>
-					</li>
-					<li class="br">
-						<strong>4</strong>
-						<b>Will</b>
-						<small>1 wis, <u title="0 barbarian, 0 alchemist">0 class</u>, <u title="Freed Slave">1 trait</u>, <u title="Rage">2 morale</u></small>
-					</li>
-					<li>
-						<strong>9</strong>
-						<b>CMB</b>;	19 <b>CMD</b>
-						<small>1 bab, 8 str, 2 dex, -2 rage</small>
-					</li>
-				</ul>
-
-				<!--Butchering Axe-->
-				<div class="weapon">
-					<h2>Butchering Axe <b>20×3</b> <b>S</b></h2>
-					<div class="apartee float align"><b>PA</b> -1+3</div>
-					<div class="summation"><strong>+10</strong> vs AC <small>1 bab, 8 str, 1 mwk</small></div>
-					<div class="summation"><strong>4d6+12</strong> <small>12 str&frac12;</small></div>
-				</div>
-
-				<h2>Mutagen</h2>
-				<p>Last 10 min, +4 str, -2 int.</p>
-
-				<div id="spellHeader" class="apartee">
-					Your Extract DC is 10 + the spell level + your Intelligence modifier.<br>
-					To affect foes with <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, make a caster level check &ge;SR.
-				</div>
-
-				<h2>Alchemist Extracts <b>CL 1st</b></h2>
-				<h2>Level 1 <u title="1 class, 1 int">2/day</u></h2>
-				<ul>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/long-arm">long arm</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/t/true-strike">true strike</a>.</li>
-				</ul>
-			</div>
-			<!--end of Bloodrage-->
-		</section>
-
-		<hr>
-		<ul id="inventory">
-			<!--Weapons-->
-			<li><!--560 gp-->
-				Large <a href="https://d20pfsrd.com/equipment/weapons">Butchering Axe</a>, cold-iron masterwork
-				<small>exotic two-handed, 3d6, 20x3, S.</small>
-			</li>
-			<li><!--350 gp-->
-				<a href="https://d20pfsrd.com/equipment/armor">Breastplate</a>, masterwork
-				<small>medium, 6 armor, 3 dex, 4 acp, 25% asf.</small>
-			</li>
-
-			<!--Misc-->
-			<li><!--50-->
-				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
-			</li>
-			<li>40 <b>GP</b><!--/175--></li>
-		</ul>
-
-		<!-- title NOTES -->
-		<section class="noprint">
-			<hr>
-			<dl class="charInfo">
-				<dt>Qualities</dt>
-				<dd>Proud and curious</dd>
-
-				<dt>Fault</dt>
-				<dd>Drunk</dd>
-
-				<dt>Age</dt>
-				<dd>41</dd>
-
-				<dt>Weight</dt>
-				<dd>214 lbs</dd>
-
-				<dt>Height</dt>
-				<dd>6' 2''</dd>
-			</dl>
-		</section>
-	</div>
-
-	<div class="container level-3">
-		<header>
-			<h1>Teodros of Mekonen-Shu, mutagenic rager</h1>
-			CN Medium outsider (native)
-		</header>
-
-		<section id="headerInfo" class="row">
-			<dl class="charInfo">
-				<dt>Str</dt>
-				<dd>19 <small>17, <u title="Racial">2</u></small></dd>
-
-				<dt>Dex</dt>
-				<dd>14</dd>
-
-				<dt>Con</dt>
-				<dd>14</dd>
-
-				<dt>Int</dt>
-				<dd>14</dd>
-
-				<dt>Wis</dt>
-				<dd>13 <small>11, <u title="Racial">2</u></small></dd>
-
-				<dt>Cha</dt>
-				<dd>5 <small>7, <u title="Racial">-2</u></small></dd>
-			</dl>
-			<dl id="subheader" class="charInfo">
-				<dt>Race</dt>
-				<dd><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling">Tiefling</a>,
-					<a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Variant_Tiefling_Heritages">Oni-Spawn</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Alternate_Racial_Traits">Fiendish Sprinter</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Alternate_Racial_Traits">Prehensile Tail</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#Alternate_Racial_Traits">Scaled Skin</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/other-races/featured-races/arg-tiefling#variant_abilities_and_physical_features">Variant Abilities</a> (#16)</dd>
-
-				<dt>Class</dt>
-				<dd><a href="https://d20pfsrd.com/classes/core-classes/barbarian">Barbarian</a> 2</dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/barbarian/archetypes/paizo-barbarian-archetypes/drunken-brute">Drunken Brute</a></dd>
-				<dd><a href="https://d20pfsrd.com/classes/base-classes/alchemist">Alchemist</a> 1</dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/classes/base-classes/alchemist/archetypes/paizo-alchemist-archetypes/vivisectionist">Vivisectionist</a></dd>
-			</dl>
-			<dl class="charInfo">
-				<dt>Deity</dt>
-				<dd>Caiden Caylean</dd>
-
-				<dt>Senses</dt>
-				<dd title="Tiefling"><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision">Darkvision</a> 60ft.</dd>
-
-				<dt>Speed</dt>
-				<dd><u title="30 racial, -10 armor">20 ft.</u></dd>
-				<dd title="Fiendish Sprinter"><u>+10ft</u> for charge, run, withdraw</dd>
-
-				<dt>Languages</dt>
-				<dd>Common, Infernal, Kellid, Abyssal</dd>
-			</dl>
-		</section>
-
-		<hr>
-		<img id="main-picture" src="https://i.pinimg.com/originals/89/e2/3f/89e23f2b3b2afc865deb2dffc80565e5.jpg" alt="Red Oni Muscular- 2k &copy;Mizakiiarte" onclick="document.getElementById('large-picture').showModal()">
-		<dl id="featsWrapper">
-			<dt>traits</dt>
-			<dd><a href="https://d20pfsrd.com/feats/combat-feats/exotic-weapon-proficiency-combat">EWP</a> (Butchering Axe)</dd>
-			<dd><a href="https://d20pfsrd.com/traits/regional-traits/freed-slave-regional">Freed Slave</a></dd>
-			<dt>level 1</dt>
-			<dd><a href="https://d20pfsrd.com/feats/combat-feats/power-attack-combat">Power Attack</a>
-				<small>min.1</small></dd>
-			<dt>alch. 1</dt>
-			<dd><u title="Houserule: replaces Brew Potions"><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a> (Know.Nature)</u>
+			<dd><u title="Houserule: replaces Brew Potions"><a href="https://d20pfsrd.com/feats/general-feats/skill-focus">Skill Focus</a></u> (Know.Nature)
 				<small>bonus</small></dd>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/throw-anything-combat">Throw Anything</a>
 				<small>bonus</small></dd>
@@ -738,7 +100,7 @@
 			<dd><a href="https://d20pfsrd.com/feats/general-feats/accomplished-sneak-attacker">Accomplished Sneak Attacker</a>
 				<small>min.3</small></dd>
 			<dt>barbarian 4</dt>
-			<dd><a href="https://d20pfsrd.com/classes/core-classes/barbarian/rage-powers/paizo-rage-powers/reckless-abandon-ex">Reckless Abandon</a>
+			<dd><a href="https://d20pfsrd.com/classes/core-classes/barbarian/rage-powers/paizo-rage-powers/guarded-life-ex">Guarded Life</a>
 				<small>min.2</small></dd>
 			<dt>level 5</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/weapon-focus-combat">Weapon Focus</a>
@@ -749,6 +111,9 @@
 			<dt>level 7</dt>
 			<dd><a href="https://d20pfsrd.com/feats/combat-feats/vital-strike-combat">Vital Strike</a>
 				<small>min.7</small></dd>
+			<dt>barbarian 8</dt>
+			<dd><a href="https://d20pfsrd.com/classes/core-classes/barbarian/rage-powers/paizo-rage-powers/internal-fortitude-ex">Internal Fortitude</a>
+				<small>min.8</small></dd>
 		</dl>
 
 		<ul class="summations">
@@ -776,9 +141,9 @@
 				<small>2 int, 1 ranks, 3 class</small>
 			</li>
 			<li>
-				<strong>5</strong>
+				<strong>6</strong>
 				<a href="https://d20pfsrd.com/skills/climb">Climb</a>
-				<small>4 str, 1 ranks, 3 class, -3 armor</small>
+				<small>5 str, 1 ranks, 3 class, -3 armor</small>
 			</li>
 			<li>
 				<strong>5</strong>
@@ -796,9 +161,9 @@
 				<small>1 wis, 1 ranks, 3 class</small>
 			</li>
 			<li class="br">
-				<strong>5</strong>
+				<strong>6</strong>
 				<a href="https://d20pfsrd.com/skills/swim">Swim</a>
-				<small>4 str, 1 ranks, 3 class, -3 armor</small>
+				<small>5 str, 1 ranks, 3 class, -3 armor</small>
 			</li>
 
 			<!--Knowledge Skills-->
@@ -843,15 +208,16 @@
 						<small>2 dex</small>
 					</li>
 					<li>
-						<strong>32</strong>
+						<strong>42</strong>
 						<b>HP</b>
-						<small>2 barb: 7 class, 2 con; 1 alch: 5 class, 2 con; 5 flb; 2 fc</small>
-						<div class="circumstancialBonus" title="Tiefling, Scaled Skin"><u>Resist 5</u> fire</div>
+						<small>3 barb: 7 class, 2 con, 1 fc; 1 alch: 5 class, 2 con; 5 flb</small>
+						<div class="circumstancialBonus" title="Tiefling's Fiendish Resistance"><u>Resist 5</u> cold, electricity, fire ❄️⚡🔥</div>
 					</li>
 					<li class="br">
 						<strong>20</strong>
-						<b>AC</b> touch 12, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
-						<small>10, 2 dex, 7 armor, <u title="Tielfing, Scaled Skin">1 natural</u></small>
+						<b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
+						<small>10, 2 dex, 7 armor, <u title="Ring of Protection">1 deflection</u></small>
+						<div class="circumstancialBonus"><u title="Danger Sense, barbarian&frac13;">+1 dodge</u> vs traps</div>
 					</li>
 					<li>
 						<strong>8</strong>
@@ -859,19 +225,19 @@
 						<small>2 con, <u title="3 barbarian, 2 alchemist">5 class</u>, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li>
-						<strong>5</strong>
+						<strong>6</strong>
 						<b>Ref</b>
-						<small>2 dex, <u title="0 barbarian, 2 alchemist">2 class</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+						<small>2 dex, <u title="1 barbarian, 2 alchemist">3 class</u>, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li class="br">
-						<strong>3</strong>
+						<strong>4</strong>
 						<b>Will</b>
-						<small>1 wis, <u title="0 barbarian, 0 alchemist">0 class</u>, <u title="Cloak of Resistance">1 resistance</u>, <u title="Freed Slave">1 trait</u></small>
+						<small>1 wis, <u title="1 barbarian, 0 alchemist">1 class</u>, <u title="Cloak of Resistance">1 resistance</u>, <u title="Freed Slave">1 trait</u></small>
 					</li>
 					<li>
-						<strong>6</strong>
-						<b>CMB</b>; 18 <b>CMD</b>
-						<small>2 bab, 4 str, 2 dex</small>
+						<strong>8</strong>
+						<b>CMB</b>; 21 <b>CMD</b>
+						<small>3 bab, 5 str, 2 dex, <u title="Ring of Protection">1 deflection</u></small>
 					</li>
 				</ul>
 
@@ -879,8 +245,8 @@
 				<div class="weapon">
 					<h2>Butchering Axe <b>20×3</b> <b>S</b></h2>
 					<div class="apartee float align"><b>PA</b> -1+3</div>
-					<div class="summation"><strong>+7</strong> vs AC <small>2 bab, 4 str, 1 mwk</small></div>
-					<div class="summation"><strong>4d6+6</strong> <small>6 str&frac12;</small></div>
+					<div class="summation"><strong>+9</strong> vs AC <small>3 bab, 5 str, 1 mwk</small></div>
+					<div class="summation"><strong>4d6+7</strong> <small>7 str&frac12;</small></div>
 				</div>
 
 				<h2>Sneak Attack <u title="1 feat, 1 class">2d6</u></h2>
@@ -900,15 +266,16 @@
 						<small>2 dex</small>
 					</li>
 					<li>
-						<strong>38</strong>
+						<strong>50</strong>
 						<b>HP</b>
-						<small>2 barb: 7 class, 4 con; 1 alch: 5 class, 4 con; 5 flb; 2 fc</small>
-						<div class="circumstancialBonus" title="Tiefling, Scaled Skin"><u>Resist 5</u> fire</div>
+						<small>3 barb: 7 class, 4 con, 1 fc; 1 alch: 5 class, 4 con; 5 flb</small>
+						<div class="circumstancialBonus" title="Tiefling's Fiendish Resistance"><u>Resist 5</u> cold, electricity, fire ❄️⚡🔥</div>
 					</li>
 					<li class="br">
 						<strong>18</strong>
-						<b>AC</b> touch 10, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
-						<small>10, 2 dex, 7 armor, -2 rage, <u title="Tielfing, Scaled Skin">1 natural</u></small>
+						<b>AC</b> touch 11, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
+						<small>10, 2 dex, 7 armor, -2 rage, <u title="Ring of Protection">1 deflection</u></small>
+						<div class="circumstancialBonus"><u title="Danger Sense, barbarian&frac13;">+1 dodge</u> vs traps</div>
 					</li>
 					<li>
 						<strong>10</strong>
@@ -916,19 +283,19 @@
 						<small>4 con, <u title="3 barbarian, 2 alchemist">5 class</u>, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li>
-						<strong>5</strong>
+						<strong>6</strong>
 						<b>Ref</b>
-						<small>2 dex, <u title="0 barbarian, 2 alchemist">2 class</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+						<small>2 dex, <u title="1 barbarian, 2 alchemist">3 class</u>, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li class="br">
-						<strong>5</strong>
+						<strong>6</strong>
 						<b>Will</b>
-						<small>1 wis, <u title="0 barbarian, 0 alchemist">0 class</u>, <u title="Cloak of Resistance">1 resistance</u>, <u title="Freed Slave">1 trait</u>, <u title="Rage">2 morale</u></small>
+						<small>1 wis, <u title="1 barbarian, 0 alchemist">1 class</u>, <u title="Cloak of Resistance">1 resistance</u>, <u title="Freed Slave">1 trait</u>, <u title="Rage">2 morale</u></small>
 					</li>
 					<li>
-						<strong>8</strong>
-						<b>CMB</b>;	18 <b>CMD</b>
-						<small>2 bab, 6 str, 2 dex, -2 rage</small>
+						<strong>10</strong>
+						<b>CMB</b>;	23 <b>CMD</b>
+						<small>3 bab, 7 str, 2 dex, <u title="Ring of Protection">1 deflection</u></small>
 					</li>
 				</ul>
 
@@ -936,11 +303,11 @@
 				<div class="weapon">
 					<h2>Butchering Axe <b>20×3</b> <b>S</b></h2>
 					<div class="apartee float align"><b>PA</b> -1+3</div>
-					<div class="summation"><strong>+9</strong> vs AC <small>2 bab, 6 str, 1 mwk</small></div>
-					<div class="summation"><strong>4d6+9</strong> <small>9 str&frac12;</small></div>
+					<div class="summation"><strong>+11</strong> vs AC <small>3 bab, 7 str, 1 mwk</small></div>
+					<div class="summation"><strong>4d6+10</strong> <small>10 str&frac12;</small></div>
 				</div>
 
-				<h2>Rage <u title="2 class, 4 barbarian, 2 con">8 rounds/day</u></h2>
+				<h2>Rage <u title="2 class, 6 barbarian&times;2, 2 con">10 rounds/day</u></h2>
 				<p>Start/end as a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a>, fatigued &amp; <u title="Raging Drunk">nauseated</u> when it ends.</p>
 
 				<h2>Raging Drunk</h2>
@@ -958,15 +325,16 @@
 						<small>2 dex</small>
 					</li>
 					<li>
-						<strong>38</strong>
+						<strong>50</strong>
 						<b>HP</b>
-						<small>2 barb: 7 class, 4 con; 1 alch: 5 class, 4 con; 5 flb; 2 fc</small>
-						<div class="circumstancialBonus" title="Tiefling, Scaled Skin"><u>Resist 5</u> fire</div>
+						<small>3 barb: 7 class, 4 con, 1 fc; 1 alch: 5 class, 4 con; 5 flb</small>
+						<div class="circumstancialBonus" title="Tiefling's Fiendish Resistance"><u>Resist 5</u> cold, electricity, fire ❄️⚡🔥</div>
 					</li>
 					<li class="br">
-						<strong>19</strong>
-						<b>AC</b> touch 10, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
-						<small>10, 2 dex, 7 armor, -2 rage, <u title="Mutagen (overrides Tiefling, Scaled Skin)">2 natural</u></small>
+						<strong>20</strong>
+						<b>AC</b> touch 11, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> <u title="Uncanny Dodge">&infin;</u>
+						<small>10, 2 dex, 7 armor, -2 rage, <u title="Mutagen">2 natural</u>, <u title="Ring of Protection">1 deflection</u></small>
+						<div class="circumstancialBonus"><u title="Danger Sense, barbarian&frac13;">+1 dodge</u> vs traps</div>
 					</li>
 					<li>
 						<strong>10</strong>
@@ -974,19 +342,19 @@
 						<small>4 con, <u title="3 barbarian, 2 alchemist">5 class</u>, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li>
-						<strong>5</strong>
+						<strong>6</strong>
 						<b>Ref</b>
-						<small>2 dex, <u title="0 barbarian, 2 alchemist">2 class</u>, <u title="Cloak of Resistance">1 resistance</u></small>
+						<small>2 dex, <u title="1 barbarian, 2 alchemist">3 class</u>, <u title="Cloak of Resistance">1 resistance</u></small>
 					</li>
 					<li class="br">
-						<strong>5</strong>
+						<strong>6</strong>
 						<b>Will</b>
-						<small>1 wis, <u title="0 barbarian, 0 alchemist">0 class</u>, <u title="Cloak of Resistance">1 resistance</u>, <u title="Freed Slave">1 trait</u>, <u title="Rage">2 morale</u></small>
+						<small>1 wis, <u title="1 barbarian, 0 alchemist">1 class</u>, <u title="Cloak of Resistance">1 resistance</u>, <u title="Freed Slave">1 trait</u>, <u title="Rage">2 morale</u></small>
 					</li>
 					<li>
-						<strong>10</strong>
-						<b>CMB</b>;	20 <b>CMD</b>
-						<small>2 bab, 8 str, 2 dex, -2 rage</small>
+						<strong>12</strong>
+						<b>CMB</b>;	25 <b>CMD</b>
+						<small>3 bab, 9 str, 2 dex, <u title="Ring of Protection">1 deflection</u></small>
 					</li>
 				</ul>
 
@@ -994,8 +362,8 @@
 				<div class="weapon">
 					<h2>Butchering Axe <b>20×3</b> <b>S</b></h2>
 					<div class="apartee float align"><b>PA</b> -1+3</div>
-					<div class="summation"><strong>+11</strong> vs AC <small>2 bab, 8 str, 1 mwk</small></div>
-					<div class="summation"><strong>4d6+12</strong> <small>12 str&frac12;</small></div>
+					<div class="summation"><strong>+13</strong> vs AC <small>3 bab, 9 str, 1 mwk</small></div>
+					<div class="summation"><strong>4d6+13</strong> <small>13 str&frac12;</small></div>
 				</div>
 
 				<h2>Mutagen</h2>
@@ -1009,18 +377,23 @@
 				<h2>Alchemist Extracts <b>CL 1st</b></h2>
 				<h2>Level 1 <u title="1 class, 1 int">2/day</u></h2>
 				<ul>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/long-arm">long arm</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a>,</li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/t/true-strike">true strike</a>.</li>
+					<li>Prepared:
+						<a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/long-arm">long arm</a>,
+						<a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/shield">shield</a></li>
+					<li class="condensed">Known:
+						<a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a>,
+						<a class="spell" href="https://d20pfsrd.com/magic/all-spells/t/true-strike">true strike</a></li>
 				</ul>
 			</div>
-			<!--end of Bloodrage-->
+			<!--end of Mutagenic Rage-->
 		</section>
 
 		<hr>
 		<ul id="magicItemsWrapper">
+			<li><!--2000--><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a> +1</li>
 			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a> +1</li>
+			<li><!--1000--><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/bead-boro">Boro Bead</a> L1</li>
+			<li><!--8000--><s>Flawed <a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/ioun-stones/scarlet-and-green-cabochon">Scarlet and Green Cabochon</a> Ioun Stone</s></li>
 		</ul>
 		<ul id="inventory">
 			<!--Weapons-->
@@ -1037,7 +410,7 @@
 			<li><!--50-->
 				<a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a>
 			</li>
-			<li>40 <b>GP</b><!--/175--></li>
+			<li>40 <b>GP</b><!--/3,000--></li>
 		</ul>
 
 		<!-- title NOTES -->
@@ -1068,23 +441,5 @@
 		<a href="https://www.deviantart.com/mizakiiarte/art/Red-Oni-Muscular-2k-1008652168">
 		<img src="https://i.pinimg.com/originals/89/e2/3f/89e23f2b3b2afc865deb2dffc80565e5.jpg" alt="Red Oni Muscular- 2k &copy;Mizakiiarte"></a>
 	</dialog>
-
-	<script>
-		function showOnly(className) {
-			document.querySelectorAll('.container').forEach(n => {
-				if (n.classList.contains(className)) n.classList.remove('hidden');
-				else n.classList.add('hidden');
-			});
-		}
-		document.addEventListener('keydown', e => {
-			if (e.keyCode < 49 || e.keyCode > 52) return;
-			let className = 'level-' + e.key;
-			showOnly(className);
-			document.getElementById('level-picker').value = className; 
-		});
-		window.addEventListener('load', e => {
-			showOnly(document.getElementById('level-picker').value);
-		});
-	</script>
 </body>
 </html>
