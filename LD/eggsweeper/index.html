@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- ©2025 Rémi Doutre / Greytyphoon -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Rémi Doutre">
+	<meta name="description" content="Greytyphoon's take on a classic game.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Eggsweeper</title>
+	<link rel="stylesheet" type="text/css" href="../../basic.css"/>
+	<link rel="stylesheet" type="text/css" href="../game.css"/>
+	<style>
+		#timer { float: right; }
+		#gameBoard {
+			position: relative;
+			font-size: 2em;
+			display: grid;
+			margin: 1rem auto;
+			svg: { z-index: 1; } /* behind .box */
+		}
+		.box {
+			width: 40px;
+			height: 40px;
+			position: relative;
+			box-shadow: 0 0 8px var(--tint-black);
+			text-align: center;
+			background-color: deepskyblue;
+			z-index: 2;
+			&:hover:not(.seen):not(.flagged) { animation: pulse 2s linear infinite; }
+		}
+		.box.flagged { background-color: lightcoral; }
+		.box.seen { background-color: var(--tint-white); }
+		.box.seen.colour-EGG { color: var(--tint-white); background: var(--abjuration-gold); }
+		.box.seen.colour-0 { color: var(--tint-grey); }
+		.box.seen.colour-1 { color: var(--serene-green); }
+		.box.seen.colour-2 { color: var(--virtue-blue); }
+		.box.seen.colour-3 { color: var(--murder-red); }
+		@keyframes pulse {
+			0% { background-color: deepskyblue; }
+			33% { background-color: dodgerblue; }
+			66% { background-color: dodgerblue; }
+			100% { background-color: deepskyblue; }
+		}
+		#options > dl > dt { margin-top: .75em; }
+	</style>
+	<script type="text/javascript" src="../game.js"></script>
+	<script type="text/javascript" src="foundation.js"></script>
+</head>
+<body onload="startGame(); modal.showOnce('how-to-play', 'Eggsweeper');">
+	<div class="container">
+		<header id="header">
+			<h1>Eggsweeper</h1>
+			Greytyphoon's mini-game
+		</header>
+
+		<section>
+			<div id="timer">00:00</div>
+			<div><b id="score">0</b> squares open. Found <b id="countFoundEggs">0</b> of <b id="hintNbEggs">0</b> eggs.</div>
+		</section>
+
+		<div id="gameBoard">
+		</div>
+
+		<center><label>Flag <input id="flags" type="checkbox"></label><center>
+	</div>
+
+	<nav id="fixref">
+		<ul>
+			<li><a class="how-to-play" onClick="modal.showModal('how-to-play');">How to play</a></li>
+			<li><a class="options" onclick="modal.showModal('options');">Options</a></li>
+			<li><a class="confirm" onclick="document.getElementById('confirm-restart').toggleAttribute('visible'); startGame();" id="confirm-restart">Confirm</a>
+				<a class="restart" onclick="document.getElementById('confirm-restart').toggleAttribute('visible');">Restart</a>
+			<li><a class="credits" onClick="modal.showModal('credits');">Credits</a></li>
+		</ul>
+	</nav>
+
+	<dialog id="how-to-play">
+		<h2>How to play <b><a onClick="modal.closeModal('how-to-play');">&times;</a></b></h2>
+		<p>Click on squares to search them.</p>
+		<p>🏆 To win, you must find all the hidden eggs.</p>
+		<p>Search as few squares as possible. Good luck!</p>
+		<center><a onClick="modal.closeModal('how-to-play');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="options">
+		<h2>Options <b><a onClick="modal.closeModal('options');">&times;</a></b></h2>
+		<dl>
+			<dt><label for="opt-gridsize">Grid Size</label></dt>
+			<dd><input type="number" min="5" max="15" value="6" maxlength="2" id="opt-gridsize-x" style="width:5em">
+				by <input type="number" min="7" max="15" value="9" maxlength="2" id="opt-gridsize-y" style="width:5em"></dd>
+
+			<dt>Number of treasures</dt>
+			<dd><input type="radio" name="nbEggs" id="opt-nbEggs-few"><label for="opt-nbEggs-few">Few</label>,
+				<input type="radio" name="nbEggs" id="opt-nbEggs-normal" checked><label for="opt-nbEggs-normal">Normal</label>,
+				<input type="radio" name="nbEggs" id="opt-nbEggs-plenty"><label for="opt-nbEggs-plenty">Plenty</label>.</dd>
+		</dl>
+		<center><a onClick="modal.closeModal('options'); startGame();">Apply</a> - <a onClick="modal.closeModal('options');">Cancel</a></center>
+	</dialog>
+
+	<dialog id="credits">
+		<h2>Eggsweeper <b><a onClick="modal.closeModal('credits');">&times;</a></b></h2>
+		<p>A take on a classic searching game</p>
+		<p>By Greytyphoon (Rémi Doutre)</p>
+		<p>©2026 Montréal, Québec, Canada</p>
+		<center><a onClick="modal.closeModal('credits');">Ok!</a></center>
+	</dialog>
+
+	<dialog id="victory">
+		<h2>Victory! <b><a onClick="modal.closeModal('victory');">&times;</a></b></h2>
+		<p>You managed to find all eggs!</p>
+		<p>Congratulations!</p>
+		<center><a onClick="modal.closeModal('victory');">Yay!</a></center>
+	</dialog>
+	
+	<script>
+		document.addEventListener('keydown', e => {
+			if (e.key != 'f') return
+			var chk = document.getElementById('flags');
+			chk.checked = !chk.checked; 
+		});
+	</script>
+</body>
+</html>
