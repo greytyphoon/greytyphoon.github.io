@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<meta property="og:title" content="Dezzin Drakes, captain's aide" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://greytyphoon.space/PF/sheets/Dezzin.html" />
+	<meta property="og:image" content="https://i.pinimg.com/originals/99/73/96/99739646f830283be79432b38998c2db.jpg" />
+	<meta property="og:description" content="The PF2 character sheet for Dezzin, a 6th-level half-elf ranger." name="description">
+	<title>Grey's Ranger</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.hunted, a.hunted { color: var(--virtue-blue); }
+		.warden, a.warden { color: var(--serene-green); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF/index.html">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Dezzin Drakes, captain's aide</h1>
+			NG Medium Humanoid
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>2 <small>L1, L5</small></dd>
+
+				<dt>Dex</dt>
+				<dd>4+ <small>A, B, C, L1, L5</small></dd>
+
+				<dt>Con</dt>
+				<dd>3 <small>A, L1, L5</small></dd>
+
+				<dt>Int</dt>
+				<dd>0</dd>
+
+				<dt>Wis</dt>
+				<dd>3 <small>B, L1, L5</small></dd>
+
+				<dt>Cha</dt>
+				<dd>0</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Ancestry</dt>
+				<dd><a href="https://2e.aonprd.com/Ancestries.aspx?ID=64">Human</a></dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/Ancestries.aspx?ID=69">Half-elf</a> Heritage</dd>
+
+				<dt>Background</dt>
+				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=209">Deckhand</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=36">Ranger</a> 6</dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/HuntersEdge.aspx?ID=5">Precision</a> Edge</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Senses</dt>
+				<dd title="Half-elf Heritage"><a href="https://2e.aonprd.com/Rules.aspx?ID=2411">Low-light vision</a></dd>
+
+				<dt>Speed</dt>
+				<dd title="Fleet">30 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Dwarven, Elven</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/99/73/96/99739646f830283be79432b38998c2db.jpg" alt="Ranger commission &copy;Nguyen Hieu" onclick="document.getElementById('large-picture').showModal()">
+		<button id="featsWrapper" class="br noprint" onclick="document.getElementById('build-info').showModal()">Open Feats</button>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>15</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=1">Acrobatics</a>
+				<small>4 dex, 4 prf, 6 lvl, 1 item</small>
+			</li>
+			<li>
+				<strong>10</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=3">Athletics</a>
+				<small>2 str, 2 prf, 6 lvl</small>
+			</li>
+			<li>
+				<strong>12</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=9">Medicine</a>
+				<small>3 wis, 2 prf, 6 lvl, 1 item</small>
+			</li>
+			<li>
+				<strong>11</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=10">Nature</a>
+				<small>3 wis, 2 prf, 6 lvl</small>
+			</li>
+			<li>
+				<strong>15</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=15">Stealth</a>
+				<small>4 dex, 4 prf, 6 lvl, 1 item</small>
+			</li>
+			<li>
+				<strong>13</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=16">Survival</a>
+				<small>3 wis, 4 prf, 6 lvl</small>
+				<div class="circumstancialBonus hunted" title="Hunted Prey"><u>+2 circ</u> when tracking hunted prey.</div>
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row">
+			<!--Basics: Statblock and Weapons-->
+			<ul class="summations">
+				<li class="br">
+					<strong>13</strong>
+					<b>Perception</b>
+					<small>3 wis, 4 prf, 6 lvl</small>
+					<div class="circumstancialBonus hunted" title="Hunted Prey"><u>+2 circ</u> when seeking hunted prey.</div>
+				</li>
+				<li>
+					<strong>86</strong>
+					<b>HP</b>
+					<small>8 human, 6 lvl: 10 ranger, 3 con</small>
+				</li>
+				<li class="br">
+					<strong>24</strong>
+					<b>AC</b>
+					<small>10, 4 dex, 2 prf, 6 lvl, <u title="1 armor, 1 Potency rune">2 item</u></small>
+				</li>
+				<li>
+					<strong>13</strong>
+					<b>Fort</b>
+					<small>3 con, 4 prf, 6 lvl</small>
+				</li>
+				<li>
+					<strong>14</strong>
+					<b>Ref</b>
+					<small>4 dex, 4 prf, 6 lvl</small>
+				</li>
+				<li>
+					<strong>13</strong>
+					<b>Will</b>
+					<small>3 wis, 4 prf, 6 lvl</small>
+				</li>
+			</ul>
+			<div class="wide">
+				<!--Hornbow-->
+				<div class="weapon">
+					<h2>Hornbow <b>P</b> <b class="range increment">40ft</b></h2>
+					<div class="summation"><strong>+15</strong>/<strong>10</strong>/<strong>5</strong> vs AC <small>4 dex, 4 prf, 6 lvl, 1 item</small></div>
+					<div class="circumstancialBonus hunted" title="Hunt Prey">Prey — No penalty for the 2nd range increment.</div>
+					<div class="circumstancialBonus hunted" title="Hunter's Aim">Prey — Spend an extra action to aim: gain <u>+2 circ</u> and ignore <a href="https://2e.aonprd.com/Rules.aspx?ID=425">concealed</a>.</div>
+					<div class="summation"><strong>2d8+3</strong> <small>1 str&frac12;, <u title="Point Blank Stance">2 circ</u></small></div>
+					<div class="circumstancialBonus">Your 1st Strike each round adds
+						<u class="hunted" title="Precision Edge, increases by 1d8 at 1st, 11th, 19th.">Prey — 1d8 dmg 🎯</u> and
+						<u class="warden" title="Gravity Weapon, increases with damage dice.">Gravity — 4 status</u> to damage.</div>
+					<div class="circumstancialBonus">On crit,
+						<span title="Deadly d6">add <u>1d6 dmg</u></span> and
+						<span title="Critical Specialization">the foe is <a href="https://2e.aonprd.com/Conditions.aspx?ID=81">immobilized</a>
+							<small>until it <a href="https://2e.aonprd.com/Actions.aspx?ID=2297">Interacts</a> to remove the arrow with DC10 Athletics.</small></span></div>
+				</div>
+
+				<!--Elven Curve Blade-->
+				<div class="weapon">
+					<h2>Elven Curve Blade <b>S</b></h2>
+					<div class="summation"><strong>+15</strong>/<strong>10</strong>/<strong>5</strong> vs AC <small>4 dex, 4 prf, 6 lvl, 1 item</small></div>
+					<div class="summation"><strong>2d8+2</strong> <small>2 str</small></div>
+					<div class="circumstancialBonus">Your 1st Strike each round adds
+						<u class="hunted" title="Precision Edge, increases by 1d8 at 1st, 11th, 19th.">Prey — 1d8 dmg 🎯</u> and
+						<u class="warden" title="Gravity Weapon, increases with damage dice.">Gravity — 4 status</u> to damage.</div>
+					<div class="circumstancialBonus" title="Forceful.">Your 2nd Strike each round adds <u title="Increases with damage dice.">2 circ</u> to damage. Your 3rd adds <u title="Increases with damage dice.">4 circ</u>.</div>
+					<div class="circumstancialBonus hunted" title="Critical Specialization">Prey — On crit, the foe is <a href="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> until the start of your next turn.</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2 class="one-action hunted"><a class="hunted" href="https://2e.aonprd.com/Actions.aspx?ID=10">Hunt Prey</a></h2>
+			<p class="hunted">As an action, designate a creature as your Prey.<br>
+				<span title="Monster Hunter">Then, <a href="https://2e.aonprd.com/Actions.aspx?ID=2367">Recall Knowledge</a> about your prey.
+				On crit, you find a weakness: you and all allies gain <u>+1 circ</u> to your next Strike vs your prey.</p>
+
+			<h2 class="reaction hunted"><a class="hunted" href="https://2e.aonprd.com/Feats.aspx?ID=4872">Disrupt Prey</a></h2>
+			<p class="hunted">When your Prey is adjacent and uses a [manipulate] or [move] action, make a melee <u title="Snap Shot">or ranged</u> Strike.</p>
+
+			<h2 class="one-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=4771">Point-Blank Stance</a></h2>
+			<p>As an action, enter the Stance. As long as you remain in the Stance, your ranged Strikes add <u>+2 circ</u> to damage within your 1st range increment.</p>
+
+			<h2 class="one-action warden">Warden Spell: <a class="spell warden" href="https://2e.aonprd.com/Spells.aspx?ID=770">Gravity Weapon</a> <b>1 FP</b></h2>
+			<p class="warden">As an action, lasts 1 minute; each round, your 1st Strike adds <u title="Increases with damage dice.">+4 status</u> to damage. The spell is cast on you, and affects all your weapons.</p>
+
+			<h2 class="one-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=982">Terrain Stealth</a></h2>
+			<p>As an action, <a href="https://2e.aonprd.com/Actions.aspx?ID=2307">Take Cover</a> then <a href="https://2e.aonprd.com/Actions.aspx?ID=2404">Hide</a>.
+				<small>While you're <a href="https://2e.aonprd.com/Conditions.aspx?ID=79">hidden</a>, foes are <a href="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> to you.</small></p>
+		</section>
+	</div>
+
+	<dialog id="build-info" class="info" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<section class="row">
+			<dl class="charInfo">
+				<dt>human 1</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4478">NA</a>
+					&gt; <a href="https://2e.aonprd.com/Feats.aspx?ID=4574">Monster Hunter</a></dd>
+				<dt>ranger 1</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4862">Initiate Warden</a>
+					&gt; <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1863">gravity weapon</a></dd>
+				<dt>ranger 2</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4867">Hunter's Aim</a></dd>
+				<dt>archetype 2</dt>
+				<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=238">Archer Dedication</a></dd>
+				<dt>general 3</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5150">Fleet</a></dd>
+				<dt>ranger 4</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4872">Disrupt Prey</a></dd>
+				<dt>archetype 4</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4771">Point Blank Stance</a></dd>
+				<dt>human 5</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=982">Terrain Stealth</a></dd>
+				<dt>ranger 6</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4881">Snap Shot</a></dd>
+				<dt>archetype 6</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=1887">Advanced Bow Training</a></dd>
+			</dl>
+
+			<dl class="charInfo">
+				<dt>background</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5131">Cat Fall</a></dd>
+				<dt>skill 2</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5217">Steady Balance</a></dd>
+				<dt>skill 4</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=6505">Slippery Prey</a></dd>
+				<dt>skill 6</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=3907">Predict Weather</a></dd>
+			</dl>
+
+			<dl class="charInfo">
+				<dt>background</dt>
+				<dd>Trained, Acrobatics*</dd>
+				<dt>bard 1</dt>
+				<dd>Trained, Nature*</dd>
+				<dd>Trained, Survival*</dd>
+				<dd>Trained, Athletics</dd>
+				<dd>Trained, Medicine</dd>
+				<dd>Trained, Stealth</dd>
+				<dd>Trained, Thievery</dd>
+				<dt>houserule 3</dt>
+				<dd>Expert, Acrobatics</dd>
+				<dt>skill 3</dt>
+				<dd>Expert, Survival</dd>
+				<dt>skill 5</dt>
+				<dd>Expert, Stealth</dd>
+			</dl>
+		</section>
+	</dialog>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Dezzin – Art by <a href="https://allmylinks.com/itsjusthieu">Nguyen Hieu</a></h2>
+		<a href="https://www.reddit.com/r/DungeonsAndDragons/comments/y8vmmo/art_dnd_art_i_did_for_commission/">
+		<img  src="https://i.pinimg.com/originals/99/73/96/99739646f830283be79432b38998c2db.jpg" alt="Ranger commission &copy;Nguyen Hieu"></a>
+	</dialog>
+</body>
+</html>
