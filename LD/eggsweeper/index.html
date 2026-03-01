@@ -24,11 +24,11 @@
 			position: relative;
 			box-shadow: 0 0 8px var(--tint-black);
 			text-align: center;
-			background-color: deepskyblue;
+			background-color: yellowgreen;
 			z-index: 2;
 			&:hover:not(.seen):not(.flagged) { animation: pulse 2s linear infinite; }
 		}
-		.box.flagged { background-color: lightcoral; }
+		.box.flagged {color: yellowgreen; background-color: olivedrab; }
 		.box.seen { background-color: var(--tint-white); }
 		.box.seen.colour-EGG { color: var(--tint-white); background: var(--abjuration-gold); }
 		.box.seen.colour-0 { color: var(--tint-grey); }
@@ -55,8 +55,9 @@
 
 		<section>
 			<div id="timer">00:00</div>
-			<div><b id="score">0</b> squares open. Found <b id="countFoundEggs">0</b> of <b id="hintNbEggs">0</b> eggs.</div>
+			<div><b id="score">0</b> squares open.</div>
 		</section>
+		<center>Found <b id="countFoundEggs">0</b> of <b id="hintNbEggs">0</b> treasures.</center>
 
 		<div id="gameBoard">
 		</div>
@@ -77,7 +78,7 @@
 	<dialog id="how-to-play">
 		<h2>How to play <b><a onClick="modal.closeModal('how-to-play');">&times;</a></b></h2>
 		<p>Click on squares to search them.</p>
-		<p>🏆 To win, you must find all the hidden eggs.</p>
+		<p>🏆 To win, you must find all the hidden treasures.</p>
 		<p>Search as few squares as possible. Good luck!</p>
 		<center><a onClick="modal.closeModal('how-to-play');">Ok!</a></center>
 	</dialog>
@@ -107,7 +108,7 @@
 
 	<dialog id="victory">
 		<h2>Victory! <b><a onClick="modal.closeModal('victory');">&times;</a></b></h2>
-		<p>You managed to find all eggs!</p>
+		<p>You managed to find all treasures!</p>
 		<p>Congratulations!</p>
 		<center><a onClick="modal.closeModal('victory');">Yay!</a></center>
 	</dialog>

@@ -108,6 +108,7 @@ const boxFactory = {
 			y: y,
 			seen: false,
 			flagged: false,
+			permaflag: false,
 			content: content,
 			dom: boxDom,
 		};
@@ -130,7 +131,7 @@ const boxFactory = {
 		}
 	},
 	boxClick: function(box) {
-		if (paused || box.seen) return;
+		if (paused || box.seen || box.permaflag) return;
 		timer.start();
 
 		// handle flagging
@@ -149,6 +150,10 @@ const boxFactory = {
 		box.seen = true;
 		box.dom.classList.add('seen', 'colour-'+box.content);
 		box.dom.innerHTML = (box.content === "EGG") ? "$" : box.content;
+
+		// If the box is 0, auto-flag adjacent boxes
+		if (box.content === 0)
+			boxFactory.allBoxes.filter(b => !b.seen && !b.permaflag && Math.abs(b.x - box.x) <= 1 && Math.abs(b.y - box.y) <= 1).forEach(b => { b.permaflag = true; b.dom.classList.add("flagged"); b.dom.innerHTML = "0"; });
 
 		// Updated found egg counter
 		if (box.content === "EGG")
