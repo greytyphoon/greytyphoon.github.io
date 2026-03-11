@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<meta property="og:title" content="Bofa Tarako, the pale dragon" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://greytyphoon.space/PF/sheets/Bofa.html" />
+	<meta property="og:image" content="https://i.pinimg.com/1200x/a3/ca/3a/a3ca3adf88ce65e490f00aa9bf0656e3.jpg" />
+	<meta property="og:description" content="The Daggerheart character sheet for Bofa Tarako, a 1st-level drakona druid." name="description">
+	<title>Grey's Druid</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.weapon > h2 > a, .weapon > h2 > a.visited { color: var(--tint-white); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Bofa Tarako, the pale dragon</h1>
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Agility</dt>
+				<dd>1</dd>
+
+				<dt>Strength</dt>
+				<dd>1</dd>
+
+				<dt>Finesse</dt>
+				<dd>0</dd>
+
+				<dt>Instinct</dt>
+				<dd>2</dd>
+
+				<dt>Presence</dt>
+				<dd>-1</dd>
+
+				<dt>Knowledge</dt>
+				<dd>0</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Class</dt>
+				<dd><a href="https://daggerheartsrd.com/classes/druid/">Druid</a> 1</dd>
+				<dd class="archetype"><a href="https://daggerheartsrd.com/subclasses/warden-of-renewal/">Warden of Renewal</a></dd>
+
+				<dt>Ancestry</dt>
+				<dd><a href="https://daggerheartsrd.com/ancestries/drakona/">Drakona</a></dd>
+
+				<dt>Community</dt>
+				<dd><a href="https://daggerheartsrd.com/communities/seaborne/">Seaborne</a></dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Experiences</dt>
+				<dd>Serenity <em>+2</em></dd>
+				<dd>Traveler <em>+2</em></dd>
+
+				<dt>Domain Cards</dt>
+				<dd><a href="https://daggerheartsrd.com/abilities/gifted-tracker/">Gifted Tracker</a> <small>L1 Sage Ability, R0</small></dd>
+				<dd><a href="https://daggerheartsrd.com/abilities/vicious-entangle/">Vicious Entangle</a> <small>L1 Sage Spell, R1</small></dd>
+			</dl>
+		</section>
+
+		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/1200x/a3/ca/3a/a3ca3adf88ce65e490f00aa9bf0656e3.jpg" alt="Candle in the Dark &copy;jeffp210" onclick="document.getElementById('large-picture').showModal()">
+
+		<section class="row">
+			<ul class="summations">
+				<li title="Druid, Gambeson">
+					<strong>11</strong>
+					<b>Evasion</b>
+					<div class="circumstancialBonus" title="Gifted Tracker"><u>+1</u> vs foes you've tracked.</div>
+				</li>
+				<li title="Gambeson: 5/11 + level">
+					<strong>6</strong>
+					<b>Threshold</b>; 12 <b>Severe</b>
+				</li>
+				<li title="Gambeson">
+					<strong>3</strong>
+					<b>Armor</b> ○ ○ ○  <small><a href="https://daggerheartsrd.com/armor/gambeson-armor/">Gambeson</a></small>
+				</li>
+				<li title="Druid">
+					<strong>6</strong>
+					<b>HP</b> ○ ○ ○ ○ ○ ○
+				</li>
+				<li>
+					<strong>1</strong>
+					<b>Proficiency</b>
+				</li>
+			</ul>
+
+			<div class="wide">
+				<!--Elemental Breath-->
+				<div class="weapon">
+					<h2><a href="https://daggerheartsrd.com/ancestries/drakona/">Elemental Breath</a> <b>Very Close</b></h2>
+					<div class="circumstancialBonus">Can target a group of foes.</div>
+					<div class="summation"><strong>+2</strong> Ins</div>
+					<div class="summation"><strong>1d8</strong> Mag</div>
+				</div>
+
+				<!--Vicious Entangle-->
+				<div class="weapon">
+					<h2><a href="https://daggerheartsrd.com/abilities/vicious-entangle/">Vicious Entangle</a> <b>Far</b></h2>
+					<div class="summation"><strong>+2</strong> Ins</div>
+					<div class="summation"><strong>1d8+1</strong> Mag</div>
+					<div class="circumstancialBonus">The foe is <a href="https://daggerheartsrd.com/rules/#temporary-tags-and-special-conditions">temporarily</a> <a href="https://daggerheartsrd.com/rules/#restrained">restrained</a>.</div>
+					<div class="circumstancialBonus">For 1 Hope: temporarily restrain another foe, very close to the first.</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="row">
+			<div>
+				<h2>Stress <b>○ ○ ○ ○ ○ ○</b></h2>
+				<dl class="condensed">
+					<dt class="one-action"><a href="https://daggerheartsrd.com/ancestries/drakona/">Scales</a></dt>
+					<dd>For 1, when taking Severe damage, mark 1 fewer HP.</dd>
+
+					<dt class="one-action"><a href="https://daggerheartsrd.com/classes/druid/">Beastform</a></dt>
+					<dd>For 1, transform into an animal. While transformed, you can't use weapons or cast spells, including your Breath.</dd>
+				</dl>
+
+				<h2>Hope <b>○ ○ ○ ○ ○ ○</b></h2>
+				<dl class="condensed">
+					<dt class="three-actions"><a href="https://daggerheartsrd.com/classes/druid/">Evolution</a></dt>
+					<dd>For 3, beastform. Don't pay stress. Add +1 to a trait.</dd>
+
+					<dt class="three-actions"><a href="https://daggerheartsrd.com/subclasses/warden-of-renewal/">Regeneration</a></dt>
+					<dd>For 3, touch a creature to heal <b>1d4 HP</b>.</dd>
+
+					<dt class="one-action"><a href="https://daggerheartsrd.com/abilities/gifted-tracker/">Gifted Tracker</a></dt>
+					<dd>For 1, while tracking, gain information. When you encounter a foe you tracked, gain <b>+1 Evasion</b> against them.</dd>
+
+					<dt class="one-action">Help an Ally</dt>
+					<dd>For 1, add <b>1d6</b> to an ally's roll.</dd>
+
+					<dt class="one-action">Use an Experience</dt>
+					<dd>For 1, add the bonus from one experience to your roll. <small>You may pay again to use multiple experiences.</small></dd>
+				</dl>
+			</div>
+
+			<div>
+				<h2><a href="https://daggerheartsrd.com/communities/seaborne/">Know the Tide</a></h2>
+				<p>When you roll with Fear, gain a Tide token <small>max <u title="1 level">1</u>.</small>
+					Before you make an action roll, you can spend <b>n</b> Tide tokens to add <b>+n</b> to the roll.
+					<small>At the end of each session, clear all unspent tokens.</small></p>
+
+				<h2><a href="https://daggerheartsrd.com/classes/druid/">Clarity of Nature</a> <b>1/day</b></h2>
+				<p>Rest for a few minutes: your allies clear a shared total of <b><u title="2 ins">2</u></b> Stress.</p>
+
+				<h2><a href="https://daggerheartsrd.com/classes/druid/">Wildtouch</a></h2>
+				<p>You can perform harmless, subtle effects that involve nature.</p>
+			</div>
+		</section>
+
+		<section>
+			<h2>Beastform Options</h2>
+			<table>
+				<tr>
+					<th rowspan="2">Pack Predator</th>
+					<td>Hyena, Wolf</td>
+					<td>Evasion +1</td>
+					<td>Strength +2</td>
+					<td>Melee Strength d8+2 phy</td>
+					<td>Adv: attack, sprint, track</td>
+				</tr>
+				<tr>
+					<td colspan="5" class="condensed"><em>Hobbling Strike</em>: When you hit, for 1 Stress: the foe is <a href="https://daggerheartsrd.com/rules/#temporary-tags-and-special-conditions">temporarily</a> <a href="https://daggerheartsrd.com/rules/#vulnerable">vulnerable</a>.<br>
+						<em>Pack Hunting</em>: When you hit the same foe as the ally who acted immediately before, add 1d8 dmg.</td>
+				</tr>
+				<tr>
+					<th rowspan="2">Mighty Strider</th>
+					<td>Camel, Horse</td>
+					<td>Evasion +2</td>
+					<td>Agility +1</td>
+					<td>Melee Agility d8+1 phy</td>
+					<td>Adv: leap, navigate, sprint</td>
+				</tr>
+				<tr>
+					<td colspan="5" class="condensed"><em>Carrier</em>: You can carry up to two willing allies with you when you move.<br>
+						<em>Trample</em>: For 1 Stress: move up to Close range in a straight line. Attack all adjacent foes. On hit, the foe takes <u>1d8+1 dmg phy</u> and is is <a href="https://daggerheartsrd.com/rules/#temporary-tags-and-special-conditions">temporarily</a> <a href="https://daggerheartsrd.com/rules/#vulnerable">vulnerable</a>.</td>
+				</tr>
+				<tr>
+					<th rowspan="2">Agile Scout</th>
+					<td>Fox, Mouse</td>
+					<td>Evasion +2</td>
+					<td>Agility +1</td>
+					<td>Melee Agility d4 phy</td>
+					<td>Adv: deceive, locate, sneak</td>
+				</tr>
+				<tr>
+					<td colspan="5" class="condensed"><em>Agile</em>: Your movement is silent. For 1 Hope, move up to Far range without rolling.<br>
+						<em>Fragile</em>: When you take Major or greater damage, you drop out of Beastform.</td>
+				</tr>
+				<tr>
+					<th rowspan="2">Aquatic Scout</th>
+					<td>Fish, Octopus</td>
+					<td>Evasion +2</td>
+					<td>Agility +1</td>
+					<td>Melee Agility d4 phy</td>
+					<td>Adv: navigate, sneak, swim</td>
+				</tr>
+				<tr>
+					<td colspan="5" class="condensed"><em>Aquatic</em>: You can breathe and move naturally underwater.<br>
+						<em>Fragile</em>: When you take Major or greater damage, you drop out of Beastform.</td>
+				</tr>
+				<tr>
+					<th rowspan="2">Household Friend</th>
+					<td>Cat, Dog</td>
+					<td>Evasion +2</td>
+					<td>Instinct +1</td>
+					<td>Melee Instinct d6 phy</td>
+					<td>Adv: climb, locate, protect</td>
+				</tr>
+				<tr>
+					<td colspan="5" class="condensed"><em>Companion</em>: When you Help an Ally, you can roll a d8 as your advantage die.<br>
+						<em>Fragile</em>: When you take Major or greater damage, you drop out of Beastform.</td>
+				</tr>
+				<tr>
+					<th rowspan="2">Nimble Grazer</th>
+					<td>Deer, Goat</td>
+					<td>Evasion +3</td>
+					<td>Agility +1</td>
+					<td>Melee Agility d6 phy</td>
+					<td>Adv: leap, sneak, sprint</td>
+				</tr>
+				<tr>
+					<td colspan="5" class="condensed"><em>Elusive Prey</em>: When an attack roll against you would succeed, for 1 Stress, add 1d4 to your Evasion.<br>
+						<em>Fragile</em>: When you take Major or greater damage, you drop out of Beastform.</td>
+				</tr>
+			</table>
+		</section>
+
+		<hr>
+		<section>
+			<h2>Background Questions</h2>
+			<ul class="condensed list">
+				<li>Why was the community you grew up in so reliant on nature and its creatures?</li>
+				<li>Who was the first wild animal you bonded with? Why did your bond end?</li>
+				<li>Who has been trying to hunt you down? What do they want from you?</li>
+			</ul>
+			<h2>Connections</h2>
+			<ul class="condensed list">
+				<li>What did you confide in me that makes me leap into danger for you every time?</li>
+				<li>What animal do I say you remind me of?</li>
+				<li>What affectionate nickname have you given me?</li>
+			</ul>
+		</section>
+	</div>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Bofa – Art by <a href="https://www.reddit.com/user/jeffp210/">jeffp210</a></h2>
+		<a href="https://www.reddit.com/r/DnD/comments/esba6s/ocart_lizardfolk_druid/">
+		<img src="https://i.pinimg.com/1200x/a3/ca/3a/a3ca3adf88ce65e490f00aa9bf0656e3.jpg" alt="Candle in the Dark &copy;jeffp210"></a>
+	</dialog>
+</body>
+</html>
