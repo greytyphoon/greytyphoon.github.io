@@ -8,11 +8,12 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://greytyphoon.space/PF/sheets/Bofa.html" />
 	<meta property="og:image" content="https://i.pinimg.com/1200x/a3/ca/3a/a3ca3adf88ce65e490f00aa9bf0656e3.jpg" />
-	<meta property="og:description" content="The Daggerheart character sheet for Bofa Tarako, a 1st-level drakona druid." name="description">
+	<meta property="og:description" content="The Daggerheart character sheet for Bofa Tarako, a 2nd-level drakona druid." name="description">
 	<title>Grey's Druid</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
 	<style>
 		.weapon > h2 > a, .weapon > h2 > a.visited { color: var(--tint-white); @media (prefers-color-scheme: dark) { color: var(--tint-black); } }
+		#beastform-options th { vertical-align:top; }
 	</style>
 </head>
 <body>
@@ -33,13 +34,13 @@
 				<dd>1</dd>
 
 				<dt>Strength</dt>
-				<dd>1</dd>
+				<dd>2 <small>L2</small></dd>
 
 				<dt>Finesse</dt>
 				<dd>0</dd>
 
 				<dt>Instinct</dt>
-				<dd>2</dd>
+				<dd>3 <small>L2</small></dd>
 
 				<dt>Presence</dt>
 				<dd>-1</dd>
@@ -49,7 +50,7 @@
 			</dl>
 			<dl id="subheader" class="charInfo">
 				<dt>Class</dt>
-				<dd><a href="https://daggerheartsrd.com/classes/druid/">Druid</a> 1</dd>
+				<dd><a href="https://daggerheartsrd.com/classes/druid/">Druid</a> 2</dd>
 				<dd class="archetype"><a href="https://daggerheartsrd.com/subclasses/warden-of-renewal/">Warden of Renewal</a></dd>
 
 				<dt>Ancestry</dt>
@@ -62,10 +63,12 @@
 				<dt>Experiences</dt>
 				<dd>Serenity <em>+2</em></dd>
 				<dd>Traveler <em>+2</em></dd>
+				<dd>Polymorph <em>+2</em></dd>
 
 				<dt>Domain Cards</dt>
 				<dd><a href="https://daggerheartsrd.com/abilities/gifted-tracker/">Gifted Tracker</a> <small>L1 Sage Ability, R0</small></dd>
 				<dd><a href="https://daggerheartsrd.com/abilities/vicious-entangle/">Vicious Entangle</a> <small>L1 Sage Spell, R1</small></dd>
+				<dd><a href="https://daggerheartsrd.com/abilities/cinder-grasp/">Cinder Grasp</a> <small>L2 Arcana Spell, R1</small></dd>
 			</dl>
 		</section>
 
@@ -74,25 +77,26 @@
 
 		<section class="row">
 			<ul class="summations">
-				<li title="Druid, Gambeson">
-					<strong>11</strong>
+				<li title="Druid, Improved Gambeson">
+					<strong>12</strong>
 					<b>Evasion</b>
+					<small>L2</small>
 					<div class="circumstancialBonus" title="Gifted Tracker"><u>+1</u> vs foes you've tracked.</div>
 				</li>
-				<li title="Gambeson: 5/11 + level">
-					<strong>6</strong>
-					<b>Threshold</b>; 12 <b>Severe</b>
+				<li title="Gambeson: 7/16 + level">
+					<strong>9</strong>
+					<b>Threshold</b>; 18 <b>Severe</b>
 				</li>
 				<li title="Gambeson">
-					<strong>3</strong>
-					<b>Armor</b> ○ ○ ○ <small><a href="https://daggerheartsrd.com/armor/gambeson-armor/">Gambeson</a></small>
+					<strong>4</strong>
+					<b>Armor</b> ○ ○ ○ ○ <small><a href="https://daggerheartsrd.com/armor/improved-gambeson-armor/">Improved Gambeson</a></small>
 				</li>
 				<li title="Druid">
 					<strong>6</strong>
 					<b>HP</b> ○ ○ ○ ○ ○ ○
 				</li>
 				<li>
-					<strong>1</strong>
+					<strong>2</strong>
 					<b>Proficiency</b>
 				</li>
 			</ul>
@@ -100,19 +104,27 @@
 			<div class="wide">
 				<!--Elemental Breath-->
 				<div class="weapon">
-					<h2><a href="https://daggerheartsrd.com/ancestries/drakona/">Elemental Breath</a> <b>Very Close</b></h2>
+					<h2><a href="https://daggerheartsrd.com/ancestries/drakona/">Elemental Breath</a> <b>Very Close</b> <b>Mag</b></h2>
 					<div class="circumstancialBonus">Can target a group of foes.</div>
-					<div class="summation"><strong>+2</strong> Ins</div>
-					<div class="summation"><strong>1d8</strong> Mag</div>
+					<div class="summation"><strong>+3</strong> Ins</div>
+					<div class="summation"><strong>2d8</strong></div>
 				</div>
 
 				<!--Vicious Entangle-->
 				<div class="weapon">
-					<h2><a href="https://daggerheartsrd.com/abilities/vicious-entangle/">Vicious Entangle</a> <b>Far</b></h2>
-					<div class="summation"><strong>+2</strong> Ins</div>
-					<div class="summation"><strong>1d8+1</strong> Mag</div>
+					<h2><a href="https://daggerheartsrd.com/abilities/vicious-entangle/">Vicious Entangle</a> <b>Far</b> <b>Mag</b></h2>
+					<div class="summation"><strong>+3</strong> Ins</div>
+					<div class="summation"><strong>2d8+1</strong></div>
 					<div class="circumstancialBonus">The foe is <a href="https://daggerheartsrd.com/rules/#temporary-tags-and-special-conditions">temporarily</a> <a href="https://daggerheartsrd.com/rules/#restrained">restrained</a>.</div>
 					<div class="circumstancialBonus">For 1 Hope: temporarily restrain another foe, very close to the first.</div>
+				</div>
+
+				<!--Cinder Grasp-->
+				<div class="weapon">
+					<h2><a href="https://daggerheartsrd.com/abilities/cinder-grasp/">Cinder Grasp</a> <b>Melee</b> <b>Mag</b></h2>
+					<div class="summation"><strong>+3</strong> Ins</div>
+					<div class="summation"><strong>2d20+3</strong></div>
+					<div class="circumstancialBonus">The foe is <a href="https://daggerheartsrd.com/rules/#temporary-tags-and-special-conditions">temporarily</a> on fire: they take <b>2d6 dmg Mag</b> when they act, unless it removes the fire.</div>
 				</div>
 			</div>
 		</section>
@@ -148,13 +160,13 @@
 			</div>
 
 			<div>
-				<h2><a href="https://daggerheartsrd.com/communities/seaborne/">Know the Tide</a></h2>
-				<p>When you roll with Fear, gain a Tide token <small>max <u title="1 level">1</u>.</small>
-					Before you make an action roll, you can spend <b>n</b> Tide tokens to add <b>+n</b> to the roll.
+				<h2><a href="https://daggerheartsrd.com/communities/seaborne/">Know the Tide</a> <b>○ ○</b></h2>
+				<p>When you roll with Fear, gain a Tide token <small>max <u title="2 level">2</u>.</small>
+					Before you make an action roll, you can spend <b>N</b> Tide tokens to add <b>+N</b> to the roll.
 					<small>At the end of each session, clear all unspent tokens.</small></p>
 
 				<h2><a href="https://daggerheartsrd.com/classes/druid/">Clarity of Nature</a> <b>1/day</b></h2>
-				<p>Rest for a few minutes: your allies clear a shared total of <b><u title="2 ins">2</u></b> Stress.</p>
+				<p>Rest for a few minutes: your allies clear a shared total of <b><u title="3 ins">3</u></b> Stress.</p>
 
 				<h2><a href="https://daggerheartsrd.com/classes/druid/">Wildtouch</a></h2>
 				<p>You can perform harmless, subtle effects that involve nature.</p>
@@ -163,22 +175,35 @@
 
 		<section>
 			<h2>Beastform Options</h2>
-			<table>
+			<table id="beastform-options">
 				<tr>
-					<th rowspan="2">Pack Predator</th>
-					<td>Hyena, Wolf</td>
+					<th rowspan="2">Pouncing Predator²</th>
+					<td>Cheetah, Lion, Panther</td>
+					<td>Evasion +3</td>
+					<td>Instinct +1</td>
+					<td>Melee Instinct d8+6 phy</td>
+					<td>Adv: attack, climb, sneak</td>
+				</tr>
+				<tr>
+					<td colspan="5" class="condensed"><em>Fleet</em>: For 1 Hope, move up to Far range without rolling.<br>
+						<em>Takedown</em>: For 1 Stress, your next attack adds 2 to your Proficiency and on hit, the foe marks a Stress.</td>
+				</tr>
+				<tr>
+					<th rowspan="2">Armored Sentry²</th>
+					<td>Armadillo, Pangolin, Turtle</td>
 					<td>Evasion +1</td>
-					<td>Strength +2</td>
+					<td>Strength +1</td>
 					<td>Melee Strength d8+2 phy</td>
-					<td>Adv: attack, sprint, track</td>
+					<td>Adv: dig, locate, protect</td>
 				</tr>
 				<tr>
-					<td colspan="5" class="condensed"><em>Hobbling Strike</em>: When you hit, for 1 Stress: the foe is <a href="https://daggerheartsrd.com/rules/#temporary-tags-and-special-conditions">temporarily</a> <a href="https://daggerheartsrd.com/rules/#vulnerable">vulnerable</a>.<br>
-						<em>Pack Hunting</em>: When you hit the same foe as the ally who acted immediately before, add 1d8 dmg.</td>
+					<td colspan="5" class="condensed"><em>Armored Shell</em>: You have <a href="https://daggerheartsrd.com/rules/#resistance-immunity-and-direct-damage">resistance</a> to physical damage.<br>
+						For 1 Armor: until your next action, all physical damage is reduced by your Armor Score (after applying resistance).<br>
+						<em>Cannonball</em>: For 1 Stress, an ally throws you at a foe. <small>Close Agi/Str d12+2 phy</small> For 1 Hope, a 2nd foe who's Very Close to the 1st takes half the same damage.</td>
 				</tr>
 				<tr>
-					<th rowspan="2">Mighty Strider</th>
-					<td>Camel, Horse</td>
+					<th rowspan="2">Mighty Strider²</th>
+					<td>Camel, Horse, Zebra</td>
 					<td>Evasion +2</td>
 					<td>Agility +1</td>
 					<td>Melee Agility d8+1 phy</td>
@@ -189,8 +214,59 @@
 						<em>Trample</em>: For 1 Stress: move up to Close range in a straight line. Attack all adjacent foes. On hit, the foe takes <u>1d8+1 dmg phy</u> and is is <a href="https://daggerheartsrd.com/rules/#temporary-tags-and-special-conditions">temporarily</a> <a href="https://daggerheartsrd.com/rules/#vulnerable">vulnerable</a>.</td>
 				</tr>
 				<tr>
+					<th rowspan="2">Powerful Beast²</th>
+					<td>Bear, Bull, Moose</td>
+					<td>Evasion +1</td>
+					<td>Strength +3</td>
+					<td>Melee Strength d10+4 phy</td>
+					<td>Adv: navigate, protect, scare</td>
+				</tr>
+				<tr>
+					<td colspan="5" class="condensed"><em>Rampage</em>: When you roll a 1 on a damage die, add 1d10 dmg. For 1 Stress, your next attack adds 1 to your Proficiency.<br>
+						<em>Thick Hide</em>: You gain a +2 bonus to your damage thresholds.</td>
+				</tr>
+				<tr>
+					<th rowspan="2">Striking Serpent²</th>
+					<td>Cobra, Rattlesnake, Viper</td>
+					<td>Evasion +2</td>
+					<td>Finesse +1</td>
+					<td>Very Close Finesse d8+4 phy</td>
+					<td>Adv: climb, deceive, sprint</td>
+				</tr>
+				<tr>
+					<td colspan="5" class="condensed"><em>Venomous Strike</em>: Attack all Very Close foes to make them <a href="https://daggerheartsrd.com/rules/#temporary-tags-and-special-conditions">temporarily</a> poisoned: they take <u>1d10 <a href="https://daggerheartsrd.com/rules/#resistance-immunity-and-direct-damage">direct</a> dmg phy</u> when they act.<br>
+						<em>Warning Hiss</em>: For 1 Stress, force any number of targets within Melee range to move back to Very Close range.</td>
+				</tr>
+				<tr>
+					<th rowspan="2">Winged Beast²</th>
+					<td>Hawk, Owl, Raven</td>
+					<td>Evasion +3</td>
+					<td>Finesse +1</td>
+					<td>Melee Finesse d4+2 phy</td>
+					<td>Adv: deceive, locate, scare</td>
+				</tr>
+				<tr>
+					<td colspan="5" class="condensed"><em>Bird’s-Eye View</em>: You can fly at will. 1/rest while flying, gain information on the scene below. Give advantage to the 1st ally to act on it.<br>
+						<em>Hollow Bones</em>: You gain a -2 penalty to your damage thresholds.</td>
+				</tr>
+
+				<tr><td colspan="6"><hr></td></tr>
+
+				<tr>
+					<th rowspan="2">Pack Predator</th>
+					<td>Coyote, Hyena, Wolf</td>
+					<td>Evasion +1</td>
+					<td>Strength +2</td>
+					<td>Melee Strength d8+2 phy</td>
+					<td>Adv: attack, sprint, track</td>
+				</tr>
+				<tr>
+					<td colspan="5" class="condensed"><em>Hobbling Strike</em>: When you hit, for 1 Stress: the foe is <a href="https://daggerheartsrd.com/rules/#temporary-tags-and-special-conditions">temporarily</a> <a href="https://daggerheartsrd.com/rules/#vulnerable">vulnerable</a>.<br>
+						<em>Pack Hunting</em>: When you hit the same foe as the ally who acted immediately before, add 1d8 dmg.</td>
+				</tr>
+				<tr>
 					<th rowspan="2">Agile Scout</th>
-					<td>Fox, Mouse</td>
+					<td>Fox, Mouse, Weasel</td>
 					<td>Evasion +2</td>
 					<td>Agility +1</td>
 					<td>Melee Agility d4 phy</td>
@@ -202,7 +278,7 @@
 				</tr>
 				<tr>
 					<th rowspan="2">Aquatic Scout</th>
-					<td>Fish, Octopus</td>
+					<td>Eel, Fish, Octopus</td>
 					<td>Evasion +2</td>
 					<td>Agility +1</td>
 					<td>Melee Agility d4 phy</td>
@@ -214,7 +290,7 @@
 				</tr>
 				<tr>
 					<th rowspan="2">Household Friend</th>
-					<td>Cat, Dog</td>
+					<td>Cat, Dog, Rabbit</td>
 					<td>Evasion +2</td>
 					<td>Instinct +1</td>
 					<td>Melee Instinct d6 phy</td>
@@ -226,7 +302,7 @@
 				</tr>
 				<tr>
 					<th rowspan="2">Nimble Grazer</th>
-					<td>Deer, Goat</td>
+					<td>Deer, Gazelle, Goat</td>
 					<td>Evasion +3</td>
 					<td>Agility +1</td>
 					<td>Melee Agility d6 phy</td>
