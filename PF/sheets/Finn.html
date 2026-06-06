@@ -17,10 +17,11 @@
 		.spell.spring-loaded::after { content: "\a0†"; }
 		.spell.convertible, a.spell.convertible, a.spell.convertible:visited { color: var(--conjuration-green); }
 		.spell.convertible::after { content: "\a0♺"; }
-		.hidden { display: none; }
+		.hidden { display: none !important; }
 		#inventory-history .table-scroll { overflow: scroll; } /* On mobile, makes the table scroll left-right, not the dialog */
 		#inventory-history table { td + td, th + th { text-align: right; } }
 		#inventory-history table { td:first-child, th:first-child { min-width: 10em; position: sticky; left: 0; background-color: var(--tint-white); } }
+		#inventory-history .material { color: var(--virtue-blue); }
 	</style>
 </head>
 <body>
@@ -28,346 +29,19 @@
 		<li><button onclick="document.getElementById('build-info').showModal()">Build</button></li>
 		<li><button onclick="document.getElementById('inventory-history').showModal()">Inventory</button></li>
 		<li><select id="level-picker" onchange="showOnly(this.value)">
-				<option value="level-5" selected>Level 5</option>
-				<option value="level-6">Level 6</option>
+				<option value="level-6" selected>Level 6</option>
+				<option value="level-7">Level 7</option>
 			</select></li>
 		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
 	</ul></nav>
 
-	<div class="container level-5">
+	<div class="container">
 		<header>
 			<h1>Phineas "Finn" Alastor Armstrong, gentle giant</h1>
 			LG Medium humanoid
 		</header>
 
-		<section id="headerInfo" class="row">
-			<dl class="charInfo">
-				<dt>Str</dt>
-				<dd>22 <small>17, <u title="Racial">2</u>, <u title="Advancement">1</u>, <u title="Belt of Giant Strength">2</u></small></dd>
-
-				<dt>Dex</dt>
-				<dd>14</dd>
-
-				<dt>Con</dt>
-				<dd>14</dd>
-
-				<dt>Int</dt>
-				<dd>7</dd>
-
-				<dt>Wis</dt>
-				<dd>16</dd>
-
-				<dt>Cha</dt>
-				<dd>7</dd>
-			</dl>
-			<dl id="subheader" class="charInfo">
-				<dt>Race</dt>
-				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/human">Heart of the Fey</a></dd>
-
-				<dt>Class</dt>
-				<dd><a href="https://d20pfsrd.com/classes/core-classes/cleric">Cleric</a> 5</dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/plant-domain">Plant</a> domain
-					(<a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/plant-domain/growth">Growth</a>)</dd>
-				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/war-domain">War</a> domain
-					(<a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/war-domain/tactics">Tactics</a>)</dd>
-			</dl>
-			<dl class="charInfo">
-				<dt>Deity</dt>
-				<dd><a href="https://aonprd.com/DeityDisplay.aspx?ItemName=Iomedae">Iomedae</a>
-					&amp; <a href="https://aonprd.com/DeityDisplay.aspx?ItemName=Erastil">Erastil</a></dd>
-
-				<dt>Senses</dt>
-				<dd title="Heart of the Fey"><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
-
-				<dt>Speed</dt>
-				<dd title="30 racial, -10 armor"><u>20 ft.</u></dd>
-
-				<dt>Languages</dt>
-				<dd>Common, Celestial</dd>
-			</dl>
-		</section>
-
-		<!-- title SKILLS & FEATS -->
-		<hr>
-		<img id="main-picture" src="https://i.pinimg.com/originals/9e/1c/92/9e1c92e50fa1d3a9e414923064d60e4d.jpg" alt="??? &copy;???" onclick="document.getElementById('large-picture').showModal()">
-
-		<!-- SKILLS -->
-		<ul class="summations">
-			<li class="br">
-				<strong>11</strong>
-				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
-				<small>3 wis, 5 ranks, <u title="Heart of the Fey">3 class</u></small>
-			</li>
-
-			<!--Misc Skills-->
-			<li>
-				<strong>7</strong>
-				<a href="https://d20pfsrd.com/skills/heal">Heal</a>
-				<small>3 wis, 1 ranks, 3 class</small>
-				<div class="circumstancialBonus"><u title="Healer's Kit">+2 circumstance</u> when using Healer's Kit</div>
-			</li>
-			<li>
-				<strong>5</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (History)</a>
-				<small>-2 int, 4 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>2</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (Religion)</a>
-				<small>-2 int, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>2</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (Planes)</a>
-				<small>-2 int, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>2</strong>
-				<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>
-				<small>-2 int, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>11</strong>
-				<a href="https://d20pfsrd.com/skills/profession">Profession (Innkeeper)</a>
-				<small>3 wis, 5 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>7</strong>
-				<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>
-				<small>3 wis, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>2</strong>
-				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
-				<small>-2 int, 1 ranks, 3 class</small>
-			</li>
-		</ul>
-
-		<p class="circumstancialBonus noprint">
-			<u title="5 cleric: 2 class, -2 int, min.1, 1 trait (Finding your kin), 2 background-skills">20 ranks</u>.
-			Other class skills:
-			<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>,
-			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
-			<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>,
-			<a href="https://d20pfsrd.com/skills/knowledge">Knowledge</a> (arcana, nature, nobility).
-		</p>
-
-		<!-- title COMBAT -->
-		<hr>
-		<section class="row">
-			<!--Basics: Statblock and Weapons-->
-			<div>
-				<ul class="summations">
-					<li class="br">
-						<strong>7</strong>
-						<b>Init</b>
-						<small>2 dex, <u title="Improved Initiative">4 feat</u>, <u title="Dusty Rose Prism Ioun Stone">1 competence</u></small>
-					</li>
-					<li>
-						<strong>46</strong>
-						<b>HP</b>
-						<small>5 cleric: 5 class, 2 con, <u title="Finding your kin">1 trait</u>; 3 first-level bonus; 3 fc</small>
-					</li>
-					<li class="br">
-						<strong>20</strong>
-						<b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 18
-						<small>10, 2 dex, 7 armor, <u title="Ring of Protection">1 deflection</u></small>
-					</li>
-					<li>
-						<strong>7</strong>
-						<b>Fort</b>
-						<small>2 con, 4 class, <u title="Cloak of Resistance">1 resistance</u></small>
-					</li>
-					<li>
-						<strong>5</strong>
-						<b>Ref</b>
-						<small>2 dex, 1 class, <u title="Cloak of Resistance">1 resistance</u>, <u title="Heart of the Fey">1 racial</u></small>
-					</li>
-					<li class="br">
-						<strong>9</strong>
-						<b>Will</b>
-						<small>3 wis, 4 class, <u title="Cloak of Resistance">1 resistance</u>, <u title="Heart of the Fey">1 racial</u></small>
-					</li>
-					<li>
-						<strong>9</strong>
-						<b>CMB</b>;	21 <b>CMD</b>
-						<small>3 bab, 6 str, 2 dex, <u title="Ring of Protection">1 deflection</u></small>
-					</li>
-				</ul>
-
-				<!--Fauchard-->
-				<div class="weapon">
-					<h2>Fauchard <b>18×2</b> <b>S</b></h2>
-					<div class="apartee float align"><b>PA</b> -1+3</div>
-					<div class="summation"><strong>+10</strong> vs AC <small>3 bab, 6 str, 1 mwk</small></div>
-					<div class="summation"><strong>1d10+9</strong> <small>9 str&frac12;</small></div>
-					<div class="circumstancialBonus">
-						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-reach">Reach</a>,
-						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-trip">trip</a>.
-					</div>
-				</div>
-			</div>
-			<!--end of Basics: Statblock and Weapons-->
-
-			<!--Enlarged-->
-			<div class="enlarged">
-				<ul class="summations">
-					<li class="br">
-						<strong>6</strong>
-						<b>Init</b>
-						<small>1 dex, <u title="Improved Initiative">4 feat</u>, <u title="Dusty Rose Prism Ioun Stone">1 competence</u></small>
-					</li>
-					<li>
-						<strong>46</strong>
-						<b>HP</b>
-						<small>5 cleric: 5 class, 2 con, <u title="Finding your kin">1 trait</u>; 3 first-level bonus; 3 fc</small>
-					</li>
-					<li class="br">
-						<strong>18</strong>
-						<b>AC</b> touch 11, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 17
-						<small>10, 1 dex, 7 armor, -1 size, <u title="Ring of Protection">1 deflection</u></small>
-					</li>
-					<li>
-						<strong>7</strong>
-						<b>Fort</b>
-						<small>2 con, 4 class, <u title="Cloak of Resistance">1 resistance</u></small>
-					</li>
-					<li>
-						<strong>4</strong>
-						<b>Ref</b>
-						<small>1 dex, 1 class, <u title="Cloak of Resistance">1 resistance</u>, <u title="Heart of the Fey">1 racial</u></small>
-					</li>
-					<li class="br">
-						<strong>9</strong>
-						<b>Will</b>
-						<small>3 wis, 4 class, <u title="Cloak of Resistance">1 resistance</u>, <u title="Heart of the Fey">1 racial</u></small>
-					</li>
-					<li>
-						<strong>10</strong>
-						<b>CMB</b>;	22 <b>CMD</b>
-						<small>3 bab, 7 str, 1 dex, 1 size, <u title="Ring of Protection">1 deflection</u></small>
-					</li>
-				</ul>
-
-				<!--Fauchard-->
-				<div class="weapon">
-					<h2>Fauchard <b>18×2</b> <b>S</b></h2>
-					<div class="apartee float align"><b>PA</b> -1+3</div>
-					<div class="summation"><strong>+10</strong> vs AC <small>3 bab, 7 str, 1 mwk, -1 size</small></div>
-					<div class="summation"><strong>2d8+10</strong> <small>10 str&frac12;</small></div>
-					<div class="circumstancialBonus">
-						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-reach">Reach</a>,
-						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-trip">trip</a>.
-					</div>
-					<div class="circumstancialBonus noprint">
-						See the <a href="https://d20pfsrd.com/gamemastering/combat/space-reach-threatened-area-templates#creature_sizes">effect of Reach on Large creatures</a>.
-					</div>
-				</div>
-			</div>
-			<!--end of Basics: Statblock and Weapons-->
-
-			<div>
-				<h2>Aura (Ex) <b>Strong LG</b></h2>
-
-				<h2>Seize the Initiative (Su) <u title="3 class, 3 wis">6/day</u></h2>
-				<p>An ally can roll initiative twice and take the best result.</p>
-
-				<h2 class="enlarged">Enlarge (Su)<u title="3 class, 3 wis">6/day</u></h2>
-				<p class="enlarged">As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, for 1 round,
-					<a href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge</a> yourself.</p>
-
-				<h2>Channel Energy (Su) <u title="3 class, -2 cha">1/day</u></h2>
-				<p>
-					As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
-					you choose undead or living. <br>
-					<b>3d6</b> positive energy, 30ft radius, Will <u title="10, 2 cleric&frac12;, -2 cha">DC 10</u> halves.
-				</p>
-			</div>
-		</section>
-
-		<!-- title Spells -->
-		<hr>
-		<div id="spellHeader" class="apartee">
-			Your Spell DC is 10 + the spell level + your Wisdom modifier.<br>
-			To make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, add your caster level + your Wisdom modifier.<br>
-			To affect foes with <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, make a caster level check <b>(<u>+2 fc</u> vs Outsiders)</b> &ge;SR.
-		</div>
-		<section class="row">
-			<div>
-				<h2>Level 0 <u title="4 class">4/day</u></h2>
-				<ul>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/create-water">create water</a></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/guidance">guidance</a></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a></li>
-				</ul>
-			</div>
-			<div>
-				<h2>Level 1 <u title="3 class, 1 wis, 1 domain">5/day</u></h2>
-				<ul>
-					<li><a class="spell convertible" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light wounds</a></li>
-					<li><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a></li>
-					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/m/magic-weapon">magic weapon</a></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/bless">bless</a></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/divine-favor">divine favor</a></li>
-					<li><a class="spell reaction" href="https://d20pfsrd.com/magic/all-spells/l/liberating-command">liberating command</a></li>
-				</ul>
-			</div>
-			<div>
-				<h2>Level 2 <u title="2 class, 1 wis, 1 domain">4/day</u></h2>
-				<ul>
-					<li><a class="spell convertible" href="https://d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds">cure moderate wounds</a></li>
-					<li><s><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/a/aid">aid</a></s></li>
-					<li><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/b/barkskin">barkskin</a></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/restoration">restoration</a> <small>lesser</small></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/restoration">restoration</a> <small>lesser</small></li>
-				</ul>
-			</div>
-			<div>
-				<h2>Level 3 <u title="1 class, 1 wis, 1 domain">3/day</u></h2>
-				<ul>
-					<li><a class="spell convertible" href="https://d20pfsrd.com/magic/all-spells/c/cure-serious-wounds">cure serious wounds</a></li>
-					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/m/magic-vestment">magic vestment</a></li>
-					<li><s><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/p/plant-growth">plant growth</a></s></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prayer">prayer</a></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster III</a>
-						<ul class="list condensed">
-							<li><a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/archon/lantern-archon/summoned-creature-lantern-archon">Lantern Archon</a></li>
-							<li><a href="https://d20pfsrd.com/bestiary/monster-listings/templates/celestial-creature-cr-special">Celestial</a>
-								<a href="https://d20pfsrd.com/bestiary/monster-listings/animals/felines/cat-great/leopard">Leopard</a></li>
-							<li><a href="https://d20pfsrd.com/bestiary/monster-listings/templates/resolute-cr-0-or-1">Resolute</a>
-								<a href="https://d20pfsrd.com/bestiary/monster-listings/animals/boar/dire-boar">Dire Boar</a></small></li>
-						</ul></li>
-				</ul>
-			</div>
-			<div>
-				<h2>Scrolls</h2><!--5x 25-->
-				<ul>
-					<li><a class="spell spring-loaded" href="https://d20pfsrd.com/magic/all-spells/o/obscuring-mist">obscuring mist</a></li>
-					<li><a class="spell spring-loaded" href="https://d20pfsrd.com/magic/all-spells/p/protection-from-evil">protection from evil</a></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/remove-fear">remove fear</a></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/remove-sickness">remove sickness</a></li>
-					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/sun-metal">sun metal</a></li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- title NOTES -->
-		<section class="noprint">
-			<hr>
-			<p>Guide used: <a href="https://drive.google.com/file/d/0B5kvBvq2DEHjRWctNG05X0JINm8/view">Guide to Reach Clerics &copy;Brewer</a>.</p>
-		</section>
-	</div>
-
-	<div class="container level-6">
-		<header>
-			<h1>Phineas "Finn" Alastor Armstrong, gentle giant</h1>
-			LG Medium humanoid
-		</header>
-
-		<section id="headerInfo" class="row">
+		<section id="headerInfo" class="row level-6">
 			<dl class="charInfo">
 				<dt>Str</dt>
 				<dd>22 <small>17, <u title="Racial">2</u>, <u title="Advancement">1</u>, <u title="Belt of Giant Strength">2</u></small></dd>
@@ -398,6 +72,58 @@
 					(<a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/plant-domain/growth">Growth</a>)</dd>
 				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/war-domain">War</a> domain
 					(<a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/war-domain/tactics">Tactics</a>)</dd>
+
+				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant">Hierophant</a> 1</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd><a href="https://aonprd.com/DeityDisplay.aspx?ItemName=Iomedae">Iomedae</a>
+					&amp; <a href="https://aonprd.com/DeityDisplay.aspx?ItemName=Erastil">Erastil</a></dd>
+
+				<dt>Senses</dt>
+				<dd title="Heart of the Fey"><a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision">Low-light vision</a></dd>
+
+				<dt>Speed</dt>
+				<dd title="30 racial, -10 armor"><u>20 ft.</u></dd>
+
+				<dt>Languages</dt>
+				<dd>Common, Celestial</dd>
+			</dl>
+		</section>
+
+		<section id="headerInfo" class="row level-7">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>22 <small>17, <u title="Racial">2</u>, <u title="Advancement">1</u>, <u title="Belt of Giant Strength">2</u></small></dd>
+
+				<dt>Dex</dt>
+				<dd>14</dd>
+
+				<dt>Con</dt>
+				<dd>14</dd>
+
+				<dt>Int</dt>
+				<dd>7</dd>
+
+				<dt>Wis</dt>
+				<dd>18 <small>16, <u title="Headband of Unshakeable Resolve">2</u></small></dd>
+
+				<dt>Cha</dt>
+				<dd>7</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Race</dt>
+				<dd><a href="https://d20pfsrd.com/races/core-races/human">Human</a></dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/races/core-races/human">Heart of the Fey</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://d20pfsrd.com/classes/core-classes/cleric">Cleric</a> 7</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/plant-domain">Plant</a> domain
+					(<a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/plant-domain/growth">Growth</a>)</dd>
+				<dd class="archetype"><a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/war-domain">War</a> domain
+					(<a href="https://d20pfsrd.com/classes/core-classes/cleric/domains/paizo-domains/war-domain/tactics">Tactics</a>)</dd>
+
+				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant">Hierophant</a> 1</dd>
 			</dl>
 			<dl class="charInfo">
 				<dt>Deity</dt>
@@ -420,81 +146,147 @@
 		<img id="main-picture" src="https://i.pinimg.com/originals/9e/1c/92/9e1c92e50fa1d3a9e414923064d60e4d.jpg" alt="??? &copy;???" onclick="document.getElementById('large-picture').showModal()">
 
 		<!-- SKILLS -->
-		<ul class="summations">
-			<li class="br">
-				<strong>12</strong>
-				<a href="https://d20pfsrd.com/skills/perception">Perception</a>
-				<small>3 wis, 6 ranks, <u title="Heart of the Fey">3 class</u></small>
-			</li>
+		<section class="level-6">
+			<ul class="summations">
+				<li class="br">
+					<strong>14</strong>
+					<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+					<small>3 wis, 6 ranks, <u title="Heart of the Fey">3 class</u>, <u title="Story bonus from the end of Book 1">2 devotion</u></small>
+				</li>
 
-			<!--Misc Skills-->
-			<li>
-				<strong>7</strong>
-				<a href="https://d20pfsrd.com/skills/heal">Heal</a>
-				<small>3 wis, 1 ranks, 3 class</small>
-				<div class="circumstancialBonus"><u title="Healer's Kit">+2 circumstance</u> when using Healer's Kit</div>
-			</li>
-			<li>
-				<strong>6</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (History)</a>
-				<small>-2 int, 5 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>2</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (Religion)</a>
-				<small>-2 int, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>2</strong>
-				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (Planes)</a>
-				<small>-2 int, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>2</strong>
-				<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>
-				<small>-2 int, 1 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>12</strong>
-				<a href="https://d20pfsrd.com/skills/profession">Profession (Innkeeper)</a>
-				<small>3 wis, 6 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>8</strong>
-				<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>
-				<small>3 wis, 2 ranks, 3 class</small>
-			</li>
-			<li>
-				<strong>2</strong>
-				<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
-				<small>-2 int, 1 ranks, 3 class</small>
-			</li>
-		</ul>
+				<!--Misc Skills-->
+				<li>
+					<strong>7</strong>
+					<a href="https://d20pfsrd.com/skills/heal">Heal</a>
+					<small>3 wis, 1 ranks, 3 class</small>
+					<div class="circumstancialBonus"><u title="Healer's Kit">+2 circumstance</u> when using Healer's Kit</div>
+				</li>
+				<li>
+					<strong>6</strong>
+					<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (History)</a>
+					<small>-2 int, 5 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (Religion)</a>
+					<small>-2 int, 1 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (Planes)</a>
+					<small>-2 int, 1 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>
+					<small>-2 int, 1 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>12</strong>
+					<a href="https://d20pfsrd.com/skills/profession">Profession (Innkeeper)</a>
+					<small>3 wis, 6 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>8</strong>
+					<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>
+					<small>3 wis, 2 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+					<small>-2 int, 1 ranks, 3 class</small>
+				</li>
+			</ul>
 
-		<p class="circumstancialBonus noprint">
-			<u title="6 cleric: 2 class, -2 int, min.1, 1 trait (Finding your kin), 2 background-skills">24 ranks</u>.
-			Other class skills:
-			<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>,
-			<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
-			<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>,
-			<a href="https://d20pfsrd.com/skills/knowledge">Knowledge</a> (arcana, nature, nobility).
-		</p>
+			<p class="circumstancialBonus noprint">
+				<u title="6 cleric: 2 class, -2 int, min.1, 1 trait (Finding your kin), 2 background-skills">24 ranks</u>.
+				Other class skills:
+				<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>,
+				<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+				<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>,
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge</a> (arcana, nature, nobility).
+			</p>
+		</section>
+
+		<section class="level-7">
+			<ul class="summations">
+				<li class="br">
+					<strong>16</strong>
+					<a href="https://d20pfsrd.com/skills/perception">Perception</a>
+					<small>4 wis, 7 ranks, <u title="Heart of the Fey">3 class</u>, <u title="Story bonus from the end of Book 1">2 devotion</u></small>
+				</li>
+
+				<!--Misc Skills-->
+				<li>
+					<strong>8</strong>
+					<a href="https://d20pfsrd.com/skills/heal">Heal</a>
+					<small>4 wis, 1 ranks, 3 class</small>
+					<div class="circumstancialBonus"><u title="Healer's Kit">+2 circumstance</u> when using Healer's Kit</div>
+				</li>
+				<li>
+					<strong>7</strong>
+					<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (History)</a>
+					<small>-2 int, 6 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (Religion)</a>
+					<small>-2 int, 1 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					<a href="https://d20pfsrd.com/skills/knowledge">Knowledge (Planes)</a>
+					<small>-2 int, 1 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					<a href="https://d20pfsrd.com/skills/linguistics">Linguistics</a>
+					<small>-2 int, 1 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>14</strong>
+					<a href="https://d20pfsrd.com/skills/profession">Profession (Innkeeper)</a>
+					<small>4 wis, 7 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>10</strong>
+					<a href="https://d20pfsrd.com/skills/sense-motive">Sense Motive</a>
+					<small>4 wis, 3 ranks, 3 class</small>
+				</li>
+				<li>
+					<strong>2</strong>
+					<a href="https://d20pfsrd.com/skills/spellcraft">Spellcraft</a>
+					<small>-2 int, 1 ranks, 3 class</small>
+				</li>
+			</ul>
+
+			<p class="circumstancialBonus noprint">
+				<u title="7 cleric: 2 class, -2 int, min.1, 1 trait (Finding your kin), 2 background-skills">28 ranks</u>.
+				Other class skills:
+				<a href="https://d20pfsrd.com/skills/appraise">Appraise</a>,
+				<a href="https://d20pfsrd.com/skills/craft">Craft</a>,
+				<a href="https://d20pfsrd.com/skills/diplomacy">Diplomacy</a>,
+				<a href="https://d20pfsrd.com/skills/knowledge">Knowledge</a> (arcana, nature, nobility).
+			</p>
+		</section>
+
 
 		<!-- title COMBAT -->
 		<hr>
-		<section class="row">
+		<section class="row level-6">
 			<!--Basics: Statblock and Weapons-->
 			<div>
 				<ul class="summations">
 					<li class="br">
-						<strong>7</strong>
+						<strong>8</strong>
 						<b>Init</b>
-						<small>2 dex, <u title="Improved Initiative">4 feat</u>, <u title="Dusty Rose Prism Ioun Stone">1 competence</u></small>
+						<small>2 dex, <u title="Mythic Improved Initiative: 4 base, 1 hierophant">5 feat</u>, <u title="Dusty Rose Prism Ioun Stone">1 competence</u></small>
 					</li>
 					<li>
-						<strong>55</strong>
+						<strong>64</strong>
 						<b>HP</b>
-						<small>6 cleric: 5 class, 2 con, <u title="Finding your kin">1 trait</u>; 3 first-level bonus; 4 fc</small>
+						<small>6 cleric: 5 class, 2 con, <u title="Finding your kin">1 trait</u>; 1 hierophant: 4 path; <u title="Story bonus from the end of Book 1">5 devotion</u>; 3 first-level bonus; 4 fc</small>
+						<div class="circumstancialBonus"><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes#hard_to_kill_ex">Hard to Kill</a></div>
 					</li>
 					<li class="br">
 						<strong>21</strong>
@@ -541,14 +333,15 @@
 			<div class="enlarged">
 				<ul class="summations">
 					<li class="br">
-						<strong>6</strong>
+						<strong>7</strong>
 						<b>Init</b>
-						<small>1 dex, <u title="Improved Initiative">4 feat</u>, <u title="Dusty Rose Prism Ioun Stone">1 competence</u></small>
+						<small>1 dex, <u title="Mythic Improved Initiative: 4 base, 1 hierophant">5 feat</u>, <u title="Dusty Rose Prism Ioun Stone">1 competence</u></small>
 					</li>
 					<li>
-						<strong>55</strong>
+						<strong>64</strong>
 						<b>HP</b>
-						<small>6 cleric: 5 class, 2 con, <u title="Finding your kin">1 trait</u>; 3 first-level bonus; 4 fc</small>
+						<small>6 cleric: 5 class, 2 con, <u title="Finding your kin">1 trait</u>; 1 hierophant: 4 path; <u title="Story bonus from the end of Book 1">5 devotion</u>; 3 first-level bonus; 4 fc</small>
+						<div class="circumstancialBonus"><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes#hard_to_kill_ex">Hard to Kill</a></div>
 					</li>
 					<li class="br">
 						<strong>19</strong>
@@ -614,17 +407,176 @@
 					you choose undead or living. <br>
 					<b>3d6</b> positive energy, 30ft radius, Will <u title="10, 3 cleric&frac12;, -2 cha">DC 11</u> halves.
 				</p>
+
+				<h2>Mythic Power <u title="3 + 2 * hierophant">5/day</u></h2>
+				<ul class="condensed">
+					<li title="Surge">For 1, add <b>1d6</b> to any d20 roll <small>after rolling</small>.</li>
+					<li title="Inspired Spell">For 1, cast any <a href="https://d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-cleric">cleric spell</a> of your level with <b>+2 CL</b>.</li>
+					<li title="Mythic Improved Initiative">For 1, roll <b>20</b> on initiative.</li>
+					<li title="Relentless Healing">For 1, you can heal creatures that died last round.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="row level-7">
+			<!--Basics: Statblock and Weapons-->
+			<div>
+				<ul class="summations">
+					<li class="br">
+						<strong>8</strong>
+						<b>Init</b>
+						<small>2 dex, <u title="Mythic Improved Initiative: 4 base, 1 hierophant">5 feat</u>, <u title="Dusty Rose Prism Ioun Stone">1 competence</u></small>
+					</li>
+					<li>
+						<strong>73</strong>
+						<b>HP</b>
+						<small>7 cleric: 5 class, 2 con, <u title="Finding your kin">1 trait</u>; 1 hierophant: 4 path; <u title="Story bonus from the end of Book 1">5 devotion</u>; 3 first-level bonus; 5 fc</small>
+						<div class="circumstancialBonus"><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes#hard_to_kill_ex">Hard to Kill</a></div>
+					</li>
+					<li class="br">
+						<strong>22</strong>
+						<b>AC</b> touch 13, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 20
+						<small>10, 2 dex, 8 armor, <u title="Ring of Protection">1 deflection</u>, <u title="Amulet of Natural Armor">1 natural</u></small>
+					</li>
+					<li>
+						<strong>9</strong>
+						<b>Fort</b>
+						<small>2 con, 5 class, <u title="Cloak of Resistance">2 resistance</u></small>
+					</li>
+					<li>
+						<strong>7</strong>
+						<b>Ref</b>
+						<small>2 dex, 2 class, <u title="Cloak of Resistance">2 resistance</u>, <u title="Heart of the Fey">1 racial</u></small>
+					</li>
+					<li class="br">
+						<strong>12</strong>
+						<b>Will</b>
+						<small>4 wis, 5 class, <u title="Cloak of Resistance">2 resistance</u>, <u title="Heart of the Fey">1 racial</u></small>
+					</li>
+					<li>
+						<strong>11</strong>
+						<b>CMB</b>;	23 <b>CMD</b>
+						<small>5 bab, 6 str, 2 dex, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<!--Fauchard-->
+				<div class="weapon">
+					<h2>Fauchard <b>18×2</b> <b>S</b></h2>
+					<div class="apartee float align"><b>PA</b> -2+6</div>
+					<div class="summation"><strong>+12</strong> vs AC <small>5 bab, 6 str, 1 mwk</small></div>
+					<div class="summation"><strong>1d10+9</strong> <small>9 str&frac12;</small></div>
+					<div class="circumstancialBonus">
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-reach">Reach</a>,
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-trip">trip</a>.
+					</div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<!--Enlarged-->
+			<div class="enlarged">
+				<ul class="summations">
+					<li class="br">
+						<strong>7</strong>
+						<b>Init</b>
+						<small>1 dex, <u title="Mythic Improved Initiative: 4 base, 1 hierophant">5 feat</u>, <u title="Dusty Rose Prism Ioun Stone">1 competence</u></small>
+					</li>
+					<li>
+						<strong>73</strong>
+						<b>HP</b>
+						<small>7 cleric: 5 class, 2 con, <u title="Finding your kin">1 trait</u>; 1 hierophant: 4 path; <u title="Story bonus from the end of Book 1">5 devotion</u>; 3 first-level bonus; 5 fc</small>
+						<div class="circumstancialBonus"><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes#hard_to_kill_ex">Hard to Kill</a></div>
+					</li>
+					<li class="br">
+						<strong>20</strong>
+						<b>AC</b> touch 11, <a href="https://d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed">flat-footed</a> 19
+						<small>10, 1 dex, 8 armor, -1 size, <u title="Ring of Protection">1 deflection</u>, <u title="Amulet of Natural Armor">1 natural</u></small>
+					</li>
+					<li>
+						<strong>9</strong>
+						<b>Fort</b>
+						<small>2 con, 5 class, <u title="Cloak of Resistance">2 resistance</u></small>
+					</li>
+					<li>
+						<strong>6</strong>
+						<b>Ref</b>
+						<small>1 dex, 2 class, <u title="Cloak of Resistance">2 resistance</u>, <u title="Heart of the Fey">1 racial</u></small>
+					</li>
+					<li class="br">
+						<strong>12</strong>
+						<b>Will</b>
+						<small>4 wis, 5 class, <u title="Cloak of Resistance">2 resistance</u>, <u title="Heart of the Fey">1 racial</u></small>
+					</li>
+					<li>
+						<strong>12</strong>
+						<b>CMB</b>;	24 <b>CMD</b>
+						<small>5 bab, 7 str, 1 dex, 1 size, <u title="Ring of Protection">1 deflection</u></small>
+					</li>
+				</ul>
+
+				<!--Fauchard-->
+				<div class="weapon">
+					<h2>Fauchard <b>18×2</b> <b>S</b></h2>
+					<div class="apartee float align"><b>PA</b> -2+6</div>
+					<div class="summation"><strong>+12</strong> vs AC <small>5 bab, 7 str, 1 mwk, -1 size</small></div>
+					<div class="summation"><strong>2d8+10</strong> <small>10 str&frac12;</small></div>
+					<div class="circumstancialBonus">
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-reach">Reach</a>,
+						<a href="https://d20pfsrd.com/equipment/weapons#wpn-quality-trip">trip</a>.
+					</div>
+					<div class="circumstancialBonus noprint">
+						See the <a href="https://d20pfsrd.com/gamemastering/combat/space-reach-threatened-area-templates#creature_sizes">effect of Reach on Large creatures</a>.
+					</div>
+				</div>
+			</div>
+			<!--end of Basics: Statblock and Weapons-->
+
+			<div>
+				<h2>Aura (Ex) <b>Strong LG</b></h2>
+
+				<h2>Seize the Initiative (Su) <u title="3 class, 4 wis">7/day</u></h2>
+				<p>An ally can roll initiative twice and take the best result.</p>
+
+				<h2 class="enlarged">Enlarge (Su)<u title="3 class, 4 wis">7/day</u></h2>
+				<p class="enlarged">As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>, for 1 round,
+					<a href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge</a> yourself.</p>
+
+				<h2>Bramble Armor (Su) <u title="7 cleric">7/day</u></h2>
+				<p>As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Free-Actions">free action</a>, for 1 round,
+					any foe that hits you <small>with a melee natural/non-reach weapon</small> takes <u title="3 cleric&frac12;">1d6+3 dmg P</u>.</p>
+
+				<h2>Channel Energy (Su) <u title="3 class, -2 cha">1/day</u></h2>
+				<p>
+					As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>,
+					you choose undead or living. <br>
+					<b>4d6</b> positive energy, 30ft radius, Will <u title="10, 3 cleric&frac12;, -2 cha">DC 11</u> halves.
+				</p>
+
+				<h2 class="reaction"><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-unshakeable-resolve">Headband of Unshakeable Resolve</a> <b>3/day</b></h2>
+				<p>
+					As a safe <a href="https://d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> when subject to a [fear] effect,
+					reduce its severity by one step. <small>Panicked → Frightened → Shaken → negated.</small>
+				</p>
+
+				<h2>Mythic Power <u title="3 + 2 * hierophant">5/day</u></h2>
+				<ul class="condensed">
+					<li title="Surge">For 1, add <b>1d6</b> to any d20 roll <small>after rolling</small>.</li>
+					<li title="Inspired Spell">For 1, cast any <a href="https://d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-cleric">cleric spell</a> of your level with <b>+2 CL</b>.</li>
+					<li title="Mythic Improved Initiative">For 1, roll <b>20</b> on initiative.</li>
+					<li title="Relentless Healing">For 1, you can heal creatures that died within 1 round.</li>
+				</ul>
 			</div>
 		</section>
 
 		<!-- title Spells -->
 		<hr>
 		<div id="spellHeader" class="apartee">
-			Your Spell DC is 10 + the spell level + your Wisdom modifier.<br>
+			Your Spell DC is 10 + the spell level + your Wisdom modifier. <span class="spell conjuration" title="Spell Focus">DC +1 for conjuration spells.</span><br>
 			To make a <a href="https://d20pfsrd.com/magic#TOC-Concentration">concentration</a> check, add your caster level + your Wisdom modifier.<br>
 			To affect foes with <a href="https://d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance">spell resistance</a>, make a caster level check <b>(<u>+2 fc</u> vs Outsiders)</b> &ge;SR.
 		</div>
-		<section class="row">
+		<section class="row level-6">
 			<div>
 				<h2>Level 0 <u title="4 class">4/day</u></h2>
 				<ul>
@@ -687,10 +639,137 @@
 			</div>
 		</section>
 
+		<section class="row level-7">
+			<div>
+				<h2>Level 0 <u title="4 class">4/day</u></h2>
+				<ul>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/create-water">create water</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/detect-magic">detect magic</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/g/guidance">guidance</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/l/light">light</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 1 <u title="4 class, 1 wis, 1 domain">6/day</u></h2>
+				<ul>
+					<li><a class="spell convertible" href="https://d20pfsrd.com/magic/all-spells/c/cure-light-wounds">cure light</a></li>
+					<li><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/e/enlarge-person">enlarge person</a></li>
+					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/m/magic-weapon">magic weapon</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/bless">bless</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/d/divine-favor">divine favor</a></li>
+					<li><a class="spell reaction" href="https://d20pfsrd.com/magic/all-spells/l/liberating-command">liberating command</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/protection-from-evil">protection from evil</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 2 <u title="3 class, 1 wis, 1 domain">5/day</u></h2>
+				<ul>
+					<li><a class="spell convertible" href="https://d20pfsrd.com/magic/all-spells/c/cure-moderate-wounds">cure moderate</a></li>
+					<li><s><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/a/aid">aid</a></s></li>
+					<li><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/b/barkskin">barkskin</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/resist-energy">resist energy</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/restoration">restoration</a> <small>lesser</small></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/restoration">restoration</a> <small>lesser</small></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/silence">silence</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 3 <u title="2 class, 1 wis, 1 domain">4/day</u></h2>
+				<ul>
+					<li><a class="spell convertible" href="https://d20pfsrd.com/magic/all-spells/c/cure-serious-wounds">cure serious</a></li>
+					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/m/magic-vestment">magic vestment</a></li>
+					<li><s><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/p/plant-growth">plant growth</a></s></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/prayer">prayer</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster III</a>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster III</a>
+						<ul class="list condensed">
+							<li><a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/archon/lantern-archon/summoned-creature-lantern-archon">Lantern Archon</a></li>
+							<li><a href="https://d20pfsrd.com/bestiary/monster-listings/templates/celestial-creature-cr-special">Celestial</a>
+								<a href="https://d20pfsrd.com/bestiary/monster-listings/animals/felines/cat-great/leopard">Leopard</a></li>
+							<li><a href="https://d20pfsrd.com/bestiary/monster-listings/templates/resolute-cr-0-or-1">Resolute</a>
+								<a href="https://d20pfsrd.com/bestiary/monster-listings/animals/boar/dire-boar">Dire Boar</a></small></li>
+						</ul></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Level 4 <u title="1 class, 1 wis, 1 domain">3/day</u></h2>
+				<ul>
+					<li><a class="spell convertible" href="https://d20pfsrd.com/magic/all-spells/c/cure-critical-wounds">cure critical</a></li>
+					<li><s><a class="spell bonus off-class" href="https://d20pfsrd.com/magic/all-spells/c/command-plants">command plants</a></s></li>
+					<li><a class="spell bonus" href="https://d20pfsrd.com/magic/all-spells/d/divine-power">divine power</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/m/magic-weapon">magic weapon</a> <small>greater</small></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/summon-monster">summon monster IV</a>
+						<ul class="list condensed">
+							<li><a href="https://d20pfsrd.com/bestiary/monster-listings/outsiders/archon/hound-archon">Hound Archon</a></li>
+							<li><a href="https://d20pfsrd.com/bestiary/monster-listings/templates/celestial-creature-cr-special">Celestial</a>
+								<a href="https://d20pfsrd.com/bestiary/monster-listings/animals/felines/cat-great/tiger">Tiger</a></li>
+						</ul></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Scrolls</h2><!--5x 25-->
+				<ul>
+					<li><a class="spell spring-loaded" href="https://d20pfsrd.com/magic/all-spells/o/obscuring-mist">obscuring mist</a></li>
+					<li><a class="spell spring-loaded" href="https://d20pfsrd.com/magic/all-spells/p/protection-from-evil">protection from evil</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/remove-fear">remove fear</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/r/remove-sickness">remove sickness</a></li>
+					<li><a class="spell" href="https://d20pfsrd.com/magic/all-spells/s/sun-metal">sun metal</a></li>
+				</ul>
+			</div>
+		</section>
+
 		<!-- title NOTES -->
-		<section class="noprint">
+		<section class="noprint level-6 level-7">
 			<hr>
 			<p>Guide used: <a href="https://drive.google.com/file/d/0B5kvBvq2DEHjRWctNG05X0JINm8/view">Guide to Reach Clerics &copy;Brewer</a>.</p>
+			
+			<p>Storywise consummables: 
+				<em>Terendelev's Scale</em>, 3× <a class="spell" href="https://d20pfsrd.com/magic/all-spells/a/align-weapon">align weapon</a> LG.
+				<em>Wardstone Shard</em>, weapon becomes LG + <a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/bane">demonbane</a> for 1 day.
+
+			<h3 class="subtitle">Book 1: The Worldwound Incursion</h3>
+			<p>L'histoire commence à la ville de <i>Kenabres</i>.
+				Au milieu d'un festival, on est attaqués par <b>Khorramzadeh, storm king of the Worldwound</b>.
+				Malgré que le dragon d'argent <b>Terendelev</b> tente de défendre la ville, c'est un massacre.
+				Nos tombons dans une fissure et atterrissons dans un grand espace sous-terrain.
+				Nous sommes accompagnés par <b>Anevia</b> <small>retired adventurer, rogue 3</small>,
+				par <b>Arava</b> <small>investigator conspiracist</small>,
+				et par <b>Orgus</b> <small>wealthy aristocrat</small>, qui sont blessés.
+				En tentant de trouver une sortie dans les sousterrains, on trouve <b>Krel</b>, <b>Dira</b>, et <b>Lan</b>, d'une tribu de <i>Mongrels</i> qui se cache ici depuis longtemps.</p>
+			<p>Ils nous amènent à <i>Neathome</i>, leur ville.
+				On rencontre les gens, on se fait des amis, et on se fait diriger vers une sortie;
+				mais un clan ennemi composé de cultistes de <i>Baphomet</i> bloque le chemin.
+				Pas un problème pour notre groupe!
+				La cheffe de ce clan, <b>Olissa</b>, a dans ses affaires une épée dorée à l'aura puissante, et une lettre signée par "S.V.".</p>
+			<p>Enfin, la surface!
+				On ramène chez eux nos compagnons.
+				Orgus retrouve son manoir et Arava, sa bibliothèque.
+				Anevia se retrouve pas sa femme dans les ruines de sa maison, mais elle nous dirige vers <i>Defender's Heart</i>, où on la trouve en sécurité!
+				Il s'agit d'<b>Irabeth</b>, qui agit en chef de ce camp de fortune où se retrouvent ceux qui ont survécu à l'attaque des démons.
+				On lui confie l'épée relique, on crée un lien entre ce camp et les Mongrels.
+				Irabeth nous demande de l'aide pour investiguer trois endroits, non loin, où se trouvent des sympatisants démoniaques qui auraient un lien avec l'attaque.
+				En détruisant le dernier, on trouve des missives. Le nom de <b>Stanton Vane</b> ressort, ainsi que celui d'<b>Ari Lu Vorlesh</b>, une démone puissante.
+				Il y aurait un plan pour corrompre les <i>Wardstones</i> qui contiennent le <i>Worldwound</i>, on doit l'empêcher.</p>
+			<p>On part à l'assaut de <i>Grey Garrison</i>, tentant de retrouver un morceau volé de la <i>Wardstone</i> détruite.
+				La forteresse est un ancien temple d'<i>Iomedae</i>, maintenant capturé.
+				Des démons ont désécré les autels, et on nettoie ce qu'on peut.
+				<q>Iomedae, let us bear thine arms!</q>
+				Les cultistes ont tendance à utiliser des sorts d'obscurité, on se bat dans le noir complet, mais on triomphe.</p>
+			<p>Après un donjon éprouvant, on détruite le morceau volé de la <i>Wardstone</i>!
+				Son énergie se déverse sur nous, on obtient des pouvoirs mythiques.
+				Une image de <b>Ari Lu Vorlesh</b> apparaît et nous défie.
+				Elle réussit à faire passer quelques démons pour nous attaquer, mais quelque chose l'interrompt, et le passage des abysses de referme.
+				La transformation mythique nous rend temporairement plus forts, mais ils réussissent quand même à tuer l'un d'entre nous.
+				On rentre au fort après une victoire amère.</p>
+
+			<h3 class="subtitle">Book 2: Sword of Valor</h3>
+			<p>La <b>Reine Galfrey de Mendev</b> arrive à <i>Kenabres</i>.
+				Elle prépare une prochaine croisade, et nous demande de l'aide à reconquérir <i>Drezen</i>.
+				Nous partons avec une armée d'une centaine de paladins.
+				En chemin, on croise une chapelle.
+				Elle est pleine de zombies, de ghoules, de démons <small>Babau</small>.
+				Leur chef est un demi-Nabazu nommé <b>Nulkineth</b>.
+				En le chassant au-dehors de sa cachette, on attire son père, qui l'achève pour nous, mais il se retourne ensuite contre nous.</p>
 		</section>
 	</div>
 
@@ -713,20 +792,47 @@
 				<dd><a href="https://d20pfsrd.com/feats/general-feats/spell-focus">Spell Focus</a> (Conjuration)</dd>
 				<dt>level 9</dt>
 				<dd><a href="https://d20pfsrd.com/feats/general-feats/augment-summoning">Augment Summoning</a></dd>
+				<dt>level 11</dt>
+				<dd><a href="https://d20pfsrd.com/feats/general-feats/divine-interference">Divine Interference</a> <small>min.10</small></dd>
+				<dt>level 13</dt>
+				<dd><a href="https://d20pfsrd.com/feats/general-feats/superior-summoning">Superior Summoning</a></dd>
+				<dt>level 15</dt>
+				<dd><a href="https://d20pfsrd.com/feats/general-feats/minor-spell-expertise">Minor Spell Expertise</a> (<a class="spell" href="https://d20pfsrd.com/magic/all-spells/p/protection-from-evil">protection from evil</a>) <small>min.7</small></dd>
+				<dt>level 17</dt>
+				<dd><a href="https://d20pfsrd.com/feats/general-feats/major-spell-expertise">Major Spell Expertise</a> (<a class="spell" href="https://d20pfsrd.com/magic/all-spells/b/breath-of-life">breath of life</a>) <small>min.17</small></dd>
+				<dt>level 19</dt>
+				<dd><a href="https://d20pfsrd.com/feats/metamagic-feats/quicken-spell-metamagic">Quicken Spell</a></dd>
 			</dl>
 
 			<dl class="charInfo">
 				<dt>mythic path</dt>
-				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant">Hierophant</a></dd>
+				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant">Hierophant</a>
+					&gt; <a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant#TOC-Inspired-Spell-Su-">Inspired Spell</a></dd>
 				<dt>mythic 1</dt>
-				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant#TOC-Inspired-Spell-Su-">Inspired Spell</a></dd>
-				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant#TOC-Mythic-Domain-Su-">Mythic Domain</a></dd>
+				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant#TOC-Relentless-Healing-Su-">Relentless Healing</a></dd>
 				<dd>M.<a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-feats/improved-initiative-mythic">Improved Initiative</a></dd>
 				<dt>mythic 2</dt>
-				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes#TOC-Mythic-Spellcasting-Ex-">Mythic Spellcasting</a></dd>
+				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant#TOC-Faith-s-Reach-Su-">Faith's Reach</a></dd>
 				<dt>mythic 3</dt>
 				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant#TOC-Mighty-Summons-Su-">Mighty Summons</a></dd>
 				<dd>M.<a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-feats/augment-summoning-mythic">Augment Summoning</a></dd>
+				<dt>mythic 4</dt>
+				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant#TOC-Enduring-Blessing-Su-">Enduring Blessing</a></dd>
+				<dt>mythic 5</dt>
+				<dd><a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-heroes/mythic-paths-paizo-inc/hierophant#TOC-Mythic-Domain-Su-">Mythic Domains</a></dd>
+				<dd>M.<a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-feats/mythic-spell-lore-mythic">Spell Lore</a></dd>
+				<dt>mythic 6</dt>
+				<dd>TBD</dd>
+				<dt>mythic 7</dt>
+				<dd>TBD</dd>
+				<dd>M.<a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-feats/divine-interference-mythic">Divine Interference</a></dd>
+				<dt>mythic 8</dt>
+				<dd>TBD</dd>
+				<dt>mythic 9</dt>
+				<dd>TBD</dd>
+				<dd>M.<a href="https://d20pfsrd.com/alternative-rule-systems/paizo-rules-systems/mythic/mythic-feats/spell-focus-mythic">Spell Focus</a></dd>
+				<dt>mythic 10</dt>
+				<dd>TBD</dd>
 			</dl>
 		</section>
 	</dialog>
@@ -737,35 +843,38 @@
 		<div class="table-scroll">
 		<table>
 			<thead>
-				<tr><th>&nbsp;</th>			<th>L1</th>	<th>L2</th>	<th>L3</th>	<th>L4</th>	<th>L5</th>	<th>L6</th>	<th>L7</th></tr>
+				<tr><th>&nbsp;</th>			<th>L1</th>	<th>L2</th>	<th>L3</th>	<th>L4</th>	<th>L5</th>	<th>L6</th>	<th>L7</th>	<th>L8</th>	<th>L9</th></tr>
 			</thead>
 			<tbody>
 				<tr><td><a href="https://d20pfsrd.com/equipment/weapons">Fauchard</a>,
-						<a href="https://d20pfsrd.com/equipment/special-materials#iron_cold">cold-iron</a></td>													<td>28</td>		<td>328</td>	<td>328</td>	<td>328</td>	<td>328</td>	<td>328</td>	<td>328</td></tr>
+						ꟳᵉ<a class="material" href="https://d20pfsrd.com/equipment/special-materials#iron_cold">cold-iron</a>,
+						rune ᴴ<a href="https://d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/holy">Holy</a></td>						<td>ꟳᵉ28</td>	<td>ꟳᵉ328</td>	<td>ꟳᵉ328</td>	<td>ꟳᵉ328</td>	<td>ꟳᵉ328</td>	<td>ꟳᵉ328</td>	<td>ꟳᵉ328</td>	<td>ꟳᵉ4,328</td>	<td>ᴴ18,314</td></tr>
 				<tr><td>⤷ <a href="https://d20pfsrd.com/equipment/weapons">Spiked Gauntlet</a>,
-						<a href="https://d20pfsrd.com/equipment/special-materials#sunsilver">sunsilver</a>
-						<small>*or <a href="https://d20pfsrd.com/equipment/special-materials#silver_alchemical">silver</a></small></td>							<td>—</td>		<td>—</td>		<td>—</td>		<td>*25</td>	<td>*25</td>	<td>330</td>	<td>330</td></tr>
-				<tr><td>⤷ <a href="https://d20pfsrd.com/equipment/weapons">Light Crossbow</a> w/ 20 bolts, cold-iron</td>										<td>35+4</td>	<td>35+4</td>	<td>35+4</td>	<td>35+4</td>	<td>35+4</td>	<td>35+4</td>	<td>35+4</td></tr>
+						made of <a class="material" href="https://d20pfsrd.com/equipment/special-materials#sunsilver">sunsilver</a>
+						or ᴬᵍ<a class="material" href="https://d20pfsrd.com/equipment/special-materials#silver_alchemical">silver</a></td>						<td>—</td>		<td>—</td>		<td>—</td>		<td>ᴬᵍ25</td>	<td>ᴬᵍ25</td>	<td>330</td>	<td>330</td>	<td>330</td>	<td>330</td></tr>
+				<tr><td>⤷ <a href="https://d20pfsrd.com/equipment/weapons">Light Crossbow</a> w/ 20 bolts,
+						<a class="material" href="https://d20pfsrd.com/equipment/special-materials#iron_cold">cold-iron</a></td>								<td>35+4</td>	<td>35+4</td>	<td>35+4</td>	<td>35+4</td>	<td>35+4</td>	<td>35+4</td>	<td>35+4</td>	<td>35+4</td>	<td>35+4</td></tr>
 				<tr><td><a href="https://d20pfsrd.com/equipment/armor">Breastplate</a>
-						<small>*or <a href="https://d20pfsrd.com/equipment/armor">Scale Mail</a></small></td>													<td>*50</td>	<td>350</td>	<td>1,350</td>	<td>1,350</td>	<td>1,350</td>	<td>1,350</td>	<td>4,350</td></tr>
-				<tr><td><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a></td>					<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>4,000</td>	<td>4,000</td>	<td>4,000</td></tr>
-				<tr><td><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-unshakeable-resolve">Headband of Unshakeable Resolve</a></td>	<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>5,600</td></tr>
-				<tr><td><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a></td>							<td>—</td>		<td>—</td>		<td>1,000</td>	<td>1,000</td>	<td>1,000</td>	<td>4,000</td>	<td>4,000</td></tr>
-				<tr><td><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a></td>											<td>—</td>		<td>—</td>		<td>—</td>		<td>2,000</td>	<td>2,000</td>	<td>2,000</td>	<td>2,000</td></tr>
-				<tr><td><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/amulet-of-natural-armor">Amulet of Natural Armor</a></td>					<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>2,000</td>	<td>2,000</td></tr>
+						or ¹ˢᵗ<a href="https://d20pfsrd.com/equipment/armor">Scale Mail</a></small>,
+						made of ᴹ<a class="material" href="https://d20pfsrd.com/equipment/special-materials#mithral">mithral</a></td>							<td>¹ˢᵗ50</td>	<td>350</td>	<td>1,350</td>	<td>1,350</td>	<td>1,350</td>	<td>1,350</td>	<td>4,350</td>	<td>ᴹ8,350</td>	<td>ᴹ8,350</td></tr>
+				<tr><td><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/belt-of-giant-strength">Belt of Giant Strength</a></td>					<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>4,000</td>	<td>4,000</td>	<td>4,000</td>	<td>4,000</td>	<td>4,000</td></tr>
+				<tr><td><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/headband-of-unshakeable-resolve">Headband of Unshakeable Resolve</a></td>	<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>5,600</td>	<td>5,600</td>	<td>5,600</td></tr>
+				<tr><td><a href="https://d20pfsrd.com/magic-items/wondrous-items/c-d/cloak-of-resistance">Cloak of Resistance</a></td>							<td>—</td>		<td>—</td>		<td>1,000</td>	<td>1,000</td>	<td>1,000</td>	<td>4,000</td>	<td>4,000</td>	<td>4,000</td>	<td>4,000</td></tr>
+				<tr><td><a href="https://d20pfsrd.com/magic-items/rings/ring-of-protection">Ring of Protection</a></td>											<td>—</td>		<td>—</td>		<td>—</td>		<td>2,000</td>	<td>2,000</td>	<td>2,000</td>	<td>2,000</td>	<td>2,000</td>	<td>2,000</td></tr>
+				<tr><td><a href="https://d20pfsrd.com/magic-items/wondrous-items/a-b/amulet-of-natural-armor">Amulet of Natural Armor</a></td>					<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>2,000</td>	<td>2,000</td>	<td>2,000</td>	<td>2,000</td></tr>
 				<tr><td><a href="https://d20pfsrd.com/magic-items/wondrous-items/h-l/ioun-stones/dusty-rose-prism-ioun-stone">Dusty Rose Prism Ioun Stone</a>, cracked
-						<small>with <a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/continual-flame">continual flame</a></small></td>			<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>550</td>	<td>550</td>	<td>550</td></tr>
-				<tr><td>R1 <a href="https://d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a></td>									<td>—</td>		<td>—</td>		<td>—</td>		<td>1,000</td>	<td>1,000</td>	<td>1,000</td>	<td>—</td></tr>
-				<tr><td>R1 <a href="https://www.d20pfsrd.com/magic-items/scrolls/">Scrolls</a></td>																<td>—</td>		<td>7x25</td>	<td>7x25</td>	<td>5x25</td>	<td>5x25</td>	<td>5x25</td>	<td>5x25</td></tr>
-				<tr><td><a href="https://d20pfsrd.com/equipment/weapons/weapon-and-armor-accessories">Spring-Loaded Wrist Sheath</a> x2</td>					<td>—</td>		<td>—</td>		<td>—</td>		<td>10</td>		<td>10</td>		<td>10</td>		<td>10</td></tr>
+						<small>with <a class="spell" href="https://d20pfsrd.com/magic/all-spells/c/continual-flame">continual flame</a></small></td>			<td>—</td>		<td>—</td>		<td>—</td>		<td>—</td>		<td>550</td>	<td>550</td>	<td>550</td>	<td>550</td>	<td>550</td></tr>
+				<tr><td>R1 <a href="https://d20pfsrd.com/magic-items/wondrous-items/m-p/pearl-of-power">Pearl of Power</a></td>									<td>—</td>		<td>—</td>		<td>—</td>		<td>1,000</td>	<td>1,000</td>	<td>1,000</td>	<td>—</td>		<td>1,000</td>	<td>—</td></tr>
+				<tr><td>R1 <a href="https://d20pfsrd.com/magic-items/scrolls">Scrolls</a></td>																	<td>—</td>		<td>7×25</td>	<td>7×25</td>	<td>5×25</td>	<td>5×25</td>	<td>5×25</td>	<td>5×25</td>	<td>5×25</td>	<td>5×25</td></tr>
+				<tr><td><a href="https://d20pfsrd.com/equipment/weapons/weapon-and-armor-accessories">Spring-Loaded Wrist Sheath</a> ×2</td>					<td>—</td>		<td>—</td>		<td>—</td>		<td>10</td>		<td>10</td>		<td>10</td>		<td>10</td>		<td>10</td>		<td>10</td></tr>
 				<tr><td><a href="https://d20pfsrd.com/equipment/goods-and-services/toys-games-puzzles#TOC-Holy-Symbol">Holy Symbol</a>,
 						<a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits#pouch_spell_component">Spell&nbsp;Component&nbsp;Pouch</a>,
-						<a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits#kit_healer8217s">Healer's Kit</a></td>							<td>6</td>		<td>56</td>		<td>56</td>		<td>60</td>		<td>10</td>		<td>60</td>		<td>60</td></tr>
-				<tr><td><a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a></td>													<td>50</td>		<td>50</td>		<td>50</td>		<td>50</td>		<td>50</td>		<td>50</td>		<td>50</td></tr>
+						<a href="https://d20pfsrd.com/equipment/goods-and-services/tools-kits#kit_healer8217s">Healer's Kit</a></td>							<td>6</td>		<td>56</td>		<td>56</td>		<td>60</td>		<td>10</td>		<td>60</td>		<td>60</td>		<td>60</td>		<td>60</td></tr>
+				<tr><td><a href="https://greytyphoon.space/PF/system/mundaneitems.html">Mundane items</a></td>													<td>50</td>		<td>50</td>		<td>50</td>		<td>50</td>		<td>50</td>		<td>50</td>		<td>50</td>		<td>50</td>		<td>50</td></tr>
 			</tbody>
 			<tfoot>
-				<tr><td>Cash on Hand</td>																														<td>2</td>		<td>2</td>		<td>2</td>		<td>13</td>		<td>13</td>		<td>158</td>	<td>58</td></tr>
-				<tr><td><a href="https://d20pfsrd.com/classes/character-advancement">Total</a></td>																<td>175</td>	<td>1,000</td>	<td>3,000</td>	<td>6,000</td>	<td>10,500</td>	<td>16,000</td>	<td>23,500</td></tr>
+				<tr><td>Cash on Hand</td>																														<td>2</td>		<td>2</td>		<td>2</td>		<td>13</td>		<td>13</td>		<td>158</td>	<td>58</td>		<td>558</td>	<td>572</td></tr>
+				<tr><td><a href="https://d20pfsrd.com/classes/character-advancement">Total</a></td>																<td>175</td>	<td>1,000</td>	<td>3,000</td>	<td>6,000</td>	<td>10,500</td>	<td>16,000</td>	<td>23,500</td>	<td>33,000</td>	<td>46,000</td></tr>
 			</tfoot>
 		</table>
 		</div>
@@ -780,12 +889,13 @@
 
 	<script>
 		function showOnly(className) {
-			document.querySelectorAll('.container').forEach(n => {
+			document.querySelectorAll('.container section').forEach(n => {
+		console.log(n);
 				if (n.classList.contains(className)) n.classList.remove('hidden');
 				else n.classList.add('hidden');
 			});
 		}
-		var acceptedLevels = ['5','6'];
+		var acceptedLevels = ['6','7'];
 		document.addEventListener('keydown', e => {
 			if (e.key === 'f' || e.key === 'b') { document.getElementById('build-info').showModal(); return; }
 			if (e.key === 'i') { document.getElementById('inventory-history').showModal(); return; }
