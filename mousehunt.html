@@ -21,6 +21,7 @@
 			font-size: .75em;
 			b { color: var(--tint-black); font-size: 1rem; font-weight: unset; }
 		}
+		table.worth-me td[rowspan] { vertical-align: top; &, & ~ td { border-top: 1px solid var(--tint-grey); } }
 		em { color: var(--tint-grey); float: right; font-size: 10px; }
 		h3 { margin-bottom: .25em; }
 	</style>
@@ -36,16 +37,23 @@
 				<h2>Objectives</h2>
 				<ol>
 					<li>Conclusion Cliffs:	<ul><li>Diamond base <small>40</small><em>35m, 225diamonds</em></li></ul></li>
-					<li>Valour Rift:	<ul><li>All 8 Codices <em>100m, 400cores</em></li></ul></li>
-					<li>Area upgrades:	<ul>
-										<li>Queso River — Pump 10 <em>5kNachore</em></li>
-										<li>Furoma Rift — Batteries 8-10 <em title="Omitted: 1.32m, 12 Circuitry">2.1kBattery*</em></li>
-										</ul></li>
+					<li>Valour Rift:	<ul>
+										<li>Codex of Valour: Bard page <em>16m, 50cores</em></li>
+										<li>Remaining 7 Codices <em>68m, 300cores</em></li></ul></li>
+					<li>Furoma Rift:	<ul><li>Batteries L.8-10 <em title="Omitted: 12 Rift Circuitry">1.32m, 2.1kBattery</em></li></ul></li>
+					<li>Cantera Quarry:	<ul>
+										<li>Pump L.10 <em>5kNachore</em></li>
+										<li>Overgrown Ember Stone base <em title="Omitted: 15 Ember Roots, 12 Ember Stones">7.8m, 1kNachore</em></li></ul></li>
+					<li>Muridae Market:	<ul><li>Papyrus base <em title="Omitted: Scrap Metal">1.3m, 98papyrus</em></li></ul></li>
+					<li>Toxic Spill:	<ul>
+										<li>Polluted base <em title="Omitted: Radioactive Sludge, Scrap Metal">1.43m, 800pollutinum</em></li>
+										<li>Refined Pollutinum base <em title="Omitted: Radioactive Sludge, Scrap Metal">2.63m, 1250pollutinum</em></li></ul></li>
+					<li>Zokor:	<ul><li>Minotaur base <em>16m, 6rrspg, 700district</em></li></ul></li>
+					<li>Draconic Depths:	<ul><li>Dragonhide Sliver Forge base <em>18m, 9kAshes, 5kOpals</em></li></ul></li>
+					<li>Table of Contents:	<ul><li>Folklore Printing Press base <em>20m, 5kGnawbels</em></li></ul></li>
 					<li>Wrapping up:
 						<ul>
-							<li>Bases, Weapons,</li>
-							<li>Themes, Rare collectibles,</li>
-							<li>Airships, Skins.</li>
+							<li>Weapons, Themes, Airships, Rare collectibles, Skins.</li>
 						</ul>
 					</li>
 				</ol>
@@ -60,7 +68,7 @@
 						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/forgotten.png"></th>	<td>C.Thought Obliterator</td>	<td>21</td>	<td>+5</td></tr>
 						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/hydro.png"></th>		<td>Snapping Turtle</td>	<td>42</td>	<td>+5</td></tr>
 						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/law.png"></th>			<td>Ball &amp; Chain</td>	<td>30</td>	<td>+5</td></tr>
-						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"></th>		<td>Kingbot</td>	<td>42</td>	<td>+5</td></tr>
+						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/physical.png"></th>		<td>C.Kingbot</td>	<td>44</td>	<td><b>+6</b></td></tr>
 						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/rift.png"></th>			<td>C.Celestial</td>	<td>13</td>	<td>&nbsp;</td></tr>
 						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/shadow.png"></th>		<td>Infinite Mirrors</td>	<td>40</td>	<td>+5</td></tr>
 						<tr><th><img class="powertype" src="https://www.mousehuntgame.com/images/powertypes/tactical.png"></th>		<td>C.Slumbering Boulder</td>	<td>42</td>	<td>+5</td></tr>
@@ -273,12 +281,14 @@
 		<details>
 		<summary class="subtitle">Sould I use ME?</summary>
 		<section class="row br">
-		<table>
-			<tr><td rowspan="4"><img class="title" alt="Viceroy" src="https://www.mousehuntgame.com/images/titles/e2e79f6f9201a4d4e7a89684fbb5356f.png"> Conclusion Cliffs +</td>
-				<td>Plotting Paneer</td>			<td>?</td></tr>
+		<table class="worth-me">
+			<tr><td rowspan="6"><img class="title" alt="Viceroy" src="https://www.mousehuntgame.com/images/titles/e2e79f6f9201a4d4e7a89684fbb5356f.png"> Conclusion Cliffs +</td>
+				<td>Deus Ex Maconnais</td>			<td>Yes</td></tr>
+			<tr><td>Storied Saga</td>				<td>Yes</td></tr>
+			<tr><td>Plotting Paneer</td>			<td>Use double recipe</td></tr>
 			<tr><td>Symbolic Sirene</td>			<td>Yes</td></tr>
 			<tr><td>Allegory Anari</td>				<td>Yes</td></tr>
-			<tr><td>Metaphor Manchego</td>			<td>Yes, MP</td></tr>
+			<tr><td>Metaphor Manchego</td>			<td>Yes, Marketplace</td></tr>
 
 			<tr><td rowspan="4"><img class="title" alt="Viceroy" src="https://www.mousehuntgame.com/images/titles/e2e79f6f9201a4d4e7a89684fbb5356f.png"> Draconic Depths</td>
 				<td>Elemental Emmental</td>			<td>Yes</td></tr>
@@ -294,10 +304,10 @@
 				<td>Ruby Beanster</td>				<td>Yes</td></tr>
 			<tr><td>Leaping Lavish Beanster</td>	<td>Yes</td></tr>
 			<tr><td>Lavish Beanster</td>			<td>Yes</td></tr>
-			<tr><td>Beanster</td>					<td>No, MP</td></tr>
+			<tr><td>Beanster</td>					<td>No, Marketplace</td></tr>
 
-			<tr><td><img class="title" alt="Archduke" src="https://www.mousehuntgame.com/images/titles/043efe31de4f0f2e0ddca590fe829032.png"> Valour Rift</td>
-				<td>Gauntlet String</td>			<td>No, MP</td></tr>
+			<tr><td rowspan="1"><img class="title" alt="Archduke" src="https://www.mousehuntgame.com/images/titles/043efe31de4f0f2e0ddca590fe829032.png"> Valour Rift</td>
+				<td>Gauntlet String</td>			<td>No, Marketplace</td></tr>
 
 			<tr><td rowspan="6"><img class="title" alt="Archduke" src="https://www.mousehuntgame.com/images/titles/043efe31de4f0f2e0ddca590fe829032.png"> Table of Content +</td>
 				<td>Final Draft Derby</td>			<td>Yes</td></tr>
@@ -310,37 +320,32 @@
 			<tr><td rowspan="3"><img class="title" alt="Archduke" src="https://www.mousehuntgame.com/images/titles/043efe31de4f0f2e0ddca590fe829032.png"> Floating Islands</td>
 				<td>Extra Rich Cloud Cheesecake</td>	<td>Yes</td></tr>
 			<tr><td>Sky Pirate Swiss</td>			<td>Yes</td></tr>
-			<tr><td>Cloud Cheesecake</td>			<td>No, MP</td></tr>
+			<tr><td>Cloud Cheesecake</td>			<td>No, Marketplace</td></tr>
 
-			<tr><td><img class="title" alt="Grand Duke" src="https://www.mousehuntgame.com/images/titles/87937fa96bbb3b2dd3225df883002642.png"> BW. Rift</td>
-				<td>Ancient String</td>				<td>No, MP</td></tr>
+			<tr><td rowspan="1"><img class="title" alt="Grand Duke" src="https://www.mousehuntgame.com/images/titles/87937fa96bbb3b2dd3225df883002642.png"> BW. Rift</td>
+				<td>Ancient String</td>				<td>No, Marketplace</td></tr>
 
-			<tr><td rowspan="6"><img class="title" alt="Grand Duke" src="https://www.mousehuntgame.com/images/titles/87937fa96bbb3b2dd3225df883002642.png"> Furoma Rift</td>
-				<td>Null Onyx Gorgonzola</td>		<td>Yes</td></tr>
-			<tr><td>Rift Rumble</td>				<td>Yes</td></tr>
-			<tr><td>Master Fusion</td>				<td>Yes</td></tr>
-			<tr><td>Rift Combat</td>				<td>Yes</td></tr>
-			<tr><td>Rift Glutter</td>				<td>Yes</td></tr>
-			<tr><td>Rift Sucheese</td>				<td>Yes</td></tr>
+			<tr><td rowspan="1"><img class="title" alt="Grand Duke" src="https://www.mousehuntgame.com/images/titles/87937fa96bbb3b2dd3225df883002642.png"> Furoma Rift</td>
+				<td>All</td>						<td>Yes</td></tr>
+		</table>
 
+		<table class="worth-me">
 			<tr><td rowspan="3"><img class="title" alt="Grand Duke" src="https://www.mousehuntgame.com/images/titles/87937fa96bbb3b2dd3225df883002642.png"> Moussu Picchu</td>
 				<td>Dragonvine</td>					<td>Yes</td></tr>
 			<tr><td>Rainy</td>						<td>No, use GGC</td></tr>
 			<tr><td>Windy</td>						<td>No, use GGC</td></tr>
-		</table>
 
-		<table>
-			<tr><td><img class="title" alt="Duke" src="https://www.mousehuntgame.com/images/titles/eb46ac1e8197b13299ab860f07d963db.png"> WW. Rift</td>
+			<tr><td rowspan="1"><img class="title" alt="Duke" src="https://www.mousehuntgame.com/images/titles/eb46ac1e8197b13299ab860f07d963db.png"> WW. Rift</td>
 				<td>Lactrodectus Lancashire</td>	<td>Yes</td></tr>
 
 			<tr><td rowspan="3"><img class="title" alt="Duke" src="https://www.mousehuntgame.com/images/titles/eb46ac1e8197b13299ab860f07d963db.png"> B. Rift</td>
 				<td>Polluted Parmesan</td>			<td>Ok</td></tr>
 			<tr><td>Terre Ricotta</td>				<td>Ok</td></tr>
-			<tr><td>Undead String Emmental</td>		<td>No, MP</td></tr>
+			<tr><td>Undead String Emmental</td>		<td>No, Marketplace</td></tr>
 
-			<tr><td rowspan="2"><img class="title" alt="Duke" src="https://www.mousehuntgame.com/images/titles/eb46ac1e8197b13299ab860f07d963db.png"> B. Rift</td>
+			<tr><td rowspan="2"><img class="title" alt="Duke" src="https://www.mousehuntgame.com/images/titles/eb46ac1e8197b13299ab860f07d963db.png"> Fungal Cavern</td>
 				<td>Mineral</td>					<td>Ok</td></tr>
-			<tr><td>Glowing Gruyere</td>			<td>No, MP</td></tr>
+			<tr><td>Glowing Gruyere</td>			<td>No, Marketplace</td></tr>
 
 			<tr><td rowspan="5"><img class="title" alt="Count" src="https://www.mousehuntgame.com/images/titles/dd11711a25b80db90e0306193f2e8d78.png"> Queso Canyon</td>
 				<td>Wildfire Queso</td>				<td>Yes</td></tr>
@@ -376,8 +381,6 @@
 				<td>T8</td>							<td>No</td></tr>
 			<tr><td>T5-T7</td>						<td>Ok</td></tr>
 			<tr><td>T2-T4</td>						<td>No</td></tr>
-
-			<tr><td colspan="2">Anything before <img class="title" alt="Legendary" src="https://www.mousehuntgame.com/images/titles/fca35751046f4bcc972716ca484b6d61.png"> </td>	<td>No</td></td>
 		</table>
 		</section>
 		</details>
