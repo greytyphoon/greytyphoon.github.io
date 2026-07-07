@@ -55,6 +55,7 @@ h2::before, h2::after, .subtitle::before, .subtitle::after, .spell::before, .spe
 .cold:not(.spell), a.cold:not(.spell), a.cold:not(.spell):visited { color: var(--transmutation-teal); }
 .acid:not(.spell), a.acid:not(.spell), a.acid:not(.spell):visited { color: var(--conjuration-green); }
 .electricity:not(.spell), a.electricity:not(.spell), a.electricity:not(.spell):visited { color: var(--abjuration-gold); }
+.sonic:not(.spell), a.sonic:not(.spell), a.sonic:not(.spell):visited { color: var(--enchantment-lilac); }
 
 /* Spell Reminders */
 .spell::after,
