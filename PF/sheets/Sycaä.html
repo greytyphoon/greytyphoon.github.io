@@ -23,7 +23,7 @@
 		<header>
 			<h1>Sycaä A'Klak, born to defend</h1>
 			LN Medium Humanoid
-			<div id="xp">0 / 1,000</div>
+			<div id="xp">60 / 1,000</div>
 		</header>
 
 		<section id="headerInfo" class="row">
@@ -160,7 +160,7 @@
 					<div class="circumstancialBonus" title="Toughness"><u>+1</u> to stabilize.</div>
 				</li>
 				<li class="br">
-					<strong>26</strong>
+					<strong>27</strong>
 					<b>AC</b>
 					<small>10, 1 dex, 2 prf, 9 lvl, 5 item</small>
 					<div class="circumstancialBonus"><u>+2 circ</u> &amp <u>+1 status</u> when raising a shield (↻ 9 Hardness, 76 HP)</div>
@@ -189,9 +189,7 @@
 				<div class="weapon">
 					<h2>Fangs <b>P</b></h2>
 					<div class="summation"><strong>+17</strong>/<strong>12</strong>/<strong>7</strong> vs AC <small>3 str, 4 prf, 9 lvl, <u title="Potency Rune">1 item</u></small></div>
-					<div class="summation"><strong>2d6+5</strong> <span class="electricity" title="Shock">+1d6⚡</span> <small>3 str, 2 w.spec</small></div>
-					<div class="circumstancialBonus" title="Shock Property Rune">On crit, 2 other foes within 10ft take <u class="electricity">the same dmg ⚡</u>.</div>
-					<div class="circumstancialBonus"><i>Cruonign, Rune of Leeching</i> — add <u>3 dmg 💀</u>, gain that much temp HP.</div>
+					<div class="summation"><strong>2d6+5</strong> <small>3 str, 2 w.spec</small></div>
 				</div>
 
 				<!--Electric Arc-->
@@ -244,7 +242,7 @@
 				<p>Trigger up to 2 runes within 30ft.<br>
 					<span title="Vital Compound Invocation"> If they are Primal &amp; Divine, an ally within 30ft gains <u title="5 + 2*runesmith">23 HP</u>.</span></p>
 
-				<h2 class="one-action">Fortifying Knock <b>1/round</b></h2>
+				<h2 class="one-action">Fortifying Knock [Flourish]</h2>
 				<p><a href="https://2e.aonprd.com/Actions.aspx?ID=2316">Raise Shield</a>. Then, <a href="#">Trace a Rune</a> on it.
 					<span title="Runic Reprisal">It may be a damaging rune; in that case, you may activate it when you <a href="https://2e.aonprd.com/Feats.aspx?ID=5212">Shield Block</a>.</span></p>
 			</div>
@@ -360,7 +358,7 @@
 			<li>S.<a class="worn" data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2747">Repair Kit</a></li>
 			<li><a data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=2753">Spellbook</a></li>
 
-			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">490 <b>GP</b></li>
+			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">808 <b>GP</b></li>
 
 		</ul>
 		<ul id="magicItemsWrapper">
@@ -378,7 +376,6 @@
 			<!--Weapons-->
 			<li class="br">
 				Nagaji's <a href="https://2e.aonprd.com/Ancestries.aspx?ID=54">Fangs</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking</a>
-				— <a class="electricity" href="https://2e.aonprd.com/Equipment.aspx?ID=2847">Shock</a>
 				<small>unarmed, 1d6P, Finesse.</small>
 				<div class="circumstancialBonus">1× <a href="https://2e.aonprd.com/Equipment.aspx?ID=2990">Predator's Claw</a> <small><span class="no-action">Envision</span> →
 					On crit, <a href="https://2e.aonprd.com/Conditions.aspx?ID=92">slowed 1</a> for 1 round⁴, <u title="Class DC">Fort</u> negates.</small></div>
@@ -537,8 +534,9 @@
 				<dd><a href="https://2e.aonprd.com/Familiars.aspx?ID=138">Rune Delivery</a>*</dd>
 				<dd><a href="https://2e.aonprd.com/Familiars.aspx?ID=130">Cantrip Connection</a></dd>
 				<dt>Arch. 4</dt>
-				<dd><a href="https://2e.aonprd.com/Familiars.aspx?ID=110">Damage Avoidance</a></dd>
-				<dd><a href="https://2e.aonprd.com/Familiars.aspx?ID=144">Fast Movement</a></dd>
+				<dd>BW: <a href="https://2e.aonprd.com/Familiars.aspx?ID=110">Damage Avoidance</a></dd>
+				<dd>EF: <a href="https://2e.aonprd.com/Familiars.aspx?ID=142">Darkvision</a></dd>
+				<dd>EF: <a href="https://2e.aonprd.com/Familiars.aspx?ID=144">Fast Movement</a></dd>
 			</dl>
 
 			<dl class="charInfo">
@@ -565,6 +563,8 @@
 				<dd>Master, Athletics</dd>
 				<dt>skill 9</dt>
 				<dd>Master, Medicine</dd>
+				<dt>int boost 10</dt>
+				<dd>Trained, Diplomacy</dd>
 				<dt>skill 11</dt>
 				<dd>Expert, Arcana</dd>
 			</dl>
