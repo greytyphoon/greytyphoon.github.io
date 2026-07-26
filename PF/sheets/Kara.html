@@ -11,6 +11,13 @@
 	<meta property="og:description" content="The PF2 character sheet for Kara Mizuno, a 10th-level kitsune animist." name="description">
 	<title>Grey's Animist</title>
 	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.widest-er { flex: 10 !important; }
+		.apparition, .apparition > a { color: var(--virtue-blue); }
+		.apparition.grove, .apparition.grove > a { color: var(--conjuration-green); }
+		.apparition.stalker, .apparition.stalker > a { color: var(--necromancy-purple); }
+		.apparition.waters, .apparition.waters > a { color:var(--transmutation-teal); }
+	</style>
 </head>
 <body>
 	<nav id="fixref"><ul>
@@ -49,7 +56,7 @@
 				<dd class="archetype"><a href="https://2e.aonprd.com/Ancestries.aspx?ID=86">Dragonblood</a> Heritage <small><a href="https://2e.aonprd.com/MonsterFamilies.aspx?ID=649">Sea</a></small></dd>
 
 				<dt>Background</dt>
-				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=454">Pilgrim</a></dd>
+				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=329">Doomcaller</a></dd>
 
 				<dt>Class</dt>
 				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=64">Animist</a> 10</dd>
@@ -64,7 +71,7 @@
 				<dd title="Draconic Sight"><a href="https://2e.aonprd.com/Rules.aspx?ID=2410">Darkvision</a></dd>
 
 				<dt>Speed</dt>
-				<dd>25 ft.</dd>
+				<dd>35 ft. <small title="tailwind"><u>10ft status</u></small></dd>
 				<dd title="True Dragon's Flight">Fly 20 ft.</dd>
 
 				<dt>Languages</dt>
@@ -130,9 +137,39 @@
 				<small>4 dex, 2 prf, 10 lvl</small>
 			</li>
 
+			<li class="apparition grove">
+				<strong>19</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">Farming Lore</a>
+				<small>3 int, 6 prf, 10 lvl</small>
+			</li>
+			<li class="apparition stalker">
+				<strong>19</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">Forest Lore</a>
+				<small>3 int, 6 prf, 10 lvl</small>
+			</li>
+			<li class="apparition stalker">
+				<strong>19</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">Hunting Lore</a>
+				<small>3 int, 6 prf, 10 lvl</small>
+			</li>
+			<li class="apparition grove">
+				<strong>19</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">Herbalism Lore</a>
+				<small>3 int, 6 prf, 10 lvl</small>
+			</li>
+			<li class="apparition waters">
+				<strong>19</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">Mountain Lore</a>
+				<small>3 int, 6 prf, 10 lvl</small>
+			</li>
+			<li class="apparition waters">
+				<strong>19</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">River Lore</a>
+				<small>3 int, 6 prf, 10 lvl</small>
+			</li>
 			<li>
 				<strong>19</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">Ylimancha Lore</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">Star Lore</a>
 				<small>3 int, 6 prf, 10 lvl</small>
 			</li>
 		</ul>
@@ -176,16 +213,22 @@
 					<small>5 wis, 4 prf, 10 lvl, <u title="Resilient rune">1 item</u></small>
 				</li>
 				<li class="circumstancialBonus" title="Dragonblood Heritage"><u>Success &rarr; Crit</u> vs fear.</li>
+				<li class="circumstancialBonus"><u>+2 circ</u> when raising a <a href="https://2e.aonprd.com/Equipment.aspx?ID=2826">Spellguard Shield</a>.</li>
 			</ul>
 
 			<div class="wide">
 				<h2 class="reaction"><a href="https://2e.aonprd.com/Feats.aspx?ID=5205">Recognize Spell</a> (<a class="no-action" href="https://2e.aonprd.com/Feats.aspx?ID=5197">Quick Rec.</a>)</h2>
 				<h2 class="one-action"><a href="https://2e.aonprd.com/Ancestries.aspx?ID=38">Change Shape</a> [Polymorph]</h2>
 				<h2 class="one-action br"><a href="https://2e.aonprd.com/Actions.aspx?ID=2316">Raise Shield</a></h2>
+
 				<h2 class="one-action"><a href="https://2e.aonprd.com/Equipment.aspx?ID=3087">Healer's Touch</a> <b>1/day</b></h2>
 				<p>Touch restores <b>4d6+15</b> HP.</p>
+
 				<h2 class="one-action"><a href="https://2e.aonprd.com/Equipment.aspx?ID=3109">Spiritual Light</a> <b>1/day</b></h2>
 				<p>Within 20ft, bright light, foes get <u>-2 status</u> to Deception and Stealth and <u>Weakness 5</u> vs spirit. Lasts 10 minutes.</p>
+
+				<h2 class="no-action"><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=329">Stellar Misfortune</a> [misfortune] <b>1/day</b></h2>
+				<p>When a foe you can see attempts a save / attack / skill, if you see the stars, the foe has disadvantage.</p>
 			</div>
 		</section>
 
@@ -200,22 +243,28 @@
 					<small>10, 5 wis, 4 prf, 10 lvl</small>
 				</p>
 
-				<ul class="condensed"><li><a class="no-action" href="https://2e.aonprd.com/Feats.aspx?ID=7139">Apparition's Quickening</a> &mdash; disperse an apparition to quicken a spell</li></ul>
+				<ul class="condensed">
+					<li class="no-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=7139">Apparition's Quickening</a> &mdash; Disperse an apparition to quicken a spell.</li>
+					<li class="three-actions"><a href="https://2e.aonprd.com/Feats.aspx?ID=7135">Apparition's Reflection</a> — 1/h — Cast a 3rd-rank apparition spell for free. You're <a href="https://2e.aonprd.com/Conditions.aspx?ID=63">confused</a>⁴.</li>
+					<li class="no-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=7130">Apparition Stabilization</a> — Flat DC 13 to un-disrupt.</li>
+					<li class="one-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=7434">Channeler's Stance</a> — Apparition / Vessel spells do bonus damage and healing.</li>
+					<li class="one-action">Humble Spell &mdash; Remove [manipulate] and add [subtle].</li>
+					<li class="one-action">Simple Mastery &mdash; Heighten +1, up to 5.</li>
+					<li class="no-action"><a href="https://2e.aonprd.com/Equipment.aspx?ID=3423">Staff of the Tempest</a> &mdash;  Ignore <a href="https://2e.aonprd.com/Conditions.aspx?ID=62">concealed</a> from mist, precipitation, etc.</li>
+				</ul>
 			</div>
-			<div>
-				<div class="weapon">
-					<h2 class="two-actions">Divine Lance <b>🪬</b> <b class="range strict">60ft</b></h2>
-					<div class="summation"><strong>+19</strong> vs AC <small>divine spell attack</small></div>
-					<div class="summation"><strong class="cold">6d4</strong></div>
-				</div>
+			<div class="weapon slim">
+				<h2 class="two-actions">Divine Lance <b>🪬</b> <b class="range strict">60ft</b></h2>
+				<div class="summation"><strong>+19</strong> vs AC <small>divine spell attack</small></div>
+				<div class="summation"><strong class="cold">6d4</strong></div>
 			</div>
 		</section>
 		<section class="row">
 			<div>
 				<h2>Cantrips</h2>
 				<ul>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1498">divine lance</a></li>
-					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1671">shield</a></li>
+					<li><a class="spell spirit" href="https://2e.aonprd.com/Spells.aspx?ID=1498">divine lance</a></li>
+					<li><a class="spell vitality" href="https://2e.aonprd.com/Spells.aspx?ID=1744">vitality lash</a></li>
 				</ul>
 			</div>
 			<div>
@@ -255,42 +304,168 @@
 			</div>
 		</section>
 
+		<h2>Spontaneous <a href="https://2e.aonprd.com/Apparitions.aspx">Apparition</a> Spells</h2>
 		<section class="row">
-			<div class="widest">
+			<div>
+				<h2>Cantrips</h2>
+				<ul>
+					<li><a class="spell apparition stalker" href="https://2e.aonprd.com/Spells.aspx?ID=1546">gouging claw</a></li>
+					<li><a class="spell apparition grove" href="https://2e.aonprd.com/Spells.aspx?ID=1713">tanglevine</a></li>
+					<li><a class="spell apparition waters" href="https://2e.aonprd.com/Spells.aspx?ID=1395">rousing splash</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 1</h2>
+				<ul>
+					<li><a class="spell upcast" href="https://2e.aonprd.com/Spells.aspx?ID=1552">harm</a></li>
+					<li><a class="spell upcast" href="https://2e.aonprd.com/Spells.aspx?ID=1554">heal</a></li>
+					<li><a class="spell upcast apparition waters" href="https://2e.aonprd.com/Spells.aspx?ID=1561">hydraulic push</a></li>
+					<li><a class="spell upcast apparition stalker" href="https://2e.aonprd.com/Spells.aspx?ID=1657">runic body</a></li>
+					<li><a class="spell upcast apparition grove" href="https://2e.aonprd.com/Spells.aspx?ID=2015">protector tree</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 2</h2>
+				<ul>
+					<li><a class="spell upcast apparition grove" href="https://2e.aonprd.com/Spells.aspx?ID=1316">gentle breeze</a></li>
+					<li><a class="spell apparition waters three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1606">mist</a></li>
+					<li><a class="spell upcast apparition stalker" href="https://2e.aonprd.com/Spells.aspx?ID=2041">vomit swarm</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 3</h2>
+				<ul>
+					<li><a class="spell upcast apparition waters" href="https://2e.aonprd.com/Spells.aspx?ID=1984">crashing wave</a></li>
+					<li><a class="spell upcast apparition grove three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1659">safe passage</a></li>
+					<li><a class="spell upcast apparition stalker three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1752">wall of thorns</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 4</h2>
+				<ul>
+					<li><a class="spell apparition stalker" href="https://2e.aonprd.com/Spells.aspx?ID=1966">bestial curse</a></li>
+					<li><a class="spell upcast apparition waters" href="https://2e.aonprd.com/Spells.aspx?ID=1562">hydraulic torrent</a></li>
+					<li><a class="spell apparition grove three-action" href="https://2e.aonprd.com/Spells.aspx?ID=1624">peaceful bubble</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 5</h2>
+				<ul>
+					<li><a class="spell apparition waters" href="https://2e.aonprd.com/Spells.aspx?ID=1473">control water</a></li>
+					<li><a class="spell upcast apparition stalker" href="https://2e.aonprd.com/Spells.aspx?ID=1609">moon frenzy</a></li>
+					<li><a class="spell upcast apparition grove" href="https://2e.aonprd.com/Spells.aspx?ID=1728">truespeech</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="widest-er">
 				<h2 title="Hedge Mage Dedication">Prepared <a href="https://2e.aonprd.com/SpellLists.aspx?Tradition=1">Arcane</a> Spells</h2>
 				<section class="row">
-					<div>
+					<div class="widest-er">
 						<h2>Cantrips</h2>
-						<ul>
-							<li><a class="spell electricity" href="https://2e.aonprd.com/Spells.aspx?ID=1509">electric arc</a></li>
-							<li><a class="spell cold" href="https://2e.aonprd.com/Spells.aspx?ID=1539">frostbite</a></li>
-						</ul>
+						<section class="row">
+							<ul>
+								<li><a class="spell acid" href="https://2e.aonprd.com/Spells.aspx?ID=1461">caustic blast</a></li>
+								<li><a class="spell mental" href="https://2e.aonprd.com/Spells.aspx?ID=1482">daze</a></li>
+								<li><a class="spell cold" href="https://2e.aonprd.com/Spells.aspx?ID=1539">frostbite</a></li>
+								<li><a class="spell fire" href="https://2e.aonprd.com/Spells.aspx?ID=1565">ignition</a></li>
+							</ul>
+							<ul>
+								<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1375">needle darts</a></li>
+								<li><a class="spell poison" href="https://2e.aonprd.com/Spells.aspx?ID=2016">puff of poison</a></li>
+								<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1718">telekinetic projectile</a></li>
+								<li><a class="spell void" href="https://2e.aonprd.com/Spells.aspx?ID=1745">void warp</a></li>
+							</ul>
+							<ul>
+								<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1315">deep breath</a></li>
+								<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1485">detect magic</a></li>
+								<li><a class="spell reaction" href="https://2e.aonprd.com/Spells.aspx?ID=1352">eat fire</a></li>
+								<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1671">shield</a></li>
+							</ul>
+						</section>
 					</div>
 					<div>
-						<h2>Rank 1 <b>2/day</b></h2>
+						<h2>Rank 1</h2>
 						<ul>
-							<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1286">helpful steps</a></li>
+							<li><a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=2009">mud pit</a></li>
 						</ul>
 					</div>
 					<div>
 						<h2>Rank 2</h2>
 						<ul>
-							<li><a class="spell reaction upcast" href="https://2e.aonprd.com/Spells.aspx?ID=2486">warping pull</a></li>
+							<li><a class="spell one-action upcast" href="https://2e.aonprd.com/Spells.aspx?ID=2348">endure</a></li>
 						</ul>
 					</div>
 					<div>
 						<h2>Rank 3</h2>
 						<ul>
-							<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=2481">echo jump</a></li>
+							<li><a class="spell upcast" href="https://2e.aonprd.com/Spells.aspx?ID=1524">fear</a></li>
 						</ul>
 					</div>
 				</section>
 			</div>
-			<div>
+			
+			<div class="apartee">
 				<h2>Wands &amp; Items</h2>
 				<ul>
-					<li>1× <a class="spell one-action" title="Invisibility Rune" href="https://2e.aonprd.com/Spells.aspx?ID=1577">invisibility</a>²</li>
+					<li>3× <a class="spell one-action" title="Invisibility Rune" href="https://2e.aonprd.com/Spells.aspx?ID=1577">invisibility</a>²</li>
+					<li>1× <a class="spell" title="Magic Wand" href="https://2e.aonprd.com/Spells.aspx?ID=1711">tailwind</a>²</li>
+					<li>1× <a class="spell" title="Magic Wand" href="https://2e.aonprd.com/Spells.aspx?ID=1474">cozy cabin</a>³</li>
 				</ul>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="widest-er">
+				<h2>G.<a href="https://2e.aonprd.com/Equipment.aspx?ID=3423">Staff of the Tempest</a> <b>5 SC</b></h2>
+				<section class="row">
+					<div>
+						<h2>Cantrips</h2>
+						<ul>
+							<li><a class="spell electricity" href="https://2e.aonprd.com/Spells.aspx?ID=1509">electric arc</a></li>
+						</ul>
+					</div>
+					<div>
+						<h2>Rank 1</h2>
+						<ul>
+							<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1561">hydraulic push</a></li>
+							<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1721">thunderstrike</a></li>
+						</ul>
+					</div>
+					<div>
+						<h2>Rank 2</h2>
+						<ul>
+							<li><a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1606">mist</a></li>
+							<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1651">resist energy</a></li>
+							<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1721">thunderstrike</a></li>
+						</ul>
+					</div>
+					<div>
+						<h2>Rank 3</h2>
+						<ul>
+							<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1586">lightning bolt</a></li>
+							<li><a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1753">wall of wind</a></li>
+						</ul>
+					</div>
+					<div>
+						<h2>Rank 4</h2>
+						<ul>
+							<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1562">hydraulic torrent</a></li>
+							<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1586">lightning bolt</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+
+			<div class="apartee">
+				<h2>Vessel Spells <b>3 FP</b></h2>
+				<ul>
+					<li><s><a class="spell one-action apparition grove" href="https://2e.aonprd.com/Spells.aspx?ID=2166">garden of healing</a></s></li>
+					<li><a class="spell one-action apparition stalker" href="https://2e.aonprd.com/Spells.aspx?ID=2143">darkened forest form</a></li>
+					<li><s><a class="spell one-action apparition waters" href="https://2e.aonprd.com/Spells.aspx?ID=2145">river carving mountains</a></s></li>
+				</ul>
+				<h2><a class="one-action" href="https://2e.aonprd.com/Feats.aspx?ID=7121">Circle of Spirits</a> <b>1/round</b></h2>
 			</div>
 		</section>
 
@@ -300,13 +475,14 @@
 			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2700">Adventurer's Pack</a></li>
 			<li>E.<a class="worn" data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2727">Healer's Tools</a></li>
 
-			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">981.3 <b>GP</b></li>
+			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">350 <b>GP</b></li>
 		</ul>
 		<ul id="magicItemsWrapper">
+			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3065">Charm of Fire Resistance</a></li>
 			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3086">Handwraps of Mighty Blows</a></li>
 			<li>G.<a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3087">Healer's Gloves</a></li>
 			<li>G.<a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3109">Shining Symbol</a></li>
-			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3065">Charm of Fire Resistance</a></li>
+			<li>G.<a href="https://2e.aonprd.com/Equipment.aspx?ID=3423">Staff of the Tempest</a></ki>
 		</ul>
 
 		<ul id="inventory">
@@ -315,20 +491,26 @@
 				<a href="https://2e.aonprd.com/Weapons.aspx?ID=356">Fists</a> +2 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking</a>
 				— <a class="cold" href="https://2e.aonprd.com/Equipment.aspx?ID=2832">Astral</a> &amp; <a class="cold" href="https://2e.aonprd.com/Equipment.aspx?ID=2839">Frost</a>
 				<small>unarmed, 1d4B, Agile Finesse Nonlethal.</small>
+				<div class="circumstancialBonus">2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=2990">Predator's Claw</a> <small><span class="no-action">Envision</span> →
+					On crit, <a href="https://2e.aonprd.com/Conditions.aspx?ID=92">slowed 1</a> for 1 round⁴, <u title="Class DC">Fort</u> negates.</small></div>
+			</li>
+			<li>
+				<a data-bulk=".1" href="https://2e.aonprd.com/Weapons.aspx?ID=358">Dagger</a>, <a href="https://2e.aonprd.com/Equipment.aspx?ID=2856">cold-iron</a>
+				<small>simple one-handed, 1d4PS, Agile Finesse Thrown-10ft.</small>
 			</li>
 			<li class="br">
-				<a data-bulk="2" href="https://2e.aonprd.com/Weapons.aspx?ID=436">Longbow</a> +2 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking</a>
-				— <a class="cold" href="https://2e.aonprd.com/Equipment.aspx?ID=2832">Astral</a> &amp; <a class="cold" href="https://2e.aonprd.com/Equipment.aspx?ID=2839">Frost</a>
-				<small>martial two-handed, 1d8P @ 100ft, Deadly-d10 Reload-0 Volley-30ft.</small> <small><u title="4 dex, 2 prf, 10 lvl, 2 item">+18</u> vs AC</small>
+				<a data-bulk=".1" href="https://2e.aonprd.com/Weapons.aspx?ID=358">Dagger</a>, <a href="https://2e.aonprd.com/Equipment.aspx?ID=2860">silver</a>
+				<small>simple one-handed, 1d4PS, Agile Finesse Thrown-10ft.</small>
 			</li>
 
 			<!--Armors-->
 			<li>
 				<a class="invested" data-bulk="1" href="https://2e.aonprd.com/Armor.aspx?ID=41">Leather Armor</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2786">Resilient</a>
-				— <a href="https://2e.aonprd.com/Equipment.aspx?ID=2790">Invisibility</a>
+				— G.<a href="https://2e.aonprd.com/Equipment.aspx?ID=2790">Invisibility</a>
 				<small>light, 1 armor, 0 str, 4 dex.</small>
-				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=1091">Singing Muse</a> <small><span class="reaction">Envision</span> →
-					before rolling Performance, gain <u>Success → Crit</u>.</small></div>
+				<div class="circumstancialBonus">2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=512">Snapleaf</a> <small><span class="reaction">Interact</span> →
+					Cast <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1542">gentle landing</a>
+					and <a class="spell subtle" href="https://2e.aonprd.com/Spells.aspx?ID=1577">invisibility</a> until you stop falling, max 1 minute.</small></div>
 			</li>
 			<li class="br">
 				<a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2826">Spellguard Shield</a>
@@ -358,13 +540,13 @@
 				<dt>general 3</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5130">Canny Acumen</a> (Reflex)</dd>
 				<dt>animist 4</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=6226">TBD</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=7434">Channeler's Stance</a></dd>
 				<dt>arch. 4</dt>
 				<dd>Basic Hedge Mage Spellcasting</dd>
 				<dt>kitsune 5</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5738">Dragon's Flight</a></dd>
 				<dt>animist 6</dt>
-				<dd>[<a href="https://2e.aonprd.com/Traits.aspx?ID=843">Wandering</a> feat, retrained every day]</dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=7130">Apparition Stabilization</a> <small><a href="https://2e.aonprd.com/Traits.aspx?ID=843">Wandering</a></small></dd>
 				<dt>arch. 6</dt>
 				<dd>Humble Spell</dd>
 				<dt>general 7</dt>
@@ -382,16 +564,12 @@
 			</dl>
 
 			<dl class="charInfo">
-				<dt>background</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=6496">Pilgrim's Token</a></dd>
 				<dt>skill 2</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5205">Recognize Spell</a></dd>
 				<dt>skill 4</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5125">Battle Medicine</a></dd>
 				<dt>skill 6</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5137">Continual Recovery</a></dd>
-				<dt>arch. 6</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5237">Ward Medic</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=6496">Pilgrim's Token</a></dd>
 				<dt>skill 8</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5197">Quick Recognition</a></dd>
 				<dt>skill 10</dt>
@@ -400,10 +578,10 @@
 
 			<dl class="charInfo">
 				<dt>background</dt>
-				<dd>Trained, Religion*</dd>
+				<dd>Trained, Occultism*</dd>
 				<dt>bard 1</dt>
 				<dd>Trained, Nature*</dd>
-				<dd>Trained, Occultism*</dd>
+				<dd>Trained, Religion*</dd>
 				<dd>Trained, Acrobatics</dd>
 				<dd>Trained, Arcana</dd>
 				<dd>Trained, Medicine</dd>
