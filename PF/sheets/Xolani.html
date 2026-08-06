@@ -19,6 +19,8 @@
 		.spell.spellstrike.cold::after { content: " ❄️⚔️"; }
 		.spell.spellstrike.fire::after { content: " 🔥⚔️"; }
 		.spell.spellstrike.electricity::after { content: " ⚡⚔️"; }
+		.spell.spellstrike.poison::after { content: " 🐍⚔️"; }
+		.spell.spellstrike.void::after { content: " 💀⚔️"; }
 		.spell.studious::after { content: " 📖"; }
 	</style>
 </head>
@@ -63,18 +65,18 @@
 				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=223">Sponsored by Family</a></dd>
 
 				<dt>Class</dt>
-				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=17">Magus</a> 7</dd>
-				<dd class="archetype"><a href="https://2e.aonprd.com/HybridStudies.aspx?ID=2">Laughing Shadow</a></dd>
+				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=74">Magus</a> 7</dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/HybridStudies.aspx?ID=11">Laughing Shadow</a></dd>
 			</dl>
 			<dl class="charInfo">
 				<dt>Deity</dt>
 				<dd>Gozreh, ancestors</dd>
 
 				<dt>Senses</dt>
-				<dd title="Gloomseer"><a href="https://2e.aonprd.com/Rules.aspx?ID=2411">Low-light vision</a></dd>
+				<dd>Normal</dd>
 
 				<dt>Speed</dt>
-				<dd title="25 ancestry, 5 Fleet">30 ft. <u title="Laughing Shadow" class="cascade">+5ft status</u></dd>
+				<dd title="25 ancestry, 5 Fleet">40 ft. <small title="tailwind">10ft status</small></dd>
 
 				<dt>Languages</dt>
 				<dd title="2 ancestry, 4 int">Mwangi, Xanmba, Taldane, Calda, Elven, Draconic, <a href="https://2e.aonprd.com/Feats.aspx?ID=5204">Read Lips</a></dd>
@@ -91,32 +93,17 @@
 			<li>
 				<strong>16</strong>
 				<a href="https://2e.aonprd.com/Skills.aspx?ID=1">Acrobatics</a>
-				<small>4 dex, 4 prf, 7 lvl, <u title="Boots of Elvenkind">1 item</u></small>
+				<small>4 dex, 4 prf, 7 lvl, <u title="Arboreal Boots">1 item</u></small>
 			</li>
 			<li>
-				<strong>17</strong>
+				<strong>18</strong>
 				<a href="https://2e.aonprd.com/Skills.aspx?ID=2">Arcana</a>
-				<small>4 int, 6 prf, 7 lvl</small> 🪣
-			</li>
-			<li>
-				<strong>7</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=3">Athletics</a>
-				<small>0 str, 0 prf, <u title="Clever Improviser">7 lvl</u></small>
+				<small>4 int, 6 prf, 7 lvl, <u title="Ring of Wizardry">1 item</u></small> 🪣
 			</li>
 			<li>
 				<strong>16</strong>
 				<a href="https://2e.aonprd.com/Skills.aspx?ID=4">Crafting</a>
 				<small>4 int, 4 prf, 7 lvl, <u title="Repair Kit, Superb">1 item</u></small>
-			</li>
-			<li>
-				<strong>10</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=5">Deception</a>
-				<small>0 cha, 2 prf, 7 lvl, <u title="Ventriloquist's Ring">1 item</u></small>
-			</li>
-			<li>
-				<strong>9</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=6">Diplomacy</a>
-				<small>0 cha, 2 prf, 7 lvl</small>
 			</li>
 			<li>
 				<strong>12</strong>
@@ -140,12 +127,12 @@
 			</li>
 			<li>
 				<strong>15</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=13">Society</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=14">Society</a>
 				<small>4 int, 4 prf, 7 lvl</small>
 			</li>
 			<li class="br">
 				<strong>13</strong>
-				<a href="https://2e.aonprd.com/Skills.aspx?ID=3">Stealth</a>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=15">Stealth</a>
 				<small>4 dex, 2 prf, 7 lvl</small>
 			</li>
 
@@ -173,11 +160,14 @@
 		<hr class="newPage">
 		<section class="row">
 			<!--Basics: Statblock and Weapons-->
+			<div>
 			<ul class="summations">
 				<li class="br">
-					<strong>11</strong>
+					<strong>14</strong>
 					<b>Perception</b>
-					<small>2 wis, 2 prf, 7 lvl</small>
+					<small>2 wis, <u title="Canny Acumen">4 prf</u>, 7 lvl, <u title="Sunweave Armor">1 item</u></small>
+					<div class="circumstancialBonus" title="Incredible Initiative"><u>+2 circ</u> when rolling initiative.</div>
+					<div class="circumstancialBonus no-action" title="Sunweave Armor"><em>Glint of Ambition</em> — <u>Gain advantage</u> on initiative, 1/day.</div>
 				</li>
 				<li>
 					<strong>85</strong>
@@ -208,32 +198,29 @@
 				</li>
 			</ul>
 
+				<h2 class="reaction"><a href="https://2e.aonprd.com/Feats.aspx?ID=5205">Recognize Spell</a></h2>
+				<h2 class="reaction"><a href="https://2e.aonprd.com/Feats.aspx?ID=5832">Reactive Strike</a></h2>
+				<h2 class="one-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=2847">Magus's Analysis</a> (<a href="https://2e.aonprd.com/Actions.aspx?ID=2367">Recall Knowledge</a>)</h2>
+				<h2 class="one-action br"><a href="https://2e.aonprd.com/Feats.aspx?ID=9057">Running Recharge</a></h2>
+			</div>
+
 			<div class="ample">
 				<!--Rapier-->
 				<div class="weapon">
 					<h2 class="one-actions">Shortsword <b>PS</b></h2>
 					<div class="summation"><strong>+16</strong>/<strong>12</strong>/<strong>8</strong> vs AC <small>4 dex, 4 prf, 7 lvl, <u title="Potency Rune">1 item</u></small></div>
 					<div class="summation"><strong>2d6+2</strong> <small>0 str, 2 w.spec</small></div>
-					<div class="circumstancialBonus"><em>Spellstrike + Gouging Claw:</em> add <u>5d6 dmg PS</u>; on crit, add <u>4d4 bleed</u>.</div>
+					<div class="circumstancialBonus"><em>Spellstrike + Gouging Claw:</em> add <u>5d6 dmg PS</u> and <u>5 dot 🩸</u>; doubled on crit.</div>
 				</div>
 
-				<!--Electric Arc-->
-				<div class="weapon">
-					<h2 class="two-actions">Electric Arc <b>⚡</b> <b class="range strict">30ft</b></h2>
-					<div class="summation"><strong>DC 23</strong> Basic Reflex save <small>arcane spell dc</small></div>
-					<div class="circumstancialBonus">Targets up to 2 foes.</div>
-					<div class="summation"><strong class="electricity">5d4</strong></div>
-				</div>
-			</div>
-			<!--end of Basics: Statblock and Weapons-->
-		</section>
+				<h2 class="one-action cascade"><a href="https://2e.aonprd.com/Actions.aspx?ID=756">Arcane Cascade</a> [Stance]</h2>
+				<p class="cascade">Your Strikes add <u title="Increases at 1st, 7th, 15th.">+2 dmg 💫</u>,
+					<span title="Laughing Shadow: Increases at 1st³, 7th⁵, 15th⁷.">or <u>+5 dmg 💫</u> vs <a href="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> foes.</span>
+					If you just cast a spell, use its damage type. Studious spells 📖 start the stance for free.</p>
 
-		<section class="row">
-			<div>
-				<h2 class="reaction"><a href="https://2e.aonprd.com/Feats.aspx?ID=5205">Recognize Spell</a></h2>
-				<h2 class="reaction"><a href="https://2e.aonprd.com/Feats.aspx?ID=5832">Attack of Opportunity</a></h2>
-				<h2 class="one-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=5125">Battle Medicine</a></h2>
-				<h2 class="one-action br"><a href="https://2e.aonprd.com/Feats.aspx?ID=2847">Magus's Analysis</a> (<a href="https://2e.aonprd.com/Actions.aspx?ID=2367">Recall Knowledge</a>)</h2>
+				<h2 class="two-actions"><a href="https://2e.aonprd.com/Actions.aspx?ID=755">Spellstrike</a></h2>
+				<p>Cast a <span class="spellstrike">Spell</span> and Strike. <small>The spell uses the Strike's result. Increase your MAP by 2.</small><br>
+					Spellstrike must recharge: as 1 action, by casting a [Conflux] spell, etc.</p>
 
 				<h2>Focus Pool <b title="Conflux Spells, Force Fang">2 FP</b></h2>
 				<dl class="condensed">
@@ -243,118 +230,142 @@
 					<dd>A foe within reach takes <b title="Increases by 1d4+1 at 1st, 5th, 9th, 13th, 17th.">2d4+2 dmg 💫</b>.</dd>
 				</dl>
 			</div>
-
-			<div class="ample">
-				<h2 class="one-action cascade"><a href="https://2e.aonprd.com/Actions.aspx?ID=756">Arcane Cascade</a> [Stance]</h2>
-				<p class="cascade">Starts after you Cast or Spellstrike.<br>
-					Your Strikes add <u title="Increases at 1st, 7th, 15th.">+2 dmg [?]</u>.
-					<span title="Laughing Shadow">If the foe is off-guard, add <u title="Laughing Shadow: Increases at 1st³, 7th⁵, 15th⁷.">+5 dmg [?]</u> instead. Gain <u>+5ft status</u> to all speeds.</span></p>
-
-				<h2 class="two-actions cascade"><a href="https://2e.aonprd.com/Feats.aspx?ID=2854">Distracting Spellstrike</a></h2>
-				<p class="cascade"><a href="https://2e.aonprd.com/Actions.aspx?ID=2390">Feint</a>, then Spellstrike.</p>
-
-				<h2 class="two-actions"><a href="https://2e.aonprd.com/Actions.aspx?ID=755">Spellstrike</a></h2>
-				<p>Cast a <span class="spellstrike">Spell</span> and Strike. <small>The spell uses the Strike's result. Increase your MAP by 2.</small><br>
-					Spellstrike must recharge: as 1 action, by casting a [Conflux] spell, etc.</p>
-			</div>
 		</section>
 
 		<!-- title Spells -->
 		<hr>
 		<section class="row">
-			<div class="ample">
+			<div>
 				<h2>Prepared <a href="https://2e.aonprd.com/SpellLists.aspx?Tradition=1">Arcane</a> Spells</h2>
 				<p class="summation">
 					<strong>13</strong>
 					<b>Attack</b>; 23 <b>DC</b>
 					<small>10, 4 int, 2 prf, 7 lvl</small>
 				</p>
+				<p class="condensed noprint">See the rules to <a href="https://2e.aonprd.com/Actions.aspx?ID=2366">Learn a spell</a> (<a href="https://2e.aonprd.com/Feats.aspx?ID=5179">Magical Shorthand</a>).</p>
+				<ul class="condensed">
+					<li><a class="one-action" href="https://2e.aonprd.com/Feats.aspx?ID=5027">Nonlethal spell</a> — Make a spell [<a href="https://2e.aonprd.com/Traits.aspx?ID=661">nonlethal</a>] unless it's [death] or [void].</li>
+				</ul>
 			</div>
-			<div>
-				<h2 title="11 Prepared: 5 Magus, 2 Wizard Dedication, 1 Magaambyan Attendant Dedication, 3 Ring of Minor Arcana">Cantrips</h2>
+
+			<!--Electric Arc-->
+			<div class="weapon slim br">
+				<h2 class="two-actions">Electric Arc <b>⚡</b> <b class="range strict">30ft</b></h2>
+				<div class="summation"><strong>DC 23</strong> Basic Reflex save <small>arcane spell dc</small></div>
+				<div class="circumstancialBonus">Targets up to 2 foes.</div>
+				<div class="summation"><strong class="electricity">5d4</strong></div>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="wide">
+				<h2 title="8 Prepared: 5 Magus, 2 Wizard Dedication, 1 Magaambyan Attendant Dedication">Cantrips</h2>
+				<section class="row">
+				<div>
 				<ul>
-					<li><a class="spell electricity" href="https://2e.aonprd.com/Spells.aspx?ID=1509">electric arc</a></li>
+					<li><a class="spell electricity spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1509">electric arc</a></li>
 					<li><a class="spell cold spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1539">frostbite</a></li>
 					<li><a class="spell spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1546">gouging claw</a></li>
 					<li><a class="spell fire spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1565">ignition</a></li>
 					<li><a class="spell spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1375">needle dart</a></li>
 				</ul>
 				<ul>
-					<li><a class="spell bonus" title="Ring of Minor Arcana" href="https://2e.aonprd.com/Spells.aspx?ID=1485">detect magic</a></h2>
 					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1585">light</a></li>
-					<li><a class="spell bonus" title="Ring of Minor Arcana" href="https://2e.aonprd.com/Spells.aspx?ID=1715">telekinetic hand</a></li>
 					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1598">message</a></li>
-					<li><a class="spell bonus" title="Ring of Minor Arcana" href="https://2e.aonprd.com/Spells.aspx?ID=1639">prestidigitation</a></li>
-					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1671">shield</a></li>
+					<li><a class="spell one-action bonus" href="https://2e.aonprd.com/Spells.aspx?ID=1671">shield</a></li>
 				</ul>
-			</div>
-			<div>
-				<h2 title="2 Prepared: 1 Basic Wizard Spellcasting, 1 Ventriloquist's Ring">Rank 1</h2>
-				<ul>
-					<li><a class="spell one-action studious" href="https://2e.aonprd.com/Spells.aspx?ID=1709">sure strike</a></li>
-					<li><a class="spell bonus" title="Ventriloquist's Ring" href="https://2e.aonprd.com/Spells.aspx?ID=1740">ventriloquism</a> <small>DC 19</small></li>
+				</div>
+				<div>
+				<ul class="condensed">
+					<li><a class="spell acid spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1461">caustic blast</a></li>
+					<li><a class="spell poison spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=2016">puff of poison</a></li>
+					<li><a class="spell spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=2021">scatter scree</a></li>
+					<li><a class="spell spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=2031">spout</a></li>
+					<li><a class="spell void spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1745">void warp</a></li>
 				</ul>
+				<div class="apartee">
+					<h2>Ring of Minor Arcana</h2>
+					<ul>
+						<li>∞ <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1485">detect magic</a></li>
+						<li>∞ <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1639">prestidigitation</a></li>
+						<li>∞ <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1715">telekinetic hand</a></li>
+					</ul>
+				</div>
+				</div>
+				</section>
 			</div>
-			<div>
-				<h2 title="3 Prepared: 1 Basic Wizard Spellcasting, 2 Studious Spells">Rank 2</h2>
-				<ul>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1577">invisibility</a></li>
-					<li><a class="spell studious" href="https://2e.aonprd.com/Spells.aspx?ID=197">mirror image</a></li>
-					<li><a class="spell one-action studious" href="https://2e.aonprd.com/Spells.aspx?ID=1709">sure strike</a></li>
-				</ul>
-			</div>
-			<div>
-				<h2>Rank 3</h2>
-				<ul>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1553">haste</a></li>
-					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1019">time jump</a></li>
-				</ul>
-			</div>
-			<div>
-				<h2>Rank 4</h2>
-				<ul>
-					<li><a class="spell electricity spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=283&NoRedirect=1">shocking grasp</a></li>
-					<li><a class="spell electricity spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=283&NoRedirect=1">shocking grasp</a></li>
-				</ul>
-			</div>
-		</section>
 
-		<section class="row">
-			<div class="ample">
-				<h2>Spellbook</h2>
-				<p>See the rules to <a href="https://2e.aonprd.com/Actions.aspx?ID=2366">Learn a spell</a>.</p>
+			<div>
+				<h2 title="5 Prepared: 2 Magus, 1 Basic Wizard Spellcasting, 2 Ring of Wizardry">Rank 1</h2>
+				<ul>
+					<li><a class="spell reaction" href="https://2e.aonprd.com/Spells.aspx?ID=1438">air bubble</a></li>
+					<li><a class="spell spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1524">fear</a></li>
+					<li><a class="spell three-actions spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=2573">kinetic ram</a></li>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1709">sure strike</a></li>
+				</ul>
+				<ul class="condensed">
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1285">flashy disappearance</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1550">gust of wind</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1286">helpful steps</a></li>
+					<li><a class="spell spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1561">hydraulic push</a></li>
+					<li><a class="spell electricity spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=283&NoRedirect=1">shocking grasp</a></li></li>
+					<li><a class="spell electricity spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1721">thunderstrike</a></li></li>
+				</ul>
 			</div>
-			<ul>
-				<li><a class="spell acid spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1461">caustic blast</a></li>
-				<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=2016">puff of poison</a></li>
-				<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=2021">scatter scree</a></li>
-				<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=2031">spout</a></li>
-			</ul>
-			<ul>
-				<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1285">flashy disappearance</a></li>
-				<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1972">carryall</a></li>
-				<li><a class="spell spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1561">hydraulic push</a></li>
-				<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1658">runic weapon</a></li>
-				<li><a class="spell electricity spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=283&NoRedirect=1">shocking grasp</a></li></li>
-			</ul>
-			<ul>
-				<li><a class="spell acid spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1436">acid grip</a></li>
-				<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1723">translate</a></li>
-				<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1493">dispel magic</a></li>
-				<li><a class="spell studious" href="https://2e.aonprd.com/Spells.aspx?ID=1541">gecko grip</a></li>
-				<li><a class="spell studious" href="https://2e.aonprd.com/Spells.aspx?ID=1755">water breathing</a></li>
-			</ul>
-			<ul>
-				<li><a class="spell fire" href="https://2e.aonprd.com/Spells.aspx?ID=869">blazing dive</a></li>
-				<li><a class="spell fire" href="https://2e.aonprd.com/Spells.aspx?ID=1530">fireball</a></li>
-				<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1544">ghostly weapon</a></li>
-				<li><a class="spell electricity" href="https://2e.aonprd.com/Spells.aspx?ID=1586">lightning bolt</a></li>
-				<li><a class="spell spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=943">mag. accerelation</a></li>
-			</ul>
-			<ul>
-				<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1534">fly</a></li>
-				<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1732">unfettered mov.</a></li>
-			</ul>
+
+			<div>
+				<h2 title="3 Prepared: 2 Magus, 1 Basic Wizard Spellcasting">Rank 2</h2>
+				<ul>
+					<li><a class="spell studious" href="https://2e.aonprd.com/Spells.aspx?ID=1455">blur</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1577">invisibility</a> <small>subtle!</small></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=197">mirror image</a></li>
+				</ul>
+				<ul class="condensed">
+					<li><a class="spell acid spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1436">acid grip</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1481">darkvision</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1493">dispel magic</a></li>
+					<li><a class="spell studious" href="https://2e.aonprd.com/Spells.aspx?ID=1541">gecko grip</a></li>
+					<li><a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=2761">lucky number</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1755">water breathing</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h2 title="2 Prepared: 2 Magus">Rank 3</h2>
+				<ul>
+					<li><a class="spell fire spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=869">blazing dive</a></li>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1019">time jump</a></li>
+				</ul>
+				<ul class="condensed">
+					<li><a class="spell fire spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1530">fireball</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1544">ghostly weapon</a></li>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1553">haste</a></li>
+					<li><a class="spell electricity spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=1586">lightning bolt</a></li>
+					<li><a class="spell spellstrike" href="https://2e.aonprd.com/Spells.aspx?ID=943">mag. accerelation</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h2 title="1 Prepared: 1 Magus">Rank 4</h2>
+				<ul>
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1732">unfettered movement</a></li>
+				</ul>
+				<ul class="condensed">
+					<li><a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1534">fly</a></li>
+				</ul>
+
+				<div class="apartee">
+					<h2><a href="https://2e.aonprd.com/Equipment.aspx?ID=2254">Librarian Staff</a> <b>4 SC</b></h2>
+					<ul>
+						<li>0. <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=864">approximate</a></li>
+						<li>0. <a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=246">read aura</a></li>
+						<li>1. <a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=970">pocket library</a></li>
+						<li>1. <a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=978">quick sort</a></li>
+						<li>1. <a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=584">share lore</a></li>
+						<li>2. <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1723">translate</a></li>
+					</ul>
+				</div>
+			</div>
 		</section>
 
 		<!-- title EQUIPMENT -->
@@ -368,29 +379,39 @@
 		<ul id="magicItemsWrapper">
 			<li><a class="invested" data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=3056">Arboreal Boots</a></li>
 			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=478">Ring of Minor Arcana</a></li>
-			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3114">Ventriloquist's Ring</a></li>
+			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=462">Ring of Wizardry</a></li>
+			<li><s><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=2327">Master Magus Ring</a></s></li>
+			<li><a href="https://2e.aonprd.com/Equipment.aspx?ID=2254">Librarian Staff</a></li>
 		</ul>
 
 		<ul id="inventory">
 			<!--Weapons-->
-			<li>
+			<li class="br">
 				<a data-bulk="1" href="https://2e.aonprd.com/Weapons.aspx?ID=398">Shortsword</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking</a>
 				— <a class="material" href="https://2e.aonprd.com/Equipment.aspx?ID=2916">Cold-iron</a>
+				— <s><a class="cold" href="https://2e.aonprd.com/Equipment.aspx?ID=2839">Frost</a></s>
 				<small>martial one-handed, 1d6PS, Agile Finesse.</small>
-				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=2990">Predator's Claw</a></div>
+				<div class="circumstancialBonus">5× <a href="https://2e.aonprd.com/Equipment.aspx?ID=2990">Predator's Claw</a> <small><span class="no-action">Envision</span> →
+					On crit, <a href="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> for 1 round³.</small></div>
 			</li>
+
 			<li class="br">
 				<a href="https://2e.aonprd.com/Weapons.aspx?ID=130">Monkey's Fist</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking</a>
 				— <a class="material" href="https://2e.aonprd.com/Equipment.aspx?ID=2920">Silver</a>
+				— <s><a class="fire" href="https://2e.aonprd.com/Equipment.aspx?ID=2838">Flaming</a></s>
 				<small>martial one-handed, 1d6B, Finesse Monk Nonlethal.</small>
-				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=2990">Predator's Claw</a></div>
+				<div class="circumstancialBonus">1× <a href="https://2e.aonprd.com/Equipment.aspx?ID=2990">Predator's Claw</a> <small><span class="no-action">Envision</span> →
+					On crit, <a href="https://2e.aonprd.com/Conditions.aspx?ID=31">prone</a>, <u title="Class DC">Reflex</u> negates.</small></div>
 			</li>
 
 			<!--Armors-->
 			<li>
-				<a class="invested" data-bulk="1" href="https://2e.aonprd.com/Armor.aspx?ID=41">Leather Armor</a> +1
+				<a class="invested" data-bulk="1" href="https://2e.aonprd.com/Armor.aspx?ID=41">Leather Armor</a> +1 <s><a href="https://2e.aonprd.com/Equipment.aspx?ID=2786">Resilient</a></s>
+				— <a href="https://2e.aonprd.com/Equipment.aspx?ID=4996">Sunweave</a>
 				<small>light, 1 armor, 0 str, 4 dex.</small>
-				<div class="circumstancialBonus"><a href="https://2e.aonprd.com/Equipment.aspx?ID=512">Snapleaf</a></li>
+				<div class="circumstancialBonus">2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=512">Snapleaf</a> <small><span class="reaction">Interact</span> →
+					Cast <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1542">gentle landing</a>
+					and <a class="spell subtle" href="https://2e.aonprd.com/Spells.aspx?ID=1577">invisibility</a> until you stop falling, max 1 minute.</small></div>
 			</li>
 		</ul>
 
@@ -407,6 +428,14 @@
 			<p>Guide used: <a href="https://docs.google.com/document/d/1hY1pR6Nik3e9aIgBwSA70DvPjWLjJ6G7rWpi3Tu563o/edit">Spell and Steel &copy;Hallo</a>.</p>
 
 			<p>Likes the study of magic, but not the pressure his academic familiy puts unto him. Finds inner peace in practicing fencing, too.</p>
+
+			<p>It's somewhat ambiguous if <a href="https://2e.aonprd.com/Feats.aspx?ID=9053">Distracting Spellstrike</a> works with <a class="one-action" href="https://2e.aonprd.com/Feats.aspx?ID=6481">Eye for Number</a>
+				to <a href="https://2e.aonprd.com/Actions.aspx?ID=2390">Feint</a> using Society with both a <u>+1 circ</u> and <u>+2 status</u> bonus.
+				It should, because Distracting Spellstrike only forbids changing the <em>effect</em> of a Feint, but it remains debatable.
+				If it does, grab a <a href="https://2e.aonprd.com/Equipment.aspx?ID=3066">Choker of Elocution</a> for the <u>+1 item</u> bonus and become amazing at feinting!
+				It's so good that you'll want to feint against <a href="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> foes because your status bonus becomes absurd and your chances to crit are great.</p>
+
+			<p>A handful of items are <s>crossed out</s> on this sheet, they are a wishlist for slightly higher levels.</p>
 
 			<dl class="charInfo">
 				<dt>Quality</dt>
@@ -432,32 +461,32 @@
 		<section class="row">
 			<dl class="charInfo">
 				<dt>heritage</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5227">Toughness</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5130">Canny Acumen</a> (Perception)</dd>
 				<dt>human 1</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4479">Natural Skill</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4478">NA</a> &gt;
+					<a href="https://2e.aonprd.com/Feats.aspx?ID=9045">Magus's Analysis</a></dd>
 				<dt>magus 2</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2850">Force Fang</a></dd>
 				<dt>archetype 2</dt>
 				<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=218">Wizard Dedication</a> (<a href="https://2e.aonprd.com/ArcaneSchools.aspx?ID=22">Battle Magic</a>)</dd>
 				<dt>general 3</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5118">AP</a> &gt;
-					<a href="https://2e.aonprd.com/Feats.aspx?ID=4478">NA</a> &gt;
-					<a href="https://2e.aonprd.com/Feats.aspx?ID=2847">Magus's Analysis</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5227">Toughness</a></dd>
 				<dt>academia 3</dt>
 				<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=29">Magaambyan Attendant</a></dd>
 				<dt>magus 4</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2854">Distracting Spellstrike</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=9057">Running Recharge</a></dd>
 				<dt>archetype 4</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5108">BA</a> &gt;
 					<a href="https://2e.aonprd.com/Feats.aspx?ID=5027">Nonlethal Spell</a></dd>
 				<dt>human 5</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=942">Gloomseer</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=4476">GT</a> &gt;
+					<a href="https://2e.aonprd.com/Feats.aspx?ID=5150">Fleet</a></dd>
 				<dt>magus 6</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5832">Reactive Strike</a></dd>
 				<dt>archetype 6</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5109">Basic Wizard Spellcasting</a></dd>
 				<dt>general 7</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5150">Fleet</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5160">Incredible Initiative</a></dd>
 			</dl>
 
 			<dl class="charInfo">
@@ -468,11 +497,11 @@
 				<dt>skill 2</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5204">Read Lips</a></dd>
 				<dt>skill 4</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5131">Cat Fall</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5205">Recognize Spell</a></dd>
 				<dt>academia 4</dt>
 				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5232">Unmistakable Lore</a></dd>
 				<dt>skill 6</dt>
-				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5125">Battle Medicine</a></dd>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5179">Magical Shorthand</a></dd>
 			</dl>
 
 			<dl class="charInfo">
@@ -485,9 +514,6 @@
 				<dd>Trained, Medicine</dd>
 				<dd>Trained, Occultism</dd>
 				<dd>Trained, Stealth</dd>
-				<dt>human 1</dt>
-				<dd>Trained, Deception</dd>
-				<dd>Trained, Diplomacy</dd>
 				<dt>arch. 2</dt>
 				<dd>Trained, Nature <small>Arcana*</small></dd>
 				<dt>academia 3</dt>
