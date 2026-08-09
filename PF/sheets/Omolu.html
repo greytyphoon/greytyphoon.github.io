@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rémi Doutre">
+	<meta property="og:title" content="Omolu Dolkness, spooky friend" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://greytyphoon.space/PF/sheets/Omolu.html" />
+	<meta property="og:image" content="https://i.pinimg.com/originals/08/d1/28/08d12817a1c2e76e1af225450624dc50.png" />
+	<meta property="og:description" content="The PF2 character sheet for Omolu Dolknesss, a 10th-level sprite necromancer." name="description">
+	<title>Grey's Necromancer</title>
+	<link rel="stylesheet" href="../system/pfCharacter.css">
+	<style>
+		.widest-er { flex: 10 !important; }
+		.apparition, .apparition > a { color: var(--virtue-blue); }
+		.apparition.grove, .apparition.grove > a { color: var(--conjuration-green); }
+		.apparition.stalker, .apparition.stalker > a { color: var(--necromancy-purple); }
+		.apparition.waters, .apparition.waters > a { color:var(--transmutation-teal); }
+	</style>
+</head>
+<body>
+	<nav id="fixref"><ul>
+		<li><a class="home" href="https://greytyphoon.space/PF">Home</a></li>
+	</ul></nav>
+
+	<div class="container">
+		<header>
+			<h1>Omolu Dolkness, spooky friend</h1>
+			N Tiny Fey
+		</header>
+
+		<section id="headerInfo" class="row">
+			<dl class="charInfo">
+				<dt>Str</dt>
+				<dd>0</dd>
+
+				<dt>Dex</dt>
+				<dd>4 <small>B, L1, L5, L10</small></dd>
+
+				<dt>Con</dt>
+				<dd>4 <small>A, L1, L5, L10</small></dd>
+
+				<dt>Int</dt>
+				<dd>5 <small>A, B, C, L1, L5, L10</small></dd>
+
+				<dt>Wis</dt>
+				<dd>4 <small>B, L1, L5, L10</small></dd>
+
+				<dt>Cha</dt>
+				<dd>0</dd>
+			</dl>
+			<dl id="subheader" class="charInfo">
+				<dt>Ancestry</dt>
+				<dd><a href="https://2e.aonprd.com/Ancestries.aspx?ID=39">Sprite</a></dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/Ancestries.aspx?ID=87">Duskwalker</a> Heritage</dd>
+
+				<dt>Background</dt>
+				<dd><a href="https://2e.aonprd.com/Backgrounds.aspx?ID=262">Discarded Duplicate</a></dd>
+
+				<dt>Class</dt>
+				<dd><a href="https://2e.aonprd.com/Classes.aspx?ID=75">Necromancer</a> 10</dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/FatalMethods.aspx?ID=1">Puppeteer</a> Fatal Method</dd>
+				<dd class="archetype"><a href="https://2e.aonprd.com/GrimFascinations.aspx?ID=4">Spirit</a> Grim Fascination</dd>
+			</dl>
+			<dl class="charInfo">
+				<dt>Deity</dt>
+				<dd><a href="https://2e.aonprd.com/Deities.aspx?ID=454">Imbrex</a></dd>
+
+				<dt>Senses</dt>
+				<dd title="Sprite Ancestry"><a href="https://2e.aonprd.com/Rules.aspx?ID=2411">Low-light vision</a></dd>
+				<dd title="Duskwalker Heritage"><a href="https://2e.aonprd.com/Rules.aspx?ID=2410">Darkvision</a></dd>
+				<dd title="Necromancer Lifesense"><a href="https://2e.aonprd.com/MonsterAbilities.aspx?ID=67">Lifesense</a> 30ft. [<a href="https://2e.aonprd.com/Rules.aspx?ID=2407">Imprecise</a>], see HP</dd>
+
+				<dt>Speed</dt>
+				<dd title="20 sprite">20 ft.</dd>
+				<dd title="Hero's Wings">Fly 25 ft.</dd>
+
+				<dt>Languages</dt>
+				<dd title="2 ancestry, 5 int">Atlantean, Elysian, Elven, Draconic, Empyrean, Fey, Necril</dd>
+			</dl>
+		</section>
+
+		<!-- title SKILLS & FEATS-->
+		<hr>
+		<img id="main-picture" src="https://i.pinimg.com/originals/08/d1/28/08d12817a1c2e76e1af225450624dc50.png" onclick="document.getElementById('large-picture').showModal()">
+		<button id="featsWrapper" class="br noprint" onclick="document.getElementById('build-info').showModal()">Open Feats</button>
+
+		<!-- SKILLS -->
+		<ul class="summations">
+			<li>
+				<strong>16</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=1">Acrobatics</a>
+				<small>4 dex, 2 prf, 10 lvl</small>
+			</li>
+			<li>
+				<strong>23</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=2">Arcana</a>
+				<small>5 int, 6 prf, 10 lvl, <u title="Ring of Wizardry">2 item</u></small>
+			</li>
+			<li>
+				<strong>17</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=4">Crafting</a>
+				<small>5 int, 2 prf, 10 lvl</small>
+			</li>
+			<li>
+				<strong>16</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=10">Nature</a>
+				<small>4 wis, 2 prf, 10 lvl</small>
+			</li>
+			<li>
+				<strong>23</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=11">Occultism</a>
+				<small>5 int, 6 prf, 10 lvl, <u title="Pendant of the Occult">2 item</u></small>
+			</li>
+			<li>
+				<strong>16</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=13">Religion</a>
+				<small>4 wis, 2 prf, 10 lvl</small>
+			</li>
+			<li>
+				<strong>16</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=15">Stealth</a>
+				<small>4 dex, 2 prf, 10 lvl</small>
+			</li>
+			<li class="br">
+				<strong>22</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=17">Thievery</a>
+				<small>4 dex, 6 prf, 10 lvl, <u title="Charlatan's Gloves">2 item</u></small>
+				<div class="circumstancialBonus" title="Pickpocket"><u>No penalty</u> to Steal when the object is in a pocket or closely guarded.</div>
+				<div class="circumstancialBonus" title="Subtle Theft">Observers <small>not the person you Steal from</small> take <u>-2 circ</u> to notice when you Steal.</div>
+				<div class="circumstancialBonus" title="Subtle Theft">If you Created a Diversion, stay Undetected when you Steal / Palm an Object.</div>
+			</li>
+			<li>
+				<strong>21</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">Undead Lore</a>
+				<small>5 int, 6 prf, 10 lvl</small>
+			</li>
+			<li>
+				<strong>17</strong>
+				<a href="https://2e.aonprd.com/Skills.aspx?ID=8">Warfare Lore</a>
+				<small>5 int, 2 prf, 10 lvl</small>
+			</li>
+		</ul>
+
+		<!-- title COMBAT -->
+		<hr>
+		<section class="row br">
+			<ul class="summations">
+				<li class="br">
+					<strong>18</strong>
+					<b>Perception</b>
+					<small>4 wis, 4 prf, 10 lvl</small>
+					<div class="circumstancialBonus" title="Incredible Initiative"><u>+2 circ</u> when rolling initiative.</div>
+					<div class="circumstancialBonus"><a class="no-action" href="https://2e.aonprd.com/Feats.aspx?ID=7797">Adaptive Stratagem</a> — Replace a tactic with another.</div>
+					<div class="circumstancialBonus"><a class="no-action" href="https://2e.aonprd.com/Feats.aspx?ID=7800">Rapid Assessment</a> — Immediately <a href="https://2e.aonprd.com/Actions.aspx?ID=2367">Recall Knowledge</a>.</div>
+				</li>
+				<li>
+					<strong>136</strong>
+					<b>HP</b>
+					<small>6 elf, 10 lvl: 8 necromancer, 4 con, <u title="Toughness">1 feat</u></small>
+					<div class="circumstancialBonus fire" title="Charm of Fire Resistance"><u>Resist 5</u> fire.</div>
+					<div class="circumstancialBonus" title="Toughness"><u>+1</u> to stabilize.</div>
+				</li>
+				<li class="br">
+					<strong>28</strong>
+					<b>AC</b>
+					<small>10, 4 dex, 2 prf, 10 lvl, <u title="1 armor, 1 Potency rune">2 item</u></small>
+					<div class="circumstancialBonus"><u>+1 circ</u> when casting <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1671">shield</a> (↻ 15 Hardness)</div>
+					<div class="circumstancialBonus"><u>+2 circ</u> when raising a shield.</div>
+				</li>
+				<li>
+					<strong>19</strong>
+					<b>Fort</b>
+					<small>4 con, 4 prf, 10 lvl, <u title="Resilient rune">1 item</u></small>
+				</li>
+				<li>
+					<strong>19</strong>
+					<b>Ref</b>
+					<small>4 dex, 4 prf, 10 lvl, <u title="Resilient rune">1 item</u></small>
+				</li>
+				<li>
+					<strong>19</strong>
+					<b>Will</b>
+					<small>4 wis, 4 prf, 10 lvl, <u title="Resilient rune">1 item</u></small>
+				</li>
+				<li class="circumstancialBonus" title="Mental Wards"><u>Success &rarr; Crit</u> vs mental/possession effects of undead/haunt.</li>
+				<li class="circumstancialBonus" title="Fanged Staff"><u>+2 circ</u> vs [void].</li>
+				<li class="circumstancialBonus"><u>+2 circ</u> when raising a <a href="https://2e.aonprd.com/Equipment.aspx?ID=2826">Spellguard Shield</a>.</li>
+			</ul>
+
+			<div class="wide">
+				<h2 class="reaction"><a href="https://2e.aonprd.com/Feats.aspx?ID=5205">Recognize Spell</a> (<a class="no-action" href="https://2e.aonprd.com/Feats.aspx?ID=5197">Quick Rec.</a>)</h2>
+				<h2 class="one-action br"><a href="https://2e.aonprd.com/Actions.aspx?ID=2316">Raise Shield</a></h2>
+
+				<h2 class="reaction"><a href="https://2e.aonprd.com/Actions.aspx?ID=4263">Inevitable Return</a></h2>
+				<p>When a foe <small>small or medium</small> dies within 30ft, create a thrall.</p>
+
+				<h2 class="reaction"><a href="https://2e.aonprd.com/Feats.aspx?ID=9106">Body Shield</a></h2>
+				<p>When attacked, sacrifice an adjacent thrall to gain <u>+2 circ</u> to AC and <u title="10 necromancer">resist 10</u>.</p>
+
+				<h2>Tactics</h2>
+				<dl class="condensed">
+					<dt class="two-actions"><a href="https://2e.aonprd.com/Tactics.aspx?ID=17">Demoralizing Charge</a></dt>
+					<dd>Two nearby squadmates <a class="no-action" href="https://2e.aonprd.com/Actions.aspx?ID=2305">Stride</a> towards a foe, then <a class="reaction" href="https://2e.aonprd.com/Actions.aspx?ID=2306">Strike</a>.
+						Foes hit become <a href="https://2e.aonprd.com/Conditions.aspx?ID=76">frightened 1 or 2</a>.
+						<small title="10, 5 int, 2 prf, 10 lvl">Will DC 27 negates, with penalty for being targeted twice, hit twice, and/or crit.</small></dd>
+
+					<dt class="one-action"><a href="https://2e.aonprd.com/Tactics.aspx?ID=10">Pincer Attack</a></dt>
+					<dd>All squadmates can <a class="reaction" href="https://2e.aonprd.com/Actions.aspx?ID=2304">Step</a>.
+						If they do, adjacent foes are <a href="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> vs melee attacks for 1 round³.</dd>
+
+					<dt class="one-action"><a href="https://2e.aonprd.com/Tactics.aspx?ID=6">Protective Screen</a></dt>
+					<dd>A squadmate <a class="reaction" href="https://2e.aonprd.com/Actions.aspx?ID=2305">Strides</a> towards a nearby 2nd squadmate.<br>
+						If they are adjacent, the 2nd squadmate triggers no reaction from spells or ranged attacks for 1 round².</dd>
+
+					<dt class="one-action"><s><a href="https://2e.aonprd.com/Tactics.aspx?ID=2">Gather to Me!</a></s></dt>
+					<dd>All squadmates can <a class="no-action" href="https://2e.aonprd.com/Actions.aspx?ID=2305">Stride</a>, must end up nearby.</dd>
+
+					<dt class="one-action"><s><a href="https://2e.aonprd.com/Tactics.aspx?ID=4">Naval Training</a></s></dt>
+					<dd>All squadmates gain <u>Swim 20 ft</u>. You can use Warfare to Swim.</dd>
+
+					<dt class="two-actions"><s><a href="https://2e.aonprd.com/Tactics.aspx?ID=18">Slip and Sizzle</a></s></dt>
+					<dd>A nearby squadmate <a class="reaction" href="https://2e.aonprd.com/Actions.aspx?ID=2382">Trips</a> a foe.
+						On hit, a 2nd nearby squadmate <a class="reaction" href="https://2e.aonprd.com/Actions.aspx?ID=2734">casts a spell</a> on that foe.<br>
+						Unless it's a cantrip, the 2nd squadmate becomes <a href="https://2e.aonprd.com/Conditions.aspx?ID=92">slowed 1</a> and doesn't regain a reaction next turn.</dd>
+				</dl>
+			</div>
+		</section>
+
+		<!-- title Spells -->
+		<hr class="newPage">
+		<section class="row">
+			<div>
+				<h2>Prepared <a href="https://2e.aonprd.com/SpellLists.aspx?Tradition=3">Occult</a> Spells</h2>
+				<p class="summation">
+					<strong>19</strong>
+					<b>Attack</b>; 29 <b>DC</b>
+					<small>10, 5 int, 4 prf, 10 lvl</small>
+				</p>
+				<p class="condensed noprint">See the rules to <a href="https://2e.aonprd.com/Actions.aspx?ID=2366">Learn a spell</a> (<a href="https://2e.aonprd.com/Feats.aspx?ID=5179">Magical Shorthand</a>).</p>
+				<ul class="condensed">
+					<li class="no-action"><a href="https://2e.aonprd.com/FatalMethods.aspx?ID=1">Consume Thrall</a> — 1/day — Destroy a thrall and gain 1 FP.</li>
+					<li class="one-action"><a href="https://2e.aonprd.com/Feats.aspx?ID=9125">Infused Void</a> — A grave spell adds <u title="spell's rank">5 dmg 💀</u>. If it brings a foe to 0 HP, gain 1 FP <small>once per 10 minutes</small>.</li>
+					<li class="no-action"><a href="https://2e.aonprd.com/Equipment.aspx?ID=3108">Shadow Signet</a> — A spell targets Fort DC or Reflex DC instead of AC.</li>
+				</ul>
+			</div>
+
+			<!--Needle Darts-->
+			<div class="weapon slim">
+				<h2 class="two-actions">Needle Darts <b>P</b> <b class="range strict">60ft</b></h2>
+				<div class="summation"><strong>+19</strong> vs AC <u title="Shadow Signet">or Fort or Reflex</u> <small>occult spell attack</small></div>
+				<div class="summation"><strong>7d4</strong></div>
+				<div class="circumstancialBonus">On crit, add <u>5 dot 🩸</u>.</div>
+			</div>
+		</section>
+
+		<section class="row">
+			<div>
+				<h2>Cantrips</h2>
+				<ul>
+					<li><a class="spell reaction" href="https://2e.aonprd.com/Spells.aspx?ID=1352">eat fire</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1528">figment</a> <small>subtle!</small></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1375">needle darts</a></li>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=1671">shield</a></li>
+					<li><a class="spell two-actions void" href="https://2e.aonprd.com/Spells.aspx?ID=1745">void warp</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 1</h2>
+				<ul>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1451">bless</a></li>
+					<li><a class="spell reaction" href="https://2e.aonprd.com/Spells.aspx?ID=2760">lose the path</a></li>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=2354">liberating command</a></li>
+				</ul>
+				<ul class="condensed">
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1524">fear</a></li>
+					<li><a class="spell three-actions bonus" href="https://2e.aonprd.com/Spells.aspx?ID=1552">harm</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1568">illusory disguise</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1641">protection</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1678">soothe</a></li>
+					<li><a class="spell three-actions bonus" href="https://2e.aonprd.com/Spells.aspx?ID=1706">summon undead</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 2</h2>
+				<ul>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1480">darkness</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=63">death knell</a> <small>death</small></li>
+					<li><a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1594">marvelous mount</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1653">revealing light</a></li>
+				</ul>
+				<ul class="condensed">
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1493">dispel magic</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1625">peaceful rest</a></li>
+				</ul>
+			</div>
+			<div class="slim">
+				<h2>Rank 3</h2>
+				<ul>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1524">fear</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1677">slow</a></li>
+				</ul>
+				<ul class="condensed">
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1553">haste</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1555">heroism</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 4</h2>
+				<ul>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1742">vision of death</a> <small>death</small></li>
+					<li><a class="spell two-actions void" href="https://2e.aonprd.com/Spells.aspx?ID=2046">whispers of the void</a></li>
+				</ul>
+				<ul class="condensed">
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1471">confusion</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1534">fly</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1956">luring wail</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1615">nightmare</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 5</h2>
+				<ul>
+					<li><a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=2743">incarnate skeletal giant</a></li>
+					<li><a class="spell reaction" href="https://2e.aonprd.com/Spells.aspx?ID=274">shadow siphon</a></li>
+					<li title="Conjurer of Corpses"><a class="spell three-actions bonus" href="https://2e.aonprd.com/Spells.aspx?ID=1706">summon undead</a></li>
+				</ul>
+				<ul class="condensed">
+					<li><a class="spell three-actions void" href="https://2e.aonprd.com/Spells.aspx?ID=2525">blood-feasting breath</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=2652">calcium rain</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1551">hallucination</a> <small>subtle!</small></li>
+					<li><a class="spell three-actions void" href="https://2e.aonprd.com/Spells.aspx?ID=2806">rip the spirit</a> <small>death</small></li>
+					<li><a class="spell three-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1676">slither</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=2042">wall of flesh</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="apartee">
+				<h2>Ring of Minor Arcana</h2>
+				<ul>
+					<li>∞ <a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1485">detect magic</a></li>
+					<li>∞ <a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1639">prestidigitation</a></li>
+					<li>∞ <a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1715">telekinetic hand</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Grave Spells <b>3 FP</b></h2>
+				<ul>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=2890">bone spear</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=2900">life tap</a></li>
+					<li><a class="spell two-actions void" href="https://2e.aonprd.com/Spells.aspx?ID=2903">necrotic bomb</a></li>
+				</ul>
+			</div>
+			<div class="wide">
+				<h2>Grave Cantrips</h2>
+				<ul>
+					<li><a class="spell one-action" href="https://2e.aonprd.com/Spells.aspx?ID=2895">create thrall</a> — <span class="condensed" title="Puppeteer Fatal Method">1/round, create an extra thrall.</span></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=2911">thrall charge</a></li>
+				</ul>
+			</div>
+			<!--Thrall Strike-->
+			<div class="weapon ample">
+				<h2>Thrall Strike <b>BPS</b></h2>
+				<div class="summation"><strong>+19</strong> vs AC <small>occult spell attack</small></div>
+				<div class="summation"><strong>3d6</strong></div>
+			</div>
+			<div class="apartee">
+				<h2>Wands &amp; Items</h2>
+				<ul>
+					<li>∞ <a class="spell one-action" title="Pendant of the Occult" href="https://2e.aonprd.com/Spells.aspx?ID=1549">guidance</a></li>
+					<li>3× <a class="spell one-action" title="Invisibility Rune" href="https://2e.aonprd.com/Spells.aspx?ID=1577">invisibility</a>²</li>
+					<li>1× <a class="spell three-actions" title="Magic Wand" href="https://2e.aonprd.com/Spells.aspx?ID=1474">cozy cabin</a>³</li>
+					<li>1× <a class="spell three-actions" title="Pendant of the Occult" href="https://2e.aonprd.com/Spells.aspx?ID=1503">dream message</a>⁴</li>
+				</ul>
+			</div>
+		</section>
+
+		<h2><a href="https://2e.aonprd.com/Equipment.aspx?ID=5164">Fanged Staff</a> <b>5 SC</b></h2>
+		<section class="row">
+			<div class="slim">
+				<h2>Cantrips</h2>
+				<ul>
+					<li><a class="spell two-actions mental" href="https://2e.aonprd.com/Spells.aspx?ID=1482">daze</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 1</h2>
+				<ul>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1470">command</a></li>
+					<li><a class="spell two-actions void" href="https://2e.aonprd.com/Spells.aspx?ID=1548">grim tendrils</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 2</h2>
+				<ul>
+					<li><a class="spell reaction" href="https://2e.aonprd.com/Spells.aspx?ID=1454">blood vendetta</a></li>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=2682">draw blood</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 3</h2>
+				<ul>
+					<li><a class="spell two-actions" href="https://2e.aonprd.com/Spells.aspx?ID=1516">enthrall</a></li>
+					<li><a class="spell two-actions void" href="https://2e.aonprd.com/Spells.aspx?ID=1736">vampiric feast</a> <small>death</small></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Rank 4</h2>
+				<ul>
+					<li><a class="spell two-actions void" href="https://2e.aonprd.com/Spells.aspx?ID=2809">sanguine mist</a> <small>death</small></li>
+					<li><a class="spell two-actions void" href="https://2e.aonprd.com/Spells.aspx?ID=2039">vampiric maiden</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- title EQUIPMENT -->
+		<hr>
+		<ul id="mundaneItemsWrapper">
+			<li><a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2700">Adventurer's Pack</a></li>
+			<li>I.<a class="worn" data-bulk=".1" href="https://2e.aonprd.com/Equipment.aspx?ID=2758">Thieves' Toolkit</a></li>
+
+			<li class="gold" onclick="alert(`Total carried: ${[...document.querySelectorAll('[data-bulk]')].reduce((a, e) => a + 10*parseFloat(e.dataset.bulk), 0)/10} Bulk.`)">350 <b>GP</b></li>
+		</ul>
+		<ul id="magicItemsWrapper">
+			<li>G.<a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3064">Charlatan's Gloves</a></li>
+			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3065">Charm of Fire Resistance</a></li>
+			<li>G.<a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3098">Pendant of the Occult</a></li>
+			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=478">Ring of Minor Arcana</a></li>
+			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=462">Ring of Wizardry</a> type II</li>
+			<li><a class="invested" href="https://2e.aonprd.com/Equipment.aspx?ID=3108">Shadow Signet</a></li>
+			<li>G.<a href="https://2e.aonprd.com/Equipment.aspx?ID=3047">Staff of the Dead</a></ki>
+		</ul>
+
+		<ul id="inventory">
+			<!--Weapons-->
+			<li>
+				<a data-bulk=".1" href="https://2e.aonprd.com/Weapons.aspx?ID=358">Dagger</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking</a>
+				— <a class="material" href="https://2e.aonprd.com/Equipment.aspx?ID=2856">Cold-iron</a>
+				<small>simple one-handed, 1d4PS, Agile Finesse Thrown-10ft.</small>
+			</li>
+			<li class="br">
+				<a data-bulk=".1" href="https://2e.aonprd.com/Weapons.aspx?ID=358">Dagger</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking</a>
+				— <a class="material" href="https://2e.aonprd.com/Equipment.aspx?ID=2860">Silver</a>
+				<small>simple one-handed, 1d4PS, Agile Finesse Thrown-10ft.</small>
+			</li>
+
+			<!--Armors-->
+			<li>
+				<a class="invested" data-bulk="1" href="https://2e.aonprd.com/Armor.aspx?ID=41">Leather Armor</a> +1 <a href="https://2e.aonprd.com/Equipment.aspx?ID=2786">Resilient</a>
+				— G.<a href="https://2e.aonprd.com/Equipment.aspx?ID=2790">Invisibility</a>
+				<small>light, 1 armor, 0 str, 4 dex.</small>
+				<div class="circumstancialBonus">2× <a href="https://2e.aonprd.com/Equipment.aspx?ID=512">Snapleaf</a> <small><span class="reaction">Interact</span> →
+					Cast <a class="spell" href="https://2e.aonprd.com/Spells.aspx?ID=1542">gentle landing</a>
+					and <a class="spell subtle" href="https://2e.aonprd.com/Spells.aspx?ID=1577">invisibility</a> until you stop falling, max 1 minute.</small></div>
+			</li>
+			<li class="br">
+				<a data-bulk="1" href="https://2e.aonprd.com/Equipment.aspx?ID=2826">Spellguard Shield</a>
+				<small>2 shield, 6 Hard, 24 HP.</small>
+			</li>
+		</ul>
+	</div>
+
+	<dialog id="build-info" class="info" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<section class="row">
+			<dl class="charInfo">
+				<dt>sprite 1</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2632">Evanescent Wings</a></dd>
+				<dt>necro 2</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=9097">Widespread Fascination</a></dd>
+				<dt>arch. 2</dt>
+				<dd><a href="https://2e.aonprd.com/Archetypes.aspx?ID=322">Commander Dedication</a></dd>
+				<dt>general 3</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5227">Toughness</a></dd>
+				<dt>necro 4</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=9106">Body Shield</a></dd>
+				<dt>arch. 4</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=7888">Tactical Excellence</a></dd>
+				<dt>sprite 5</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2639">Energize Wings</a></dd>
+				<dt>necro 6</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=9118">Conjurer of Corpses</a></dd>
+				<dt>arch. 6</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=7887">BFT</a> &gt;
+					<a href="https://2e.aonprd.com/Feats.aspx?ID=7797">Adaptive Stratagem</a></dd>
+				<dt>general 7</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5160">Incredible Initiative</a></dd>
+				<dt>necro 8</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=9125">Infused Void</a></dd>
+				<dt>arch. 8</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=7888">Tactical Excellence</a></dd>
+				<dt>sprite 9</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=2643">Hero's Wings</a></dd>
+				<dt>necro 10</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=9133">Necromantic Lifesense</a></dd>
+				<dt>arch. 10</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=7889">AFT</a> &gt;
+					<a href="https://2e.aonprd.com/Feats.aspx?ID=7800">Rapid Assessment</a></dd>
+			</dl>
+
+			<dl class="charInfo">
+				<dt>skill 2</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5205">Recognize Spell</a></dd>
+				<dt>skill 4</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5187">Pickpocket</a></dd>
+				<dt>skill 6</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5220">Subtle Theft</a></dd>
+				<dt>skill 8</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5197">Quick Recognition</a></dd>
+				<dt>skill 10</dt>
+				<dd><a href="https://2e.aonprd.com/Feats.aspx?ID=5201">Quick Unlock</a></dd>
+			</dl>
+
+			<dl class="charInfo">
+				<dt>background</dt>
+				<dd>Trained, Stealth*</dd>
+				<dt>necro 1</dt>
+				<dd>Trained, Occultism*</dd>
+				<dd>Trained, Acrobatics</dd>
+				<dd>Trained, Arcana</dd>
+				<dd>Trained, Nature</dd>
+				<dd>Trained, Religion</dd>
+				<dd>Trained, Society</dd>
+				<dd>Trained, Thievery</dd>
+				<dt>custom 3</dt>
+				<dd>Expert, Occultism*</dd>
+				<dt>skill 3</dt>
+				<dd>Expert, Arcana</dd>
+				<dt>skill 5</dt>
+				<dd>Expert, Thievery</dd>
+				<dt>custom 7</dt>
+				<dd>Master, Occultism*</dd>
+				<dt>skill 7</dt>
+				<dd>Master, Arcana</dd>
+				<dt>skill 9</dt>
+				<dd>Master, Thievery</dd>
+				<dt>int boost 10</dt>
+				<dd>Trained, Crafting</dd>
+			</dl>
+		</section>
+	</dialog>
+
+	<dialog id="large-picture" class="gallery" onclick="if (event.target.nodeName === 'DIALOG') close();">
+		<b onclick="parentNode.close();">✖</b>
+		<h2>Omolu – AI-generated</h2>
+		<img src="https://i.pinimg.com/originals/08/d1/28/08d12817a1c2e76e1af225450624dc50.png">
+	</dialog>
+</body>
+</html>
