@@ -6,7 +6,7 @@
 	<title>Mousehunt</title>
 	<link rel="stylesheet" href="basic.css">
 	<style>
-		img.powertype, img.title { display: inline-block; width: 1em; height: 1em; }
+		img.powertype, img.title { display: inline-block; width: 1rem; height: 1rem; }
 		small { color: var(--tint-grey); }
 		small::before { content: "("; }
 		small::after { content: ")"; }
@@ -21,7 +21,11 @@
 			font-size: .75em;
 			b { color: var(--tint-black); font-size: 1rem; font-weight: unset; }
 		}
-		table.worth-me td[rowspan] { vertical-align: top; &, & ~ td { border-top: 1px solid var(--tint-grey); } }
+		table.worth-me td[rowspan] { vertical-align: top; font-size: .75rem; &, & ~ td { border-top: 1px solid var(--tint-grey); } }
+		table.worth-me td i { color: var(--tint-grey); font-size: .75rem; }
+		table.worth-me td .yes { color: var(--serene-green); }
+		table.worth-me td .no { color: var(--murder-red); }
+		table.worth-me td .plus { font-family: arial; }
 		em { color: var(--tint-grey); float: right; font-size: 10px; }
 		h3 { margin-bottom: .25em; }
 	</style>
@@ -38,7 +42,6 @@
 				<ol>
 					<li>Conclusion Cliffs	<ul><li>Diamond base <small>40</small><em>35m, 225diamonds</em></li></ul></li>
 					<li>Cerulean Skyport	<ul><li>C.Tribal Vegetation Kaboom base <em>5m, 200ingots, 3aejs</em></li>
-												<li>C.Desert Heater base <em>5m, 200ingots, 3aejs</em></li>
 												<li>C.Queso Cannonstorm base <em>5m, 200ingots, 3aejs</em></li>
 												<li>C.Thief base <em>5m, 200ingots, 3aejs</em></li></ul></li>
 					<li>Valour Rift			<ul><li>Codex of Valour: Bard page <em>16m, 50cores</em></li>
@@ -307,114 +310,116 @@
 		</table>
 		</details>
 
-		<details>
-		<summary class="subtitle">Sould I use ME?</summary>
+		<details open>
+		<summary class="subtitle">Should I use ME? <span style="float:right">🐭</span></summary>
 		<section class="row">
 		<table class="worth-me">
-			<tr><td rowspan="6"><img class="title" alt="Viceroy" src="https://www.mousehuntgame.com/images/titles/e2e79f6f9201a4d4e7a89684fbb5356f.png"> Conclusion Cliffs +</td>
-				<td>Deus Ex Maconnais</td>			<td>Yes</td></tr>
-			<tr><td>Storied Saga</td>				<td>Yes</td></tr>
-			<tr><td>Plotting Paneer</td>			<td>Use double recipe</td></tr>
-			<tr><td>Symbolic Sirene</td>			<td>Yes</td></tr>
-			<tr><td>Allegory Anari</td>				<td>Yes</td></tr>
-			<tr><td>Metaphor Manchego</td>			<td>Yes, Marketplace</td></tr>
+			<tr><td rowspan="6"><img class="title" alt="Viceroy" src="https://www.mousehuntgame.com/images/titles/e2e79f6f9201a4d4e7a89684fbb5356f.png"> Conclusion Cliffs <span class="plus">+</span></td>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/e3756f60e44e04a3a707b19927cc5247.gif?cv=8"> Deus Ex Maconnais <i>DEM</i></td>			<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/66c6201188abae2445c20659a701fe71.gif?cv=8"> Storied Saga</td>					<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/c79be63fb9af37ca40153902d7bd096e.gif?cv=8"> Plotting Paneer</td>					<td>Use double recipe</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/b83b408f4561d3599b74823b63679070.gif?cv=8"> Symbolic Sirene</td>					<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/f235ddad1c513ef07bea519050549679.gif?cv=8"> Allegory Anari</td>					<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/71cc6606a7fc494affc698a032bd26e0.gif?cv=8"> Metaphor Manchego</td>				<td><span class="yes">Yes</span>, Marketplace</td></tr>
 
 			<tr><td rowspan="4"><img class="title" alt="Viceroy" src="https://www.mousehuntgame.com/images/titles/e2e79f6f9201a4d4e7a89684fbb5356f.png"> Draconic Depths</td>
-				<td>Elemental Emmental</td>			<td>Yes</td></tr>
-			<tr><td>Fiery Fontina</td>				<td>Yes, prefer ashes</td></tr>
-			<tr><td>Icy Isabirra</td>				<td>Yes, prefer ashes</td></tr>
-			<tr><td>Poisonous Provolone</td>		<td>Yes, prefer ashes</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/da68d2f3d86a954ccca44e4b99e20ee5.gif?cv=8"> Elemental Emmental <i>EEC</i></td>	<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/fe511c2f7d33c02c056341d6e247d1f8.gif?cv=8"> Fiery Fontina <i>RGB</i></td>		<td>Maybe, Ashes better</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/1db25f479ac92d18740a28167317b49e.gif?cv=8"> Icy Isabirra <i>RGB</i></td>		<td>Maybe, Ashes better</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/61f0445047e2836105bd5ab533df4657.gif?cv=8"> Poisonous Provolone <i>RGB</i></td>	<td>Maybe, Ashes better</td></tr>
 
 			<tr><td rowspan="2"><img class="title" alt="Viceroy" src="https://www.mousehuntgame.com/images/titles/e2e79f6f9201a4d4e7a89684fbb5356f.png"> School of Sorcery</td>
-				<td>Master Mimolette</td>			<td>Yes</td></tr>
-			<tr><td>Apprentice Ambert</td>			<td>Yes</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/59384cd17b9e9daa6aa0c3defe6463cf.gif?cv=8"> Master Mimolette</td>				<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/8094ce45129a655a71717aaea1f98b1f.gif?cv=8"> Apprentice Ambert</td>				<td><span class="yes">Yes</span></td></tr>
 
 			<tr><td rowspan="4"><img class="title" alt="Viceroy" src="https://www.mousehuntgame.com/images/titles/e2e79f6f9201a4d4e7a89684fbb5356f.png"> Bountiful Beanstalk</td>
-				<td>Ruby Beanster</td>				<td>Yes</td></tr>
-			<tr><td>Leaping Lavish Beanster</td>	<td>Yes</td></tr>
-			<tr><td>Lavish Beanster</td>			<td>Yes</td></tr>
-			<tr><td>Beanster</td>					<td>No, Marketplace</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/9d133484bac51b450b33ced62df6f016.gif?cv=8"> Royal Beanster</td>					<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/388fa1a2296fb82d94158e09c9b190d4.gif?cv=8"> Leaping Lavish Beanster</td>		<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/19fc88bdeaa3d8e184a143de9199c78b.gif?cv=8"> Lavish Beanster</td>				<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/aaf9cbf2869757ca7400f0a6f9a87de4.gif?cv=8"> Beanster</td>						<td><span class="no">No</span>, Marketplace</td></tr>
 
 			<tr><td rowspan="1"><img class="title" alt="Archduke" src="https://www.mousehuntgame.com/images/titles/043efe31de4f0f2e0ddca590fe829032.png"> Valour Rift</td>
-				<td>Gauntlet String</td>			<td>No, Marketplace</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/b0aafa6415e1a5e7da24cdf53eb8fb28.gif?cv=8"> Gauntlet String <i>GSC</i></td>		<td><span class="no">No</span>, Marketplace</td></tr>
 
-			<tr><td rowspan="6"><img class="title" alt="Archduke" src="https://www.mousehuntgame.com/images/titles/043efe31de4f0f2e0ddca590fe829032.png"> Table of Content +</td>
-				<td>Final Draft Derby</td>			<td>Yes</td></tr>
-			<tr><td>2nd Draft Derby</td>			<td>Yes</td></tr>
-			<tr><td>1st Draft Derby</td>			<td>No</td></tr>
-			<tr><td>Stormy Clamembert</td>			<td>Yes</td></tr>
-			<tr><td>Clamembert</td>					<td>No</td></tr>
-			<tr><td>Grubbeen</td>					<td>No, use KC</td></tr>
+			<tr><td rowspan="6"><img class="title" alt="Archduke" src="https://www.mousehuntgame.com/images/titles/043efe31de4f0f2e0ddca590fe829032.png"> Table of Content <span class="plus">+</span></td>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/b795ead711d9f0923795eab9d38b7b41.gif?cv=8"> Final Draft Derby <i>FDD</i></td>	<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/822824eb72d75a5301a95ea9ec819eca.gif?cv=8"> 2nd Draft Derby <i>2DD</i></td>		<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/cc39ca7cddfaeef0a744467bce203e19.gif?cv=8"> 1st Draft Derby <i>1DD</i></td>		<td><span class="no">No</span>, don't use this</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/041eff9f5b26aac2c288442f893e12aa.gif?cv=8"> Stormy Clamembert</td>				<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/e3fe144140bf844dfe89e8d83b53a01c.gif?cv=8"> Clamembert</td>						<td><span class="no">No</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/77d19fc021bbd2d522795fdb93de5476.gif?cv=8"> Grubbeen</td>						<td><span class="no">No</span>, can use KC</td></tr>
 
 			<tr><td rowspan="1"><img class="title" alt="Archduke" src="https://www.mousehuntgame.com/images/titles/043efe31de4f0f2e0ddca590fe829032.png"> Cerulean Skyport</td>
-				<td>Aurora Bocconcini</td>			<td>Yes</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/b6cc66455ad21972d05b458f53164dfb.gif?cv=8"> Aurora Bocconcini</td>				<td><span class="yes">Yes</span></td></tr>
 
 			<tr><td rowspan="3"><img class="title" alt="Archduke" src="https://www.mousehuntgame.com/images/titles/043efe31de4f0f2e0ddca590fe829032.png"> Floating Islands</td>
-				<td>Extra Rich Cloud Cheesecake</td>	<td>Yes</td></tr>
-			<tr><td>Sky Pirate Swiss</td>			<td>Yes</td></tr>
-			<tr><td>Cloud Cheesecake</td>			<td>No, Marketplace</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/4de8e0b9680cb50a980fcb40de11c8a2_v2.gif?cv=8"> <span style="font-size:.75rem;">Extra Rich Cloud Cheesecake</span> <i>ERCC</i></td>	<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/d3d3578292674d2a242f70211c040cfa.gif?cv=8"> Sky Pirate Swiss <i>SPS</i></td>	<td><span class="yes">Yes</span>, or leech Corsair</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/935f840dbea4d7be71323b9a148cca62.gif?cv=8"> Cloud Cheesecake <i>CCC</i></td>	<td><span class="no">No</span>, Marketplace</td></tr>
 
 			<tr><td rowspan="1"><img class="title" alt="Grand Duke" src="https://www.mousehuntgame.com/images/titles/87937fa96bbb3b2dd3225df883002642.png"> BW. Rift</td>
-				<td>Ancient String</td>				<td>No, Marketplace</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/5cb84d2e781edafc6419b8cab67f92ce.gif?cv=8"> Ancient String <i>ASC</i></td>		<td><span class="no">No</span>, Marketplace</td></tr>
 
 			<tr><td rowspan="1"><img class="title" alt="Grand Duke" src="https://www.mousehuntgame.com/images/titles/87937fa96bbb3b2dd3225df883002642.png"> Furoma Rift</td>
-				<td>All</td>						<td>Yes</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/9102b40aa202216244cdc371abbe990f.gif?cv=8"> All</td>						<td><span class="yes">Yes</span></td></tr>
 		</table>
 
 		<table class="worth-me">
 			<tr><td rowspan="3"><img class="title" alt="Grand Duke" src="https://www.mousehuntgame.com/images/titles/87937fa96bbb3b2dd3225df883002642.png"> Moussu Picchu</td>
-				<td>Dragonvine</td>					<td>Yes</td></tr>
-			<tr><td>Rainy</td>						<td>No, use GGC</td></tr>
-			<tr><td>Windy</td>						<td>No, use GGC</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/0b950a3b85c543fe1e7bc3a7a4137580.gif?cv=8"> Dragonvine</td>					<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/8d9e4b6192c5a0c5065c423e48994406.gif?cv=8"> Rainy</td>						<td><span class="no">No</span>, use Gouda</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/41285edef269a2e75f55e67fba285415.gif?cv=8"> Windy</td>						<td><span class="no">No</span>, use Gouda</td></tr>
 
 			<tr><td rowspan="1"><img class="title" alt="Duke" src="https://www.mousehuntgame.com/images/titles/eb46ac1e8197b13299ab860f07d963db.png"> WW. Rift</td>
-				<td>Lactrodectus Lancashire</td>	<td>Yes</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/f31af0da30f21b5e30c7ff29f4507c36.gif?cv=8"> Lactrodectus Lancashire <i>LLC</i></td>	<td><span class="yes">Yes</span></td></tr>
 
 			<tr><td rowspan="3"><img class="title" alt="Duke" src="https://www.mousehuntgame.com/images/titles/eb46ac1e8197b13299ab860f07d963db.png"> B. Rift</td>
-				<td>Polluted Parmesan</td>			<td>Ok</td></tr>
-			<tr><td>Terre Ricotta</td>				<td>Ok</td></tr>
-			<tr><td>Undead String Emmental</td>		<td>No, Marketplace</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/d89cab40ff55a802ca833d9d777fb971.gif?cv=8"> Polluted Parmesan</td>			<td>Maybe</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/c57bb2cd8a9f5d649b203c618d937efa.gif?cv=8"> Terre Ricotta</td>				<td>Maybe</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/b1986ee4f9560604498a563085c2cf10.gif?cv=8"> Undead String Emmental</td>		<td><span class="no">No</span>, Marketplace</td></tr>
 
 			<tr><td rowspan="2"><img class="title" alt="Duke" src="https://www.mousehuntgame.com/images/titles/eb46ac1e8197b13299ab860f07d963db.png"> Fungal Cavern</td>
-				<td>Mineral</td>					<td>Ok</td></tr>
-			<tr><td>Glowing Gruyere</td>			<td>No, Marketplace</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/54e77b072ea2e2c6db0b4d5ab8230413.gif?cv=8"> Mineral</td>					<td>Maybe</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/d681f93fa679e6672da52fb5eb910e74.gif?cv=8"> Glowing Gruyere <i>GGC</i></td>	<td><span class="no">No</span>, Marketplace</td></tr>
 
 			<tr><td rowspan="5"><img class="title" alt="Count" src="https://www.mousehuntgame.com/images/titles/dd11711a25b80db90e0306193f2e8d78.png"> Queso Canyon</td>
-				<td>Wildfire Queso</td>				<td>Yes</td></tr>
-			<tr><td>Flamin’ Queso</td>				<td>Yes</td></tr>
-			<tr><td>Hot Queso</td>					<td>Yes</td></tr>
-			<tr><td>Medium Queso</td>				<td>Ok</td></tr>
-			<tr><td>Mild Queso</td>					<td>Ok</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/73891a065f1548e474177165734ce78d.gif?cv=8"> Wildfire Queso</td>				<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/5a69c1ea617ba622bd1dd227afb69a68.gif?cv=8"> Flamin’ Queso</td>				<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/11d1170bc85f37d67e26b0a05902bc3f.gif?cv=8"> Hot Queso</td>					<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/be747798c5e6a7747ba117e9c32a8a1f.gif?cv=8"> Medium Queso</td>				<td>Maybe</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/7193159aa90c85ba67cbe02d209e565f.gif?cv=8"> Mild Queso</td>					<td>Maybe</td></tr>
 
 			<tr><td rowspan="1"><img class="title" alt="Count" src="https://www.mousehuntgame.com/images/titles/dd11711a25b80db90e0306193f2e8d78.png"> Sunken City</td>
-				<td>Fishy Fromage</td>				<td>No</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/1f6237cebe21954e53d6586b2cbdfe39.gif?cv=8"> Fishy Fromage</td>				<td><span class="no">No</span></td></tr>
 
 			<tr><td rowspan="2"><img class="title" alt="Count" src="https://www.mousehuntgame.com/images/titles/dd11711a25b80db90e0306193f2e8d78.png"> G.Rift</td>
-				<td>Resonator</td>					<td>Ok</td></tr>
-			<tr><td>Riftiago</td>					<td>Ok</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/acde29a132be29bc71450284fe303bd4.gif?cv=8"> Resonator</td>					<td>Maybe</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/5eee5e69f31c0cbeccecbf9830a498d0.gif?cv=8"> Riftiago</td>					<td>Maybe</td></tr>
 
-			<tr><td rowspan="4"><img class="title" alt="Baron" src="https://www.mousehuntgame.com/images/titles/ea9c0ec2e6d3d81c14e61f5ce924d0e1.png"> Living Garden +</td>
-				<td>Lunaria</td>					<td>Yes</td></tr>
-			<tr><td>Graveblossom</td>				<td>Ok</td></tr>
-			<tr><td>Duskshade</td>					<td>No</td></tr>
-			<tr><td>Dewthief</td>					<td>No</td></tr>
+			<tr><td rowspan="4"><img class="title" alt="Baron" src="https://www.mousehuntgame.com/images/titles/ea9c0ec2e6d3d81c14e61f5ce924d0e1.png"> Living Garden <span class="plus">+</span></td>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/2f57461b01000e9be9fabbb64bea3cc7.gif?cv=8"> Lunaria</td>					<td><span class="yes">Yes</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/d41118f1d2fbbe9d9276f7dc2828ece5.gif?cv=8"> Graveblossom</td>				<td>Maybe</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/d6ab26ec5163e7046de7ba2f02ceda00.gif?cv=8"> Duskshade</td>					<td><span class="no">No</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/801c61809610537384f2700a4d6b73b7.gif?cv=8"> Dewthief</td>					<td><span class="no">No</span></td></tr>
 
 			<tr><td rowspan="1"><img class="title" alt="Lord" src="https://www.mousehuntgame.com/images/titles/9a6acd429a9a3a4849ed13901288b0b8.png"> Crystal Library</td>
-				<td>Fusion Fondue</td>				<td>Yes</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/754e7e23e7d5fd7739cd5b1d429f72dd.gif?cv=8"> Fusion Fondue</td>				<td><span class="yes">Yes</span></td></tr>
 
 			<tr><td rowspan="1"><img class="title" alt="Lord" src="https://www.mousehuntgame.com/images/titles/9a6acd429a9a3a4849ed13901288b0b8.png"> Zugzwang's Tower</td>
-				<td>Checkmate</td>					<td>Yes</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/49dbcf64d8c75ffa08781e0af5a79a8a.gif?cv=8"> Checkmate</td>					<td><span class="yes">Yes</span></td></tr>
 
 			<tr><td rowspan="2"><img class="title" alt="Knight" src="https://www.mousehuntgame.com/images/titles/398dca9a8c7703de969769491622ca32.png"> Balack's Cove</td>
-				<td>Vengeful Vanilla Stilton</td>	<td>Ok</td></tr>
-			<tr><td>Vanilla Stilton</td>			<td>No</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/df2d0961884d4e43ef7d17eee44876c9.gif?cv=8"> Vengeful Vanilla Stilton</td>	<td>Maybe</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/f2ddfa1e6298fe1257e3f8dbd02d8b7b.gif?cv=8"> Vanilla Stilton</td>			<td><span class="no">No</span></td></tr>
 
 			<tr><td rowspan="3"><img class="title" alt="Hero" src="https://www.mousehuntgame.com/images/titles/0567284d6e12aaaed35ca5912007e070.png"> King's Gauntlet</td>
-				<td>T8</td>							<td>No</td></tr>
-			<tr><td>T5-T7</td>						<td>Ok</td></tr>
-			<tr><td>T2-T4</td>						<td>No</td></tr>
+				<td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/97f952707b66d041cfa01734de8b3609.gif?cv=8"> T8</td>							<td><span class="no">No</span></td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/c9f6aa7f04c636fd76a1d5cd5d9ebaea.gif?cv=8"> T5-T7</td>						<td>Maybe</td></tr>
+			<tr><td><img class="title" src="https://www.mousehuntgame.com/images/items/bait/280d71087aa2bb161734acf80c39e3ac.gif?cv=8"> T2-T4</td>						<td><span class="no">No</span></td></tr>
 
-			<tr><td colspan="3" style="text-align:right; font-size:10px">Any cheese not listed is not worth using ME.<br>"Marketplace" means ratings could change if marketplace prices changed significantly.</td></tr>
+			<tr><td colspan="3" style="text-align:right; font-size:10px">Any cheese not listed is a <span class="no">No</span>.
+				"Marketplace" means ratings could change if marketplace prices changed significantly.<br>
+				Made by Greytyphoon, special thanks to Zafiast for his previous version of this chart! Updated September 2026.</td></tr>
 		</table>
 		</section>
 		</details>
