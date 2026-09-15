@@ -62,6 +62,14 @@ ul.summations > li > .circumstancialBonus { padding-left: 0; }
 .average{ background-color:#ffbb33; }
 .bad { background-color:#ff4444; }
 
+@media (prefers-color-scheme: dark)
+{
+	.awesome { background-color:#09394a; }
+	.good { background-color:#003f19; }
+	.average{ background-color:#6e4900; }
+	.bad { background-color:#580000; }
+}
+
 table.playerInfo  {
 	border: 1px solid var(--tint-light);
 	border-collapse: collapse;
