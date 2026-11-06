@@ -2,7 +2,6 @@
 @import url("../basic.css");
 
 :root { --murder-red: var(--virtue-blue); }
-footer { text-align: center; }
 
 /********************
  * Custom Viewer
